@@ -1,4 +1,4 @@
-# Potion Maker — local recreation, version 0.4
+# Potion Maker — local recreation, version 0.5
 
 Open **Potion-Maker.html** in Edge, Chrome, or Firefox. The playable game embeds its code, data, original icons, character portraits, and optional theme music. It needs no installation, server, account, or internet connection.
 
@@ -66,3 +66,9 @@ Game/artwork credit: Sinsiroad and original artists. Music credit follows the ga
 Claire, Luke, Piria, Charlotte, Demian, Daisy and Kyle join the three existing travelers. For this temporary personal-game mode, each added visitor offers a normal one-minute potion order and brings one uniformly random fairy from the 35 regular wiki fairies after the separate one-minute reward wait. Original portraits are bundled; Charlotte and Daisy use the archived happy/disappointed expressions. Existing Neet, Dolbur and Tirami powerup rewards remain unchanged.
 
 The Fairies screen records owned types and duplicate counts. Fairy effects, equipping, levels, event fairies and original requests/challenges are not active yet. Reward choice is frozen on delivery and saved, preventing rerolls or duplicate payouts on reload. Schema 4 preserves all old progress and in-flight original visitor rewards; raw older saves are backed up before migration.
+
+## Statistics
+
+The Statistics screen shows preserved lifetime totals plus detailed tracked counters for coins earned/spent, brews, level-1 sales, enhancement successes/failures, protection use, lost potions, upgrades, active visible play time, visitor offers/acceptance/delivery/failure/declines, collections, current upgrades and consumables. Tables break records down by family, all 75 potions and all ten visitors. The wiki Achievements categories provide the reference counters; unsupported systems display as unavailable rather than invented zeroes.
+
+Schema 5 preserves earlier totals and starts detailed tracking at migration. Older saves cannot reconstruct prior income, successes or per-potion activity; the screen explicitly labels the tracking date and partial history. Active play time excludes hidden-page and closed-page time. Autosave runs every 15 seconds as well as after actions and on pagehide.
