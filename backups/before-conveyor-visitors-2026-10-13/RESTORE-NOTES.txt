@@ -1,0 +1,1 @@
+Previous project files before the conveyor/visitor correction. Copy these files back to the project to restore the prior build. Browser progress is separate; export a save backup before switching builds. New save schema 3 is not readable by the previous schema-2 build. Pre-migration raw browser backups remain under pmg-offline-v1-v1-backup or pmg-offline-v1-v2-backup.

@@ -1,5 +1,5 @@
 const assert=require('node:assert/strict');
-const{PotionGame,INITIAL,sanitizeSave,FAMILIES}=require('./core.js');
+const{PotionGame,MaterialConveyor,materialPool,INITIAL,sanitizeSave,FAMILIES}=require('./core.js');
 let g=new PotionGame();assert.equal(g.collect(1,0),true);g.collect(0,0);assert.equal(g.state.potion.family,1);assert.equal(g.state.potion.value,11);
 assert.equal(g.enhance(0),'success');assert.equal(g.state.potion.value,13.2);assert.equal(g.enhance(.99),'lost');assert.equal(g.state.failed,1);assert.equal(g.state.potion,null);
 g.state.powerups={protection:1,enhancement:1,selling:1};g.collect(0,0);assert.equal(g.next().chance,1);assert.equal(g.enhance(0),'success');assert.equal(g.state.powerups.enhancement,0);assert.equal(g.state.powerups.protection,1);assert.equal(g.enhance(.99),'protected');assert.equal(g.state.powerups.protection,0);assert.equal(g.state.potion.level,1);assert.equal(g.sell(),20);assert.equal(g.state.powerups.selling,0);
@@ -17,9 +17,44 @@ g=new PotionGame();g.state.tiers[1]=3;g.collect(1,3);assert.equal(g.next().multi
 const home=FAMILIES[1].recipes[5],recordedStep=home.multipliers[3];
 try{home.multipliers[3]=null;g=new PotionGame();g.state.tiers[1]=5;g.collect(1,5);g.enhance(0);g.enhance(0);g.enhance(0);assert.equal(g.enhancementStatus(),'unknown');assert.equal(g.enhance(0),null);}finally{home.multipliers[3]=recordedStep;}
 
-g=new PotionGame();g.collect(0,0);g.enhance(0);assert.equal(g.canDeliver(0),true);assert.equal(g.deliver(0,1000),true);assert.equal(g.state.potion,null);assert.equal(g.settle(60999).length,0);assert.equal(g.settle(61000).length,1);assert.equal(g.state.powerups.protection,5);assert.equal(g.settle(62000).length,0);assert.equal(g.state.travelers[0].quests,1);
-let old={version:1,coins:123,tiers:[2,1,0],luck:3,price:3,speed:3,potion:{family:1,tier:1,level:1,value:25},sold:7,failed:1,best:50,ingredients:20};let migrated=sanitizeSave(old);assert.equal(migrated.version,2);assert.equal(migrated.coins,123);assert.deepEqual(migrated.tiers,[2,1,0]);assert.equal(migrated.potion.value,25);assert.deepEqual(sanitizeSave(migrated),migrated);
+// Visits are random scheduled offers; no deadline starts before explicit acceptance.
+g=new PotionGame();g.tick(1000,()=>0);assert.equal(g.state.nextVisitorAt,21000);assert.equal(g.tick(20999,()=>0).length,0);
+assert.equal(g.tick(21000,()=>0)[0].kind,'arrived');assert.equal(g.state.travelers[0].phase,'offer');
+assert.equal(g.state.travelers[0].deadline,0);g.collect(0,0);assert.equal(g.canDeliver(0,22000),false);
+assert.equal(g.acceptQuest(0,30000),true);assert.equal(g.state.travelers[0].deadline,90000);assert.equal(g.acceptQuest(0,40000),false);
+assert.equal(g.canDeliver(0,89999),true);assert.equal(g.canDeliver(0,90000),false);
+const frozen=JSON.stringify(g.questRequirement(0));g.state.tiers[0]=24;assert.equal(JSON.stringify(g.questRequirement(0)),frozen);
+assert.equal(g.deliver(0,31000),true);assert.equal(g.state.potion,null);assert.equal(g.settle(90999).length,0);
+g=new PotionGame(sanitizeSave(JSON.parse(JSON.stringify(g.state))));assert.equal(g.settle(91000).length,1);
+assert.equal(g.state.powerups.protection,5);assert.equal(g.settle(92000).length,0);assert.equal(g.state.travelers[0].quests,1);
+assert.equal(g.state.travelers[0].phase,'complete');assert.equal(g.dismissVisitor(0,92000,()=>1),true);assert.equal(g.state.nextVisitorAt,152000);
+// Deadline survives a reload; failure neither pays a reward nor destroys the potion.
+g=new PotionGame();g.tick(1000,()=>0);g.tick(21000,()=>0);g.acceptQuest(0,22000);g.collect(0,0);
+g=new PotionGame(sanitizeSave(JSON.parse(JSON.stringify(g.state))));assert.equal(g.tick(82000,()=>0)[0].kind,'failed');
+assert.equal(g.state.travelers[0].phase,'failed');assert.ok(g.state.potion);assert.equal(g.deliver(0,82000),false);
+assert.equal(g.state.powerups.protection,0);assert.equal(g.state.travelers[0].quests,0);assert.equal(g.settle(900000).length,0);
+assert.equal(g.dismissVisitor(0,82000,()=>0),true);assert.equal(g.state.nextVisitorAt,102000);
+// All three visitors can arrive and ask for any unlocked family, rather than a fixed assignment.
+for(const [roll,index]of [[0,0],[.4,1],[.9,2]]){g=new PotionGame();g.state.nextVisitorAt=1;g.tick(1,()=>roll);assert.equal(g.state.travelers[index].phase,'offer');}
+g=new PotionGame();g.state.tiers=[4,8,24];const req=g.randomRequirement(()=>.999);assert.equal(req.family,2);assert.equal(req.tier,24);assert.ok(req.level<FAMILIES[2].recipes[24].max_level);
+// Legacy reward timers are preserved and rewarded once, not turned into fresh orders.
+let v2={...INITIAL(),version:2,travelers:[{quests:2,readyAt:61000},{quests:0,readyAt:0},{quests:0,readyAt:0}]};
+g=new PotionGame(sanitizeSave(v2));assert.equal(g.state.travelers[0].phase,'returning');assert.equal(g.settle(61000).length,1);assert.equal(g.state.travelers[0].quests,3);assert.equal(g.settle(62000).length,0);
+// Unbiased material pool, identical empty-cauldron speed at every emission level,
+// and spatially even emission when speed changes or an ingredient is collected.
+assert.equal(materialPool([0,1,2]).length,6);assert.deepEqual(materialPool([0,0,0]).map(x=>x.family),[0,1,2]);
+let belt=new MaterialConveyor(456,[0,0,0],()=>0),base=belt.speed(false,0);assert.equal(belt.speed(false,19),base);assert.ok(belt.speed(true,19)>belt.speed(true,0));
+const seen=new Set();let sample=0;const pool=materialPool([1,2,3]);belt=new MaterialConveyor(760,[1,2,3],()=>((sample++%pool.length)+.5)/pool.length);belt.items.forEach(m=>seen.add(m.family+'-'+m.tier));assert.equal(seen.size,pool.length);
+let slow=new MaterialConveyor(456,[0,0,0],()=>0),fast=new MaterialConveyor(456,[0,0,0],()=>0);slow.advance(1000,false,19);fast.advance(1000,true,19);assert.ok(fast.items[0].x<slow.items[0].x);
+belt=new MaterialConveyor(456,[0,0,0],()=>0);const before=belt.items[1].x;const taken=belt.take(belt.items[0].id);assert.ok(taken);assert.equal(belt.items[0].x,before);
+for(let i=0;i<300;i++){belt.advance(100,i>100,19);const items=belt.items;for(let j=1;j<items.length;j++){const gap=items[j].x-items[j-1].x;assert.ok(Math.abs(gap/76-Math.round(gap/76))<1e-8);assert.ok(gap>=76-1e-8);}}
+// Collecting after enhancement retains the observed additive behavior.
+g=new PotionGame();g.collect(1,0);g.enhance(0);const enhanced=g.state.potion.value;g.collect(0,0);assert.equal(g.state.potion.value,enhanced+FAMILIES[0].materials[0].value);
+let old={version:1,coins:123,tiers:[2,1,0],luck:3,price:3,speed:3,potion:{family:1,tier:1,level:1,value:25},sold:7,failed:1,best:50,ingredients:20};let migrated=sanitizeSave(old);assert.equal(migrated.version,3);assert.equal(migrated.coins,123);assert.deepEqual(migrated.tiers,[2,1,0]);assert.equal(migrated.potion.value,25);assert.deepEqual(sanitizeSave(migrated),migrated);
 assert.throws(()=>sanitizeSave({...INITIAL(),coins:-1}));assert.throws(()=>sanitizeSave({...INITIAL(),powerups:{protection:-1,enhancement:0,selling:0}}));assert.throws(()=>sanitizeSave({...INITIAL(),travelers:[{}, {}, {}]}));assert.throws(()=>sanitizeSave({...INITIAL(),potion:{family:0,tier:0,level:20,value:10}}));
 assert.equal(FAMILIES.length,3);assert.equal(FAMILIES.flatMap(f=>f.recipes).length,75);assert.equal(FAMILIES.flatMap(f=>f.recipes).filter(r=>r.complete).length,75);
 for(const f of FAMILIES)for(const r of f.recipes){if(r.complete){assert.equal(r.multipliers.length,r.max_level-1);assert.ok(r.chances.every(c=>c>=0&&c<=1));}}
-console.log('Passed: 75 complete recipes, six restored enhancement paths, corrected Small MP, unknown-data guard, powerup consumption, delayed quest rewards, v1 migration, invalid-save rejection.');
+console.log('Passed: randomized evenly spaced conveyor, emission speeds, random visitors, acceptance deadlines, failure/reload, reward idempotency, v1/v2 migration, 75 complete recipes, six restored enhancement paths, corrected Small MP, unknown-data guard, powerup consumption, delayed quest rewards, v1 migration, invalid-save rejection.');
+
+const badActive={...INITIAL(),travelers:[{quests:0,readyAt:0,phase:'active',deadline:1,requirement:null},...INITIAL().travelers.slice(1)]};assert.throws(()=>sanitizeSave(badActive));
+assert.throws(()=>sanitizeSave({...INITIAL(),nextVisitorAt:-1}));

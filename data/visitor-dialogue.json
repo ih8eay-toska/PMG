@@ -1,0 +1,31 @@
+{
+  "provenance": "Original fan-written normal-quest responses. Portraits are original archived wiki assets. Tirami tone is inspired by the documented challenge dialogue, not presented as a normal-quest transcript.",
+  "sources": [
+    "https://potionmaker.fandom.com/wiki/Neet",
+    "https://potionmaker.fandom.com/wiki/Dolbur",
+    "https://potionmaker.fandom.com/wiki/Tirami/dialogues"
+  ],
+  "entries": {
+    "neet": {
+      "offer": "Could you prepare a potion for me?",
+      "active": "Thank you. I will wait here while you prepare it.",
+      "returning": "This will help. I will return with something for your shop.",
+      "complete": "Thank you for the potion. Please take these with you.",
+      "failed": "It seems the potion is not ready. Perhaps another time."
+    },
+    "dolbur": {
+      "offer": "I could use a potion for my next adventure!",
+      "active": "I am counting on you!",
+      "returning": "Just what I needed! I will be back with your reward.",
+      "complete": "Back from the road! Here is something to help your brewing.",
+      "failed": "Out of time! I had better get going. We can try again later."
+    },
+    "tirami": {
+      "offer": "Show me what your shop can make! ★",
+      "active": "Let us see how that potion turns out! ★",
+      "returning": "That will do! Wait here for your reward. ★",
+      "complete": "Fine, that potion passes. Next time, I will do better! ★",
+      "failed": "Time is up! I will be back for another round. ★"
+    }
+  }
+}
