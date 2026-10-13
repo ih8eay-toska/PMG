@@ -1,5 +1,5 @@
 const assert=require('node:assert/strict');
-const{PotionGame,MaterialConveyor,materialPool,INITIAL,sanitizeSave,FAMILIES}=require('./core.js');
+const{PotionGame,MaterialConveyor,materialPool,INITIAL,sanitizeSave,FAMILIES,TRAVELERS,FAIRIES}=require('./core.js');
 let g=new PotionGame();assert.equal(g.collect(1,0),true);g.collect(0,0);assert.equal(g.state.potion.family,1);assert.equal(g.state.potion.value,11);
 assert.equal(g.enhance(0),'success');assert.equal(g.state.potion.value,13.2);assert.equal(g.enhance(.99),'lost');assert.equal(g.state.failed,1);assert.equal(g.state.potion,null);
 g.state.powerups={protection:1,enhancement:1,selling:1};g.collect(0,0);assert.equal(g.next().chance,1);assert.equal(g.enhance(0),'success');assert.equal(g.state.powerups.enhancement,0);assert.equal(g.state.powerups.protection,1);assert.equal(g.enhance(.99),'protected');assert.equal(g.state.powerups.protection,0);assert.equal(g.state.potion.level,1);assert.equal(g.sell(),20);assert.equal(g.state.powerups.selling,0);
@@ -35,7 +35,7 @@ assert.equal(g.state.travelers[0].phase,'failed');assert.ok(g.state.potion);asse
 assert.equal(g.state.powerups.protection,0);assert.equal(g.state.travelers[0].quests,0);assert.equal(g.settle(900000).length,0);
 assert.equal(g.dismissVisitor(0,82000,()=>0),true);assert.equal(g.state.nextVisitorAt,102000);
 // All three visitors can arrive and ask for any unlocked family, rather than a fixed assignment.
-for(const [roll,index]of [[0,0],[.4,1],[.9,2]]){g=new PotionGame();g.state.nextVisitorAt=1;g.tick(1,()=>roll);assert.equal(g.state.travelers[index].phase,'offer');}
+for(const [roll,index]of [[0,0],[.4,4],[.9,9]]){g=new PotionGame();g.state.nextVisitorAt=1;g.tick(1,()=>roll);assert.equal(g.state.travelers[index].phase,'offer');}
 g=new PotionGame();g.state.tiers=[4,8,24];const req=g.randomRequirement(()=>.999);assert.equal(req.family,2);assert.equal(req.tier,24);assert.ok(req.level<FAMILIES[2].recipes[24].max_level);
 // Legacy reward timers are preserved and rewarded once, not turned into fresh orders.
 let v2={...INITIAL(),version:2,travelers:[{quests:2,readyAt:61000},{quests:0,readyAt:0},{quests:0,readyAt:0}]};
@@ -50,7 +50,7 @@ belt=new MaterialConveyor(456,[0,0,0],()=>0);const before=belt.items[1].x;const 
 for(let i=0;i<300;i++){belt.advance(100,i>100,19);const items=belt.items;for(let j=1;j<items.length;j++){const gap=items[j].x-items[j-1].x;assert.ok(Math.abs(gap/76-Math.round(gap/76))<1e-8);assert.ok(gap>=76-1e-8);}}
 // Collecting after enhancement retains the observed additive behavior.
 g=new PotionGame();g.collect(1,0);g.enhance(0);const enhanced=g.state.potion.value;g.collect(0,0);assert.equal(g.state.potion.value,enhanced+FAMILIES[0].materials[0].value);
-let old={version:1,coins:123,tiers:[2,1,0],luck:3,price:3,speed:3,potion:{family:1,tier:1,level:1,value:25},sold:7,failed:1,best:50,ingredients:20};let migrated=sanitizeSave(old);assert.equal(migrated.version,3);assert.equal(migrated.coins,123);assert.deepEqual(migrated.tiers,[2,1,0]);assert.equal(migrated.potion.value,25);assert.deepEqual(sanitizeSave(migrated),migrated);
+let old={version:1,coins:123,tiers:[2,1,0],luck:3,price:3,speed:3,potion:{family:1,tier:1,level:1,value:25},sold:7,failed:1,best:50,ingredients:20};let migrated=sanitizeSave(old);assert.equal(migrated.version,4);assert.equal(migrated.coins,123);assert.deepEqual(migrated.tiers,[2,1,0]);assert.equal(migrated.potion.value,25);assert.deepEqual(sanitizeSave(migrated),migrated);
 assert.throws(()=>sanitizeSave({...INITIAL(),coins:-1}));assert.throws(()=>sanitizeSave({...INITIAL(),powerups:{protection:-1,enhancement:0,selling:0}}));assert.throws(()=>sanitizeSave({...INITIAL(),travelers:[{}, {}, {}]}));assert.throws(()=>sanitizeSave({...INITIAL(),potion:{family:0,tier:0,level:20,value:10}}));
 assert.equal(FAMILIES.length,3);assert.equal(FAMILIES.flatMap(f=>f.recipes).length,75);assert.equal(FAMILIES.flatMap(f=>f.recipes).filter(r=>r.complete).length,75);
 for(const f of FAMILIES)for(const r of f.recipes){if(r.complete){assert.equal(r.multipliers.length,r.max_level-1);assert.ok(r.chances.every(c=>c>=0&&c<=1));}}
@@ -58,3 +58,18 @@ console.log('Passed: randomized evenly spaced conveyor, emission speeds, random 
 
 const badActive={...INITIAL(),travelers:[{quests:0,readyAt:0,phase:'active',deadline:1,requirement:null},...INITIAL().travelers.slice(1)]};assert.throws(()=>sanitizeSave(badActive));
 assert.throws(()=>sanitizeSave({...INITIAL(),nextVisitorAt:-1}));
+
+// Seven added visitors grant a frozen fairy reward after the delay, once across reloads.
+assert.equal(TRAVELERS.length,10);assert.equal(FAIRIES.length,35);
+for(let index=3;index<TRAVELERS.length;index++){
+ g=new PotionGame();g.state.nextVisitorAt=1;let rolls=[(index+.1)/TRAVELERS.length,0,0];g.tick(1,()=>rolls.shift()||0);
+ assert.equal(g.state.travelers[index].phase,'offer');assert.equal(g.acceptQuest(index,1000),true);g.collect(0,0);
+ assert.equal(g.deliver(index,2000,()=>.999),true);const id=g.state.travelers[index].rewardFairyId;assert.equal(id,FAIRIES.at(-1).id);
+ g=new PotionGame(sanitizeSave(JSON.parse(JSON.stringify(g.state))));assert.equal(g.settle(61999).length,0);assert.equal(g.settle(62000).length,1);assert.equal(g.state.fairies[id],1);assert.equal(g.settle(63000).length,0);
+ assert.deepEqual(g.state.powerups,{protection:0,enhancement:0,selling:0});assert.deepEqual(sanitizeSave(g.state),g.state);
+ g.state.travelers[index].phase='returning';g.state.travelers[index].readyAt=64000;g.settle(64000);assert.equal(g.state.fairies[id],2);
+}
+let v3={...INITIAL(),version:3,travelers:INITIAL().travelers.slice(0,3)};v3.travelers[1]={...v3.travelers[1],phase:'active',deadline:65000,requirement:{family:0,tier:0,level:0}};
+let upgraded=sanitizeSave(v3);assert.equal(upgraded.travelers.length,10);assert.equal(upgraded.travelers[1].deadline,65000);assert.deepEqual(upgraded.fairies,{});
+assert.throws(()=>sanitizeSave({...INITIAL(),fairies:{'unknown-fairy':1}}));assert.throws(()=>sanitizeSave({...INITIAL(),fairies:{'fairy-1':-1}}));
+console.log('Passed: all 10 visitor arrivals, all seven fairy rewards, 35 regular fairies, duplicate counts, delayed delivery and v3 migration.');

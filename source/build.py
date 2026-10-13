@@ -5,6 +5,9 @@ ROOT=Path(__file__).resolve().parent.parent
 manifest=json.loads((ROOT/'asset-manifest.json').read_text(encoding='utf-8'))
 assets={}
 used={'Pio_Main.jpg','Default_Costume.png','Neet_Portrait.png','DolburPortrait.png','TiramiMain.png','Main_Theme.ogg','EnhancementFailureProtection.png','EnhancementBonus.png','SellBonus.png'}
+fairies=json.loads((ROOT/'data/fairies.json').read_text(encoding='utf-8'))
+used.update(f['image'] for f in fairies['entries'])
+used.update(['ClairePortrait.png', 'LukePortrait.png', 'PiriaPortrait.png', 'CharlottePortraitNormal.png', 'DemianPortrait.png', 'DaisyPortrait.png', 'KylePortrait.png', 'CharlottePortraitHappy.png', 'CharlottePortraitDisappointed.png', 'DaisyPortraitHappy.png', 'DaisyPortraitDisappointed.png'])
 for f in ['Life','Mana','Stamina']:
     used.update(f'{f}_{kind}{tier}.png' for kind in ['Material','Potion'] for tier in range(1,26))
 normalized=lambda s:s.lower().replace('_','').replace(' ','').replace('-','')
@@ -15,7 +18,7 @@ for record in manifest['assets']:
         data=(ROOT/record['path']).read_bytes()
         assets[key]=f'data:{record["mime"]};base64,'+base64.b64encode(data).decode()
 template=(ROOT/'source/index.template.html').read_text(encoding='utf-8')
-for token,value in [('__ASSETS__',json.dumps(assets)),('__GAME_DATA__',(ROOT/'data/game-data.json').read_text(encoding='utf-8')),('__FLAVOR_DATA__',(ROOT/'data/flavor-text.json').read_text(encoding='utf-8')),('__VISITOR_DIALOGUE__',(ROOT/'data/visitor-dialogue.json').read_text(encoding='utf-8')),('__CORE__',(ROOT/'source/core.js').read_text(encoding='utf-8')),('__APP__',(ROOT/'source/app.js').read_text(encoding='utf-8'))]:template=template.replace(token,value)
+for token,value in [('__ASSETS__',json.dumps(assets)),('__GAME_DATA__',(ROOT/'data/game-data.json').read_text(encoding='utf-8')),('__FLAVOR_DATA__',(ROOT/'data/flavor-text.json').read_text(encoding='utf-8')),('__VISITOR_DIALOGUE__',(ROOT/'data/visitor-dialogue.json').read_text(encoding='utf-8')),('__FAIRY_DATA__',(ROOT/'data/fairies.json').read_text(encoding='utf-8')),('__CORE__',(ROOT/'source/core.js').read_text(encoding='utf-8')),('__APP__',(ROOT/'source/app.js').read_text(encoding='utf-8'))]:template=template.replace(token,value)
 (ROOT/'Potion-Maker.html').write_text(template,encoding='utf-8')
 cards=[]
 for r in manifest['assets']:

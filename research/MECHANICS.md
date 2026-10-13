@@ -67,3 +67,7 @@ There is a technical finite-number ceiling of 1e300 to avoid JavaScript overflow
 ## Validation
 
 Automated checks cover complete/incomplete recipe tables, family lock, later tiers and unlock limits, success and failed/protected enhancement, automatic consumable depletion, double sales, delayed rewards without duplication, v1 migration, save round trips, and rejection of malformed saves. Browser verification uses a separate test storage key so test actions do not replace the player's save.
+
+## Temporary fairy visitor mode — 13 October 2026
+
+User requested more visitors and fairy rewards for now. Added the remaining seven documented visitors with original portrait assets: Claire, Luke, Piria, Charlotte, Demian, Daisy and Kyle. These additions intentionally use normal timed potion orders, not their documented request/challenge mechanics. Their guaranteed uniformly random reward comes from 35 regular fairies identified by Fairy1.png through Fairy35.png in the cached Fairy article. Event and character fairies are excluded. Fairy counts persist, duplicates accumulate, and there are no passive effects or inferred level thresholds. Original three traveler reward bundles are retained. Normal conversations are explicitly fan-written. Schema 4 migrates the original three travelers without losing pending deadlines or rewards.

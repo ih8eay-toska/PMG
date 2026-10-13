@@ -1,0 +1,181 @@
+{
+  "source": "https://potionmaker.fandom.com/wiki/Fairy",
+  "provenance": "35 regular fairy names and original icons from the archived wiki. Uniform guaranteed rewards from added visitors are a user-requested temporary shortcut. Collection counts only; fairy bonuses and levels are not implemented.",
+  "entries": [
+    {
+      "id": "fairy-1",
+      "name": "Squishy",
+      "image": "Fairy1.png"
+    },
+    {
+      "id": "fairy-2",
+      "name": "Squashy",
+      "image": "Fairy2.png"
+    },
+    {
+      "id": "fairy-3",
+      "name": "Mushy",
+      "image": "Fairy3.png"
+    },
+    {
+      "id": "fairy-4",
+      "name": "Beany-Kong",
+      "image": "Fairy4.png"
+    },
+    {
+      "id": "fairy-5",
+      "name": "Surprise-Pong",
+      "image": "Fairy5.png"
+    },
+    {
+      "id": "fairy-6",
+      "name": "Happy-Pong",
+      "image": "Fairy6.png"
+    },
+    {
+      "id": "fairy-7",
+      "name": "Amaze-Pong",
+      "image": "Fairy7.png"
+    },
+    {
+      "id": "fairy-8",
+      "name": "Angry-Pong",
+      "image": "Fairy8.png"
+    },
+    {
+      "id": "fairy-9",
+      "name": "Sunnyside-Chick",
+      "image": "Fairy9.png"
+    },
+    {
+      "id": "fairy-10",
+      "name": "Ice-Chick",
+      "image": "Fairy10.png"
+    },
+    {
+      "id": "fairy-11",
+      "name": "Hot-Chick",
+      "image": "Fairy11.png"
+    },
+    {
+      "id": "fairy-12",
+      "name": "Clover-Puru",
+      "image": "Fairy12.png"
+    },
+    {
+      "id": "fairy-13",
+      "name": "Dande-Puru",
+      "image": "Fairy13.png"
+    },
+    {
+      "id": "fairy-14",
+      "name": "Bell-Puru",
+      "image": "Fairy14.png"
+    },
+    {
+      "id": "fairy-15",
+      "name": "Red-Cho",
+      "image": "Fairy15.png"
+    },
+    {
+      "id": "fairy-16",
+      "name": "Blue-Cho",
+      "image": "Fairy16.png"
+    },
+    {
+      "id": "fairy-17",
+      "name": "Yellow-Cho",
+      "image": "Fairy17.png"
+    },
+    {
+      "id": "fairy-18",
+      "name": "Purplish-Kun",
+      "image": "Fairy18.png"
+    },
+    {
+      "id": "fairy-19",
+      "name": "Orangish-Kun",
+      "image": "Fairy19.png"
+    },
+    {
+      "id": "fairy-20",
+      "name": "Greenish-Kun",
+      "image": "Fairy20.png"
+    },
+    {
+      "id": "fairy-21",
+      "name": "Magi-Run",
+      "image": "Fairy21.png"
+    },
+    {
+      "id": "fairy-22",
+      "name": "Thief-Run",
+      "image": "Fairy22.png"
+    },
+    {
+      "id": "fairy-23",
+      "name": "Cleri-Run",
+      "image": "Fairy23.png"
+    },
+    {
+      "id": "fairy-24",
+      "name": "Arch-Run",
+      "image": "Fairy24.png"
+    },
+    {
+      "id": "fairy-25",
+      "name": "Warri-Run",
+      "image": "Fairy25.png"
+    },
+    {
+      "id": "fairy-26",
+      "name": "Blue-Me",
+      "image": "Fairy26.png"
+    },
+    {
+      "id": "fairy-27",
+      "name": "Purp-Me",
+      "image": "Fairy27.png"
+    },
+    {
+      "id": "fairy-28",
+      "name": "Yell-Me",
+      "image": "Fairy28.png"
+    },
+    {
+      "id": "fairy-29",
+      "name": "Red-me",
+      "image": "Fairy29.png"
+    },
+    {
+      "id": "fairy-30",
+      "name": "Green-Me",
+      "image": "Fairy30.png"
+    },
+    {
+      "id": "fairy-31",
+      "name": "Poong-Poong",
+      "image": "Fairy31.png"
+    },
+    {
+      "id": "fairy-32",
+      "name": "Gentle-Poong",
+      "image": "Fairy32.png"
+    },
+    {
+      "id": "fairy-33",
+      "name": "King-Poong",
+      "image": "Fairy33.png"
+    },
+    {
+      "id": "fairy-34",
+      "name": "Hero-Poong",
+      "image": "Fairy34.png"
+    },
+    {
+      "id": "fairy-35",
+      "name": "Wiz-Poong",
+      "image": "Fairy35.png"
+    }
+  ]
+}

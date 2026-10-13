@@ -1,4 +1,4 @@
-# Potion Maker — local recreation, version 0.3
+# Potion Maker — local recreation, version 0.4
 
 Open **Potion-Maker.html** in Edge, Chrome, or Firefox. The playable game embeds its code, data, original icons, character portraits, and optional theme music. It needs no installation, server, account, or internet connection.
 
@@ -60,3 +60,9 @@ Run gameplay checks with Node: `node source/check-core.cjs`.
 The delivered game needs neither runtime. Python is only needed to rebuild; Pillow is needed only for asset scraping/validation.
 
 Game/artwork credit: Sinsiroad and original artists. Music credit follows the game's original credits; the wiki identifies DOVA-SYNDROME as composer. Wiki documentation is credited to its contributors. The wiki's text license is not assumed to license all media. This remains an unofficial personal prototype with no uploaded progress or hosted service.
+
+## Added visitors and fairy collection
+
+Claire, Luke, Piria, Charlotte, Demian, Daisy and Kyle join the three existing travelers. For this temporary personal-game mode, each added visitor offers a normal one-minute potion order and brings one uniformly random fairy from the 35 regular wiki fairies after the separate one-minute reward wait. Original portraits are bundled; Charlotte and Daisy use the archived happy/disappointed expressions. Existing Neet, Dolbur and Tirami powerup rewards remain unchanged.
+
+The Fairies screen records owned types and duplicate counts. Fairy effects, equipping, levels, event fairies and original requests/challenges are not active yet. Reward choice is frozen on delivery and saved, preventing rerolls or duplicate payouts on reload. Schema 4 preserves all old progress and in-flight original visitor rewards; raw older saves are backed up before migration.

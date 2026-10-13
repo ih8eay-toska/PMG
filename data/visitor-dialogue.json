@@ -1,5 +1,5 @@
 {
-  "provenance": "Original fan-written normal-quest responses. Portraits are original archived wiki assets. Tirami tone is inspired by the documented challenge dialogue, not presented as a normal-quest transcript.",
+  "provenance": "Original fan-written normal-quest responses. Portraits are original archived wiki assets. Tirami tone is inspired by the documented challenge dialogue, not presented as a normal-quest transcript. Added visitor/fairy conversations are also original fan-written text for the temporary reward mode.",
   "sources": [
     "https://potionmaker.fandom.com/wiki/Neet",
     "https://potionmaker.fandom.com/wiki/Dolbur",
@@ -26,6 +26,55 @@
       "returning": "That will do! Wait here for your reward. ★",
       "complete": "Fine, that potion passes. Next time, I will do better! ★",
       "failed": "Time is up! I will be back for another round. ★"
+    },
+    "claire": {
+      "offer": "I require a potion for my journey. Can you assist?",
+      "active": "I shall wait while you prepare it.",
+      "returning": "A fine preparation. I will return with a small companion.",
+      "complete": "Please welcome this fairy into your shop.",
+      "failed": "My departure cannot wait. We will try another day."
+    },
+    "luke": {
+      "offer": "...A potion, please.",
+      "active": "...Thank you. I can wait a little.",
+      "returning": "...I know a fairy who would like it here.",
+      "complete": "...A new friend for your shop.",
+      "failed": "...Perhaps next time."
+    },
+    "piria": {
+      "offer": "Have a potion to spare? I have something interesting in return.",
+      "active": "Take your time. Well, just a little time!",
+      "returning": "Perfect! I will bring a little friend over.",
+      "complete": "Look who followed me back! Take good care of this fairy.",
+      "failed": "Time to slip away. Catch you next time!"
+    },
+    "charlotte": {
+      "offer": "Charlotte would appreciate a potion from your lovely shop.",
+      "active": "Charlotte is looking forward to it.",
+      "returning": "Delightful. Charlotte has a little surprise for you.",
+      "complete": "Charlotte hopes this fairy feels at home here.",
+      "failed": "Another day, perhaps. Charlotte must be going."
+    },
+    "demian": {
+      "offer": "I have a potion order for your establishment.",
+      "active": "I will await your delivery.",
+      "returning": "Order received. A fairy will accompany my return.",
+      "complete": "Delivery complete. This fairy is now in your care.",
+      "failed": "The allotted time has expired. I must depart."
+    },
+    "daisy": {
+      "offer": "Hello! Could you prepare a potion for me today?",
+      "active": "Thank you! I will wait here.",
+      "returning": "Lovely! I will come back with a little friend.",
+      "complete": "Here is your new fairy friend. I hope you get along!",
+      "failed": "That is all right. We can try again another time."
+    },
+    "kyle": {
+      "offer": "Could I ask you to make a potion?",
+      "active": "Let us see how it turns out.",
+      "returning": "Thanks! I will be back with something for your shop.",
+      "complete": "A fairy wanted to come along. Would you look after it?",
+      "failed": "Looks like our time is up. See you around."
     }
   }
 }
