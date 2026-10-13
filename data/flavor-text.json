@@ -1,0 +1,371 @@
+{
+  "source": "https://potionmaker.fandom.com/wiki/Potion/descriptions_and_reviews",
+  "credit": "First 13 Life entries are adaptations of wiki-documented notes. Remaining 62 entries are original fan-written additions, not official game text.",
+  "entries": {
+    "0-0": {
+      "description": "A beginner’s brew with mild healing and no aroma.",
+      "bottle_note": "Keep chilled; use within a day."
+    },
+    "0-1": {
+      "description": "A sticky little remedy for childhood colds.",
+      "bottle_note": "Ask a physician first."
+    },
+    "0-2": {
+      "description": "A fruity dessert drink with an enthusiastic following.",
+      "bottle_note": "The cap says: better luck next time."
+    },
+    "0-3": {
+      "description": "Pocket-sized healing, with a bitter finish.",
+      "bottle_note": "Alex awards three stars for speedy delivery."
+    },
+    "0-4": {
+      "description": "A nourishing refreshment with a vegetable-like taste.",
+      "bottle_note": "Avoid bottles with damaged seals or changed contents."
+    },
+    "0-5": {
+      "description": "A household staple for weary afternoons.",
+      "bottle_note": "Jake gives one star: unpleasant flavor."
+    },
+    "0-6": {
+      "description": "The traveler’s dependable, unremarkable everyday tonic.",
+      "bottle_note": "Report suspicious potions at the village office."
+    },
+    "0-7": {
+      "description": "A surprisingly potent, fizzy favorite.",
+      "bottle_note": "The nutrition panel promises strength without trans fats."
+    },
+    "0-8": {
+      "description": "A handsome oversized bottle for lengthy journeys.",
+      "bottle_note": "A month-long special on the large-bottle range."
+    },
+    "0-9": {
+      "description": "A sacred blessing, with fairly ordinary healing.",
+      "bottle_note": "A paladin’s sword-blessing review trails off…"
+    },
+    "0-10": {
+      "description": "Sweet fruit suspended in a jelly-like potion.",
+      "bottle_note": "Dungeon monsters may follow its scent."
+    },
+    "0-11": {
+      "description": "Briefly borrowed strength, followed by lingering side effects.",
+      "bottle_note": "Repeated doses may blur friend and foe."
+    },
+    "0-12": {
+      "description": "A luminous gift that doubles as decoration.",
+      "bottle_note": "Apparently, this one needs a power socket."
+    },
+    "0-13": {
+      "description": "Distilled through silver petals, this deep crimson tonic closes scrapes and restores a weary traveler's color.",
+      "bottle_note": "The cork squeaks whenever someone calls it ordinary."
+    },
+    "0-14": {
+      "description": "A peppery orange-red draught that cools the skin beneath an oven's fiercest breath.",
+      "bottle_note": "Bakers insist it works; their bread remains unimpressed."
+    },
+    "0-15": {
+      "description": "Thick with golden roots, this ruby syrup returns warmth to limbs chilled by long expeditions.",
+      "bottle_note": "Shake gently; the sediment dislikes being hurried."
+    },
+    "0-16": {
+      "description": "A fierce scarlet cordial that lends bruised fighters renewed force and very loud opinions.",
+      "bottle_note": "Not recommended during delicate negotiations or family dinners."
+    },
+    "0-17": {
+      "description": "Stars drift through its rose-colored depths, lending fragile bodies the comfort of morning sunlight.",
+      "bottle_note": "Store away from windows; it tries to greet the moon."
+    },
+    "0-18": {
+      "description": "Steeped in forgotten herbs, this dusky brew mends weariness with patient, old-fashioned magic.",
+      "bottle_note": "The recipe predates labels, but the bottle insists on one."
+    },
+    "0-19": {
+      "description": "A regal crimson elixir that steadies failing knees and makes old battle scars shimmer.",
+      "bottle_note": "Heroes praise it; their squires complain about the storytelling afterward."
+    },
+    "0-20": {
+      "description": "First light caught in amber glass wakes warmth in even the most exhausted traveler.",
+      "bottle_note": "Uncork at sunrise for best results, or whenever the shop opens."
+    },
+    "0-21": {
+      "description": "Dark ribbons coil inside this forbidden restorative, knitting strength with an unsettling chill.",
+      "bottle_note": "Returns accepted only if the bottle stops whispering your name."
+    },
+    "0-22": {
+      "description": "A smoky red tonic grants infernal resilience, though its aftertaste resembles burnt plum jam.",
+      "bottle_note": "Infernal supplier demands praise; customers mostly request smaller spoons."
+    },
+    "0-23": {
+      "description": "A potent garnet serum restores warmth to those touched by an invented crimson blight.",
+      "bottle_note": "The quarantine stamp is decorative; village clerks remain suspicious."
+    },
+    "0-24": {
+      "description": "A royal scarlet essence renews battered strength while polishing its drinker's posture to perfection.",
+      "bottle_note": "Complaints must be addressed to the reflection in the cap."
+    },
+    "1-0": {
+      "description": "A pale blue trial brew that briefly sharpens the mind for beginner spells.",
+      "bottle_note": "Complimentary samples exclude the tiny measuring spoon."
+    },
+    "1-1": {
+      "description": "A soft lavender sip encourages harmless sparks and picture-book daydreams in young apprentices.",
+      "bottle_note": "Please keep away from curtains and excitable grandmothers."
+    },
+    "1-2": {
+      "description": "Sweet forest berries lend this blue cordial a pleasant taste and a flicker of insight.",
+      "bottle_note": "One customer mistook the ink stain for a signature."
+    },
+    "1-3": {
+      "description": "A thimbleful of clear azure liquid keeps minor charms from slipping out of memory.",
+      "bottle_note": "The bottle is easier to lose than the spell."
+    },
+    "1-4": {
+      "description": "Sparkling with powdered quartz, this bracing mineral tonic steadies concentration without much flavor.",
+      "bottle_note": "Do not confuse the decorative pebbles with sweets."
+    },
+    "1-5": {
+      "description": "A kitchen-brewed blue infusion clears sleepy thoughts before letters, ledgers, and simple enchantments.",
+      "bottle_note": "Grandmother says the secret ingredient is proper stirring."
+    },
+    "1-6": {
+      "description": "A familiar indigo draught restores focus after an afternoon of routine wand practice.",
+      "bottle_note": "The academy buys it in bulk, reluctantly."
+    },
+    "1-7": {
+      "description": "Bright bubbles tickle the tongue and scatter fresh ideas across the mind.",
+      "bottle_note": "Open slowly unless you want the ceiling to learn spells."
+    },
+    "1-8": {
+      "description": "A tall blue flask offers steady magical clarity through drawn-out rituals and tedious meetings.",
+      "bottle_note": "No shelf in the shop is quite tall enough."
+    },
+    "1-9": {
+      "description": "A drop of temple light turns this blue draught serene and surprisingly useful for prayer.",
+      "bottle_note": "Blessed by a priest who forgot where he put the invoice."
+    },
+    "1-10": {
+      "description": "Purple grape skins give this spell tonic a rich sweetness and unusually vivid mental pictures.",
+      "bottle_note": "A vintner called it excellent, then asked for a refund."
+    },
+    "1-11": {
+      "description": "Velvety sapphire liquid settles scattered thoughts and makes difficult questions feel almost politely answerable.",
+      "bottle_note": "Does not prevent the drinker from asking foolish questions."
+    },
+    "1-12": {
+      "description": "A glow like bottled starlight guides wandering ideas back into a spellcaster's grasp.",
+      "bottle_note": "Cover after bedtime; neighboring owls have filed complaints."
+    },
+    "1-13": {
+      "description": "Refined beneath a glass moon, this deep blue potion lends precision to ambitious incantations.",
+      "bottle_note": "The etched instructions require excellent eyesight or a magnifying charm."
+    },
+    "1-14": {
+      "description": "An oddly warming sapphire brew keeps fingers nimble while frost spells whisper through the air.",
+      "bottle_note": "Leave beside the hearth; it prefers the irony."
+    },
+    "1-15": {
+      "description": "Concentrated blue petals dissolve into a silken draught that sustains careful, intricate spellwork.",
+      "bottle_note": "Sediment forms tiny runes nobody has managed to translate."
+    },
+    "1-16": {
+      "description": "A cloudless blue elixir quiets racing thoughts without dulling a mage's curiosity.",
+      "bottle_note": "Customer returned it because the silence felt suspicious."
+    },
+    "1-17": {
+      "description": "Silver constellations swim in liquid midnight, arranging stray thoughts into graceful patterns of magic.",
+      "bottle_note": "Do not shake; astronomers dislike having their maps rearranged."
+    },
+    "1-18": {
+      "description": "Made from a scholar's lost formula, this murky blue brew recalls forgotten magical principles.",
+      "bottle_note": "The instructions are written in a language the bottle claims to know."
+    },
+    "1-19": {
+      "description": "A pearlescent potion opens doorways in the imagination, where impossible spells first take shape.",
+      "bottle_note": "Dream creatures are not eligible for the loyalty card."
+    },
+    "1-20": {
+      "description": "A pale horizon glimmers within this elixir, granting fresh focus after long nights of study.",
+      "bottle_note": "Morning birds gather nearby, hoping to borrow its brightness."
+    },
+    "1-21": {
+      "description": "Ash flecks whirl through haunted blue fluid, revealing secrets best handled with cautious curiosity.",
+      "bottle_note": "Never pour near open books; the margins begin arguing."
+    },
+    "1-22": {
+      "description": "Cold cobalt fire sharpens infernal spellcraft while leaving the tongue tasting faintly of soot.",
+      "bottle_note": "A tiny contract appears beneath the label when warmed."
+    },
+    "1-23": {
+      "description": "This spectral blue serum restores coherence to thoughts muddled by a mythical dreaming sickness.",
+      "bottle_note": "Keep separate from lullabies; the contents grow unusually drowsy."
+    },
+    "1-24": {
+      "description": "A majestic blue essence lends command over elusive spells and an unfortunate fondness for speeches.",
+      "bottle_note": "The mirror seal approves every incantation, even the dreadful ones."
+    },
+    "2-0": {
+      "description": "A sunny beginner's tonic lends enough spring to finish ordinary chores with a smile.",
+      "bottle_note": "Sample bottles are not intended for marathon sweeping."
+    },
+    "2-1": {
+      "description": "This mild golden syrup makes small feet eager for another lap around the garden.",
+      "bottle_note": "Keep the lid tight; the nursery already has enough excitement."
+    },
+    "2-2": {
+      "description": "Sweet orange peel brightens a cheerful draught for messengers with errands left to run.",
+      "bottle_note": "Best served cool, according to three overheated couriers."
+    },
+    "2-3": {
+      "description": "A thumb-sized yellow dose loosens stiff legs after climbing too many village stairs.",
+      "bottle_note": "The label recommends resting anyway, which customers find unhelpful."
+    },
+    "2-4": {
+      "description": "Golden herbs and orchard greens make a lively tonic for dull, dragging mornings.",
+      "bottle_note": "The herbalist insists the grassy smell means quality."
+    },
+    "2-5": {
+      "description": "A honey-colored kitchen brew lends tired hands the resolve to finish the washing.",
+      "bottle_note": "Uncle Finn claims it also improves his singing; nobody agrees."
+    },
+    "2-6": {
+      "description": "This plain yellow pick-me-up keeps weary travelers walking comfortably until the next inn.",
+      "bottle_note": "Popular with caravan guards, unpopular with sore boots."
+    },
+    "2-7": {
+      "description": "Tart lemon fizz puts a bounce in sluggish steps and a sparkle on the tongue.",
+      "bottle_note": "Unscrew over the sink; the bubbles are eager to escape."
+    },
+    "2-8": {
+      "description": "A generous flask of liquid sunshine sustains long hikes across hills and muddy roads.",
+      "bottle_note": "The carrying strap costs extra and occasionally carries itself."
+    },
+    "2-9": {
+      "description": "A warm temple-made tonic gives pilgrims the endurance to reach one more roadside shrine.",
+      "bottle_note": "Clerics recommend sensible footwear alongside the blessing."
+    },
+    "2-10": {
+      "description": "This puzzling yellow potion lends restless wanderers stamina whenever they solve its shifting label.",
+      "bottle_note": "Most customers simply ask the shopkeeper for the answer."
+    },
+    "2-11": {
+      "description": "Golden sparks race through this lively elixir, lifting the heaviness from overworked limbs.",
+      "bottle_note": "Advised against opening indoors; the cork likes to sprint."
+    },
+    "2-12": {
+      "description": "Sunlit motes drift through honey-yellow glass, cheering exhausted feet across twilight paths.",
+      "bottle_note": "The glow attracts moths who expect free refreshments."
+    },
+    "2-13": {
+      "description": "A golden distillate restores steady movement during punishing marches and overly ambitious expeditions.",
+      "bottle_note": "Measured doses are marked by tiny marching boots."
+    },
+    "2-14": {
+      "description": "Amber threads flicker inside this tangy brew, helping travelers weather crackling storm magic.",
+      "bottle_note": "Please avoid rubbing the bottle on woolen cloaks."
+    },
+    "2-15": {
+      "description": "Pressed from sunroot and hardy mountain thyme, this dense tonic carries tired legs farther.",
+      "bottle_note": "Leaves a yellow ring on every respectable tablecloth."
+    },
+    "2-16": {
+      "description": "A bold citrus elixir revives aching muscles and an adventurer's willingness to climb again.",
+      "bottle_note": "One customer requested stairs to test it; we declined."
+    },
+    "2-17": {
+      "description": "A miniature sunrise spins inside this golden potion, keeping footsteps lively under distant stars.",
+      "bottle_note": "Close the shutters; it confuses the household rooster."
+    },
+    "2-18": {
+      "description": "An aged amber recipe restores the patient endurance of travelers from forgotten kingdoms.",
+      "bottle_note": "The stopper bears a map to an inn no longer standing."
+    },
+    "2-19": {
+      "description": "A blazing yellow draught lends heroic stamina to those carrying burdens both noble and mundane.",
+      "bottle_note": "Heroes may claim discounted saddlebags, subject to availability."
+    },
+    "2-20": {
+      "description": "Violet shadows blend with gold, easing the final weary steps before evening shelter.",
+      "bottle_note": "Perfect for homeward journeys; not an excuse to miss supper."
+    },
+    "2-21": {
+      "description": "An amber curse burns softly inside this reagent, urging exhausted travelers onward past reason.",
+      "bottle_note": "Its shadow always points toward the nearest empty chair."
+    },
+    "2-22": {
+      "description": "A brimstone-yellow cordial grants relentless footwork, though the soles of boots grow uncomfortably warm.",
+      "bottle_note": "Infernal warranty excludes melted shoelaces and complaints about dancing."
+    },
+    "2-23": {
+      "description": "This uncanny gold serum steadies limbs weakened by the legendary sleepwalking blight.",
+      "bottle_note": "Town watchmen demand a signed note before night walks."
+    },
+    "2-24": {
+      "description": "Liquid gold rolls like sunlight, granting magnificent endurance and a rather theatrical stride.",
+      "bottle_note": "The cap doubles as a crown for particularly self-important purchasers."
+    }
+  },
+  "generated_provenance": "Original fan-written flavor text inspired by documented Potion Maker descriptions; not official game text.",
+  "generated_entry_ids": [
+    "0-13",
+    "0-14",
+    "0-15",
+    "0-16",
+    "0-17",
+    "0-18",
+    "0-19",
+    "0-20",
+    "0-21",
+    "0-22",
+    "0-23",
+    "0-24",
+    "1-0",
+    "1-1",
+    "1-2",
+    "1-3",
+    "1-4",
+    "1-5",
+    "1-6",
+    "1-7",
+    "1-8",
+    "1-9",
+    "1-10",
+    "1-11",
+    "1-12",
+    "1-13",
+    "1-14",
+    "1-15",
+    "1-16",
+    "1-17",
+    "1-18",
+    "1-19",
+    "1-20",
+    "1-21",
+    "1-22",
+    "1-23",
+    "1-24",
+    "2-0",
+    "2-1",
+    "2-2",
+    "2-3",
+    "2-4",
+    "2-5",
+    "2-6",
+    "2-7",
+    "2-8",
+    "2-9",
+    "2-10",
+    "2-11",
+    "2-12",
+    "2-13",
+    "2-14",
+    "2-15",
+    "2-16",
+    "2-17",
+    "2-18",
+    "2-19",
+    "2-20",
+    "2-21",
+    "2-22",
+    "2-23",
+    "2-24"
+  ]
+}
