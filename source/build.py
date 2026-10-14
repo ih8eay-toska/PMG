@@ -4,7 +4,7 @@ import json,base64,html
 ROOT=Path(__file__).resolve().parent.parent
 manifest=json.loads((ROOT/'asset-manifest.json').read_text(encoding='utf-8'))
 assets={}
-used={'Pio_Main.jpg','Default_Costume.png','Neet_Portrait.png','DolburPortrait.png','TiramiMain.png','Main_Theme.ogg','EnhancementFailureProtection.png','EnhancementBonus.png','SellBonus.png'}
+used={'Pio_Main.jpg','Default_Costume.png','Neet_Portrait.png','DolburPortrait.png','TiramiMain.png','Main_Theme.ogg','EnhancementFailureProtection.png','EnhancementBonus.png','SellBonus.png','Gem.png','Nyan-Ticket.png'}
 fairies=json.loads((ROOT/'data/fairies.json').read_text(encoding='utf-8'))
 used.update(f['image'] for f in fairies['entries'])
 used.update(['ClairePortrait.png', 'LukePortrait.png', 'PiriaPortrait.png', 'CharlottePortraitNormal.png', 'DemianPortrait.png', 'DaisyPortrait.png', 'KylePortrait.png', 'CharlottePortraitHappy.png', 'CharlottePortraitDisappointed.png', 'DaisyPortraitHappy.png', 'DaisyPortraitDisappointed.png'])
