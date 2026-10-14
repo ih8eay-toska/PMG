@@ -11,7 +11,7 @@ Open **Asset-Library.html** to browse the local asset archive. Keep it beside th
 - Ingredients pass at evenly spaced intervals. An empty cauldron uses constant conveyor speed; Material Emission increases speed only while brewing. Ingredient selection has no highest-tier bias.
 - Enhancement failure protection, +10 percentage-point enhancement charges, and double-sale charges activate automatically.
 - Neet, Dolbur, and Tirami arrive randomly with potion orders. Accept starts a one-minute preparation deadline. Delivery starts a separate one-minute reward timer. Expiration grants no reward and keeps the potion. Original portraits and explicitly fan-written normal-quest responses accompany the phases.
-- Local theme music, a potion collection browser, persistent quest timers, and migration of previous prototype saves.
+- Local theme music, a book with potion and material sections, persistent quest timers, and migration of previous prototype saves.
 
 Keyboard: **1–6** collect the first six visible ingredients; **E** enhances; **S** sells. Catch any passing ingredient to start; the belt continues after selling, failed enhancement, and quest delivery.
 
