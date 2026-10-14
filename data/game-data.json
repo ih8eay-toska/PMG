@@ -2422,7 +2422,7 @@
     "selling_bonus": 0.2,
     "pushcat_level": 15
   },
-  "quest_reward_delay_ms": 60000,
+  "quest_reward_delay_ms": 0,
   "powerups": {
     "protection": {
       "image": "EnhancementFailureProtection.png",

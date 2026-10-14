@@ -42,7 +42,7 @@ for family_index,identifier in enumerate(['Life','Mana','Stamina']):
         if not complete:notes.append('Incomplete source data; unknown enhancement steps cannot be attempted.')
         recipes.append({'name':name,'base':base,'max_level':max_level,'multipliers':multipliers,'chances':chances,'image':f'{identifier}_Potion{tier+1}.png','complete':complete,'notes':notes})
     families.append({'id':identifier,'label':identifier,'color':['#e98d9c','#83b6dc','#ddbf66'][family_index],'materials':material,'recipes':recipes})
-data={'schema':1,'source_pages':['https://potionmaker.fandom.com/wiki/Materials','https://potionmaker.fandom.com/wiki/Potion'],'families':families,'limits':{'material_tiers':25,'emission_level':20,'luck_bonus':.10345,'selling_bonus':.2,'pushcat_level':15},'quest_reward_delay_ms':60000,'powerups':{'protection':{'image':'EnhancementFailureProtection.png','bundle':5},'enhancement':{'image':'EnhancementBonus.png','bundle':10,'chance_bonus':.1},'selling':{'image':'SellBonus.png','bundle':2,'multiplier':2}}}
+data={'schema':1,'source_pages':['https://potionmaker.fandom.com/wiki/Materials','https://potionmaker.fandom.com/wiki/Potion'],'families':families,'limits':{'material_tiers':25,'emission_level':20,'luck_bonus':.10345,'selling_bonus':.2,'pushcat_level':15},'quest_reward_delay_ms':0,'powerups':{'protection':{'image':'EnhancementFailureProtection.png','bundle':5},'enhancement':{'image':'EnhancementBonus.png','bundle':10,'chance_bonus':.1},'selling':{'image':'SellBonus.png','bundle':2,'multiplier':2}}}
 # Reviewed supplementary values are applied after parsing the original wiki.
 supplement_path=ROOT/'data/potion-supplements.json'
 if supplement_path.exists():

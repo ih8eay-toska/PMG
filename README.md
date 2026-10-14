@@ -10,8 +10,8 @@ Open **Asset-Library.html** to browse the local asset archive. Keep it beside th
 - Material progression now extends to 25 tiers in each family, with recorded values and family-specific enhancement tables. Unlocked materials appear randomly on the conveyor, including before brewing starts.
 - Ingredients pass at evenly spaced intervals. An empty cauldron uses constant conveyor speed; Material Emission increases speed only while brewing. Ingredient selection has no highest-tier bias.
 - Enhancement failure protection, +10 percentage-point enhancement charges, and double-sale charges activate automatically.
-- Neet, Dolbur, and Tirami arrive randomly with potion orders. Accept starts a one-minute preparation deadline. Delivery starts a separate one-minute reward timer. Expiration grants no reward and keeps the potion. Original portraits and explicitly fan-written normal-quest responses accompany the phases.
-- Local theme music, a book with potion and material sections, persistent quest timers, and migration of previous prototype saves.
+- Neet, Dolbur, and Tirami arrive randomly with potion orders. Accept starts a one-minute preparation deadline. Delivery grants the reward immediately. Expiration grants no reward and keeps the potion. Original portraits and explicitly fan-written normal-quest responses accompany the phases.
+- Local theme music, potion and material books, potion mastery achievements, persistent quest timers, and save migration.
 
 Keyboard: **1–6** collect the first six visible ingredients; **E** enhances; **S** sells. Catch any passing ingredient to start; the belt continues after selling, failed enhancement, and quest delivery.
 
@@ -45,9 +45,9 @@ Costume texture atlases are packed pieces, not immediately usable full-character
 
 See **research/MECHANICS.md** for sourced rules, uncertain behavior, and the next comparison work. The wiki is old and incomplete; this build is not verified against a specific iOS game version.
 
-Still provisional: upgrade costs/intermediate increments (retained at the player’s request), exact conveyor speed and emission scaling, uniform ingredient probabilities, sale rounding, enhancement duration, visitor scheduling intervals and potion-order distributions. The player confirmed additive ingredient values, randomized arrivals, and one-minute accepted-quest deadlines. Rewards and the separate one-minute reward delay are sourced from the wiki. All normal-quest response lines in data/visitor-dialogue.json are labeled fan-written because complete original transcripts are unavailable.
+Still provisional: upgrade costs/intermediate increments (retained at the player’s request), exact conveyor speed and emission scaling, uniform ingredient probabilities, sale rounding, enhancement duration, visitor scheduling intervals and potion-order distributions. The player confirmed additive ingredient values, randomized arrivals, and one-minute accepted-quest deadlines. Reward amounts are sourced from the wiki; this prototype grants them immediately as requested. All normal-quest response lines in data/visitor-dialogue.json are labeled fan-written because complete original transcripts are unavailable.
 
-Fairies can now be equipped one at a time. Repeats raise a fairy by one level each, to level 10; because the wiki does not publish duplicate EXP thresholds, this is a simple estimate. Supported passive effects change ingredient family odds/value, potion enhancement chance/multiplier/sale value, enhancement failure protection chance, and visitor timers. Lv 1-to-10 values interpolate linearly where the wiki supplies both endpoints. Effects for enhancement animations, Pushcat/Blackcat, timed tickets, and quest material rates await those systems. Costumes and character animation rigs, rubies, event quests, challenges, and achievements are also not implemented.
+Fairies can now be equipped one at a time. Repeats raise a fairy by one level each, to level 10; because the wiki does not publish duplicate EXP thresholds, this is a simple estimate. Supported passive effects change ingredient family odds/value, potion enhancement chance/multiplier/sale value, enhancement failure protection chance, and visitor timers. Lv 1-to-10 values interpolate linearly where the wiki supplies both endpoints. Effects for enhancement animations, Pushcat/Blackcat, timed tickets, and quest material rates await those systems. Costumes and character animation rigs, rubies, event quests, and challenges are also not implemented.
 
 ## Source and rebuilding
 
@@ -63,7 +63,7 @@ Game/artwork credit: Sinsiroad and original artists. Music credit follows the ga
 
 ## Added visitors and fairy collection
 
-Claire, Luke, Piria, Charlotte, Demian, Daisy and Kyle join the three existing travelers. For this temporary personal-game mode, each added visitor offers a normal one-minute potion order and brings one uniformly random fairy from the 35 regular wiki fairies after the separate one-minute reward wait. Original portraits are bundled; Charlotte and Daisy use the archived happy/disappointed expressions. Existing Neet, Dolbur and Tirami powerup rewards remain unchanged.
+Claire, Luke, Piria, Charlotte, Demian, Daisy and Kyle join the three existing travelers. For this temporary personal-game mode, each added visitor offers a normal one-minute potion order and brings one uniformly random fairy from the 35 regular wiki fairies immediately after delivery. Original portraits are bundled; Charlotte and Daisy use the archived happy/disappointed expressions. Existing Neet, Dolbur and Tirami powerup rewards remain unchanged.
 
 The Fairies screen records owned types and duplicates, and lets you equip one fairy at a time. Each duplicate raises its inferred level by one, up to level 10; the wiki does not publish the exact EXP thresholds, so this is a simple estimate. Supported fairy boosts affect ingredient family odds/value, enhancement chance/multiplier, potion sale value, failure protection, and visitor timers. Some abilities still need absent systems such as enhancement animations, Pushcat/Blackcat, timed tickets, and quest material rates. Reward choice is frozen on delivery and saved, preventing rerolls or duplicate payouts on reload. Save schema 7 preserves older progress and in-flight rewards; old saves are backed up before migration.
 

@@ -24,9 +24,9 @@ assert.equal(g.state.travelers[0].deadline,0);g.collect(0,0);assert.equal(g.canD
 assert.equal(g.acceptQuest(0,30000),true);assert.equal(g.state.travelers[0].deadline,90000);assert.equal(g.acceptQuest(0,40000),false);
 assert.equal(g.canDeliver(0,89999),true);assert.equal(g.canDeliver(0,90000),false);
 const frozen=JSON.stringify(g.questRequirement(0));g.state.tiers[0]=24;assert.equal(JSON.stringify(g.questRequirement(0)),frozen);
-assert.equal(g.deliver(0,31000),true);assert.equal(g.state.potion,null);assert.equal(g.settle(90999).length,0);
-g=new PotionGame(sanitizeSave(JSON.parse(JSON.stringify(g.state))));assert.equal(g.settle(91000).length,1);
-assert.equal(g.state.powerups.protection,5);assert.equal(g.settle(92000).length,0);assert.equal(g.state.travelers[0].quests,1);
+assert.equal(g.deliver(0,31000),true);assert.equal(g.state.potion,null);assert.equal(g.state.travelers[0].phase,'complete');assert.equal(g.state.powerups.protection,5);assert.equal(g.state.travelers[0].quests,1);assert.equal(g.settle(90999).length,0);
+g=new PotionGame(sanitizeSave(JSON.parse(JSON.stringify(g.state))));assert.equal(g.settle(91000).length,0);
+assert.equal(g.state.powerups.protection,5);assert.equal(g.state.travelers[0].quests,1);
 assert.equal(g.state.travelers[0].phase,'complete');assert.equal(g.dismissVisitor(0,92000,()=>1),true);assert.equal(g.state.nextVisitorAt,152000);
 // Deadline survives a reload; failure neither pays a reward nor destroys the potion.
 g=new PotionGame();g.tick(1000,()=>0);g.tick(21000,()=>0);g.acceptQuest(0,22000);g.collect(0,0);
@@ -37,9 +37,9 @@ assert.equal(g.dismissVisitor(0,82000,()=>0),true);assert.equal(g.state.nextVisi
 // All three visitors can arrive and ask for any unlocked family, rather than a fixed assignment.
 for(const [roll,index]of [[0,0],[.4,4],[.9,9]]){g=new PotionGame();g.state.nextVisitorAt=1;g.tick(1,()=>roll);assert.equal(g.state.travelers[index].phase,'offer');}
 g=new PotionGame();g.state.tiers=[4,8,24];const req=g.randomRequirement(()=>.999);assert.equal(req.family,2);assert.equal(req.tier,24);assert.ok(req.level<FAMILIES[2].recipes[24].max_level);
-// Legacy reward timers are preserved and rewarded once, not turned into fresh orders.
+// Rewards already in transit in older saves are granted on the next settle.
 let v2={...INITIAL(),version:2,travelers:[{quests:2,readyAt:61000},{quests:0,readyAt:0},{quests:0,readyAt:0}]};
-g=new PotionGame(sanitizeSave(v2));assert.equal(g.state.travelers[0].phase,'returning');assert.equal(g.settle(61000).length,1);assert.equal(g.state.travelers[0].quests,3);assert.equal(g.settle(62000).length,0);
+g=new PotionGame(sanitizeSave(v2));assert.equal(g.state.travelers[0].phase,'returning');assert.equal(g.settle(1).length,1);assert.equal(g.state.travelers[0].quests,3);assert.equal(g.settle(62000).length,0);
 // Unbiased material pool, identical empty-cauldron speed at every emission level,
 // and spatially even emission when speed changes or an ingredient is collected.
 assert.equal(materialPool([0,1,2]).length,6);assert.deepEqual(materialPool([0,0,0]).map(x=>x.family),[0,1,2]);
