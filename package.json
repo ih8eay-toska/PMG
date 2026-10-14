@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "test": "node source/check-core.cjs && node source/check-storage.cjs && node source/check-build.cjs"
+  }
+}

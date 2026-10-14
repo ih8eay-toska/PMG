@@ -1,4 +1,4 @@
-# Potion Maker — local recreation, version 0.5
+# Potion Maker — local recreation, version 0.6
 
 Open **Potion-Maker.html** in Edge, Chrome, or Firefox. The playable game embeds its code, data, original icons, character portraits, and optional theme music. It needs no installation, server, account, or internet connection.
 
@@ -17,7 +17,7 @@ Keyboard: **1–6** collect the first six visible ingredients; **E** enhances; *
 
 ## Saving
 
-The same browser storage key is retained. Save schemas 1–6 migrate to schema 7; the original JSON is retained under a schema-specific backup key before migration. Accepted quest deadlines, requests in progress, equipped fairies, and in-transit rewards survive reloads. Coins, tiers, statistics, current potion, and existing fairy progress are preserved. The intermediate luck bonus has changed because this update uses a provisional progression toward the documented maximum.
+The same browser storage key is retained. Save schemas 1–7 migrate to schema 8; the original JSON is retained under a schema-specific backup key before migration. Accepted quest deadlines, requests in progress, equipped fairies, and in-transit rewards survive reloads. Coins, tiers, statistics, current potion, and existing fairy progress are preserved. The intermediate luck bonus has changed because this update uses a provisional progression toward the documented maximum.
 
 Use **Save tools → Export backup** before changing browsers, moving the HTML file, or clearing browser data. File URL storage behavior varies by browser. Imports validate data and ask before replacing progress. The asset folder is not the save-data location.
 
@@ -65,7 +65,7 @@ Game/artwork credit: Sinsiroad and original artists. Music credit follows the ga
 
 Claire, Luke, Piria, Charlotte, Demian, Daisy and Kyle join the three existing travelers. For this temporary personal-game mode, each added visitor offers a normal one-minute potion order and brings one uniformly random fairy from the 35 regular wiki fairies immediately after delivery. Original portraits are bundled; Charlotte and Daisy use the archived happy/disappointed expressions. Existing Neet, Dolbur and Tirami powerup rewards remain unchanged.
 
-The Fairies screen records owned types and duplicates, and lets you equip one fairy at a time. Each duplicate raises its inferred level by one, up to level 10; the wiki does not publish the exact EXP thresholds, so this is a simple estimate. Supported fairy boosts affect ingredient family odds/value, enhancement chance/multiplier, potion sale value, failure protection, and visitor timers. Some abilities still need absent systems such as enhancement animations, Pushcat/Blackcat, timed tickets, and quest material rates. Reward choice is frozen on delivery and saved, preventing rerolls or duplicate payouts on reload. Save schema 7 preserves older progress and in-flight rewards; old saves are backed up before migration.
+The Fairies screen records owned types and duplicates, and lets you equip one fairy at a time. Each duplicate raises its inferred level by one, up to level 10; the wiki does not publish the exact EXP thresholds, so this is a simple estimate. Supported fairy boosts affect ingredient family odds/value, enhancement chance/multiplier, potion sale value, failure protection, and visitor timers. Some abilities still need absent systems such as enhancement animations, Pushcat/Blackcat, timed tickets, and quest material rates. Reward choice is frozen on delivery and saved, preventing rerolls or duplicate payouts on reload. Save schema 8 preserves older progress and in-flight rewards; old saves are backed up before migration.
 
 ## Statistics
 
@@ -78,3 +78,11 @@ Schema 5 preserves earlier totals and starts detailed tracking at migration. Old
 Successful visitor orders now award EXP by potion family and material tier. Visitor levels follow the wiki's documented thresholds through level 12 and unlock all 35 documented normal requests at levels 1–10. Requests deduct their documented coin cost immediately, run on a persistent timer, and award recorded likeability plus the listed chance-based coin, ticket, powerup, or named-fairy rewards. Likeability is stored as an aggregate because the wiki does not say whether those points apply to Pio or Tia. The quest EXP table contains unknown entries; those are interpolated between the nearest documented values and labeled as estimates.
 
 Requests are available from the Request board after active visitors are dismissed. The original ruby menu and starting a request mid-quest are not implemented; visitors cannot arrive while another visitor is on a request. Event requests are also archived. Request reward odds are the wiki's base odds at the recommended level and are not adjusted for visitor level.
+
+## Save and regression repairs
+
+Schema 8 recognizes both earlier version-6 formats, retains legacy mastery records, and recovers fractional fairy-adjusted timestamps from older saves. New arrival/deadline timestamps are whole milliseconds. Imported request rewards must match the request definition and visitor levels must match EXP. Failure to write an optional migration backup no longer prevents a valid shop from loading.
+
+Return-duration fairy abilities now shorten newly started requests; instant potion-order rewards remain instant and existing request timers are unchanged.
+
+Run all Node checks with `npm test` (no dependency installation needed). The local CommonJS package boundary keeps these checks working inside a parent ES-module project. Checks cover core behavior, storage failure recovery and the compiled offline HTML.
