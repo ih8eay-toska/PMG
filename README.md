@@ -17,7 +17,7 @@ Keyboard: **1–6** collect the first six visible ingredients; **E** enhances; *
 
 ## Saving
 
-The same browser storage key is retained. Version 1 and 2 progress is migrated to version 3; the original JSON is retained under a schema-specific backup key before migration. Accepted quest deadlines and in-transit rewards survive reloads. Coins, tiers, statistics, and current potion are preserved. The intermediate luck bonus has changed because this update uses a provisional progression toward the documented maximum.
+The same browser storage key is retained. Save schemas 1–5 migrate to schema 6; the original JSON is retained under a schema-specific backup key before migration. Accepted quest deadlines, requests in progress, and in-transit rewards survive reloads. Coins, tiers, statistics, current potion, and existing fairy progress are preserved. The intermediate luck bonus has changed because this update uses a provisional progression toward the documented maximum.
 
 Use **Save tools → Export backup** before changing browsers, moving the HTML file, or clearing browser data. File URL storage behavior varies by browser. Imports validate data and ask before replacing progress. The asset folder is not the save-data location.
 
@@ -47,7 +47,7 @@ See **research/MECHANICS.md** for sourced rules, uncertain behavior, and the nex
 
 Still provisional: upgrade costs/intermediate increments (retained at the player’s request), exact conveyor speed and emission scaling, uniform ingredient probabilities, sale rounding, enhancement duration, visitor scheduling intervals and potion-order distributions. The player confirmed additive ingredient values, randomized arrivals, and one-minute accepted-quest deadlines. Rewards and the separate one-minute reward delay are sourced from the wiki. All normal-quest response lines in data/visitor-dialogue.json are labeled fan-written because complete original transcripts are unavailable.
 
-Archived but not implemented: requests, fairies and their effects, costumes and character animation rigs, Pushcat/Blackcat, rubies, events, challenges, and achievements. There is no claim that downloading those assets implements their systems.
+Still not implemented: fairy effects/equipping/levels, costumes and character animation rigs, Pushcat/Blackcat, rubies, event quests, challenges, and achievements. There is no claim that downloading those assets implements their systems.
 
 ## Source and rebuilding
 
@@ -72,3 +72,9 @@ The Fairies screen records owned types and duplicate counts. Fairy effects, equi
 The Statistics screen shows preserved lifetime totals plus detailed tracked counters for coins earned/spent, brews, level-1 sales, enhancement successes/failures, protection use, lost potions, upgrades, active visible play time, visitor offers/acceptance/delivery/failure/declines, collections, current upgrades and consumables. Tables break records down by family, all 75 potions and all ten visitors. The wiki Achievements categories provide the reference counters; unsupported systems display as unavailable rather than invented zeroes.
 
 Schema 5 preserves earlier totals and starts detailed tracking at migration. Older saves cannot reconstruct prior income, successes or per-potion activity; the screen explicitly labels the tracking date and partial history. Active play time excludes hidden-page and closed-page time. Autosave runs every 15 seconds as well as after actions and on pagehide.
+
+## Visitor progression and requests
+
+Successful visitor orders now award EXP by potion family and material tier. Visitor levels follow the wiki's documented thresholds through level 12 and unlock all 35 documented normal requests at levels 1–10. Requests deduct their documented coin cost immediately, run on a persistent timer, and award recorded likeability plus the listed chance-based coin, ticket, powerup, or named-fairy rewards. Likeability is stored as an aggregate because the wiki does not say whether those points apply to Pio or Tia. The quest EXP table contains unknown entries; those are interpolated between the nearest documented values and labeled as estimates.
+
+Requests are available from the Request board after active visitors are dismissed. The original ruby menu and starting a request mid-quest are not implemented; visitors cannot arrive while another visitor is on a request. Event requests are also archived. Request reward odds are the wiki's base odds at the recommended level and are not adjusted for visitor level.
