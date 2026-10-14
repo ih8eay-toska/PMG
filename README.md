@@ -86,3 +86,9 @@ Schema 8 recognizes both earlier version-6 formats, retains legacy mastery recor
 Return-duration fairy abilities now shorten newly started requests; instant potion-order rewards remain instant and existing request timers are unchanged.
 
 Run all Node checks with `npm test` (no dependency installation needed). The local CommonJS package boundary keeps these checks working inside a parent ES-module project. Checks cover core behavior, storage failure recovery and the compiled offline HTML.
+
+## Rendering and saves
+
+The workbench retains upgrade buttons, powerups, unchanged visitors and the current bottle between actions. Statistics reuse their rows and update the play clock separately. Conveyor accessibility labels change when visible slots change; its width is measured on resize. Rapid actions share a save write after 250 milliseconds; export, import, reset, page exit and hiding the page flush immediately. A forced browser or computer crash during that short window can lose the most recent action.
+
+Run `python source/rendering-qa.py`, open the generated `Rendering-QA.html`, and click **Run rendering checks**. It uses a separate disposable save and checks retained elements, timer updates, keyboard access, batched writes and the exit flush. It never reads or replaces the main game's save.
