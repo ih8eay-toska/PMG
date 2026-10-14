@@ -17,7 +17,7 @@ Keyboard: **1–6** collect the first six visible ingredients; **E** enhances; *
 
 ## Saving
 
-The same browser storage key is retained. Save schemas 1–5 migrate to schema 6; the original JSON is retained under a schema-specific backup key before migration. Accepted quest deadlines, requests in progress, and in-transit rewards survive reloads. Coins, tiers, statistics, current potion, and existing fairy progress are preserved. The intermediate luck bonus has changed because this update uses a provisional progression toward the documented maximum.
+The same browser storage key is retained. Save schemas 1–6 migrate to schema 7; the original JSON is retained under a schema-specific backup key before migration. Accepted quest deadlines, requests in progress, equipped fairies, and in-transit rewards survive reloads. Coins, tiers, statistics, current potion, and existing fairy progress are preserved. The intermediate luck bonus has changed because this update uses a provisional progression toward the documented maximum.
 
 Use **Save tools → Export backup** before changing browsers, moving the HTML file, or clearing browser data. File URL storage behavior varies by browser. Imports validate data and ask before replacing progress. The asset folder is not the save-data location.
 
@@ -47,7 +47,7 @@ See **research/MECHANICS.md** for sourced rules, uncertain behavior, and the nex
 
 Still provisional: upgrade costs/intermediate increments (retained at the player’s request), exact conveyor speed and emission scaling, uniform ingredient probabilities, sale rounding, enhancement duration, visitor scheduling intervals and potion-order distributions. The player confirmed additive ingredient values, randomized arrivals, and one-minute accepted-quest deadlines. Rewards and the separate one-minute reward delay are sourced from the wiki. All normal-quest response lines in data/visitor-dialogue.json are labeled fan-written because complete original transcripts are unavailable.
 
-Still not implemented: fairy effects/equipping/levels, costumes and character animation rigs, Pushcat/Blackcat, rubies, event quests, challenges, and achievements. There is no claim that downloading those assets implements their systems.
+Fairies can now be equipped one at a time. Repeats raise a fairy by one level each, to level 10; because the wiki does not publish duplicate EXP thresholds, this is a simple estimate. Supported passive effects change ingredient family odds/value, potion enhancement chance/multiplier/sale value, enhancement failure protection chance, and visitor timers. Lv 1-to-10 values interpolate linearly where the wiki supplies both endpoints. Effects for enhancement animations, Pushcat/Blackcat, timed tickets, and quest material rates await those systems. Costumes and character animation rigs, rubies, event quests, challenges, and achievements are also not implemented.
 
 ## Source and rebuilding
 
@@ -65,7 +65,7 @@ Game/artwork credit: Sinsiroad and original artists. Music credit follows the ga
 
 Claire, Luke, Piria, Charlotte, Demian, Daisy and Kyle join the three existing travelers. For this temporary personal-game mode, each added visitor offers a normal one-minute potion order and brings one uniformly random fairy from the 35 regular wiki fairies after the separate one-minute reward wait. Original portraits are bundled; Charlotte and Daisy use the archived happy/disappointed expressions. Existing Neet, Dolbur and Tirami powerup rewards remain unchanged.
 
-The Fairies screen records owned types and duplicate counts. Fairy effects, equipping, levels, event fairies and original requests/challenges are not active yet. Reward choice is frozen on delivery and saved, preventing rerolls or duplicate payouts on reload. Schema 4 preserves all old progress and in-flight original visitor rewards; raw older saves are backed up before migration.
+The Fairies screen records owned types and duplicates, and lets you equip one fairy at a time. Each duplicate raises its inferred level by one, up to level 10; the wiki does not publish the exact EXP thresholds, so this is a simple estimate. Supported fairy boosts affect ingredient family odds/value, enhancement chance/multiplier, potion sale value, failure protection, and visitor timers. Some abilities still need absent systems such as enhancement animations, Pushcat/Blackcat, timed tickets, and quest material rates. Reward choice is frozen on delivery and saved, preventing rerolls or duplicate payouts on reload. Save schema 7 preserves older progress and in-flight rewards; old saves are backed up before migration.
 
 ## Statistics
 
