@@ -93,3 +93,11 @@ Run all Node checks with `npm test` (no dependency installation needed). The loc
 The workbench retains upgrade buttons, powerups, unchanged visitors and the current bottle between actions. Statistics reuse their rows and update the play clock separately. Conveyor accessibility labels change when visible slots change; its width is measured on resize. Rapid actions share a save write after 250 milliseconds; export, import, reset, page exit and hiding the page flush immediately. A forced browser or computer crash during that short window can lose the most recent action.
 
 Run `python source/rendering-qa.py`, open the generated `Rendering-QA.html`, and click **Run rendering checks**. It uses a separate disposable save and checks retained elements, timer updates, keyboard access, batched writes and the exit flush. It never reads or replaces the main game's save.
+
+## Conveyor Pushcat tickets
+
+Each new conveyor slot has a 1/101 chance to contain one Pushcat ticket instead of an ingredient: about 100 ingredients per ticket on average, not a guaranteed interval. Ticket odds are independent of material tiers and fairy family-odds bonuses. Tickets share ingredient spacing and speed; click or use the corresponding 1–6 shortcut to collect +1 ticket without changing the potion or ingredient counters. Missed tickets leave the belt normally. Collected tickets use the existing balance and save format.
+
+Exact-ingredient mode offers materials only. Switching modes preserves the conveyor items and pauses its movement while manual selection is active, preventing free ticket rerolls and keeping moving slots out of manual selection. Importing a shop or starting a new shop resets the belt as before. This adds ticket income; the full economy has not been rebalanced around it.
+
+Browser regression: run `python source/conveyor-qa.py`, open `Conveyor-QA.html`, click **Prepare ticket test**, collect the ticket with the mouse or key 1, then click **Verify ticket test**. The fixture uses a separate save key and checks one-time rewards, unchanged potion/counters, manual mode isolation, mode-switch preservation and saved tickets.

@@ -44,7 +44,7 @@ g=new PotionGame(sanitizeSave(v2));assert.equal(g.state.travelers[0].phase,'retu
 // and spatially even emission when speed changes or an ingredient is collected.
 assert.equal(materialPool([0,1,2]).length,6);assert.deepEqual(materialPool([0,0,0]).map(x=>x.family),[0,1,2]);
 let belt=new MaterialConveyor(456,[0,0,0],()=>0),base=belt.speed(false,0);assert.equal(belt.speed(false,19),base);assert.ok(belt.speed(true,19)>belt.speed(true,0));
-const seen=new Set();const pool=materialPool([1,2,3]);let sequence=[];for(const m of pool){const start=[0,2,5][m.family];sequence.push((start+.5)/9,(m.tier+.5)/([1,2,3][m.family]+1));}let sample=0;belt=new MaterialConveyor(760,[1,2,3],()=>sequence[sample++%sequence.length]);belt.items.forEach(m=>seen.add(m.family+'-'+m.tier));assert.equal(seen.size,pool.length);
+const seen=new Set();const pool=materialPool([1,2,3]);let sequence=[];for(const m of pool){const start=[0,2,5][m.family];sequence.push(0,(start+.5)/9,(m.tier+.5)/([1,2,3][m.family]+1));}let sample=0;belt=new MaterialConveyor(760,[1,2,3],()=>sequence[sample++%sequence.length]);belt.items.forEach(m=>seen.add(m.family+'-'+m.tier));assert.equal(seen.size,pool.length);
 let slow=new MaterialConveyor(456,[0,0,0],()=>0),fast=new MaterialConveyor(456,[0,0,0],()=>0);slow.advance(1000,false,19);fast.advance(1000,true,19);assert.ok(fast.items[0].x<slow.items[0].x);
 belt=new MaterialConveyor(456,[0,0,0],()=>0);const before=belt.items[1].x;const taken=belt.take(belt.items[0].id);assert.ok(taken);assert.equal(belt.items[0].x,before);
 for(let i=0;i<300;i++){belt.advance(100,i>100,19);const items=belt.items;for(let j=1;j<items.length;j++){const gap=items[j].x-items[j-1].x;assert.ok(Math.abs(gap/76-Math.round(gap/76))<1e-8);assert.ok(gap>=76-1e-8);}}
@@ -133,3 +133,22 @@ for(const change of applied){
  assert.equal(loaded.state.potion.value,123.456*change.after[0]);
 }
 console.log('Passed: all 17 applied multiplier arrays and existing potion values survive reload.');
+
+// One ticket slot per 100 ingredient slots in a deterministic 101-spawn sample.
+const draws=[];for(let i=0;i<101;i++){draws.push(i/101);if(i<100)draws.push(0,0);}
+let draw=0;const mixed=new MaterialConveyor(7600,[0,0,0],()=>draws[draw++]);
+assert.equal(mixed.items.filter(m=>m.kind==='ticket').length,1);
+assert.equal(mixed.items.filter(m=>m.kind!=='ticket').length,100);
+for(let i=1;i<mixed.items.length;i++)assert.equal(mixed.items[i].x-mixed.items[i-1].x,76);
+const ticketsOnly=new MaterialConveyor(152,[24,24,24],()=>1,()=>({materialProbability:[100,0,0]}));
+assert.ok(ticketsOnly.items.every(m=>m.kind==='ticket'));
+const ticketId=ticketsOnly.items[1].id;
+ticketsOnly.advance(1000,true,2);assert.equal(ticketsOnly.items.find(m=>m.id===ticketId).x,76-38*1.24);
+g=new PotionGame();const freshBefore=JSON.parse(JSON.stringify(g.state));assert.equal(g.collectTicket(),true);
+assert.equal(g.state.tickets,1);assert.equal(g.state.potion,null);assert.equal(g.state.ingredients,freshBefore.ingredients);
+g.collect(2,0);const potionBefore=JSON.parse(JSON.stringify(g.state));const ticket=ticketsOnly.take(ticketId);
+assert.equal(ticket.kind,'ticket');assert.equal(g.collectTicket(),true);assert.equal(ticketsOnly.take(ticketId),null);
+assert.equal(g.state.tickets,2);assert.deepEqual(g.state.potion,potionBefore.potion);assert.deepEqual(g.state.metrics,potionBefore.metrics);
+assert.deepEqual(sanitizeSave(JSON.parse(JSON.stringify(g.state))),g.state);
+g.state.tickets=Number.MAX_SAFE_INTEGER;assert.equal(g.collectTicket(),false);
+console.log('Passed: 100:1 ingredient/ticket spawning, shared spacing/speed, one-time removal, isolated ticket rewards and save round trip.');
