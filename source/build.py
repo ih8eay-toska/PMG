@@ -26,6 +26,19 @@ for record in manifest['assets']:
 template=(ROOT/'source/index.template.html').read_text(encoding='utf-8')
 for token,value in [('__ASSETS__',json.dumps(assets)),('__GAME_DATA__',(ROOT/'data/game-data.json').read_text(encoding='utf-8')),('__COSTUME_DATA__',(ROOT/'data/costumes.json').read_text(encoding='utf-8')),('__FLAVOR_DATA__',(ROOT/'data/flavor-text.json').read_text(encoding='utf-8')),('__MATERIAL_TEXT__',(ROOT/'data/material-descriptions.json').read_text(encoding='utf-8')),('__VISITOR_DIALOGUE__',(ROOT/'data/visitor-dialogue.json').read_text(encoding='utf-8')),('__FAIRY_DATA__',(ROOT/'data/fairies.json').read_text(encoding='utf-8')),('__ACHIEVEMENT_LORE__',(ROOT/'data/achievement-lore.json').read_text(encoding='utf-8')),('__STORAGE__',(ROOT/'source/storage.js').read_text(encoding='utf-8')),('__CORE__',(ROOT/'source/core.js').read_text(encoding='utf-8')),('__APP__',(ROOT/'source/app.js').read_text(encoding='utf-8'))]:template=template.replace(token,value)
 template=template.replace('__ACHIEVEMENT_LORE__',(ROOT/'data/achievement-lore.json').read_text(encoding='utf-8'))
+pio_root=ROOT/'assets/live2d/Pio'
+data_url=lambda path,mime:'data:'+mime+';base64,'+base64.b64encode(path.read_bytes()).decode()
+pio_settings=json.loads((pio_root/'index.json').read_text(encoding='utf-8'))
+pio_settings['model']=data_url(pio_root/'model.moc','application/octet-stream')
+for group in pio_settings['motions'].values():
+    for motion in group:motion['file']=data_url(pio_root/motion['file'],'application/octet-stream')
+for group,filename in [('success','Success.mtn'),('failure','Fail.mtn')]:
+    pio_settings['motions'][group]=[{'file':data_url(pio_root/'motions'/filename,'application/octet-stream')}]
+pio_textures={normalized(p.stem+'.png'):data_url(p,'image/webp') for p in (pio_root/'textures').glob('*.webp')}
+pio_scripts=''.join('<script data-pio-runtime>'+ (ROOT/'assets/live2d/vendor'/name).read_text(encoding='utf-8').replace('</script','<\\/script')+'</script>' for name in ['pixi.min.js','live2d.min.js','cubism2.min.js'])
+pio_scripts+='<script data-pio-runtime>const PIO_DATA='+json.dumps({'settings':pio_settings,'textures':pio_textures})+';</script>'
+pio_scripts+='<script data-pio-runtime>'+(ROOT/'source/pio.js').read_text(encoding='utf-8')+'</script>'
+template=template.replace('</body>',pio_scripts+'</body>')
 (ROOT/'Potion-Maker.html').write_text(template,encoding='utf-8')
 cards=[]
 for r in manifest['assets']:
