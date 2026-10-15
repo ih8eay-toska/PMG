@@ -11,3 +11,5 @@ Browser libraries (vendored, no CDN requests during play):
 - Legacy Cubism 2 core: https://github.com/dylanNew/live2d/blob/master/webgl/Live2D/lib/live2d.min.js (Live2D proprietary runtime; retain its applicable terms).
 
 Pio renders at 30 FPS and pauses while the page is hidden. A failed WebGL/model load leaves the portrait visible. Success and failure motions play after enhancement attempts.
+
+Tia uses her default outfit from the same model repository (Potion-Maker/Tia), with lossless WebP texture and idle/success/failure motions embedded offline. The character picker uses the existing Slider-characters artwork and remembers Pio/Tia selection in local browser storage under pmg-brewer-character. Pio wardrobe ownership and game progress are shared and preserved when switching.

@@ -24,3 +24,10 @@ assert.equal(Object.keys(pio.textures).length,48);assert.ok(Object.values(pio.te
 for(const group of Object.values(pio.settings.motions))for(const motion of group)assert.ok(motion.file.startsWith("data:"));
 assert.equal(pioScripts[4].replace(/\r\n/g,"\n").trim(),fs.readFileSync(path.join(root,"source/pio.js"),"utf8").replace(/\r\n/g,"\n").trim());
 console.log("Passed: offline Pio model, 48 wardrobe textures, motions, runtime syntax and current controller embedded.");
+
+const tia=vm.runInContext('TIA_DATA',pioContext);
+assert.ok(tia.model.startsWith('data:application/octet-stream;base64,'));
+assert.ok(tia.textures.length===1&&tia.textures[0].startsWith('data:image/webp;base64,'));
+for(const group of Object.values(tia.motions))for(const motion of group)assert.ok(motion.file.startsWith('data:'));
+assert.ok(keys.has(normalize('Tia.png'))&&keys.has(normalize('Slider-characters.png')));
+console.log('Passed: Tia rig, default outfit, animations, fallback and character selector artwork embedded offline.');

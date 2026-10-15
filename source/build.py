@@ -13,6 +13,8 @@ used.add('CostumeIcon.png')
 used.add('Game_icon.png')
 used.add('AchievementIcon.png')
 used.add('Coin.png')
+used.add('Contest.png')
+used.update(['Tia.png','Slider-characters.png'])
 used.update(['ClairePortrait.png', 'LukePortrait.png', 'PiriaPortrait.png', 'CharlottePortraitNormal.png', 'DemianPortrait.png', 'DaisyPortrait.png', 'KylePortrait.png', 'CharlottePortraitHappy.png', 'CharlottePortraitDisappointed.png', 'DaisyPortraitHappy.png', 'DaisyPortraitDisappointed.png'])
 for f in ['Life','Mana','Stamina']:
     used.update(f'{f}_{kind}{tier}.png' for kind in ['Material','Potion'] for tier in range(1,26))
@@ -36,7 +38,15 @@ for group,filename in [('success','Success.mtn'),('failure','Fail.mtn')]:
     pio_settings['motions'][group]=[{'file':data_url(pio_root/'motions'/filename,'application/octet-stream')}]
 pio_textures={normalized(p.stem+'.png'):data_url(p,'image/webp') for p in (pio_root/'textures').glob('*.webp')}
 pio_scripts=''.join('<script data-pio-runtime>'+ (ROOT/'assets/live2d/vendor'/name).read_text(encoding='utf-8').replace('</script','<\\/script')+'</script>' for name in ['pixi.min.js','live2d.min.js','cubism2.min.js'])
-pio_scripts+='<script data-pio-runtime>const PIO_DATA='+json.dumps({'settings':pio_settings,'textures':pio_textures})+';</script>'
+tia_root=ROOT/'assets/live2d/Tia'
+tia_settings=json.loads((tia_root/'index.json').read_text(encoding='utf-8'))
+tia_settings['model']=data_url(tia_root/'model.moc','application/octet-stream')
+for group in tia_settings['motions'].values():
+    for motion in group:motion['file']=data_url(tia_root/motion['file'],'application/octet-stream')
+for group,filename in [('success','Success.mtn'),('failure','Fail.mtn')]:
+    tia_settings['motions'][group]=[{'file':data_url(tia_root/'motions'/filename,'application/octet-stream')}]
+tia_settings['textures']=[data_url(tia_root/'textures/default-costume.webp','image/webp')]
+pio_scripts+='<script data-pio-runtime>const PIO_DATA='+json.dumps({'settings':pio_settings,'textures':pio_textures})+';const TIA_DATA='+json.dumps(tia_settings)+';</script>'
 pio_scripts+='<script data-pio-runtime>'+(ROOT/'source/pio.js').read_text(encoding='utf-8')+'</script>'
 template=template.replace('</body>',pio_scripts+'</body>')
 (ROOT/'Potion-Maker.html').write_text(template,encoding='utf-8')
