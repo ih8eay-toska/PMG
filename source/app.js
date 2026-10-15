@@ -1,5 +1,6 @@
 const $=id=>document.getElementById(id),KEY='pmg-offline-v1';
 let game=new PotionGame(),saveOK=true,saveBlocked=false,catalogFamily=0,catalogView='potions',achievementFamily=0,requestTraveler=0,requestChoice=0;
+const THEME_KEY='pmg-theme-v1';function applyTheme(theme){document.documentElement.dataset.theme=theme;const button=$('theme-toggle');button.textContent=theme==='dark'?'Light mode':'Dark mode';button.setAttribute('aria-label',`Switch to ${theme==='dark'?'light':'dark'} mode`);button.setAttribute('aria-pressed',String(theme==='dark'));}let initialTheme='light';try{if(localStorage.getItem(THEME_KEY)==='dark')initialTheme='dark';}catch{}applyTheme(initialTheme);$('theme-toggle').onclick=()=>{const theme=document.documentElement.dataset.theme==='dark'?'light':'dark';applyTheme(theme);try{localStorage.setItem(THEME_KEY,theme);}catch{}};
 function art(key){return ASSETS[key]||ASSETS[Object.keys(ASSETS).find(k=>k.toLowerCase().replace(/[_ -]/g,'')===key.toLowerCase().replace(/[_ -]/g,''))]||'';}
 const stored=loadStoredGame(localStorage,KEY);game=stored.game;saveBlocked=stored.blocked;saveOK=!stored.warning;$('save-status').textContent=stored.warning||'Saved on this device';
 
