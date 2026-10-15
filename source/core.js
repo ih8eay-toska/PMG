@@ -175,7 +175,7 @@ function randomIndex(length,random=Math.random){return Math.min(length-1,Math.ma
 function materialPool(tiers){return tiers.flatMap((top,family)=>Array.from({length:top+1},(_,tier)=>({family,tier})));}
 // Spatial emission keeps gaps equal at every speed, including after catches.
 class MaterialConveyor{
- constructor(width,tiers,random=Math.random,effects=()=>({})){this.width=width;this.tiers=tiers;this.random=random;this.effects=effects;this.spacing=76;this.baseSpeed=38;this.serial=0;this.items=[];for(let x=0;x<=width;x+=this.spacing)this.spawn(x);this.untilSpawn=this.items.at(-1).x+this.spacing-width;}
+ constructor(width,tiers,random=Math.random,effects=()=>({})){this.width=width;this.tiers=tiers;this.random=random;this.effects=effects;this.spacing=76;this.baseSpeed=76;this.serial=0;this.items=[];for(let x=0;x<=width;x+=this.spacing)this.spawn(x);this.untilSpawn=this.items.at(-1).x+this.spacing-width;}
  spawn(x){if(this.random()>=100/101){this.items.push({kind:'ticket',x,id:this.serial++});return;}const bonus=this.effects()?.materialProbability||[0,0,0],weights=this.tiers.map((top,f)=>(top+1)*(1+(bonus[f]||0)));let roll=this.random()*weights.reduce((a,b)=>a+b,0),family=0;while(family<weights.length-1&&roll>=weights[family]){roll-=weights[family];family++;}const m={family,tier:randomIndex(this.tiers[family]+1,this.random)};this.items.push({...m,x,id:this.serial++});}
  speed(brewing,emissionLevel){return this.baseSpeed*(brewing?1+emissionLevel*.12:1);}
  advance(ms,brewing,emissionLevel,width=this.width){if(width!==this.width){const shift=width-this.width;this.items.forEach(m=>m.x+=shift);this.width=width;}
