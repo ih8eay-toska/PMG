@@ -18,7 +18,7 @@ Keyboard: **1–6** collect the first six visible ingredients; **E** enhances; *
 
 ## Saving
 
-The same browser storage key is retained. Save schemas 1–7 migrate to schema 8; the original JSON is retained under a schema-specific backup key before migration. Accepted quest deadlines, requests in progress, equipped fairies, and in-transit rewards survive reloads. Coins, tiers, statistics, current potion, and existing fairy progress are preserved. The intermediate luck bonus has changed because this update uses a provisional progression toward the documented maximum.
+The same browser storage key is retained. Save schemas 1–9 migrate to schema 10; the original JSON is retained under a schema-specific backup key before migration. Accepted quest deadlines, requests in progress, equipped fairies, and in-transit rewards survive reloads. Coins, tiers, statistics, current potion, and existing fairy progress are preserved. The intermediate luck bonus has changed because this update uses a provisional progression toward the documented maximum.
 
 Use **Save tools → Export backup** before changing browsers, moving the HTML file, or clearing browser data. File URL storage behavior varies by browser. Imports validate data and ask before replacing progress. The asset folder is not the save-data location.
 
@@ -48,7 +48,7 @@ See **research/MECHANICS.md** for sourced rules, uncertain behavior, and the nex
 
 Still provisional: upgrade costs/intermediate increments (retained at the player’s request), exact conveyor speed and emission scaling, uniform ingredient probabilities, sale rounding, enhancement duration, visitor scheduling intervals and potion-order distributions. The player confirmed additive ingredient values, randomized arrivals, and one-minute accepted-quest deadlines. Reward amounts are sourced from the wiki; this prototype grants them immediately as requested. All normal-quest response lines in data/visitor-dialogue.json are labeled fan-written because complete original transcripts are unavailable.
 
-Fairies can now be equipped one at a time. Repeats raise a fairy by one level each, to level 10; because the wiki does not publish duplicate EXP thresholds, this is a simple estimate. Supported passive effects change ingredient family odds/value, potion enhancement chance/multiplier/sale value, enhancement failure protection chance, and visitor timers. Lv 1-to-10 values interpolate linearly where the wiki supplies both endpoints. Effects for enhancement animations, Pushcat/Blackcat, timed tickets, and quest material rates await those systems. Costumes and character animation rigs, rubies, event quests, and challenges are also not implemented.
+Costume portraits can now be bought for 1 ruby each and freely equipped from the Costume shop; ownership and the active outfit are saved. The initial outfit is free. Fairies can now be equipped one at a time. Repeats raise a fairy by one level each, to level 10; because the wiki does not publish duplicate EXP thresholds, this is a simple estimate. Supported passive effects change ingredient family odds/value, potion enhancement chance/multiplier/sale value, enhancement failure protection chance, and visitor timers. Lv 1-to-10 values interpolate linearly where the wiki supplies both endpoints. Effects for enhancement animations, Pushcat/Blackcat, timed tickets, and quest material rates await those systems. Character animation rigs, event quests, and challenges are not implemented.
 
 ## Source and rebuilding
 
@@ -101,3 +101,4 @@ Each new conveyor slot has a 1/101 chance to contain one Pushcat ticket instead 
 Exact-ingredient mode offers materials only. Switching modes preserves the conveyor items and pauses its movement while manual selection is active, preventing free ticket rerolls and keeping moving slots out of manual selection. Importing a shop or starting a new shop resets the belt as before. This adds ticket income; the full economy has not been rebalanced around it.
 
 Browser regression: run `python source/conveyor-qa.py`, open `Conveyor-QA.html`, click **Prepare ticket test**, collect the ticket with the mouse or key 1, then click **Verify ticket test**. The fixture uses a separate save key and checks one-time rewards, unchanged potion/counters, manual mode isolation, mode-switch preservation and saved tickets.
+

@@ -1,4 +1,6 @@
 const DATA = typeof GAME_DATA !== 'undefined' ? GAME_DATA : require('../data/game-data.json');
+const COSTUMES = typeof COSTUME_DATA !== 'undefined' ? COSTUME_DATA : require('../data/costumes.json');
+const COSTUME_IDS=new Set(COSTUMES.entries.map(c=>c.id));
 const FAMILIES=DATA.families;
 const FAIRIES=(typeof FAIRY_DATA!=='undefined'?FAIRY_DATA:require('../data/fairies.json')).entries;
 const FAIRY_IDS=new Set(FAIRIES.map(f=>f.id));
@@ -54,17 +56,18 @@ const RECIPE_COUNTERS=['started','sold','sales','best','enhancements','failures'
 const freshRecipeStats=()=>Object.fromEntries(RECIPE_COUNTERS.map(k=>[k,0]));
 const freshVisitStats=()=>({offered:0,accepted:0,delivered:0,failed:0,declined:0});
 const freshMetrics=()=>({...Object.fromEntries(METRIC_COUNTERS.map(k=>[k,0])),since:Date.now(),historyPartial:false,ingredientsByFamily:[0,0,0],powerupsUsed:{protection:0,enhancement:0,selling:0},recipes:{},visitors:Object.fromEntries(TRAVELERS.map(t=>[t.id,freshVisitStats()]))});
-const INITIAL=()=>({version:9,coins:0,tickets:0,rubies:0,rubyUpgrades:{fortune:0,value:0,materials:0},likeability:0,requestCoinsSpent:0,tiers:[0,0,0],luck:0,price:0,speed:0,potion:null,sold:0,failed:0,best:0,ingredients:0,powerups:{protection:0,enhancement:0,selling:0},travelers:TRAVELERS.map(freshTraveler),request:null,nextVisitorAt:0,metrics:freshMetrics(),fairies:{},activeFairyId:null,discovered:[],selected:[0,0,0]});
+const INITIAL=()=>({version:10,coins:0,tickets:0,rubies:0,rubyUpgrades:{fortune:0,value:0,materials:0},costumes:[COSTUMES.default],activeCostumeId:COSTUMES.default,likeability:0,requestCoinsSpent:0,tiers:[0,0,0],luck:0,price:0,speed:0,potion:null,sold:0,failed:0,best:0,ingredients:0,powerups:{protection:0,enhancement:0,selling:0},travelers:TRAVELERS.map(freshTraveler),request:null,nextVisitorAt:0,metrics:freshMetrics(),fairies:{},activeFairyId:null,discovered:[],selected:[0,0,0]});
 const finite=x=>typeof x==='number'&&Number.isFinite(x)&&x>=0&&x<=Number.MAX_VALUE;
 const integer=(x,max)=>Number.isInteger(x)&&x>=0&&x<=max;
 function sanitizeSave(data){
- if(!data||![1,2,3,4,5,6,7,8,9].includes(data.version))throw Error('This save is not compatible.');
+ if(!data||![1,2,3,4,5,6,7,8,9,10].includes(data.version))throw Error('This save is not compatible.');
  const s=INITIAL();
  const legacyMastery=data.version===6&&data.request===undefined&&data.mastery!==undefined;
  const hasRequests=data.version>=6&&!legacyMastery;
  function saveTime(value){if(!finite(value)||value>8640000000000000||(data.version>=8&&!Number.isInteger(value)))throw Error('Invalid save timestamp.');return Math.round(value);}
 
  for(const k of ['coins','best']){if(!finite(data[k]))throw Error('Invalid currency.');s[k]=data[k];}if(hasRequests){if(!finite(data.tickets)||!Number.isInteger(data.tickets)||!integer(data.likeability,1e9)||!finite(data.requestCoinsSpent))throw Error('Invalid request rewards.');s.tickets=data.tickets;s.likeability=data.likeability;s.requestCoinsSpent=data.requestCoinsSpent;}if(data.version>=8&&data.rubies!==undefined){if(!finite(data.rubies)||!Number.isInteger(data.rubies))throw Error('Invalid ruby balance.');s.rubies=data.rubies;}if(data.version>=9){if(!data.rubyUpgrades||typeof data.rubyUpgrades!=='object'||Array.isArray(data.rubyUpgrades))throw Error('Invalid ruby upgrades.');for(const k of Object.keys(RUBY_UPGRADES)){if(!integer(data.rubyUpgrades[k],RUBY_UPGRADES[k].max))throw Error('Invalid ruby upgrades.');s.rubyUpgrades[k]=data.rubyUpgrades[k];}}
+ if(data.version>=10){if(!Array.isArray(data.costumes)||!data.costumes.length||data.costumes.length>COSTUME_IDS.size||data.costumes.some(id=>typeof id!=='string'||!COSTUME_IDS.has(id))||new Set(data.costumes).size!==data.costumes.length||!data.costumes.includes(data.activeCostumeId))throw Error('Invalid costume collection.');s.costumes=[...data.costumes];s.activeCostumeId=data.activeCostumeId;}
  for(const k of ['sold','failed','ingredients']){if(!integer(data[k],Number.MAX_SAFE_INTEGER))throw Error('Invalid statistics.');s[k]=data[k];}
  if(!Array.isArray(data.tiers)||data.tiers.length!==3||data.tiers.some(x=>!integer(x,data.version===1?2:24)))throw Error('Invalid ingredient upgrades.');s.tiers=[...data.tiers];
  for(const[k,max]of [['luck',10],['price',4],['speed',19]]){if(!integer(data[k],max))throw Error('Invalid upgrades.');s[k]=data[k];}
@@ -152,6 +155,8 @@ class PotionGame{
  upgradeInfo(key){const s=this.state;if(/^tier[0-2]$/.test(key)){const i=Number(key.slice(4)),level=s.tiers[i];return{level,max:24,cost:Math.round(60*3**level),displayLevel:level+1,displayMax:25};}const limits={luck:10,price:4,speed:19};if(!(key in limits))return null;const level=s[key];return{level,max:limits[key],cost:Math.round(({luck:80,price:90,speed:70}[key])*2**level),displayLevel:key==='speed'?level+1:level,displayMax:key==='speed'?20:limits[key]};}
  rubyUpgradeInfo(key){const meta=RUBY_UPGRADES[key];if(!meta)return null;const level=this.state.rubyUpgrades[key];return{...meta,level,cost:meta.base*(level+1)};}
  buyRubyUpgrade(key){const s=this.state,u=this.rubyUpgradeInfo(key);if(!u||u.level>=u.max||s.rubies<u.cost)return false;s.rubies-=u.cost;s.rubyUpgrades[key]++;s.metrics.upgradesBought++;return true;}
+ buyCostume(id){const s=this.state;if(!COSTUME_IDS.has(id)||s.costumes.includes(id)||s.rubies<COSTUMES.cost)return false;s.rubies-=COSTUMES.cost;s.costumes.push(id);s.activeCostumeId=id;return true;}
+ equipCostume(id){if(!COSTUME_IDS.has(id)||!this.state.costumes.includes(id))return false;this.state.activeCostumeId=id;return true;}
  rollFairy(random=Math.random){const s=this.state;if(s.tickets<FAIRY_DRAW_COST)return null;const pool=FAIRIES.filter(f=>this.fairyLevel(f.id)<10);if(!pool.length)return null;s.tickets-=FAIRY_DRAW_COST;const fairy=pool[randomIndex(pool.length,random)];s.fairies[fairy.id]=Math.min(1e9,(s.fairies[fairy.id]||0)+1);return fairy;}
  buy(key){const s=this.state,u=this.upgradeInfo(key);if(!u||u.level>=u.max||s.coins<u.cost)return false;s.coins-=u.cost;s.metrics.coinsSpent=Math.min(1e300,s.metrics.coinsSpent+u.cost);s.metrics.upgradesBought++;if(key.startsWith('tier')){const i=Number(key.slice(4));s.tiers[i]++;s.selected[i]=s.tiers[i];}else s[key]++;return true;}
  statistics(){const s=this.state;return{coins:s.coins,sold:s.sold,ingredients:s.ingredients,failed:s.failed,best:s.best,brewedTypes:s.discovered.length,unlockedRecipes:s.tiers.reduce((a,b)=>a+b+1,0),fairyTypes:Object.keys(s.fairies).length,fairiesReceived:Object.values(s.fairies).reduce((a,b)=>a+b,0),questsCompleted:s.travelers.reduce((a,t)=>a+t.quests,0),upgradesOwned:s.tiers.reduce((a,b)=>a+b,0)+s.luck+s.price+s.speed,metrics:s.metrics};}
@@ -184,4 +189,4 @@ class MaterialConveyor{
  }
  take(id){const i=this.items.findIndex(m=>m.id===id);return i<0?null:this.items.splice(i,1)[0];}
 }
-if(typeof module!=='undefined')module.exports={PotionGame,MaterialConveyor,materialPool,FAMILIES,TRAVELERS,FAIRIES,REQUESTS,LEVEL_EXP,INITIAL,sanitizeSave,DATA,QUEST_DURATION_MS,RUBY_UPGRADES,FAIRY_DRAW_COST};
+if(typeof module!=='undefined')module.exports={PotionGame,MaterialConveyor,materialPool,FAMILIES,TRAVELERS,FAIRIES,REQUESTS,LEVEL_EXP,INITIAL,sanitizeSave,DATA,QUEST_DURATION_MS,RUBY_UPGRADES,FAIRY_DRAW_COST,COSTUMES};

@@ -1,0 +1,326 @@
+{
+  "default": "Default_Costume.png",
+  "cost": 1,
+  "entries": [
+    {
+      "id": "Default_Costume.png",
+      "name": "Default"
+    },
+    {
+      "id": "Kids_Costume.png",
+      "name": "Kids"
+    },
+    {
+      "id": "Kids_Costume_Navy.png",
+      "name": "Kids Navy"
+    },
+    {
+      "id": "Pajamas_Costume.png",
+      "name": "Pajamas"
+    },
+    {
+      "id": "Pajamas_Costume_Pink.png",
+      "name": "Pajamas Pink"
+    },
+    {
+      "id": "School_Costume.png",
+      "name": "School"
+    },
+    {
+      "id": "School_Costume_Red.png",
+      "name": "School Red"
+    },
+    {
+      "id": "Winter_Costume.png",
+      "name": "Winter"
+    },
+    {
+      "id": "Winter_Costume_White.png",
+      "name": "Winter White"
+    },
+    {
+      "id": "Witch_Costume.png",
+      "name": "Witch"
+    },
+    {
+      "id": "Witch_Costume_White.png",
+      "name": "Witch White"
+    },
+    {
+      "id": "Animal_Costume.png",
+      "name": "Animal"
+    },
+    {
+      "id": "Animal_Costume_Racoon.png",
+      "name": "Animal Racoon"
+    },
+    {
+      "id": "Bunny_Girl_Costume.png",
+      "name": "Bunny Girl"
+    },
+    {
+      "id": "Bunny_Girl_Costume_Red.png",
+      "name": "Bunny Girl Red"
+    },
+    {
+      "id": "Cake_Costume_Choco.png",
+      "name": "Cake Choco"
+    },
+    {
+      "id": "Cake_Costume_Cream.png",
+      "name": "Cake Cream"
+    },
+    {
+      "id": "Dress_Costume.png",
+      "name": "Dress"
+    },
+    {
+      "id": "Dress_Costume_Brown.png",
+      "name": "Dress Brown"
+    },
+    {
+      "id": "Elementary_School_Costume.png",
+      "name": "Elementary School"
+    },
+    {
+      "id": "Elementary_School_Costume_Navy.png",
+      "name": "Elementary School Navy"
+    },
+    {
+      "id": "Frill_Bikini_Costume_Green.png",
+      "name": "Frill Bikini Green"
+    },
+    {
+      "id": "Furisode_Costume.png",
+      "name": "Furisode"
+    },
+    {
+      "id": "Halloween_costume.png",
+      "name": "Halloween"
+    },
+    {
+      "id": "Hanbok_Costume.png",
+      "name": "Hanbok"
+    },
+    {
+      "id": "Jersey_Costume_Blue.png",
+      "name": "Jersey Blue"
+    },
+    {
+      "id": "Jersey_Costume_Red.png",
+      "name": "Jersey Red"
+    },
+    {
+      "id": "Maid_Costume.png",
+      "name": "Maid"
+    },
+    {
+      "id": "Maid_Costume_Red.png",
+      "name": "Maid Red"
+    },
+    {
+      "id": "New2015_Costume.png",
+      "name": "New2015"
+    },
+    {
+      "id": "New2015_Costume_Pajamas.png",
+      "name": "New2015 Pajamas"
+    },
+    {
+      "id": "Nordic_Costume_Beige.png",
+      "name": "Nordic Beige"
+    },
+    {
+      "id": "Pajamas_Costume_Blue.png",
+      "name": "Pajamas Blue"
+    },
+    {
+      "id": "Pajamas_Costume_Green.png",
+      "name": "Pajamas Green"
+    },
+    {
+      "id": "Qipao_Costume_Pink.png",
+      "name": "Qipao Pink"
+    },
+    {
+      "id": "Qipao_Costume_Red.png",
+      "name": "Qipao Red"
+    },
+    {
+      "id": "Sakura_Costume.png",
+      "name": "Sakura"
+    },
+    {
+      "id": "Sakura_Costume_Navy.png",
+      "name": "Sakura Navy"
+    },
+    {
+      "id": "Santa_Costume.png",
+      "name": "Santa"
+    },
+    {
+      "id": "Santa_Costume_Green.png",
+      "name": "Santa Green"
+    },
+    {
+      "id": "Star_Witch_Costume.png",
+      "name": "Star Witch"
+    },
+    {
+      "id": "Star_Witch_Costume_Brown.png",
+      "name": "Star Witch Brown"
+    },
+    {
+      "id": "Succubus_Costume_Black.png",
+      "name": "Succubus Black"
+    },
+    {
+      "id": "Succubus_Costume_Red.png",
+      "name": "Succubus Red"
+    },
+    {
+      "id": "Sukumizu_Costume.png",
+      "name": "Sukumizu"
+    },
+    {
+      "id": "Sukumizu_Costume_White.png",
+      "name": "Sukumizu White"
+    },
+    {
+      "id": "Summer_Dress_Costume_Blue.png",
+      "name": "Summer Dress Blue"
+    },
+    {
+      "id": "Summer_Dress_Costume_White.png",
+      "name": "Summer Dress White"
+    },
+    {
+      "id": "Turtleneck_Costume.png",
+      "name": "Turtleneck"
+    },
+    {
+      "id": "Turtleneck_Costume_Red.png",
+      "name": "Turtleneck Red"
+    },
+    {
+      "id": "Blazer_Costume_Black.png",
+      "name": "Blazer Black"
+    },
+    {
+      "id": "Blazer_Costume_Brown.png",
+      "name": "Blazer Brown"
+    },
+    {
+      "id": "Cami_Dress_Costume_Pink.png",
+      "name": "Cami Dress Pink"
+    },
+    {
+      "id": "Hood_Costume_Gray.png",
+      "name": "Hood Gray"
+    },
+    {
+      "id": "Hood_Costume_Red.png",
+      "name": "Hood Red"
+    },
+    {
+      "id": "Maid_Costume_Black.png",
+      "name": "Maid Black"
+    },
+    {
+      "id": "Maid_Costume_Blue.png",
+      "name": "Maid Blue"
+    },
+    {
+      "id": "Nordic_Costume_Navy.png",
+      "name": "Nordic Navy"
+    },
+    {
+      "id": "Nurse_Costume.png",
+      "name": "Nurse"
+    },
+    {
+      "id": "Nurse_Costume_Red.png",
+      "name": "Nurse Red"
+    },
+    {
+      "id": "Sailor_Costume.png",
+      "name": "Sailor"
+    },
+    {
+      "id": "Sailor_Costume_Black.png",
+      "name": "Sailor Black"
+    },
+    {
+      "id": "Sports_Bikini_Costume_Green.png",
+      "name": "Sports Bikini Green"
+    },
+    {
+      "id": "Sports_Bikini_Costume_Navy.png",
+      "name": "Sports Bikini Navy"
+    },
+    {
+      "id": "Sukumizu_Costume_1.png",
+      "name": "Sukumizu 1"
+    },
+    {
+      "id": "Sukumizu_Costume_White_1.png",
+      "name": "Sukumizu White 1"
+    },
+    {
+      "id": "Bikini_Costume_Blue.png",
+      "name": "Bikini Blue"
+    },
+    {
+      "id": "Bikini_Costume_Pink.png",
+      "name": "Bikini Pink"
+    },
+    {
+      "id": "Bunny_Girl_Costume_1.png",
+      "name": "Bunny Girl 1"
+    },
+    {
+      "id": "Bunny_Girl_Costume_Red_1.png",
+      "name": "Bunny Girl Red 1"
+    },
+    {
+      "id": "Cami_Dress_Costume_Blue.png",
+      "name": "Cami Dress Blue"
+    },
+    {
+      "id": "Frill_Bikini_Costume_Purple.png",
+      "name": "Frill Bikini Purple"
+    },
+    {
+      "id": "Macaron_Dress_Costume_Green.png",
+      "name": "Macaron Dress Green"
+    },
+    {
+      "id": "Macaron_Dress_Costume_Pink.png",
+      "name": "Macaron Dress Pink"
+    },
+    {
+      "id": "Marine_Costume.png",
+      "name": "Marine"
+    },
+    {
+      "id": "Marine_Costume_Navy.png",
+      "name": "Marine Navy"
+    },
+    {
+      "id": "Summer_Uniform_Costume_Blue.png",
+      "name": "Summer Uniform Blue"
+    },
+    {
+      "id": "Summer_Uniform_Costume_Red.png",
+      "name": "Summer Uniform Red"
+    },
+    {
+      "id": "Voice_Story_Costume.png",
+      "name": "Voice Story"
+    },
+    {
+      "id": "Voice_Story_Costume1.png",
+      "name": "Voice Story1"
+    }
+  ]
+}
