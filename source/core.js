@@ -18,6 +18,8 @@ const QUEST_DURATION_MS=60000;
 const RUBY_UPGRADES={fortune:{name:'Fortune Thread',base:2,max:10,description:'+1 percentage point to enhancement success per level.'},value:{name:'Gilded Cauldron',base:2,max:10,description:'+5% potion sale value per level.'},materials:{name:'Everfull Satchel',base:3,max:10,description:'+5% value from added ingredients per level.'}};
 const FAIRY_DRAW_COST=10;
 const VISITOR_DELAY_MIN_MS=20000,VISITOR_DELAY_MAX_MS=60000;
+const QUEST_EXP=[[17,44,67,89,null,134,156,178,201,223,245,268,290,null,335,357,null,402,424,null,469,491,null,null,559],[8,22,null,44,55,67,78,89,null,111,122,134,145,156,null,178,190,null,212,null,null,null,281,293,306],[2,5,7,12,16,22,27,33,40,47,54,62,70,78,87,null,105,null,null,134,null,null,null,176,187]];
+function visitorLevel(exp){let level=1;while(level<12&&exp>=LEVEL_EXP[level])level++;return level;}
 const LEVEL_EXP=[0,300,500,1000,1500,3000,5000,7500,10000,15000,30000,50000];
 const REQUESTS=[
  ['Recycle',1,1000,60000,1,'coins',2000,.70,'Squishy',.30],['Wash Cauldron',1,1000,60000,1,'coins',2000,.70,'Squashy',.30],['Gardening',1,1000,60000,1,'coins',2000,.70,'Mushy',.30],
@@ -34,16 +36,16 @@ const REQUESTS=[
 const REQUEST_FAIRY=new Map(FAIRIES.map(f=>[f.name.toLowerCase().replace(/[^a-z]/g,''),f.id]));
 // Values are Lv 1 and Lv 10 wiki values. Effects for absent systems remain inactive.
 const FAIRY_EFFECTS={
- 'fairy-1':{questPrep:[.05,.25]},'fairy-2':{questRewardDelay:[.11,.20]},'fairy-3':{visitorDelay:[.10,.20]},
+ 'fairy-1':{questPrep:[.05,.25]},'fairy-2':{requestDurationReduction:[.11,.20]},'fairy-3':{visitorDelay:[.10,.20]},
  'fairy-5':{materialProbability:[[0,.05,0],[0,.50,0]]},'fairy-6':{materialProbability:[[.05,0,0],[.50,0,0]]},'fairy-7':{materialProbability:[[0,.025,.025],[0,.25,.25]]},'fairy-8':{materialProbability:[[.025,.025,0],[.25,.25,0]]},
  'fairy-9':{enhancementMultiplier:[[0,0,.05],[0,0,.15]]},'fairy-10':{enhancementMultiplier:[[0,.05,0],[0,.15,0]]},'fairy-11':{enhancementMultiplier:[[.05,0,0],[.15,0,0]]},
  'fairy-12':{enhancementChance:[[0,.02,.02],[0,.20,.20]]},'fairy-13':{enhancementChance:[[.02,0,.02],[.20,0,.20]]},'fairy-14':{enhancementChance:[[.02,.02,0],[.20,.20,0]]},
  'fairy-15':{enhancementMultiplier:[[.10,0,0],[.20,0,0]],sellBonus:[[.10,0,0],[.20,0,0]]},'fairy-16':{enhancementMultiplier:[[0,.10,0],[0,.20,0]],sellBonus:[[0,.10,0],[0,.20,0]]},'fairy-17':{enhancementMultiplier:[[0,0,.10],[0,0,.20]],sellBonus:[[0,0,.10],[0,0,.20]]},
  'fairy-18':{failureProtection:[[.05,.05,0],[.05,.15,0]]},'fairy-19':{failureProtection:[[.05,0,.05],[.15,0,.15]]},'fairy-20':{failureProtection:[[0,.05,.05],[0,.15,.15]]},'fairy-22':{materialAmount:[.10,.30]},
- 'fairy-23':{failureProtection:[[.05,.05,.05],[.15,.15,.15]],enhancementChance:[[.02,.02,.02],[.20,.20,.20]]},'fairy-24':{questPrep:[.05,.25],questRewardDelay:[.11,.20]},'fairy-25':{materialAmount:[.10,.30]},
+ 'fairy-23':{failureProtection:[[.05,.05,.05],[.15,.15,.15]],enhancementChance:[[.02,.02,.02],[.20,.20,.20]]},'fairy-24':{questPrep:[.05,.25],requestDurationReduction:[.11,.20]},'fairy-25':{materialAmount:[.10,.30]},
  'fairy-26':{failureProtection:[[0,.05,0],[0,.15,0]],enhancementMultiplier:[[0,.10,0],[0,.20,0]],enhancementChance:[[0,.03,0],[0,.30,0]]},'fairy-27':{failureProtection:[[.05,.05,0],[.15,.15,0]],enhancementMultiplier:[[.10,.10,0],[.20,.20,0]],enhancementChance:[[.015,.015,0],[.15,.15,0]]},
  'fairy-28':{failureProtection:[[0,0,.05],[0,0,.15]],enhancementMultiplier:[[0,0,.10],[0,0,.20]],enhancementChance:[[0,0,.03],[0,0,.30]]},'fairy-29':{failureProtection:[[.05,0,0],[.20,0,0]],enhancementMultiplier:[[.10,0,0],[.20,0,0]],enhancementChance:[[.03,0,0],[.30,0,0]]},
- 'fairy-30':{failureProtection:[[0,.05,.05],[0,.15,.15]],enhancementMultiplier:[[0,.10,.10],[0,.15,.15]],enhancementChance:[[0,.015,.015],[0,.15,.15]]},'fairy-31':{materialAmount:[.10,.30]},'fairy-32':{questPrep:[.05,.60]},'fairy-34':{materialAmount:[.15,.42]},'fairy-35':{visitorDelay:[.10,.30],questRewardDelay:[.15,.42]}
+ 'fairy-30':{failureProtection:[[0,.05,.05],[0,.15,.15]],enhancementMultiplier:[[0,.10,.10],[0,.15,.15]],enhancementChance:[[0,.015,.015],[0,.15,.15]]},'fairy-31':{materialAmount:[.10,.30]},'fairy-32':{questPrep:[.05,.60]},'fairy-34':{materialAmount:[.15,.42]},'fairy-35':{visitorDelay:[.10,.30],requestDurationReduction:[.15,.42]}
 };
 const freshTraveler=()=>({quests:0,readyAt:0,phase:'away',deadline:0,requirement:null,rewardFairyId:null,level:1,exp:0});
 const POTION_IDS=new Set(FAMILIES.flatMap((f,i)=>f.recipes.map((r,t)=>i+'-'+t)));
@@ -58,8 +60,11 @@ const integer=(x,max)=>Number.isInteger(x)&&x>=0&&x<=max;
 function sanitizeSave(data){
  if(!data||![1,2,3,4,5,6,7,8,9].includes(data.version))throw Error('This save is not compatible.');
  const s=INITIAL();
- for(const k of ['coins','best']){if(!finite(data[k]))throw Error('Invalid currency.');s[k]=data[k];}if(data.version>=6){if(!finite(data.tickets)||!Number.isInteger(data.tickets)||!integer(data.likeability,1e9)||!finite(data.requestCoinsSpent))throw Error('Invalid request rewards.');s.tickets=data.tickets;s.likeability=data.likeability;s.requestCoinsSpent=data.requestCoinsSpent;}if(data.version>=8){if(!finite(data.rubies)||!Number.isInteger(data.rubies))throw Error('Invalid ruby balance.');s.rubies=data.rubies;}
- if(data.version>=9){if(!data.rubyUpgrades||typeof data.rubyUpgrades!=='object'||Array.isArray(data.rubyUpgrades))throw Error('Invalid ruby upgrades.');for(const k of Object.keys(RUBY_UPGRADES)){if(!integer(data.rubyUpgrades[k],RUBY_UPGRADES[k].max))throw Error('Invalid ruby upgrades.');s.rubyUpgrades[k]=data.rubyUpgrades[k];}}
+ const legacyMastery=data.version===6&&data.request===undefined&&data.mastery!==undefined;
+ const hasRequests=data.version>=6&&!legacyMastery;
+ function saveTime(value){if(!finite(value)||value>8640000000000000||(data.version>=8&&!Number.isInteger(value)))throw Error('Invalid save timestamp.');return Math.round(value);}
+
+ for(const k of ['coins','best']){if(!finite(data[k]))throw Error('Invalid currency.');s[k]=data[k];}if(hasRequests){if(!finite(data.tickets)||!Number.isInteger(data.tickets)||!integer(data.likeability,1e9)||!finite(data.requestCoinsSpent))throw Error('Invalid request rewards.');s.tickets=data.tickets;s.likeability=data.likeability;s.requestCoinsSpent=data.requestCoinsSpent;}if(data.version>=8&&data.rubies!==undefined){if(!finite(data.rubies)||!Number.isInteger(data.rubies))throw Error('Invalid ruby balance.');s.rubies=data.rubies;}if(data.version>=9){if(!data.rubyUpgrades||typeof data.rubyUpgrades!=='object'||Array.isArray(data.rubyUpgrades))throw Error('Invalid ruby upgrades.');for(const k of Object.keys(RUBY_UPGRADES)){if(!integer(data.rubyUpgrades[k],RUBY_UPGRADES[k].max))throw Error('Invalid ruby upgrades.');s.rubyUpgrades[k]=data.rubyUpgrades[k];}}
  for(const k of ['sold','failed','ingredients']){if(!integer(data[k],Number.MAX_SAFE_INTEGER))throw Error('Invalid statistics.');s[k]=data[k];}
  if(!Array.isArray(data.tiers)||data.tiers.length!==3||data.tiers.some(x=>!integer(x,data.version===1?2:24)))throw Error('Invalid ingredient upgrades.');s.tiers=[...data.tiers];
  for(const[k,max]of [['luck',10],['price',4],['speed',19]]){if(!integer(data[k],max))throw Error('Invalid upgrades.');s[k]=data[k];}
@@ -68,20 +73,20 @@ function sanitizeSave(data){
  if(data.version>=2){
   for(const k of ['protection','enhancement','selling']){if(!integer(data.powerups?.[k],1e9))throw Error('Invalid powerups.');s.powerups[k]=data.powerups[k];}
   if(!Array.isArray(data.travelers)||data.travelers.length!==(data.version>=4?TRAVELERS.length:3))throw Error('Invalid travelers.');
-  s.travelers=data.travelers.map(t=>{if(!integer(t.quests,1e9)||!integer(t.readyAt,8640000000000000))throw Error('Invalid quest timer.');return{...freshTraveler(),quests:t.quests,readyAt:t.readyAt,phase:t.readyAt?'returning':'away'};});
+  s.travelers=data.travelers.map(t=>{if(!integer(t.quests,1e9))throw Error('Invalid quest timer.');const readyAt=saveTime(t.readyAt);return{...freshTraveler(),quests:t.quests,readyAt,phase:readyAt?'returning':'away'};});
   if(!Array.isArray(data.discovered)||data.discovered.length>75||data.discovered.some(k=>typeof k!=='string'||!/^\d-\d{1,2}$/.test(k)||Number(k.split('-')[0])>2||Number(k.split('-')[1])>24))throw Error('Invalid collection.');s.discovered=[...new Set(data.discovered)];
   if(!Array.isArray(data.selected)||data.selected.length!==3||data.selected.some((x,i)=>!integer(x,s.tiers[i])))throw Error('Invalid starter selection.');s.selected=[...data.selected];
  }
  if(data.version>=3){
-  if(!integer(data.nextVisitorAt,8640000000000000))throw Error('Invalid visitor schedule.');s.nextVisitorAt=data.nextVisitorAt;
+  s.nextVisitorAt=saveTime(data.nextVisitorAt);
   s.travelers=data.travelers.map(t=>{
-   if(!['away','offer','active','returning','complete','failed'].includes(t.phase)||!integer(t.deadline,8640000000000000))throw Error('Invalid quest phase.');
+   if(!['away','offer','active','returning','complete','failed'].includes(t.phase))throw Error('Invalid quest phase.');const deadline=saveTime(t.deadline),readyAt=saveTime(t.readyAt);
    let q=null;if(t.requirement!==null){q=t.requirement;if(!q||!integer(q.family,2)||!integer(q.tier,s.tiers[q.family])||!integer(q.level,FAMILIES[q.family].recipes[q.tier].max_level-1))throw Error('Invalid quest requirement.');q={family:q.family,tier:q.tier,level:q.level};}
    if(['offer','active'].includes(t.phase)&&!q)throw Error('Missing quest requirement.');
-   if((t.phase==='active')!==(t.deadline>0)||(t.phase==='returning')!==(t.readyAt>0))throw Error('Invalid quest clock.');
+   if((t.phase==='active')!==(deadline>0)||(t.phase==='returning')!==(readyAt>0))throw Error('Invalid quest clock.');
    let rewardFairyId=null;if(data.version>=4){if(t.rewardFairyId!==null&&!FAIRY_IDS.has(t.rewardFairyId))throw Error('Invalid fairy reward.');rewardFairyId=t.rewardFairyId;}
-   let level=1,exp=0;if(data.version>=6){if(!integer(t.level,12)||t.level<1||!integer(t.exp,1e9))throw Error('Invalid visitor progression.');level=t.level;exp=t.exp;}
-   return{...freshTraveler(),quests:t.quests,readyAt:t.readyAt,phase:t.phase,deadline:t.deadline,requirement:q,rewardFairyId,level,exp};
+   let level=1,exp=0;if(hasRequests){if(!integer(t.level,12)||t.level<1||!integer(t.exp,1e9))throw Error('Invalid visitor progression.');level=t.level;exp=t.exp;if(level!==visitorLevel(exp))throw Error('Visitor level does not match EXP.');}
+   return{...freshTraveler(),quests:t.quests,readyAt,phase:t.phase,deadline,requirement:q,rewardFairyId,level,exp};
   });
   if(s.travelers.filter(t=>['offer','active'].includes(t.phase)).length>1)throw Error('Conflicting visitors.');
  }
@@ -91,7 +96,14 @@ function sanitizeSave(data){
   if(data.version>=7){if(data.activeFairyId!==null&&(!FAIRY_IDS.has(data.activeFairyId)||!FAIRY_EFFECTS[data.activeFairyId]||!s.fairies[data.activeFairyId]))throw Error('Invalid active fairy.');s.activeFairyId=data.activeFairyId;}
   s.travelers.forEach((t,i)=>{if(TRAVELERS[i].rewardType==='fairy'&&['returning','complete'].includes(t.phase)&&!t.rewardFairyId)throw Error('Missing fairy reward.');if(TRAVELERS[i].rewardType!=='fairy'&&t.rewardFairyId)throw Error('Unexpected fairy reward.');});
  }
- if(data.version>=6&&data.request!==null){const r=data.request;if(!r||!integer(r.travelerIndex,TRAVELERS.length-1)||!REQUESTS.some(q=>q.id===r.requestId)||!integer(r.readyAt,8640000000000000)||r.readyAt===0||s.travelers.some(t=>t.phase!=='away'))throw Error('Invalid active request.');if(!r.result||!integer(r.result.likeability,1e9)||!['coins','tickets','selling','enhancement','protection'].includes(r.result.bonusType)||!integer(r.result.bonusCount,1e9)||typeof r.result.bonus!=='boolean'||typeof r.result.fairy!=='boolean')throw Error('Invalid request reward.');s.request={...r,result:{...r.result}};}
+ if(hasRequests&&data.request!==null){
+  const r=data.request,meta=r&&REQUESTS.find(q=>q.id===r.requestId);
+  if(!r||!integer(r.travelerIndex,TRAVELERS.length-1)||!meta||s.travelers[r.travelerIndex].level<meta.level||s.travelers.some(t=>t.phase!=='away'))throw Error('Invalid active request.');
+  const readyAt=saveTime(r.readyAt);if(!readyAt)throw Error('Invalid request timer.');
+  const result=r.result;if(!result||typeof result.bonus!=='boolean'||typeof result.fairy!=='boolean'||['likeability','bonusType','bonusCount'].some(k=>result[k]!==meta[k]))throw Error('Request reward does not match its definition.');
+  s.request={travelerIndex:r.travelerIndex,requestId:r.requestId,readyAt,result:{likeability:meta.likeability,bonusType:meta.bonusType,bonusCount:meta.bonusCount,bonus:result.bonus,fairy:result.fairy}};
+ }
+
  while(s.travelers.length<TRAVELERS.length)s.travelers.push(freshTraveler());
  if(data.version>=5){
   const m=data.metrics;if(!m||typeof m!=='object'||Array.isArray(m)||!integer(m.since,8640000000000000)||typeof m.historyPartial!=='boolean')throw Error('Invalid statistics history.');
@@ -107,6 +119,15 @@ function sanitizeSave(data){
   s.metrics.historyPartial=true;
   if(s.potion){const p=s.potion,record=freshRecipeStats();record.highestLevel=p.level+1;s.metrics.recipes[p.family+'-'+p.tier]=record;}
  }
+ if(data.mastery!==undefined){
+  if(!data.mastery||typeof data.mastery!=='object'||Array.isArray(data.mastery))throw Error('Invalid legacy achievements.');s.mastery={};
+  for(const[id,r]of Object.entries(data.mastery)){
+   if(!POTION_IDS.has(id)||!r||!integer(r.unlockedAt,8640000000000000)||!integer(r.times,1e9)||!finite(r.bestValue)||typeof r.recovered!=='boolean')throw Error('Invalid legacy mastery.');
+   s.mastery[id]={unlockedAt:r.unlockedAt,times:r.times,bestValue:r.bestValue,recovered:r.recovered};
+   const[f,t]=id.split('-').map(Number),record=s.metrics.recipes[id]||(s.metrics.recipes[id]=freshRecipeStats());record.highestLevel=FAMILIES[f].recipes[t].max_level;
+  }
+ }
+ if(s.potion){const p=s.potion,record=s.metrics.recipes[p.family+'-'+p.tier]||(s.metrics.recipes[p.family+'-'+p.tier]=freshRecipeStats());record.highestLevel=Math.max(record.highestLevel,p.level+1);}
  if(s.potion){const key=s.potion.family+'-'+s.potion.tier;if(!s.discovered.includes(key))s.discovered.push(key);}
  return s;
 }
@@ -134,15 +155,15 @@ class PotionGame{
  buy(key){const s=this.state,u=this.upgradeInfo(key);if(!u||u.level>=u.max||s.coins<u.cost)return false;s.coins-=u.cost;s.metrics.coinsSpent=Math.min(1e300,s.metrics.coinsSpent+u.cost);s.metrics.upgradesBought++;if(key.startsWith('tier')){const i=Number(key.slice(4));s.tiers[i]++;s.selected[i]=s.tiers[i];}else s[key]++;return true;}
  statistics(){const s=this.state;return{coins:s.coins,sold:s.sold,ingredients:s.ingredients,failed:s.failed,best:s.best,brewedTypes:s.discovered.length,unlockedRecipes:s.tiers.reduce((a,b)=>a+b+1,0),fairyTypes:Object.keys(s.fairies).length,fairiesReceived:Object.values(s.fairies).reduce((a,b)=>a+b,0),questsCompleted:s.travelers.reduce((a,t)=>a+t.quests,0),upgradesOwned:s.tiers.reduce((a,b)=>a+b,0)+s.luck+s.price+s.speed,metrics:s.metrics};}
  questRequirement(index){return this.state.travelers[index]?.requirement||null;}
- experienceFor(family,tier){const bases=[[17,44,67,89,null,134,156,178,201,223,245,268,290,null,335,357,null,402,424,null,469,491,null,null,559],[8,22,null,44,55,67,78,89,null,111,122,134,145,156,null,178,190,null,212,null,null,null,281,293,306],[2,5,7,12,16,22,27,33,40,47,54,62,70,78,87,null,105,null,null,134,null,null,null,176,187]][family];if(bases[tier]!==null&&bases[tier]!==undefined)return bases[tier];let lo=tier-1,hi=tier+1;while(lo>=0&&bases[lo]===null)lo--;while(hi<bases.length&&bases[hi]===null)hi++;if(lo<0)return bases[hi]||1;if(hi>=bases.length)return bases[lo];return Math.round(bases[lo]+(bases[hi]-bases[lo])*(tier-lo)/(hi-lo));}
- experienceIsEstimated(family,tier){const bases=[[17,44,67,89,null,134,156,178,201,223,245,268,290,null,335,357,null,402,424,null,469,491,null,null,559],[8,22,null,44,55,67,78,89,null,111,122,134,145,156,null,178,190,null,212,null,null,null,281,293,306],[2,5,7,12,16,22,27,33,40,47,54,62,70,78,87,null,105,null,null,134,null,null,null,176,187]][family];return bases[tier]===null;}
- gainExperience(index,family,tier){const t=this.state.travelers[index];if(!t)return null;const gained=this.experienceFor(family,tier);t.exp+=gained;while(t.level<12&&t.exp>=LEVEL_EXP[t.level])t.level++;return{gained,level:t.level,exp:t.exp};}
+ experienceFor(family,tier){const bases=QUEST_EXP[family];if(bases[tier]!==null&&bases[tier]!==undefined)return bases[tier];let lo=tier-1,hi=tier+1;while(lo>=0&&bases[lo]===null)lo--;while(hi<bases.length&&bases[hi]===null)hi++;if(lo<0)return bases[hi]||1;if(hi>=bases.length)return bases[lo];return Math.round(bases[lo]+(bases[hi]-bases[lo])*(tier-lo)/(hi-lo));}
+ experienceIsEstimated(family,tier){const bases=QUEST_EXP[family];return bases[tier]===null;}
+ gainExperience(index,family,tier){const t=this.state.travelers[index];if(!t)return null;const gained=this.experienceFor(family,tier);t.exp=Math.min(1e9,t.exp+gained);t.level=visitorLevel(t.exp);return{gained,level:t.level,exp:t.exp};}
  requestsFor(index){const t=this.state.travelers[index];return t?REQUESTS.filter(r=>r.level<=t.level):[];}
- startRequest(index,requestId,now=Date.now(),random=Math.random){const s=this.state,t=s.travelers[index],r=REQUESTS.find(q=>q.id===requestId);if(!t||!r||t.level<r.level||s.request||s.travelers.some(v=>v.phase!=='away')||t.phase!=='away'||s.coins<r.cost)return false;s.coins-=r.cost;s.requestCoinsSpent=Math.min(1e300,s.requestCoinsSpent+r.cost);const bonus=random()<r.bonusChance,fairy=random()<r.fairyChance;s.request={travelerIndex:index,requestId:r.id,readyAt:now+r.duration,result:{likeability:r.likeability,bonusType:r.bonusType,bonusCount:r.bonusCount,bonus,fairy}};return true;}
+ startRequest(index,requestId,now=Date.now(),random=Math.random){const s=this.state,t=s.travelers[index],r=REQUESTS.find(q=>q.id===requestId);if(!t||!r||t.level<r.level||s.request||s.travelers.some(v=>v.phase!=='away')||t.phase!=='away'||s.coins<r.cost)return false;s.coins-=r.cost;s.requestCoinsSpent=Math.min(1e300,s.requestCoinsSpent+r.cost);const bonus=random()<r.bonusChance,fairy=random()<r.fairyChance;s.request={travelerIndex:index,requestId:r.id,readyAt:Math.round(now+r.duration*(1-(this.fairyEffects().requestDurationReduction||0))),result:{likeability:r.likeability,bonusType:r.bonusType,bonusCount:r.bonusCount,bonus,fairy}};return true;}
  settleRequest(now=Date.now()){const s=this.state,r=s.request;if(!r||r.readyAt>now)return null;const meta=REQUESTS.find(q=>q.id===r.requestId);s.likeability=Math.min(1e9,s.likeability+r.result.likeability);if(r.result.bonus){if(r.result.bonusType==='coins')s.coins=Math.min(1e300,s.coins+r.result.bonusCount);else if(r.result.bonusType==='tickets')s.tickets=Math.min(1e9,s.tickets+r.result.bonusCount);else s.powerups[r.result.bonusType]=Math.min(1e9,s.powerups[r.result.bonusType]+r.result.bonusCount);}let fairyId=null;if(r.result.fairy){fairyId=REQUEST_FAIRY.get(meta.fairyName.toLowerCase().replace(/[^a-z]/g,''))||null;if(fairyId)s.fairies[fairyId]=Math.min(1e9,(s.fairies[fairyId]||0)+1);}s.request=null;return{traveler:TRAVELERS[r.travelerIndex],request:meta,fairyId};}
  randomRequirement(random=Math.random){const pool=materialPool(this.state.tiers).filter(m=>FAMILIES[m.family].recipes[m.tier].base!==null),m=pool[randomIndex(pool.length,random)],r=FAMILIES[m.family].recipes[m.tier];return{...m,level:randomIndex(Math.min(r.max_level,4),random)};}
- scheduleVisitor(now,random=Math.random){const reduction=this.fairyEffects().visitorDelay||0;this.state.nextVisitorAt=now+(VISITOR_DELAY_MIN_MS+randomIndex(VISITOR_DELAY_MAX_MS-VISITOR_DELAY_MIN_MS+1,random))*(1-reduction);}
- acceptQuest(index,now=Date.now()){const t=this.state.travelers[index];if(!t||t.phase!=='offer')return false;t.phase='active';this.state.metrics.questsAccepted++;this.state.metrics.visitors[TRAVELERS[index].id].accepted++;t.deadline=now+QUEST_DURATION_MS*(1+(this.fairyEffects().questPrep||0));return true;}
+ scheduleVisitor(now,random=Math.random){const reduction=this.fairyEffects().visitorDelay||0;this.state.nextVisitorAt=Math.round(now+(VISITOR_DELAY_MIN_MS+randomIndex(VISITOR_DELAY_MAX_MS-VISITOR_DELAY_MIN_MS+1,random))*(1-reduction));}
+ acceptQuest(index,now=Date.now()){const t=this.state.travelers[index];if(!t||t.phase!=='offer')return false;t.phase='active';this.state.metrics.questsAccepted++;this.state.metrics.visitors[TRAVELERS[index].id].accepted++;t.deadline=Math.round(now+QUEST_DURATION_MS*(1+(this.fairyEffects().questPrep||0)));return true;}
  dismissVisitor(index,now=Date.now(),random=Math.random){const t=this.state.travelers[index];if(!t||!['offer','complete','failed'].includes(t.phase))return false;if(t.phase==='offer'){this.state.metrics.questsDeclined++;this.state.metrics.visitors[TRAVELERS[index].id].declined++;}Object.assign(t,{phase:'away',deadline:0,requirement:null,rewardFairyId:null,readyAt:0});if(this.state.travelers.every(x=>x.phase==='away'))this.scheduleVisitor(now,random);return true;}
  canDeliver(index,now=Date.now()){const p=this.state.potion,q=this.questRequirement(index),t=this.state.travelers[index];return !!(q&&p&&t.phase==='active'&&now<t.deadline&&p.family===q.family&&p.tier===q.tier&&p.level>=q.level);}
  deliver(index,now=Date.now(),random=Math.random){if(!this.canDeliver(index,now))return false;const t=this.state.travelers[index],p=this.state.potion;this.state.metrics.questsDelivered++;this.state.metrics.visitors[TRAVELERS[index].id].delivered++;this.state.rubies=Math.min(Number.MAX_VALUE,this.state.rubies+1);this.gainExperience(index,p.family,p.tier);this.state.potion=null;t.phase='returning';if(TRAVELERS[index].rewardType==='fairy')t.rewardFairyId=FAIRIES[randomIndex(FAIRIES.length,random)].id;t.deadline=0;t.readyAt=now;this.settle(now);return true;}
@@ -162,4 +183,4 @@ class MaterialConveyor{
  }
  take(id){const i=this.items.findIndex(m=>m.id===id);return i<0?null:this.items.splice(i,1)[0];}
 }
-if(typeof module!=='undefined')module.exports={PotionGame,MaterialConveyor,materialPool,FAMILIES,TRAVELERS,FAIRIES,REQUESTS,LEVEL_EXP,INITIAL,sanitizeSave,DATA,QUEST_DURATION_MS};
+if(typeof module!=='undefined')module.exports={PotionGame,MaterialConveyor,materialPool,FAMILIES,TRAVELERS,FAIRIES,REQUESTS,LEVEL_EXP,INITIAL,sanitizeSave,DATA,QUEST_DURATION_MS,RUBY_UPGRADES,FAIRY_DRAW_COST};

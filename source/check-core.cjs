@@ -1,5 +1,5 @@
 const assert=require('node:assert/strict');
-const{PotionGame,MaterialConveyor,materialPool,INITIAL,sanitizeSave,FAMILIES,TRAVELERS,FAIRIES}=require('./core.js');
+const{PotionGame,MaterialConveyor,materialPool,INITIAL,sanitizeSave,FAMILIES,TRAVELERS,FAIRIES,REQUESTS,LEVEL_EXP}=require('./core.js');
 let g=new PotionGame();assert.equal(g.collect(1,0),true);g.collect(0,0);assert.equal(g.state.potion.family,1);assert.equal(g.state.potion.value,11);
 assert.equal(g.enhance(0),'success');assert.equal(g.state.potion.value,13.2);assert.equal(g.enhance(.99),'lost');assert.equal(g.state.failed,1);assert.equal(g.state.potion,null);
 g.state.powerups={protection:1,enhancement:1,selling:1};g.collect(0,0);assert.equal(g.next().chance,1);assert.equal(g.enhance(0),'success');assert.equal(g.state.powerups.enhancement,0);assert.equal(g.state.powerups.protection,1);assert.equal(g.enhance(.99),'protected');assert.equal(g.state.powerups.protection,0);assert.equal(g.state.potion.level,1);assert.equal(g.sell(),20);assert.equal(g.state.powerups.selling,0);
@@ -44,13 +44,13 @@ g=new PotionGame(sanitizeSave(v2));assert.equal(g.state.travelers[0].phase,'retu
 // and spatially even emission when speed changes or an ingredient is collected.
 assert.equal(materialPool([0,1,2]).length,6);assert.deepEqual(materialPool([0,0,0]).map(x=>x.family),[0,1,2]);
 let belt=new MaterialConveyor(456,[0,0,0],()=>0),base=belt.speed(false,0);assert.equal(belt.speed(false,19),base);assert.ok(belt.speed(true,19)>belt.speed(true,0));
-const seen=new Set();let sample=0;const pool=materialPool([1,2,3]);belt=new MaterialConveyor(760,[1,2,3],()=>((sample++%pool.length)+.5)/pool.length);belt.items.forEach(m=>seen.add(m.family+'-'+m.tier));assert.equal(seen.size,pool.length);
+const seen=new Set();const pool=materialPool([1,2,3]);let sequence=[];for(const m of pool){const start=[0,2,5][m.family];sequence.push((start+.5)/9,(m.tier+.5)/([1,2,3][m.family]+1));}let sample=0;belt=new MaterialConveyor(760,[1,2,3],()=>sequence[sample++%sequence.length]);belt.items.forEach(m=>seen.add(m.family+'-'+m.tier));assert.equal(seen.size,pool.length);
 let slow=new MaterialConveyor(456,[0,0,0],()=>0),fast=new MaterialConveyor(456,[0,0,0],()=>0);slow.advance(1000,false,19);fast.advance(1000,true,19);assert.ok(fast.items[0].x<slow.items[0].x);
 belt=new MaterialConveyor(456,[0,0,0],()=>0);const before=belt.items[1].x;const taken=belt.take(belt.items[0].id);assert.ok(taken);assert.equal(belt.items[0].x,before);
 for(let i=0;i<300;i++){belt.advance(100,i>100,19);const items=belt.items;for(let j=1;j<items.length;j++){const gap=items[j].x-items[j-1].x;assert.ok(Math.abs(gap/76-Math.round(gap/76))<1e-8);assert.ok(gap>=76-1e-8);}}
 // Collecting after enhancement retains the observed additive behavior.
 g=new PotionGame();g.collect(1,0);g.enhance(0);const enhanced=g.state.potion.value;g.collect(0,0);assert.equal(g.state.potion.value,enhanced+FAMILIES[0].materials[0].value);
-let old={version:1,coins:123,tiers:[2,1,0],luck:3,price:3,speed:3,potion:{family:1,tier:1,level:1,value:25},sold:7,failed:1,best:50,ingredients:20};let migrated=sanitizeSave(old);assert.equal(migrated.version,5);assert.equal(migrated.coins,123);assert.deepEqual(migrated.tiers,[2,1,0]);assert.equal(migrated.potion.value,25);assert.deepEqual(sanitizeSave(migrated),migrated);
+let old={version:1,coins:123,tiers:[2,1,0],luck:3,price:3,speed:3,potion:{family:1,tier:1,level:1,value:25},sold:7,failed:1,best:50,ingredients:20};let migrated=sanitizeSave(old);assert.equal(migrated.version,9);assert.equal(migrated.coins,123);assert.deepEqual(migrated.tiers,[2,1,0]);assert.equal(migrated.potion.value,25);assert.deepEqual(sanitizeSave(migrated),migrated);
 assert.throws(()=>sanitizeSave({...INITIAL(),coins:-1}));assert.throws(()=>sanitizeSave({...INITIAL(),powerups:{protection:-1,enhancement:0,selling:0}}));assert.throws(()=>sanitizeSave({...INITIAL(),travelers:[{}, {}, {}]}));assert.throws(()=>sanitizeSave({...INITIAL(),potion:{family:0,tier:0,level:20,value:10}}));
 assert.equal(FAMILIES.length,3);assert.equal(FAMILIES.flatMap(f=>f.recipes).length,75);assert.equal(FAMILIES.flatMap(f=>f.recipes).filter(r=>r.complete).length,75);
 for(const f of FAMILIES)for(const r of f.recipes){if(r.complete){assert.equal(r.multipliers.length,r.max_level-1);assert.ok(r.chances.every(c=>c>=0&&c<=1));}}
@@ -65,7 +65,7 @@ for(let index=3;index<TRAVELERS.length;index++){
  g=new PotionGame();g.state.nextVisitorAt=1;let rolls=[(index+.1)/TRAVELERS.length,0,0];g.tick(1,()=>rolls.shift()||0);
  assert.equal(g.state.travelers[index].phase,'offer');assert.equal(g.acceptQuest(index,1000),true);g.collect(0,0);
  assert.equal(g.deliver(index,2000,()=>.999),true);const id=g.state.travelers[index].rewardFairyId;assert.equal(id,FAIRIES.at(-1).id);
- g=new PotionGame(sanitizeSave(JSON.parse(JSON.stringify(g.state))));assert.equal(g.settle(61999).length,0);assert.equal(g.settle(62000).length,1);assert.equal(g.state.fairies[id],1);assert.equal(g.settle(63000).length,0);
+ assert.equal(g.state.travelers[index].phase,'complete');g=new PotionGame(sanitizeSave(JSON.parse(JSON.stringify(g.state))));assert.equal(g.settle(61999).length,0);assert.equal(g.settle(62000).length,0);assert.equal(g.state.fairies[id],1);assert.equal(g.settle(63000).length,0);
  assert.deepEqual(g.state.powerups,{protection:0,enhancement:0,selling:0});assert.deepEqual(sanitizeSave(g.state),g.state);
  g.state.travelers[index].phase='returning';g.state.travelers[index].readyAt=64000;g.settle(64000);assert.equal(g.state.fairies[id],2);
 }
@@ -83,3 +83,27 @@ g=new PotionGame();g.tick(1,()=>0);g.tick(20001,()=>0);g.acceptQuest(0,21000);g.
 let oldStats={...INITIAL(),version:4};delete oldStats.metrics;oldStats.sold=99;oldStats.ingredients=300;oldStats.failed=21;let statsMigrated=sanitizeSave(oldStats);assert.equal(statsMigrated.sold,99);assert.equal(statsMigrated.ingredients,300);assert.equal(statsMigrated.failed,21);assert.equal(statsMigrated.metrics.historyPartial,true);assert.equal(statsMigrated.metrics.coinsEarned,0);assert.deepEqual(sanitizeSave(statsMigrated),statsMigrated);
 assert.throws(()=>sanitizeSave({...INITIAL(),metrics:{...INITIAL().metrics,coinsEarned:-1}}));assert.throws(()=>sanitizeSave({...INITIAL(),metrics:{...INITIAL().metrics,recipes:{'9-9':{}}}}));
 console.log('Passed: action counters, family/potion details, powerup use, play time, quest statistics, partial-history migration and malformed-stat rejection.');
+
+// Every supported fairy/level must create a reloadable arrival and acceptance timer.
+for(const f of FAIRIES)for(let count=1;count<=10;count++){
+ g=new PotionGame();g.state.fairies[f.id]=count;if(!g.setActiveFairy(f.id))continue;g.scheduleVisitor(1000,()=>.1234);assert.ok(Number.isInteger(g.state.nextVisitorAt));assert.deepEqual(sanitizeSave(g.state),g.state);
+ g.state.nextVisitorAt=1;g.tick(1,()=>0);g.acceptQuest(0,1000);assert.ok(Number.isInteger(g.state.travelers[0].deadline));assert.deepEqual(sanitizeSave(g.state),g.state);
+}
+// Recover self-generated fractional timestamps from version 7, but reject new malformed saves.
+let fractional={...INITIAL(),version:7,nextVisitorAt:18777.777};assert.equal(sanitizeSave(fractional).nextVisitorAt,18778);assert.throws(()=>sanitizeSave({...fractional,version:8}));
+fractional.travelers[0]={...fractional.travelers[0],phase:'active',deadline:65333.333,requirement:{family:0,tier:0,level:0}};assert.equal(sanitizeSave(fractional).travelers[0].deadline,65333);
+// The separate mastery branch also called its save format version 6.
+let masterySix={...INITIAL(),version:6,mastery:{'0-0':{unlockedAt:1000,times:2,bestValue:20,recovered:false}}};for(const key of ['request','tickets','likeability','requestCoinsSpent','activeFairyId'])delete masterySix[key];masterySix.travelers.forEach(t=>{delete t.level;delete t.exp;});
+let masteryMigrated=sanitizeSave(masterySix);assert.equal(masteryMigrated.metrics.recipes['0-0'].highestLevel,3);assert.equal(masteryMigrated.mastery['0-0'].times,2);assert.equal(masteryMigrated.request,null);assert.deepEqual(sanitizeSave(masteryMigrated),masteryMigrated);
+// Genuine request-format version 6 continues to load and completes exactly once.
+assert.equal(sanitizeSave({...INITIAL(),version:6}).tickets,0);
+// Every request preserves its frozen outcome and documented rewards across a reload.
+for(const r of REQUESTS){
+ g=new PotionGame();g.state.coins=1e15;g.state.travelers[0].level=12;g.state.travelers[0].exp=50000;assert.equal(g.startRequest(0,r.id,1000,()=>0),true);const paid=g.state.coins;g=new PotionGame(sanitizeSave(g.state));assert.equal(g.settleRequest(g.state.request.readyAt-1),null);const result=g.settleRequest(g.state.request.readyAt);assert.ok(result);assert.equal(g.state.likeability,r.likeability);assert.equal(g.state.fairies[result.fairyId],1);assert.equal(g.state.coins,paid+(r.bonusType==='coins'?r.bonusCount:0));assert.equal(g.settleRequest(1e12),null);
+}
+g=new PotionGame();g.state.coins=1000;g.state.fairies['fairy-2']=10;g.setActiveFairy('fairy-2');g.startRequest(0,0,1000,()=>1);assert.equal(g.state.request.readyAt-1000,48000);g.setActiveFairy(null);assert.equal(g.state.request.readyAt-1000,48000);assert.deepEqual(sanitizeSave(g.state),g.state);
+const corruptRequest=JSON.parse(JSON.stringify(g.state));corruptRequest.request.result.bonusCount=999999999;assert.throws(()=>sanitizeSave(corruptRequest));assert.throws(()=>sanitizeSave({...INITIAL(),travelers:INITIAL().travelers.map((t,i)=>i===0?{...t,level:12}:t)}));
+g=new PotionGame();for(let i=0;i<18;i++)g.gainExperience(0,0,0);assert.equal(g.state.travelers[0].exp,306);assert.equal(g.state.travelers[0].level,2);assert.ok(g.requestsFor(0).some(r=>r.level===2));
+// All 75 maximum-level achievements remain derivable after sale, delivery and reload.
+for(let family=0;family<3;family++)for(let tier=0;tier<25;tier++){g=new PotionGame();g.state.tiers[family]=tier;g.collect(family,tier);const max=g.recipe().max_level;for(let level=1;level<max;level++)assert.equal(g.enhance(0,1),'success');g.sell();assert.equal(sanitizeSave(g.state).metrics.recipes[family+'-'+tier].highestLevel,max);}
+console.log('Passed: all fairy timer/level round trips, fractional-save recovery, both version-6 formats, all 35 request rewards, EXP progression and all 75 mastery paths.');
