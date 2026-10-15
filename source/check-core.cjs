@@ -2,7 +2,7 @@ const assert=require('node:assert/strict');
 const{PotionGame,MaterialConveyor,materialPool,INITIAL,sanitizeSave,FAMILIES,TRAVELERS,FAIRIES,REQUESTS,LEVEL_EXP}=require('./core.js');
 let g=new PotionGame();assert.equal(g.collect(1,0),true);g.collect(0,0);assert.equal(g.state.potion.family,1);assert.equal(g.state.potion.value,11);
 assert.equal(g.enhance(0),'success');assert.equal(g.state.potion.value,13.2);assert.equal(g.enhance(.99),'lost');assert.equal(g.state.failed,1);assert.equal(g.state.potion,null);
-g.state.powerups={protection:1,enhancement:1,selling:1};g.collect(0,0);assert.equal(g.next().chance,1);assert.equal(g.enhance(0),'success');assert.equal(g.state.powerups.enhancement,0);assert.equal(g.state.powerups.protection,1);assert.equal(g.enhance(.99),'protected');assert.equal(g.state.powerups.protection,0);assert.equal(g.state.potion.level,1);assert.equal(g.sell(),20);assert.equal(g.state.powerups.selling,0);
+g.state.powerups={protection:1,enhancement:1,selling:1};g.collect(0,0);assert.equal(g.next().chance,.99);assert.equal(g.enhance(0),'success');assert.equal(g.state.powerups.enhancement,0);assert.equal(g.state.powerups.protection,1);assert.equal(g.enhance(.99),'protected');assert.equal(g.state.powerups.protection,0);assert.equal(g.state.potion.level,1);assert.equal(g.sell(),20);assert.equal(g.state.powerups.selling,0);
 g=new PotionGame();g.collect(2,0);g.enhance(0);g.enhance(0);assert.equal(g.next(),null);assert.equal(g.enhancementStatus(),'max');assert.equal(g.sell(),14);
 g.state.coins=1e20;for(let i=0;i<24;i++)assert.equal(g.buy('tier0'),true);assert.equal(g.buy('tier0'),false);assert.equal(g.state.tiers[0],24);assert.equal(g.collect(0,24),true);assert.equal(g.recipe().base,1e6);assert.equal(g.next().chance,.12);
 // Each newly completed potion must reach its documented maximum and save/load there.
@@ -107,3 +107,15 @@ g=new PotionGame();for(let i=0;i<18;i++)g.gainExperience(0,0,0);assert.equal(g.s
 // All 75 maximum-level achievements remain derivable after sale, delivery and reload.
 for(let family=0;family<3;family++)for(let tier=0;tier<25;tier++){g=new PotionGame();g.state.tiers[family]=tier;g.collect(family,tier);const max=g.recipe().max_level;for(let level=1;level<max;level++)assert.equal(g.enhance(0,1),'success');g.sell();assert.equal(sanitizeSave(g.state).metrics.recipes[family+'-'+tier].highestLevel,max);}
 console.log('Passed: all fairy timer/level round trips, fractional-save recovery, both version-6 formats, all 35 request rewards, EXP progression and all 75 mastery paths.');
+
+// The final ceiling applies after every bonus; a roll at 99% still fails.
+for(const family of [0,1,2]){
+ const capped=new PotionGame();capped.state.luck=10;capped.state.rubyUpgrades.fortune=10;
+ const id=['fairy-29','fairy-26','fairy-28'][family];capped.state.fairies[id]=10;capped.setActiveFairy(id);
+ capped.state.powerups.enhancement=1;capped.collect(family,0);
+ assert.equal(capped.next().chance,.99);assert.equal(capped.enhance(.99,1),'lost');assert.equal(capped.state.powerups.enhancement,0);
+ const success=new PotionGame();success.state.luck=10;success.state.powerups.enhancement=1;success.collect(0,0);
+ assert.equal(success.enhance(.989999,1),'success');
+}
+const ordinary=new PotionGame();ordinary.collect(0,0);assert.equal(ordinary.next().chance,.9);
+console.log('Passed: 99% ceiling across all families, stacked fairy bonuses, failure boundary, boost consumption, and unchanged lower chances.');
