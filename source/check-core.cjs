@@ -12,7 +12,7 @@ for(const [family,tier,expectedProduct] of [[1,5,78.26304],[1,19,9643500],[1,20,
  assert.equal(g.enhancementStatus(),'max');assert.equal(g.enhance(0),null);assert.ok(Math.abs(g.state.potion.value/base-expectedProduct)<=expectedProduct*1e-10);
  assert.deepEqual(sanitizeSave(JSON.parse(JSON.stringify(g.state))),g.state);assert.ok(g.sell()>0);
 }
-g=new PotionGame();g.state.tiers[1]=3;g.collect(1,3);assert.equal(g.next().multiplier,1.5);
+g=new PotionGame();g.state.tiers[1]=3;g.collect(1,3);assert.equal(g.next().multiplier,1.62);
 // Preserve the unknown-data guard for any genuinely missing future record.
 const home=FAMILIES[1].recipes[5],recordedStep=home.multipliers[3];
 try{home.multipliers[3]=null;g=new PotionGame();g.state.tiers[1]=5;g.collect(1,5);g.enhance(0);g.enhance(0);g.enhance(0);assert.equal(g.enhancementStatus(),'unknown');assert.equal(g.enhance(0),null);}finally{home.multipliers[3]=recordedStep;}
@@ -119,3 +119,17 @@ for(const family of [0,1,2]){
 }
 const ordinary=new PotionGame();ordinary.collect(0,0);assert.equal(ordinary.next().chance,.9);
 console.log('Passed: 99% ceiling across all families, stacked fairy bonuses, failure boundary, boost consumption, and unchanged lower chances.');
+
+// Existing potion values survive the balance update; future steps use current tables.
+const applied = require('../research/balance/applied-candidates.json');
+assert.equal(applied.length,17);
+for(const change of applied){
+ assert.deepEqual(FAMILIES[change.family].recipes[change.tier-1].multipliers,change.after);
+ const saved=new PotionGame();saved.state.tiers[change.family]=change.tier-1;
+ saved.collect(change.family,change.tier-1);saved.state.potion.value=123.456;
+ const loaded=new PotionGame(sanitizeSave(JSON.parse(JSON.stringify(saved.state))));
+ assert.equal(loaded.state.potion.value,123.456);
+ assert.equal(loaded.enhance(0,1),'success');
+ assert.equal(loaded.state.potion.value,123.456*change.after[0]);
+}
+console.log('Passed: all 17 applied multiplier arrays and existing potion values survive reload.');
