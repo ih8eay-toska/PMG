@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Potion Maker · Menu Prototype</title>
+  <style>
+    :root { font-family: Georgia, serif; color: #4b302b; background: #221e2a; }
+    * { box-sizing: border-box; }
+    body { min-height: 100vh; margin: 0; display: grid; place-items: center; padding: 22px; background: radial-gradient(circle at 50% 72%, #654c67, transparent 40%), linear-gradient(135deg, #302634, #161925); }
+    .stage { width: min(100%, 640px); min-height: 810px; position: relative; display: grid; place-items: center; padding: 56px 18px 28px; overflow: hidden; border: 8px solid #3d2a30; border-radius: 24px; box-shadow: 0 20px 55px #0b0a11aa, inset 0 0 0 3px #92704e; }
+    .stage::before { content: ""; position: absolute; inset: 0; opacity: .48; background: radial-gradient(circle at 50% 27%, #f6dfa7 0 12%, transparent 43%), repeating-linear-gradient(90deg, transparent 0 100px, #1c151d 101px 108px); pointer-events: none; }
+    .topbar { position: absolute; z-index: 1; top: 16px; left: 16px; right: 16px; height: 48px; display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+    .coins { display: flex; align-items: center; gap: 9px; padding: 6px 18px 6px 9px; min-width: 150px; color: #61411f; background: #f9edc7; border: 3px solid #95734b; border-radius: 22px; box-shadow: inset 0 0 0 2px #fff8dd; font: 700 20px Arial, sans-serif; }
+    .coins img { width: 28px; height: 28px; object-fit: contain; }
+    .menu-toggle { width: 48px; height: 48px; border: 3px solid #dfc494; border-radius: 8px; background: #695078; color: #f8e9bd; box-shadow: inset 0 0 0 3px #8c7196; font: 700 31px Arial, sans-serif; cursor: pointer; }
+    .menu-toggle:hover, .menu-toggle:focus-visible { filter: brightness(1.14); }
+    .window { z-index: 1; width: min(100%, 530px); padding: 18px 24px 15px; background: #f4f1eb; border: 4px double #bd929e; outline: 2px solid #fbe6e8; border-radius: 15px; box-shadow: 0 12px 0 #37243275, inset 0 0 0 2px #fff; }
+    .window[hidden] { display: none; }
+    .window-heading { margin: 0 0 8px; text-align: center; color: #8a6176; font: 700 12px Arial, sans-serif; letter-spacing: .22em; text-transform: uppercase; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .tile { position: relative; min-width: 0; min-height: 132px; padding: 8px 4px 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; border: 0; background: transparent; color: #513a30; cursor: pointer; }
+    .tile:not(:nth-child(3n))::after { content: ""; position: absolute; top: 13px; bottom: 12px; right: 0; border-right: 2px solid #d7aeb8; }
+    .tile:not(:nth-last-child(-n + 3))::before { content: ""; position: absolute; bottom: 0; left: 10%; right: 10%; border-bottom: 2px solid #d7aeb8; }
+    .tile:hover, .tile:focus-visible { outline: 0; background: #e7dbe0; border-radius: 10px; }
+    .tile:focus-visible { box-shadow: inset 0 0 0 3px #835c8c; }
+    .icon { height: 78px; width: 93px; display: grid; place-items: center; font: 54px "Segoe UI Emoji", sans-serif; filter: drop-shadow(1px 3px 1px #6c4f4899); }
+    .icon img { display: block; max-width: 100%; max-height: 76px; object-fit: contain; }
+    .duo { display: flex; justify-content: center; align-items: flex-end; overflow: hidden; }
+    .duo img { width: 61px; height: 74px; object-fit: cover; object-position: top; border-radius: 9px 9px 3px 3px; }
+    .duo img + img { margin-left: -23px; transform: scale(.88) translateY(5px); }
+    .label { font: 700 18px Arial, sans-serif; letter-spacing: -.04em; text-align: center; color: #fff7df; -webkit-text-stroke: 3px #5b453a; paint-order: stroke fill; text-shadow: 1px 2px 0 #564138; }
+    .tile small { margin-top: -2px; font: 700 11px Arial, sans-serif; color: #936c73; }
+    .contest { grid-column: 2; }
+    .contest::after, .contest::before { display: none; }
+    .contest .icon { opacity: .8; }
+    .note { min-height: 24px; margin: 10px 0 0; text-align: center; font: 13px Arial, sans-serif; color: #78616a; }
+    @media (max-width: 540px) { body { padding: 0; } .stage { min-height: 100dvh; border-radius: 0; padding-inline: 8px; } .window { padding: 14px 8px 8px; } .tile { min-height: 112px; } .icon { width: 77px; height: 65px; font-size: 42px; } .icon img { max-height: 63px; } .duo img { height: 62px; width: 52px; } .label { font-size: 15px; } }
+  </style>
+</head>
+<body>
+  <main class="stage" aria-label="Potion Maker menu prototype">
+    <div class="topbar"><div class="coins"><img src="assets/ui/Coin.webp" alt="">197</div><button class="menu-toggle" id="toggle" aria-label="Toggle menu" aria-expanded="true">☰</button></div>
+    <section class="window" id="menu" aria-label="Game menu">
+      <h1 class="window-heading">Potion Maker · Menu prototype</h1>
+      <div class="grid">
+        <button class="tile" data-name="Character"><span class="icon duo"><img src="assets/ui/Game_icon.webp" alt=""><img src="assets/characters/Tia.webp" alt=""></span><span class="label">Character</span></button>
+        <button class="tile" data-name="Costume"><span class="icon"><img src="assets/costumes/CostumeIcon.webp" alt=""></span><span class="label">Costume</span></button>
+        <button class="tile" data-name="Shop"><span class="icon">🪙</span><span class="label">Shop</span></button>
+        <button class="tile" data-name="Fairy"><span class="icon">🧚</span><span class="label">Fairy</span></button>
+        <button class="tile" data-name="Request"><span class="icon">🏠</span><span class="label">Request</span></button>
+        <button class="tile" data-name="Item Book"><span class="icon">📖</span><span class="label">Item Book</span></button>
+        <button class="tile" data-name="Stats"><span class="icon">📊</span><span class="label">Stats</span></button>
+        <button class="tile" data-name="Achieve"><span class="icon"><img src="assets/ui/AchievementIcon.webp" alt=""></span><span class="label">Achieve</span></button>
+        <button class="tile" data-name="Save"><span class="icon">📚</span><span class="label">Save</span></button>
+        <button class="tile" data-name="Mail"><span class="icon"><img src="assets/ui/Mail.webp" alt=""></span><span class="label">Mail</span></button>
+        <button class="tile" data-name="Settings"><span class="icon">⚙️</span><span class="label">Settings</span></button>
+        <button class="tile" data-name="Help"><span class="icon">❔</span><span class="label">Help</span></button>
+        <button class="tile contest" disabled aria-label="Contest, coming soon"><span class="icon"><img src="assets/references/Contest.webp" alt=""></span><small>Coming soon</small><span class="label">Contest</span></button>
+      </div>
+      <p class="note" id="note" aria-live="polite">Choose a destination to preview the menu interaction.</p>
+    </section>
+  </main>
+  <script>
+    const menu = document.querySelector('#menu');
+    const toggle = document.querySelector('#toggle');
+    toggle.addEventListener('click', () => {
+      menu.hidden = !menu.hidden;
+      toggle.setAttribute('aria-expanded', String(!menu.hidden));
+    });
+    document.querySelectorAll('.tile:not(:disabled)').forEach(tile => {
+      tile.addEventListener('click', () => {
+        document.querySelector('#note').textContent = `${tile.dataset.name} selected · menu destination preview`;
+      });
+    });
+  </script>
+</body>
+</html>
