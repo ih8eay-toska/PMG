@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "2026-10-17-fairy-ability-details",
+      "date": "2026-10-17",
+      "title": "Get to know your fairy companions",
+      "rubies": 10,
+      "notes": [
+        "Wondering what your fairy actually does? The Fairy Collection now shows exact bonuses at its current level.",
+        "Uncollected fairies show a level-1 preview. Expand At level 10 to see how their abilities grow.",
+        "32 of our 38 fairies currently have working abilities. Beany-Kong, Magi-Run and King-Poong have no implemented effect; Forest, Fire and Water Fairy summon bonuses are inactive. Their entries now say so clearly.",
+        "Visitor-time bonuses show the resulting seconds, and enhancement bonuses use the current game balance.",
+        "Back to menu buttons now share the same background, border and spacing across menu pages and dialogs.",
+        "Thanks for helping improve the shop! Claim 10 rubies below and keep brewing."
+      ]
+    },
+    {
       "id": "2026-10-17-quality-of-life",
       "date": "2026-10-17",
       "title": "A smoother shop and safer saves",
