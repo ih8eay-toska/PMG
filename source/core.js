@@ -17,6 +17,7 @@ const TRAVELERS=[
  {id:"kyle",name:"Kyle",portrait:"KylePortrait.png",rewardType:'fairy',reward:1}
 ];
 const QUEST_DURATION_MS=60000;
+// Legacy upgrade definitions retained only for reading existing saves.
 const RUBY_UPGRADES={fortune:{name:'Fortune Thread',base:2,max:10,description:'+1 percentage point to enhancement success per level.'},value:{name:'Gilded Cauldron',base:2,max:10,description:'+5% potion sale value per level.'},materials:{name:'Everfull Satchel',base:3,max:10,description:'+5% value from added ingredients per level.'}};
 const FAIRY_DRAW_COST=10;
 const VISITOR_DELAY_MIN_MS=20000,VISITOR_DELAY_MAX_MS=60000;
@@ -47,7 +48,8 @@ const FAIRY_EFFECTS={
  'fairy-23':{failureProtection:[[.05,.05,.05],[.15,.15,.15]],enhancementChance:[[.02,.02,.02],[.20,.20,.20]]},'fairy-24':{questPrep:[.05,.25],requestDurationReduction:[.11,.20]},'fairy-25':{materialAmount:[.10,.30]},
  'fairy-26':{failureProtection:[[0,.05,0],[0,.15,0]],enhancementMultiplier:[[0,.10,0],[0,.20,0]],enhancementChance:[[0,.03,0],[0,.30,0]]},'fairy-27':{failureProtection:[[.05,.05,0],[.15,.15,0]],enhancementMultiplier:[[.10,.10,0],[.20,.20,0]],enhancementChance:[[.015,.015,0],[.15,.15,0]]},
  'fairy-28':{failureProtection:[[0,0,.05],[0,0,.15]],enhancementMultiplier:[[0,0,.10],[0,0,.20]],enhancementChance:[[0,0,.03],[0,0,.30]]},'fairy-29':{failureProtection:[[.05,0,0],[.20,0,0]],enhancementMultiplier:[[.10,0,0],[.20,0,0]],enhancementChance:[[.03,0,0],[.30,0,0]]},
- 'fairy-30':{failureProtection:[[0,.05,.05],[0,.15,.15]],enhancementMultiplier:[[0,.10,.10],[0,.15,.15]],enhancementChance:[[0,.015,.015],[0,.15,.15]]},'fairy-31':{materialAmount:[.10,.30]},'fairy-32':{questPrep:[.05,.60]},'fairy-34':{materialAmount:[.15,.42]},'fairy-35':{visitorDelay:[.10,.30],requestDurationReduction:[.15,.42]}
+ 'fairy-30':{failureProtection:[[0,.05,.05],[0,.15,.15]],enhancementMultiplier:[[0,.10,.10],[0,.15,.15]],enhancementChance:[[0,.015,.015],[0,.15,.15]]},'fairy-31':{materialAmount:[.10,.30]},'fairy-32':{questPrep:[.05,.60]},'fairy-34':{materialAmount:[.15,.42]},'fairy-35':{visitorDelay:[.10,.30],requestDurationReduction:[.15,.42]},
+ 'fairy-40':{pushcatSummonTime:[.05,.05],blackcatSummonChance:[.05,.05]},'fairy-41':{pushcatSummonTime:[.05,.05],blackcatSummonChance:[.05,.05]},'fairy-42':{pushcatSummonTime:[.05,.05],blackcatSummonChance:[.05,.05]}
 };
 const freshTraveler=()=>({quests:0,readyAt:0,phase:'away',deadline:0,requirement:null,rewardFairyId:null,level:1,exp:0});
 const POTION_IDS=new Set(FAMILIES.flatMap((f,i)=>f.recipes.map((r,t)=>i+'-'+t)));
@@ -56,12 +58,19 @@ const RECIPE_COUNTERS=['started','sold','sales','best','enhancements','failures'
 const freshRecipeStats=()=>Object.fromEntries(RECIPE_COUNTERS.map(k=>[k,0]));
 const freshVisitStats=()=>({offered:0,accepted:0,delivered:0,failed:0,declined:0});
 const freshMetrics=()=>({...Object.fromEntries(METRIC_COUNTERS.map(k=>[k,0])),since:Date.now(),historyPartial:false,ingredientsByFamily:[0,0,0],powerupsUsed:{protection:0,enhancement:0,selling:0},recipes:{},visitors:Object.fromEntries(TRAVELERS.map(t=>[t.id,freshVisitStats()]))});
-const INITIAL=()=>({version:10,coins:0,tickets:0,rubies:0,rubyUpgrades:{fortune:0,value:0,materials:0},costumes:[COSTUMES.default],activeCostumeId:COSTUMES.default,likeability:0,requestCoinsSpent:0,tiers:[0,0,0],luck:0,price:0,speed:0,potion:null,sold:0,failed:0,best:0,ingredients:0,powerups:{protection:0,enhancement:0,selling:0},travelers:TRAVELERS.map(freshTraveler),request:null,nextVisitorAt:0,metrics:freshMetrics(),fairies:{},activeFairyId:null,discovered:[],selected:[0,0,0]});
+const INITIAL=()=>({version:12,masteryStars:[],tiaUnlocked:false,rewardReadyAt:0,rewardHistory:[],coins:0,tickets:0,rubies:0,rubyUpgrades:{fortune:0,value:0,materials:0},costumes:[COSTUMES.default],activeCostumeId:COSTUMES.default,likeability:0,requestCoinsSpent:0,tiers:[0,0,0],luck:0,price:0,speed:0,potion:null,sold:0,failed:0,best:0,ingredients:0,powerups:{protection:0,enhancement:0,selling:0},travelers:TRAVELERS.map(freshTraveler),request:null,nextVisitorAt:0,metrics:freshMetrics(),fairies:{},activeFairyId:null,discovered:[],selected:[0,0,0]});
 const finite=x=>typeof x==='number'&&Number.isFinite(x)&&x>=0&&x<=Number.MAX_VALUE;
 const integer=(x,max)=>Number.isInteger(x)&&x>=0&&x<=max;
+function syncMasteryStars(s){
+ const stars=new Set(s.masteryStars);
+ for(const[id,record]of Object.entries(s.metrics.recipes)){const[f,t]=id.split('-').map(Number);if(record.highestLevel>=FAMILIES[f].recipes[t].max_level)stars.add(id);}
+ s.masteryStars=[...stars];if(stars.size>=20)s.tiaUnlocked=true;
+}
 function sanitizeSave(data){
- if(!data||![1,2,3,4,5,6,7,8,9,10].includes(data.version))throw Error('This save is not compatible.');
+ if(!data||![1,2,3,4,5,6,7,8,9,10,11,12].includes(data.version))throw Error('This save is not compatible.');
  const s=INITIAL();
+ if(data.version>=11){s.rewardReadyAt=saveTime(data.rewardReadyAt);if(!Array.isArray(data.rewardHistory)||data.rewardHistory.length>20)throw Error('Invalid reward history.');s.rewardHistory=data.rewardHistory.map(entry=>{if(!entry||!['hourly','tickets','skin'].includes(entry.kind)||!['tickets','rubies','skin','fairy','protection','enhancement','selling'].includes(entry.currency)||!integer(entry.amount,300)||typeof entry.name!=='string'||entry.name.length>100)throw Error('Invalid case reward.');return{kind:entry.kind,currency:entry.currency,amount:entry.amount,name:entry.name,at:saveTime(entry.at)};});}
+ if(data.version>=12){if(!Array.isArray(data.masteryStars)||data.masteryStars.some(id=>!POTION_IDS.has(id))||new Set(data.masteryStars).size!==data.masteryStars.length||typeof data.tiaUnlocked!=='boolean')throw Error('Invalid mastery stars.');s.masteryStars=[...data.masteryStars];s.tiaUnlocked=data.tiaUnlocked;}
  const legacyMastery=data.version===6&&data.request===undefined&&data.mastery!==undefined;
  const hasRequests=data.version>=6&&!legacyMastery;
  function saveTime(value){if(!finite(value)||value>8640000000000000||(data.version>=8&&!Number.isInteger(value)))throw Error('Invalid save timestamp.');return Math.round(value);}
@@ -132,10 +141,12 @@ function sanitizeSave(data){
  }
  if(s.potion){const p=s.potion,record=s.metrics.recipes[p.family+'-'+p.tier]||(s.metrics.recipes[p.family+'-'+p.tier]=freshRecipeStats());record.highestLevel=Math.max(record.highestLevel,p.level+1);}
  if(s.potion){const key=s.potion.family+'-'+s.potion.tier;if(!s.discovered.includes(key))s.discovered.push(key);}
+ syncMasteryStars(s);
  return s;
 }
 class PotionGame{
- constructor(state=INITIAL()){this.state=state;}
+ likeabilityInfo(){const milestones=[0,1000,5000,10000,15000,25000],value=Math.min(25000,this.state.likeability),reactions=milestones.filter(level=>value>=level).length;return{value,max:25000,reactions,next:milestones[reactions]??null};}
+ constructor(state=INITIAL()){this.state=state;syncMasteryStars(state);}
  fairyLevel(id){return Math.min(10,this.state.fairies[id]||0);}
  fairyEffects(){const s=this.state,id=s.activeFairyId,raw=FAIRY_EFFECTS[id],level=this.fairyLevel(id);if(!raw||!level)return{};const out={};for(const[key,pair]of Object.entries(raw)){if(Array.isArray(pair[0]))out[key]=pair[0].map((v,i)=>v+(pair[1][i]-v)*(level-1)/9);else out[key]=pair[0]+(pair[1]-pair[0])*(level-1)/9;}return out;}
  setActiveFairy(id){if(id!==null&&(!FAIRY_IDS.has(id)||!FAIRY_EFFECTS[id]||!this.state.fairies[id]))return false;this.state.activeFairyId=id;return true;}
@@ -143,20 +154,34 @@ class PotionGame{
  statRecipe(p=this.state.potion){const key=p.family+'-'+p.tier;return this.state.metrics.recipes[key]||(this.state.metrics.recipes[key]=freshRecipeStats());}
  recordPlayTime(ms){if(finite(ms)&&ms<=2000)this.state.metrics.activePlayMs=Math.min(1e300,this.state.metrics.activePlayMs+ms);}
  collectTicket(){if(this.state.tickets>=Number.MAX_SAFE_INTEGER)return false;this.state.tickets++;return true;}
- collect(family,tier){const s=this.state;if(!integer(family,2)||!integer(tier,s.tiers[family]))return false;const r=FAMILIES[family].recipes[tier];if(!s.potion){if(!r||r.base===null)return false;s.potion={family,tier,level:0,value:r.base};s.metrics.brewsStarted++;this.statRecipe().started++;const key=family+'-'+tier;if(!s.discovered.includes(key))s.discovered.push(key);}else{s.potion.value=Math.min(1e300,s.potion.value+FAMILIES[family].materials[tier].value*(1+(this.fairyEffects().materialAmount||0)+(s.rubyUpgrades.materials||0)*.05));}s.ingredients++;s.metrics.ingredientsByFamily[family]++;const record=this.statRecipe();record.ingredients++;record.highestLevel=Math.max(record.highestLevel,s.potion.level+1);return true;}
+ collect(family,tier){const s=this.state;if(!integer(family,2)||!integer(tier,s.tiers[family]))return false;const r=FAMILIES[family].recipes[tier];if(!s.potion){if(!r||r.base===null)return false;s.potion={family,tier,level:0,value:r.base};s.metrics.brewsStarted++;this.statRecipe().started++;const key=family+'-'+tier;if(!s.discovered.includes(key))s.discovered.push(key);}else{s.potion.value=Math.min(1e300,s.potion.value+FAMILIES[family].materials[tier].value*(1+(this.fairyEffects().materialAmount||0)));}s.ingredients++;s.metrics.ingredientsByFamily[family]++;const record=this.statRecipe();record.ingredients++;record.highestLevel=Math.max(record.highestLevel,s.potion.level+1);return true;}
 
  enhancementStatus(){const p=this.state.potion,r=this.recipe();if(!p)return'empty';if(p.level+1>=r.max_level)return'max';if(r.multipliers[p.level]===null||r.chances[p.level]===null)return'unknown';return'ready';}
- next(){if(this.enhancementStatus()!=='ready')return null;const s=this.state,p=s.potion,r=this.recipe();const fairy=this.fairyEffects();return{chance:Math.min(.99,r.chances[p.level]+s.luck*(DATA.limits.luck_bonus/10)+(s.rubyUpgrades.fortune||0)*.01+(s.powerups.enhancement>0?.1:0)+(fairy.enhancementChance?.[p.family]||0)),multiplier:r.multipliers[p.level]*(1+(fairy.enhancementMultiplier?.[p.family]||0)),bonus:s.powerups.enhancement>0};}
- enhance(roll=Math.random(),fairyRoll=Math.random()){const n=this.next();if(!n)return null;const s=this.state,record=this.statRecipe();s.metrics.enhancementAttempts++;if(n.bonus){s.powerups.enhancement--;s.metrics.powerupsUsed.enhancement++;}if(roll<n.chance){s.potion.value=Math.min(1e300,s.potion.value*n.multiplier);s.potion.level++;s.metrics.enhancementsSucceeded++;record.enhancements++;record.highestLevel=Math.max(record.highestLevel,s.potion.level+1);return'success';}s.failed++;s.metrics.enhancementsFailed++;record.failures++;if(s.powerups.protection>0){s.powerups.protection--;s.metrics.powerupsUsed.protection++;s.metrics.protectedFailures++;return'protected';}if(fairyRoll<(this.fairyEffects().failureProtection?.[s.potion.family]||0)){s.metrics.protectedFailures++;return'fairy-protected';}s.metrics.potionsLost++;s.potion=null;return'lost';}
+ next(){if(this.enhancementStatus()!=='ready')return null;const s=this.state,p=s.potion,r=this.recipe();const fairy=this.fairyEffects();return{chance:Math.min(.99,r.chances[p.level]+s.luck*(DATA.limits.luck_bonus/10)+(s.powerups.enhancement>0?.1:0)+(fairy.enhancementChance?.[p.family]||0)),multiplier:r.multipliers[p.level]*(1+(fairy.enhancementMultiplier?.[p.family]||0)),bonus:s.powerups.enhancement>0};}
+ enhance(roll=Math.random(),fairyRoll=Math.random()){const n=this.next();if(!n)return null;const s=this.state,record=this.statRecipe();s.metrics.enhancementAttempts++;if(n.bonus){s.powerups.enhancement--;s.metrics.powerupsUsed.enhancement++;}if(roll<n.chance){s.potion.value=Math.min(1e300,s.potion.value*n.multiplier);s.potion.level++;s.metrics.enhancementsSucceeded++;record.enhancements++;record.highestLevel=Math.max(record.highestLevel,s.potion.level+1);syncMasteryStars(s);return'success';}s.failed++;s.metrics.enhancementsFailed++;record.failures++;if(s.powerups.protection>0){s.powerups.protection--;s.metrics.powerupsUsed.protection++;s.metrics.protectedFailures++;return'protected';}if(fairyRoll<(this.fairyEffects().failureProtection?.[s.potion.family]||0)){s.metrics.protectedFailures++;return'fairy-protected';}s.metrics.potionsLost++;s.potion=null;return'lost';}
 
- sellValue(){const s=this.state;if(!s.potion)return 0;const fairy=this.fairyEffects().sellBonus?.[s.potion.family]||0;return Math.floor(Math.min(1e300,s.potion.value*(1+s.price*.05+fairy+(s.rubyUpgrades.value||0)*.05)*(s.powerups.selling>0?2:1)));}
+ sellValue(){const s=this.state;if(!s.potion)return 0;const fairy=this.fairyEffects().sellBonus?.[s.potion.family]||0;return Math.floor(Math.min(1e300,s.potion.value*(1+s.price*.05+fairy)*(s.powerups.selling>0?2:1)));}
  sell(){const s=this.state;if(!s.potion)return null;const value=this.sellValue(),record=this.statRecipe();s.metrics.coinsEarned=Math.min(1e300,s.metrics.coinsEarned+value);if(s.potion.level===0)s.metrics.soldLevelOne++;record.sold++;record.sales=Math.min(1e300,record.sales+value);record.best=Math.max(record.best,value);s.coins=Math.min(1e300,s.coins+value);s.sold++;s.best=Math.max(s.best,value);if(s.powerups.selling>0){s.powerups.selling--;s.metrics.powerupsUsed.selling++;}s.potion=null;return value;}
 
  upgradeInfo(key){const s=this.state;if(/^tier[0-2]$/.test(key)){const i=Number(key.slice(4)),level=s.tiers[i];return{level,max:24,cost:Math.round(60*3**level),displayLevel:level+1,displayMax:25};}const limits={luck:10,price:4,speed:19};if(!(key in limits))return null;const level=s[key];return{level,max:limits[key],cost:Math.round(({luck:80,price:90,speed:70}[key])*2**level),displayLevel:key==='speed'?level+1:level,displayMax:key==='speed'?20:limits[key]};}
- rubyUpgradeInfo(key){const meta=RUBY_UPGRADES[key];if(!meta)return null;const level=this.state.rubyUpgrades[key];return{...meta,level,cost:meta.base*(level+1)};}
- buyRubyUpgrade(key){const s=this.state,u=this.rubyUpgradeInfo(key);if(!u||u.level>=u.max||s.rubies<u.cost)return false;s.rubies-=u.cost;s.rubyUpgrades[key]++;s.metrics.upgradesBought++;return true;}
- buyCostume(id){const s=this.state;const costume=COSTUMES.entries.find(c=>c.id===id);if(!costume||s.costumes.includes(id))return false;const cost=costume.live2d&&!costume.free?COSTUMES.cost:0;if(s.rubies<cost)return false;s.rubies-=cost;s.costumes.push(id);s.activeCostumeId=id;return true;}
- equipCostume(id){if(!COSTUME_IDS.has(id)||!this.state.costumes.includes(id))return false;this.state.activeCostumeId=id;return true;}
+
+
+ buyCostume(id){const s=this.state;const costume=COSTUMES.entries.find(c=>c.id===id);if(!costume||s.costumes.includes(id)||(costume.character==='Tia'&&!s.tiaUnlocked))return false;const cost=costume.live2d&&!costume.free?COSTUMES.cost:0;if(s.tickets<cost)return false;s.tickets-=cost;s.costumes.push(id);s.activeCostumeId=id;return true;}
+ equipCostume(id){if(!COSTUME_IDS.has(id)||!this.state.costumes.includes(id)||(COSTUMES.entries.find(c=>c.id===id)?.character==='Tia'&&!this.state.tiaUnlocked))return false;this.state.activeCostumeId=id;return true;}
+ rewardPool(kind){const rows=kind==='hourly'?[['protection',1,1],['enhancement',1,1],['selling',1,1]]:kind==='tickets'?[['tickets',2,60],['tickets',5,15],['tickets',10,5],['rubies',1,12],['rubies',3,3],['fairy',1,5]]:kind==='skin'?[['rubies',10,60],['rubies',30,15],['rubies',100,5],['fairy',1,19],['skin',1,1]]:[];return rows.map(([currency,amount,weight])=>({currency,amount,weight}));}
+ rewardCost(kind){return kind==='hourly'?{currency:'coins',amount:10000}:kind==='tickets'?{currency:'tickets',amount:5}:kind==='skin'?{currency:'rubies',amount:20}:null;}
+ openReward(kind,character='Pio',now=Date.now(),random=Math.random,free=false){
+  const s=this.state,rows=this.rewardPool(kind),cost=this.rewardCost(kind);if(!rows.length||!cost||(free?(kind!=='hourly'||now<s.rewardReadyAt):s[cost.currency]<cost.amount)||(kind==='skin'&&character==='Tia'&&!s.tiaUnlocked))return null;
+  let roll=randomIndex(rows.reduce((n,r)=>n+r.weight,0),random),row=rows[0];for(const entry of rows){row=entry;if(roll<entry.weight)break;roll-=entry.weight;}
+  let{currency,amount}=row,name='',costume=null,fairy=null;
+  if(currency==='skin'){const pool=COSTUMES.entries.filter(c=>c.character===character&&c.live2d&&!c.free&&c.id!==COSTUMES.default);if(!pool.length){currency='tickets';amount=300;name='No eligible skins · converted';}else{costume=pool[randomIndex(pool.length,random)];name=costume.name;if(s.costumes.includes(costume.id)){currency='tickets';amount=300;name+=' duplicate';}}}
+  if(currency==='fairy'){const pool=FAIRIES.filter(f=>this.fairyLevel(f.id)<10);if(!pool.length){currency='tickets';amount=10;name='All fairies maxed · converted';}else{fairy=pool[randomIndex(pool.length,random)];name=fairy.name;}}
+  if(['tickets','rubies'].includes(currency)&&s[currency]>Number.MAX_SAFE_INTEGER-amount)return null;
+  if(['protection','enhancement','selling'].includes(currency)&&s.powerups[currency]>=1e9)return null;
+  if(free)s.rewardReadyAt=now+3600000;else s[cost.currency]-=cost.amount;
+  if(currency==='skin'){s.costumes.push(costume.id);s.activeCostumeId=costume.id;}else if(currency==='fairy')s.fairies[fairy.id]=(s.fairies[fairy.id]||0)+1;else if(['protection','enhancement','selling'].includes(currency))s.powerups[currency]+=amount;else s[currency]+=amount;
+  const result={kind,currency,amount,name,at:now};s.rewardHistory.unshift(result);s.rewardHistory.length=Math.min(20,s.rewardHistory.length);return result;
+ }
  rollFairy(random=Math.random){const s=this.state;if(s.tickets<FAIRY_DRAW_COST)return null;const pool=FAIRIES.filter(f=>this.fairyLevel(f.id)<10);if(!pool.length)return null;s.tickets-=FAIRY_DRAW_COST;const fairy=pool[randomIndex(pool.length,random)];s.fairies[fairy.id]=Math.min(1e9,(s.fairies[fairy.id]||0)+1);return fairy;}
  buy(key){const s=this.state,u=this.upgradeInfo(key);if(!u||u.level>=u.max||s.coins<u.cost)return false;s.coins-=u.cost;s.metrics.coinsSpent=Math.min(1e300,s.metrics.coinsSpent+u.cost);s.metrics.upgradesBought++;if(key.startsWith('tier')){const i=Number(key.slice(4));s.tiers[i]++;s.selected[i]=s.tiers[i];}else s[key]++;return true;}
  statistics(){const s=this.state;return{coins:s.coins,sold:s.sold,ingredients:s.ingredients,failed:s.failed,best:s.best,brewedTypes:s.discovered.length,unlockedRecipes:s.tiers.reduce((a,b)=>a+b+1,0),fairyTypes:Object.keys(s.fairies).length,fairiesReceived:Object.values(s.fairies).reduce((a,b)=>a+b,0),questsCompleted:s.travelers.reduce((a,t)=>a+t.quests,0),upgradesOwned:s.tiers.reduce((a,b)=>a+b,0)+s.luck+s.price+s.speed,metrics:s.metrics};}

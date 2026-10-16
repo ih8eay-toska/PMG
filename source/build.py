@@ -15,8 +15,11 @@ used.add('App_icon.png')
 used.add('AchievementIcon.png')
 used.add('Coin.png')
 used.add('Contest.png')
+used.update(['QuestMark.png','RewardIcon1.png','RewardIcon2.png','RewardIconFairy.png'])
+used.update(['TiaWho.png','PiaDialogue.png','TiaDialogue.png','BlackcatDialogue.png','PushcatDialogue.png'])
 used.add('StarCollectable.png')
-used.update(['Tia.png','Slider-characters.png'])
+used.add('Likeability.png')
+used.update(['Tia.png','Slider-characters.png','pio_slider.webp','tia_slider.webp'])
 used.update(['ClairePortrait.png', 'LukePortrait.png', 'PiriaPortrait.png', 'CharlottePortraitNormal.png', 'DemianPortrait.png', 'DaisyPortrait.png', 'KylePortrait.png', 'CharlottePortraitHappy.png', 'CharlottePortraitDisappointed.png', 'DaisyPortraitHappy.png', 'DaisyPortraitDisappointed.png'])
 for f in ['Life','Mana','Stamina']:
     used.update(f'{f}_{kind}{tier}.png' for kind in ['Material','Potion'] for tier in range(1,26))
@@ -27,6 +30,8 @@ for record in manifest['assets']:
     if key in used or normalized(key) in {normalized(k) for k in used}:
         data=(ROOT/record['path']).read_bytes()
         assets[key]=f'data:{record["mime"]};base64,'+base64.b64encode(data).decode()
+for key,path in [('pio_slider.webp','assets/references/pio_slider.webp'),('tia_slider.webp','assets/references/tia_slider.webp')]:
+    assets[key]='data:image/webp;base64,'+base64.b64encode((ROOT/path).read_bytes()).decode()
 template=(ROOT/'source/index.template.html').read_text(encoding='utf-8')
 for token,value in [('__ASSETS__',json.dumps(assets)),('__GAME_DATA__',(ROOT/'data/game-data.json').read_text(encoding='utf-8')),('__COSTUME_DATA__',(ROOT/'data/costumes.json').read_text(encoding='utf-8')),('__FLAVOR_DATA__',(ROOT/'data/flavor-text.json').read_text(encoding='utf-8')),('__MATERIAL_TEXT__',(ROOT/'data/material-descriptions.json').read_text(encoding='utf-8')),('__VISITOR_DIALOGUE__',(ROOT/'data/visitor-dialogue.json').read_text(encoding='utf-8')),('__FAIRY_DATA__',(ROOT/'data/fairies.json').read_text(encoding='utf-8')),('__ACHIEVEMENT_LORE__',(ROOT/'data/achievement-lore.json').read_text(encoding='utf-8')),('__STORAGE__',(ROOT/'source/storage.js').read_text(encoding='utf-8')),('__CORE__',(ROOT/'source/core.js').read_text(encoding='utf-8')),('__APP__',(ROOT/'source/app.js').read_text(encoding='utf-8'))]:template=template.replace(token,value)
 template=template.replace('__ACHIEVEMENT_LORE__',(ROOT/'data/achievement-lore.json').read_text(encoding='utf-8'))

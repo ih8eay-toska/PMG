@@ -1,6 +1,6 @@
 {
   "source": "https://potionmaker.fandom.com/wiki/Fairy",
-  "provenance": "35 regular fairy names and original icons from the archived wiki. Uniform guaranteed rewards from added visitors are a user-requested temporary shortcut. Collection counts only; fairy bonuses and levels are not implemented.",
+  "provenance": "Original fairy icons and names from the archived wiki. Forest, Fire, and Water Fairy abilities are shown at level 1; the current prototype has instant Pushcat draws and no Blackcat summon.",
   "entries": [
     {
       "id": "fairy-1",
@@ -176,6 +176,21 @@
       "id": "fairy-35",
       "name": "Wiz-Poong",
       "image": "Fairy35.png"
+    },
+    {
+      "id": "fairy-40",
+      "name": "Forest Fairy",
+      "image": "Fairy40.png"
+    },
+    {
+      "id": "fairy-41",
+      "name": "Fire Fairy",
+      "image": "Fairy41.png"
+    },
+    {
+      "id": "fairy-42",
+      "name": "Water Fairy",
+      "image": "Fairy42.png"
     }
   ]
 }
