@@ -1,0 +1,34 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
+const {createRequire}=require('node:module');
+const {ECONOMY,PotionGame,FAMILIES,FAIRIES}=require('./core.js');
+const positive=n=>assert.ok(Number.isFinite(n)&&n>0);
+assert.equal(ECONOMY.schema,1);
+for(const rule of Object.values(ECONOMY.upgrades)){positive(rule.baseCost);positive(rule.growth);assert.ok(Number.isInteger(rule.max)&&rule.max>0);if(rule.bonusPerLevel!==undefined)positive(rule.bonusPerLevel);}
+assert.ok(FAMILIES.every(f=>f.recipes.length===ECONOMY.upgrades.materials.max+1));
+assert.ok(ECONOMY.brewing.successCap>0&&ECONOMY.brewing.successCap<=1);
+positive(ECONOMY.brewing.enhancementBoost);positive(ECONOMY.brewing.sellingBoost);
+for(const n of Object.values(ECONOMY.bank.units))positive(n);
+for(const n of Object.values(ECONOMY.conveyor))positive(n);
+assert.ok(ECONOMY.conveyor.ticketProbability+ECONOMY.conveyor.solutionProbability<1);
+for(const n of ['activeMs','breakMs','skinCost','boostCost'])positive(ECONOMY.events[n]);
+assert.deepEqual(Object.keys(ECONOMY.events.boostBundle).sort(),['enhancement','protection','selling']);
+for(const n of Object.values(ECONOMY.events.boostBundle))assert.ok(Number.isSafeInteger(n)&&n>0);
+assert.ok(ECONOMY.visitors.waitMaxMs>=ECONOMY.visitors.waitMinMs);
+assert.ok(ECONOMY.visitors.boostMax>=ECONOMY.visitors.boostMin);
+for(const n of Object.values(ECONOMY.visitors))assert.ok(Number.isSafeInteger(n)&&n>0);
+for(const kind of ['hourly','tickets','skin']){const c=ECONOMY.chests[kind];assert.ok(['coins','tickets','rubies'].includes(c.cost.currency));positive(c.cost.amount);assert.ok(c.pool.length);for(const r of c.pool){assert.ok(['tickets','rubies','fairy','skin','protection','enhancement','selling'].includes(r.currency));assert.ok(Number.isSafeInteger(r.amount)&&r.amount>0);assert.ok(Number.isSafeInteger(r.weight)&&r.weight>0);}}
+const savedConfig=structuredClone(ECONOMY),corePath=path.join(__dirname,'core.js'),changed=structuredClone(ECONOMY);
+changed.upgrades.materials.baseCost=123;changed.upgrades.materials.growth=4;changed.costumes.ticketPrice=777;changed.events.skinCost=42;changed.events.boostCost=2;changed.events.boostBundle={protection:2,enhancement:3,selling:4};changed.chests.hourly.cost.amount=12345;changed.chests.tickets.cost.amount=7;changed.chests.duplicateTickets=500;changed.visitors.prepareMs=45000;changed.visitors.boostMax=7;
+const ctx=vm.createContext({ECONOMY_DATA:changed,require:createRequire(corePath),module:{exports:{}},Date,Math});vm.runInContext(fs.readFileSync(corePath,'utf8'),ctx);const game=new ctx.module.exports.PotionGame();
+assert.equal(game.upgradeInfo('tier0').cost,123);game.state.tiers[0]=1;assert.equal(game.upgradeInfo('tier0').cost,492);
+game.state.tickets=777;assert.ok(game.buyCostume('Kids_Costume.png'));assert.equal(game.state.tickets,0);
+game.state.eventRotation.solution=44;assert.ok(game.redeemEvent(0,'Turtleneck_Costume.png'));assert.equal(game.state.eventRotation.solution,2);assert.ok(game.redeemEvent(0,'boosts'));assert.deepEqual({...game.state.powerups},{protection:2,enhancement:3,selling:4});
+assert.equal(game.rewardCost('hourly').amount,12345);game.state.tickets=7;assert.ok(game.openReward('tickets','Pio',1000,()=>0));assert.equal(game.state.tickets,2);
+const alternate=new ctx.module.exports.PotionGame();alternate.state.nextVisitorAt=1;alternate.tick(1,()=>.999);assert.equal(alternate.state.travelers[9].rewardBoost.amount,7);assert.equal(ctx.module.exports.sanitizeSave(alternate.state).travelers[9].rewardBoost.amount,7);
+alternate.state.costumes=ctx.module.exports.COSTUMES.entries.map(c=>c.id);alternate.state.rubies=20;assert.equal(alternate.openReward('skin','Pio',1000,()=>.999).amount,500);assert.equal(ctx.module.exports.sanitizeSave(alternate.state).rewardHistory[0].amount,500);
+game.state.nextVisitorAt=1;game.tick(1,()=>0);assert.ok(game.acceptQuest(0,2));assert.equal(game.state.travelers[0].deadline,45002);
+const app=fs.readFileSync(path.join(__dirname,'app.js'),'utf8'),text=app.split(/\r?\n/).find(line=>line.startsWith('function rewardOddsText('));ctx.game=game;ctx.window={brewerCharacter:'Pio'};ctx.ECONOMY=changed;ctx.CURRENCY_UNITS=changed.bank.units;ctx.rewardLabels={tickets:'tickets',rubies:'rubies'};ctx.fmt=n=>String(n);ctx.duration=n=>String(n);vm.runInContext(text,ctx);assert.match(vm.runInContext("rewardOddsText('hourly')",ctx),/12345 gold/);
+for(const fairy of FAIRIES)game.state.fairies[fairy.id]=10;
+const ordinary=new PotionGame();for(const fairy of FAIRIES)ordinary.state.fairies[fairy.id]=10;const expected=ordinary.rewardExpectations('tickets');assert.ok(Math.abs((expected.tickets+10*expected.rubies)/5-1.01)<1e-12);
+assert.deepEqual(ECONOMY,savedConfig,'isolated configuration test must not change live defaults');
+console.log('Passed: economy schema, isolated price/event/timer changes, reward labels, and current max-fairy case expectations.');

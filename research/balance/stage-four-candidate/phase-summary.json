@@ -1,0 +1,1522 @@
+[
+  {
+    "scenario": "Tier 10 · manual",
+    "runs": 12,
+    "horizonMinutes": 120,
+    "milestones": {
+      "tia": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "notReached": 12
+      },
+      "regularSkin": {
+        "count": 12,
+        "p10": 91.975,
+        "p50": 95.23333333333333,
+        "p90": 99.45,
+        "notReached": 0
+      },
+      "eventSkin": {
+        "count": 12,
+        "p10": 41.5625,
+        "p50": 46.5875,
+        "p90": 49.1875,
+        "notReached": 0
+      },
+      "rubyCaseFund": {
+        "count": 12,
+        "p10": 91.96666666666667,
+        "p50": 95.22916666666667,
+        "p90": 99.44583333333334,
+        "notReached": 0
+      },
+      "fairy": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "notReached": 12
+      },
+      "allMaterials": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "notReached": 12
+      }
+    },
+    "middleGaps": {
+      "count": 216,
+      "p10": 2.6666666666666643,
+      "p50": 3.1625000000000014,
+      "p90": 4.083333333333332
+    },
+    "middleRuns": 12,
+    "end": {
+      "stars": {
+        "count": 12,
+        "p10": 62,
+        "p50": 62,
+        "p90": 63
+      },
+      "questDelivered": {
+        "count": 12,
+        "p10": 97,
+        "p50": 98,
+        "p90": 100
+      },
+      "questFailed": {
+        "count": 12,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0
+      },
+      "fairiesReceived": {
+        "count": 12,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0
+      },
+      "likeability": {
+        "count": 12,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0
+      }
+    },
+    "incomePerHour": {
+      "drops": {
+        "coins": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "tickets": {
+          "count": 12,
+          "p10": 82,
+          "p50": 87,
+          "p90": 92.5
+        },
+        "rubies": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "solution": {
+          "count": 12,
+          "p10": 54.5,
+          "p50": 64,
+          "p90": 68
+        },
+        "protection": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "enhancement": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "selling": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        }
+      },
+      "quests": {
+        "coins": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "tickets": {
+          "count": 12,
+          "p10": 97,
+          "p50": 98,
+          "p90": 100
+        },
+        "rubies": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "solution": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "protection": {
+          "count": 12,
+          "p10": 24.5,
+          "p50": 35,
+          "p90": 40.5
+        },
+        "enhancement": {
+          "count": 12,
+          "p10": 25.5,
+          "p50": 30,
+          "p90": 36.5
+        },
+        "selling": {
+          "count": 12,
+          "p10": 30,
+          "p50": 33,
+          "p90": 38.5
+        }
+      },
+      "requests": {
+        "coins": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "tickets": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "rubies": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "solution": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "protection": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "enhancement": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "selling": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        }
+      },
+      "free chest": {
+        "coins": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "tickets": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "rubies": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "solution": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "protection": {
+          "count": 12,
+          "p10": 0,
+          "p50": 1.5,
+          "p90": 1.5
+        },
+        "enhancement": {
+          "count": 12,
+          "p10": 0,
+          "p50": 1.5,
+          "p90": 1.5
+        },
+        "selling": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 1.5
+        }
+      },
+      "paid boosts": {
+        "coins": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "tickets": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "rubies": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "solution": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "protection": {
+          "count": 12,
+          "p10": 4.5,
+          "p50": 9,
+          "p90": 13.5
+        },
+        "enhancement": {
+          "count": 12,
+          "p10": 6,
+          "p50": 7.5,
+          "p90": 9
+        },
+        "selling": {
+          "count": 12,
+          "p10": 4.5,
+          "p50": 9,
+          "p90": 13.5
+        }
+      },
+      "event boosts": {
+        "coins": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "tickets": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "rubies": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "solution": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "protection": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "enhancement": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "selling": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        }
+      }
+    },
+    "boostUsagePerHour": {
+      "protection": {
+        "count": 12,
+        "p10": 35,
+        "p50": 47,
+        "p90": 50
+      },
+      "enhancement": {
+        "count": 12,
+        "p10": 30.5,
+        "p50": 39,
+        "p90": 45.5
+      },
+      "selling": {
+        "count": 12,
+        "p10": 37,
+        "p50": 44,
+        "p90": 49
+      }
+    },
+    "paidOpenings": {
+      "count": 12,
+      "p10": 18,
+      "p50": 18,
+      "p90": 18
+    }
+  },
+  {
+    "scenario": "Tier 10 · conveyor",
+    "runs": 12,
+    "horizonMinutes": 120,
+    "milestones": {
+      "tia": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "notReached": 12
+      },
+      "regularSkin": {
+        "count": 12,
+        "p10": 102.9625,
+        "p50": 108.52916666666667,
+        "p90": 109.95416666666667,
+        "notReached": 0
+      },
+      "eventSkin": {
+        "count": 12,
+        "p10": 48.295833333333334,
+        "p50": 50.3875,
+        "p90": 60.5375,
+        "notReached": 0
+      },
+      "rubyCaseFund": {
+        "count": 12,
+        "p10": 102.95833333333333,
+        "p50": 108.525,
+        "p90": 109.95,
+        "notReached": 0
+      },
+      "fairy": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "notReached": 12
+      },
+      "allMaterials": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "notReached": 12
+      }
+    },
+    "middleGaps": {
+      "count": 203,
+      "p10": 4.483333333333334,
+      "p50": 5.708333333333332,
+      "p90": 7.466666666666654
+    },
+    "middleRuns": 12,
+    "end": {
+      "stars": {
+        "count": 12,
+        "p10": 46,
+        "p50": 47,
+        "p90": 47
+      },
+      "questDelivered": {
+        "count": 12,
+        "p10": 85,
+        "p50": 86,
+        "p90": 89
+      },
+      "questFailed": {
+        "count": 12,
+        "p10": 0,
+        "p50": 2,
+        "p90": 2
+      },
+      "fairiesReceived": {
+        "count": 12,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0
+      },
+      "likeability": {
+        "count": 12,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0
+      }
+    },
+    "incomePerHour": {
+      "drops": {
+        "coins": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "tickets": {
+          "count": 12,
+          "p10": 71.5,
+          "p50": 78,
+          "p90": 87
+        },
+        "rubies": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "solution": {
+          "count": 12,
+          "p10": 51.5,
+          "p50": 56.5,
+          "p90": 59.5
+        },
+        "protection": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "enhancement": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "selling": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        }
+      },
+      "quests": {
+        "coins": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "tickets": {
+          "count": 12,
+          "p10": 84,
+          "p50": 86,
+          "p90": 88
+        },
+        "rubies": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "solution": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "protection": {
+          "count": 12,
+          "p10": 20.5,
+          "p50": 29.5,
+          "p90": 32.5
+        },
+        "enhancement": {
+          "count": 12,
+          "p10": 25,
+          "p50": 27,
+          "p90": 31
+        },
+        "selling": {
+          "count": 12,
+          "p10": 23,
+          "p50": 29,
+          "p90": 33.5
+        }
+      },
+      "requests": {
+        "coins": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "tickets": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "rubies": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "solution": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "protection": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "enhancement": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "selling": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        }
+      },
+      "free chest": {
+        "coins": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "tickets": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "rubies": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "solution": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "protection": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 3
+        },
+        "enhancement": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 1.5
+        },
+        "selling": {
+          "count": 12,
+          "p10": 0,
+          "p50": 1.5,
+          "p90": 1.5
+        }
+      },
+      "paid boosts": {
+        "coins": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "tickets": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "rubies": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "solution": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "protection": {
+          "count": 12,
+          "p10": 4.5,
+          "p50": 7.5,
+          "p90": 10.5
+        },
+        "enhancement": {
+          "count": 12,
+          "p10": 6,
+          "p50": 9,
+          "p90": 10.5
+        },
+        "selling": {
+          "count": 12,
+          "p10": 7.5,
+          "p50": 10.5,
+          "p90": 13.5
+        }
+      },
+      "event boosts": {
+        "coins": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "tickets": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "rubies": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "solution": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "protection": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "enhancement": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "selling": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        }
+      }
+    },
+    "boostUsagePerHour": {
+      "protection": {
+        "count": 12,
+        "p10": 31,
+        "p50": 38.5,
+        "p90": 42.5
+      },
+      "enhancement": {
+        "count": 12,
+        "p10": 31.5,
+        "p50": 36,
+        "p90": 41.5
+      },
+      "selling": {
+        "count": 12,
+        "p10": 32,
+        "p50": 38,
+        "p90": 46.5
+      }
+    },
+    "paidOpenings": {
+      "count": 12,
+      "p10": 18,
+      "p50": 18,
+      "p90": 18
+    }
+  },
+  {
+    "scenario": "Tier 20 · manual",
+    "runs": 12,
+    "horizonMinutes": 120,
+    "milestones": {
+      "tia": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "notReached": 12
+      },
+      "regularSkin": {
+        "count": 12,
+        "p10": 90.66666666666667,
+        "p50": 95.55833333333334,
+        "p90": 97.16666666666667,
+        "notReached": 0
+      },
+      "eventSkin": {
+        "count": 12,
+        "p10": 34.36666666666667,
+        "p50": 46.22083333333333,
+        "p90": 47.329166666666666,
+        "notReached": 0
+      },
+      "rubyCaseFund": {
+        "count": 12,
+        "p10": 90.65833333333333,
+        "p50": 95.55,
+        "p90": 97.15833333333333,
+        "notReached": 0
+      },
+      "fairy": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "notReached": 12
+      },
+      "allMaterials": {
+        "count": 12,
+        "p10": 45.458333333333336,
+        "p50": 45.78333333333333,
+        "p90": 46.34166666666667,
+        "notReached": 0
+      }
+    },
+    "middleGaps": {
+      "count": 0,
+      "p10": null,
+      "p50": null,
+      "p90": null
+    },
+    "middleRuns": 0,
+    "end": {
+      "stars": {
+        "count": 12,
+        "p10": 75,
+        "p50": 75,
+        "p90": 75
+      },
+      "questDelivered": {
+        "count": 12,
+        "p10": 97,
+        "p50": 98,
+        "p90": 99
+      },
+      "questFailed": {
+        "count": 12,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0
+      },
+      "fairiesReceived": {
+        "count": 12,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0
+      },
+      "likeability": {
+        "count": 12,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0
+      }
+    },
+    "incomePerHour": {
+      "drops": {
+        "coins": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "tickets": {
+          "count": 12,
+          "p10": 83,
+          "p50": 91,
+          "p90": 92.5
+        },
+        "rubies": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "solution": {
+          "count": 12,
+          "p10": 58.5,
+          "p50": 66.5,
+          "p90": 71.5
+        },
+        "protection": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "enhancement": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "selling": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        }
+      },
+      "quests": {
+        "coins": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "tickets": {
+          "count": 12,
+          "p10": 97,
+          "p50": 97,
+          "p90": 99
+        },
+        "rubies": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "solution": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "protection": {
+          "count": 12,
+          "p10": 25.5,
+          "p50": 30,
+          "p90": 38
+        },
+        "enhancement": {
+          "count": 12,
+          "p10": 28,
+          "p50": 32.5,
+          "p90": 38.5
+        },
+        "selling": {
+          "count": 12,
+          "p10": 27,
+          "p50": 33.5,
+          "p90": 37.5
+        }
+      },
+      "requests": {
+        "coins": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "tickets": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "rubies": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "solution": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "protection": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "enhancement": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "selling": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        }
+      },
+      "free chest": {
+        "coins": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "tickets": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "rubies": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "solution": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "protection": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 1.5
+        },
+        "enhancement": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 1.5
+        },
+        "selling": {
+          "count": 12,
+          "p10": 0,
+          "p50": 1.5,
+          "p90": 1.5
+        }
+      },
+      "paid boosts": {
+        "coins": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "tickets": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "rubies": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "solution": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "protection": {
+          "count": 12,
+          "p10": 6,
+          "p50": 9,
+          "p90": 13.5
+        },
+        "enhancement": {
+          "count": 12,
+          "p10": 7.5,
+          "p50": 10.5,
+          "p90": 10.5
+        },
+        "selling": {
+          "count": 12,
+          "p10": 3,
+          "p50": 7.5,
+          "p90": 10.5
+        }
+      },
+      "event boosts": {
+        "coins": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "tickets": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "rubies": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "solution": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "protection": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "enhancement": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "selling": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        }
+      }
+    },
+    "boostUsagePerHour": {
+      "protection": {
+        "count": 12,
+        "p10": 37,
+        "p50": 42.5,
+        "p90": 48
+      },
+      "enhancement": {
+        "count": 12,
+        "p10": 40,
+        "p50": 44,
+        "p90": 49
+      },
+      "selling": {
+        "count": 12,
+        "p10": 35,
+        "p50": 40.5,
+        "p90": 48.5
+      }
+    },
+    "paidOpenings": {
+      "count": 12,
+      "p10": 18,
+      "p50": 18,
+      "p90": 18
+    }
+  },
+  {
+    "scenario": "Tier 20 · conveyor",
+    "runs": 12,
+    "horizonMinutes": 120,
+    "milestones": {
+      "tia": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "notReached": 12
+      },
+      "regularSkin": {
+        "count": 7,
+        "p10": 109.07083333333334,
+        "p50": 115.27083333333333,
+        "p90": 116.7125,
+        "notReached": 5
+      },
+      "eventSkin": {
+        "count": 12,
+        "p10": 46.62916666666667,
+        "p50": 49.87083333333333,
+        "p90": 54.97083333333333,
+        "notReached": 0
+      },
+      "rubyCaseFund": {
+        "count": 7,
+        "p10": 109.0625,
+        "p50": 115.2625,
+        "p90": 116.70416666666667,
+        "notReached": 5
+      },
+      "fairy": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "notReached": 12
+      },
+      "allMaterials": {
+        "count": 11,
+        "p10": 107.53333333333333,
+        "p50": 110.28333333333333,
+        "p90": 115.66666666666667,
+        "notReached": 1
+      }
+    },
+    "middleGaps": {
+      "count": 0,
+      "p10": null,
+      "p50": null,
+      "p90": null
+    },
+    "middleRuns": 0,
+    "end": {
+      "stars": {
+        "count": 12,
+        "p10": 74,
+        "p50": 75,
+        "p90": 75
+      },
+      "questDelivered": {
+        "count": 12,
+        "p10": 71,
+        "p50": 76,
+        "p90": 78
+      },
+      "questFailed": {
+        "count": 12,
+        "p10": 3,
+        "p50": 4,
+        "p90": 6
+      },
+      "fairiesReceived": {
+        "count": 12,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0
+      },
+      "likeability": {
+        "count": 12,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0
+      }
+    },
+    "incomePerHour": {
+      "drops": {
+        "coins": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "tickets": {
+          "count": 12,
+          "p10": 68,
+          "p50": 75.5,
+          "p90": 82
+        },
+        "rubies": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "solution": {
+          "count": 12,
+          "p10": 50,
+          "p50": 54,
+          "p90": 59.5
+        },
+        "protection": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "enhancement": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "selling": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        }
+      },
+      "quests": {
+        "coins": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "tickets": {
+          "count": 12,
+          "p10": 71,
+          "p50": 76,
+          "p90": 77
+        },
+        "rubies": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "solution": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "protection": {
+          "count": 12,
+          "p10": 23.5,
+          "p50": 27,
+          "p90": 30
+        },
+        "enhancement": {
+          "count": 12,
+          "p10": 15,
+          "p50": 22,
+          "p90": 27
+        },
+        "selling": {
+          "count": 12,
+          "p10": 19.5,
+          "p50": 26,
+          "p90": 26.5
+        }
+      },
+      "requests": {
+        "coins": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "tickets": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "rubies": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "solution": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "protection": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "enhancement": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "selling": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        }
+      },
+      "free chest": {
+        "coins": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "tickets": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "rubies": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "solution": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "protection": {
+          "count": 12,
+          "p10": 0,
+          "p50": 1.5,
+          "p90": 1.5
+        },
+        "enhancement": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 1.5
+        },
+        "selling": {
+          "count": 12,
+          "p10": 0,
+          "p50": 1.5,
+          "p90": 1.5
+        }
+      },
+      "paid boosts": {
+        "coins": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "tickets": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "rubies": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "solution": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "protection": {
+          "count": 12,
+          "p10": 4.5,
+          "p50": 6,
+          "p90": 12
+        },
+        "enhancement": {
+          "count": 12,
+          "p10": 6,
+          "p50": 9,
+          "p90": 13.5
+        },
+        "selling": {
+          "count": 12,
+          "p10": 7.5,
+          "p50": 9,
+          "p90": 10.5
+        }
+      },
+      "event boosts": {
+        "coins": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "tickets": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "rubies": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "solution": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "protection": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "enhancement": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        },
+        "selling": {
+          "count": 12,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0
+        }
+      }
+    },
+    "boostUsagePerHour": {
+      "protection": {
+        "count": 12,
+        "p10": 30,
+        "p50": 35,
+        "p90": 38
+      },
+      "enhancement": {
+        "count": 12,
+        "p10": 22.5,
+        "p50": 31.5,
+        "p90": 39.5
+      },
+      "selling": {
+        "count": 12,
+        "p10": 30.5,
+        "p50": 36.5,
+        "p90": 39.5
+      }
+    },
+    "paidOpenings": {
+      "count": 12,
+      "p10": 18,
+      "p50": 18,
+      "p90": 18
+    }
+  }
+]

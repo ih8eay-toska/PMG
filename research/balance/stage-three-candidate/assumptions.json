@@ -1,0 +1,15 @@
+{
+  "researchOnly": true,
+  "seeds": 40,
+  "horizonMinutes": 120,
+  "actionMs": 500,
+  "capture": 0.9,
+  "chestRevealMs": 4200,
+  "finiteBoosts": true,
+  "sessionFairyPolicy": "Fresh save; acquired fairies not equipped. All fairy effects separately covered at levels 1/5/10 in recipes.csv.",
+  "analyticalConveyor": "One exact recipe; equal family tiers; empty cauldron emission; phase averaged event share; misses and interventions excluded.",
+  "timingIsAssumed": true,
+  "gates": "Same-family earlier mastery. Applied only inside research engine.",
+  "candidateFairyChanges": "Chance bonuses scaled to 10% of original; multiplier bonus applied once per whole brew, distributed over its enhancement steps. Other fairy effects unchanged.",
+  "liveFilesUnchanged": true
+}

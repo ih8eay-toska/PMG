@@ -1,0 +1,17 @@
+{
+  "seeds": 40,
+  "minutes": 180,
+  "actionMs": 500,
+  "stepMs": 250,
+  "conveyorStepMs": 50,
+  "capture": 0.9,
+  "chestRevealMs": 4200,
+  "timingIsAssumed": true,
+  "paidLimit": "3 per fixed 20 active-minute window; adjacent windows allow a boundary burst of 6",
+  "manualDrops": "Advance a visible special-reward strip; catches still consume actions. Proposed UI work, not live behavior.",
+  "earlySales": "Farm already-mastered recipes at best no-consumable gold/action stop; pursue maximum on unmastered recipes and exact quest levels on orders.",
+  "bank": "Only 10 tickets ↔ 1 ruby. No gold exchange.",
+  "quests": "2 tickets and a random 1–3 charges of one boost; no automatic ruby.",
+  "phaseProbes": "Synthetic owned-tier anchors, prior mastery credited, no starting currencies. Not measured fresh-save arrival times.",
+  "liveChanged": false
+}

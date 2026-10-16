@@ -1,0 +1,188 @@
+{
+  "familyComparisons": 2750,
+  "worstFamilySpread": {
+    "ratio": 1.2283459812564006,
+    "luck": 0,
+    "price": 0,
+    "tier": 2,
+    "mode": "manual",
+    "income": [
+      673.0434782608696,
+      584.3272907177745,
+      717.7560792916188
+    ]
+  },
+  "incomeDeclines": [],
+  "middlePurchaseGaps": [
+    {
+      "scenario": "Manual · earned boosts",
+      "count": 595,
+      "p10": 1.11666666666666,
+      "p50": 1.8083333333333371,
+      "p90": 9.012500000000003,
+      "runsWithMiddlePurchase": 40,
+      "runs": 40,
+      "horizonMinutes": 120
+    },
+    {
+      "scenario": "Conveyor · earned boosts",
+      "count": 0,
+      "p10": null,
+      "p50": null,
+      "p90": null,
+      "runsWithMiddlePurchase": 0,
+      "runs": 40,
+      "horizonMinutes": 120
+    },
+    {
+      "scenario": "Conveyor · available ingredients",
+      "count": 232,
+      "p10": 2.4833333333333343,
+      "p50": 4.158333333333331,
+      "p90": 20.183333333333337,
+      "runsWithMiddlePurchase": 40,
+      "runs": 40,
+      "horizonMinutes": 120
+    },
+    {
+      "scenario": "Conveyor · available ingredients + token boosts",
+      "count": 340,
+      "p10": 2.2833333333333314,
+      "p50": 3.8249999999999886,
+      "p90": 16.450000000000003,
+      "runsWithMiddlePurchase": 40,
+      "runs": 40,
+      "horizonMinutes": 120
+    },
+    {
+      "scenario": "Manual · paid boost chests",
+      "count": 595,
+      "p10": 1.11666666666666,
+      "p50": 1.8083333333333371,
+      "p90": 9.012500000000003,
+      "runsWithMiddlePurchase": 40,
+      "runs": 40,
+      "horizonMinutes": 120
+    },
+    {
+      "scenario": "Conveyor · paid boost chests",
+      "count": 0,
+      "p10": null,
+      "p50": null,
+      "p90": null,
+      "runsWithMiddlePurchase": 0,
+      "runs": 40,
+      "horizonMinutes": 120
+    },
+    {
+      "scenario": "Conveyor · spend event tokens on boosts",
+      "count": 0,
+      "p10": null,
+      "p50": null,
+      "p90": null,
+      "runsWithMiddlePurchase": 0,
+      "runs": 40,
+      "horizonMinutes": 120
+    },
+    {
+      "scenario": "Conveyor · traveler requests",
+      "count": 0,
+      "p10": null,
+      "p50": null,
+      "p90": null,
+      "runsWithMiddlePurchase": 0,
+      "runs": 40,
+      "horizonMinutes": 120
+    }
+  ],
+  "fairyStress": [
+    {
+      "mode": "normalized",
+      "inventory": "0/0/0",
+      "ratio": 1.7953002287944617,
+      "fairy": "Red-me Lv 10",
+      "family": "Life",
+      "tier": 25,
+      "input": "conveyor"
+    },
+    {
+      "mode": "normalized",
+      "inventory": "5/10/2",
+      "ratio": 1.4060150375939848,
+      "fairy": "Blue-Cho Lv 10",
+      "family": "Mana",
+      "tier": 2,
+      "input": "manual"
+    },
+    {
+      "mode": "original",
+      "inventory": "0/0/0",
+      "ratio": 113.22646312208789,
+      "fairy": "Yell-Me Lv 10",
+      "family": "Stamina",
+      "tier": 25,
+      "input": "conveyor"
+    },
+    {
+      "mode": "original",
+      "inventory": "5/10/2",
+      "ratio": 92.74658600970528,
+      "fairy": "Yellow-Cho Lv 10",
+      "family": "Stamina",
+      "tier": 25,
+      "input": "conveyor"
+    }
+  ],
+  "feeding": [
+    {
+      "unlockedTier": 1,
+      "goldPerMinute": 578.4308962837017,
+      "family": "Life",
+      "recipeTier": 1,
+      "additions": 0,
+      "sellLevel": 3,
+      "highestTierNoFeedingGoldPerMinute": 578.4308962837017,
+      "ratioToHighestTierNoFeeding": 1
+    },
+    {
+      "unlockedTier": 7,
+      "goldPerMinute": 6023.589542844235,
+      "family": "Life",
+      "recipeTier": 7,
+      "additions": 0,
+      "sellLevel": 5,
+      "highestTierNoFeedingGoldPerMinute": 6023.589542844235,
+      "ratioToHighestTierNoFeeding": 1
+    },
+    {
+      "unlockedTier": 13,
+      "goldPerMinute": 38400.383335632,
+      "family": "Life",
+      "recipeTier": 13,
+      "additions": 0,
+      "sellLevel": 5,
+      "highestTierNoFeedingGoldPerMinute": 38400.383335632,
+      "ratioToHighestTierNoFeeding": 1
+    },
+    {
+      "unlockedTier": 19,
+      "goldPerMinute": 222436.22938937932,
+      "family": "Life",
+      "recipeTier": 19,
+      "additions": 0,
+      "sellLevel": 5,
+      "highestTierNoFeedingGoldPerMinute": 222436.22938937932,
+      "ratioToHighestTierNoFeeding": 1
+    },
+    {
+      "unlockedTier": 25,
+      "goldPerMinute": 1226863.4583587158,
+      "family": "Life",
+      "recipeTier": 25,
+      "additions": 0,
+      "sellLevel": 5,
+      "highestTierNoFeedingGoldPerMinute": 1226863.4583587158,
+      "ratioToHighestTierNoFeeding": 1
+    }
+  ]
+}

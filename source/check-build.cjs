@@ -3,7 +3,7 @@ const root=path.resolve(__dirname,'..'),html=fs.readFileSync(path.join(root,'Pot
 assert.ok(!/__(?:ASSETS|GAME_DATA|FLAVOR_DATA|MATERIAL_TEXT|VISITOR_DIALOGUE|FAIRY_DATA|CORE|STORAGE|APP)__/.test(html),'Unreplaced build token');
 const scripts=[...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m=>m[1]);assert.equal(scripts.length,11);scripts.forEach(s=>new vm.Script(s));
 const ctx=vm.createContext({Date,Math});scripts.slice(0,-1).forEach(s=>vm.runInContext(s,ctx));
-for(const[name,file]of [['GAME_DATA','game-data.json'],['FLAVOR_TEXT','flavor-text.json'],['MATERIAL_TEXT','material-descriptions.json'],['VISITOR_DIALOGUE','visitor-dialogue.json'],['FAIRY_DATA','fairies.json']]){
+for(const[name,file]of [['GAME_DATA','game-data.json'],['ECONOMY_DATA','economy.json'],['FLAVOR_TEXT','flavor-text.json'],['MATERIAL_TEXT','material-descriptions.json'],['VISITOR_DIALOGUE','visitor-dialogue.json'],['FAIRY_DATA','fairies.json']]){
  const actual=vm.runInContext('JSON.stringify('+name+')',ctx),expected=JSON.stringify(JSON.parse(fs.readFileSync(path.join(root,'data',file),'utf8')));assert.equal(actual,expected,file);
 }
 for(const[file,index]of [['core.js',8],['storage.js',9],['app.js',10]])assert.equal(scripts[index].trim(),fs.readFileSync(path.join(root,'source',file),'utf8').trim(),'Stale embedded '+file);

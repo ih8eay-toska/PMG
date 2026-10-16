@@ -1,0 +1,362 @@
+{
+  "schema": 2,
+  "upgrades": {
+    "materials": {
+      "max": 24,
+      "costs": [
+        [
+          542,
+          1075,
+          1740,
+          4730,
+          6622,
+          8509,
+          24084,
+          31766,
+          41310,
+          57164,
+          74529,
+          98946,
+          128556,
+          170784,
+          232191,
+          308363,
+          400851,
+          532625,
+          692015,
+          958806,
+          1246793,
+          1620680,
+          2106734,
+          2739137
+        ],
+        [
+          533,
+          988,
+          1908,
+          4820,
+          6573,
+          8636,
+          23756,
+          31527,
+          41490,
+          57236,
+          74646,
+          98514,
+          127679,
+          168935,
+          229568,
+          303341,
+          394520,
+          521132,
+          677952,
+          934403,
+          1211436,
+          1574618,
+          2047136,
+          2661489
+        ],
+        [
+          557,
+          1116,
+          1874,
+          4890,
+          6760,
+          8753,
+          24449,
+          32027,
+          41558,
+          57290,
+          74592,
+          97587,
+          127116,
+          167054,
+          226944,
+          298274,
+          387680,
+          509067,
+          661622,
+          906777,
+          1178946,
+          1532709,
+          1992681,
+          2590470
+        ]
+      ],
+      "masteryGates": [
+        {
+          "unlockTier": 5,
+          "masteredRecipes": 2
+        },
+        {
+          "unlockTier": 10,
+          "masteredRecipes": 5
+        },
+        {
+          "unlockTier": 15,
+          "masteredRecipes": 8
+        },
+        {
+          "unlockTier": 20,
+          "masteredRecipes": 12
+        },
+        {
+          "unlockTier": 25,
+          "masteredRecipes": 16
+        }
+      ]
+    },
+    "luck": {
+      "max": 10,
+      "bonusPerLevel": 0.004,
+      "costs": [
+        330,
+        557,
+        941,
+        1591,
+        2688,
+        4543,
+        7678,
+        12976,
+        21929,
+        37060
+      ]
+    },
+    "price": {
+      "max": 4,
+      "bonusPerLevel": 0.05,
+      "costs": [
+        557,
+        1591,
+        4543,
+        12976
+      ]
+    },
+    "speed": {
+      "max": 19,
+      "bonusPerLevel": 0.12,
+      "costs": [
+        137,
+        177,
+        231,
+        300,
+        390,
+        507,
+        659,
+        857,
+        1113,
+        1448,
+        1882,
+        2446,
+        3180,
+        4134,
+        5375,
+        6987,
+        9083,
+        11808,
+        15350
+      ]
+    }
+  },
+  "brewing": {
+    "successCap": 0.99,
+    "enhancementBoost": 0.1,
+    "sellingBoost": 2,
+    "fairyChanceScale": 0.1,
+    "fairyMultiplierPerBrew": true
+  },
+  "costumes": {
+    "ticketPrice": 300,
+    "tiaMasteryStars": 20
+  },
+  "bank": {
+    "units": {
+      "tickets": 10,
+      "rubies": 1
+    },
+    "pairs": [
+      [
+        "tickets",
+        "rubies"
+      ],
+      [
+        "rubies",
+        "tickets"
+      ]
+    ]
+  },
+  "conveyor": {
+    "spacing": 76,
+    "baseSpeed": 76,
+    "ticketProbability": 0.009900990099009901,
+    "solutionProbability": 0.009900990099009901,
+    "emptyGatherMultiplier": 4,
+    "specialDropsInManual": true
+  },
+  "events": {
+    "activeMs": 900000,
+    "breakMs": 300000,
+    "skinCost": 50,
+    "boostCost": 1,
+    "boostBundle": {
+      "protection": 1,
+      "enhancement": 1,
+      "selling": 1
+    }
+  },
+  "visitors": {
+    "waitMinMs": 20000,
+    "waitMaxMs": 60000,
+    "offerMs": 60000,
+    "prepareMs": 60000,
+    "rewardDelayMs": 30000,
+    "boostMin": 1,
+    "boostMax": 3,
+    "rubyReward": 0,
+    "ticketReward": 2
+  },
+  "chests": {
+    "freeBoostCooldownMs": 3600000,
+    "revealMs": 4200,
+    "duplicateTickets": 300,
+    "maxFairyTickets": 5,
+    "hourly": {
+      "cost": {
+        "currency": "coins",
+        "amount": 50
+      },
+      "pool": [
+        {
+          "currency": "protection",
+          "amount": 3,
+          "weight": 1
+        },
+        {
+          "currency": "enhancement",
+          "amount": 3,
+          "weight": 1
+        },
+        {
+          "currency": "selling",
+          "amount": 3,
+          "weight": 1
+        }
+      ],
+      "priceBands": [
+        {
+          "firstTier": 1,
+          "cost": 50
+        },
+        {
+          "firstTier": 5,
+          "cost": 250
+        },
+        {
+          "firstTier": 10,
+          "cost": 1000
+        },
+        {
+          "firstTier": 15,
+          "cost": 4000
+        },
+        {
+          "firstTier": 20,
+          "cost": 16000
+        }
+      ],
+      "paidWindowMs": 1200000,
+      "paidLimit": 3
+    },
+    "tickets": {
+      "cost": {
+        "currency": "tickets",
+        "amount": 10
+      },
+      "pool": [
+        {
+          "currency": "tickets",
+          "amount": 6,
+          "weight": 60
+        },
+        {
+          "currency": "tickets",
+          "amount": 10,
+          "weight": 15
+        },
+        {
+          "currency": "tickets",
+          "amount": 20,
+          "weight": 5
+        },
+        {
+          "currency": "rubies",
+          "amount": 1,
+          "weight": 12
+        },
+        {
+          "currency": "rubies",
+          "amount": 3,
+          "weight": 2
+        },
+        {
+          "currency": "rubies",
+          "amount": 8,
+          "weight": 1
+        },
+        {
+          "currency": "fairy",
+          "amount": 1,
+          "weight": 5
+        }
+      ]
+    },
+    "skin": {
+      "cost": {
+        "currency": "rubies",
+        "amount": 30
+      },
+      "pool": [
+        {
+          "currency": "rubies",
+          "amount": 15,
+          "weight": 60
+        },
+        {
+          "currency": "rubies",
+          "amount": 45,
+          "weight": 15
+        },
+        {
+          "currency": "rubies",
+          "amount": 150,
+          "weight": 5
+        },
+        {
+          "currency": "fairy",
+          "amount": 1,
+          "weight": 19
+        },
+        {
+          "currency": "skin",
+          "amount": 1,
+          "weight": 1
+        }
+      ]
+    }
+  },
+  "requests": {
+    "costsByVisitorLevel": [
+      150,
+      400,
+      1200,
+      3000,
+      8000,
+      20000,
+      50000,
+      120000,
+      180000,
+      250000
+    ],
+    "coinReward": 125
+  }
+}

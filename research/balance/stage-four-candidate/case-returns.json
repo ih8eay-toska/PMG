@@ -1,0 +1,90 @@
+[
+  {
+    "kind": "tickets",
+    "maxFairies": false,
+    "ownSkins": false,
+    "expected": {
+      "tickets": 6.1,
+      "rubies": 0.26,
+      "fairy": 0.05
+    },
+    "currencyReturn": 0.8699999999999999
+  },
+  {
+    "kind": "skin",
+    "maxFairies": false,
+    "ownSkins": false,
+    "expected": {
+      "rubies": 23.25,
+      "fairy": 0.19,
+      "tickets": 0,
+      "skin": 0.01
+    },
+    "currencyReturn": 0.775
+  },
+  {
+    "kind": "tickets",
+    "maxFairies": false,
+    "ownSkins": true,
+    "expected": {
+      "tickets": 6.1,
+      "rubies": 0.26,
+      "fairy": 0.05
+    },
+    "currencyReturn": 0.8699999999999999
+  },
+  {
+    "kind": "skin",
+    "maxFairies": false,
+    "ownSkins": true,
+    "expected": {
+      "rubies": 23.25,
+      "fairy": 0.19,
+      "tickets": 3,
+      "skin": 0
+    },
+    "currencyReturn": 0.785
+  },
+  {
+    "kind": "tickets",
+    "maxFairies": true,
+    "ownSkins": false,
+    "expected": {
+      "tickets": 6.35,
+      "rubies": 0.26
+    },
+    "currencyReturn": 0.8949999999999999
+  },
+  {
+    "kind": "skin",
+    "maxFairies": true,
+    "ownSkins": false,
+    "expected": {
+      "rubies": 23.25,
+      "tickets": 0.95,
+      "skin": 0.01
+    },
+    "currencyReturn": 0.7781666666666667
+  },
+  {
+    "kind": "tickets",
+    "maxFairies": true,
+    "ownSkins": true,
+    "expected": {
+      "tickets": 6.35,
+      "rubies": 0.26
+    },
+    "currencyReturn": 0.8949999999999999
+  },
+  {
+    "kind": "skin",
+    "maxFairies": true,
+    "ownSkins": true,
+    "expected": {
+      "rubies": 23.25,
+      "tickets": 3.95,
+      "skin": 0
+    },
+    "currencyReturn": 0.7881666666666667
+  }
+]

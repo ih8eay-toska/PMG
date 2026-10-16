@@ -1,0 +1,19 @@
+{
+  "seeds": 40,
+  "minutes": 120,
+  "stepMs": 250,
+  "actionMs": 500,
+  "capture": 0.9,
+  "width": 456,
+  "chestRevealMs": 4200,
+  "baseSeedRange": [
+    1,
+    40
+  ],
+  "sensitivitySeeds": 16,
+  "scenarioCount": 6,
+  "sessionCount": 336,
+  "fairySessionPolicy": "Do not auto-equip newly acquired fairies",
+  "gitHead": "90ab9b281572bc30b02492630428286006aa4fe7",
+  "timingIsAssumed": true
+}

@@ -1,0 +1,2222 @@
+[
+  {
+    "scenario": "Manual · earned boosts",
+    "runs": 40,
+    "actionMs": 500,
+    "milestones": {
+      "firstMaterialUpgrade": {
+        "count": 40,
+        "p10": 0.23333333333333334,
+        "p50": 0.275,
+        "p90": 0.31666666666666665,
+        "mean": 0.2800000000000001,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "tia": {
+        "count": 40,
+        "p10": 4.308333333333334,
+        "p50": 5.233333333333333,
+        "p90": 6.083333333333333,
+        "mean": 5.312083333333335,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "allMaterials": {
+        "count": 40,
+        "p10": 17.775,
+        "p50": 21.275,
+        "p90": 25.275,
+        "mean": 21.589375,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "regularSkin": {
+        "count": 40,
+        "p10": 6.575,
+        "p50": 7.725,
+        "p90": 9.208333333333334,
+        "mean": 7.869999999999999,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "rubyCaseGoldAffordable": {
+        "count": 40,
+        "p10": 6.566666666666666,
+        "p50": 7.65,
+        "p90": 9.208333333333334,
+        "mean": 7.731041666666665,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "eventSkin": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "mean": null,
+        "notReached": 40,
+        "horizonMinutes": 120
+      },
+      "firstFairy": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "mean": null,
+        "notReached": 40,
+        "horizonMinutes": 120
+      }
+    },
+    "end": {
+      "earned": {
+        "count": 40,
+        "p10": 31111073501866230000,
+        "p50": 47079411978848040000,
+        "p90": 59362725676457615000,
+        "mean": 46338067333851595000
+      },
+      "coins": {
+        "count": 40,
+        "p10": 31111048083168166000,
+        "p50": 47079386560149980000,
+        "p90": 59362700257759540000,
+        "mean": 46338041915153530000
+      },
+      "stars": {
+        "count": 40,
+        "p10": 75,
+        "p50": 75,
+        "p90": 75,
+        "mean": 75
+      },
+      "questDelivered": {
+        "count": 40,
+        "p10": 95,
+        "p50": 96,
+        "p90": 99,
+        "mean": 96.825
+      },
+      "questFailed": {
+        "count": 40,
+        "p10": 0,
+        "p50": 0,
+        "p90": 1,
+        "mean": 0.55
+      },
+      "paidChests": {
+        "count": 40,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      },
+      "solution": {
+        "count": 40,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      },
+      "likeability": {
+        "count": 40,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      }
+    },
+    "boosts": {
+      "protection": {
+        "used": {
+          "count": 40,
+          "p10": 77,
+          "p50": 96,
+          "p90": 124,
+          "mean": 97.15
+        },
+        "remaining": {
+          "count": 40,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0,
+          "mean": 0
+        }
+      },
+      "enhancement": {
+        "used": {
+          "count": 40,
+          "p10": 79,
+          "p50": 94,
+          "p90": 112,
+          "mean": 96.85
+        },
+        "remaining": {
+          "count": 40,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0,
+          "mean": 0
+        }
+      },
+      "selling": {
+        "used": {
+          "count": 40,
+          "p10": 68,
+          "p50": 83,
+          "p90": 100,
+          "mean": 84.1
+        },
+        "remaining": {
+          "count": 40,
+          "p10": 0,
+          "p50": 12,
+          "p90": 28,
+          "mean": 13.725
+        }
+      }
+    },
+    "upgradeWaitMinutes": {
+      "count": 2880,
+      "p10": 0.02500000000000213,
+      "p50": 0.7250000000000005,
+      "p90": 1.7583333333333329,
+      "mean": 0.8845659722222275
+    }
+  },
+  {
+    "scenario": "Conveyor · earned boosts",
+    "runs": 40,
+    "actionMs": 500,
+    "milestones": {
+      "firstMaterialUpgrade": {
+        "count": 40,
+        "p10": 0.25,
+        "p50": 0.3333333333333333,
+        "p90": 0.5416666666666666,
+        "mean": 0.3727083333333333,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "tia": {
+        "count": 40,
+        "p10": 18,
+        "p50": 21.35,
+        "p90": 29.025,
+        "mean": 22.801250000000003,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "allMaterials": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "mean": null,
+        "notReached": 40,
+        "horizonMinutes": 120
+      },
+      "regularSkin": {
+        "count": 40,
+        "p10": 32.05,
+        "p50": 41.35,
+        "p90": 57.84166666666667,
+        "mean": 43.78447916666666,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "rubyCaseGoldAffordable": {
+        "count": 40,
+        "p10": 29.583333333333332,
+        "p50": 38.083333333333336,
+        "p90": 49.05833333333333,
+        "mean": 38.649270833333325,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "eventSkin": {
+        "count": 24,
+        "p10": 89.89583333333333,
+        "p50": 106.9125,
+        "p90": 111.90416666666667,
+        "mean": 104.41215277777775,
+        "notReached": 16,
+        "horizonMinutes": 120
+      },
+      "firstFairy": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "mean": null,
+        "notReached": 40,
+        "horizonMinutes": 120
+      }
+    },
+    "end": {
+      "earned": {
+        "count": 40,
+        "p10": 515150828,
+        "p50": 13764948349,
+        "p90": 154433688196,
+        "mean": 164259850764.9
+      },
+      "coins": {
+        "count": 40,
+        "p10": 38169657,
+        "p50": 1635125904,
+        "p90": 34373747045,
+        "mean": 50332792715.9
+      },
+      "stars": {
+        "count": 40,
+        "p10": 36,
+        "p50": 43,
+        "p90": 47,
+        "mean": 42.6
+      },
+      "questDelivered": {
+        "count": 40,
+        "p10": 52,
+        "p50": 57,
+        "p90": 64,
+        "mean": 58.075
+      },
+      "questFailed": {
+        "count": 40,
+        "p10": 14,
+        "p50": 20,
+        "p90": 25,
+        "mean": 19.95
+      },
+      "paidChests": {
+        "count": 40,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      },
+      "solution": {
+        "count": 40,
+        "p10": 1,
+        "p50": 6,
+        "p90": 47,
+        "mean": 20.35
+      },
+      "likeability": {
+        "count": 40,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      }
+    },
+    "boosts": {
+      "protection": {
+        "used": {
+          "count": 40,
+          "p10": 38,
+          "p50": 57,
+          "p90": 70,
+          "mean": 55.875
+        },
+        "remaining": {
+          "count": 40,
+          "p10": 0,
+          "p50": 0,
+          "p90": 4,
+          "mean": 0.95
+        }
+      },
+      "enhancement": {
+        "used": {
+          "count": 40,
+          "p10": 38,
+          "p50": 56,
+          "p90": 76,
+          "mean": 57.425
+        },
+        "remaining": {
+          "count": 40,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0,
+          "mean": 0.25
+        }
+      },
+      "selling": {
+        "used": {
+          "count": 40,
+          "p10": 28,
+          "p50": 37,
+          "p90": 47,
+          "mean": 37.525
+        },
+        "remaining": {
+          "count": 40,
+          "p10": 8,
+          "p50": 24,
+          "p90": 39,
+          "mean": 23.9
+        }
+      }
+    },
+    "upgradeWaitMinutes": {
+      "count": 2002,
+      "p10": 0.7666666666666666,
+      "p50": 4.166666666666666,
+      "p90": 14.458333333333329,
+      "mean": 6.318739593739598
+    }
+  },
+  {
+    "scenario": "Manual · paid boost chests",
+    "runs": 40,
+    "actionMs": 500,
+    "milestones": {
+      "firstMaterialUpgrade": {
+        "count": 40,
+        "p10": 0.23333333333333334,
+        "p50": 0.275,
+        "p90": 0.31666666666666665,
+        "mean": 0.2800000000000001,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "tia": {
+        "count": 40,
+        "p10": 4.308333333333334,
+        "p50": 5.233333333333333,
+        "p90": 6.083333333333333,
+        "mean": 5.312083333333335,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "allMaterials": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "mean": null,
+        "notReached": 40,
+        "horizonMinutes": 120
+      },
+      "regularSkin": {
+        "count": 40,
+        "p10": 11.591666666666667,
+        "p50": 16.341666666666665,
+        "p90": 25.25,
+        "mean": 18.116458333333338,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "rubyCaseGoldAffordable": {
+        "count": 40,
+        "p10": 7.0125,
+        "p50": 8.025,
+        "p90": 11.429166666666667,
+        "mean": 8.910520833333335,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "eventSkin": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "mean": null,
+        "notReached": 40,
+        "horizonMinutes": 120
+      },
+      "firstFairy": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "mean": null,
+        "notReached": 40,
+        "horizonMinutes": 120
+      }
+    },
+    "end": {
+      "earned": {
+        "count": 40,
+        "p10": 465132678,
+        "p50": 2084953019,
+        "p90": 16964315975,
+        "mean": 8269744593.025
+      },
+      "coins": {
+        "count": 40,
+        "p10": 68741858,
+        "p50": 255514740,
+        "p90": 4785949900,
+        "mean": 1864926321.025
+      },
+      "stars": {
+        "count": 40,
+        "p10": 35,
+        "p50": 38,
+        "p90": 41,
+        "mean": 37.75
+      },
+      "questDelivered": {
+        "count": 40,
+        "p10": 66,
+        "p50": 71,
+        "p90": 75,
+        "mean": 70.95
+      },
+      "questFailed": {
+        "count": 40,
+        "p10": 5,
+        "p50": 7,
+        "p90": 10,
+        "mean": 7.275
+      },
+      "paidChests": {
+        "count": 40,
+        "p10": 1311,
+        "p50": 1327,
+        "p90": 1336,
+        "mean": 1325.225
+      },
+      "solution": {
+        "count": 40,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      },
+      "likeability": {
+        "count": 40,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      }
+    },
+    "boosts": {
+      "protection": {
+        "used": {
+          "count": 40,
+          "p10": 46,
+          "p50": 58,
+          "p90": 76,
+          "mean": 61.25
+        },
+        "remaining": {
+          "count": 40,
+          "p10": 437,
+          "p50": 459,
+          "p90": 487,
+          "mean": 461.175
+        }
+      },
+      "enhancement": {
+        "used": {
+          "count": 40,
+          "p10": 483,
+          "p50": 504,
+          "p90": 531,
+          "mean": 507.475
+        },
+        "remaining": {
+          "count": 40,
+          "p10": 4,
+          "p50": 4,
+          "p90": 5,
+          "mean": 4.425
+        }
+      },
+      "selling": {
+        "used": {
+          "count": 40,
+          "p10": 77,
+          "p50": 84,
+          "p90": 90,
+          "mean": 84.05
+        },
+        "remaining": {
+          "count": 40,
+          "p10": 395,
+          "p50": 419,
+          "p90": 442,
+          "mean": 420.525
+        }
+      }
+    },
+    "upgradeWaitMinutes": {
+      "count": 1836,
+      "p10": 0.31666666666666643,
+      "p50": 1.1750000000000003,
+      "p90": 17.63333333333333,
+      "mean": 5.6991171931735725
+    }
+  },
+  {
+    "scenario": "Conveyor · paid boost chests",
+    "runs": 40,
+    "actionMs": 500,
+    "milestones": {
+      "firstMaterialUpgrade": {
+        "count": 40,
+        "p10": 0.25,
+        "p50": 0.3333333333333333,
+        "p90": 0.5416666666666666,
+        "mean": 0.3727083333333333,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "tia": {
+        "count": 40,
+        "p10": 18,
+        "p50": 21.35,
+        "p90": 29.025,
+        "mean": 22.801250000000003,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "allMaterials": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "mean": null,
+        "notReached": 40,
+        "horizonMinutes": 120
+      },
+      "regularSkin": {
+        "count": 40,
+        "p10": 34.07083333333333,
+        "p50": 51.916666666666664,
+        "p90": 66.51666666666667,
+        "mean": 52.174062500000005,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "rubyCaseGoldAffordable": {
+        "count": 40,
+        "p10": 29.233333333333334,
+        "p50": 38.3125,
+        "p90": 56.6,
+        "mean": 39.75427083333332,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "eventSkin": {
+        "count": 26,
+        "p10": 88.45833333333333,
+        "p50": 102.025,
+        "p90": 108.80416666666666,
+        "mean": 100.24391025641027,
+        "notReached": 14,
+        "horizonMinutes": 120
+      },
+      "firstFairy": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "mean": null,
+        "notReached": 40,
+        "horizonMinutes": 120
+      }
+    },
+    "end": {
+      "earned": {
+        "count": 40,
+        "p10": 44595428,
+        "p50": 122718492,
+        "p90": 431524191,
+        "mean": 256831475.9
+      },
+      "coins": {
+        "count": 40,
+        "p10": 2937218,
+        "p50": 17208441,
+        "p90": 55214840,
+        "mean": 39335455.9
+      },
+      "stars": {
+        "count": 40,
+        "p10": 29,
+        "p50": 32,
+        "p90": 35,
+        "mean": 32.325
+      },
+      "questDelivered": {
+        "count": 40,
+        "p10": 52,
+        "p50": 55,
+        "p90": 59,
+        "mean": 55.35
+      },
+      "questFailed": {
+        "count": 40,
+        "p10": 16,
+        "p50": 19,
+        "p90": 22,
+        "mean": 18.9
+      },
+      "paidChests": {
+        "count": 40,
+        "p10": 499,
+        "p50": 569,
+        "p90": 653,
+        "mean": 574.725
+      },
+      "solution": {
+        "count": 40,
+        "p10": 3,
+        "p50": 11,
+        "p90": 48,
+        "mean": 20.825
+      },
+      "likeability": {
+        "count": 40,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      }
+    },
+    "boosts": {
+      "protection": {
+        "used": {
+          "count": 40,
+          "p10": 37,
+          "p50": 47,
+          "p90": 67,
+          "mean": 50.475
+        },
+        "remaining": {
+          "count": 40,
+          "p10": 157,
+          "p50": 202,
+          "p90": 226,
+          "mean": 197.25
+        }
+      },
+      "enhancement": {
+        "used": {
+          "count": 40,
+          "p10": 214,
+          "p50": 241,
+          "p90": 263,
+          "mean": 242.15
+        },
+        "remaining": {
+          "count": 40,
+          "p10": 4,
+          "p50": 5,
+          "p90": 5,
+          "mean": 4.825
+        }
+      },
+      "selling": {
+        "used": {
+          "count": 40,
+          "p10": 51,
+          "p50": 60,
+          "p90": 67,
+          "mean": 60.9
+        },
+        "remaining": {
+          "count": 40,
+          "p10": 146,
+          "p50": 185,
+          "p90": 219,
+          "mean": 185
+        }
+      }
+    },
+    "upgradeWaitMinutes": {
+      "count": 1488,
+      "p10": 0.75,
+      "p50": 3.8416666666666686,
+      "p90": 17.229166666666657,
+      "mean": 6.867881944444451
+    }
+  },
+  {
+    "scenario": "Conveyor · spend event tokens on boosts",
+    "runs": 40,
+    "actionMs": 500,
+    "milestones": {
+      "firstMaterialUpgrade": {
+        "count": 40,
+        "p10": 0.24166666666666667,
+        "p50": 0.31666666666666665,
+        "p90": 0.49166666666666664,
+        "mean": 0.34729166666666667,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "tia": {
+        "count": 40,
+        "p10": 12.266666666666667,
+        "p50": 15.833333333333334,
+        "p90": 20.841666666666665,
+        "mean": 16.439375000000005,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "allMaterials": {
+        "count": 10,
+        "p10": 93.62916666666666,
+        "p50": 111.49583333333334,
+        "p90": 117.62916666666666,
+        "mean": 109.79416666666665,
+        "notReached": 30,
+        "horizonMinutes": 120
+      },
+      "regularSkin": {
+        "count": 40,
+        "p10": 24.091666666666665,
+        "p50": 30.55,
+        "p90": 39.65,
+        "mean": 31.389583333333327,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "rubyCaseGoldAffordable": {
+        "count": 40,
+        "p10": 22.016666666666666,
+        "p50": 26.441666666666666,
+        "p90": 31.933333333333334,
+        "mean": 27.260416666666657,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "eventSkin": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "mean": null,
+        "notReached": 40,
+        "horizonMinutes": 120
+      },
+      "firstFairy": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "mean": null,
+        "notReached": 40,
+        "horizonMinutes": 120
+      }
+    },
+    "end": {
+      "earned": {
+        "count": 40,
+        "p10": 191753360562,
+        "p50": 4030160348195,
+        "p90": 173208292794940,
+        "mean": 281247654952666.2
+      },
+      "coins": {
+        "count": 40,
+        "p10": 17374357322,
+        "p50": 1205766530184,
+        "p90": 147789594728460,
+        "mean": 271480550931541.7
+      },
+      "stars": {
+        "count": 40,
+        "p10": 48,
+        "p50": 51,
+        "p90": 56,
+        "mean": 51.725
+      },
+      "questDelivered": {
+        "count": 40,
+        "p10": 47,
+        "p50": 55,
+        "p90": 61,
+        "mean": 54.8
+      },
+      "questFailed": {
+        "count": 40,
+        "p10": 17,
+        "p50": 22,
+        "p90": 27,
+        "mean": 22.3
+      },
+      "paidChests": {
+        "count": 40,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      },
+      "solution": {
+        "count": 40,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      },
+      "likeability": {
+        "count": 40,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      }
+    },
+    "boosts": {
+      "protection": {
+        "used": {
+          "count": 40,
+          "p10": 89,
+          "p50": 108,
+          "p90": 126,
+          "mean": 108.525
+        },
+        "remaining": {
+          "count": 40,
+          "p10": 0,
+          "p50": 0,
+          "p90": 3,
+          "mean": 0.825
+        }
+      },
+      "enhancement": {
+        "used": {
+          "count": 40,
+          "p10": 79,
+          "p50": 111,
+          "p90": 134,
+          "mean": 110.85
+        },
+        "remaining": {
+          "count": 40,
+          "p10": 0,
+          "p50": 0,
+          "p90": 2,
+          "mean": 0.575
+        }
+      },
+      "selling": {
+        "used": {
+          "count": 40,
+          "p10": 45,
+          "p50": 52,
+          "p90": 59,
+          "mean": 52.35
+        },
+        "remaining": {
+          "count": 40,
+          "p10": 37,
+          "p50": 57,
+          "p90": 77,
+          "mean": 57.825
+        }
+      }
+    },
+    "upgradeWaitMinutes": {
+      "count": 2643,
+      "p10": 0.03333333333333144,
+      "p50": 3,
+      "p90": 11.50833333333334,
+      "mean": 4.756034808929215
+    }
+  },
+  {
+    "scenario": "Conveyor · traveler requests",
+    "runs": 40,
+    "actionMs": 500,
+    "milestones": {
+      "firstMaterialUpgrade": {
+        "count": 40,
+        "p10": 0.25,
+        "p50": 0.3333333333333333,
+        "p90": 0.5416666666666666,
+        "mean": 0.3727083333333333,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "tia": {
+        "count": 40,
+        "p10": 15.8,
+        "p50": 22.925,
+        "p90": 29.416666666666668,
+        "mean": 22.734791666666666,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "allMaterials": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "mean": null,
+        "notReached": 40,
+        "horizonMinutes": 120
+      },
+      "regularSkin": {
+        "count": 40,
+        "p10": 35.50833333333333,
+        "p50": 43.68333333333333,
+        "p90": 55.69166666666667,
+        "mean": 45.00281249999999,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "rubyCaseGoldAffordable": {
+        "count": 40,
+        "p10": 28.291666666666668,
+        "p50": 39.916666666666664,
+        "p90": 52.675,
+        "mean": 39.73520833333334,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "eventSkin": {
+        "count": 28,
+        "p10": 90.0625,
+        "p50": 103.29583333333333,
+        "p90": 112.69583333333334,
+        "mean": 102.86755952380953,
+        "notReached": 12,
+        "horizonMinutes": 120
+      },
+      "firstFairy": {
+        "count": 39,
+        "p10": 6.208333333333333,
+        "p50": 26.758333333333333,
+        "p90": 72.1375,
+        "mean": 33.16997863247864,
+        "notReached": 1,
+        "horizonMinutes": 120
+      }
+    },
+    "end": {
+      "earned": {
+        "count": 40,
+        "p10": 1318810623,
+        "p50": 9487240372,
+        "p90": 139397298827,
+        "mean": 40509242216.425
+      },
+      "coins": {
+        "count": 40,
+        "p10": 124281912,
+        "p50": 596129225,
+        "p90": 34295009891,
+        "mean": 6823141995.925
+      },
+      "stars": {
+        "count": 40,
+        "p10": 38,
+        "p50": 43,
+        "p90": 46,
+        "mean": 42.9
+      },
+      "questDelivered": {
+        "count": 40,
+        "p10": 43,
+        "p50": 49,
+        "p90": 53,
+        "mean": 48.925
+      },
+      "questFailed": {
+        "count": 40,
+        "p10": 9,
+        "p50": 15,
+        "p90": 19,
+        "mean": 14.7
+      },
+      "paidChests": {
+        "count": 40,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      },
+      "solution": {
+        "count": 40,
+        "p10": 1,
+        "p50": 10,
+        "p90": 47,
+        "mean": 17.95
+      },
+      "likeability": {
+        "count": 40,
+        "p10": 19,
+        "p50": 24,
+        "p90": 28,
+        "mean": 24.2
+      }
+    },
+    "boosts": {
+      "protection": {
+        "used": {
+          "count": 40,
+          "p10": 32,
+          "p50": 45,
+          "p90": 59,
+          "mean": 46.1
+        },
+        "remaining": {
+          "count": 40,
+          "p10": 0,
+          "p50": 0,
+          "p90": 4,
+          "mean": 0.725
+        }
+      },
+      "enhancement": {
+        "used": {
+          "count": 40,
+          "p10": 29,
+          "p50": 49,
+          "p90": 60,
+          "mean": 47.925
+        },
+        "remaining": {
+          "count": 40,
+          "p10": 0,
+          "p50": 0,
+          "p90": 2,
+          "mean": 0.4
+        }
+      },
+      "selling": {
+        "used": {
+          "count": 40,
+          "p10": 29,
+          "p50": 34,
+          "p90": 41,
+          "mean": 34.95
+        },
+        "remaining": {
+          "count": 40,
+          "p10": 3,
+          "p50": 15,
+          "p90": 37,
+          "mean": 18.1
+        }
+      }
+    },
+    "upgradeWaitMinutes": {
+      "count": 2017,
+      "p10": 0.8000000000000007,
+      "p50": 4.324999999999996,
+      "p90": 15.108333333333334,
+      "mean": 6.474537266567501
+    }
+  },
+  {
+    "scenario": "manual · input sensitivity 250ms",
+    "runs": 16,
+    "actionMs": 250,
+    "milestones": {
+      "firstMaterialUpgrade": {
+        "count": 16,
+        "p10": 0.15416666666666667,
+        "p50": 0.16666666666666666,
+        "p90": 0.19583333333333333,
+        "mean": 0.1768229166666667,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "tia": {
+        "count": 16,
+        "p10": 2.35,
+        "p50": 2.6083333333333334,
+        "p90": 3.0125,
+        "mean": 2.687239583333334,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "allMaterials": {
+        "count": 16,
+        "p10": 8.570833333333333,
+        "p50": 10.316666666666666,
+        "p90": 11.516666666666667,
+        "mean": 10.233333333333334,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "regularSkin": {
+        "count": 16,
+        "p10": 3.441666666666667,
+        "p50": 3.8375,
+        "p90": 4.291666666666667,
+        "mean": 3.9752604166666674,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "rubyCaseGoldAffordable": {
+        "count": 16,
+        "p10": 3.441666666666667,
+        "p50": 3.8375,
+        "p90": 4.291666666666667,
+        "mean": 3.9752604166666674,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "eventSkin": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "mean": null,
+        "notReached": 16,
+        "horizonMinutes": 120
+      },
+      "firstFairy": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "mean": null,
+        "notReached": 16,
+        "horizonMinutes": 120
+      }
+    },
+    "end": {
+      "earned": {
+        "count": 16,
+        "p10": 99424829399686960000,
+        "p50": 115557987728414640000,
+        "p90": 122897268311706190000,
+        "mean": 114205571749361610000
+      },
+      "coins": {
+        "count": 16,
+        "p10": 99424803980988890000,
+        "p50": 115557962309716570000,
+        "p90": 122897242893008130000,
+        "mean": 114205546330663550000
+      },
+      "stars": {
+        "count": 16,
+        "p10": 75,
+        "p50": 75,
+        "p90": 75,
+        "mean": 75
+      },
+      "questDelivered": {
+        "count": 16,
+        "p10": 98,
+        "p50": 100,
+        "p90": 101,
+        "mean": 99.75
+      },
+      "questFailed": {
+        "count": 16,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0.125
+      },
+      "paidChests": {
+        "count": 16,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      },
+      "solution": {
+        "count": 16,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      },
+      "likeability": {
+        "count": 16,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      }
+    },
+    "boosts": {
+      "protection": {
+        "used": {
+          "count": 16,
+          "p10": 75,
+          "p50": 95,
+          "p90": 111,
+          "mean": 97.125
+        },
+        "remaining": {
+          "count": 16,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0,
+          "mean": 0.1875
+        }
+      },
+      "enhancement": {
+        "used": {
+          "count": 16,
+          "p10": 90,
+          "p50": 102,
+          "p90": 117,
+          "mean": 103.6875
+        },
+        "remaining": {
+          "count": 16,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0,
+          "mean": 0
+        }
+      },
+      "selling": {
+        "used": {
+          "count": 16,
+          "p10": 86,
+          "p50": 97,
+          "p90": 110,
+          "mean": 99.5625
+        },
+        "remaining": {
+          "count": 16,
+          "p10": 0,
+          "p50": 4,
+          "p90": 13,
+          "mean": 5.625
+        }
+      }
+    },
+    "upgradeWaitMinutes": {
+      "count": 1152,
+      "p10": 0.012500000000001066,
+      "p50": 0.35416666666666696,
+      "p90": 0.8374999999999999,
+      "mean": 0.4252929687499999
+    }
+  },
+  {
+    "scenario": "conveyor · input sensitivity 250ms",
+    "runs": 16,
+    "actionMs": 250,
+    "milestones": {
+      "firstMaterialUpgrade": {
+        "count": 16,
+        "p10": 0.1625,
+        "p50": 0.21666666666666667,
+        "p90": 0.3333333333333333,
+        "mean": 0.2510416666666667,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "tia": {
+        "count": 16,
+        "p10": 15.220833333333333,
+        "p50": 18.604166666666668,
+        "p90": 33.208333333333336,
+        "mean": 21.908072916666672,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "allMaterials": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "mean": null,
+        "notReached": 16,
+        "horizonMinutes": 120
+      },
+      "regularSkin": {
+        "count": 16,
+        "p10": 28.258333333333333,
+        "p50": 36.391666666666666,
+        "p90": 52.99583333333333,
+        "mean": 40.56380208333333,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "rubyCaseGoldAffordable": {
+        "count": 16,
+        "p10": 26.020833333333332,
+        "p50": 29.754166666666666,
+        "p90": 46.90416666666667,
+        "mean": 35.41432291666667,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "eventSkin": {
+        "count": 8,
+        "p10": 86.825,
+        "p50": 109.83333333333333,
+        "p90": 113.98333333333333,
+        "mean": 107.0796875,
+        "notReached": 8,
+        "horizonMinutes": 120
+      },
+      "firstFairy": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "mean": null,
+        "notReached": 16,
+        "horizonMinutes": 120
+      }
+    },
+    "end": {
+      "earned": {
+        "count": 16,
+        "p10": 3634534414,
+        "p50": 6623202789,
+        "p90": 154457710895,
+        "mean": 220634327030.6875
+      },
+      "coins": {
+        "count": 16,
+        "p10": 125337581,
+        "p50": 581480754,
+        "p90": 49814395675,
+        "mean": 23924837271.9375
+      },
+      "stars": {
+        "count": 16,
+        "p10": 40,
+        "p50": 42,
+        "p90": 47,
+        "mean": 43.25
+      },
+      "questDelivered": {
+        "count": 16,
+        "p10": 54,
+        "p50": 61,
+        "p90": 65,
+        "mean": 60.1875
+      },
+      "questFailed": {
+        "count": 16,
+        "p10": 13,
+        "p50": 17,
+        "p90": 24,
+        "mean": 18.625
+      },
+      "paidChests": {
+        "count": 16,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      },
+      "solution": {
+        "count": 16,
+        "p10": 0,
+        "p50": 10,
+        "p90": 47,
+        "mean": 23.25
+      },
+      "likeability": {
+        "count": 16,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      }
+    },
+    "boosts": {
+      "protection": {
+        "used": {
+          "count": 16,
+          "p10": 44,
+          "p50": 60,
+          "p90": 73,
+          "mean": 59.5
+        },
+        "remaining": {
+          "count": 16,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0,
+          "mean": 0.25
+        }
+      },
+      "enhancement": {
+        "used": {
+          "count": 16,
+          "p10": 45,
+          "p50": 56,
+          "p90": 70,
+          "mean": 60.25
+        },
+        "remaining": {
+          "count": 16,
+          "p10": 0,
+          "p50": 0,
+          "p90": 1,
+          "mean": 0.5625
+        }
+      },
+      "selling": {
+        "used": {
+          "count": 16,
+          "p10": 23,
+          "p50": 34,
+          "p90": 42,
+          "mean": 33.8125
+        },
+        "remaining": {
+          "count": 16,
+          "p10": 16,
+          "p50": 28,
+          "p90": 37,
+          "mean": 28.125
+        }
+      }
+    },
+    "upgradeWaitMinutes": {
+      "count": 819,
+      "p10": 0.5166666666666667,
+      "p50": 3.9000000000000004,
+      "p90": 15.787500000000001,
+      "mean": 6.365384615384605
+    }
+  },
+  {
+    "scenario": "manual · input sensitivity 1000ms",
+    "runs": 16,
+    "actionMs": 1000,
+    "milestones": {
+      "firstMaterialUpgrade": {
+        "count": 16,
+        "p10": 0.39166666666666666,
+        "p50": 0.44166666666666665,
+        "p90": 0.5583333333333333,
+        "mean": 0.5020833333333333,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "tia": {
+        "count": 16,
+        "p10": 9.175,
+        "p50": 10.175,
+        "p90": 11.075,
+        "mean": 10.307291666666666,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "allMaterials": {
+        "count": 16,
+        "p10": 34.69166666666667,
+        "p50": 41.025,
+        "p90": 46.975,
+        "mean": 42.06041666666667,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "regularSkin": {
+        "count": 16,
+        "p10": 12.491666666666667,
+        "p50": 14.708333333333334,
+        "p90": 15.975,
+        "mean": 14.720833333333335,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "rubyCaseGoldAffordable": {
+        "count": 16,
+        "p10": 12.491666666666667,
+        "p50": 14.558333333333334,
+        "p90": 15.441666666666666,
+        "mean": 14.41041666666667,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "eventSkin": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "mean": null,
+        "notReached": 16,
+        "horizonMinutes": 120
+      },
+      "firstFairy": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "mean": null,
+        "notReached": 16,
+        "horizonMinutes": 120
+      }
+    },
+    "end": {
+      "earned": {
+        "count": 16,
+        "p10": 8338494828059463000,
+        "p50": 11323830786683156000,
+        "p90": 16050861486080887000,
+        "mean": 12396550175562328000
+      },
+      "coins": {
+        "count": 16,
+        "p10": 8338469409361396000,
+        "p50": 11323805367985089000,
+        "p90": 16050836067382819000,
+        "mean": 12396524756864262000
+      },
+      "stars": {
+        "count": 16,
+        "p10": 75,
+        "p50": 75,
+        "p90": 75,
+        "mean": 75
+      },
+      "questDelivered": {
+        "count": 16,
+        "p10": 89,
+        "p50": 92,
+        "p90": 95,
+        "mean": 92.6875
+      },
+      "questFailed": {
+        "count": 16,
+        "p10": 0,
+        "p50": 1,
+        "p90": 2,
+        "mean": 0.9375
+      },
+      "paidChests": {
+        "count": 16,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      },
+      "solution": {
+        "count": 16,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      },
+      "likeability": {
+        "count": 16,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      }
+    },
+    "boosts": {
+      "protection": {
+        "used": {
+          "count": 16,
+          "p10": 68,
+          "p50": 80,
+          "p90": 105,
+          "mean": 88.875
+        },
+        "remaining": {
+          "count": 16,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0,
+          "mean": 0
+        }
+      },
+      "enhancement": {
+        "used": {
+          "count": 16,
+          "p10": 69,
+          "p50": 95,
+          "p90": 110,
+          "mean": 95.25
+        },
+        "remaining": {
+          "count": 16,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0,
+          "mean": 0
+        }
+      },
+      "selling": {
+        "used": {
+          "count": 16,
+          "p10": 65,
+          "p50": 79,
+          "p90": 91,
+          "mean": 79.0625
+        },
+        "remaining": {
+          "count": 16,
+          "p10": 9,
+          "p50": 13,
+          "p90": 21,
+          "mean": 15.125
+        }
+      }
+    },
+    "upgradeWaitMinutes": {
+      "count": 1152,
+      "p10": 0.05000000000000426,
+      "p50": 1.425,
+      "p90": 3.083333333333332,
+      "mean": 1.7203559027777724
+    }
+  },
+  {
+    "scenario": "conveyor · input sensitivity 1000ms",
+    "runs": 16,
+    "actionMs": 1000,
+    "milestones": {
+      "firstMaterialUpgrade": {
+        "count": 16,
+        "p10": 0.39166666666666666,
+        "p50": 0.5416666666666666,
+        "p90": 0.775,
+        "mean": 0.5937499999999999,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "tia": {
+        "count": 16,
+        "p10": 21.158333333333335,
+        "p50": 25.291666666666668,
+        "p90": 31.208333333333332,
+        "mean": 26.89270833333333,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "allMaterials": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "mean": null,
+        "notReached": 16,
+        "horizonMinutes": 120
+      },
+      "regularSkin": {
+        "count": 16,
+        "p10": 41.05833333333333,
+        "p50": 46.99166666666667,
+        "p90": 58.99166666666667,
+        "mean": 50.528645833333336,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "rubyCaseGoldAffordable": {
+        "count": 16,
+        "p10": 37.958333333333336,
+        "p50": 43.59166666666667,
+        "p90": 52.791666666666664,
+        "mean": 44.503125,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "eventSkin": {
+        "count": 13,
+        "p10": 92.92916666666666,
+        "p50": 106.02916666666667,
+        "p90": 109.3125,
+        "mean": 100.6971153846154,
+        "notReached": 3,
+        "horizonMinutes": 120
+      },
+      "firstFairy": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "mean": null,
+        "notReached": 16,
+        "horizonMinutes": 120
+      }
+    },
+    "end": {
+      "earned": {
+        "count": 16,
+        "p10": 493473796,
+        "p50": 4491853692,
+        "p90": 20623169821,
+        "mean": 168641214880.8125
+      },
+      "coins": {
+        "count": 16,
+        "p10": 23223396,
+        "p50": 583545103,
+        "p90": 2564557021,
+        "mean": 16592698159.5625
+      },
+      "stars": {
+        "count": 16,
+        "p10": 36,
+        "p50": 41,
+        "p90": 45,
+        "mean": 41.1875
+      },
+      "questDelivered": {
+        "count": 16,
+        "p10": 51,
+        "p50": 59,
+        "p90": 62,
+        "mean": 58.6875
+      },
+      "questFailed": {
+        "count": 16,
+        "p10": 13,
+        "p50": 17,
+        "p90": 25,
+        "mean": 18.3125
+      },
+      "paidChests": {
+        "count": 16,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      },
+      "solution": {
+        "count": 16,
+        "p10": 4,
+        "p50": 7,
+        "p90": 43,
+        "mean": 14.1875
+      },
+      "likeability": {
+        "count": 16,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      }
+    },
+    "boosts": {
+      "protection": {
+        "used": {
+          "count": 16,
+          "p10": 28,
+          "p50": 48,
+          "p90": 73,
+          "mean": 52.25
+        },
+        "remaining": {
+          "count": 16,
+          "p10": 0,
+          "p50": 0,
+          "p90": 3,
+          "mean": 0.75
+        }
+      },
+      "enhancement": {
+        "used": {
+          "count": 16,
+          "p10": 45,
+          "p50": 58,
+          "p90": 77,
+          "mean": 58.9375
+        },
+        "remaining": {
+          "count": 16,
+          "p10": 0,
+          "p50": 0,
+          "p90": 0,
+          "mean": 0
+        }
+      },
+      "selling": {
+        "used": {
+          "count": 16,
+          "p10": 26,
+          "p50": 41,
+          "p90": 48,
+          "mean": 38.25
+        },
+        "remaining": {
+          "count": 16,
+          "p10": 10,
+          "p50": 23,
+          "p90": 32,
+          "mean": 23.5625
+        }
+      }
+    },
+    "upgradeWaitMinutes": {
+      "count": 775,
+      "p10": 0.9416666666666667,
+      "p50": 5.116666666666667,
+      "p90": 13.850000000000009,
+      "mean": 6.77243010752689
+    }
+  },
+  {
+    "scenario": "manual · paid chests, reduced motion",
+    "runs": 16,
+    "actionMs": 500,
+    "milestones": {
+      "firstMaterialUpgrade": {
+        "count": 16,
+        "p10": 0.1625,
+        "p50": 0.1875,
+        "p90": 0.24583333333333332,
+        "mean": 0.20781249999999998,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "tia": {
+        "count": 16,
+        "p10": 4.704166666666667,
+        "p50": 5.0875,
+        "p90": 5.554166666666666,
+        "mean": 5.122916666666666,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "allMaterials": {
+        "count": 16,
+        "p10": 16.854166666666668,
+        "p50": 18.254166666666666,
+        "p90": 19.4375,
+        "mean": 18.245312499999997,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "regularSkin": {
+        "count": 16,
+        "p10": 6.454166666666667,
+        "p50": 7.4875,
+        "p90": 8.970833333333333,
+        "mean": 7.760416666666667,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "rubyCaseGoldAffordable": {
+        "count": 16,
+        "p10": 5.8125,
+        "p50": 7.029166666666667,
+        "p90": 8.104166666666666,
+        "mean": 7.015104166666665,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "eventSkin": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "mean": null,
+        "notReached": 16,
+        "horizonMinutes": 120
+      },
+      "firstFairy": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "mean": null,
+        "notReached": 16,
+        "horizonMinutes": 120
+      }
+    },
+    "end": {
+      "earned": {
+        "count": 16,
+        "p10": 377610017568607630000,
+        "p50": 387025477502217550000,
+        "p90": 407740881975733900000,
+        "mean": 391734903872343440000
+      },
+      "coins": {
+        "count": 16,
+        "p10": 377609992149854600000,
+        "p50": 387025452083465800000,
+        "p90": 407740856556981600000,
+        "mean": 391734878453591240000
+      },
+      "stars": {
+        "count": 16,
+        "p10": 75,
+        "p50": 75,
+        "p90": 75,
+        "mean": 75
+      },
+      "questDelivered": {
+        "count": 16,
+        "p10": 94,
+        "p50": 96,
+        "p90": 98,
+        "mean": 96.5
+      },
+      "questFailed": {
+        "count": 16,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      },
+      "paidChests": {
+        "count": 16,
+        "p10": 9181,
+        "p50": 9306,
+        "p90": 9418,
+        "mean": 9309.3125
+      },
+      "solution": {
+        "count": 16,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      },
+      "likeability": {
+        "count": 16,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      }
+    },
+    "boosts": {
+      "protection": {
+        "used": {
+          "count": 16,
+          "p10": 1585,
+          "p50": 1638,
+          "p90": 1662,
+          "mean": 1639.0625
+        },
+        "remaining": {
+          "count": 16,
+          "p10": 1417,
+          "p50": 1565,
+          "p90": 1646,
+          "mean": 1561.5
+        }
+      },
+      "enhancement": {
+        "used": {
+          "count": 16,
+          "p10": 3151,
+          "p50": 3191,
+          "p90": 3217,
+          "mean": 3191.1875
+        },
+        "remaining": {
+          "count": 16,
+          "p10": 4,
+          "p50": 4,
+          "p90": 4,
+          "mean": 4.3125
+        }
+      },
+      "selling": {
+        "used": {
+          "count": 16,
+          "p10": 330,
+          "p50": 340,
+          "p90": 348,
+          "mean": 340.3125
+        },
+        "remaining": {
+          "count": 16,
+          "p10": 2778,
+          "p50": 2875,
+          "p90": 2911,
+          "mean": 2862.0625
+        }
+      }
+    },
+    "upgradeWaitMinutes": {
+      "count": 1152,
+      "p10": 0.02500000000000213,
+      "p50": 0.7583333333333337,
+      "p90": 1.3166666666666667,
+      "mean": 0.7368489583333319
+    }
+  },
+  {
+    "scenario": "conveyor · paid chests, reduced motion",
+    "runs": 16,
+    "actionMs": 500,
+    "milestones": {
+      "firstMaterialUpgrade": {
+        "count": 16,
+        "p10": 0.17916666666666667,
+        "p50": 0.30416666666666664,
+        "p90": 0.4041666666666667,
+        "mean": 0.31302083333333336,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "tia": {
+        "count": 16,
+        "p10": 14.0125,
+        "p50": 22.3375,
+        "p90": 29.029166666666665,
+        "mean": 22.5375,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "allMaterials": {
+        "count": 16,
+        "p10": 80.87083333333334,
+        "p50": 91.1875,
+        "p90": 106.52083333333333,
+        "mean": 93.534375,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "regularSkin": {
+        "count": 16,
+        "p10": 26.345833333333335,
+        "p50": 35.1125,
+        "p90": 44.92916666666667,
+        "mean": 36.69739583333333,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "rubyCaseGoldAffordable": {
+        "count": 16,
+        "p10": 23.079166666666666,
+        "p50": 33.80416666666667,
+        "p90": 43.30416666666667,
+        "mean": 34.765104166666674,
+        "notReached": 0,
+        "horizonMinutes": 120
+      },
+      "eventSkin": {
+        "count": 14,
+        "p10": 85.8875,
+        "p50": 92.8125,
+        "p90": 103.8375,
+        "mean": 95.19047619047619,
+        "notReached": 2,
+        "horizonMinutes": 120
+      },
+      "firstFairy": {
+        "count": 0,
+        "p10": null,
+        "p50": null,
+        "p90": null,
+        "mean": null,
+        "notReached": 16,
+        "horizonMinutes": 120
+      }
+    },
+    "end": {
+      "earned": {
+        "count": 16,
+        "p10": 1213267265626242,
+        "p50": 9465024757966602,
+        "p90": 47361409988906560,
+        "mean": 29461091732704200
+      },
+      "coins": {
+        "count": 16,
+        "p10": 1187848556929762,
+        "p50": 9439606045870122,
+        "p90": 47335991275040080,
+        "mean": 29435673021359590
+      },
+      "stars": {
+        "count": 16,
+        "p10": 58,
+        "p50": 62,
+        "p90": 65,
+        "mean": 61.5625
+      },
+      "questDelivered": {
+        "count": 16,
+        "p10": 54,
+        "p50": 57,
+        "p90": 62,
+        "mean": 57.875
+      },
+      "questFailed": {
+        "count": 16,
+        "p10": 16,
+        "p50": 20,
+        "p90": 22,
+        "mean": 19.5
+      },
+      "paidChests": {
+        "count": 16,
+        "p10": 1063,
+        "p50": 1347,
+        "p90": 1562,
+        "mean": 1327.8125
+      },
+      "solution": {
+        "count": 16,
+        "p10": 6,
+        "p50": 14,
+        "p90": 23,
+        "mean": 16.6875
+      },
+      "likeability": {
+        "count": 16,
+        "p10": 0,
+        "p50": 0,
+        "p90": 0,
+        "mean": 0
+      }
+    },
+    "boosts": {
+      "protection": {
+        "used": {
+          "count": 16,
+          "p10": 83,
+          "p50": 113,
+          "p90": 130,
+          "mean": 111.125
+        },
+        "remaining": {
+          "count": 16,
+          "p10": 290,
+          "p50": 376,
+          "p90": 486,
+          "mean": 392.5625
+        }
+      },
+      "enhancement": {
+        "used": {
+          "count": 16,
+          "p10": 422,
+          "p50": 510,
+          "p90": 550,
+          "mean": 497.875
+        },
+        "remaining": {
+          "count": 16,
+          "p10": 4,
+          "p50": 5,
+          "p90": 5,
+          "mean": 4.875
+        }
+      },
+      "selling": {
+        "used": {
+          "count": 16,
+          "p10": 54,
+          "p50": 65,
+          "p90": 75,
+          "mean": 66.125
+        },
+        "remaining": {
+          "count": 16,
+          "p10": 335,
+          "p50": 434,
+          "p90": 493,
+          "mean": 432.4375
+        }
+      }
+    },
+    "upgradeWaitMinutes": {
+      "count": 1152,
+      "p10": 0.025000000000005684,
+      "p50": 2.849999999999998,
+      "p90": 8.700000000000001,
+      "mean": 3.739699074074078
+    }
+  }
+]

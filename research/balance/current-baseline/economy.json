@@ -1,0 +1,225 @@
+{
+  "bankUnits": {
+    "coins": 100000,
+    "tickets": 10,
+    "rubies": 1
+  },
+  "regularSkinGoldCost": 3000000,
+  "rubyCaseGoldCost": 2000000,
+  "allMaterialUpgradeCost": 25418658283200,
+  "chests": [
+    {
+      "kind": "hourly",
+      "maxFairies": false,
+      "allEligibleSkinsOwned": false,
+      "cost": {
+        "currency": "coins",
+        "amount": 10000
+      },
+      "expected": {
+        "protection": 0.3333333333333333,
+        "enhancement": 0.3333333333333333,
+        "selling": 0.3333333333333333
+      },
+      "bankEquivalentGold": 0,
+      "currencyReturnFraction": 0
+    },
+    {
+      "kind": "tickets",
+      "maxFairies": false,
+      "allEligibleSkinsOwned": false,
+      "cost": {
+        "currency": "tickets",
+        "amount": 5
+      },
+      "expected": {
+        "tickets": 2.45,
+        "rubies": 0.21,
+        "fairy": 0.05
+      },
+      "bankEquivalentGold": 45500,
+      "currencyReturnFraction": 0.91
+    },
+    {
+      "kind": "skin",
+      "maxFairies": false,
+      "allEligibleSkinsOwned": false,
+      "cost": {
+        "currency": "rubies",
+        "amount": 20
+      },
+      "expected": {
+        "rubies": 15.5,
+        "fairy": 0.19,
+        "skin": 0.01
+      },
+      "bankEquivalentGold": 1550000,
+      "currencyReturnFraction": 0.775
+    },
+    {
+      "kind": "hourly",
+      "maxFairies": false,
+      "allEligibleSkinsOwned": true,
+      "cost": {
+        "currency": "coins",
+        "amount": 10000
+      },
+      "expected": {
+        "protection": 0.3333333333333333,
+        "enhancement": 0.3333333333333333,
+        "selling": 0.3333333333333333
+      },
+      "bankEquivalentGold": 0,
+      "currencyReturnFraction": 0
+    },
+    {
+      "kind": "tickets",
+      "maxFairies": false,
+      "allEligibleSkinsOwned": true,
+      "cost": {
+        "currency": "tickets",
+        "amount": 5
+      },
+      "expected": {
+        "tickets": 2.45,
+        "rubies": 0.21,
+        "fairy": 0.05
+      },
+      "bankEquivalentGold": 45500,
+      "currencyReturnFraction": 0.91
+    },
+    {
+      "kind": "skin",
+      "maxFairies": false,
+      "allEligibleSkinsOwned": true,
+      "cost": {
+        "currency": "rubies",
+        "amount": 20
+      },
+      "expected": {
+        "rubies": 15.5,
+        "fairy": 0.19,
+        "tickets": 3
+      },
+      "bankEquivalentGold": 1580000,
+      "currencyReturnFraction": 0.79
+    },
+    {
+      "kind": "hourly",
+      "maxFairies": true,
+      "allEligibleSkinsOwned": false,
+      "cost": {
+        "currency": "coins",
+        "amount": 10000
+      },
+      "expected": {
+        "protection": 0.3333333333333333,
+        "enhancement": 0.3333333333333333,
+        "selling": 0.3333333333333333
+      },
+      "bankEquivalentGold": 0,
+      "currencyReturnFraction": 0
+    },
+    {
+      "kind": "tickets",
+      "maxFairies": true,
+      "allEligibleSkinsOwned": false,
+      "cost": {
+        "currency": "tickets",
+        "amount": 5
+      },
+      "expected": {
+        "tickets": 2.95,
+        "rubies": 0.21
+      },
+      "bankEquivalentGold": 50500,
+      "currencyReturnFraction": 1.01
+    },
+    {
+      "kind": "skin",
+      "maxFairies": true,
+      "allEligibleSkinsOwned": false,
+      "cost": {
+        "currency": "rubies",
+        "amount": 20
+      },
+      "expected": {
+        "rubies": 15.5,
+        "tickets": 1.9,
+        "skin": 0.01
+      },
+      "bankEquivalentGold": 1569000,
+      "currencyReturnFraction": 0.7845
+    },
+    {
+      "kind": "hourly",
+      "maxFairies": true,
+      "allEligibleSkinsOwned": true,
+      "cost": {
+        "currency": "coins",
+        "amount": 10000
+      },
+      "expected": {
+        "protection": 0.3333333333333333,
+        "enhancement": 0.3333333333333333,
+        "selling": 0.3333333333333333
+      },
+      "bankEquivalentGold": 0,
+      "currencyReturnFraction": 0
+    },
+    {
+      "kind": "tickets",
+      "maxFairies": true,
+      "allEligibleSkinsOwned": true,
+      "cost": {
+        "currency": "tickets",
+        "amount": 5
+      },
+      "expected": {
+        "tickets": 2.95,
+        "rubies": 0.21
+      },
+      "bankEquivalentGold": 50500,
+      "currencyReturnFraction": 1.01
+    },
+    {
+      "kind": "skin",
+      "maxFairies": true,
+      "allEligibleSkinsOwned": true,
+      "cost": {
+        "currency": "rubies",
+        "amount": 20
+      },
+      "expected": {
+        "rubies": 15.5,
+        "tickets": 4.9
+      },
+      "bankEquivalentGold": 1599000,
+      "currencyReturnFraction": 0.7995
+    }
+  ],
+  "skinPools": [
+    {
+      "character": "Pio",
+      "count": 33
+    },
+    {
+      "character": "Tia",
+      "count": 22
+    }
+  ],
+  "emission": [
+    {
+      "level": 0,
+      "emptyPerMinute": 60,
+      "brewingPerMinute": 60,
+      "solutionPerActiveWindowAtContinuousBrewing": 8.910891089108912
+    },
+    {
+      "level": 19,
+      "emptyPerMinute": 60,
+      "brewingPerMinute": 196.79999999999998,
+      "solutionPerActiveWindowAtContinuousBrewing": 29.22772277227723
+    }
+  ]
+}

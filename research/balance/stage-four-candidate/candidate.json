@@ -1,0 +1,2913 @@
+{
+  "status": "stage 4 research candidate; not loaded by gameplay",
+  "data": {
+    "schema": 1,
+    "source_pages": [
+      "https://potionmaker.fandom.com/wiki/Materials",
+      "https://potionmaker.fandom.com/wiki/Potion",
+      "https://potion-maker.fandom.com/wiki/Potions"
+    ],
+    "families": [
+      {
+        "id": "Life",
+        "label": "Life",
+        "color": "#e98d9c",
+        "materials": [
+          {
+            "name": "Red herb",
+            "value": 0.7,
+            "starting_name": "Sample Red potion",
+            "image": "Life_Material1.png"
+          },
+          {
+            "name": "Sturdy mushroom",
+            "value": 0.7,
+            "starting_name": "Infant HP potion",
+            "image": "Life_Material2.png"
+          },
+          {
+            "name": "Fruit of power",
+            "value": 1,
+            "starting_name": "Raspberry potion",
+            "image": "Life_Material3.png"
+          },
+          {
+            "name": "Rainbow bird feathers",
+            "value": 1.5,
+            "starting_name": "Small HP Potion",
+            "image": "Life_Material4.png"
+          },
+          {
+            "name": "Rainbow bird's egg",
+            "value": 2.2,
+            "starting_name": "Collagen Potion",
+            "image": "Life_Material5.png"
+          },
+          {
+            "name": "Strange powder",
+            "value": 3,
+            "starting_name": "Home HP Potion",
+            "image": "Life_Material6.png"
+          },
+          {
+            "name": "Drunkagora",
+            "value": 4.3,
+            "starting_name": "Normal HP Potion",
+            "image": "Life_Material7.png"
+          },
+          {
+            "name": "Manticore fur",
+            "value": 5.9,
+            "starting_name": "Carbonated cherry potion",
+            "image": "Life_Material8.png"
+          },
+          {
+            "name": "Mom's Heart",
+            "value": 8.1,
+            "starting_name": "Large HP potion",
+            "image": "Life_Material9.png"
+          },
+          {
+            "name": "Dancing flower",
+            "value": 11,
+            "starting_name": "Blessing HP potion",
+            "image": "Life_Material10.png"
+          },
+          {
+            "name": "S Class strawberry jam",
+            "value": 15,
+            "starting_name": "Strawberry potion",
+            "image": "Life_Material11.png"
+          },
+          {
+            "name": "Eye of giant bat",
+            "value": 20.3,
+            "starting_name": "Elixir of Strength",
+            "image": "Life_Material12.png"
+          },
+          {
+            "name": "Flower fairy wings",
+            "value": 27.4,
+            "starting_name": "Shining HP potion",
+            "image": "Life_Material13.png"
+          },
+          {
+            "name": "Fang of fire dragon",
+            "value": 36.9,
+            "starting_name": "Advanced HP potion",
+            "image": "Life_Material14.png"
+          },
+          {
+            "name": "Red crystal",
+            "value": 49.6,
+            "starting_name": "Fire resistance potion",
+            "image": "Life_Material15.png"
+          },
+          {
+            "name": "Meteor scroll",
+            "value": 66.5,
+            "starting_name": "Enriched HP potion",
+            "image": "Life_Material16.png"
+          },
+          {
+            "name": "Succubu`s tear",
+            "value": 89,
+            "starting_name": "Elixir of Rage",
+            "image": "Life_Material17.png"
+          },
+          {
+            "name": "Rune of seraph",
+            "value": 119,
+            "starting_name": "Celestial HP potion",
+            "image": "Life_Material18.png"
+          },
+          {
+            "name": "Fire dragon scale",
+            "value": 158.7,
+            "starting_name": "Ancient HP potion",
+            "image": "Life_Material19.png"
+          },
+          {
+            "name": "Stone of Sage",
+            "value": 211.5,
+            "starting_name": "Elixir of Legends",
+            "image": "Life_Material20.png"
+          },
+          {
+            "name": "Pendant of dawn",
+            "value": 281.6,
+            "starting_name": "Elixir of dawn",
+            "image": "Life_Material21.png"
+          },
+          {
+            "name": "Cursed Ruby ring",
+            "value": 374.4,
+            "starting_name": "Bloody cursed reagents",
+            "image": "Life_Material22.png"
+          },
+          {
+            "name": "Demon`s red horn",
+            "value": 497.3,
+            "starting_name": "Demon's Minor HP potion",
+            "image": "Life_Material23.png"
+          },
+          {
+            "name": "Red plague of spore",
+            "value": 660.1,
+            "starting_name": "Red plague serum",
+            "image": "Life_Material24.png"
+          },
+          {
+            "name": "Lucifer`s red tears",
+            "value": 875.3,
+            "starting_name": "Red essence of Pride",
+            "image": "Life_Material25.png"
+          }
+        ],
+        "recipes": [
+          {
+            "name": "Sample Red Potion",
+            "base": 7,
+            "max_level": 3,
+            "multipliers": [
+              1.65,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.5
+            ],
+            "image": "Life_Potion1.png",
+            "complete": true,
+            "notes": []
+          },
+          {
+            "name": "Baby HP Potion",
+            "base": 7,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.95,
+              2.25,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.7,
+              0.6,
+              0.5
+            ],
+            "image": "Life_Potion2.png",
+            "complete": true,
+            "notes": []
+          },
+          {
+            "name": "Raspberry Potion",
+            "base": 10,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.95,
+              2.25,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.7,
+              0.6,
+              0.5
+            ],
+            "image": "Life_Potion3.png",
+            "complete": true,
+            "notes": []
+          },
+          {
+            "name": "Small HP Potion",
+            "base": 15,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.95,
+              2.25,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.7,
+              0.6,
+              0.5
+            ],
+            "image": "Life_Potion4.png",
+            "complete": true,
+            "notes": []
+          },
+          {
+            "name": "Collagen Potion",
+            "base": 22,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.95,
+              2.25,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.7,
+              0.6,
+              0.5
+            ],
+            "image": "Life_Potion5.png",
+            "complete": true,
+            "notes": []
+          },
+          {
+            "name": "Homemade HP Potion",
+            "base": 30,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.95,
+              2.25,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.7,
+              0.6,
+              0.5
+            ],
+            "image": "Life_Potion6.png",
+            "complete": true,
+            "notes": []
+          },
+          {
+            "name": "Normal HP Potion",
+            "base": 43,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.95,
+              2.25,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.7,
+              0.6,
+              0.5
+            ],
+            "image": "Life_Potion7.png",
+            "complete": true,
+            "notes": []
+          },
+          {
+            "name": "Carbonated Cherry Potion",
+            "base": 59,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.95,
+              2.25,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.7,
+              0.6,
+              0.5
+            ],
+            "image": "Life_Potion8.png",
+            "complete": true,
+            "notes": []
+          },
+          {
+            "name": "Large HP Potion",
+            "base": 81,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.95,
+              2.25,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.7,
+              0.6,
+              0.5
+            ],
+            "image": "Life_Potion9.png",
+            "complete": true,
+            "notes": [
+              "Personal balance adjustment: enhancement multipliers differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Blessed HP Potion",
+            "base": 110,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.95,
+              2.25,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.7,
+              0.6,
+              0.5
+            ],
+            "image": "Life_Potion10.png",
+            "complete": true,
+            "notes": [
+              "Personal balance adjustment: enhancement multipliers differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Strawberry Potion",
+            "base": 150,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.95,
+              2.25,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.7,
+              0.6,
+              0.5
+            ],
+            "image": "Life_Potion11.png",
+            "complete": true,
+            "notes": [
+              "Personal balance adjustment: enhancement multipliers differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Elixir of Strength",
+            "base": 203,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.95,
+              2.25,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.7,
+              0.6,
+              0.5
+            ],
+            "image": "Life_Potion12.png",
+            "complete": true,
+            "notes": [
+              "Personal balance adjustment: enhancement multipliers differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Shining HP Potion",
+            "base": 274,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.95,
+              2.25,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.7,
+              0.6,
+              0.5
+            ],
+            "image": "Life_Potion13.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Advanced HP Potion",
+            "base": 369,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.95,
+              2.25,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.7,
+              0.6,
+              0.5
+            ],
+            "image": "Life_Potion14.png",
+            "complete": true,
+            "notes": []
+          },
+          {
+            "name": "Fire resistance Potion",
+            "base": 496,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.95,
+              2.25,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.7,
+              0.6,
+              0.5
+            ],
+            "image": "Life_Potion15.png",
+            "complete": true,
+            "notes": []
+          },
+          {
+            "name": "Enriched HP Potion",
+            "base": 665,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.95,
+              2.25,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.7,
+              0.6,
+              0.5
+            ],
+            "image": "Life_Potion16.png",
+            "complete": true,
+            "notes": []
+          },
+          {
+            "name": "Elixir of Rage",
+            "base": 890,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.95,
+              2.25,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.7,
+              0.6,
+              0.5
+            ],
+            "image": "Life_Potion17.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Celestial HP Potion",
+            "base": 1190,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.95,
+              2.25,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.7,
+              0.6,
+              0.5
+            ],
+            "image": "Life_Potion18.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Ancient HP Potion",
+            "base": 1587,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.95,
+              2.25,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.7,
+              0.6,
+              0.5
+            ],
+            "image": "Life_Potion19.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Elixir of Legends",
+            "base": 2115,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.95,
+              2.25,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.7,
+              0.6,
+              0.5
+            ],
+            "image": "Life_Potion20.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Elixir of Dawn",
+            "base": 2816,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.95,
+              2.25,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.7,
+              0.6,
+              0.5
+            ],
+            "image": "Life_Potion21.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Cursed Bloody Reagent",
+            "base": 3744,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.95,
+              2.25,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.7,
+              0.6,
+              0.5
+            ],
+            "image": "Life_Potion22.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Demon's Minor HP Potion",
+            "base": 4973,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.95,
+              2.25,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.7,
+              0.6,
+              0.5
+            ],
+            "image": "Life_Potion23.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Red Plague Serum",
+            "base": 6601,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.95,
+              2.25,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.7,
+              0.6,
+              0.5
+            ],
+            "image": "Life_Potion24.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Red Essence of Pride",
+            "base": 8753,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.95,
+              2.25,
+              2.55
+            ],
+            "chances": [
+              0.8,
+              0.7,
+              0.6,
+              0.5
+            ],
+            "image": "Life_Potion25.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Mana",
+        "label": "Mana",
+        "color": "#83b6dc",
+        "materials": [
+          {
+            "name": "Blue herb",
+            "value": 0.7,
+            "starting_name": "Sample Blue potion",
+            "image": "Mana_Material1.png"
+          },
+          {
+            "name": "Clever mushroom",
+            "value": 0.6,
+            "starting_name": "Infant MP potion",
+            "image": "Mana_Material2.png"
+          },
+          {
+            "name": "Fruit of wisdom",
+            "value": 1,
+            "starting_name": "Blueberry potion",
+            "image": "Mana_Material3.png"
+          },
+          {
+            "name": "Bluebird feathers",
+            "value": 1.4,
+            "starting_name": "Small MP potion",
+            "image": "Mana_Material4.png"
+          },
+          {
+            "name": "Bluebird's egg",
+            "value": 2,
+            "starting_name": "Mineral potion",
+            "image": "Mana_Material5.png"
+          },
+          {
+            "name": "Suspicious powder",
+            "value": 2.8,
+            "starting_name": "Home MP potion",
+            "image": "Mana_Material6.png"
+          },
+          {
+            "name": "Whyragora",
+            "value": 3.9,
+            "starting_name": "Normal MP potion",
+            "image": "Mana_Material7.png"
+          },
+          {
+            "name": "Werewolf fur",
+            "value": 5.4,
+            "starting_name": "Carbonated soda potion",
+            "image": "Mana_Material8.png"
+          },
+          {
+            "name": "Dad's Youth",
+            "value": 7.5,
+            "starting_name": "Large MP potion",
+            "image": "Mana_Material9.png"
+          },
+          {
+            "name": "Dreamy flower",
+            "value": 10.2,
+            "starting_name": "Blessing MP potion",
+            "image": "Mana_Material10.png"
+          },
+          {
+            "name": "S Class grape jam",
+            "value": 13.9,
+            "starting_name": "Grape potion",
+            "image": "Mana_Material11.png"
+          },
+          {
+            "name": "Eye of gargoyle",
+            "value": 18.8,
+            "starting_name": "Elixir of Wisdom",
+            "image": "Mana_Material12.png"
+          },
+          {
+            "name": "Lake fairy wings",
+            "value": 25.3,
+            "starting_name": "Shining MP potion",
+            "image": "Mana_Material13.png"
+          },
+          {
+            "name": "Fang of water dragon",
+            "value": 34.1,
+            "starting_name": "Advanced MP potion",
+            "image": "Mana_Material14.png"
+          },
+          {
+            "name": "Blue crystal",
+            "value": 45.8,
+            "starting_name": "Frost resistance potion",
+            "image": "Mana_Material15.png"
+          },
+          {
+            "name": "Blizzard scroll",
+            "value": 61.4,
+            "starting_name": "Enriched MP potion",
+            "image": "Mana_Material16.png"
+          },
+          {
+            "name": "Siren's Tear",
+            "value": 82.2,
+            "starting_name": "Elixir of Calmness",
+            "image": "Mana_Material17.png"
+          },
+          {
+            "name": "Runes of cherub",
+            "value": 109.8,
+            "starting_name": "Celestial MP potion",
+            "image": "Mana_Material18.png"
+          },
+          {
+            "name": "Water dragon scale",
+            "value": 146.6,
+            "starting_name": "Ancient MP Potion",
+            "image": "Mana_Material19.png"
+          },
+          {
+            "name": "Stone of Deep-sea",
+            "value": 195.3,
+            "starting_name": "Elixir of Fantasy",
+            "image": "Mana_Material20.png"
+          },
+          {
+            "name": "Pendant of daybreak",
+            "value": 237.2,
+            "starting_name": "Elixir of daybreak",
+            "image": "Mana_Material21.png"
+          },
+          {
+            "name": "Cursed Sapphire Ring",
+            "value": 315.3,
+            "starting_name": "Ashy cursed reagents",
+            "image": "Mana_Material22.png"
+          },
+          {
+            "name": "Demon's blue horn",
+            "value": 418.8,
+            "starting_name": "Demon's Minor MP potion",
+            "image": "Mana_Material23.png"
+          },
+          {
+            "name": "Blue plague of spore",
+            "value": 555.8,
+            "starting_name": "Blue Plague Serum",
+            "image": "Mana_Material24.png"
+          },
+          {
+            "name": "Lucifer's blue tears",
+            "value": 736.9,
+            "starting_name": "Blue essence of Pride",
+            "image": "Mana_Material25.png"
+          }
+        ],
+        "recipes": [
+          {
+            "name": "Sample Blue potion",
+            "base": 7,
+            "max_level": 3,
+            "multipliers": [
+              1.6,
+              1.7
+            ],
+            "chances": [
+              0.88,
+              0.72
+            ],
+            "image": "Mana_Potion1.png",
+            "complete": true,
+            "notes": []
+          },
+          {
+            "name": "Infant MP potion",
+            "base": 6,
+            "max_level": 5,
+            "multipliers": [
+              1.6,
+              1.7,
+              1.8,
+              1.9
+            ],
+            "chances": [
+              0.88,
+              0.826667,
+              0.773333,
+              0.72
+            ],
+            "image": "Mana_Potion2.png",
+            "complete": true,
+            "notes": []
+          },
+          {
+            "name": "Blueberry potion",
+            "base": 10,
+            "max_level": 5,
+            "multipliers": [
+              1.6,
+              1.7,
+              1.8,
+              1.9
+            ],
+            "chances": [
+              0.88,
+              0.826667,
+              0.773333,
+              0.72
+            ],
+            "image": "Mana_Potion3.png",
+            "complete": true,
+            "notes": [
+              "Personal balance adjustment: enhancement multipliers differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Small MP potion",
+            "base": 14,
+            "max_level": 5,
+            "multipliers": [
+              1.6,
+              1.7,
+              1.8,
+              1.9
+            ],
+            "chances": [
+              0.88,
+              0.826667,
+              0.773333,
+              0.72
+            ],
+            "image": "Mana_Potion4.png",
+            "complete": true,
+            "notes": [
+              "First multiplier corrected to 1.5 from the hyphenated wiki; its product matches the listed total 12.31. The other wiki lists 1.57.",
+              "Personal balance adjustment: enhancement multipliers differ from the original wiki values."
+            ],
+            "supplement_source": "https://potion-maker.fandom.com/wiki/Potions"
+          },
+          {
+            "name": "Mineral potion",
+            "base": 20,
+            "max_level": 5,
+            "multipliers": [
+              1.6,
+              1.7,
+              1.8,
+              1.9
+            ],
+            "chances": [
+              0.88,
+              0.826667,
+              0.773333,
+              0.72
+            ],
+            "image": "Mana_Potion5.png",
+            "complete": true,
+            "notes": [
+              "Personal balance adjustment: enhancement multipliers differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Home MP potion",
+            "base": 28,
+            "max_level": 5,
+            "multipliers": [
+              1.6,
+              1.7,
+              1.8,
+              1.9
+            ],
+            "chances": [
+              0.88,
+              0.826667,
+              0.773333,
+              0.72
+            ],
+            "image": "Mana_Potion6.png",
+            "complete": true,
+            "notes": [
+              "Complete sequence supplied by the hyphenated wiki. Its third multiplier is 3.2, replacing 3.24 in the other wiki; the product matches total 78.26."
+            ],
+            "supplement_source": "https://potion-maker.fandom.com/wiki/Potions"
+          },
+          {
+            "name": "Normal MP potion",
+            "base": 39,
+            "max_level": 5,
+            "multipliers": [
+              1.6,
+              1.7,
+              1.8,
+              1.9
+            ],
+            "chances": [
+              0.88,
+              0.826667,
+              0.773333,
+              0.72
+            ],
+            "image": "Mana_Potion7.png",
+            "complete": true,
+            "notes": []
+          },
+          {
+            "name": "Carbonated soda potion",
+            "base": 54,
+            "max_level": 5,
+            "multipliers": [
+              1.6,
+              1.7,
+              1.8,
+              1.9
+            ],
+            "chances": [
+              0.88,
+              0.826667,
+              0.773333,
+              0.72
+            ],
+            "image": "Mana_Potion8.png",
+            "complete": true,
+            "notes": []
+          },
+          {
+            "name": "Large MP potion",
+            "base": 75,
+            "max_level": 5,
+            "multipliers": [
+              1.6,
+              1.7,
+              1.8,
+              1.9
+            ],
+            "chances": [
+              0.88,
+              0.826667,
+              0.773333,
+              0.72
+            ],
+            "image": "Mana_Potion9.png",
+            "complete": true,
+            "notes": []
+          },
+          {
+            "name": "Blessing MP potion",
+            "base": 102,
+            "max_level": 5,
+            "multipliers": [
+              1.6,
+              1.7,
+              1.8,
+              1.9
+            ],
+            "chances": [
+              0.88,
+              0.826667,
+              0.773333,
+              0.72
+            ],
+            "image": "Mana_Potion10.png",
+            "complete": true,
+            "notes": []
+          },
+          {
+            "name": "Grape potion",
+            "base": 139,
+            "max_level": 5,
+            "multipliers": [
+              1.6,
+              1.7,
+              1.8,
+              1.9
+            ],
+            "chances": [
+              0.88,
+              0.826667,
+              0.773333,
+              0.72
+            ],
+            "image": "Mana_Potion11.png",
+            "complete": true,
+            "notes": []
+          },
+          {
+            "name": "Elixir of Wisdom",
+            "base": 188,
+            "max_level": 5,
+            "multipliers": [
+              1.6,
+              1.7,
+              1.8,
+              1.9
+            ],
+            "chances": [
+              0.88,
+              0.826667,
+              0.773333,
+              0.72
+            ],
+            "image": "Mana_Potion12.png",
+            "complete": true,
+            "notes": []
+          },
+          {
+            "name": "Shining MP potion",
+            "base": 253,
+            "max_level": 5,
+            "multipliers": [
+              1.6,
+              1.7,
+              1.8,
+              1.9
+            ],
+            "chances": [
+              0.88,
+              0.826667,
+              0.773333,
+              0.72
+            ],
+            "image": "Mana_Potion13.png",
+            "complete": true,
+            "notes": [
+              "Thousands separator normalized from 8.500."
+            ]
+          },
+          {
+            "name": "Advanced MP potion",
+            "base": 341,
+            "max_level": 5,
+            "multipliers": [
+              1.6,
+              1.7,
+              1.8,
+              1.9
+            ],
+            "chances": [
+              0.88,
+              0.826667,
+              0.773333,
+              0.72
+            ],
+            "image": "Mana_Potion14.png",
+            "complete": true,
+            "notes": []
+          },
+          {
+            "name": "Frost resistance potion",
+            "base": 458,
+            "max_level": 5,
+            "multipliers": [
+              1.6,
+              1.7,
+              1.8,
+              1.9
+            ],
+            "chances": [
+              0.88,
+              0.826667,
+              0.773333,
+              0.72
+            ],
+            "image": "Mana_Potion15.png",
+            "complete": true,
+            "notes": []
+          },
+          {
+            "name": "Enriched MP potion",
+            "base": 614,
+            "max_level": 5,
+            "multipliers": [
+              1.6,
+              1.7,
+              1.8,
+              1.9
+            ],
+            "chances": [
+              0.88,
+              0.826667,
+              0.773333,
+              0.72
+            ],
+            "image": "Mana_Potion16.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Elixir of Calmness",
+            "base": 822,
+            "max_level": 5,
+            "multipliers": [
+              1.6,
+              1.7,
+              1.8,
+              1.9
+            ],
+            "chances": [
+              0.88,
+              0.826667,
+              0.773333,
+              0.72
+            ],
+            "image": "Mana_Potion17.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Celestial MP potion",
+            "base": 1098,
+            "max_level": 5,
+            "multipliers": [
+              1.6,
+              1.7,
+              1.8,
+              1.9
+            ],
+            "chances": [
+              0.88,
+              0.826667,
+              0.773333,
+              0.72
+            ],
+            "image": "Mana_Potion18.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Ancient MP Potion",
+            "base": 1466,
+            "max_level": 5,
+            "multipliers": [
+              1.6,
+              1.7,
+              1.8,
+              1.9
+            ],
+            "chances": [
+              0.88,
+              0.826667,
+              0.773333,
+              0.72
+            ],
+            "image": "Mana_Potion19.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Elixir of Fantasy",
+            "base": 1953,
+            "max_level": 5,
+            "multipliers": [
+              1.6,
+              1.7,
+              1.8,
+              1.9
+            ],
+            "chances": [
+              0.88,
+              0.826667,
+              0.773333,
+              0.72
+            ],
+            "image": "Mana_Potion20.png",
+            "complete": true,
+            "notes": [
+              "Missing enhancement multipliers supplied by the hyphenated wiki.",
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ],
+            "supplement_source": "https://potion-maker.fandom.com/wiki/Potions"
+          },
+          {
+            "name": "Elixir of daybreak",
+            "base": 2372,
+            "max_level": 6,
+            "multipliers": [
+              1.6,
+              1.7,
+              1.8,
+              1.9,
+              1.05
+            ],
+            "chances": [
+              0.88,
+              0.84,
+              0.8,
+              0.76,
+              0.72
+            ],
+            "image": "Mana_Potion21.png",
+            "complete": true,
+            "notes": [
+              "Missing enhancement multipliers supplied by the hyphenated wiki."
+            ],
+            "supplement_source": "https://potion-maker.fandom.com/wiki/Potions"
+          },
+          {
+            "name": "Ashy cursed reagents",
+            "base": 3153,
+            "max_level": 6,
+            "multipliers": [
+              1.6,
+              1.7,
+              1.8,
+              1.9,
+              1.05
+            ],
+            "chances": [
+              0.88,
+              0.84,
+              0.8,
+              0.76,
+              0.72
+            ],
+            "image": "Mana_Potion22.png",
+            "complete": true,
+            "notes": [
+              "Missing enhancement multipliers supplied by the hyphenated wiki."
+            ],
+            "supplement_source": "https://potion-maker.fandom.com/wiki/Potions"
+          },
+          {
+            "name": "Demon's minor MP potion",
+            "base": 4188,
+            "max_level": 6,
+            "multipliers": [
+              1.6,
+              1.7,
+              1.8,
+              1.9,
+              1.05
+            ],
+            "chances": [
+              0.88,
+              0.84,
+              0.8,
+              0.76,
+              0.72
+            ],
+            "image": "Mana_Potion23.png",
+            "complete": true,
+            "notes": []
+          },
+          {
+            "name": "Blue plague serum",
+            "base": 5558,
+            "max_level": 6,
+            "multipliers": [
+              1.6,
+              1.7,
+              1.8,
+              1.9,
+              1.05
+            ],
+            "chances": [
+              0.88,
+              0.84,
+              0.8,
+              0.76,
+              0.72
+            ],
+            "image": "Mana_Potion24.png",
+            "complete": true,
+            "notes": [
+              "Missing enhancement multipliers and chances supplied by the hyphenated wiki.",
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ],
+            "supplement_source": "https://potion-maker.fandom.com/wiki/Potions"
+          },
+          {
+            "name": "Blue essence of pride",
+            "base": 7369,
+            "max_level": 6,
+            "multipliers": [
+              1.6,
+              1.7,
+              1.8,
+              1.9,
+              1.05
+            ],
+            "chances": [
+              0.88,
+              0.84,
+              0.8,
+              0.76,
+              0.72
+            ],
+            "image": "Mana_Potion25.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Stamina",
+        "label": "Stamina",
+        "color": "#ddbf66",
+        "materials": [
+          {
+            "name": "Yellow herb",
+            "value": 0.6,
+            "starting_name": "Sample Yellow potion",
+            "image": "Stamina_Material1.png"
+          },
+          {
+            "name": "Lively mushroom",
+            "value": 1,
+            "starting_name": "Infant SP potion",
+            "image": "Stamina_Material2.png"
+          },
+          {
+            "name": "Fruit of spirit",
+            "value": 1.5,
+            "starting_name": "Orange potion",
+            "image": "Stamina_Material3.png"
+          },
+          {
+            "name": "Wyvern feathers",
+            "value": 1.6,
+            "starting_name": "Small SP potion",
+            "image": "Stamina_Material4.png"
+          },
+          {
+            "name": "Wyvern's egg",
+            "value": 2.3,
+            "starting_name": "Vitamin potion",
+            "image": "Stamina_Material5.png"
+          },
+          {
+            "name": "Dangerous powder",
+            "value": 3.2,
+            "starting_name": "Home SP potion",
+            "image": "Stamina_Material6.png"
+          },
+          {
+            "name": "Whatdragora",
+            "value": 4.5,
+            "starting_name": "Normal SP potion",
+            "image": "Stamina_Material7.png"
+          },
+          {
+            "name": "Kobold fur",
+            "value": 6.2,
+            "starting_name": "Carbonated lemon potion",
+            "image": "Stamina_Material8.png"
+          },
+          {
+            "name": "Uncle's Mystery",
+            "value": 8.5,
+            "starting_name": "Large SP potion",
+            "image": "Stamina_Material9.png"
+          },
+          {
+            "name": "Singing flower",
+            "value": 11.6,
+            "starting_name": "Blessing SP potion",
+            "image": "Stamina_Material10.png"
+          },
+          {
+            "name": "Jam of mystery",
+            "value": 15.8,
+            "starting_name": "Potion of Riddle",
+            "image": "Stamina_Material11.png"
+          },
+          {
+            "name": "Eye of ogre",
+            "value": 21.3,
+            "starting_name": "Elixir of Energy",
+            "image": "Stamina_Material12.png"
+          },
+          {
+            "name": "Forest fairy wings",
+            "value": 28.8,
+            "starting_name": "Shining SP potion",
+            "image": "Stamina_Material13.png"
+          },
+          {
+            "name": "Fang of thunder dragon",
+            "value": 38.8,
+            "starting_name": "Advanced SP potion",
+            "image": "Stamina_Material14.png"
+          },
+          {
+            "name": "Gold crystal",
+            "value": 52.1,
+            "starting_name": "Electric resistance potion",
+            "image": "Stamina_Material15.png"
+          },
+          {
+            "name": "Thunderbolt scroll",
+            "value": 69.9,
+            "starting_name": "Enriched SP potion",
+            "image": "Stamina_Material16.png"
+          },
+          {
+            "name": "Harpy's tear",
+            "value": 93.5,
+            "starting_name": "Elixir of Vigor",
+            "image": "Stamina_Material17.png"
+          },
+          {
+            "name": "Rune of thrones",
+            "value": 124.9,
+            "starting_name": "Celestial SP Potion",
+            "image": "Stamina_Material18.png"
+          },
+          {
+            "name": "Thunder dragon scale",
+            "value": 166.6,
+            "starting_name": "Ancient SP Potion",
+            "image": "Stamina_Material19.png"
+          },
+          {
+            "name": "Stone of Glory",
+            "value": 222,
+            "starting_name": "Elixir of Hero",
+            "image": "Stamina_Material20.png"
+          },
+          {
+            "name": "Pendant of dusk",
+            "value": 295.5,
+            "starting_name": "Elixir of twilight",
+            "image": "Stamina_Material21.png"
+          },
+          {
+            "name": "Cursed Topaz ring",
+            "value": 392.9,
+            "starting_name": "Sunset cursed reagents",
+            "image": "Stamina_Material22.png"
+          },
+          {
+            "name": "Demon's yellow horn",
+            "value": 521.9,
+            "starting_name": "Demon's Minor SP Potion",
+            "image": "Stamina_Material23.png"
+          },
+          {
+            "name": "Yellow plague of spore",
+            "value": 692.6,
+            "starting_name": "Yellow Plague Serum",
+            "image": "Stamina_Material24.png"
+          },
+          {
+            "name": "Lucifer's golden tears",
+            "value": 918.4,
+            "starting_name": "Gold Essence of Pride",
+            "image": "Stamina_Material25.png"
+          }
+        ],
+        "recipes": [
+          {
+            "name": "Sample Yellow potion",
+            "base": 6,
+            "max_level": 3,
+            "multipliers": [
+              1.65,
+              1.65
+            ],
+            "chances": [
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion1.png",
+            "complete": true,
+            "notes": []
+          },
+          {
+            "name": "Infant SP potion",
+            "base": 10,
+            "max_level": 3,
+            "multipliers": [
+              1.65,
+              1.65
+            ],
+            "chances": [
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion2.png",
+            "complete": true,
+            "notes": []
+          },
+          {
+            "name": "Orange potion",
+            "base": 15,
+            "max_level": 3,
+            "multipliers": [
+              1.65,
+              1.65
+            ],
+            "chances": [
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion3.png",
+            "complete": true,
+            "notes": [
+              "Personal balance adjustment: enhancement multipliers differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Small SP potion",
+            "base": 16,
+            "max_level": 4,
+            "multipliers": [
+              1.65,
+              1.65,
+              1.65
+            ],
+            "chances": [
+              0.91,
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion4.png",
+            "complete": true,
+            "notes": [
+              "Personal balance adjustment: enhancement multipliers differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Vitamin potion",
+            "base": 23,
+            "max_level": 5,
+            "multipliers": [
+              1.65,
+              1.65,
+              1.65,
+              1.025
+            ],
+            "chances": [
+              0.91,
+              0.91,
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion5.png",
+            "complete": true,
+            "notes": [
+              "Personal balance adjustment: enhancement multipliers differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Home SP potion",
+            "base": 32,
+            "max_level": 6,
+            "multipliers": [
+              1.65,
+              1.65,
+              1.65,
+              1.025,
+              1.025
+            ],
+            "chances": [
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion6.png",
+            "complete": true,
+            "notes": [
+              "Personal balance adjustment: enhancement multipliers differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Normal SP potion",
+            "base": 45,
+            "max_level": 7,
+            "multipliers": [
+              1.65,
+              1.65,
+              1.65,
+              1.025,
+              1.025,
+              1.025
+            ],
+            "chances": [
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion7.png",
+            "complete": true,
+            "notes": [
+              "Personal balance adjustment: enhancement multipliers differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Carbonated lemon potion",
+            "base": 62,
+            "max_level": 8,
+            "multipliers": [
+              1.65,
+              1.65,
+              1.65,
+              1.025,
+              1.025,
+              1.025,
+              1.025
+            ],
+            "chances": [
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion8.png",
+            "complete": true,
+            "notes": [
+              "Personal balance adjustment: enhancement multipliers differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Large SP potion",
+            "base": 85,
+            "max_level": 9,
+            "multipliers": [
+              1.65,
+              1.65,
+              1.65,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025
+            ],
+            "chances": [
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion9.png",
+            "complete": true,
+            "notes": [
+              "Personal balance adjustment: enhancement multipliers differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Blessing SP potion",
+            "base": 116,
+            "max_level": 10,
+            "multipliers": [
+              1.65,
+              1.65,
+              1.65,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025
+            ],
+            "chances": [
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion10.png",
+            "complete": true,
+            "notes": [
+              "Personal balance adjustment: enhancement multipliers differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Potion of Riddle",
+            "base": 158,
+            "max_level": 11,
+            "multipliers": [
+              1.65,
+              1.65,
+              1.65,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025
+            ],
+            "chances": [
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion11.png",
+            "complete": true,
+            "notes": [
+              "Personal balance adjustment: enhancement multipliers differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Elixir of Energy",
+            "base": 213,
+            "max_level": 12,
+            "multipliers": [
+              1.65,
+              1.65,
+              1.65,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025
+            ],
+            "chances": [
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion12.png",
+            "complete": true,
+            "notes": [
+              "Personal balance adjustment: enhancement multipliers differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Shining SP potion",
+            "base": 288,
+            "max_level": 13,
+            "multipliers": [
+              1.65,
+              1.65,
+              1.65,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025
+            ],
+            "chances": [
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion13.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Advanced SP potion",
+            "base": 388,
+            "max_level": 14,
+            "multipliers": [
+              1.65,
+              1.65,
+              1.65,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025
+            ],
+            "chances": [
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion14.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Electric resistance potion",
+            "base": 521,
+            "max_level": 15,
+            "multipliers": [
+              1.65,
+              1.65,
+              1.65,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025
+            ],
+            "chances": [
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion15.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Enriched SP potion",
+            "base": 699,
+            "max_level": 16,
+            "multipliers": [
+              1.65,
+              1.65,
+              1.65,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025
+            ],
+            "chances": [
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion16.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Elixir of Vigor",
+            "base": 935,
+            "max_level": 17,
+            "multipliers": [
+              1.65,
+              1.65,
+              1.65,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025
+            ],
+            "chances": [
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion17.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Celestial SP potion",
+            "base": 1249,
+            "max_level": 18,
+            "multipliers": [
+              1.65,
+              1.65,
+              1.65,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025
+            ],
+            "chances": [
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion18.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Ancient SP Potion",
+            "base": 1666,
+            "max_level": 19,
+            "multipliers": [
+              1.65,
+              1.65,
+              1.65,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025
+            ],
+            "chances": [
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion19.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Elixir of Hero",
+            "base": 2220,
+            "max_level": 20,
+            "multipliers": [
+              1.65,
+              1.65,
+              1.65,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025
+            ],
+            "chances": [
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion20.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Elixir of twilight",
+            "base": 2955,
+            "max_level": 21,
+            "multipliers": [
+              1.65,
+              1.65,
+              1.65,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025
+            ],
+            "chances": [
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion21.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Sunset cursed reagents",
+            "base": 3929,
+            "max_level": 22,
+            "multipliers": [
+              1.65,
+              1.65,
+              1.65,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025
+            ],
+            "chances": [
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion22.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Demon's Minor SP potion",
+            "base": 5219,
+            "max_level": 23,
+            "multipliers": [
+              1.65,
+              1.65,
+              1.65,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025
+            ],
+            "chances": [
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion23.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Yellow Plague Serum",
+            "base": 6926,
+            "max_level": 24,
+            "multipliers": [
+              1.65,
+              1.65,
+              1.65,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025
+            ],
+            "chances": [
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion24.png",
+            "complete": true,
+            "notes": [
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ]
+          },
+          {
+            "name": "Gold Essence of Pride",
+            "base": 9184,
+            "max_level": 25,
+            "multipliers": [
+              1.65,
+              1.65,
+              1.65,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025,
+              1.025
+            ],
+            "chances": [
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91,
+              0.91
+            ],
+            "image": "Stamina_Potion25.png",
+            "complete": true,
+            "notes": [
+              "Base price, maximum level, constant multiplier, and chance supplied by the hyphenated wiki.",
+              "Personal late-game balance adjustment: enhancement values differ from the original wiki values."
+            ],
+            "supplement_source": "https://potion-maker.fandom.com/wiki/Potions"
+          }
+        ]
+      }
+    ],
+    "limits": {
+      "material_tiers": 25,
+      "emission_level": 20,
+      "luck_bonus": 0.10345,
+      "selling_bonus": 0.2,
+      "pushcat_level": 15
+    },
+    "quest_reward_delay_ms": 0,
+    "powerups": {
+      "protection": {
+        "image": "EnhancementFailureProtection.png",
+        "bundle": 5
+      },
+      "enhancement": {
+        "image": "EnhancementBonus.png",
+        "bundle": 10,
+        "chance_bonus": 0.1
+      },
+      "selling": {
+        "image": "SellBonus.png",
+        "bundle": 2,
+        "multiplier": 2
+      }
+    }
+  },
+  "economy": {
+    "schema": 1,
+    "upgrades": {
+      "materials": {
+        "baseCost": 60,
+        "growth": 3,
+        "max": 24
+      },
+      "luck": {
+        "baseCost": 80,
+        "growth": 2,
+        "max": 10,
+        "bonusPerLevel": 0.004
+      },
+      "price": {
+        "baseCost": 90,
+        "growth": 2,
+        "max": 4,
+        "bonusPerLevel": 0.05
+      },
+      "speed": {
+        "baseCost": 70,
+        "growth": 2,
+        "max": 19,
+        "bonusPerLevel": 0.12
+      }
+    },
+    "brewing": {
+      "successCap": 0.99,
+      "enhancementBoost": 0.1,
+      "sellingBoost": 2
+    },
+    "costumes": {
+      "ticketPrice": 300,
+      "tiaMasteryStars": 20
+    },
+    "bank": {
+      "units": {
+        "coins": 100000,
+        "tickets": 10,
+        "rubies": 1
+      }
+    },
+    "conveyor": {
+      "spacing": 76,
+      "baseSpeed": 76,
+      "ticketProbability": 0.009900990099009901,
+      "solutionProbability": 0.009900990099009901
+    },
+    "events": {
+      "activeMs": 900000,
+      "breakMs": 300000,
+      "skinCost": 50,
+      "boostCost": 1,
+      "boostBundle": {
+        "protection": 1,
+        "enhancement": 1,
+        "selling": 1
+      }
+    },
+    "visitors": {
+      "waitMinMs": 20000,
+      "waitMaxMs": 60000,
+      "offerMs": 60000,
+      "prepareMs": 60000,
+      "rewardDelayMs": 30000,
+      "boostMin": 1,
+      "boostMax": 3,
+      "rubyReward": 0
+    },
+    "chests": {
+      "freeBoostCooldownMs": 3600000,
+      "revealMs": 4200,
+      "duplicateTickets": 300,
+      "maxFairyTickets": 5,
+      "hourly": {
+        "cost": {
+          "currency": "coins",
+          "amount": 50
+        },
+        "pool": [
+          {
+            "currency": "protection",
+            "amount": 3,
+            "weight": 1
+          },
+          {
+            "currency": "enhancement",
+            "amount": 3,
+            "weight": 1
+          },
+          {
+            "currency": "selling",
+            "amount": 3,
+            "weight": 1
+          }
+        ]
+      },
+      "tickets": {
+        "cost": {
+          "currency": "tickets",
+          "amount": 10
+        },
+        "pool": [
+          {
+            "currency": "tickets",
+            "amount": 6,
+            "weight": 60
+          },
+          {
+            "currency": "tickets",
+            "amount": 10,
+            "weight": 15
+          },
+          {
+            "currency": "tickets",
+            "amount": 20,
+            "weight": 5
+          },
+          {
+            "currency": "rubies",
+            "amount": 1,
+            "weight": 12
+          },
+          {
+            "currency": "rubies",
+            "amount": 3,
+            "weight": 2
+          },
+          {
+            "currency": "rubies",
+            "amount": 8,
+            "weight": 1
+          },
+          {
+            "currency": "fairy",
+            "amount": 1,
+            "weight": 5
+          }
+        ]
+      },
+      "skin": {
+        "cost": {
+          "currency": "rubies",
+          "amount": 30
+        },
+        "pool": [
+          {
+            "currency": "rubies",
+            "amount": 15,
+            "weight": 60
+          },
+          {
+            "currency": "rubies",
+            "amount": 45,
+            "weight": 15
+          },
+          {
+            "currency": "rubies",
+            "amount": 150,
+            "weight": 5
+          },
+          {
+            "currency": "fairy",
+            "amount": 1,
+            "weight": 19
+          },
+          {
+            "currency": "skin",
+            "amount": 1,
+            "weight": 1
+          }
+        ]
+      }
+    }
+  },
+  "rules": {
+    "incomeBaseGoldPerMinute": 300,
+    "incomeGrowthPerTier": 1.3,
+    "materialUpgradeMinutes": 8.5,
+    "middleUpgradeMinutes": 18,
+    "middleStartsAtOwnedTier": 7,
+    "fairyChanceScale": 0.1,
+    "fairyMultiplierMode": "per-brew factor distributed across recipe steps",
+    "familyMasteryGates": [
+      {
+        "unlockTier": 5,
+        "masteredRecipes": 2
+      },
+      {
+        "unlockTier": 10,
+        "masteredRecipes": 5
+      },
+      {
+        "unlockTier": 15,
+        "masteredRecipes": 8
+      },
+      {
+        "unlockTier": 20,
+        "masteredRecipes": 12
+      },
+      {
+        "unlockTier": 25,
+        "masteredRecipes": 16
+      }
+    ]
+  },
+  "materialCosts": [
+    [
+      255,
+      506,
+      819,
+      2226,
+      3116,
+      4004,
+      5352,
+      7059,
+      9180,
+      12703,
+      16562,
+      21988,
+      28568,
+      37952,
+      51598,
+      68525,
+      89078,
+      118361,
+      153781,
+      213068,
+      277065,
+      360151,
+      468163,
+      608697
+    ],
+    [
+      251,
+      465,
+      898,
+      2268,
+      3093,
+      4064,
+      5279,
+      7006,
+      9220,
+      12719,
+      16588,
+      21892,
+      28373,
+      37541,
+      51015,
+      67409,
+      87671,
+      115807,
+      150656,
+      207645,
+      269208,
+      349915,
+      454919,
+      591442
+    ],
+    [
+      262,
+      525,
+      882,
+      2301,
+      3181,
+      4119,
+      5433,
+      7117,
+      9235,
+      12731,
+      16576,
+      21686,
+      28248,
+      37123,
+      50432,
+      66283,
+      86151,
+      113126,
+      147027,
+      201506,
+      261988,
+      340602,
+      442818,
+      575660
+    ]
+  ],
+  "luckCosts": [
+    330,
+    557,
+    941,
+    1591,
+    2688,
+    4543,
+    7678,
+    12976,
+    21929,
+    37060
+  ],
+  "priceCosts": [
+    557,
+    1591,
+    4543,
+    12976
+  ],
+  "speedCosts": [
+    137,
+    177,
+    231,
+    300,
+    390,
+    507,
+    659,
+    857,
+    1113,
+    1448,
+    1882,
+    2446,
+    3180,
+    4134,
+    5375,
+    6987,
+    9083,
+    11808,
+    15350
+  ],
+  "resourceRules": {
+    "bankPairs": [
+      [
+        "tickets",
+        "rubies"
+      ],
+      [
+        "rubies",
+        "tickets"
+      ]
+    ],
+    "questTickets": 2,
+    "specialDropsInManual": true,
+    "emptyGatherMultiplier": 4,
+    "paidBoostCycleMs": 1200000,
+    "paidBoostLimit": 3,
+    "paidBoostPrices": [
+      {
+        "firstTier": 1,
+        "cost": 50
+      },
+      {
+        "firstTier": 5,
+        "cost": 250
+      },
+      {
+        "firstTier": 10,
+        "cost": 1000
+      },
+      {
+        "firstTier": 15,
+        "cost": 4000
+      },
+      {
+        "firstTier": 20,
+        "cost": 16000
+      }
+    ],
+    "requestCostsByVisitorLevel": [
+      150,
+      400,
+      1200,
+      3000,
+      8000,
+      20000,
+      50000,
+      120000,
+      180000,
+      250000
+    ],
+    "requestCoinReward": 125
+  }
+}

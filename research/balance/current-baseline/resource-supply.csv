@@ -1,0 +1,205 @@
+scenario,source,type,count,p10,p50,p90,mean
+"Manual · earned boosts","quests","protection",40,38,47.5,61.5,48.2125
+"Manual · earned boosts","quests","enhancement",40,39.5,46.5,56,48.1375
+"Manual · earned boosts","quests","selling",40,34.5,47.5,59,48.5625
+"Manual · earned boosts","requests","protection",40,0,0,0,0
+"Manual · earned boosts","requests","enhancement",40,0,0,0,0
+"Manual · earned boosts","requests","selling",40,0,0,0,0
+"Manual · earned boosts","freeChest","protection",40,0,0.5,1,0.3625
+"Manual · earned boosts","freeChest","enhancement",40,0,0,0.5,0.2875
+"Manual · earned boosts","freeChest","selling",40,0,0.5,1,0.35
+"Manual · earned boosts","paidChest","protection",40,0,0,0,0
+"Manual · earned boosts","paidChest","enhancement",40,0,0,0,0
+"Manual · earned boosts","paidChest","selling",40,0,0,0,0
+"Manual · earned boosts","events","protection",40,0,0,0,0
+"Manual · earned boosts","events","enhancement",40,0,0,0,0
+"Manual · earned boosts","events","selling",40,0,0,0,0
+"Manual · earned boosts","conveyor drops","ticket",40,0,0,0,0
+"Manual · earned boosts","conveyor drops","solution",40,0,0,0,0
+"Conveyor · earned boosts","quests","protection",40,19,29,35,28.0125
+"Conveyor · earned boosts","quests","enhancement",40,18.5,28,38,28.5625
+"Conveyor · earned boosts","quests","selling",40,23.5,31,39,30.3875
+"Conveyor · earned boosts","requests","protection",40,0,0,0,0
+"Conveyor · earned boosts","requests","enhancement",40,0,0,0,0
+"Conveyor · earned boosts","requests","selling",40,0,0,0,0
+"Conveyor · earned boosts","freeChest","protection",40,0,0.5,1,0.4
+"Conveyor · earned boosts","freeChest","enhancement",40,0,0,0.5,0.275
+"Conveyor · earned boosts","freeChest","selling",40,0,0.5,1,0.325
+"Conveyor · earned boosts","paidChest","protection",40,0,0,0,0
+"Conveyor · earned boosts","paidChest","enhancement",40,0,0,0,0
+"Conveyor · earned boosts","paidChest","selling",40,0,0,0,0
+"Conveyor · earned boosts","events","protection",40,0,0,0,0
+"Conveyor · earned boosts","events","enhancement",40,0,0,0,0
+"Conveyor · earned boosts","events","selling",40,0,0,0,0
+"Conveyor · earned boosts","conveyor drops","ticket",40,28,35.5,40,35.1
+"Conveyor · earned boosts","conveyor drops","solution",40,21.5,25.5,28,25.175
+"Manual · paid boost chests","quests","protection",40,28.5,35.5,44.5,37.075
+"Manual · paid boost chests","quests","enhancement",40,27,33.5,44,35.1375
+"Manual · paid boost chests","quests","selling",40,23,33.5,41.5,33.625
+"Manual · paid boost chests","requests","protection",40,0,0,0,0
+"Manual · paid boost chests","requests","enhancement",40,0,0,0,0
+"Manual · paid boost chests","requests","selling",40,0,0,0,0
+"Manual · paid boost chests","freeChest","protection",40,0,0.5,1,0.4
+"Manual · paid boost chests","freeChest","enhancement",40,0,0,0.5,0.275
+"Manual · paid boost chests","freeChest","selling",40,0,0.5,0.5,0.325
+"Manual · paid boost chests","paidChest","protection",40,213.5,223.5,232,223.7375
+"Manual · paid boost chests","paidChest","enhancement",40,210.5,220.5,228.5,220.5375
+"Manual · paid boost chests","paidChest","selling",40,208.5,217.5,228.5,218.3375
+"Manual · paid boost chests","events","protection",40,0,0,0,0
+"Manual · paid boost chests","events","enhancement",40,0,0,0,0
+"Manual · paid boost chests","events","selling",40,0,0,0,0
+"Manual · paid boost chests","conveyor drops","ticket",40,0,0,0,0
+"Manual · paid boost chests","conveyor drops","solution",40,0,0,0,0
+"Conveyor · paid boost chests","quests","protection",40,17.5,27,35.5,27.3375
+"Conveyor · paid boost chests","quests","enhancement",40,19,27,34,27.1875
+"Conveyor · paid boost chests","quests","selling",40,20,26,33.5,27.4125
+"Conveyor · paid boost chests","requests","protection",40,0,0,0,0
+"Conveyor · paid boost chests","requests","enhancement",40,0,0,0,0
+"Conveyor · paid boost chests","requests","selling",40,0,0,0,0
+"Conveyor · paid boost chests","freeChest","protection",40,0,0.5,0.5,0.3125
+"Conveyor · paid boost chests","freeChest","enhancement",40,0,0.5,0.5,0.3875
+"Conveyor · paid boost chests","freeChest","selling",40,0,0,1,0.3
+"Conveyor · paid boost chests","paidChest","protection",40,80.5,96.5,109.5,96.2125
+"Conveyor · paid boost chests","paidChest","enhancement",40,85,96.5,108.5,95.9125
+"Conveyor · paid boost chests","paidChest","selling",40,81,94,113.5,95.2375
+"Conveyor · paid boost chests","events","protection",40,0,0,0,0
+"Conveyor · paid boost chests","events","enhancement",40,0,0,0,0
+"Conveyor · paid boost chests","events","selling",40,0,0,0,0
+"Conveyor · paid boost chests","conveyor drops","ticket",40,28.5,35,39.5,34.6
+"Conveyor · paid boost chests","conveyor drops","solution",40,22,27,31,26.6625
+"Conveyor · spend event tokens on boosts","quests","protection",40,21,26.5,35,27.5
+"Conveyor · spend event tokens on boosts","quests","enhancement",40,17,28.5,38,28.5375
+"Conveyor · spend event tokens on boosts","quests","selling",40,18.5,26.5,38.5,27.8875
+"Conveyor · spend event tokens on boosts","requests","protection",40,0,0,0,0
+"Conveyor · spend event tokens on boosts","requests","enhancement",40,0,0,0,0
+"Conveyor · spend event tokens on boosts","requests","selling",40,0,0,0,0
+"Conveyor · spend event tokens on boosts","freeChest","protection",40,0,0.5,0.5,0.325
+"Conveyor · spend event tokens on boosts","freeChest","enhancement",40,0,0.5,0.5,0.325
+"Conveyor · spend event tokens on boosts","freeChest","selling",40,0,0.5,0.5,0.35
+"Conveyor · spend event tokens on boosts","paidChest","protection",40,0,0,0,0
+"Conveyor · spend event tokens on boosts","paidChest","enhancement",40,0,0,0,0
+"Conveyor · spend event tokens on boosts","paidChest","selling",40,0,0,0,0
+"Conveyor · spend event tokens on boosts","events","protection",40,21.5,26.5,32.5,26.85
+"Conveyor · spend event tokens on boosts","events","enhancement",40,21.5,26.5,32.5,26.85
+"Conveyor · spend event tokens on boosts","events","selling",40,21.5,26.5,32.5,26.85
+"Conveyor · spend event tokens on boosts","conveyor drops","ticket",40,28.5,34,40.5,34.625
+"Conveyor · spend event tokens on boosts","conveyor drops","solution",40,21.5,26.5,32.5,26.85
+"Conveyor · traveler requests","quests","protection",40,16,23,31.5,23.1
+"Conveyor · traveler requests","quests","enhancement",40,14.5,24,29.5,23.8
+"Conveyor · traveler requests","quests","selling",40,18.5,25,35.5,25.7
+"Conveyor · traveler requests","requests","protection",40,0,0,0,0
+"Conveyor · traveler requests","requests","enhancement",40,0,0,0,0
+"Conveyor · traveler requests","requests","selling",40,0,0,1,0.5
+"Conveyor · traveler requests","freeChest","protection",40,0,0.5,0.5,0.3125
+"Conveyor · traveler requests","freeChest","enhancement",40,0,0.5,0.5,0.3625
+"Conveyor · traveler requests","freeChest","selling",40,0,0,1,0.325
+"Conveyor · traveler requests","paidChest","protection",40,0,0,0,0
+"Conveyor · traveler requests","paidChest","enhancement",40,0,0,0,0
+"Conveyor · traveler requests","paidChest","selling",40,0,0,0,0
+"Conveyor · traveler requests","events","protection",40,0,0,0,0
+"Conveyor · traveler requests","events","enhancement",40,0,0,0,0
+"Conveyor · traveler requests","events","selling",40,0,0,0,0
+"Conveyor · traveler requests","conveyor drops","ticket",40,29,35,40.5,34.4
+"Conveyor · traveler requests","conveyor drops","solution",40,22.5,26,30.5,26.475
+"manual · input sensitivity 250ms","quests","protection",16,37.5,47.5,55,48.34375
+"manual · input sensitivity 250ms","quests","enhancement",16,44.5,50.5,58,51.46875
+"manual · input sensitivity 250ms","quests","selling",16,43.5,53.5,56,52.28125
+"manual · input sensitivity 250ms","requests","protection",16,0,0,0,0
+"manual · input sensitivity 250ms","requests","enhancement",16,0,0,0,0
+"manual · input sensitivity 250ms","requests","selling",16,0,0,0,0
+"manual · input sensitivity 250ms","freeChest","protection",16,0,0,1,0.3125
+"manual · input sensitivity 250ms","freeChest","enhancement",16,0,0.5,0.5,0.375
+"manual · input sensitivity 250ms","freeChest","selling",16,0,0,0.5,0.3125
+"manual · input sensitivity 250ms","paidChest","protection",16,0,0,0,0
+"manual · input sensitivity 250ms","paidChest","enhancement",16,0,0,0,0
+"manual · input sensitivity 250ms","paidChest","selling",16,0,0,0,0
+"manual · input sensitivity 250ms","events","protection",16,0,0,0,0
+"manual · input sensitivity 250ms","events","enhancement",16,0,0,0,0
+"manual · input sensitivity 250ms","events","selling",16,0,0,0,0
+"manual · input sensitivity 250ms","conveyor drops","ticket",16,0,0,0,0
+"manual · input sensitivity 250ms","conveyor drops","solution",16,0,0,0,0
+"conveyor · input sensitivity 250ms","quests","protection",16,21.5,29,36,29.53125
+"conveyor · input sensitivity 250ms","quests","enhancement",16,22,29,35.5,29.96875
+"conveyor · input sensitivity 250ms","quests","selling",16,22,31,38,30.75
+"conveyor · input sensitivity 250ms","requests","protection",16,0,0,0,0
+"conveyor · input sensitivity 250ms","requests","enhancement",16,0,0,0,0
+"conveyor · input sensitivity 250ms","requests","selling",16,0,0,0,0
+"conveyor · input sensitivity 250ms","freeChest","protection",16,0,0.5,0.5,0.34375
+"conveyor · input sensitivity 250ms","freeChest","enhancement",16,0,0.5,1,0.4375
+"conveyor · input sensitivity 250ms","freeChest","selling",16,0,0,0.5,0.21875
+"conveyor · input sensitivity 250ms","paidChest","protection",16,0,0,0,0
+"conveyor · input sensitivity 250ms","paidChest","enhancement",16,0,0,0,0
+"conveyor · input sensitivity 250ms","paidChest","selling",16,0,0,0,0
+"conveyor · input sensitivity 250ms","events","protection",16,0,0,0,0
+"conveyor · input sensitivity 250ms","events","enhancement",16,0,0,0,0
+"conveyor · input sensitivity 250ms","events","selling",16,0,0,0,0
+"conveyor · input sensitivity 250ms","conveyor drops","ticket",16,26.5,33.5,37.5,33.71875
+"conveyor · input sensitivity 250ms","conveyor drops","solution",16,19.5,24.5,27.5,24.125
+"manual · input sensitivity 1000ms","quests","protection",16,33.5,39.5,52.5,44.09375
+"manual · input sensitivity 1000ms","quests","enhancement",16,34,47.5,55,47.1875
+"manual · input sensitivity 1000ms","quests","selling",16,37,46.5,51,46.875
+"manual · input sensitivity 1000ms","requests","protection",16,0,0,0,0
+"manual · input sensitivity 1000ms","requests","enhancement",16,0,0,0,0
+"manual · input sensitivity 1000ms","requests","selling",16,0,0,0,0
+"manual · input sensitivity 1000ms","freeChest","protection",16,0,0,1,0.34375
+"manual · input sensitivity 1000ms","freeChest","enhancement",16,0,0.5,1,0.4375
+"manual · input sensitivity 1000ms","freeChest","selling",16,0,0,0.5,0.21875
+"manual · input sensitivity 1000ms","paidChest","protection",16,0,0,0,0
+"manual · input sensitivity 1000ms","paidChest","enhancement",16,0,0,0,0
+"manual · input sensitivity 1000ms","paidChest","selling",16,0,0,0,0
+"manual · input sensitivity 1000ms","events","protection",16,0,0,0,0
+"manual · input sensitivity 1000ms","events","enhancement",16,0,0,0,0
+"manual · input sensitivity 1000ms","events","selling",16,0,0,0,0
+"manual · input sensitivity 1000ms","conveyor drops","ticket",16,0,0,0,0
+"manual · input sensitivity 1000ms","conveyor drops","solution",16,0,0,0,0
+"conveyor · input sensitivity 1000ms","quests","protection",16,14.5,23,36,26.09375
+"conveyor · input sensitivity 1000ms","quests","enhancement",16,22,28.5,38,29.09375
+"conveyor · input sensitivity 1000ms","quests","selling",16,24,29.5,36,30.6875
+"conveyor · input sensitivity 1000ms","requests","protection",16,0,0,0,0
+"conveyor · input sensitivity 1000ms","requests","enhancement",16,0,0,0,0
+"conveyor · input sensitivity 1000ms","requests","selling",16,0,0,0,0
+"conveyor · input sensitivity 1000ms","freeChest","protection",16,0,0.5,1,0.40625
+"conveyor · input sensitivity 1000ms","freeChest","enhancement",16,0,0.5,0.5,0.375
+"conveyor · input sensitivity 1000ms","freeChest","selling",16,0,0,0.5,0.21875
+"conveyor · input sensitivity 1000ms","paidChest","protection",16,0,0,0,0
+"conveyor · input sensitivity 1000ms","paidChest","enhancement",16,0,0,0,0
+"conveyor · input sensitivity 1000ms","paidChest","selling",16,0,0,0,0
+"conveyor · input sensitivity 1000ms","events","protection",16,0,0,0,0
+"conveyor · input sensitivity 1000ms","events","enhancement",16,0,0,0,0
+"conveyor · input sensitivity 1000ms","events","selling",16,0,0,0,0
+"conveyor · input sensitivity 1000ms","conveyor drops","ticket",16,33,38.5,41.5,38.375
+"conveyor · input sensitivity 1000ms","conveyor drops","solution",16,22.5,28,29.5,27.40625
+"manual · paid chests, reduced motion","quests","protection",16,37.5,48.5,56.5,48.1875
+"manual · paid chests, reduced motion","quests","enhancement",16,36.5,50,54.5,48.21875
+"manual · paid chests, reduced motion","quests","selling",16,37.5,46,54.5,47.15625
+"manual · paid chests, reduced motion","requests","protection",16,0,0,0,0
+"manual · paid chests, reduced motion","requests","enhancement",16,0,0,0,0
+"manual · paid chests, reduced motion","requests","selling",16,0,0,0,0
+"manual · paid chests, reduced motion","freeChest","protection",16,0,0,0.5,0.21875
+"manual · paid chests, reduced motion","freeChest","enhancement",16,0,0.5,1,0.40625
+"manual · paid chests, reduced motion","freeChest","selling",16,0,0.5,0.5,0.375
+"manual · paid chests, reduced motion","paidChest","protection",16,1498.5,1561,1594.5,1551.875
+"manual · paid chests, reduced motion","paidChest","enhancement",16,1530,1543,1567.5,1549.125
+"manual · paid chests, reduced motion","paidChest","selling",16,1522,1549,1573,1553.65625
+"manual · paid chests, reduced motion","events","protection",16,0,0,0,0
+"manual · paid chests, reduced motion","events","enhancement",16,0,0,0,0
+"manual · paid chests, reduced motion","events","selling",16,0,0,0,0
+"manual · paid chests, reduced motion","conveyor drops","ticket",16,0,0,0,0
+"manual · paid chests, reduced motion","conveyor drops","solution",16,0,0,0,0
+"conveyor · paid chests, reduced motion","quests","protection",16,19.5,29,36,28.75
+"conveyor · paid chests, reduced motion","quests","enhancement",16,22,30,33.5,29.25
+"conveyor · paid chests, reduced motion","quests","selling",16,22.5,28,36,29.59375
+"conveyor · paid chests, reduced motion","requests","protection",16,0,0,0,0
+"conveyor · paid chests, reduced motion","requests","enhancement",16,0,0,0,0
+"conveyor · paid chests, reduced motion","requests","selling",16,0,0,0,0
+"conveyor · paid chests, reduced motion","freeChest","protection",16,0,0.5,0.5,0.375
+"conveyor · paid chests, reduced motion","freeChest","enhancement",16,0,0.5,0.5,0.40625
+"conveyor · paid chests, reduced motion","freeChest","selling",16,0,0,0.5,0.21875
+"conveyor · paid chests, reduced motion","paidChest","protection",16,165.5,219,260.5,222.71875
+"conveyor · paid chests, reduced motion","paidChest","enhancement",16,182,232.5,249.5,221.71875
+"conveyor · paid chests, reduced motion","paidChest","selling",16,171,226,245.5,219.46875
+"conveyor · paid chests, reduced motion","events","protection",16,0,0,0,0
+"conveyor · paid chests, reduced motion","events","enhancement",16,0,0,0,0
+"conveyor · paid chests, reduced motion","events","selling",16,0,0,0,0
+"conveyor · paid chests, reduced motion","conveyor drops","ticket",16,35,39,44,39.71875
+"conveyor · paid chests, reduced motion","conveyor drops","solution",16,22,31.5,34.5,30.21875

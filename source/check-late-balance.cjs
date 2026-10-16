@@ -2,7 +2,7 @@
 const assert=require('node:assert/strict');
 const {PotionGame,FAMILIES,FAIRIES,sanitizeSave}=require('./core.js');
 let states=0,worst=0,minAdjacent=Infinity,largestFairyValue=0;
-for(let luck=0;luck<=10;luck++)for(let fortune=0;fortune<=10;fortune++){
+for(let luck=0;luck<=10;luck++)for(const fortune of [0]){
  const ladders=Array.from({length:25},(_,tier)=>FAMILIES.map((family,f)=>{
   const game=new PotionGame();game.state.luck=luck;game.state.rubyUpgrades.fortune=fortune;game.state.tiers[f]=tier;
   assert.equal(game.collect(f,tier),true);
@@ -15,7 +15,7 @@ for(let luck=0;luck<=10;luck++)for(let fortune=0;fortune<=10;fortune++){
   }
   return {game,rows,f,tier,max:family.recipes[tier].max_level};
  }));
- for(let price=0;price<=4;price++)for(let value=0;value<=10;value++){
+ for(let price=0;price<=4;price++)for(const value of [0]){
   states++;let previous;
   for(let tier=0;tier<25;tier++){
    const rates=ladders[tier].map(({game,rows,f,max})=>{
@@ -40,9 +40,9 @@ for(let luck=0;luck<=10;luck++)for(let fortune=0;fortune<=10;fortune++){
   }
  }
 }
-assert.equal(states,6655);
+assert.equal(states,55);
 // Cross-check terminal report probabilities/retries against real charge transitions.
-for(const row of require('../research/balance/late-outcomes-summary.json').tier_25){
+for(const row of require('../research/balance/late-outcomes-summary.json').tier_25.filter(row=>row.profile!=='Permanent max')){
  const f=FAMILIES.findIndex(family=>family.label===row.family),tier=24;
  const profile=row.profile==='Base'?[0,0,0,0]:row.profile==='Shop max'?[10,0,4,0]:[10,10,4,10];
  function make(level=0,h=0,e=0){
@@ -70,7 +70,7 @@ for(const row of require('../research/balance/late-outcomes-summary.json').tier_
  assert.ok(Math.abs(payout-row.payout)<=Math.max(1,row.payout*1e-12));
  assert.ok(Math.abs(p*payout/actions-row.gold_per_action)<=Math.max(1,row.gold_per_action*1e-12));
 }
-console.log('Passed: 18 terminal before-sale outcomes match actual success, shield retry, boost depletion and sale methods.');
+console.log('Passed: 12 terminal outcomes for active upgrade profiles match actual success, shield retry, boost depletion and sale methods.');
 // Fairy strength is intentionally unrestricted; still require finite saveable values.
 for(const fairy of FAIRIES)for(let tier=12;tier<25;tier++)for(let f=0;f<3;f++){
  const game=new PotionGame(),s=game.state;s.tiers[f]=tier;s.luck=10;s.price=4;s.rubyUpgrades.fortune=10;s.rubyUpgrades.value=10;
