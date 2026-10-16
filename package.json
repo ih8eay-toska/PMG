@@ -2,7 +2,8 @@
   "private": true,
   "type": "commonjs",
   "scripts": {
-    "test": "node source/check-core.cjs && node source/check-storage.cjs && node source/check-events.cjs && node source/check-visitors.cjs && node source/check-economy.cjs && node source/check-late-balance.cjs && node source/check-build.cjs",
-    "test:balance-baseline": "node research/balance/check-baseline.cjs"
+    "test": "node source/check-core.cjs && node source/check-storage.cjs && node source/check-save-files.cjs && node source/check-migration.cjs && node source/check-ui.cjs && node source/check-settings.cjs && node source/check-events.cjs && node source/check-visitors.cjs && node source/check-economy.cjs && node source/check-late-balance.cjs && node source/check-build.cjs",
+    "test:balance-baseline": "node research/balance/check-baseline.cjs",
+    "test:balance-live": "node research/balance/verify-live.cjs"
   }
 }

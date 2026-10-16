@@ -39,3 +39,7 @@ Step 6 must update superseded live numeric fixtures and verify:
 5. Integrated pacing and presentation. The research conveyor median was 5.37 minutes per middle purchase, above the 3–5-minute target; input speed and player policy still affect progression. Human timing has not been measured.
 
 Legacy-gold purchasing-power examples remain necessary before proposing any currency conversion. This step changes future rules and provides compatibility handling; it does not establish that the full verification stage is complete.
+
+## Step-six outcome
+
+Automated verification and rebuild now pass; three small runtime fixes were required. Browser visual inspection is still pending because the browser tool blocks local file URLs. See [the step-six report](stage-six-verification/REPORT.md) for coverage, current progression measurements and remaining limits.

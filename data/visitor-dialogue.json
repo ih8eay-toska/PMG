@@ -1,5 +1,5 @@
 {
-  "provenance": "Original fan-written normal-quest responses. Portraits are original archived wiki assets. Tirami tone is inspired by the documented challenge dialogue, not presented as a normal-quest transcript. Added visitor/fairy conversations are also original fan-written text for the temporary reward mode.",
+  "provenance": "Original fan-written normal-quest responses. Portraits are original archived wiki assets. Tirami tone is inspired by the documented challenge dialogue, not presented as a normal-quest transcript. Added visitor/fairy conversations are also original fan-written text for the temporary reward mode. User-provided original dialogue for Tirami, Luke, Charlotte and Demian is stored under documented; other lines remain fan-written.",
   "sources": [
     "https://potionmaker.fandom.com/wiki/Neet",
     "https://potionmaker.fandom.com/wiki/Dolbur",
@@ -75,6 +75,74 @@
       "returning": "Thanks! I will be back with something for your shop.",
       "complete": "A fairy wanted to come along. Would you look after it?",
       "failed": "Looks like our time is up. See you around."
+    }
+  },
+  "documented": {
+    "tirami": {
+      "Pio": {
+        "offer": [
+          "Hey, Pio! Today we'll finally decide who makes better potions!"
+        ],
+        "complete": [
+          "Grr...To..today was only practice! I'll get the better of you next time!",
+          "It's tasty, but...not enough! I'll come back again next time!"
+        ],
+        "failed": [
+          "Hehe ★ It's not possible to win against me, right?! Come on, admit it!"
+        ]
+      },
+      "Tia": {
+        "offer": [
+          "Tia, I challenge you!\nI'll show you the real value of my potions!",
+          "Let's see how great your potion really is! Go on, make me a Lv. {level} {potion}!"
+        ],
+        "complete": [
+          "I..I wasn't feeling all too good. I went easy on you!!"
+        ],
+        "failed": [
+          "Hehe ★ Even an elite like you cannot defeat me!"
+        ]
+      },
+      "request": [
+        "You're going to accept my challenge after this, right? OK!"
+      ]
+    },
+    "luke": {
+      "offer": [
+        "I.......Go......Find a lost cat......Need......Lv. {level} {potion}.......",
+        "I.......Go......Dragon slaying......Need......Lv. {level} {potion}.......",
+        "I.......Go......Undead suppression......Need......Lv. {level} {potion}........"
+      ],
+      "complete": [
+        "Thx.. help... this.. present..."
+      ],
+      "request": [
+        "Sure..."
+      ]
+    },
+    "charlotte": {
+      "offer": [
+        "Charlotte~ wants the most gorgeous potion...hope you understand? ♡"
+      ],
+      "complete": [
+        "Thank you darling ♡ It's wonderful! I'll be able to show it off to my family."
+      ],
+      "failed": [
+        "Oh dear...you're not going to grant Charlotte's wish? Such a shame..."
+      ]
+    },
+    "demian": {
+      "offer": [
+        "This shop has not been paying enough taxes lately. I demand payback."
+      ],
+      "complete": [
+        "Hmm...alright. I'm counting on you.",
+        "Hmm...alright. Better be careful next time."
+      ],
+      "failed": [
+        "So the rumors are true. I'll be back.",
+        "Hmm...money is not the only way."
+      ]
     }
   }
 }

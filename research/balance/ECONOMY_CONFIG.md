@@ -28,7 +28,7 @@ Stage 5 activates gold-exchange restrictions, paid chest price bands, saved open
 2. `npm run test:balance-baseline` checks analytical probability/resource results against sampled game transitions.
 3. `node research/balance/check-stage-two.cjs` compares 18 full sessions and the economy summary with frozen stage-one evidence. Later deliberate balance changes will invalidate this stage-specific check.
 
-The commands above characterized the earlier economy; several live-test numeric fixtures now need intentional updates in step 6. Stage 5 ran syntax checks and the offline builder, not the gameplay test suites. Historical baseline/candidate calculations now load `research-runtime.cjs`, `stage-five-before-core.js` and `stage-five-before.json` so live changes do not silently alter their model. The frozen numerical output folders remain unchanged.
+The commands above characterized the earlier economy; the superseded live numeric fixtures required updates, now completed in step 6. Stage 5 ran syntax checks and the offline builder, not the gameplay test suites. Historical baseline/candidate calculations now load `research-runtime.cjs`, `stage-five-before-core.js` and `stage-five-before.json` so live changes do not silently alter their model. The frozen numerical output folders remain unchanged.
 
 ## Next
 
@@ -36,4 +36,14 @@ Stage 3 calculations are in [the candidate report](stage-three-candidate/REPORT.
 
 Stage 4 calculations are in [the resource economy report](stage-four-candidate/REPORT.md). Its selected rules are now integrated. The report describes the research state when written; its numerical results remain simulations rather than measured human play. The conveyor middle-game median remains above the 3–5 minute target.
 
-Next, verify live save migration, quota persistence, resource accounting, Bank guards, case outcomes and UI behavior in step 6. Update superseded numeric fixtures first. Legacy-gold purchasing power still needs concrete examples before any currency conversion; no gold reset or conversion is authorized.
+Step 6 automated verification now passes: live save migration, saved quotas, resource accounting, Bank guards, case outcomes and UI handlers. Superseded numeric fixtures are updated. See [verification results](stage-six-verification/REPORT.md); browser visual inspection remains pending because local file URLs are blocked by the browser tool. The step-six report includes a concrete legacy-gold purchasing-power example. Any gold reset or conversion still requires a separate decision.
+
+Current conveyor behavior and updated pacing: [density report](conveyor-density/REPORT.md). Material Emission shortens spawn spacing at fixed travel speed; special-drop frequency increases with density.
+
+Superseding correction: [slow selection / faster brewing](conveyor-slow-start/REPORT.md): 19 px/s empty, 76 px/s brewing; unchanged per-spawn odds. Specific-recipe income regression remains a tuning issue.
+
+Current speed adjustment: empty conveyor 40 px/s (40/76 base-speed multiplier); brewing 76 px/s. Earlier 19 px/s progression estimates are historical and require recalculation.
+
+Current conveyor speeds: 40 px/s empty, 80 px/s brewing (base speed 80, empty multiplier 0.5). Emission spacing remains 76 pixels before upgrades.
+
+Regular wardrobe costumes now cost 200 Pushcat tickets; duplicate skins convert into 200 tickets (one selectable regular skin). Historical pricing and timing reports retain their original values.

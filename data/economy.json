@@ -166,7 +166,7 @@
     "fairyMultiplierPerBrew": true
   },
   "costumes": {
-    "ticketPrice": 300,
+    "ticketPrice": 200,
     "tiaMasteryStars": 20
   },
   "bank": {
@@ -187,10 +187,10 @@
   },
   "conveyor": {
     "spacing": 76,
-    "baseSpeed": 76,
+    "baseSpeed": 80,
     "ticketProbability": 0.009900990099009901,
     "solutionProbability": 0.009900990099009901,
-    "emptyGatherMultiplier": 4,
+    "emptySpeedMultiplier": 0.5,
     "specialDropsInManual": true
   },
   "events": {
@@ -218,7 +218,7 @@
   "chests": {
     "freeBoostCooldownMs": 3600000,
     "revealMs": 4200,
-    "duplicateTickets": 300,
+    "duplicateTickets": 200,
     "maxFairyTickets": 5,
     "hourly": {
       "cost": {

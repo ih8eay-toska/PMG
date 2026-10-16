@@ -27,7 +27,7 @@ assert.equal(wardrobe.state.tickets,100000);
 assert.ok(wardrobe.buyCostume('Kids_Costume.png'),'regular costumes remain purchasable');
 assert.ok(wardrobe.buyCostume('Summer_Uniform_Costume_Blue.png'),'static costumes remain free');
 for(const character of ['Pio','Tia'])for(let pick=0;pick<100;pick++){
- const chest=new PotionGame();chest.state.tiaUnlocked=true;chest.state.rubies=20;
+ const chest=new PotionGame();chest.state.tiaUnlocked=true;chest.state.rubies=30;
  const rolls=[.999,pick/100],result=chest.openReward('skin',character,1000,()=>rolls.shift());
  assert.equal(result.currency,'skin');
  assert.ok(!EVENTS.some(event=>event.skins.includes(chest.state.activeCostumeId)),'case cannot award event skins');

@@ -1,18 +1,19 @@
 const assert=require('node:assert/strict');
-const{PotionGame,MaterialConveyor,materialPool,INITIAL,sanitizeSave,FAMILIES,TRAVELERS,FAIRIES,REQUESTS,LEVEL_EXP}=require('./core.js');
-let g=new PotionGame();assert.equal(g.collect(1,0),true);g.collect(0,0);assert.equal(g.state.potion.family,1);assert.equal(g.state.potion.value,11);
-assert.equal(g.enhance(0),'success');assert.equal(g.state.potion.value,13.2);assert.equal(g.enhance(.99),'lost');assert.equal(g.state.failed,1);assert.equal(g.state.potion,null);
-g.state.powerups={protection:1,enhancement:1,selling:1};g.collect(0,0);assert.equal(g.next().chance,.99);assert.equal(g.enhance(0),'success');assert.equal(g.state.powerups.enhancement,0);assert.equal(g.state.powerups.protection,1);assert.equal(g.enhance(.99),'protected');assert.equal(g.state.powerups.protection,0);assert.equal(g.state.potion.level,1);assert.equal(g.sell(),20);assert.equal(g.state.powerups.selling,0);
-g=new PotionGame();g.collect(2,0);g.enhance(0);g.enhance(0);assert.equal(g.next(),null);assert.equal(g.enhancementStatus(),'max');assert.equal(g.sell(),14);
-g.state.coins=1e20;for(let i=0;i<24;i++)assert.equal(g.buy('tier0'),true);assert.equal(g.buy('tier0'),false);assert.equal(g.state.tiers[0],24);assert.equal(g.collect(0,24),true);assert.equal(g.recipe().base,1e6);assert.equal(g.next().chance,.18);
+const{PotionGame,MaterialConveyor,materialPool,INITIAL,sanitizeSave,FAMILIES,TRAVELERS,FAIRIES,REQUESTS,LEVEL_EXP,ECONOMY}=require('./core.js');
+let g=new PotionGame();assert.equal(g.collect(1,0),true);g.collect(0,0);assert.equal(g.state.potion.family,1);assert.equal(g.state.potion.value,7.7);
+assert.equal(g.enhance(0),'success');assert.equal(g.state.potion.value,7.7*1.6);assert.equal(g.enhance(.99),'lost');assert.equal(g.state.failed,1);assert.equal(g.state.potion,null);
+g.state.powerups={protection:1,enhancement:1,selling:1};g.collect(0,0);assert.equal(g.next().chance,.9);assert.equal(g.enhance(0),'success');assert.equal(g.state.powerups.enhancement,0);assert.equal(g.state.powerups.protection,1);assert.equal(g.enhance(.99),'protected');assert.equal(g.state.powerups.protection,0);assert.equal(g.state.potion.level,1);assert.equal(g.sell(),23);assert.equal(g.state.powerups.selling,0);
+g=new PotionGame();g.collect(2,0);g.enhance(0);g.enhance(0);assert.equal(g.next(),null);assert.equal(g.enhancementStatus(),'max');assert.equal(g.sell(),16);
+g.state.coins=1e20;for(let i=0;i<24;i++){g.state.masteryStars=Array.from({length:i},(_,t)=>'0-'+t);assert.equal(g.buy('tier0'),true);}assert.equal(g.buy('tier0'),false);assert.equal(g.state.tiers[0],24);assert.equal(g.collect(0,24),true);assert.equal(g.recipe().base,8753);assert.equal(g.next().chance,.8);
 // Each newly completed potion must reach its documented maximum and save/load there.
-for(const [family,tier,expectedProduct] of [[1,5,78.26304],[1,19,384493741.21302706],[1,20,2084141836.875],[1,21,4063390466.032],[1,23,15037217745.660925],[2,24,125184900814.733]]){
+for(const [family,tier] of [[1,5],[1,19],[1,20],[1,21],[1,23],[2,24]]){
+ const expectedProduct=FAMILIES[family].recipes[tier].multipliers.reduce((a,b)=>a*b,1);
  g=new PotionGame();g.state.tiers[family]=tier;assert.equal(g.collect(family,tier),true);const base=g.recipe().base;const max=g.recipe().max_level;
  for(let level=1;level<max;level++){assert.ok(g.next());assert.equal(g.enhance(0),'success');}
  assert.equal(g.enhancementStatus(),'max');assert.equal(g.enhance(0),null);assert.ok(Math.abs(g.state.potion.value/base-expectedProduct)<=expectedProduct*1e-10);
  assert.deepEqual(sanitizeSave(JSON.parse(JSON.stringify(g.state))),g.state);assert.ok(g.sell()>0);
 }
-g=new PotionGame();g.state.tiers[1]=3;g.collect(1,3);assert.equal(g.next().multiplier,1.62);
+g=new PotionGame();g.state.tiers[1]=3;g.collect(1,3);assert.equal(g.next().multiplier,1.6);
 // Preserve the unknown-data guard for any genuinely missing future record.
 const home=FAMILIES[1].recipes[5],recordedStep=home.multipliers[3];
 try{home.multipliers[3]=null;g=new PotionGame();g.state.tiers[1]=5;g.collect(1,5);g.enhance(0);g.enhance(0);g.enhance(0);assert.equal(g.enhancementStatus(),'unknown');assert.equal(g.enhance(0),null);}finally{home.multipliers[3]=recordedStep;}
@@ -43,18 +44,18 @@ g=new PotionGame(sanitizeSave(v2));assert.equal(g.state.travelers[0].phase,'retu
 // Unbiased material pool, identical empty-cauldron speed at every emission level,
 // and spatially even emission when speed changes or an ingredient is collected.
 assert.equal(materialPool([0,1,2]).length,6);assert.deepEqual(materialPool([0,0,0]).map(x=>x.family),[0,1,2]);
-let belt=new MaterialConveyor(456,[0,0,0],()=>0),base=belt.speed(false,0);assert.equal(base,76);assert.equal(belt.speed(false,19),base);assert.ok(belt.speed(true,19)>belt.speed(true,0));
+let belt=new MaterialConveyor(456,[0,0,0],()=>0),base=belt.speed(false,0);assert.equal(base,40);assert.equal(belt.speed(false,19),base);assert.equal(belt.speed(true,19),80);assert.equal(belt.speed(true,0),80);
 const seen=new Set();const pool=materialPool([1,2,3]);let sequence=[];for(const m of pool){const start=[0,2,5][m.family];sequence.push(0,(start+.5)/9,(m.tier+.5)/([1,2,3][m.family]+1));}let sample=0;belt=new MaterialConveyor(760,[1,2,3],()=>sequence[sample++%sequence.length]);belt.items.forEach(m=>seen.add(m.family+'-'+m.tier));assert.equal(seen.size,pool.length);
-let slow=new MaterialConveyor(456,[0,0,0],()=>0),fast=new MaterialConveyor(456,[0,0,0],()=>0);slow.advance(1000,false,19);fast.advance(1000,true,19);assert.ok(fast.items[0].x<slow.items[0].x);
+let slow=new MaterialConveyor(456,[0,0,0],()=>0),fast=new MaterialConveyor(456,[0,0,0],()=>0);slow.advance(100,false,0);fast.advance(100,true,0);assert.ok(slow.items[0].x>fast.items[0].x);
 belt=new MaterialConveyor(456,[0,0,0],()=>0);const before=belt.items[1].x;const taken=belt.take(belt.items[0].id);assert.ok(taken);assert.equal(belt.items[0].x,before);
-for(let i=0;i<300;i++){belt.advance(100,i>100,19);const items=belt.items;for(let j=1;j<items.length;j++){const gap=items[j].x-items[j-1].x;assert.ok(Math.abs(gap/76-Math.round(gap/76))<1e-8);assert.ok(gap>=76-1e-8);}}
+for(const level of [0,9,19]){const dense=new MaterialConveyor(456,[0,0,0],()=>0);dense.advance(10000,true,level);const gap=76/(1+level*.12);assert.ok(Math.abs(dense.spacing-gap)<1e-8);for(let j=1;j<dense.items.length;j++)assert.ok(Math.abs(dense.items[j].x-dense.items[j-1].x-gap)<1e-8);const item=dense.items.find(m=>m.x>=0),id=item.id,x=item.x;dense.advance(100,true,level);assert.ok(Math.abs(dense.items.find(m=>m.id===id).x-(x-8))<1e-8);}
 // Collecting after enhancement retains the observed additive behavior.
 g=new PotionGame();g.collect(1,0);g.enhance(0);const enhanced=g.state.potion.value;g.collect(0,0);assert.equal(g.state.potion.value,enhanced+FAMILIES[0].materials[0].value);
 let old={version:1,coins:123,tiers:[2,1,0],luck:3,price:3,speed:3,potion:{family:1,tier:1,level:1,value:25},sold:7,failed:1,best:50,ingredients:20};let migrated=sanitizeSave(old);assert.equal(migrated.version,INITIAL().version);assert.equal(migrated.coins,123);assert.deepEqual(migrated.tiers,[2,1,0]);assert.equal(migrated.potion.value,25);assert.deepEqual(sanitizeSave(migrated),migrated);
 assert.throws(()=>sanitizeSave({...INITIAL(),coins:-1}));assert.throws(()=>sanitizeSave({...INITIAL(),powerups:{protection:-1,enhancement:0,selling:0}}));assert.throws(()=>sanitizeSave({...INITIAL(),travelers:[{}, {}, {}]}));assert.throws(()=>sanitizeSave({...INITIAL(),potion:{family:0,tier:0,level:20,value:10}}));
 assert.equal(FAMILIES.length,3);assert.equal(FAMILIES.flatMap(f=>f.recipes).length,75);assert.equal(FAMILIES.flatMap(f=>f.recipes).filter(r=>r.complete).length,75);
 for(const f of FAMILIES)for(const r of f.recipes){if(r.complete){assert.equal(r.multipliers.length,r.max_level-1);assert.ok(r.chances.every(c=>c>=0&&c<=1));}}
-console.log('Passed: randomized evenly spaced conveyor, emission speeds, random visitors, acceptance deadlines, failure/reload, reward idempotency, v1/v2 migration, 75 complete recipes, six restored enhancement paths, corrected Small MP, unknown-data guard, powerup consumption, delayed quest rewards, v1 migration, invalid-save rejection.');
+console.log('Passed: randomized evenly spaced conveyor, emission speeds, random visitors, acceptance deadlines, failure/reload, reward idempotency, v1/v2 migration, 75 complete recipes, six restored enhancement paths, selected Mana tables, unknown-data guard, powerup consumption, delayed quest rewards, v1 migration, invalid-save rejection.');
 
 const badActive={...INITIAL(),travelers:[{quests:0,readyAt:0,phase:'active',deadline:1,requirement:null},...INITIAL().travelers.slice(1)]};assert.throws(()=>sanitizeSave(badActive));
 assert.throws(()=>sanitizeSave({...INITIAL(),nextVisitorAt:-1}));
@@ -67,7 +68,7 @@ for(let index=0;index<TRAVELERS.length;index++){
  assert.equal(g.deliver(index,2000,()=>.999),true);assert.equal(g.state.travelers[index].rewardFairyId,null);const reward=g.state.travelers[index].rewardBoost;assert.deepEqual(reward,{type:'protection',amount:1});
  assert.equal(g.state.travelers[index].phase,'returning');g=new PotionGame(sanitizeSave(JSON.parse(JSON.stringify(g.state))));assert.equal(g.settle(31999).length,0);assert.equal(g.settle(32000).length,1);assert.deepEqual(g.state.fairies,{});assert.equal(g.settle(63000).length,0);
  assert.deepEqual(g.state.powerups,{protection:1,enhancement:0,selling:0});assert.deepEqual(sanitizeSave(g.state),g.state);
- assert.equal(g.state.travelers[index].quests,1);assert.equal(g.state.rubies,1);
+ assert.equal(g.state.travelers[index].quests,1);assert.equal(g.state.tickets,2);assert.equal(g.state.rubies,0);
 }
 let v3={...INITIAL(),version:3,travelers:INITIAL().travelers.slice(0,3)};v3.travelers[1]={...v3.travelers[1],phase:'active',deadline:65000,requirement:{family:0,tier:0,level:0}};
 let upgraded=sanitizeSave(v3);assert.equal(upgraded.travelers.length,10);assert.equal(upgraded.travelers[1].deadline,65000);assert.deepEqual(upgraded.fairies,{});
@@ -78,7 +79,7 @@ console.log('Passed: all 10 visitor arrivals, random boost rewards, 38 collectib
 g=new PotionGame();g.collect(0,0);g.collect(1,0);g.state.powerups={protection:1,enhancement:1,selling:1};
 assert.equal(g.enhance(0),'success');assert.equal(g.enhance(.999),'protected');const price=g.sell();
 assert.equal(g.state.metrics.brewsStarted,1);assert.deepEqual(g.state.metrics.ingredientsByFamily,[1,1,0]);assert.equal(g.state.metrics.enhancementAttempts,2);assert.equal(g.state.metrics.enhancementsSucceeded,1);assert.equal(g.state.metrics.enhancementsFailed,1);assert.equal(g.state.metrics.protectedFailures,1);assert.equal(g.state.metrics.potionsLost,0);assert.equal(g.state.metrics.coinsEarned,price);assert.deepEqual(g.state.metrics.powerupsUsed,{protection:1,enhancement:1,selling:1});assert.equal(g.state.metrics.recipes['0-0'].highestLevel,2);
-g.collect(1,0);g.sell();assert.equal(g.state.metrics.soldLevelOne,1);g.state.coins=1000;assert.equal(g.buy('speed'),true);assert.equal(g.state.metrics.coinsSpent,70);assert.equal(g.state.metrics.upgradesBought,1);g.recordPlayTime(1000);assert.equal(g.state.metrics.activePlayMs,1000);assert.deepEqual(sanitizeSave(g.state),g.state);
+g.collect(1,0);g.sell();assert.equal(g.state.metrics.soldLevelOne,1);g.state.coins=1000;assert.equal(g.buy('speed'),true);assert.equal(g.state.metrics.coinsSpent,137);assert.equal(g.state.metrics.upgradesBought,1);g.recordPlayTime(1000);assert.equal(g.state.metrics.activePlayMs,1000);assert.deepEqual(sanitizeSave(g.state),g.state);
 g=new PotionGame();g.tick(1,()=>0);g.tick(20001,()=>0);g.acceptQuest(0,21000);g.tick(81000,()=>0);assert.equal(g.state.metrics.questsOffered,1);assert.equal(g.state.metrics.questsAccepted,1);assert.equal(g.state.metrics.questsFailed,1);assert.equal(g.state.metrics.visitors.neet.failed,1);
 let oldStats={...INITIAL(),version:4};delete oldStats.metrics;oldStats.sold=99;oldStats.ingredients=300;oldStats.failed=21;let statsMigrated=sanitizeSave(oldStats);assert.equal(statsMigrated.sold,99);assert.equal(statsMigrated.ingredients,300);assert.equal(statsMigrated.failed,21);assert.equal(statsMigrated.metrics.historyPartial,true);assert.equal(statsMigrated.metrics.coinsEarned,0);assert.deepEqual(sanitizeSave(statsMigrated),statsMigrated);
 assert.throws(()=>sanitizeSave({...INITIAL(),metrics:{...INITIAL().metrics,coinsEarned:-1}}));assert.throws(()=>sanitizeSave({...INITIAL(),metrics:{...INITIAL().metrics,recipes:{'9-9':{}}}}));
@@ -113,38 +114,23 @@ for(const family of [0,1,2]){
  const capped=new PotionGame();capped.state.luck=10;capped.state.rubyUpgrades.fortune=10;
  const id=['fairy-29','fairy-26','fairy-28'][family];capped.state.fairies[id]=10;capped.setActiveFairy(id);
  capped.state.powerups.enhancement=1;capped.collect(family,0);
- assert.equal(capped.next().chance,.99);assert.equal(capped.enhance(.99,1),'lost');assert.equal(capped.state.powerups.enhancement,0);
+ const expected=Math.min(.99,FAMILIES[family].recipes[0].chances[0]+.04+.1+.03);assert.equal(capped.next().chance,expected);assert.equal(capped.enhance(.99,1),'lost');assert.equal(capped.state.powerups.enhancement,0);
  const success=new PotionGame();success.state.luck=10;success.state.powerups.enhancement=1;success.collect(0,0);
- assert.equal(success.enhance(.989999,1),'success');
+ assert.equal(success.enhance(.939999,1),'success');
 }
-const ordinary=new PotionGame();ordinary.collect(0,0);assert.equal(ordinary.next().chance,.9);
-console.log('Passed: 99% ceiling across all families, stacked fairy bonuses, failure boundary, boost consumption, and unchanged lower chances.');
+const ordinary=new PotionGame();ordinary.collect(0,0);assert.equal(ordinary.next().chance,.8);
+console.log('Passed: 99% ceiling across all families, stacked fairy bonuses, failure boundary, boost consumption, and current lower chances.');
 
 // Existing potion values survive the balance update; future steps use current tables.
-const applied = require('../research/balance/applied-candidates.json');
-assert.equal(applied.length,17);
-const lateApplied = require('../research/balance/applied-late-candidates.json');
-assert.equal(lateApplied.length,30);
-for(const change of [...applied,...lateApplied]){
- assert.deepEqual(FAMILIES[change.family].recipes[change.tier-1].multipliers,change.after);
- if(change.after_chances)assert.deepEqual(FAMILIES[change.family].recipes[change.tier-1].chances,change.after_chances);
- const saved=new PotionGame();saved.state.tiers[change.family]=change.tier-1;
- saved.collect(change.family,change.tier-1);saved.state.potion.value=123.456;
- const loaded=new PotionGame(sanitizeSave(JSON.parse(JSON.stringify(saved.state))));
- assert.equal(loaded.state.potion.value,123.456);
- assert.equal(loaded.enhance(0,1),'success');
- assert.equal(loaded.state.potion.value,123.456*change.after[0]);
- if(change.after_chances){
-  saved.state.potion.level=change.after.length-1;
-  const last=new PotionGame(sanitizeSave(JSON.parse(JSON.stringify(saved.state))));
-  assert.equal(last.state.potion.value,123.456);
-  assert.equal(last.next().chance,change.after_chances.at(-1));
-  assert.equal(last.enhance(0,1),'success');
-  assert.equal(last.state.potion.value,123.456*change.after.at(-1));
-  assert.equal(last.enhancementStatus(),'max');
- }
+const candidate=require('../research/balance/stage-four-candidate/candidate.json');
+for(let family=0;family<3;family++)for(let tier=0;tier<25;tier++){
+ const recipe=FAMILIES[family].recipes[tier],expected=candidate.data.families[family].recipes[tier];
+ assert.equal(recipe.base,expected.base);assert.deepEqual(recipe.multipliers,expected.multipliers);assert.deepEqual(recipe.chances,expected.chances);
+ const saved=new PotionGame();saved.state.tiers[family]=tier;saved.collect(family,tier);saved.state.potion.value=123.456;
+ const loaded=new PotionGame(sanitizeSave(JSON.parse(JSON.stringify(saved.state))));assert.equal(loaded.state.potion.value,123.456);
+ assert.equal(loaded.enhance(0,1),'success');assert.equal(loaded.state.potion.value,123.456*recipe.multipliers[0]);
 }
-console.log('Passed: all 47 applied enhancement tables, existing potion values survive reload, and late final enhancements use updated chances.');
+console.log('Passed: all 75 selected recipe tables, preserved in-progress values, and current enhancement multipliers.');
 
 // One ticket slot per 100 ingredient slots in a deterministic 101-spawn sample.
 const draws=[];for(let i=0;i<101;i++){draws.push(i/101);if(i<100)draws.push(0,0);}
@@ -155,7 +141,7 @@ for(let i=1;i<mixed.items.length;i++)assert.equal(mixed.items[i].x-mixed.items[i
 const ticketsOnly=new MaterialConveyor(152,[24,24,24],()=>1,()=>({materialProbability:[100,0,0]}));
 assert.ok(ticketsOnly.items.every(m=>m.kind==='ticket'));
 const ticketId=ticketsOnly.items[1].id;
-ticketsOnly.advance(1000,true,2);assert.equal(ticketsOnly.items.find(m=>m.id===ticketId).x,76-76*1.24);
+ticketsOnly.advance(1000,true,2);assert.equal(ticketsOnly.items.find(m=>m.id===ticketId).x,76-80);
 g=new PotionGame();const freshBefore=JSON.parse(JSON.stringify(g.state));assert.equal(g.collectTicket(),true);
 assert.equal(g.state.tickets,1);assert.equal(g.state.potion,null);assert.equal(g.state.ingredients,freshBefore.ingredients);
 g.collect(2,0);const potionBefore=JSON.parse(JSON.stringify(g.state));const ticket=ticketsOnly.take(ticketId);
@@ -164,3 +150,11 @@ assert.equal(g.state.tickets,2);assert.deepEqual(g.state.potion,potionBefore.pot
 assert.deepEqual(sanitizeSave(JSON.parse(JSON.stringify(g.state))),g.state);
 g.state.tickets=Number.MAX_SAFE_INTEGER;assert.equal(g.collectTicket(),false);
 console.log('Passed: 100:1 ingredient/ticket spawning, shared spacing/speed, one-time removal, isolated ticket rewards and save round trip.');
+
+// Coarse but visible frames retain the same cards as ordinary 50 ms updates.
+for(const [brewing,level]of [[false,0],[true,0],[true,19]]){
+ const coarse=new MaterialConveyor(456,[0,0,0],()=>0),fine=new MaterialConveyor(456,[0,0,0],()=>0);
+ coarse.advance(1000,brewing,level);for(let i=0;i<20;i++)fine.advance(50,brewing,level);
+ const visible=belt=>belt.items.filter(m=>m.x<456-20);const a=visible(coarse),b=visible(fine);assert.equal(a.length,b.length);for(let i=0;i<a.length;i++)assert.ok(Math.abs(a[i].x-b[i].x)<1e-8);
+}
+console.log('Passed: long-frame visible emission matches fine-grained updates.');

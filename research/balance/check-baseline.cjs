@@ -13,4 +13,4 @@ const rows=economy().chests;
 assert.ok(Math.abs(rows.find(r=>r.kind==='tickets'&&r.maxFairies&&!r.allEligibleSkinsOwned).currencyReturnFraction-1.01)<1e-12);
 let tickets=0,rubies=0;for(let i=0;i<100;i++){const g=new PotionGame();g.state.tickets=5;for(const f of FAIRIES)g.state.fairies[f.id]=10;const reward=g.openReward('tickets','Pio',1000,()=>(i+.5)/100);if(reward.currency==='tickets')tickets+=reward.amount;else if(reward.currency==='rubies')rubies+=reward.amount;else assert.fail('max-fairy ticket case should contain currencies only');}
 assert.ok(Math.abs((tickets/100+rubies/100*10)/5-1.01)<1e-12);
-console.log('Passed: deterministic runs, exact probability fixtures, 72,000 actual-game sampled brews, resource use, and the 101% max-fairy ticket-case currency return.');
+console.log('Passed: archived pre-rebalance engine: deterministic runs, probability fixtures, 72,000 sampled brews and historical 101% max-fairy ticket-case return.');
