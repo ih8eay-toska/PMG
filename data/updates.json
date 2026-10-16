@@ -1,0 +1,18 @@
+{
+  "entries": [
+    {
+      "id": "2026-10-17-quality-of-life",
+      "date": "2026-10-17",
+      "title": "A smoother shop and safer saves",
+      "rubies": 10,
+      "notes": [
+        "Conveyor now travels left to right, with denser materials as Emission improves.",
+        "New settings for audio, conveyor speed, shortcuts, motion, dialogue and text size.",
+        "Five-second autosaves, recovery backups and shareable save files.",
+        "Refreshed event sidebar, visitor dialogue, potion panels and notices.",
+        "Regular costumes now cost 200 tickets; duplicate skins grant 200 tickets.",
+        "Reduced unnecessary interface updates for smoother play."
+      ]
+    }
+  ]
+}

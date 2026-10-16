@@ -1,3 +1,4 @@
+const UPDATES=typeof UPDATE_DATA!=='undefined'?UPDATE_DATA:require('../data/updates.json');
 const DATA = typeof GAME_DATA !== 'undefined' ? GAME_DATA : require('../data/game-data.json');
 const ECONOMY=typeof ECONOMY_DATA!=='undefined'?ECONOMY_DATA:require('../data/economy.json');
 const MAX_CASE_REWARD=Math.max(300,ECONOMY.chests.duplicateTickets,ECONOMY.chests.maxFairyTickets,...['hourly','tickets','skin'].flatMap(kind=>ECONOMY.chests[kind].pool.map(row=>row.amount)));
@@ -77,7 +78,7 @@ const EVENTS=[
 ];
 const EVENT_SKINS=new Set(EVENTS.flatMap(event=>event.skins));
 const EVENT_ACTIVE_MS=ECONOMY.events.activeMs,EVENT_CYCLE_MS=EVENT_ACTIVE_MS+ECONOMY.events.breakMs;
-const INITIAL=()=>({version:15,eventRotation:{index:0,elapsedMs:0,solution:0},masteryStars:[],tiaUnlocked:false,tiaIntroSeen:false,rewardReadyAt:0,rewardHistory:[],paidBoostWindow:{window:0,count:0},coins:0,tickets:0,rubies:0,rubyUpgrades:{fortune:0,value:0,materials:0},costumes:[COSTUMES.default],activeCostumeId:COSTUMES.default,likeability:0,requestCoinsSpent:0,tiers:[0,0,0],luck:0,price:0,speed:0,potion:null,sold:0,failed:0,best:0,ingredients:0,powerups:{protection:0,enhancement:0,selling:0},travelers:TRAVELERS.map(freshTraveler),request:null,nextVisitorAt:0,metrics:freshMetrics(),fairies:{},activeFairyId:null,discovered:[],selected:[0,0,0]});
+const INITIAL=()=>({version:15,claimedUpdates:[],eventRotation:{index:0,elapsedMs:0,solution:0},masteryStars:[],tiaUnlocked:false,tiaIntroSeen:false,rewardReadyAt:0,rewardHistory:[],paidBoostWindow:{window:0,count:0},coins:0,tickets:0,rubies:0,rubyUpgrades:{fortune:0,value:0,materials:0},costumes:[COSTUMES.default],activeCostumeId:COSTUMES.default,likeability:0,requestCoinsSpent:0,tiers:[0,0,0],luck:0,price:0,speed:0,potion:null,sold:0,failed:0,best:0,ingredients:0,powerups:{protection:0,enhancement:0,selling:0},travelers:TRAVELERS.map(freshTraveler),request:null,nextVisitorAt:0,metrics:freshMetrics(),fairies:{},activeFairyId:null,discovered:[],selected:[0,0,0]});
 const finite=x=>typeof x==='number'&&Number.isFinite(x)&&x>=0&&x<=Number.MAX_VALUE;
 const integer=(x,max)=>Number.isInteger(x)&&x>=0&&x<=max;
 function syncMasteryStars(s){
@@ -88,6 +89,7 @@ function syncMasteryStars(s){
 function sanitizeSave(data){
  if(!data||![1,2,3,4,5,6,7,8,9,10,11,12,13,14,15].includes(data.version))throw Error('This save is not compatible.');
  const s=INITIAL();
+ if(data.claimedUpdates!==undefined){const ids=data.claimedUpdates;if(!Array.isArray(ids)||ids.length>1000||ids.some(id=>typeof id!=='string'||!/^[a-zA-Z0-9_-]{1,80}$/.test(id))||new Set(ids).size!==ids.length)throw Error('Invalid update claims.');s.claimedUpdates=[...ids];}
  if(data.version>=13){const r=data.eventRotation;if(!r||!integer(r.index,EVENTS.length-1)||!finite(r.elapsedMs)||r.elapsedMs>=EVENT_CYCLE_MS||!integer(r.solution,Number.MAX_SAFE_INTEGER))throw Error('Invalid event progress.');s.eventRotation={index:r.index,elapsedMs:r.elapsedMs,solution:r.solution};}
  if(data.version>=11){s.rewardReadyAt=saveTime(data.rewardReadyAt);if(!Array.isArray(data.rewardHistory)||data.rewardHistory.length>20)throw Error('Invalid reward history.');s.rewardHistory=data.rewardHistory.map(entry=>{if(!entry||!['hourly','tickets','skin'].includes(entry.kind)||!['tickets','rubies','skin','fairy','protection','enhancement','selling'].includes(entry.currency)||!integer(entry.amount,MAX_CASE_REWARD)||typeof entry.name!=='string'||entry.name.length>100)throw Error('Invalid case reward.');return{kind:entry.kind,currency:entry.currency,amount:entry.amount,name:entry.name,at:saveTime(entry.at)};});}
  if(data.version>=12){if(!Array.isArray(data.masteryStars)||data.masteryStars.some(id=>!POTION_IDS.has(id))||new Set(data.masteryStars).size!==data.masteryStars.length||typeof data.tiaUnlocked!=='boolean')throw Error('Invalid mastery stars.');s.masteryStars=[...data.masteryStars];s.tiaUnlocked=data.tiaUnlocked;}
@@ -173,6 +175,7 @@ function sanitizeSave(data){
  return s;
 }
 class PotionGame{
+ claimUpdate(id){const update=UPDATES.entries.find(u=>u.id===id),s=this.state;if(!update||s.claimedUpdates.includes(id)||s.claimedUpdates.length>=1000||!Number.isSafeInteger(s.rubies+update.rubies))return null;s.rubies+=update.rubies;s.claimedUpdates.push(id);return update.rubies;}
  likeabilityInfo(){const milestones=[0,1000,5000,10000,15000,25000],value=Math.min(25000,this.state.likeability),reactions=milestones.filter(level=>value>=level).length;return{value,max:25000,reactions,next:milestones[reactions]??null};}
  constructor(state=INITIAL()){this.state=state;syncMasteryStars(state);}
  fairyLevel(id){return Math.min(10,this.state.fairies[id]||0);}
@@ -252,4 +255,4 @@ class MaterialConveyor{
  }
  take(id){const i=this.items.findIndex(m=>m.id===id);return i<0?null:this.items.splice(i,1)[0];}
 }
-if(typeof module!=='undefined')module.exports={ECONOMY,PotionGame,MaterialConveyor,materialPool,FAMILIES,TRAVELERS,FAIRIES,REQUESTS,LEVEL_EXP,INITIAL,sanitizeSave,DATA,QUEST_DURATION_MS,RUBY_UPGRADES,FAIRY_DRAW_COST,COSTUMES,EVENTS,EVENT_ACTIVE_MS,EVENT_CYCLE_MS};
+if(typeof module!=='undefined')module.exports={UPDATES,ECONOMY,PotionGame,MaterialConveyor,materialPool,FAMILIES,TRAVELERS,FAIRIES,REQUESTS,LEVEL_EXP,INITIAL,sanitizeSave,DATA,QUEST_DURATION_MS,RUBY_UPGRADES,FAIRY_DRAW_COST,COSTUMES,EVENTS,EVENT_ACTIVE_MS,EVENT_CYCLE_MS};
