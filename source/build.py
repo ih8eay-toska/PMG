@@ -19,6 +19,7 @@ used.update(['QuestMark.png','RewardIcon1.png','RewardIcon2.png','RewardIconFair
 used.update(['TiaWho.png','PiaDialogue.png','TiaDialogue.png','BlackcatDialogue.png','PushcatDialogue.png'])
 used.add('StarCollectable.png')
 used.add('Likeability.png')
+used.add('NewEventIcon.png')
 used.update(['Tia.png','Slider-characters.png','pio_slider.webp','tia_slider.webp'])
 used.update(['ClairePortrait.png', 'LukePortrait.png', 'PiriaPortrait.png', 'CharlottePortraitNormal.png', 'DemianPortrait.png', 'DaisyPortrait.png', 'KylePortrait.png', 'CharlottePortraitHappy.png', 'CharlottePortraitDisappointed.png', 'DaisyPortraitHappy.png', 'DaisyPortraitDisappointed.png'])
 for f in ['Life','Mana','Stamina']:
@@ -30,8 +31,10 @@ for record in manifest['assets']:
     if key in used or normalized(key) in {normalized(k) for k in used}:
         data=(ROOT/record['path']).read_bytes()
         assets[key]=f'data:{record["mime"]};base64,'+base64.b64encode(data).decode()
-for key,path in [('pio_slider.webp','assets/references/pio_slider.webp'),('tia_slider.webp','assets/references/tia_slider.webp')]:
+for key,path in [('pio_slider.webp','assets/references/pio_slider.webp'),('tia_slider.webp','assets/references/tia_slider.webp'),('minipio.webp','assets/references/minipio.webp'),('minitia.webp','assets/references/minitia.webp')]:
     assets[key]='data:image/webp;base64,'+base64.b64encode((ROOT/path).read_bytes()).decode()
+for name in ['2015_Summer_Event_Part_2_Banner', '2015_Summer_Event_Part_3_banner', '300000DLbannerKO', '500000_dl_thanks_event_banner', 'Halloween_banner', 'Third_Event_Banner_-_English', '배너-할락생일_ko_', '배너-쿠타타생일_ko_', '배너-여름방학1탄', '배너-서큐버스_ko_', '배너-크리스마스', '배너-2015년신년']:
+    assets[name+'.webp']='data:image/webp;base64,'+base64.b64encode((ROOT/'assets/references'/(name+'.webp')).read_bytes()).decode()
 template=(ROOT/'source/index.template.html').read_text(encoding='utf-8')
 for token,value in [('__ASSETS__',json.dumps(assets)),('__GAME_DATA__',(ROOT/'data/game-data.json').read_text(encoding='utf-8')),('__COSTUME_DATA__',(ROOT/'data/costumes.json').read_text(encoding='utf-8')),('__FLAVOR_DATA__',(ROOT/'data/flavor-text.json').read_text(encoding='utf-8')),('__MATERIAL_TEXT__',(ROOT/'data/material-descriptions.json').read_text(encoding='utf-8')),('__VISITOR_DIALOGUE__',(ROOT/'data/visitor-dialogue.json').read_text(encoding='utf-8')),('__FAIRY_DATA__',(ROOT/'data/fairies.json').read_text(encoding='utf-8')),('__ACHIEVEMENT_LORE__',(ROOT/'data/achievement-lore.json').read_text(encoding='utf-8')),('__STORAGE__',(ROOT/'source/storage.js').read_text(encoding='utf-8')),('__CORE__',(ROOT/'source/core.js').read_text(encoding='utf-8')),('__APP__',(ROOT/'source/app.js').read_text(encoding='utf-8'))]:template=template.replace(token,value)
 template=template.replace('__ACHIEVEMENT_LORE__',(ROOT/'data/achievement-lore.json').read_text(encoding='utf-8'))
@@ -54,7 +57,7 @@ for group,filename in [('success','Success.mtn'),('failure','Fail.mtn')]:
     tia_settings['motions'][group]=[{'file':data_url(tia_root/'motions'/filename,'application/octet-stream')}]
 tia_settings['textures']=[data_url(tia_root/'textures/default-costume.webp','image/webp')]
 tia_settings['costumeTextures']={normalized(c['id']):data_url(tia_root/'textures'/c['texture'],'image/webp') for c in costumes['entries'] if c.get('character')=='Tia' and c.get('texture')}
-pio_scripts+='<script data-pio-runtime>const PIO_DATA='+json.dumps({'settings':pio_settings,'textures':pio_textures})+';const TIA_DATA='+json.dumps(tia_settings)+';</script>'
+pio_scripts+='<script data-pio-runtime>const PIO_DATA='+json.dumps({'settings':pio_settings,'textures':pio_textures})+';const TIA_DATA='+json.dumps(tia_settings)+';const BREWER_DIALOGUE='+(ROOT/'data/brewer-dialogue.json').read_text(encoding='utf-8')+';</script>'
 pio_scripts+='<script data-pio-runtime>'+(ROOT/'source/pio.js').read_text(encoding='utf-8')+'</script>'
 template=template.replace('</body>',pio_scripts+'</body>')
 (ROOT/'Potion-Maker.html').write_text(template,encoding='utf-8')

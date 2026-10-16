@@ -58,7 +58,7 @@ const RECIPE_COUNTERS=['started','sold','sales','best','enhancements','failures'
 const freshRecipeStats=()=>Object.fromEntries(RECIPE_COUNTERS.map(k=>[k,0]));
 const freshVisitStats=()=>({offered:0,accepted:0,delivered:0,failed:0,declined:0});
 const freshMetrics=()=>({...Object.fromEntries(METRIC_COUNTERS.map(k=>[k,0])),since:Date.now(),historyPartial:false,ingredientsByFamily:[0,0,0],powerupsUsed:{protection:0,enhancement:0,selling:0},recipes:{},visitors:Object.fromEntries(TRAVELERS.map(t=>[t.id,freshVisitStats()]))});
-const INITIAL=()=>({version:12,masteryStars:[],tiaUnlocked:false,rewardReadyAt:0,rewardHistory:[],coins:0,tickets:0,rubies:0,rubyUpgrades:{fortune:0,value:0,materials:0},costumes:[COSTUMES.default],activeCostumeId:COSTUMES.default,likeability:0,requestCoinsSpent:0,tiers:[0,0,0],luck:0,price:0,speed:0,potion:null,sold:0,failed:0,best:0,ingredients:0,powerups:{protection:0,enhancement:0,selling:0},travelers:TRAVELERS.map(freshTraveler),request:null,nextVisitorAt:0,metrics:freshMetrics(),fairies:{},activeFairyId:null,discovered:[],selected:[0,0,0]});
+const INITIAL=()=>({version:12,masteryStars:[],tiaUnlocked:false,tiaIntroSeen:false,rewardReadyAt:0,rewardHistory:[],coins:0,tickets:0,rubies:0,rubyUpgrades:{fortune:0,value:0,materials:0},costumes:[COSTUMES.default],activeCostumeId:COSTUMES.default,likeability:0,requestCoinsSpent:0,tiers:[0,0,0],luck:0,price:0,speed:0,potion:null,sold:0,failed:0,best:0,ingredients:0,powerups:{protection:0,enhancement:0,selling:0},travelers:TRAVELERS.map(freshTraveler),request:null,nextVisitorAt:0,metrics:freshMetrics(),fairies:{},activeFairyId:null,discovered:[],selected:[0,0,0]});
 const finite=x=>typeof x==='number'&&Number.isFinite(x)&&x>=0&&x<=Number.MAX_VALUE;
 const integer=(x,max)=>Number.isInteger(x)&&x>=0&&x<=max;
 function syncMasteryStars(s){
@@ -71,6 +71,7 @@ function sanitizeSave(data){
  const s=INITIAL();
  if(data.version>=11){s.rewardReadyAt=saveTime(data.rewardReadyAt);if(!Array.isArray(data.rewardHistory)||data.rewardHistory.length>20)throw Error('Invalid reward history.');s.rewardHistory=data.rewardHistory.map(entry=>{if(!entry||!['hourly','tickets','skin'].includes(entry.kind)||!['tickets','rubies','skin','fairy','protection','enhancement','selling'].includes(entry.currency)||!integer(entry.amount,300)||typeof entry.name!=='string'||entry.name.length>100)throw Error('Invalid case reward.');return{kind:entry.kind,currency:entry.currency,amount:entry.amount,name:entry.name,at:saveTime(entry.at)};});}
  if(data.version>=12){if(!Array.isArray(data.masteryStars)||data.masteryStars.some(id=>!POTION_IDS.has(id))||new Set(data.masteryStars).size!==data.masteryStars.length||typeof data.tiaUnlocked!=='boolean')throw Error('Invalid mastery stars.');s.masteryStars=[...data.masteryStars];s.tiaUnlocked=data.tiaUnlocked;}
+ if(data.tiaIntroSeen!==undefined){if(typeof data.tiaIntroSeen!=='boolean')throw Error('Invalid Tia intro status.');s.tiaIntroSeen=data.tiaIntroSeen;}
  const legacyMastery=data.version===6&&data.request===undefined&&data.mastery!==undefined;
  const hasRequests=data.version>=6&&!legacyMastery;
  function saveTime(value){if(!finite(value)||value>8640000000000000||(data.version>=8&&!Number.isInteger(value)))throw Error('Invalid save timestamp.');return Math.round(value);}

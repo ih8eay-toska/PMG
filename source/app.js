@@ -179,6 +179,23 @@ const gameMenu=$('game-menu'),menuGrid=$('game-menu-grid');
 const portraitUpgrades=document.createElement('button'),portraitUpgradeDialog=document.createElement('dialog'),portraitUpgradeClose=document.createElement('button'),upgradePanel=document.querySelector('main>aside:last-child'),upgradePanelAnchor=document.createComment('Shop upgrades position');
 upgradePanel.before(upgradePanelAnchor);portraitUpgrades.type='button';portraitUpgrades.className='portrait-upgrades';portraitUpgrades.textContent='Upgrades';portraitUpgrades.setAttribute('aria-haspopup','dialog');portraitUpgradeDialog.id='portrait-upgrade-dialog';portraitUpgradeDialog.setAttribute('aria-label','Shop upgrades');portraitUpgradeClose.type='button';portraitUpgradeClose.className='close';portraitUpgradeClose.textContent='×';portraitUpgradeClose.setAttribute('aria-label','Close shop upgrades');portraitUpgradeClose.onclick=()=>portraitUpgradeDialog.close();portraitUpgradeDialog.append(portraitUpgradeClose);document.body.append(portraitUpgradeDialog);document.querySelector('.actions').append(portraitUpgrades);
 portraitUpgrades.onclick=()=>{portraitUpgradeDialog.append(upgradePanel);portraitUpgradeDialog.showModal();};portraitUpgradeDialog.addEventListener('close',()=>upgradePanelAnchor.after(upgradePanel));
+const eventBanners=[
+ ['2015_Summer_Event_Part_2_Banner','Summer 2015 · Part 2','Visit the summer event locations for Tia’s Sports Bikini and event fairies.'],
+ ['2015_Summer_Event_Part_3_banner','Summer 2015 · Part 3','Collect Coconut Juice for Tia’s Cami Dress and Pio’s Summer Dress.'],
+ ['300000DLbannerKO','300,000 Downloads','Collect cakes appearing among the materials to earn Tia’s Nurse Costume.'],
+ ['500000_dl_thanks_event_banner','500,000 Downloads','Sell potions during a customer rush to earn Tia’s Blazer Costume.'],
+ ['Halloween_banner','Halloween 2015','Complete Halloween Party requests for Pio’s Halloween Costume and Halloprin.'],
+ ['Third_Event_Banner_-_English','Season 2 Update','A Twitter follow and retweet promotion.'],
+ ['배너-할락생일_ko_','HALAK’s Birthday','Complete birthday party requests for Pio’s Summer Dress and the Blackcat Fairy.'],
+ ['배너-쿠타타생일_ko_','KUTATA’s Birthday','Find the randomly appearing KUTATA Fairy and press it for a cake costume.'],
+ ['배너-여름방학1탄','Summer 2015 · Part 1','Complete Explore Fox Burrow requests for Pio’s Frill Bikini and the Six Tail Fairy.'],
+ ['배너-서큐버스_ko_','Succubus Event','Wake Pio and Tia from their nightmares for Pio’s Succubus Costume; limited fairy requests also open.'],
+ ['배너-크리스마스','Christmas','Collect jingle bells for a turtleneck costume.'],
+ ['배너-2015년신년','New Year 2015','Complete quests from Pio to earn a sheep costume.']
+];
+const eventGallery=$('event-banner-gallery');
+$('event-panel-icon').src=art('NewEventIcon.png');
+for(const[file,title,description]of eventBanners){const figure=document.createElement('figure'),image=document.createElement('img'),caption=document.createElement('figcaption'),heading=document.createElement('h4'),text=document.createElement('p');image.src=art(file+'.webp');image.alt=title+' event banner';image.loading='lazy';heading.textContent=title;text.textContent=description;caption.append(heading,text);figure.append(image,caption);eventGallery.append(figure);}
 document.querySelectorAll('#game-menu [data-menu-art]').forEach(image=>image.src=art(image.dataset.menuArt));
 $('game-menu-open').onclick=()=>{menuGrid.hidden=false;document.querySelectorAll('.game-menu-subpage').forEach(page=>page.hidden=true);gameMenu.showModal();};
 gameMenu.addEventListener('click',event=>{const destination=event.target.closest('[data-menu-destination]');if(destination){if(gameMenu.open)gameMenu.close();if(destination.dataset.menuClick)$(destination.dataset.menuClick).click();return;}const page=event.target.closest('[data-menu-page]');if(page){menuGrid.hidden=true;$('game-menu-'+page.dataset.menuPage).hidden=false;}if(event.target.closest('[data-menu-back]')){document.querySelectorAll('.game-menu-subpage').forEach(panel=>panel.hidden=true);menuGrid.hidden=false;}});
