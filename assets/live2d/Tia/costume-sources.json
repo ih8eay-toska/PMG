@@ -1,0 +1,156 @@
+{
+  "repository": "https://github.com/imuncle/live2d",
+  "rig_sha256": "f19c7a20bf7eafcc1ef303b9c9c52d0face97aa0990129aeddec8d5e089d1ef5",
+  "textures": [
+    {
+      "costume": "Jersey_Costume_Blue.png",
+      "path": "model/Tia/textures/jersey-costume-blue.png",
+      "sha256": "6a467ea7746929efae67674402d758c6e8f435481c139bb8dd49d4384b3d5cb7"
+    },
+    {
+      "costume": "Jersey_Costume_Red.png",
+      "path": "model/Tia/textures/jersey-costume-red.png",
+      "sha256": "d050137dadc47b41e7475b5584c5aea34d1cf153066832c257fe08dea0d930b1"
+    },
+    {
+      "costume": "Nordic_Costume_Beige.png",
+      "path": "model/Tia/textures/nordic-costume-beige.png",
+      "sha256": "91a25bde63900140da7c0f835a1c96cf3759f2064e8b8320e8623f8ad9101f84"
+    },
+    {
+      "costume": "Pajamas_Costume_Blue.png",
+      "path": "model/Tia/textures/pajamas-costume-blue.png",
+      "sha256": "c8ae0b9e459a3e3e413f9987ee0ef47f39270f03f6696387c7e93d20ed053c8d"
+    },
+    {
+      "costume": "Pajamas_Costume_Green.png",
+      "path": "model/Tia/textures/pajamas-costume-green.png",
+      "sha256": "03c5e064d94e8ca9983fce191c58a44c1107547cff5809a2863b8d364a5384d4"
+    },
+    {
+      "costume": "Blazer_Costume_Black.png",
+      "path": "model/Tia/textures/blazer-costume-black.png",
+      "sha256": "5f17f84cde3c91c87e401c3ff759a0e348d49a9b098ecdf0b14ca196afdb510f"
+    },
+    {
+      "costume": "Blazer_Costume_Brown.png",
+      "path": "model/Tia/textures/blazer-costume-brown.png",
+      "sha256": "d3eb618620d479395ae30aa0944f97507568c179fad7294a69c736b71bdd0e94"
+    },
+    {
+      "costume": "Cami_Dress_Costume_Pink.png",
+      "path": "model/Tia/textures/cami-dress-costume-pink.png",
+      "sha256": "2eb7a4a1971bfff8f8d16f640d074c2abaa500a901a60723bf80e638a46292eb"
+    },
+    {
+      "costume": "Hood_Costume_Gray.png",
+      "path": "model/Tia/textures/hood-costume-gray.png",
+      "sha256": "9d6fe741dfb09ec35897f5408303e7440b78b1299aa5ef6b471dad192af3fea3"
+    },
+    {
+      "costume": "Hood_Costume_Red.png",
+      "path": "model/Tia/textures/hood-costume-red.png",
+      "sha256": "2cefb1b3cb5b3cd367e47476c048ccbada6cf9047e34a2abccb9c18ff1baea25"
+    },
+    {
+      "costume": "Maid_Costume_Black.png",
+      "path": "model/Tia/textures/maid-costume-black.png",
+      "sha256": "179c78cbd41a14de5ec6115cbf455552fc03a64760535d624e243310c53eb241"
+    },
+    {
+      "costume": "Maid_Costume_Blue.png",
+      "path": "model/Tia/textures/maid-costume-blue.png",
+      "sha256": "2a741aac8e69cfbc175b589a91ac6cd9f59a883e0510ebf8f5b4a4ce98769e52"
+    },
+    {
+      "costume": "Nordic_Costume_Navy.png",
+      "path": "model/Tia/textures/nordic-costume-navy.png",
+      "sha256": "f8c0831156b67acfe6262e262163a66e1585e3a2f6b8f8f60e50819f2d9489e1"
+    },
+    {
+      "costume": "Nurse_Costume.png",
+      "path": "model/Tia/textures/nurse-costume.png",
+      "sha256": "416798a2c940c86c88150f9e9c9d8d2c7010c01ea95228a641f6284bc9f672c4"
+    },
+    {
+      "costume": "Nurse_Costume_Red.png",
+      "path": "model/Tia/textures/nurse-costume-red.png",
+      "sha256": "3d98ddf7942acc1bfffa469b60cebe347e9f9851b841342d5e61c42717f62371"
+    },
+    {
+      "costume": "Sailor_Costume.png",
+      "path": "model/Tia/textures/sailor-costume.png",
+      "sha256": "7306474dd65f5a00c0b483a3b5fbe02657631cb789c959e373765ec80c518709"
+    },
+    {
+      "costume": "Sailor_Costume_Black.png",
+      "path": "model/Tia/textures/sailor-costume-black.png",
+      "sha256": "b40f4e407def5c9e6a968c679682e427050fc1cb71f3fbb90b43dd80ab5ede04"
+    },
+    {
+      "costume": "Sports_Bikini_Costume_Green.png",
+      "path": "model/Tia/textures/sports-bikini-costume-green.png",
+      "sha256": "093ecedd111bb025ca2d8a9fc443af95bebe52407c3ad24e1e1bf786b827bffa"
+    },
+    {
+      "costume": "Sports_Bikini_Costume_Navy.png",
+      "path": "model/Tia/textures/sports-bikini-costume-navy.png",
+      "sha256": "c4f42252537cc3b16c8325983c1e9c17578e76066a130b000c8aea571be22a80"
+    },
+    {
+      "costume": "Sukumizu_Costume_1.png",
+      "path": "model/Tia/textures/sukumizu-costume.png",
+      "sha256": "278d59814e91331e0c4ef53eb629ca38126404d49813373c23cb02162c343a6e"
+    },
+    {
+      "costume": "Sukumizu_Costume_White_1.png",
+      "path": "model/Tia/textures/sukumizu-costume-white.png",
+      "sha256": "389eb930539c91a897211ee57369661514e57163e061f9c6fb6c6b3303d781d7"
+    },
+    {
+      "costume": "Bikini_Costume_Blue.png",
+      "path": "model/Tia/textures/bikini-costume-blue.png",
+      "sha256": "d2100d189b666b5e0c86f5f98883337a1202056fc267c8609c666032d4b9216f"
+    },
+    {
+      "costume": "Bikini_Costume_Pink.png",
+      "path": "model/Tia/textures/bikini-costume-pink.png",
+      "sha256": "7ca030d499b0cab583697f3fcd2424383fe756557104d1fb4c28742b42c4042b"
+    },
+    {
+      "costume": "Bunny_Girl_Costume_1.png",
+      "path": "model/Tia/textures/bunny-girl-costume.png",
+      "sha256": "201f8f42967c1ca49ec5e08c98e59d3541d46c782d4c60b46a098cefd25aa451"
+    },
+    {
+      "costume": "Bunny_Girl_Costume_Red_1.png",
+      "path": "model/Tia/textures/bunny-girl-costume-red.png",
+      "sha256": "46be2c84088bf900955262a12761c48758097e2c3e2ba580991e23f104cc5c4e"
+    },
+    {
+      "costume": "Macaron_Dress_Costume_Green.png",
+      "path": "model/Tia/textures/macaron-dress-costume-green.png",
+      "sha256": "739573a6330c1ca9e5c535025f7250e3eae17d5dc3d6e78db69f9cbc47d8b693"
+    },
+    {
+      "costume": "Macaron_Dress_Costume_Pink.png",
+      "path": "model/Tia/textures/macaron-dress-costume-pink.png",
+      "sha256": "595b52c5896d59bed91f3f42356263450a21c22f5ee980a200106700b9f18ee0"
+    },
+    {
+      "costume": "Marine_Costume.png",
+      "path": "model/Tia/textures/marine-costume.png",
+      "sha256": "dce9b0c71cc528ea026bfde8ead0fac0c64578caae2a802dc9cca29ae0cd23f2"
+    },
+    {
+      "costume": "Marine_Costume_Navy.png",
+      "path": "model/Tia/textures/marine-costume-navy.png",
+      "sha256": "4f68f4dd5b8c35c94284e5fa16e6b98e7c6c8da6dc42c49c41d6b80fb33a8f56"
+    },
+    {
+      "costume": "Tia.png",
+      "path": "model/Tia/textures/default-costume.png",
+      "sha256": "42804a9e7164fbefa4144704c963a7e3a06d389ec83d0a731e5c902cea594043"
+    }
+  ]
+}

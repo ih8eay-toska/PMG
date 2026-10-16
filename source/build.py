@@ -15,6 +15,7 @@ used.add('App_icon.png')
 used.add('AchievementIcon.png')
 used.add('Coin.png')
 used.add('Contest.png')
+used.add('StarCollectable.png')
 used.update(['Tia.png','Slider-characters.png'])
 used.update(['ClairePortrait.png', 'LukePortrait.png', 'PiriaPortrait.png', 'CharlottePortraitNormal.png', 'DemianPortrait.png', 'DaisyPortrait.png', 'KylePortrait.png', 'CharlottePortraitHappy.png', 'CharlottePortraitDisappointed.png', 'DaisyPortraitHappy.png', 'DaisyPortraitDisappointed.png'])
 for f in ['Life','Mana','Stamina']:
@@ -47,6 +48,7 @@ for group in tia_settings['motions'].values():
 for group,filename in [('success','Success.mtn'),('failure','Fail.mtn')]:
     tia_settings['motions'][group]=[{'file':data_url(tia_root/'motions'/filename,'application/octet-stream')}]
 tia_settings['textures']=[data_url(tia_root/'textures/default-costume.webp','image/webp')]
+tia_settings['costumeTextures']={normalized(c['id']):data_url(tia_root/'textures'/c['texture'],'image/webp') for c in costumes['entries'] if c.get('character')=='Tia' and c.get('texture')}
 pio_scripts+='<script data-pio-runtime>const PIO_DATA='+json.dumps({'settings':pio_settings,'textures':pio_textures})+';const TIA_DATA='+json.dumps(tia_settings)+';</script>'
 pio_scripts+='<script data-pio-runtime>'+(ROOT/'source/pio.js').read_text(encoding='utf-8')+'</script>'
 template=template.replace('</body>',pio_scripts+'</body>')

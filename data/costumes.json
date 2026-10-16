@@ -4,323 +4,520 @@
   "entries": [
     {
       "id": "Default_Costume.png",
-      "name": "Default"
+      "name": "Default",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Kids_Costume.png",
-      "name": "Kids"
+      "name": "Kids",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Kids_Costume_Navy.png",
-      "name": "Kids Navy"
+      "name": "Kids Navy",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Pajamas_Costume.png",
-      "name": "Pajamas"
+      "name": "Pajamas",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Pajamas_Costume_Pink.png",
-      "name": "Pajamas Pink"
+      "name": "Pajamas Pink",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "School_Costume.png",
-      "name": "School"
+      "name": "School",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "School_Costume_Red.png",
-      "name": "School Red"
+      "name": "School Red",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Winter_Costume.png",
-      "name": "Winter"
+      "name": "Winter",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Winter_Costume_White.png",
-      "name": "Winter White"
+      "name": "Winter White",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Witch_Costume.png",
-      "name": "Witch"
+      "name": "Witch",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Witch_Costume_White.png",
-      "name": "Witch White"
+      "name": "Witch White",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Animal_Costume.png",
-      "name": "Animal"
+      "name": "Animal",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Animal_Costume_Racoon.png",
-      "name": "Animal Racoon"
+      "name": "Animal Racoon",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Bunny_Girl_Costume.png",
-      "name": "Bunny Girl"
+      "name": "Bunny Girl",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Bunny_Girl_Costume_Red.png",
-      "name": "Bunny Girl Red"
+      "name": "Bunny Girl Red",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Cake_Costume_Choco.png",
-      "name": "Cake Choco"
+      "name": "Cake Choco",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Cake_Costume_Cream.png",
-      "name": "Cake Cream"
+      "name": "Cake Cream",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Dress_Costume.png",
-      "name": "Dress"
+      "name": "Dress",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Dress_Costume_Brown.png",
-      "name": "Dress Brown"
+      "name": "Dress Brown",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Elementary_School_Costume.png",
-      "name": "Elementary School"
+      "name": "Elementary School",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Elementary_School_Costume_Navy.png",
-      "name": "Elementary School Navy"
+      "name": "Elementary School Navy",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Frill_Bikini_Costume_Green.png",
-      "name": "Frill Bikini Green"
+      "name": "Frill Bikini Green",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Furisode_Costume.png",
-      "name": "Furisode"
+      "name": "Furisode",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Halloween_costume.png",
-      "name": "Halloween"
+      "name": "Halloween",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Hanbok_Costume.png",
-      "name": "Hanbok"
+      "name": "Hanbok",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Jersey_Costume_Blue.png",
-      "name": "Jersey Blue"
+      "name": "Jersey Blue",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "jersey-costume-blue.webp"
     },
     {
       "id": "Jersey_Costume_Red.png",
-      "name": "Jersey Red"
+      "name": "Jersey Red",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "jersey-costume-red.webp"
     },
     {
       "id": "Maid_Costume.png",
-      "name": "Maid"
+      "name": "Maid",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Maid_Costume_Red.png",
-      "name": "Maid Red"
+      "name": "Maid Red",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "New2015_Costume.png",
-      "name": "New2015"
+      "name": "New2015",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "New2015_Costume_Pajamas.png",
-      "name": "New2015 Pajamas"
+      "name": "New2015 Pajamas",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Nordic_Costume_Beige.png",
-      "name": "Nordic Beige"
+      "name": "Nordic Beige",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "nordic-costume-beige.webp"
     },
     {
       "id": "Pajamas_Costume_Blue.png",
-      "name": "Pajamas Blue"
+      "name": "Pajamas Blue",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "pajamas-costume-blue.webp"
     },
     {
       "id": "Pajamas_Costume_Green.png",
-      "name": "Pajamas Green"
+      "name": "Pajamas Green",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "pajamas-costume-green.webp"
     },
     {
       "id": "Qipao_Costume_Pink.png",
-      "name": "Qipao Pink"
+      "name": "Qipao Pink",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Qipao_Costume_Red.png",
-      "name": "Qipao Red"
+      "name": "Qipao Red",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Sakura_Costume.png",
-      "name": "Sakura"
+      "name": "Sakura",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Sakura_Costume_Navy.png",
-      "name": "Sakura Navy"
+      "name": "Sakura Navy",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Santa_Costume.png",
-      "name": "Santa"
+      "name": "Santa",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Santa_Costume_Green.png",
-      "name": "Santa Green"
+      "name": "Santa Green",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Star_Witch_Costume.png",
-      "name": "Star Witch"
+      "name": "Star Witch",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Star_Witch_Costume_Brown.png",
-      "name": "Star Witch Brown"
+      "name": "Star Witch Brown",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Succubus_Costume_Black.png",
-      "name": "Succubus Black"
+      "name": "Succubus Black",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Succubus_Costume_Red.png",
-      "name": "Succubus Red"
+      "name": "Succubus Red",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Sukumizu_Costume.png",
-      "name": "Sukumizu"
+      "name": "Sukumizu",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Sukumizu_Costume_White.png",
-      "name": "Sukumizu White"
+      "name": "Sukumizu White",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Summer_Dress_Costume_Blue.png",
-      "name": "Summer Dress Blue"
+      "name": "Summer Dress Blue",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Summer_Dress_Costume_White.png",
-      "name": "Summer Dress White"
+      "name": "Summer Dress White",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Turtleneck_Costume.png",
-      "name": "Turtleneck"
+      "name": "Turtleneck",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Turtleneck_Costume_Red.png",
-      "name": "Turtleneck Red"
+      "name": "Turtleneck Red",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Blazer_Costume_Black.png",
-      "name": "Blazer Black"
+      "name": "Blazer Black",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "blazer-costume-black.webp"
     },
     {
       "id": "Blazer_Costume_Brown.png",
-      "name": "Blazer Brown"
+      "name": "Blazer Brown",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "blazer-costume-brown.webp"
     },
     {
       "id": "Cami_Dress_Costume_Pink.png",
-      "name": "Cami Dress Pink"
+      "name": "Cami Dress Pink",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "cami-dress-costume-pink.webp"
     },
     {
       "id": "Hood_Costume_Gray.png",
-      "name": "Hood Gray"
+      "name": "Hood Gray",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "hood-costume-gray.webp"
     },
     {
       "id": "Hood_Costume_Red.png",
-      "name": "Hood Red"
+      "name": "Hood Red",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "hood-costume-red.webp"
     },
     {
       "id": "Maid_Costume_Black.png",
-      "name": "Maid Black"
+      "name": "Maid Black",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "maid-costume-black.webp"
     },
     {
       "id": "Maid_Costume_Blue.png",
-      "name": "Maid Blue"
+      "name": "Maid Blue",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "maid-costume-blue.webp"
     },
     {
       "id": "Nordic_Costume_Navy.png",
-      "name": "Nordic Navy"
+      "name": "Nordic Navy",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "nordic-costume-navy.webp"
     },
     {
       "id": "Nurse_Costume.png",
-      "name": "Nurse"
+      "name": "Nurse",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "nurse-costume.webp"
     },
     {
       "id": "Nurse_Costume_Red.png",
-      "name": "Nurse Red"
+      "name": "Nurse Red",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "nurse-costume-red.webp"
     },
     {
       "id": "Sailor_Costume.png",
-      "name": "Sailor"
+      "name": "Sailor",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "sailor-costume.webp"
     },
     {
       "id": "Sailor_Costume_Black.png",
-      "name": "Sailor Black"
+      "name": "Sailor Black",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "sailor-costume-black.webp"
     },
     {
       "id": "Sports_Bikini_Costume_Green.png",
-      "name": "Sports Bikini Green"
+      "name": "Sports Bikini Green",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "sports-bikini-costume-green.webp"
     },
     {
       "id": "Sports_Bikini_Costume_Navy.png",
-      "name": "Sports Bikini Navy"
+      "name": "Sports Bikini Navy",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "sports-bikini-costume-navy.webp"
     },
     {
       "id": "Sukumizu_Costume_1.png",
-      "name": "Sukumizu 1"
+      "name": "Sukumizu 1",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "sukumizu-costume.webp"
     },
     {
       "id": "Sukumizu_Costume_White_1.png",
-      "name": "Sukumizu White 1"
+      "name": "Sukumizu White 1",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "sukumizu-costume-white.webp"
     },
     {
       "id": "Bikini_Costume_Blue.png",
-      "name": "Bikini Blue"
+      "name": "Bikini Blue",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "bikini-costume-blue.webp"
     },
     {
       "id": "Bikini_Costume_Pink.png",
-      "name": "Bikini Pink"
+      "name": "Bikini Pink",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "bikini-costume-pink.webp"
     },
     {
       "id": "Bunny_Girl_Costume_1.png",
-      "name": "Bunny Girl 1"
+      "name": "Bunny Girl 1",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "bunny-girl-costume.webp"
     },
     {
       "id": "Bunny_Girl_Costume_Red_1.png",
-      "name": "Bunny Girl Red 1"
+      "name": "Bunny Girl Red 1",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "bunny-girl-costume-red.webp"
     },
     {
       "id": "Cami_Dress_Costume_Blue.png",
-      "name": "Cami Dress Blue"
+      "name": "Cami Dress Blue",
+      "live2d": false,
+      "character": "Tia"
     },
     {
       "id": "Frill_Bikini_Costume_Purple.png",
-      "name": "Frill Bikini Purple"
+      "name": "Frill Bikini Purple",
+      "live2d": true,
+      "character": "Pio"
     },
     {
       "id": "Macaron_Dress_Costume_Green.png",
-      "name": "Macaron Dress Green"
+      "name": "Macaron Dress Green",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "macaron-dress-costume-green.webp"
     },
     {
       "id": "Macaron_Dress_Costume_Pink.png",
-      "name": "Macaron Dress Pink"
+      "name": "Macaron Dress Pink",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "macaron-dress-costume-pink.webp"
     },
     {
       "id": "Marine_Costume.png",
-      "name": "Marine"
+      "name": "Marine",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "marine-costume.webp"
     },
     {
       "id": "Marine_Costume_Navy.png",
-      "name": "Marine Navy"
+      "name": "Marine Navy",
+      "live2d": true,
+      "character": "Tia",
+      "texture": "marine-costume-navy.webp"
     },
     {
       "id": "Summer_Uniform_Costume_Blue.png",
-      "name": "Summer Uniform Blue"
+      "name": "Summer Uniform Blue",
+      "live2d": false,
+      "character": "Pio"
     },
     {
       "id": "Summer_Uniform_Costume_Red.png",
-      "name": "Summer Uniform Red"
+      "name": "Summer Uniform Red",
+      "live2d": false,
+      "character": "Pio"
     },
     {
       "id": "Voice_Story_Costume.png",
-      "name": "Voice Story"
+      "name": "Voice Story",
+      "live2d": false,
+      "character": "Tia"
     },
     {
       "id": "Voice_Story_Costume1.png",
-      "name": "Voice Story1"
+      "name": "Voice Story1",
+      "live2d": false,
+      "character": "Pio"
+    },
+    {
+      "id": "Tia.png",
+      "name": "Default",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "default-costume.webp"
     }
   ]
 }
