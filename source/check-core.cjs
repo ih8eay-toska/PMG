@@ -61,7 +61,7 @@ const badActive={...INITIAL(),travelers:[{quests:0,readyAt:0,phase:'active',dead
 assert.throws(()=>sanitizeSave({...INITIAL(),nextVisitorAt:-1}));
 
 // Every visitor grants a frozen boost reward once after the delay.
-assert.equal(TRAVELERS.length,10);assert.equal(FAIRIES.length,38);
+assert.equal(TRAVELERS.length,10);assert.equal(FAIRIES.length,42);
 for(let index=0;index<TRAVELERS.length;index++){
  g=new PotionGame();g.state.nextVisitorAt=1;let rolls=[(index+.1)/TRAVELERS.length,0,0];g.tick(1,()=>rolls.shift()||0);
  assert.equal(g.state.travelers[index].phase,'offer');assert.equal(g.acceptQuest(index,1000),true);g.collect(0,0);
@@ -73,7 +73,7 @@ for(let index=0;index<TRAVELERS.length;index++){
 let v3={...INITIAL(),version:3,travelers:INITIAL().travelers.slice(0,3)};v3.travelers[1]={...v3.travelers[1],phase:'active',deadline:65000,requirement:{family:0,tier:0,level:0}};
 let upgraded=sanitizeSave(v3);assert.equal(upgraded.travelers.length,10);assert.equal(upgraded.travelers[1].deadline,65000);assert.deepEqual(upgraded.fairies,{});
 assert.throws(()=>sanitizeSave({...INITIAL(),fairies:{'unknown-fairy':1}}));assert.throws(()=>sanitizeSave({...INITIAL(),fairies:{'fairy-1':-1}}));
-console.log('Passed: all 10 visitor arrivals, random boost rewards, 38 collectible fairies, duplicate prevention, delayed delivery and v3 migration.');
+console.log('Passed: all 10 visitor arrivals, random boost rewards, 42 collectible fairies, duplicate prevention, delayed delivery and v3 migration.');
 
 // Statistics distinguish historical totals from tracked detail and record each action once.
 g=new PotionGame();g.collect(0,0);g.collect(1,0);g.state.powerups={protection:1,enhancement:1,selling:1};

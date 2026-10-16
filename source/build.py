@@ -21,6 +21,7 @@ used.add('StarCollectable.png')
 used.add('Likeability.png')
 used.add('NewEventIcon.png')
 used.add('Mail.png')
+used.add('PushcatSummon.png')
 used.add('WikiPotion.png')
 used.update(['Tia.png','Slider-characters.png','pio_slider.webp','tia_slider.webp'])
 used.update(['ClairePortrait.png', 'LukePortrait.png', 'PiriaPortrait.png', 'CharlottePortraitNormal.png', 'DemianPortrait.png', 'DaisyPortrait.png', 'KylePortrait.png', 'CharlottePortraitHappy.png', 'CharlottePortraitDisappointed.png', 'DaisyPortraitHappy.png', 'DaisyPortraitDisappointed.png'])
@@ -68,7 +69,8 @@ for r in manifest['assets']:
     if r['status']!='downloaded':continue
     path=html.escape(r['path'],quote=True);name=html.escape(r['key']);group=html.escape('/'.join(Path(r['path']).parts[1:-1]))
     preview=f'<audio controls preload="none" src="{path}"></audio>'if r['mime'].startswith('audio/')else f'<img loading="lazy" src="{path}" alt="{name}">'
-    cards.append(f'<article data-group="{group}"><a href="{path}" target="_blank">{preview}</a><b>{name}</b><small>{group}</small><a href="{html.escape(r["url"],quote=True)}" target="_blank" rel="noreferrer">Original wiki file</a></article>')
+    source_link='<small>Recreated summon icon · AI-generated</small>' if r.get('generated') else f'<a href="{html.escape(r["url"],quote=True)}" target="_blank" rel="noreferrer">Original wiki file</a>'
+    cards.append(f'<article data-group="{group}"><a href="{path}" target="_blank">{preview}</a><b>{name}</b><small>{group}</small>{source_link}</article>')
 groups=sorted({str(Path(r['path']).parent).replace('\\','/').removeprefix('assets/') for r in manifest['assets'] if r['status']=='downloaded'})
 options=''.join(f'<option>{html.escape(g)}</option>'for g in groups)
 gallery=f'''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PMG · Local asset library</title><style>body{{font:15px system-ui;background:#f3ede6;color:#554139;margin:30px}}h1{{font:32px Georgia}}nav{{display:flex;gap:15px;margin-bottom:25px;flex-wrap:wrap}}input,select{{padding:10px;max-width:100%}}main{{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:15px}}article{{padding:15px;background:#fff9ef;border:1px solid #d4c4c2;border-radius:12px;display:flex;flex-direction:column;gap:8px;overflow-wrap:anywhere}}article[hidden]{{display:none}}article img{{width:100%;height:150px;object-fit:contain}}article audio{{width:100%}}small{{color:#8a766d}}a{{color:#80568a}}</style><h1>Local asset library</h1><p>{len(cards)} verified media files · Original assets credited to Sinsiroad and their original creators. Screenshots and atlases are references, not ready-made animations.</p><nav><a href="Potion-Maker.html">Play the game</a><input id="search" placeholder="Search filenames" aria-label="Search filenames"><select id="group" aria-label="Asset category"><option value="">All folders</option>{options}</select></nav><main>{''.join(cards)}</main><script>const filter=()=>{{const q=document.getElementById('search').value.toLowerCase(),g=document.getElementById('group').value;document.querySelectorAll('article').forEach(a=>a.hidden=!(a.textContent.toLowerCase().includes(q)&&(!g||a.dataset.group===g)));}};document.getElementById('search').oninput=filter;document.getElementById('group').onchange=filter;</script></html>'''

@@ -7659,6 +7659,24 @@
       ],
       "sha256": "3cf1b1f44a9252c75aae5ee3fdd99c144ba656bd6c51033277b6746b0c62e89a",
       "status": "downloaded"
+    },
+    {
+      "name": "PushcatSummon.png",
+      "key": "PushcatSummon.png",
+      "path": "assets/ui/PushcatSummon.png",
+      "url": "",
+      "file_page": "",
+      "source_pages": [],
+      "mime": "image/png",
+      "bytes": 1276288,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "8a40fba0b42fedd81f30823baef0f9df30de65d3848dff6a13cec53aa1bb8079",
+      "status": "downloaded",
+      "generated": true,
+      "provenance": "Recreated using the built-in image generation tool; not original game artwork."
     }
   ],
   "unresolved_files": [],

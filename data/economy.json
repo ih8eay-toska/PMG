@@ -156,6 +156,25 @@
         11808,
         15350
       ]
+    },
+    "pushcat": {
+      "max": 14,
+      "costs": [
+        500,
+        825,
+        1361,
+        2246,
+        3706,
+        6115,
+        10090,
+        16648,
+        27469,
+        45324,
+        74784,
+        123394,
+        203600,
+        335940
+      ]
     }
   },
   "brewing": {
@@ -358,5 +377,15 @@
       250000
     ],
     "coinReward": 125
+  },
+  "helpers": {
+    "ticketCost": 1,
+    "durationMs": 60000,
+    "blackcatChance": 0.05,
+    "baseIntervalMs": 1000,
+    "maxIntervalMs": 300,
+    "blackcatSpeedMultiplier": 2,
+    "maxActive": 8,
+    "catchRadiusPx": 12
   }
 }

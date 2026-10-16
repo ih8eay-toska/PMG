@@ -1,6 +1,6 @@
 {
   "source": "https://potionmaker.fandom.com/wiki/Fairy",
-  "provenance": "Original fairy icons and names from the archived wiki. Forest, Fire, and Water Fairy abilities are shown at level 1; the current prototype has instant Pushcat draws and no Blackcat summon.",
+  "provenance": "Original fairy icons and names from the archived wiki. Forest, Fire, and Water Fairy abilities are shown at level 1; the current prototype has instant Pushcat draws and no Blackcat summon. Helper fairy endpoints checked against the wiki. Halloprin has only base values published; Behe additional abilities activate at documented level 10.",
   "entries": [
     {
       "id": "fairy-1",
@@ -191,6 +191,26 @@
       "id": "fairy-42",
       "name": "Water Fairy",
       "image": "Fairy42.png"
+    },
+    {
+      "id": "fairy-36",
+      "name": "Pushcat Fairy",
+      "image": "Fairy36.png"
+    },
+    {
+      "id": "fairy-37",
+      "name": "Blackcat Fairy",
+      "image": "Fairy37.png"
+    },
+    {
+      "id": "fairy-43",
+      "name": "Halloprin",
+      "image": "Fairy43.png"
+    },
+    {
+      "id": "fairy-behe",
+      "name": "Behe",
+      "image": "PeheFairy.png"
     }
   ]
 }
