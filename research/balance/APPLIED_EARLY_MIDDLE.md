@@ -10,8 +10,8 @@ Fairy abilities are deliberately unchanged and excluded from the earnings constr
 
 Save schema and storage key remain unchanged. Existing potion values, balances and achievements are preserved; subsequent enhancements use the updated multipliers. Existing metrics are not recalculated.
 
-## Known remaining work
+## Original release boundary (resolved by the late-game pass)
 
-Tiers 13–25 remain unchanged. Stamina tier 13 can earn about 65.15% less per action than adjusted tier 12. This intentional partial release needs a connected late-game review. The original middle review also found maximum enhancement still best throughout its baseline; this update does not add meaningful intermediate selling choices or claim to balance resource acquisition, play time or enjoyment.
+At this release, tiers 13–25 remained unchanged and Stamina tier 13 could earn about 65.15% less per action than adjusted tier 12. The subsequent pass in `APPLIED_LATE_GAME.md` resolves that boundary while preserving all values applied here. The original middle review found maximum enhancement still best throughout its baseline; neither pass claims to balance resource acquisition, play time or enjoyment.
 
 Validation: `npm test` checks gameplay, saves and embedded offline build; `python source/check-balance.py` checks the applied arrays, untouched fields and exhaustive early/middle baseline. The submitted middle candidate was regenerated independently before applying it; all nine supplied CSV outputs reproduced exactly.

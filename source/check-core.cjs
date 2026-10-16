@@ -4,9 +4,9 @@ let g=new PotionGame();assert.equal(g.collect(1,0),true);g.collect(0,0);assert.e
 assert.equal(g.enhance(0),'success');assert.equal(g.state.potion.value,13.2);assert.equal(g.enhance(.99),'lost');assert.equal(g.state.failed,1);assert.equal(g.state.potion,null);
 g.state.powerups={protection:1,enhancement:1,selling:1};g.collect(0,0);assert.equal(g.next().chance,.99);assert.equal(g.enhance(0),'success');assert.equal(g.state.powerups.enhancement,0);assert.equal(g.state.powerups.protection,1);assert.equal(g.enhance(.99),'protected');assert.equal(g.state.powerups.protection,0);assert.equal(g.state.potion.level,1);assert.equal(g.sell(),20);assert.equal(g.state.powerups.selling,0);
 g=new PotionGame();g.collect(2,0);g.enhance(0);g.enhance(0);assert.equal(g.next(),null);assert.equal(g.enhancementStatus(),'max');assert.equal(g.sell(),14);
-g.state.coins=1e20;for(let i=0;i<24;i++)assert.equal(g.buy('tier0'),true);assert.equal(g.buy('tier0'),false);assert.equal(g.state.tiers[0],24);assert.equal(g.collect(0,24),true);assert.equal(g.recipe().base,1e6);assert.equal(g.next().chance,.12);
+g.state.coins=1e20;for(let i=0;i<24;i++)assert.equal(g.buy('tier0'),true);assert.equal(g.buy('tier0'),false);assert.equal(g.state.tiers[0],24);assert.equal(g.collect(0,24),true);assert.equal(g.recipe().base,1e6);assert.equal(g.next().chance,.18);
 // Each newly completed potion must reach its documented maximum and save/load there.
-for(const [family,tier,expectedProduct] of [[1,5,78.26304],[1,19,9643500],[1,20,2084141836.875],[1,21,4063390466.032],[1,23,12400793635.913],[2,24,125184900814.733]]){
+for(const [family,tier,expectedProduct] of [[1,5,78.26304],[1,19,384493741.21302706],[1,20,2084141836.875],[1,21,4063390466.032],[1,23,15037217745.660925],[2,24,125184900814.733]]){
  g=new PotionGame();g.state.tiers[family]=tier;assert.equal(g.collect(family,tier),true);const base=g.recipe().base;const max=g.recipe().max_level;
  for(let level=1;level<max;level++){assert.ok(g.next());assert.equal(g.enhance(0),'success');}
  assert.equal(g.enhancementStatus(),'max');assert.equal(g.enhance(0),null);assert.ok(Math.abs(g.state.potion.value/base-expectedProduct)<=expectedProduct*1e-10);
@@ -123,16 +123,28 @@ console.log('Passed: 99% ceiling across all families, stacked fairy bonuses, fai
 // Existing potion values survive the balance update; future steps use current tables.
 const applied = require('../research/balance/applied-candidates.json');
 assert.equal(applied.length,17);
-for(const change of applied){
+const lateApplied = require('../research/balance/applied-late-candidates.json');
+assert.equal(lateApplied.length,30);
+for(const change of [...applied,...lateApplied]){
  assert.deepEqual(FAMILIES[change.family].recipes[change.tier-1].multipliers,change.after);
+ if(change.after_chances)assert.deepEqual(FAMILIES[change.family].recipes[change.tier-1].chances,change.after_chances);
  const saved=new PotionGame();saved.state.tiers[change.family]=change.tier-1;
  saved.collect(change.family,change.tier-1);saved.state.potion.value=123.456;
  const loaded=new PotionGame(sanitizeSave(JSON.parse(JSON.stringify(saved.state))));
  assert.equal(loaded.state.potion.value,123.456);
  assert.equal(loaded.enhance(0,1),'success');
  assert.equal(loaded.state.potion.value,123.456*change.after[0]);
+ if(change.after_chances){
+  saved.state.potion.level=change.after.length-1;
+  const last=new PotionGame(sanitizeSave(JSON.parse(JSON.stringify(saved.state))));
+  assert.equal(last.state.potion.value,123.456);
+  assert.equal(last.next().chance,change.after_chances.at(-1));
+  assert.equal(last.enhance(0,1),'success');
+  assert.equal(last.state.potion.value,123.456*change.after.at(-1));
+  assert.equal(last.enhancementStatus(),'max');
+ }
 }
-console.log('Passed: all 17 applied multiplier arrays and existing potion values survive reload.');
+console.log('Passed: all 47 applied enhancement tables, existing potion values survive reload, and late final enhancements use updated chances.');
 
 // One ticket slot per 100 ingredient slots in a deterministic 101-spawn sample.
 const draws=[];for(let i=0;i<101;i++){draws.push(i/101);if(i<100)draws.push(0,0);}

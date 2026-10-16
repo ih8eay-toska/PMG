@@ -6,7 +6,7 @@ Open **Asset-Library.html** to browse the local asset archive. Keep it beside th
 
 ## Gameplay additions
 
-- Personal balance adjustments now replace wiki multipliers for 17 potions through tier 12. See **research/balance/APPLIED_EARLY_MIDDLE.md** for scope, original values and the unresolved late-game boundary.
+- Personal balance adjustments cover 47 potions across tiers 1–25: the existing 17 early/middle tables plus 30 late-game tables. Late changes buff multipliers and some success chances, connecting every unlock without reducing earlier values. See **research/balance/APPLIED_LATE_GAME.md** for scope, exact arrays, checks and limitations; **APPLIED_EARLY_MIDDLE.md** records the preserved earlier pass.
 - All 75 potion entries can be brewed and enhanced to their recorded maximum level. The formerly missing values are supplied by https://potion-maker.fandom.com/wiki/Potions. Home MP and Small MP use that page’s internally consistent multipliers.
 - Material progression now extends to 25 tiers in each family, with recorded values and family-specific enhancement tables. Unlocked materials appear randomly on the conveyor, including before brewing starts.
 - Ingredients pass at evenly spaced intervals. An empty cauldron uses constant conveyor speed; Material Emission increases speed only while brewing. Ingredient selection has no highest-tier bias.

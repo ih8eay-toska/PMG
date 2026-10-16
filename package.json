@@ -2,6 +2,6 @@
   "private": true,
   "type": "commonjs",
   "scripts": {
-    "test": "node source/check-core.cjs && node source/check-storage.cjs && node source/check-build.cjs"
+    "test": "node source/check-core.cjs && node source/check-storage.cjs && node source/check-late-balance.cjs && node source/check-build.cjs"
   }
 }

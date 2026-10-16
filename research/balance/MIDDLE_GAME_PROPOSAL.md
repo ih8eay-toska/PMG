@@ -1,5 +1,9 @@
 # Middle-game balance draft: tiers 7–16
 
+Historical alternative draft. The deployed curve instead preserves the existing
+early/middle values and applies `APPLIED_LATE_GAME.md` to tiers 13–25. Do not
+apply this draft over the current game.
+
 15 October 2026. This extends the earlier tier-1–6 proposal. No gameplay values changed. Fairy abilities and their builds remain outside balance targets; the 99% final ceiling is included.
 
 ## Result
