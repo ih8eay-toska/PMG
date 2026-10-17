@@ -1,0 +1,1025 @@
+{
+  "provenance": "Original character-inspired expedition writing; material themes follow the 25 unlocked ingredient tiers.",
+  "entries": {
+    "neet": [
+      {
+        "name": "Herbs for the Shrine",
+        "description": "Herbs for the Shrine. This assignment concerns red, blue, and yellow herbs. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      },
+      {
+        "name": "Mushroom Foraging",
+        "description": "Mushroom Foraging. This assignment concerns the three varieties of mushroom. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      },
+      {
+        "name": "Helping in the Orchard",
+        "description": "Helping in the Orchard. This assignment concerns power, wisdom, and spirit fruit. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      },
+      {
+        "name": "Gather Fallen Feathers",
+        "description": "Gather Fallen Feathers. This assignment concerns bird and wyvern feathers. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      },
+      {
+        "name": "Tend the Nesting Grounds",
+        "description": "Tend the Nesting Grounds. This assignment concerns bird and wyvern eggs. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      },
+      {
+        "name": "Prepare Ritual Powders",
+        "description": "Prepare Ritual Powders. This assignment concerns strange alchemical powders. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      },
+      {
+        "name": "Calm the Restless Mandragoras",
+        "description": "Calm the Restless Mandragoras. This assignment concerns the three mandragora varieties. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      },
+      {
+        "name": "Weave Warm Fur Linings",
+        "description": "Weave Warm Fur Linings. This assignment concerns manticore, werewolf, and kobold fur. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      },
+      {
+        "name": "Visit the Family Remedies Stall",
+        "description": "Visit the Family Remedies Stall. This assignment concerns family tonic ingredients. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      },
+      {
+        "name": "Tend the Singing Garden",
+        "description": "Tend the Singing Garden. This assignment concerns dancing, dreamy, and singing flowers. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      },
+      {
+        "name": "Share Preserves with Pilgrims",
+        "description": "Share Preserves with Pilgrims. This assignment concerns premium preserves. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      },
+      {
+        "name": "Collect Watchful Eye Charms",
+        "description": "Collect Watchful Eye Charms. This assignment concerns monster eye specimens. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      },
+      {
+        "name": "Gather Shed Fairy Wings",
+        "description": "Gather Shed Fairy Wings. This assignment concerns naturally shed fairy wings. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      },
+      {
+        "name": "Recover Dragonfang Relics",
+        "description": "Recover Dragonfang Relics. This assignment concerns elemental dragon fangs. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      },
+      {
+        "name": "Cleanse the Crystal Altar",
+        "description": "Cleanse the Crystal Altar. This assignment concerns red, blue, and gold crystals. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      },
+      {
+        "name": "Restore Weathered Spell Scrolls",
+        "description": "Restore Weathered Spell Scrolls. This assignment concerns weather spell scrolls. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      },
+      {
+        "name": "Comfort the Weeping Spirits",
+        "description": "Comfort the Weeping Spirits. This assignment concerns succubus, siren, and harpy tears. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      },
+      {
+        "name": "Trace the Angelic Runes",
+        "description": "Trace the Angelic Runes. This assignment concerns angelic runes. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      },
+      {
+        "name": "Bless the Dragon Scales",
+        "description": "Bless the Dragon Scales. This assignment concerns elemental dragon scales. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      },
+      {
+        "name": "Meditate over Sage Stones",
+        "description": "Meditate over Sage Stones. This assignment concerns the three legendary stones. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      },
+      {
+        "name": "Polish the Twilight Pendants",
+        "description": "Polish the Twilight Pendants. This assignment concerns dawn, daybreak, and dusk pendants. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      },
+      {
+        "name": "Lift the Curse from the Rings",
+        "description": "Lift the Curse from the Rings. This assignment concerns cursed gemstone rings. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      },
+      {
+        "name": "Purify the Demonic Horns",
+        "description": "Purify the Demonic Horns. This assignment concerns demonic horns. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      },
+      {
+        "name": "Contain the Plague Spores",
+        "description": "Contain the Plague Spores. This assignment concerns sealed plague spore specimens. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      },
+      {
+        "name": "Consecrate the Fallen Tears",
+        "description": "Consecrate the Fallen Tears. This assignment concerns the three colours of fallen tears. Neet approaches the task as a cleric, with careful preparation for the shrine."
+      }
+    ],
+    "dolbur": [
+      {
+        "name": "Trailside Herb Hunt",
+        "description": "Trailside Herb Hunt. This assignment concerns red, blue, and yellow herbs. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      },
+      {
+        "name": "Mushrooms at Base Camp",
+        "description": "Mushrooms at Base Camp. This assignment concerns the three varieties of mushroom. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      },
+      {
+        "name": "Haul the Orchard Harvest",
+        "description": "Haul the Orchard Harvest. This assignment concerns power, wisdom, and spirit fruit. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      },
+      {
+        "name": "Scout the Feathered Cliffs",
+        "description": "Scout the Feathered Cliffs. This assignment concerns bird and wyvern feathers. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      },
+      {
+        "name": "Guard the Nesting Ridge",
+        "description": "Guard the Nesting Ridge. This assignment concerns bird and wyvern eggs. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      },
+      {
+        "name": "Carry the Powder Kegs",
+        "description": "Carry the Powder Kegs. This assignment concerns strange alchemical powders. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      },
+      {
+        "name": "A Mandragora Misadventure",
+        "description": "A Mandragora Misadventure. This assignment concerns the three mandragora varieties. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      },
+      {
+        "name": "Track the Furred Beasts",
+        "description": "Track the Furred Beasts. This assignment concerns manticore, werewolf, and kobold fur. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      },
+      {
+        "name": "Deliver the Family Tonic Crates",
+        "description": "Deliver the Family Tonic Crates. This assignment concerns family tonic ingredients. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      },
+      {
+        "name": "Clear a Path to the Flowers",
+        "description": "Clear a Path to the Flowers. This assignment concerns dancing, dreamy, and singing flowers. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      },
+      {
+        "name": "Stock the Camp with Jam",
+        "description": "Stock the Camp with Jam. This assignment concerns premium preserves. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      },
+      {
+        "name": "Face the Watchful Monsters",
+        "description": "Face the Watchful Monsters. This assignment concerns monster eye specimens. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      },
+      {
+        "name": "Escort the Fairy Caravan",
+        "description": "Escort the Fairy Caravan. This assignment concerns naturally shed fairy wings. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      },
+      {
+        "name": "Trophy Fangs from the Frontier",
+        "description": "Trophy Fangs from the Frontier. This assignment concerns elemental dragon fangs. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      },
+      {
+        "name": "Break Open the Crystal Vein",
+        "description": "Break Open the Crystal Vein. This assignment concerns red, blue, and gold crystals. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      },
+      {
+        "name": "Recover the Battle Scrolls",
+        "description": "Recover the Battle Scrolls. This assignment concerns weather spell scrolls. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      },
+      {
+        "name": "A Rescue at the Weeping Shore",
+        "description": "A Rescue at the Weeping Shore. This assignment concerns succubus, siren, and harpy tears. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      },
+      {
+        "name": "Carry the Sacred Rune Standard",
+        "description": "Carry the Sacred Rune Standard. This assignment concerns angelic runes. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      },
+      {
+        "name": "Retrieve Dragon Scale Trophies",
+        "description": "Retrieve Dragon Scale Trophies. This assignment concerns elemental dragon scales. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      },
+      {
+        "name": "An Expedition for Legendary Stones",
+        "description": "An Expedition for Legendary Stones. This assignment concerns the three legendary stones. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      },
+      {
+        "name": "Find the Lost Dawn Pendant",
+        "description": "Find the Lost Dawn Pendant. This assignment concerns dawn, daybreak, and dusk pendants. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      },
+      {
+        "name": "Brave the Ring of Curses",
+        "description": "Brave the Ring of Curses. This assignment concerns cursed gemstone rings. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      },
+      {
+        "name": "Horns at the Demon Gate",
+        "description": "Horns at the Demon Gate. This assignment concerns demonic horns. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      },
+      {
+        "name": "Seal the Infected Cavern",
+        "description": "Seal the Infected Cavern. This assignment concerns sealed plague spore specimens. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      },
+      {
+        "name": "The Last March for Fallen Tears",
+        "description": "The Last March for Fallen Tears. This assignment concerns the three colours of fallen tears. Dolbur treats the job as another energetic adventure, checking the route before setting out."
+      }
+    ],
+    "tirami": [
+      {
+        "name": "Compare the Herb Merchants",
+        "description": "Compare the Herb Merchants. This assignment concerns red, blue, and yellow herbs. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      },
+      {
+        "name": "Find the Finest Mushrooms",
+        "description": "Find the Finest Mushrooms. This assignment concerns the three varieties of mushroom. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      },
+      {
+        "name": "Win the Orchard Contract",
+        "description": "Win the Orchard Contract. This assignment concerns power, wisdom, and spirit fruit. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      },
+      {
+        "name": "Grade the Feather Bundles",
+        "description": "Grade the Feather Bundles. This assignment concerns bird and wyvern feathers. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      },
+      {
+        "name": "Bid for Prized Eggs",
+        "description": "Bid for Prized Eggs. This assignment concerns bird and wyvern eggs. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      },
+      {
+        "name": "Outsource the Powder Sorting",
+        "description": "Outsource the Powder Sorting. This assignment concerns strange alchemical powders. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      },
+      {
+        "name": "Choose the Loudest Mandragoras",
+        "description": "Choose the Loudest Mandragoras. This assignment concerns the three mandragora varieties. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      },
+      {
+        "name": "Appraise the Fur Shipment",
+        "description": "Appraise the Fur Shipment. This assignment concerns manticore, werewolf, and kobold fur. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      },
+      {
+        "name": "Survey the Family Tonic Market",
+        "description": "Survey the Family Tonic Market. This assignment concerns family tonic ingredients. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      },
+      {
+        "name": "Reserve the Best Flower Stall",
+        "description": "Reserve the Best Flower Stall. This assignment concerns dancing, dreamy, and singing flowers. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      },
+      {
+        "name": "A Premium Preserves Deal",
+        "description": "A Premium Preserves Deal. This assignment concerns premium preserves. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      },
+      {
+        "name": "Evaluate Monster Eye Specimens",
+        "description": "Evaluate Monster Eye Specimens. This assignment concerns monster eye specimens. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      },
+      {
+        "name": "Negotiate for Shed Fairy Wings",
+        "description": "Negotiate for Shed Fairy Wings. This assignment concerns naturally shed fairy wings. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      },
+      {
+        "name": "Check the Dragonfang Certificates",
+        "description": "Check the Dragonfang Certificates. This assignment concerns elemental dragon fangs. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      },
+      {
+        "name": "Outbid the Crystal Dealer",
+        "description": "Outbid the Crystal Dealer. This assignment concerns red, blue, and gold crystals. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      },
+      {
+        "name": "Proofread the Scroll Catalogue",
+        "description": "Proofread the Scroll Catalogue. This assignment concerns weather spell scrolls. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      },
+      {
+        "name": "Bottle the Finest Spirit Tears",
+        "description": "Bottle the Finest Spirit Tears. This assignment concerns succubus, siren, and harpy tears. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      },
+      {
+        "name": "Authenticate the Angelic Runes",
+        "description": "Authenticate the Angelic Runes. This assignment concerns angelic runes. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      },
+      {
+        "name": "Compare Dragon Scale Grades",
+        "description": "Compare Dragon Scale Grades. This assignment concerns elemental dragon scales. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      },
+      {
+        "name": "A Rival Bid for Sage Stones",
+        "description": "A Rival Bid for Sage Stones. This assignment concerns the three legendary stones. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      },
+      {
+        "name": "Display the Dawn Collection",
+        "description": "Display the Dawn Collection. This assignment concerns dawn, daybreak, and dusk pendants. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      },
+      {
+        "name": "Price the Cursed Ring Collection",
+        "description": "Price the Cursed Ring Collection. This assignment concerns cursed gemstone rings. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      },
+      {
+        "name": "A Deal at the Demon Market",
+        "description": "A Deal at the Demon Market. This assignment concerns demonic horns. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      },
+      {
+        "name": "Source Sealed Spore Samples",
+        "description": "Source Sealed Spore Samples. This assignment concerns sealed plague spore specimens. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      },
+      {
+        "name": "The Ultimate Tear Appraisal",
+        "description": "The Ultimate Tear Appraisal. This assignment concerns the three colours of fallen tears. Tirami compares quality and suppliers, determined to secure a better deal than her rivals."
+      }
+    ],
+    "claire": [
+      {
+        "name": "Medicinal Herbs for the Patrol",
+        "description": "Medicinal Herbs for the Patrol. This assignment concerns red, blue, and yellow herbs. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      },
+      {
+        "name": "Check the Forest Rations",
+        "description": "Check the Forest Rations. This assignment concerns the three varieties of mushroom. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      },
+      {
+        "name": "Escort the Orchard Workers",
+        "description": "Escort the Orchard Workers. This assignment concerns power, wisdom, and spirit fruit. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      },
+      {
+        "name": "Survey the Feathered Watchtower",
+        "description": "Survey the Feathered Watchtower. This assignment concerns bird and wyvern feathers. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      },
+      {
+        "name": "Protect the Cliffside Nests",
+        "description": "Protect the Cliffside Nests. This assignment concerns bird and wyvern eggs. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      },
+      {
+        "name": "Inspect the Powder Stores",
+        "description": "Inspect the Powder Stores. This assignment concerns strange alchemical powders. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      },
+      {
+        "name": "Quiet the Mandragora Outpost",
+        "description": "Quiet the Mandragora Outpost. This assignment concerns the three mandragora varieties. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      },
+      {
+        "name": "Reinforce the Winter Uniforms",
+        "description": "Reinforce the Winter Uniforms. This assignment concerns manticore, werewolf, and kobold fur. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      },
+      {
+        "name": "Audit the Infirmary Tonics",
+        "description": "Audit the Infirmary Tonics. This assignment concerns family tonic ingredients. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      },
+      {
+        "name": "Guard the Royal Flowerbeds",
+        "description": "Guard the Royal Flowerbeds. This assignment concerns dancing, dreamy, and singing flowers. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      },
+      {
+        "name": "Replenish the Palace Preserves",
+        "description": "Replenish the Palace Preserves. This assignment concerns premium preserves. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      },
+      {
+        "name": "Watch the Monster Approach",
+        "description": "Watch the Monster Approach. This assignment concerns monster eye specimens. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      },
+      {
+        "name": "Escort the Wing Traders",
+        "description": "Escort the Wing Traders. This assignment concerns naturally shed fairy wings. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      },
+      {
+        "name": "Secure the Dragonfang Crossing",
+        "description": "Secure the Dragonfang Crossing. This assignment concerns elemental dragon fangs. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      },
+      {
+        "name": "Guard the Crystal Convoy",
+        "description": "Guard the Crystal Convoy. This assignment concerns red, blue, and gold crystals. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      },
+      {
+        "name": "Retrieve the Regiment Scrolls",
+        "description": "Retrieve the Regiment Scrolls. This assignment concerns weather spell scrolls. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      },
+      {
+        "name": "Protect the Weeping Sanctuary",
+        "description": "Protect the Weeping Sanctuary. This assignment concerns succubus, siren, and harpy tears. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      },
+      {
+        "name": "Stand Watch at the Rune Chapel",
+        "description": "Stand Watch at the Rune Chapel. This assignment concerns angelic runes. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      },
+      {
+        "name": "Inspect the Dragonscale Shields",
+        "description": "Inspect the Dragonscale Shields. This assignment concerns elemental dragon scales. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      },
+      {
+        "name": "Secure the Legendary Stone Vault",
+        "description": "Secure the Legendary Stone Vault. This assignment concerns the three legendary stones. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      },
+      {
+        "name": "Recover the Knight’s Pendant",
+        "description": "Recover the Knight’s Pendant. This assignment concerns dawn, daybreak, and dusk pendants. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      },
+      {
+        "name": "Quarantine the Cursed Jewellery",
+        "description": "Quarantine the Cursed Jewellery. This assignment concerns cursed gemstone rings. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      },
+      {
+        "name": "Guard the Demonic Horn Relics",
+        "description": "Guard the Demonic Horn Relics. This assignment concerns demonic horns. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      },
+      {
+        "name": "Patrol the Spore Quarantine",
+        "description": "Patrol the Spore Quarantine. This assignment concerns sealed plague spore specimens. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      },
+      {
+        "name": "Escort the Fallen Tear Reliquary",
+        "description": "Escort the Fallen Tear Reliquary. This assignment concerns the three colours of fallen tears. Claire handles the assignment as an orderly patrol, prioritising safe handling and transport."
+      }
+    ],
+    "luke": [
+      {
+        "name": "Herbs for the Familiars",
+        "description": "Herbs for the Familiars. This assignment concerns red, blue, and yellow herbs. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      },
+      {
+        "name": "Find Familiar-Safe Mushrooms",
+        "description": "Find Familiar-Safe Mushrooms. This assignment concerns the three varieties of mushroom. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      },
+      {
+        "name": "Fruit Treats for the Pets",
+        "description": "Fruit Treats for the Pets. This assignment concerns power, wisdom, and spirit fruit. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      },
+      {
+        "name": "Soft Feathers for New Bedding",
+        "description": "Soft Feathers for New Bedding. This assignment concerns bird and wyvern feathers. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      },
+      {
+        "name": "Watch over Familiar Eggs",
+        "description": "Watch over Familiar Eggs. This assignment concerns bird and wyvern eggs. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      },
+      {
+        "name": "Measure the Alchemical Powders",
+        "description": "Measure the Alchemical Powders. This assignment concerns strange alchemical powders. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      },
+      {
+        "name": "Listen to the Mandragoras",
+        "description": "Listen to the Mandragoras. This assignment concerns the three mandragora varieties. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      },
+      {
+        "name": "Brush and Collect Familiar Fur",
+        "description": "Brush and Collect Familiar Fur. This assignment concerns manticore, werewolf, and kobold fur. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      },
+      {
+        "name": "Study the Family Tonic Labels",
+        "description": "Study the Family Tonic Labels. This assignment concerns family tonic ingredients. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      },
+      {
+        "name": "Observe the Dreaming Flowers",
+        "description": "Observe the Dreaming Flowers. This assignment concerns dancing, dreamy, and singing flowers. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      },
+      {
+        "name": "Preserves for the Familiar Pantry",
+        "description": "Preserves for the Familiar Pantry. This assignment concerns premium preserves. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      },
+      {
+        "name": "Examine the Monster Eyes",
+        "description": "Examine the Monster Eyes. This assignment concerns monster eye specimens. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      },
+      {
+        "name": "Study the Fairies’ Shed Wings",
+        "description": "Study the Fairies’ Shed Wings. This assignment concerns naturally shed fairy wings. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      },
+      {
+        "name": "Draw the Dragonfang Diagrams",
+        "description": "Draw the Dragonfang Diagrams. This assignment concerns elemental dragon fangs. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      },
+      {
+        "name": "Attune the Colour Crystals",
+        "description": "Attune the Colour Crystals. This assignment concerns red, blue, and gold crystals. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      },
+      {
+        "name": "Practice the Weather Scrolls",
+        "description": "Practice the Weather Scrolls. This assignment concerns weather spell scrolls. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      },
+      {
+        "name": "Listen at the Shore of Tears",
+        "description": "Listen at the Shore of Tears. This assignment concerns succubus, siren, and harpy tears. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      },
+      {
+        "name": "Decode the Angelic Alphabet",
+        "description": "Decode the Angelic Alphabet. This assignment concerns angelic runes. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      },
+      {
+        "name": "Study the Dragon Scale Patterns",
+        "description": "Study the Dragon Scale Patterns. This assignment concerns elemental dragon scales. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      },
+      {
+        "name": "Compare the Three Legendary Stones",
+        "description": "Compare the Three Legendary Stones. This assignment concerns the three legendary stones. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      },
+      {
+        "name": "Read the Pendants at Twilight",
+        "description": "Read the Pendants at Twilight. This assignment concerns dawn, daybreak, and dusk pendants. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      },
+      {
+        "name": "Dispel the Ring’s Residual Magic",
+        "description": "Dispel the Ring’s Residual Magic. This assignment concerns cursed gemstone rings. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      },
+      {
+        "name": "Catalogue the Demonic Horns",
+        "description": "Catalogue the Demonic Horns. This assignment concerns demonic horns. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      },
+      {
+        "name": "Study the Spores in Isolation",
+        "description": "Study the Spores in Isolation. This assignment concerns sealed plague spore specimens. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      },
+      {
+        "name": "Observe the Fallen Tears",
+        "description": "Observe the Fallen Tears. This assignment concerns the three colours of fallen tears. Luke quietly studies the supplies and keeps his familiars close throughout the trip."
+      }
+    ],
+    "piria": [
+      {
+        "name": "A Quiet Visit to the Herb Market",
+        "description": "A Quiet Visit to the Herb Market. This assignment concerns red, blue, and yellow herbs. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      },
+      {
+        "name": "Mushrooms from a Secret Path",
+        "description": "Mushrooms from a Secret Path. This assignment concerns the three varieties of mushroom. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      },
+      {
+        "name": "An Orchard Shortcut",
+        "description": "An Orchard Shortcut. This assignment concerns power, wisdom, and spirit fruit. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      },
+      {
+        "name": "Find the Hidden Feather Cache",
+        "description": "Find the Hidden Feather Cache. This assignment concerns bird and wyvern feathers. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      },
+      {
+        "name": "Negotiate a Nesting Permit",
+        "description": "Negotiate a Nesting Permit. This assignment concerns bird and wyvern eggs. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      },
+      {
+        "name": "A Backstreet Powder Bargain",
+        "description": "A Backstreet Powder Bargain. This assignment concerns strange alchemical powders. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      },
+      {
+        "name": "Sneak past the Mandragoras",
+        "description": "Sneak past the Mandragoras. This assignment concerns the three mandragora varieties. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      },
+      {
+        "name": "Trace the Missing Fur Bundles",
+        "description": "Trace the Missing Fur Bundles. This assignment concerns manticore, werewolf, and kobold fur. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      },
+      {
+        "name": "Locate the Family Tonic Seller",
+        "description": "Locate the Family Tonic Seller. This assignment concerns family tonic ingredients. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      },
+      {
+        "name": "Flowers behind the Garden Wall",
+        "description": "Flowers behind the Garden Wall. This assignment concerns dancing, dreamy, and singing flowers. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      },
+      {
+        "name": "A Sweet Deal on Preserves",
+        "description": "A Sweet Deal on Preserves. This assignment concerns premium preserves. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      },
+      {
+        "name": "Spot the Counterfeit Monster Eyes",
+        "description": "Spot the Counterfeit Monster Eyes. This assignment concerns monster eye specimens. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      },
+      {
+        "name": "Find the Discreet Wing Dealer",
+        "description": "Find the Discreet Wing Dealer. This assignment concerns naturally shed fairy wings. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      },
+      {
+        "name": "Trace a Smuggled Fang Shipment",
+        "description": "Trace a Smuggled Fang Shipment. This assignment concerns elemental dragon fangs. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      },
+      {
+        "name": "A Crystal Dealer’s Hidden Stock",
+        "description": "A Crystal Dealer’s Hidden Stock. This assignment concerns red, blue, and gold crystals. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      },
+      {
+        "name": "Retrieve a Misplaced Scroll Case",
+        "description": "Retrieve a Misplaced Scroll Case. This assignment concerns weather spell scrolls. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      },
+      {
+        "name": "Follow the Trail of Spirit Tears",
+        "description": "Follow the Trail of Spirit Tears. This assignment concerns succubus, siren, and harpy tears. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      },
+      {
+        "name": "Uncover the Concealed Rune Panel",
+        "description": "Uncover the Concealed Rune Panel. This assignment concerns angelic runes. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      },
+      {
+        "name": "Find the Lost Dragonscale Parcel",
+        "description": "Find the Lost Dragonscale Parcel. This assignment concerns elemental dragon scales. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      },
+      {
+        "name": "A Whisper about Legendary Stones",
+        "description": "A Whisper about Legendary Stones. This assignment concerns the three legendary stones. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      },
+      {
+        "name": "Return a Missing Pendant",
+        "description": "Return a Missing Pendant. This assignment concerns dawn, daybreak, and dusk pendants. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      },
+      {
+        "name": "Locate the Cursed Ring Fence",
+        "description": "Locate the Cursed Ring Fence. This assignment concerns cursed gemstone rings. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      },
+      {
+        "name": "Follow the Demonic Horn Ledger",
+        "description": "Follow the Demonic Horn Ledger. This assignment concerns demonic horns. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      },
+      {
+        "name": "A Sealed Parcel of Spores",
+        "description": "A Sealed Parcel of Spores. This assignment concerns sealed plague spore specimens. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      },
+      {
+        "name": "The Fallen Tear Exchange",
+        "description": "The Fallen Tear Exchange. This assignment concerns the three colours of fallen tears. Piria relies on discreet contacts and quiet shortcuts to locate the right shipment."
+      }
+    ],
+    "charlotte": [
+      {
+        "name": "Arrange a Herbal Tea Delivery",
+        "description": "Arrange a Herbal Tea Delivery. This assignment concerns red, blue, and yellow herbs. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      },
+      {
+        "name": "Select Mushrooms for the Kitchen",
+        "description": "Select Mushrooms for the Kitchen. This assignment concerns the three varieties of mushroom. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      },
+      {
+        "name": "An Afternoon at the Orchard",
+        "description": "An Afternoon at the Orchard. This assignment concerns power, wisdom, and spirit fruit. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      },
+      {
+        "name": "Feathers for an Elegant Fan",
+        "description": "Feathers for an Elegant Fan. This assignment concerns bird and wyvern feathers. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      },
+      {
+        "name": "Choose Eggs for the Estate",
+        "description": "Choose Eggs for the Estate. This assignment concerns bird and wyvern eggs. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      },
+      {
+        "name": "Commission Scented Powder Samples",
+        "description": "Commission Scented Powder Samples. This assignment concerns strange alchemical powders. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      },
+      {
+        "name": "Mandragoras for the Conservatory",
+        "description": "Mandragoras for the Conservatory. This assignment concerns the three mandragora varieties. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      },
+      {
+        "name": "Order Luxurious Fur Trimmings",
+        "description": "Order Luxurious Fur Trimmings. This assignment concerns manticore, werewolf, and kobold fur. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      },
+      {
+        "name": "Curate the Family Tonic Cabinet",
+        "description": "Curate the Family Tonic Cabinet. This assignment concerns family tonic ingredients. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      },
+      {
+        "name": "Prepare the Garden Party Flowers",
+        "description": "Prepare the Garden Party Flowers. This assignment concerns dancing, dreamy, and singing flowers. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      },
+      {
+        "name": "Select the Finest Preserves",
+        "description": "Select the Finest Preserves. This assignment concerns premium preserves. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      },
+      {
+        "name": "Commission a Monster Eye Curiosity",
+        "description": "Commission a Monster Eye Curiosity. This assignment concerns monster eye specimens. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      },
+      {
+        "name": "A Display of Delicate Shed Wings",
+        "description": "A Display of Delicate Shed Wings. This assignment concerns naturally shed fairy wings. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      },
+      {
+        "name": "Arrange a Dragonfang Centrepiece",
+        "description": "Arrange a Dragonfang Centrepiece. This assignment concerns elemental dragon fangs. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      },
+      {
+        "name": "Choose Crystals for the Salon",
+        "description": "Choose Crystals for the Salon. This assignment concerns red, blue, and gold crystals. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      },
+      {
+        "name": "Restore the Antique Scroll Display",
+        "description": "Restore the Antique Scroll Display. This assignment concerns weather spell scrolls. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      },
+      {
+        "name": "Commission Spirit Tear Vials",
+        "description": "Commission Spirit Tear Vials. This assignment concerns succubus, siren, and harpy tears. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      },
+      {
+        "name": "Exhibit the Angelic Runes",
+        "description": "Exhibit the Angelic Runes. This assignment concerns angelic runes. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      },
+      {
+        "name": "A Dragonscale Collector’s Visit",
+        "description": "A Dragonscale Collector’s Visit. This assignment concerns elemental dragon scales. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      },
+      {
+        "name": "Reserve the Legendary Stone Exhibit",
+        "description": "Reserve the Legendary Stone Exhibit. This assignment concerns the three legendary stones. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      },
+      {
+        "name": "Choose a Pendant for the Evening",
+        "description": "Choose a Pendant for the Evening. This assignment concerns dawn, daybreak, and dusk pendants. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      },
+      {
+        "name": "Arrange a Cursed Ring Appraisal",
+        "description": "Arrange a Cursed Ring Appraisal. This assignment concerns cursed gemstone rings. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      },
+      {
+        "name": "A Demonic Horn Curio Collection",
+        "description": "A Demonic Horn Curio Collection. This assignment concerns demonic horns. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      },
+      {
+        "name": "Commission a Sealed Spore Display",
+        "description": "Commission a Sealed Spore Display. This assignment concerns sealed plague spore specimens. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      },
+      {
+        "name": "Present the Fallen Tear Collection",
+        "description": "Present the Fallen Tear Collection. This assignment concerns the three colours of fallen tears. Charlotte arranges a refined visit, choosing presentable goods and careful packaging."
+      }
+    ],
+    "demian": [
+      {
+        "name": "Inspect the Herbal Inventory",
+        "description": "Inspect the Herbal Inventory. This assignment concerns red, blue, and yellow herbs. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      },
+      {
+        "name": "Check the Mushroom Weight Tickets",
+        "description": "Check the Mushroom Weight Tickets. This assignment concerns the three varieties of mushroom. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      },
+      {
+        "name": "Audit the Orchard Receipts",
+        "description": "Audit the Orchard Receipts. This assignment concerns power, wisdom, and spirit fruit. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      },
+      {
+        "name": "Count the Feather Import Bundles",
+        "description": "Count the Feather Import Bundles. This assignment concerns bird and wyvern feathers. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      },
+      {
+        "name": "Review the Egg Handling Permits",
+        "description": "Review the Egg Handling Permits. This assignment concerns bird and wyvern eggs. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      },
+      {
+        "name": "Inspect the Powder Declarations",
+        "description": "Inspect the Powder Declarations. This assignment concerns strange alchemical powders. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      },
+      {
+        "name": "Register the Mandragora Shipment",
+        "description": "Register the Mandragora Shipment. This assignment concerns the three mandragora varieties. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      },
+      {
+        "name": "Reconcile the Fur Trade Ledger",
+        "description": "Reconcile the Fur Trade Ledger. This assignment concerns manticore, werewolf, and kobold fur. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      },
+      {
+        "name": "Verify the Family Tonic Labels",
+        "description": "Verify the Family Tonic Labels. This assignment concerns family tonic ingredients. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      },
+      {
+        "name": "Inspect the Flower Market Licences",
+        "description": "Inspect the Flower Market Licences. This assignment concerns dancing, dreamy, and singing flowers. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      },
+      {
+        "name": "Check the Preserves Excise Forms",
+        "description": "Check the Preserves Excise Forms. This assignment concerns premium preserves. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      },
+      {
+        "name": "Register the Monster Eye Specimens",
+        "description": "Register the Monster Eye Specimens. This assignment concerns monster eye specimens. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      },
+      {
+        "name": "Audit the Fairy Wing Provenance",
+        "description": "Audit the Fairy Wing Provenance. This assignment concerns naturally shed fairy wings. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      },
+      {
+        "name": "Review the Dragonfang Import Duty",
+        "description": "Review the Dragonfang Import Duty. This assignment concerns elemental dragon fangs. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      },
+      {
+        "name": "Reconcile the Crystal Accounts",
+        "description": "Reconcile the Crystal Accounts. This assignment concerns red, blue, and gold crystals. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      },
+      {
+        "name": "Verify the Scroll Archive Register",
+        "description": "Verify the Scroll Archive Register. This assignment concerns weather spell scrolls. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      },
+      {
+        "name": "Check the Spirit Tear Bottle Seals",
+        "description": "Check the Spirit Tear Bottle Seals. This assignment concerns succubus, siren, and harpy tears. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      },
+      {
+        "name": "Register the Angelic Rune Relics",
+        "description": "Register the Angelic Rune Relics. This assignment concerns angelic runes. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      },
+      {
+        "name": "Inspect the Dragonscale Certificates",
+        "description": "Inspect the Dragonscale Certificates. This assignment concerns elemental dragon scales. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      },
+      {
+        "name": "Audit the Legendary Stone Vault",
+        "description": "Audit the Legendary Stone Vault. This assignment concerns the three legendary stones. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      },
+      {
+        "name": "Appraise the Pendant Estate Tax",
+        "description": "Appraise the Pendant Estate Tax. This assignment concerns dawn, daybreak, and dusk pendants. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      },
+      {
+        "name": "Review the Cursed Ring Declarations",
+        "description": "Review the Cursed Ring Declarations. This assignment concerns cursed gemstone rings. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      },
+      {
+        "name": "Inspect the Demonic Horn Permits",
+        "description": "Inspect the Demonic Horn Permits. This assignment concerns demonic horns. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      },
+      {
+        "name": "Audit the Spore Quarantine Records",
+        "description": "Audit the Spore Quarantine Records. This assignment concerns sealed plague spore specimens. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      },
+      {
+        "name": "Seal the Fallen Tear Inventory",
+        "description": "Seal the Fallen Tear Inventory. This assignment concerns the three colours of fallen tears. Demian checks the records and provenance, making sure the shipment matches its paperwork."
+      }
+    ],
+    "daisy": [
+      {
+        "name": "Herbs for Savoury Bread",
+        "description": "Herbs for Savoury Bread. This assignment concerns red, blue, and yellow herbs. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      },
+      {
+        "name": "Mushrooms for the Morning Loaves",
+        "description": "Mushrooms for the Morning Loaves. This assignment concerns the three varieties of mushroom. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      },
+      {
+        "name": "Help Pick the Orchard Fruit",
+        "description": "Help Pick the Orchard Fruit. This assignment concerns power, wisdom, and spirit fruit. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      },
+      {
+        "name": "Feathers for a Pastry Brush",
+        "description": "Feathers for a Pastry Brush. This assignment concerns bird and wyvern feathers. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      },
+      {
+        "name": "Eggs for a Fresh Cake Batch",
+        "description": "Eggs for a Fresh Cake Batch. This assignment concerns bird and wyvern eggs. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      },
+      {
+        "name": "Sort the Mystery Powder Parcels",
+        "description": "Sort the Mystery Powder Parcels. This assignment concerns strange alchemical powders. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      },
+      {
+        "name": "Mandragoras behind the Bakery",
+        "description": "Mandragoras behind the Bakery. This assignment concerns the three mandragora varieties. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      },
+      {
+        "name": "Fur Linings for the Delivery Cart",
+        "description": "Fur Linings for the Delivery Cart. This assignment concerns manticore, werewolf, and kobold fur. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      },
+      {
+        "name": "Organise the Family Tonic Delivery",
+        "description": "Organise the Family Tonic Delivery. This assignment concerns family tonic ingredients. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      },
+      {
+        "name": "Flowers for the Bakery Window",
+        "description": "Flowers for the Bakery Window. This assignment concerns dancing, dreamy, and singing flowers. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      },
+      {
+        "name": "Fill the Fruit Preserve Pantry",
+        "description": "Fill the Fruit Preserve Pantry. This assignment concerns premium preserves. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      },
+      {
+        "name": "A Monster Eye Parcel Mix-Up",
+        "description": "A Monster Eye Parcel Mix-Up. This assignment concerns monster eye specimens. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      },
+      {
+        "name": "Deliver Pastries to the Wing Traders",
+        "description": "Deliver Pastries to the Wing Traders. This assignment concerns naturally shed fairy wings. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      },
+      {
+        "name": "A Dragonfang Customer’s Delivery",
+        "description": "A Dragonfang Customer’s Delivery. This assignment concerns elemental dragon fangs. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      },
+      {
+        "name": "Crystal Charms for the Bakery Sign",
+        "description": "Crystal Charms for the Bakery Sign. This assignment concerns red, blue, and gold crystals. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      },
+      {
+        "name": "Find the Lost Scroll in the Flour Store",
+        "description": "Find the Lost Scroll in the Flour Store. This assignment concerns weather spell scrolls. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      },
+      {
+        "name": "A Tea Break for Weeping Spirits",
+        "description": "A Tea Break for Weeping Spirits. This assignment concerns succubus, siren, and harpy tears. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      },
+      {
+        "name": "Bread Delivery to the Rune Chapel",
+        "description": "Bread Delivery to the Rune Chapel. This assignment concerns angelic runes. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      },
+      {
+        "name": "A Dragonscale Courier’s Lunch",
+        "description": "A Dragonscale Courier’s Lunch. This assignment concerns elemental dragon scales. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      },
+      {
+        "name": "A Picnic near the Sage Stones",
+        "description": "A Picnic near the Sage Stones. This assignment concerns the three legendary stones. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      },
+      {
+        "name": "Return a Pendant Left at the Counter",
+        "description": "Return a Pendant Left at the Counter. This assignment concerns dawn, daybreak, and dusk pendants. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      },
+      {
+        "name": "A Cursed Ring in the Lost Property Box",
+        "description": "A Cursed Ring in the Lost Property Box. This assignment concerns cursed gemstone rings. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      },
+      {
+        "name": "A Parcel for the Horn Collector",
+        "description": "A Parcel for the Horn Collector. This assignment concerns demonic horns. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      },
+      {
+        "name": "Keep Spores away from the Bakery",
+        "description": "Keep Spores away from the Bakery. This assignment concerns sealed plague spore specimens. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      },
+      {
+        "name": "Bake for the Fallen Tear Expedition",
+        "description": "Bake for the Fallen Tear Expedition. This assignment concerns the three colours of fallen tears. Daisy coordinates the errand around her bakery deliveries; unusual materials stay sealed and separate from food."
+      }
+    ],
+    "kyle": [
+      {
+        "name": "Find Suitable Herbs in Storage",
+        "description": "Find Suitable Herbs in Storage. This assignment concerns red, blue, and yellow herbs. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      },
+      {
+        "name": "Sort the Mushroom Stockpile",
+        "description": "Sort the Mushroom Stockpile. This assignment concerns the three varieties of mushroom. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      },
+      {
+        "name": "Check the Fruit Crates",
+        "description": "Check the Fruit Crates. This assignment concerns power, wisdom, and spirit fruit. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      },
+      {
+        "name": "Dust off the Feather Bundles",
+        "description": "Dust off the Feather Bundles. This assignment concerns bird and wyvern feathers. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      },
+      {
+        "name": "Inspect the Egg Packing Straw",
+        "description": "Inspect the Egg Packing Straw. This assignment concerns bird and wyvern eggs. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      },
+      {
+        "name": "Label the Powder Shelves",
+        "description": "Label the Powder Shelves. This assignment concerns strange alchemical powders. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      },
+      {
+        "name": "Check the Mandragora Storeroom",
+        "description": "Check the Mandragora Storeroom. This assignment concerns the three mandragora varieties. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      },
+      {
+        "name": "Air out the Fur Bales",
+        "description": "Air out the Fur Bales. This assignment concerns manticore, werewolf, and kobold fur. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      },
+      {
+        "name": "Inventory the Family Tonic Cases",
+        "description": "Inventory the Family Tonic Cases. This assignment concerns family tonic ingredients. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      },
+      {
+        "name": "Find the Flower Shipment",
+        "description": "Find the Flower Shipment. This assignment concerns dancing, dreamy, and singing flowers. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      },
+      {
+        "name": "Rotate the Preserves Stock",
+        "description": "Rotate the Preserves Stock. This assignment concerns premium preserves. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      },
+      {
+        "name": "Count the Monster Eye Jars",
+        "description": "Count the Monster Eye Jars. This assignment concerns monster eye specimens. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      },
+      {
+        "name": "Sort the Shed Wing Cases",
+        "description": "Sort the Shed Wing Cases. This assignment concerns naturally shed fairy wings. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      },
+      {
+        "name": "Find the Dragonfang Packing List",
+        "description": "Find the Dragonfang Packing List. This assignment concerns elemental dragon fangs. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      },
+      {
+        "name": "Check the Crystal Strongboxes",
+        "description": "Check the Crystal Strongboxes. This assignment concerns red, blue, and gold crystals. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      },
+      {
+        "name": "Arrange the Scroll Shelves",
+        "description": "Arrange the Scroll Shelves. This assignment concerns weather spell scrolls. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      },
+      {
+        "name": "Inspect the Spirit Tear Vials",
+        "description": "Inspect the Spirit Tear Vials. This assignment concerns succubus, siren, and harpy tears. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      },
+      {
+        "name": "Sort the Angelic Rune Tablets",
+        "description": "Sort the Angelic Rune Tablets. This assignment concerns angelic runes. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      },
+      {
+        "name": "Repack the Dragon Scale Chests",
+        "description": "Repack the Dragon Scale Chests. This assignment concerns elemental dragon scales. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      },
+      {
+        "name": "Inventory the Legendary Stones",
+        "description": "Inventory the Legendary Stones. This assignment concerns the three legendary stones. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      },
+      {
+        "name": "Locate the Missing Pendant Case",
+        "description": "Locate the Missing Pendant Case. This assignment concerns dawn, daybreak, and dusk pendants. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      },
+      {
+        "name": "Isolate the Cursed Ring Box",
+        "description": "Isolate the Cursed Ring Box. This assignment concerns cursed gemstone rings. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      },
+      {
+        "name": "Check the Demonic Horn Crates",
+        "description": "Check the Demonic Horn Crates. This assignment concerns demonic horns. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      },
+      {
+        "name": "Seal the Spore Containers",
+        "description": "Seal the Spore Containers. This assignment concerns sealed plague spore specimens. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      },
+      {
+        "name": "Prepare the Fallen Tear Strongbox",
+        "description": "Prepare the Fallen Tear Strongbox. This assignment concerns the three colours of fallen tears. Kyle searches his stored goods, checking labels and setting suitable materials aside for delivery."
+      }
+    ]
+  }
+}

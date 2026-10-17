@@ -21,6 +21,8 @@ used.add('StarCollectable.png')
 used.add('Likeability.png')
 used.add('NewEventIcon.png')
 used.add('Mail.png')
+used.add('ShopDoorBell.mp3')
+used.add('ExpeditionStamp.svg')
 used.add('PushcatSummon.png')
 used.add('WikiPotion.png')
 used.update(['Tia.png','Slider-characters.png','pio_slider.webp','tia_slider.webp'])
@@ -39,7 +41,7 @@ for key,path in [('pio_slider.webp','assets/references/pio_slider.webp'),('tia_s
 for name in ['2015_Summer_Event_Part_2_Banner', '2015_Summer_Event_Part_3_banner', '300000DLbannerKO', '500000_dl_thanks_event_banner', 'Halloween_banner', 'Third_Event_Banner_-_English', '배너-할락생일_ko_', '배너-쿠타타생일_ko_', '배너-여름방학1탄', '배너-서큐버스_ko_', '배너-크리스마스', '배너-2015년신년']:
     assets[name+'.webp']='data:image/webp;base64,'+base64.b64encode((ROOT/'assets/references'/(name+'.webp')).read_bytes()).decode()
 template=(ROOT/'source/index.template.html').read_text(encoding='utf-8')
-for token,value in [('__ASSETS__',json.dumps(assets)),('__UPDATE_DATA__',(ROOT/'data/updates.json').read_text(encoding='utf-8')),('__GAME_DATA__',(ROOT/'data/game-data.json').read_text(encoding='utf-8')),('__ECONOMY_DATA__',(ROOT/'data/economy.json').read_text(encoding='utf-8')),('__COSTUME_DATA__',(ROOT/'data/costumes.json').read_text(encoding='utf-8')),('__FLAVOR_DATA__',(ROOT/'data/flavor-text.json').read_text(encoding='utf-8')),('__MATERIAL_TEXT__',(ROOT/'data/material-descriptions.json').read_text(encoding='utf-8')),('__VISITOR_DIALOGUE__',(ROOT/'data/visitor-dialogue.json').read_text(encoding='utf-8')),('__FAIRY_DATA__',(ROOT/'data/fairies.json').read_text(encoding='utf-8')),('__ACHIEVEMENT_LORE__',(ROOT/'data/achievement-lore.json').read_text(encoding='utf-8')),('__STORAGE__',(ROOT/'source/storage.js').read_text(encoding='utf-8')),('__CORE__',(ROOT/'source/core.js').read_text(encoding='utf-8')),('__APP__',(ROOT/'source/app.js').read_text(encoding='utf-8'))]:template=template.replace(token,value)
+for token,value in [('__ASSETS__',json.dumps(assets)),('__UPDATE_DATA__',(ROOT/'data/updates.json').read_text(encoding='utf-8')),('__EVENT_STORIES__',(ROOT/'data/event-stories.json').read_text(encoding='utf-8')),('__EXPEDITION_JOBS__',(ROOT/'data/expedition-jobs.json').read_text(encoding='utf-8')),('__GAME_DATA__',(ROOT/'data/game-data.json').read_text(encoding='utf-8')),('__ECONOMY_DATA__',(ROOT/'data/economy.json').read_text(encoding='utf-8')),('__COSTUME_DATA__',(ROOT/'data/costumes.json').read_text(encoding='utf-8')),('__FLAVOR_DATA__',(ROOT/'data/flavor-text.json').read_text(encoding='utf-8')),('__MATERIAL_TEXT__',(ROOT/'data/material-descriptions.json').read_text(encoding='utf-8')),('__VISITOR_DIALOGUE__',(ROOT/'data/visitor-dialogue.json').read_text(encoding='utf-8')),('__FAIRY_DATA__',(ROOT/'data/fairies.json').read_text(encoding='utf-8')),('__ACHIEVEMENT_LORE__',(ROOT/'data/achievement-lore.json').read_text(encoding='utf-8')),('__STORAGE__',(ROOT/'source/storage.js').read_text(encoding='utf-8')),('__CORE__',(ROOT/'source/core.js').read_text(encoding='utf-8')),('__APP__',(ROOT/'source/app.js').read_text(encoding='utf-8'))]:template=template.replace(token,value)
 template=template.replace('__ACHIEVEMENT_LORE__',(ROOT/'data/achievement-lore.json').read_text(encoding='utf-8'))
 pio_root=ROOT/'assets/live2d/Pio'
 data_url=lambda path,mime:'data:'+mime+';base64,'+base64.b64encode(path.read_bytes()).decode()

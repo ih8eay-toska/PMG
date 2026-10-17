@@ -17,7 +17,7 @@ for(let version=1;version<=14;version++){
  if(version>=5)raw.metrics.activePlayMs=3456789;
  const encoded=JSON.stringify(raw),items=new Map([['shop',encoded]]),storage={getItem:k=>items.get(k)||null,setItem:(k,v)=>items.set(k,v)},loaded=loadStoredGame(storage,'shop'),g=loaded.game;
  assert.equal(loaded.blocked,false,`v${version}`);assert.equal(items.get(`shop-v${version}-backup`),encoded);assert.equal(items.get('shop'),encoded);
- assert.equal(g.state.version,15);assert.equal(g.state.coins,raw.coins);assert.equal(g.state.potion.value,raw.potion.value);assert.deepEqual(g.state.tiers,raw.tiers);
+ assert.equal(g.state.version,16);assert.equal(g.state.coins,raw.coins);assert.equal(g.state.potion.value,raw.potion.value);assert.deepEqual(g.state.tiers,raw.tiers);
  if(version>=6)assert.equal(g.state.tickets,raw.tickets);if(version>=8)assert.equal(g.state.rubies,raw.rubies);
  if(version>=10){assert.deepEqual(g.state.costumes,raw.costumes);assert.equal(g.state.activeCostumeId,raw.activeCostumeId);}
  if(version>=12){assert.ok(g.state.tiaUnlocked);assert.ok(g.state.tiaIntroSeen);assert.deepEqual(g.state.masteryStars,raw.masteryStars);}

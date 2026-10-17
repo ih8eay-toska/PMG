@@ -7677,6 +7677,42 @@
       "status": "downloaded",
       "generated": true,
       "provenance": "Recreated using the built-in image generation tool; not original game artwork."
+    },
+    {
+      "name": "Shop door bell",
+      "key": "ShopDoorBell.mp3",
+      "path": "assets/audio/ShopDoorBell.mp3",
+      "url": "https://cdn.freesound.org/previews/494/494565_3489769-hq.mp3",
+      "file_page": "https://freesound.org/people/775noise/sounds/494565/",
+      "source_pages": [
+        "https://freesound.org/people/775noise/sounds/494565/"
+      ],
+      "author": "775noise",
+      "license": "CC0 1.0",
+      "mime": "audio/mpeg",
+      "bytes": 14535,
+      "dimensions": null,
+      "sha256": "8600c4a451e58013efd937ef3bded9ad8b974f4a8bc90b20f654773a4ac991ad",
+      "status": "downloaded",
+      "modifications": "Trimmed to 1.1 seconds with a 0.1-second fade out."
+    },
+    {
+      "name": "Expedition stamp",
+      "key": "ExpeditionStamp.svg",
+      "path": "assets/ui/ExpeditionStamp.svg",
+      "url": null,
+      "file_page": null,
+      "source_pages": [],
+      "mime": "image/svg+xml",
+      "bytes": 347,
+      "dimensions": [
+        48,
+        48
+      ],
+      "sha256": "908d53f7203a19ae69dd13a647189bdd8bcd4eec339bc5deec1be2c785554d1b",
+      "status": "downloaded",
+      "generated": true,
+      "provenance": "Original code-drawn UI icon."
     }
   ],
   "unresolved_files": [],

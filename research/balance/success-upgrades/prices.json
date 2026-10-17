@@ -1,0 +1,173 @@
+[
+  {
+    "purchase": 1,
+    "fromBonus": 0,
+    "toBonus": 1,
+    "referenceTier": 1,
+    "referenceGoldPerMinute": 160.25,
+    "referenceMinutes": 0.5,
+    "cost": 100
+  },
+  {
+    "purchase": 2,
+    "fromBonus": 1,
+    "toBonus": 1.5,
+    "referenceTier": 2,
+    "referenceGoldPerMinute": 180.84,
+    "referenceMinutes": 0.69,
+    "cost": 130
+  },
+  {
+    "purchase": 3,
+    "fromBonus": 1.5,
+    "toBonus": 2,
+    "referenceTier": 4,
+    "referenceGoldPerMinute": 316.48,
+    "referenceMinutes": 0.89,
+    "cost": 280
+  },
+  {
+    "purchase": 4,
+    "fromBonus": 2,
+    "toBonus": 2.5,
+    "referenceTier": 5,
+    "referenceGoldPerMinute": 441.64,
+    "referenceMinutes": 1.08,
+    "cost": 480
+  },
+  {
+    "purchase": 5,
+    "fromBonus": 2.5,
+    "toBonus": 3,
+    "referenceTier": 6,
+    "referenceGoldPerMinute": 597.14,
+    "referenceMinutes": 1.28,
+    "cost": 760
+  },
+  {
+    "purchase": 6,
+    "fromBonus": 3,
+    "toBonus": 3.5,
+    "referenceTier": 8,
+    "referenceGoldPerMinute": 1115.82,
+    "referenceMinutes": 1.47,
+    "cost": 1640
+  },
+  {
+    "purchase": 7,
+    "fromBonus": 3.5,
+    "toBonus": 4,
+    "referenceTier": 9,
+    "referenceGoldPerMinute": 1486.1,
+    "referenceMinutes": 1.67,
+    "cost": 2480
+  },
+  {
+    "purchase": 8,
+    "fromBonus": 4,
+    "toBonus": 4.5,
+    "referenceTier": 10,
+    "referenceGoldPerMinute": 2015.07,
+    "referenceMinutes": 1.86,
+    "cost": 3750
+  },
+  {
+    "purchase": 9,
+    "fromBonus": 4.5,
+    "toBonus": 5,
+    "referenceTier": 12,
+    "referenceGoldPerMinute": 3665.41,
+    "referenceMinutes": 2.06,
+    "cost": 7530
+  },
+  {
+    "purchase": 10,
+    "fromBonus": 5,
+    "toBonus": 5.6,
+    "referenceTier": 13,
+    "referenceGoldPerMinute": 4952.7,
+    "referenceMinutes": 2.25,
+    "cost": 11140
+  },
+  {
+    "purchase": 11,
+    "fromBonus": 5.6,
+    "toBonus": 6.127,
+    "referenceTier": 14,
+    "referenceGoldPerMinute": 6564.13,
+    "referenceMinutes": 2.44,
+    "cost": 16050
+  },
+  {
+    "purchase": 12,
+    "fromBonus": 6.127,
+    "toBonus": 6.654,
+    "referenceTier": 16,
+    "referenceGoldPerMinute": 11817.29,
+    "referenceMinutes": 2.64,
+    "cost": 31180
+  },
+  {
+    "purchase": 13,
+    "fromBonus": 6.654,
+    "toBonus": 7.181,
+    "referenceTier": 17,
+    "referenceGoldPerMinute": 15913.18,
+    "referenceMinutes": 2.83,
+    "cost": 45090
+  },
+  {
+    "purchase": 14,
+    "fromBonus": 7.181,
+    "toBonus": 7.709,
+    "referenceTier": 18,
+    "referenceGoldPerMinute": 21013.48,
+    "referenceMinutes": 3.03,
+    "cost": 63620
+  },
+  {
+    "purchase": 15,
+    "fromBonus": 7.709,
+    "toBonus": 8.236,
+    "referenceTier": 20,
+    "referenceGoldPerMinute": 37537.4,
+    "referenceMinutes": 3.22,
+    "cost": 120950
+  },
+  {
+    "purchase": 16,
+    "fromBonus": 8.236,
+    "toBonus": 8.763,
+    "referenceTier": 21,
+    "referenceGoldPerMinute": 49615.23,
+    "referenceMinutes": 3.42,
+    "cost": 169520
+  },
+  {
+    "purchase": 17,
+    "fromBonus": 8.763,
+    "toBonus": 9.29,
+    "referenceTier": 22,
+    "referenceGoldPerMinute": 66516.56,
+    "referenceMinutes": 3.61,
+    "cost": 240200
+  },
+  {
+    "purchase": 18,
+    "fromBonus": 9.29,
+    "toBonus": 9.818,
+    "referenceTier": 24,
+    "referenceGoldPerMinute": 116232.24,
+    "referenceMinutes": 3.81,
+    "cost": 442330
+  },
+  {
+    "purchase": 19,
+    "fromBonus": 9.818,
+    "toBonus": 10.345,
+    "referenceTier": 25,
+    "referenceGoldPerMinute": 155566.04,
+    "referenceMinutes": 4.0,
+    "cost": 622260
+  }
+]

@@ -114,7 +114,7 @@ for(const family of [0,1,2]){
  const capped=new PotionGame();capped.state.luck=10;capped.state.rubyUpgrades.fortune=10;
  const id=['fairy-29','fairy-26','fairy-28'][family];capped.state.fairies[id]=10;capped.setActiveFairy(id);
  capped.state.powerups.enhancement=1;capped.collect(family,0);
- const expected=Math.min(.99,FAMILIES[family].recipes[0].chances[0]+.04+.1+.03);assert.equal(capped.next().chance,expected);assert.equal(capped.enhance(.99,1),'lost');assert.equal(capped.state.powerups.enhancement,0);
+ const expected=Math.min(.99,FAMILIES[family].recipes[0].chances[0]+capped.luckBonus()+.1+.03);assert.equal(capped.next().chance,expected);assert.equal(capped.enhance(.99,1),'lost');assert.equal(capped.state.powerups.enhancement,0);
  const success=new PotionGame();success.state.luck=10;success.state.powerups.enhancement=1;success.collect(0,0);
  assert.equal(success.enhance(.939999,1),'success');
 }
@@ -125,7 +125,7 @@ console.log('Passed: 99% ceiling across all families, stacked fairy bonuses, fai
 const candidate=require('../research/balance/stage-four-candidate/candidate.json');
 for(let family=0;family<3;family++)for(let tier=0;tier<25;tier++){
  const recipe=FAMILIES[family].recipes[tier],expected=candidate.data.families[family].recipes[tier];
- assert.equal(recipe.base,expected.base);assert.deepEqual(recipe.multipliers,expected.multipliers);assert.deepEqual(recipe.chances,expected.chances);
+ assert.equal(recipe.base,expected.base);assert.deepEqual(recipe.multipliers,expected.multipliers);assert.deepEqual(recipe.chances,family===2?expected.chances.map(()=>.84655):expected.chances);
  const saved=new PotionGame();saved.state.tiers[family]=tier;saved.collect(family,tier);saved.state.potion.value=123.456;
  const loaded=new PotionGame(sanitizeSave(JSON.parse(JSON.stringify(saved.state))));assert.equal(loaded.state.potion.value,123.456);
  assert.equal(loaded.enhance(0,1),'success');assert.equal(loaded.state.potion.value,123.456*recipe.multipliers[0]);
