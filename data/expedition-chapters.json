@@ -1,0 +1,1992 @@
+{
+  "batch": "chapter-click-02",
+  "chapters": [
+    {
+      "id": "neet-t1-herbs-for-the-shrine",
+      "traveler": "neet",
+      "tier": 1,
+      "job": "Herbs for the Shrine",
+      "opening": [
+        {
+          "id": "op-01",
+          "phase": "opening",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The shrine has herb orders waiting, and this morning the herb work is Neet's."
+        },
+        {
+          "id": "op-02",
+          "phase": "opening",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "Before the dew lifts, then. I have the shears, the baskets, and the shelf list. Tell me where we start, and I will be ready."
+        },
+        {
+          "id": "choice",
+          "phase": "choice",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Choose what Neet tends today.",
+          "note": "Only options whose material family is unlocked at this tier are shown. The opening prose above is written to be true whether one option or three are available.",
+          "options": [
+            {
+              "material": "Red herb",
+              "teaser": "The fever cart is coughing at the gate, and the red shelf has been leaned on hard this week."
+            },
+            {
+              "material": "Blue herb",
+              "teaser": "Two of the blue-herb beds carry labels nobody can read anymore."
+            },
+            {
+              "material": "Yellow herb",
+              "teaser": "A heavy yellow-herb season is coming, and the drying loft groans when the wind does."
+            }
+          ]
+        }
+      ],
+      "dispatch": [
+        {
+          "id": "trip-start",
+          "phase": "trip",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Neet takes the assignment and goes; whatever happens out there comes home with her."
+        },
+        {
+          "id": "trip-end",
+          "phase": "trip",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The trip is over. Open Neet's report to see what happened, and how it ended."
+        }
+      ],
+      "routes": [
+        {
+          "family": 0,
+          "familyLabel": "Life",
+          "material": "Red herb",
+          "confirmBeats": [
+            {
+              "id": "life-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The fever cart coughs at the gate, and the shrine's red shelf has been leaned on hard this week. Neet walks the whole shelf before promising anyone anything."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "life-dep",
+              "phase": "departure",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "Red herbs, then. The whole road is coughing, and this week has leaned hard on the red shelf. I will promise nothing until the shelf and the road have both had their say."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "life-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts past the gate, where the fever cart rolled just ahead, its driver shaking his head over a wrapper-stripped shelf."
+            },
+            {
+              "id": "life-r2",
+              "phase": "return",
+              "speaker": "driver",
+              "portrait": "none-new-side-character",
+              "text": "Whole road's coughing. Two stops behind yours."
+            },
+            {
+              "id": "life-r3",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "He has nothing to sell her. The strong batch's last measured share rides in her basket, weighed out on the shelf walk this morning."
+            },
+            {
+              "id": "life-r4",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Next on his round, the settlement: its strong beds stripped bare weeks ago - every root that promised speed bought the minute the coughing began."
+            },
+            {
+              "id": "life-r5",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "What remains is the settlement's own kitchen-row patch of mild red leaf, planted for household coughs: same root, slower in the cup, unwanted all season because the fever has everyone buying fast."
+            },
+            {
+              "id": "life-r6",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "A grandmother has held the queue since dawn, three grandchildren coughing in turns."
+            },
+            {
+              "id": "life-r7",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Neet counts her basket against it and sees the arithmetic nobody says aloud: not enough."
+            },
+            {
+              "id": "life-r8",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "One bargain, plainly, then: the strong share in my basket, weighed to two jars, for the whole spare cutting of the mild row."
+            },
+            {
+              "id": "life-r9",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The grandmother looks at the strong bundle, then at Neet."
+            },
+            {
+              "id": "life-r10",
+              "phase": "return",
+              "speaker": "grandmother",
+              "portrait": "none-new-side-character",
+              "text": "It's the same root, girl. Just slower."
+            },
+            {
+              "id": "life-r11",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "And the fever does not wait."
+            },
+            {
+              "id": "life-r12",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "They shake hands on it - two jars for the row - and Neet pays the two, adding nothing beyond the price they named."
+            },
+            {
+              "id": "life-r13",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "By her count on the walk home, the mild cutting is four times the leaf she left with: slower by half, but the same root."
+            },
+            {
+              "id": "life-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "She reorders the red shelf by urgency instead of alphabet - fever jars nearest the door - and quietly refills the first kit before anyone asks. 'Urgent first' becomes the shelf rule, and the first kit has never been short since."
+            }
+          ]
+        },
+        {
+          "family": 1,
+          "familyLabel": "Mana",
+          "material": "Blue herb",
+          "confirmBeats": [
+            {
+              "id": "mana-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Two of the blue-herb beds carry labels nobody can read anymore. Neet agrees to straighten the beds without agreeing to trust them."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "mana-dep",
+              "phase": "departure",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "Blue herbs, then. Two beds, two unreadable labels, and no reason yet to trust either. I will straighten what is crooked and promise to trust nothing."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "mana-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts at the beds: the real trouble is the ledger, and it kept the bad ink's story, reading the sunward bed as mild and the shaded bed as strong."
+            },
+            {
+              "id": "mana-r2",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Dosed by the ledger's story, the strong crop plays mild and the mild plays strong - half a remedy or a double one - and the seed saved from its 'best' bed would plant the error again."
+            },
+            {
+              "id": "mana-r3",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Neet tastes a leaf from each - one bitter first, then cold, the other answering differently - but the hot dry week slurs the harvests; a tongue can say the crops differ, not whose story is true."
+            },
+            {
+              "id": "mana-r4",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The two wait in separate cups. Mena, the youngest volunteer, finally comes off the wall."
+            },
+            {
+              "id": "mana-r5",
+              "phase": "return",
+              "speaker": "mena",
+              "portrait": "none-new-side-character",
+              "text": "I watered both beds the year before the labels went. The mean, bitter leaf always came off the sunward bed - the one the ledger reads as mild."
+            },
+            {
+              "id": "mana-r6",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Scolded, she says, for overwatering the shaded one - and she kept the two straight ever since. She gives it up like a small crime confessed."
+            },
+            {
+              "id": "mana-r7",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "I will not taste again - the tongue said its all. Your account is testable another way: an overwatered bed keeps its drenching."
+            },
+            {
+              "id": "mana-r8",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "So Neet walks where Mena says she stood with the can - and then walks the rest. The short haul from the water barrel to the shaded bed is worn bare by a year of full cans, the ground there still draining late."
+            },
+            {
+              "id": "mana-r9",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The sunward bed has no such road - no worn haul, no water path, no late drain. Ground sides with memory: shaded bed pampered, sunward bed mean and bitter - the ledger backward all along."
+            },
+            {
+              "id": "mana-r10",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "So the sun remembers even when the ink did not. Then we will not correct you. We will write you down."
+            },
+            {
+              "id": "mana-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "She re-inks every label, then does the unfashionable thing: corrects the bed-ledger to match the truth of the beds, not the habit of the ledger. The bed-ledger tells the truth again, and the label ink she mixed is the one still in use."
+            }
+          ]
+        },
+        {
+          "family": 2,
+          "familyLabel": "Stamina",
+          "material": "Yellow herb",
+          "confirmBeats": [
+            {
+              "id": "stamina-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "A heavy yellow-herb season is coming, and the drying loft groans when the wind does. Neet inspects the loft before the first load goes up."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "stamina-dep",
+              "phase": "departure",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "Yellow herbs, then. A heavy season is coming, and the loft already complains about the wind. I will walk it before the first load goes up."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "stamina-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts at the loading yard, where the first yellow-herb load comes off the cart wrong: this year's cut is sap-heavy, taken young and wet because the fields came late and the shrine ordered early."
+            },
+            {
+              "id": "stamina-r2",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The same trays that went up light as chaff last year now take both hands, and Neet weighs one against her hip before she says anything at all."
+            },
+            {
+              "id": "stamina-r3",
+              "phase": "return",
+              "speaker": "grower",
+              "portrait": "none-new-side-character",
+              "text": "They will dry lighter than they travel."
+            },
+            {
+              "id": "stamina-r4",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Which is exactly the trouble - the loft has to carry them at their heaviest."
+            },
+            {
+              "id": "stamina-r4b",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Before the first load went up, she walked the empty loft end to end and found nothing the eye could fault - the wind's groan unexplained."
+            },
+            {
+              "id": "stamina-r4c",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "Level, unloaded, and quiet about it. I will walk it again when it is carrying."
+            },
+            {
+              "id": "stamina-r5",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Inside, volunteers are loading at a speed that means nobody has counted the load."
+            },
+            {
+              "id": "stamina-r6",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Neet watches one tray go up and hears the beam take it with a sound she does not like - a long wooden note, the kind furniture makes before it stops being furniture."
+            },
+            {
+              "id": "stamina-r7",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "She stops the next tray at the bottom of the stair."
+            },
+            {
+              "id": "stamina-r8",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "We will count what goes up, before the loft decides we did not."
+            },
+            {
+              "id": "stamina-r9",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The volunteers look caught rather than annoyed. Gorram, the oldest, has hauled yellow bundles all morning and does not stop to argue."
+            },
+            {
+              "id": "stamina-r10",
+              "phase": "return",
+              "speaker": "gorram",
+              "portrait": "none-new-side-character",
+              "text": "Nothing ever fell in thirty years."
+            },
+            {
+              "id": "stamina-r11",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Which is what everyone always says about beams. Neet climbs anyway, walks the loft heel to heel with a measuring string, and finds the middle beam carrying more than its share, a thumb's width below its brothers."
+            },
+            {
+              "id": "stamina-r12",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "She marks it in chalk, sorts the wettest yellow bundles onto the side beams, and puts the string back where the next hand will find it and wonder."
+            },
+            {
+              "id": "stamina-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "She doubles the braces, ropes the racks, and - because a loft that holds more invites people - leaves a bench in the warm corner. The loft holds double, and rain-guests still sleep there by custom."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "neet-t2-mushroom-foraging",
+      "traveler": "neet",
+      "tier": 2,
+      "job": "Mushroom Foraging",
+      "opening": [
+        {
+          "id": "op-01",
+          "phase": "opening",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The shrine kitchen has orders waiting, and this morning the gathering is Neet's."
+        },
+        {
+          "id": "op-02",
+          "phase": "opening",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "Before the dew lifts, then. I have the knives, the baskets, and a ledger with empty pages. Tell me what we gather, and I will be ready."
+        },
+        {
+          "id": "choice",
+          "phase": "choice",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Choose what Neet gathers today.",
+          "note": "Only options whose material family is unlocked at this tier are shown. The opening prose above is written to be true whether one option or three are available.",
+          "options": [
+            {
+              "material": "Sturdy mushroom",
+              "teaser": "Dense caps the soup pot has been asking for - the kind that survive a tumble in the basket."
+            },
+            {
+              "material": "Clever mushroom",
+              "teaser": "The beds have been acting suspicious all week, and the mushrooms present themselves far too neatly."
+            },
+            {
+              "material": "Lively mushroom",
+              "teaser": "Springy beneath their spotted caps, and already climbing out of the crates this morning."
+            }
+          ]
+        }
+      ],
+      "dispatch": [
+        {
+          "id": "trip-start",
+          "phase": "trip",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Neet takes the assignment and goes; whatever happens out there comes home with her."
+        },
+        {
+          "id": "trip-end",
+          "phase": "trip",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The trip is over. Open Neet's report to see what happened, and how it ended."
+        }
+      ],
+      "routes": [
+        {
+          "family": 0,
+          "familyLabel": "Life",
+          "material": "Sturdy mushroom",
+          "confirmBeats": [
+            {
+              "id": "life-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The shrine soup pot wants sturdy caps, and the porter's basket always seems lighter on the way back up. Neet decides to weigh the basket once, out of politeness."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "life-dep",
+              "phase": "departure",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "Sturdy caps, then. The pot feeds the pilgrims, and I would rather check a scale than guess at supper. We leave before the dew lifts."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "life-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The ravine gave its usual account: dense caps off the fallen oaks, wide clusters culled, half of every log left standing. One dropped cap took its gravel tumble on the way home and was no worse than a scuff."
+            },
+            {
+              "id": "life-r2",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "At the gate Harl the porter comes up the switchback, one basket, the pickers' tally slip riding the rim. She asks to carry it the last few yards, out of politeness, and the weight reads wrong in her grip."
+            },
+            {
+              "id": "life-r3",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "She weighs it once at the kitchen scale, thanking him for the loan, then sets today's beside the delivery weights her ledger has kept for weeks."
+            },
+            {
+              "id": "life-r4",
+              "phase": "return",
+              "speaker": "harl",
+              "portrait": "none-new-side-character",
+              "text": "Full at the ravine, lighter by the gate. I have been telling my arms they are getting old."
+            },
+            {
+              "id": "life-r5",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "The ledger has agreed with you for weeks. A shortfall that keeps its size could come from habit, cargo, or the basket itself, and nothing yet tells me which. I would like to weigh your basket again - may I?"
+            },
+            {
+              "id": "life-r5b",
+              "phase": "return",
+              "speaker": "harl",
+              "portrait": "none-new-side-character",
+              "text": "Weigh it, then. It came up the same switchback as always."
+            },
+            {
+              "id": "life-r6",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The apology is drafted for the asking, not for any finding: questioning a guest's basket costs something, and she will pay it."
+            },
+            {
+              "id": "life-r7",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "The page takes two columns - what the tally slips promise, what the scale confirms. This side stays blank for morning."
+            },
+            {
+              "id": "life-r8",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Harl leaves the basket beside the kitchen scale for the night."
+            },
+            {
+              "id": "life-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "A false bottom has been shorting the count for weeks; she double-counts by weight, catches it kindly, and cooks nothing until every cap is accounted. Jars of sturdy-cap soup go out to the pilgrims, and the twice-counted rule becomes the children's first lesson in counting anything."
+            }
+          ]
+        },
+        {
+          "family": 1,
+          "familyLabel": "Mana",
+          "material": "Clever mushroom",
+          "confirmBeats": [
+            {
+              "id": "mana-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The clever mushrooms present themselves for labeling, which is exactly how Neet knows they are lying. The beds have been acting suspicious all week."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "mana-dep",
+              "phase": "departure",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "Clever mushrooms, then. If they mean to be counted, they can be counted properly. I will bring stakes and a straight hand."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "mana-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The beds have been presenting themselves all week: caps curled generously outward, white stems standing to be counted, everything turned toward the path by hands nobody can name."
+            },
+            {
+              "id": "mana-r2",
+              "phase": "return",
+              "speaker": "sedge",
+              "portrait": "none-new-side-character",
+              "text": "I have watched them all week. Too neat to trust."
+            },
+            {
+              "id": "mana-r3",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "The obvious, orderly thing first, then: stakes and a straight line of soil."
+            },
+            {
+              "id": "mana-r4",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The first never touches soil: the nearest cap folds into the leaf litter flat and final, between one blink and the next, without a sound. She tries the second bed and gets the same shallow theater."
+            },
+            {
+              "id": "mana-r5",
+              "phase": "return",
+              "speaker": "sedge",
+              "portrait": "none-new-side-character",
+              "text": "They only do it when the stakes come out. It is not the watching they mind. I stood over them all Tuesday."
+            },
+            {
+              "id": "mana-r6",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "So she rolls the label into its leather and stands at the path with her hands folded, and the beds remember themselves - up, curled, guilty."
+            },
+            {
+              "id": "mana-r7",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "A label nobody will hold still for keeps nothing. A mushroom that lies about itself still tells the truth about where it will not stand."
+            },
+            {
+              "id": "mana-r8",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The week's refusals are the better record: the patch by the warm stone keeps its distance, and the patch under the drip-line grows nowhere wet."
+            },
+            {
+              "id": "mana-r9",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "She maps the refusals in the day's margin and pencils one line of a rhyme beside them, to hear whether rhythm can keep what stakes cannot: it will not stand where the drip-line lands. The third stake stays in the drawer, on purpose."
+            },
+            {
+              "id": "mana-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "They keep flattening into leaf litter at the first touch of a label, so she stops labeling and starts rhyming, sorting by where they refuse to grow. A basket is collected in order, and the sorting rhyme enters the children's lesson, where it is credited to the mushrooms."
+            }
+          ]
+        },
+        {
+          "family": 2,
+          "familyLabel": "Stamina",
+          "material": "Lively mushroom",
+          "confirmBeats": [
+            {
+              "id": "stamina-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The lively mushrooms have been escaping crates since dawn, and the downhill trip to the village is today. Neet checks the rope twice."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "stamina-dep",
+              "phase": "departure",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "Lively mushrooms, then. The pantry's pickling day does not move for anyone, and the crates have been making their own arrangements since dawn. I will check the rope twice."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "stamina-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts at the loading, before the cart left. The cooper stood there with four lids he had already named a favor."
+            },
+            {
+              "id": "stamina-r2",
+              "phase": "return",
+              "speaker": "cooper",
+              "portrait": "none-new-side-character",
+              "text": "Nothing gets out of my crates."
+            },
+            {
+              "id": "stamina-r3",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "Which is true and not the point: a lid settles every argument in the dark, and a shortfall keeps its own counsel until the far end. If one gets out today, it gets out in daylight, where the getting-out has witnesses."
+            },
+            {
+              "id": "stamina-r3b",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "She hands the lids back."
+            },
+            {
+              "id": "stamina-r4",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "So the crates ride out open, under rope - spans anchored to the cooper's hoop-nails, woven wide enough to see through."
+            },
+            {
+              "id": "stamina-r5",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "She checks it once at the gate and once at the hairpin, half for the knots, half for the mushrooms, who are owed a fair fence."
+            },
+            {
+              "id": "stamina-r6",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "On the bend one cap takes the bounce as a dare, clears the first span, and is caught by the second."
+            },
+            {
+              "id": "stamina-r7",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Past the village's first roofs the crates keep their drumroll, ropes humming at every spring. At the pantry step she sets them down still arguing, and the lids stay home in the shed. She does not trust what she cannot watch."
+            },
+            {
+              "id": "stamina-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "She lattices the crates with rope - not lids: rope, so the jumping is visible and the failure honest. Not one loss goes on the record, and the village pantry copies her lattice by month's end."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "neet-t3-helping-in-the-orchard",
+      "traveler": "neet",
+      "tier": 3,
+      "job": "Helping in the Orchard",
+      "opening": [
+        {
+          "id": "op-01",
+          "phase": "opening",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The orchard has harvest rows to pick, and this morning the helping is Neet's."
+        },
+        {
+          "id": "op-02",
+          "phase": "opening",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "Before the dew lifts, then. I have the ledger, the sacks, and the day for it. Tell me where the orchard wants me, and I will be ready."
+        },
+        {
+          "id": "choice",
+          "phase": "choice",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Choose what Neet helps with today.",
+          "note": "Only options whose material family is unlocked at this tier are shown. The opening prose above is written to be true whether one option or three are available.",
+          "options": [
+            {
+              "material": "Fruit of power",
+              "teaser": "Bright fruit that pays its pickers in bruises, and a hired crew that will not admit their arms ache."
+            },
+            {
+              "material": "Fruit of wisdom",
+              "teaser": "Three scales that have been disagreeing since harvest began, and three pickers each certain of a different one."
+            },
+            {
+              "material": "Fruit of spirit",
+              "teaser": "A fragrant fruit hanging farthest out, on ladders old enough to wobble worst beneath it."
+            }
+          ]
+        }
+      ],
+      "dispatch": [
+        {
+          "id": "trip-start",
+          "phase": "trip",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Neet takes the assignment and goes; whatever happens out there comes home with her."
+        },
+        {
+          "id": "trip-end",
+          "phase": "trip",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The trip is over. Open Neet's report to see what happened, and how it ended."
+        }
+      ],
+      "routes": [
+        {
+          "family": 0,
+          "familyLabel": "Life",
+          "material": "Fruit of power",
+          "confirmBeats": [
+            {
+              "id": "life-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The power rows pay pickers in bruises, and the hired crew will not admit their arms ache. Neet is working the row and watching arms instead of fruit."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "life-dep",
+              "phase": "departure",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "Fruit of power, then. I will work the row I am given and watch the arms around me. The fruit lends its strength; the pickers should keep some of their own."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "life-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts at the power rows, where the hired crew has been at it since before light: bright fruit, heavy sacks, and a pace that does not slacken because nobody has told it to."
+            },
+            {
+              "id": "life-r2",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Neet takes the row she is given and picks with them, watching arms: shoulders rolled mid-lift, one picker carrying with the left arm only, a wrist flexed behind a sack while Tansy, the crew's fastest, is looking elsewhere."
+            },
+            {
+              "id": "life-r3",
+              "phase": "return",
+              "speaker": "tansy",
+              "portrait": "none-new-side-character",
+              "text": "Nobody here is sore, cleric. Arms that complain do not get rehired, and we intend to be here next autumn."
+            },
+            {
+              "id": "life-r4",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "Then the orchard is luckier than most. The arms I watched rolled their shoulders eleven times between one tree and the next - I counted, because counting is what I was doing instead of complaining."
+            },
+            {
+              "id": "life-r5",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The crew's arithmetic runs on the rehiring: a sore arm is a short sack, a short sack is a season's end, so the aching gets folded away and picked through."
+            },
+            {
+              "id": "life-r6",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "My arms are new to this row and would like a minute at the row's end. Any arm wanting the same minute is welcome to share it. The sacks will wait - they always do."
+            },
+            {
+              "id": "life-r7",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The minute starts as hers alone. Then another picker sets down his sack, then two more, and Tansy stands holding her own wrist at the row's end, not admitting to anything and resting all the same."
+            },
+            {
+              "id": "life-r8",
+              "phase": "return",
+              "speaker": "tansy",
+              "portrait": "none-new-side-character",
+              "text": "One minute, then. But the sacks will hear none of it from me."
+            },
+            {
+              "id": "life-r9",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Neet keeps her ledger open against a sack through the afternoon: which arms gave out first, and which minute brought them back."
+            },
+            {
+              "id": "life-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "She sets a rest rota nobody asked for and stocks a cold-compress barrel at the row's end. The rows finish before dark, and the rota quietly becomes the orchard's autumn custom - signed, as everything of hers is, with a small tidy hand."
+            }
+          ]
+        },
+        {
+          "family": 1,
+          "familyLabel": "Mana",
+          "material": "Fruit of wisdom",
+          "confirmBeats": [
+            {
+              "id": "mana-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The wisdom grove's scales have been disagreeing since harvest began, and three pickers are arguing over which one to believe. Neet brings a notebook instead of an opinion."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "mana-dep",
+              "phase": "departure",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "Fruit of wisdom, then. Three scales arguing is three chances to count well. I will bring the notebook and ask each scale the same question - more than once, if they mean it."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "mana-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts at the wisdom grove: three scales within shouting distance, and three pickers camped one to a scale, each sure the other two are being robbed."
+            },
+            {
+              "id": "mana-r2",
+              "phase": "return",
+              "speaker": "pell",
+              "portrait": "none-new-side-character",
+              "text": "The gate scale is honest. It weighed my mule true for the farrier, and it has weighed my sacks since the rows were young."
+            },
+            {
+              "id": "mana-r3",
+              "phase": "return",
+              "speaker": "wray",
+              "portrait": "none-new-side-character",
+              "text": "The grove scale is honest. The gate one reads proud - it has been saying half again what my sacks carry since harvest began."
+            },
+            {
+              "id": "mana-r4",
+              "phase": "return",
+              "speaker": "thirdpicker",
+              "portrait": "none-new-side-character",
+              "text": "The yard scale has outlived four owners. It is the honest one."
+            },
+            {
+              "id": "mana-r5",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "Then we will ask each scale the same question more than once, and then ask it again with a different load. A notebook weighs nothing, and it does not take sides."
+            },
+            {
+              "id": "mana-r6",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The same fruit from her basket crosses to all three scales and back, three rounds each, while the pickers watch like judges. Every scale repeats itself to the ounce - and repeats its disagreement, the same way every round."
+            },
+            {
+              "id": "mana-r7",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Then a different load crosses the same three scales - a sack of Pell's, surrendered growling - and the three answers come back in the same pattern again. Whatever the scales are doing, they do it steadily."
+            },
+            {
+              "id": "mana-r8",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "None of them is random, so none of them has to lose. A scale that answers steadily can be corrected for - keep your scales, and we will write down each one's manner until the numbers can be trusted across the grove."
+            },
+            {
+              "id": "mana-r9",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "So the notebook takes a page of manners, one line per scale, and the argument becomes arithmetic instead of war. Pell keeps his gate scale, Wray keeps his grudge with a number attached, and the pickers go back to their ladders."
+            },
+            {
+              "id": "mana-r10",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "From then on, every reading that reaches her book can be made to speak with the others, and the pickers start bringing their numbers to be read unasked. The notebook went home heavier than it came."
+            },
+            {
+              "id": "mana-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "She records pick-weight by row and hour, and finds the east rows sweeten early in shade. The picking order is rebuilt around her notes - the ledger doing the diplomacy she never learned."
+            }
+          ]
+        },
+        {
+          "family": 2,
+          "familyLabel": "Stamina",
+          "material": "Fruit of spirit",
+          "confirmBeats": [
+            {
+              "id": "stamina-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The spirit fruit hangs farthest out, and the old ladders beneath it wobble worst. Neet looks at the ladder feet first and the fruit second."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "stamina-dep",
+              "phase": "departure",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "Fruit of spirit, then. The fruit can hang; the ladders cannot wait. I will look at the feet first and let the fruit take its turn."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "stamina-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts at the far rows: the spirit trees are the oldest in the orchard, the fruit hangs farthest out, and the ladders leaning under them are older than the pickers."
+            },
+            {
+              "id": "stamina-r2",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "She looks at the feet first, as she said she would: half the feet are worn round, one leg stands shorter where rot has been at work, and the grass beneath is stamped with years of the same small sway."
+            },
+            {
+              "id": "stamina-r3",
+              "phase": "return",
+              "speaker": "tam",
+              "portrait": "none-new-side-character",
+              "text": "The fruit is not coming down to meet us, cleric. Are we picking, or are we carpentering?"
+            },
+            {
+              "id": "stamina-r4",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "Both, while the ladders keep their opinions. A wobble at the feet is a picker on the ground by noon. Hold the fruit in your head; I will have this one honest in a minute."
+            },
+            {
+              "id": "stamina-r5",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The first ladder gets the full attention: wedges under the worn feet, a rope collar at the top rung, and her whole weight testing each leg before it earns her basket."
+            },
+            {
+              "id": "stamina-r6",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "She climbs it herself with the first basket, and the ladder takes her weight without comment. Tam watches the rungs the whole way up and forgets to be unimpressed."
+            },
+            {
+              "id": "stamina-r7",
+              "phase": "return",
+              "speaker": "tam",
+              "portrait": "none-new-side-character",
+              "text": "All right. Do mine next - the tall one by the wall has danced with me twice this week."
+            },
+            {
+              "id": "stamina-r8",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The crew groans at the speed of it, and the grumbling keeps time with the work all afternoon. The far fruit comes down fragrant and unhurried."
+            },
+            {
+              "id": "stamina-r9",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The last baskets come down at the pace the ladders allow, and Tam loses a race to one of them, which the crew rules the correct order of things."
+            },
+            {
+              "id": "stamina-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "She braces every leg and ropes every top rung, no shortcuts taken even while the crew groans at the pace. Nobody falls; the brace pattern is saved under the barn for next season."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "neet-t4-gather-fallen-feathers",
+      "traveler": "neet",
+      "tier": 4,
+      "job": "Gather Fallen Feathers",
+      "opening": [
+        {
+          "id": "op-01",
+          "phase": "opening",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The winds have been generous all week, and the feather work is Neet's."
+        },
+        {
+          "id": "op-02",
+          "phase": "opening",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "Before the dew lifts, then. I have the basket, the ledger, and a morning that wants walking. Tell me where the wind is leaving things, and I will be ready."
+        },
+        {
+          "id": "choice",
+          "phase": "choice",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Choose what Neet gathers today.",
+          "note": "Only options whose material family is unlocked at this tier are shown. The opening prose above is written to be true whether one option or three are available.",
+          "options": [
+            {
+              "material": "Rainbow bird feathers",
+              "teaser": "Bright feathers drifting along the mill path like scattered festival litter - and Neet walking it with a basket and a plan."
+            },
+            {
+              "material": "Bluebird feathers",
+              "teaser": "Bluebird feathers are being graded wet and sold dry, and the arguments about color have outlasted the colors."
+            },
+            {
+              "material": "Wyvern feathers",
+              "teaser": "Where the heath path climbs, the winter wind has been dropping old wyvern feathers for weeks - and Neet wants them gathered honestly."
+            }
+          ]
+        }
+      ],
+      "dispatch": [
+        {
+          "id": "trip-start",
+          "phase": "trip",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Neet takes the assignment and goes; whatever happens out there comes home with her."
+        },
+        {
+          "id": "trip-end",
+          "phase": "trip",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The trip is over. Open Neet's report to see what happened, and how it ended."
+        }
+      ],
+      "routes": [
+        {
+          "family": 0,
+          "familyLabel": "Life",
+          "material": "Rainbow bird feathers",
+          "confirmBeats": [
+            {
+              "id": "life-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Rainbow bird feathers have been drifting along the mill path all week, bright as scattered festival litter. Neet is walking it with a basket and a plan."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "life-dep",
+              "phase": "departure",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "Rainbow feathers, then. Bright things the wind is handing out for free, and a basket to receive them properly. I will walk the path slowly enough to notice."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "life-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts on the mill path, where the wind has been scattering for days: rainbow feathers lying bright across the ruts, trodden at the wheel's edge, and still coming down."
+            },
+            {
+              "id": "life-r2",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "She walks it as slow as its bends want, picking up what the ruts have not ruined, and listening: pilgrims pass both ways, and more than one of them stoops."
+            },
+            {
+              "id": "life-r3",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "An old pilgrim with a stick, Maren, stops mid-climb to lift one feather out of a puddle and press it flat between her palms, drying something worth drying."
+            },
+            {
+              "id": "life-r4",
+              "phase": "return",
+              "speaker": "maren",
+              "portrait": "none-new-side-character",
+              "text": "One each, that is the custom of the path. Take two and your neighbor's luck goes short. Mine has ridden in my book since the winter of the feast and it still works."
+            },
+            {
+              "id": "life-r5",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The arithmetic of the path is in its ditches: luck goes to whoever stoops first, and the brightest feathers rot in the hedges where nobody will reach."
+            },
+            {
+              "id": "life-r6",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Nearer the top, a young pilgrim named Ansel straggles up against the cold, thin bundle on his back, hands red at the knuckles."
+            },
+            {
+              "id": "life-r7",
+              "phase": "return",
+              "speaker": "ansel",
+              "portrait": "none-new-side-character",
+              "text": "I have come up twice and gone down twice, and the wind has not let me keep one yet. My hands have not let go of the cold either."
+            },
+            {
+              "id": "life-r8",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "That is luck going into ditches and cold sleeves. A feather carried alone warms one walk and fades. Sewn down among many, it would warm every walk after - and I mean to start the circle that does that sewing."
+            },
+            {
+              "id": "life-r9",
+              "phase": "return",
+              "speaker": "maren",
+              "portrait": "none-new-side-character",
+              "text": "Then the custom sleeps easy. It rations the feathers a person carries for luck, and yours are going into common work, not into any pocket - nobody's luck goes short while your basket fills. Take the muddy ones too; mud cleans off."
+            },
+            {
+              "id": "life-r10",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The walk back down takes longer than the walk up: the wind is generous, the mud is persuasive, and her basket rides heavier every field."
+            },
+            {
+              "id": "life-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "She gathers the feathers for a pilgrims' quilting circle of her own starting, washing and sorting by warmth rather than shade. The circle is founded on one basket of fetched luck - the first of the region's comfort-works, as she writes in the margin - and it is still the warmest."
+            }
+          ]
+        },
+        {
+          "family": 1,
+          "familyLabel": "Mana",
+          "material": "Bluebird feathers",
+          "confirmBeats": [
+            {
+              "id": "mana-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Bluebird feathers are being graded wet and sold dry, and the market's arguments about color have outlasted the colors. Neet is asked to look at the evidence."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "mana-dep",
+              "phase": "departure",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "Bluebird feathers, then. Colors that change with their weather need comparing, not arguing. One feather, graded wet, dried, and graded once more - same eyes, and the page will keep both answers."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "mana-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts at the market, where a crate of bluebird feathers has been bought, returned, disputed, and resold until the argument is older than the feathers in it."
+            },
+            {
+              "id": "mana-r2",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The stallkeepers sent for her the way a street sends for its cleric: Vetch, senior among the graders, walks her to the crate himself and lays the whole grievance flat."
+            },
+            {
+              "id": "mana-r3",
+              "phase": "return",
+              "speaker": "vetch",
+              "portrait": "none-new-side-character",
+              "text": "Grade it wet, sell it dry, and every side remembers a different bird. I have argued color until color is all we argue about. You were sent for. Show me what the feathers have been doing while we were talking."
+            },
+            {
+              "id": "mana-r4",
+              "phase": "return",
+              "speaker": "dov",
+              "portrait": "none-new-side-character",
+              "text": "A feather is bluest when it comes off the bird, and that is what I grade. If the blue fades on somebody's windowsill, that is drying, not cheating."
+            },
+            {
+              "id": "mana-r5",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "Then we will stop arguing about honesty and start arguing about states. One feather, graded wet and graded dry by Dov's own eyes, with the drying in between. If a grade moves with its drying, that much at least is settled."
+            },
+            {
+              "id": "mana-r6",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Dov grades the first feather wet, and it reads blue as a patch of clear sky, as his way goes. Neet writes the grade on her page with the word wet beside it."
+            },
+            {
+              "id": "mana-r7",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The feather dries on the stall's warm slate while the market holds its breath. Read again by Dov, same eyes, same light, it comes back a shade short of clear sky, and the two grades share a line on her page."
+            },
+            {
+              "id": "mana-r8",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "A second feather goes through the same round - wet, dried, read again - and lands a shade short by the same amount. Dov looks at his own hands as if they had been keeping secrets from him."
+            },
+            {
+              "id": "mana-r9",
+              "phase": "return",
+              "speaker": "vetch",
+              "portrait": "none-new-side-character",
+              "text": "A shade short, twice, by the same amount. So there is weather in the argument - a source we can write down, where before we only traded memories."
+            },
+            {
+              "id": "mana-r10",
+              "phase": "return",
+              "speaker": "dov",
+              "portrait": "none-new-side-character",
+              "text": "Grade them wet if it suits you, sell them dry if it suits the day, but write which state a grade is in - and I will put my name to mine."
+            },
+            {
+              "id": "mana-r11",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Neet closes her ledger on the morning: two feathers, four grades, one drying slate, and not one word of argument spent on honesty."
+            },
+            {
+              "id": "mana-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "She catalogs wet-light against dry-light and writes the difference into her ledger. Every later dispute ends before it starts; the market graders ask for a copy, and it sits beside hers."
+            }
+          ]
+        },
+        {
+          "family": 2,
+          "familyLabel": "Stamina",
+          "material": "Wyvern feathers",
+          "confirmBeats": [
+            {
+              "id": "stamina-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Where the heath path climbs, the winter wind has been shedding old wyvern feathers for weeks. Neet wants them for the shrine stores, and wants them gathered honestly."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "stamina-dep",
+              "phase": "departure",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "Wyvern feathers, then. I want them honestly come by - what the wind finished with, and nothing newer. A heath like that deserves a local arm beside me, and I will ask for one."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "stamina-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts where the heath path climbs: the winter wind has been laying old feathers along it for weeks, and the gatherers read the drifts the way farmers read weather."
+            },
+            {
+              "id": "stamina-r2",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The gatherers lend her Sarn, a heath gatherer with a hooked stick and no hurry, and the climb begins at the pace the path allows."
+            },
+            {
+              "id": "stamina-r3",
+              "phase": "return",
+              "speaker": "sarn",
+              "portrait": "none-new-side-character",
+              "text": "Three rules on the heath. Walk where the stones can be seen, take what the wind has finished with, and never argue with a wyvern's weather."
+            },
+            {
+              "id": "stamina-r4",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Old-shed shows itself at the quill: papery at the root, light as a year of weather. At the first patch of fresh shed she pauses, then leaves it where it fell - the wyvern is not finished with it, and neither is she."
+            },
+            {
+              "id": "stamina-r5",
+              "phase": "return",
+              "speaker": "sarn",
+              "portrait": "none-new-side-character",
+              "text": "There is a door in the heath, as we say. The goat track. It drops two bends of path, and every winter it drops somebody with them. The wind stacks feathers on it too - pretty ones, fresh ones."
+            },
+            {
+              "id": "stamina-r6",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "Then the door stays shut. We are not late enough to trade a winter's caution for forty minutes, and the fresh ones are not ours. The kept path ends where the job ends - I will walk it whole."
+            },
+            {
+              "id": "stamina-r7",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The kept path goes the long way and the long way pays: old feathers lie thick along the stones, and once the light opens far above and something long and golden crosses it, and the heath stands still until it is past."
+            },
+            {
+              "id": "stamina-r8",
+              "phase": "return",
+              "speaker": "sarn",
+              "portrait": "none-new-side-character",
+              "text": "That is why the heath has gatherers and not heroes. You walked it properly today, cleric. The feathers under your arm are all the storm's old furniture, and the path will remember you walking it."
+            },
+            {
+              "id": "stamina-r9",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "By the wall at the bottom she makes the morning into a page in her ledger: rules kept, fresh refused, one wing overhead, and a weight of old-shed that will need sorting before it is anything at all."
+            },
+            {
+              "id": "stamina-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "She walks the marked path with an escort and refuses every shortcut, taking old-shed only. The winter stores gain a wyvern line, and the heath path earns its first marker stone."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "neet-t5-tend-the-nesting-grounds",
+      "traveler": "neet",
+      "tier": 5,
+      "job": "Tend the Nesting Grounds",
+      "opening": [
+        {
+          "id": "op-01",
+          "phase": "opening",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The frost came early and did not send word ahead. By the first hard night, three wild clutches - bright as a rumor, singing in the dark, far too large for anyone's comfort - had come down from the high nests."
+        },
+        {
+          "id": "op-02",
+          "phase": "opening",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "They came down onto the one crag by the orchard, on a shelf of stone already leaning toward winter. Nobody owns wild things - that is the law of the region, and also the excuse of anyone who owes a favor."
+        },
+        {
+          "id": "op-03",
+          "phase": "opening",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "By the hour before dawn, five keepers held the same freezing watch - a shrine keeper, a warrior, a knight, a baker, a challenger - giant opinions, empty hands. The ledge would not wait, and neither, in the end, did anyone."
+        },
+        {
+          "id": "op-04",
+          "phase": "opening",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "So the ledger opens on a cold page, and the writing is mine to keep - three clutches, one frost, no owner anywhere in it. Tell me which egg I am minding until daylight, and I will write the night honestly."
+        },
+        {
+          "id": "choice",
+          "phase": "choice",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Choose the egg Neet's night will follow.",
+          "note": "Only options whose egg family is unlocked at this tier are shown; one, two, or three options are all valid states. This is one shared event, The Cold Roost: the opening lines are true whichever egg is chosen, and each chosen telling covers what the week did for all three clutches. No route is canon-locked; the other eggs stay available on later trips. The chosen egg is the story's focus, never a settlement award.",
+          "options": [
+            {
+              "material": "Rainbow bird's egg",
+              "teaser": "Bright as a rumor, and loosest of the three on a shelf the frost is already testing."
+            },
+            {
+              "material": "Bluebird's egg",
+              "teaser": "Singing to itself in the dark - the smallest voice on the crag tonight."
+            },
+            {
+              "material": "Wyvern's egg",
+              "teaser": "Far too large for anyone's comfort, and the ledge under it is losing its grip on winter."
+            }
+          ]
+        }
+      ],
+      "dispatch": [
+        {
+          "id": "trip-start",
+          "phase": "trip",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Neet takes the assignment and goes; whatever happens out there comes home with her."
+        },
+        {
+          "id": "trip-end",
+          "phase": "trip",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The trip is over. Open Neet's report to see what happened, and how it ended."
+        }
+      ],
+      "routes": [
+        {
+          "family": 0,
+          "familyLabel": "Life",
+          "material": "Rainbow bird's egg",
+          "confirmBeats": [
+            {
+              "id": "life-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The rainbow clutch's crisis was never cold alone - it was custody. Wild things do not accept strange eggs on the strength of a speech about community."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "life-dep",
+              "phase": "departure",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "Custody first, then. Warmth will have its own hands on this crag; the introductions are mine to make. You cannot hurry a crag into liking somebody - you can only arrange the meeting, and I intend to pay the mornings it asks for."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "life-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts at the crag. The frost knocked the rainbow clutch free of its high nest before anyone had noticed it sat light there; by morning, the strange eggs lay cooling among ordinary ones, bright as sugar."
+            },
+            {
+              "id": "life-r2",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "She walked the ledges with her ledger and counted the neighbors. Every nest up there belonged to somebody, and no argument she could write would move an egg."
+            },
+            {
+              "id": "life-r3",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "The introductions will be made, not argued: a feather from the rainbow nest carried nose to nose, morning by morning, until the crag's birds read strangers as tenants. Nobody consents to a speech; everybody consents to a smell they know."
+            },
+            {
+              "id": "life-r4",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Daisy took the cold half of the problem: the ledge bricked in oven-warmed straw, heat only, tested against her cheek like checking proof, and every strange egg turned a quarter-twist twice a day, the way she steadies dough through its rise."
+            },
+            {
+              "id": "life-r5",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The first straw blanket went out too thick and insulated worse, and Daisy's answer to it became a sentence the ledger keeps in full."
+            },
+            {
+              "id": "life-r6",
+              "phase": "return",
+              "speaker": "daisy",
+              "portrait": "daisy",
+              "text": "That is all right. We can try again another time."
+            },
+            {
+              "id": "life-r7",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The first evening's work was testing how much weight the crag's stone would hold: Dolbur hauled himself up a rope and dropped the coil back down, and Kyle caught it one-handed."
+            },
+            {
+              "id": "life-r8",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "An introduction, Dolbur called it; a catch, said Kyle, more precisely - and they have opened with it ever since."
+            },
+            {
+              "id": "life-r9",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "The high nest has been empty long enough; the mother is not coming back. I wrote it in my margin, not aloud, and kept one rainbow feather for the fledging day."
+            },
+            {
+              "id": "life-r10",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "By the third morning, the crag had stopped noticing which eggs were strange: the introductions held, nose to feathered nose, and the ledges rode warm."
+            },
+            {
+              "id": "life-r11",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The rainbow chicks hatched into borrowed warmth, the bluebird and wyvern eggs hatched without incident the same week, and every egg of the frost came out of its shell safe."
+            },
+            {
+              "id": "life-r12",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "When the fledging came, the rainbow chicks spread over the whole roost - among bluebirds and along the wyvern family's edges - until the roost considered itself mixed, and did not stop to think when it had started."
+            },
+            {
+              "id": "life-r13",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "The roost's hatch-day goes into the shrine almanac tonight, in my own hand - the same hand as the margin note and the kept feather - and red, blue, and gold tellings begin their three-version record beside it."
+            },
+            {
+              "id": "life-r14",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Before the company scattered, Claire named the crag and reclassified it protected - the patrol schedule went up on the spot, in her handwriting, which is how the site held onto everything that happened there."
+            },
+            {
+              "id": "life-r15",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The frost, by Claire's log, broke inside the week and left the orchard untouched - trellis, fence, and fruit without a lasting scar."
+            },
+            {
+              "id": "life-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "And the roost's lasting answer to the frost is beauty: every spring the fledglings' rainbow feathers turn up catching light along the orchard trellis, and the town walks out to see them - a mixed roost made famous, mostly, by its colors."
+            }
+          ]
+        },
+        {
+          "family": 1,
+          "familyLabel": "Mana",
+          "material": "Bluebird's egg",
+          "confirmBeats": [
+            {
+              "id": "mana-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The bluebird clutch dulled overnight - shells gone from paint-bright to wet chalk, the song inside failing. Not an enemy, not a tangle, not a wind: a song losing its note."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "mana-dep",
+              "phase": "departure",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "A song losing its note is no puzzle for paper. I will begin with the correct lullabies, as the rite teaches - and if the nest refuses the neatness, I will try the note it asks for instead."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "mana-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts at the crag before dawn: the bluebird clutch dulled overnight, the other two merely cooling, and on the far ledge a wyvern egg working loose - one event, three needs."
+            },
+            {
+              "id": "mana-r2",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Every need had its keeper inside the week. Dolbur offered loudly to fight the frost; he was politely assigned elsewhere."
+            },
+            {
+              "id": "mana-r3",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Neet led with the shrine's lullabies, every line of them correct - and the nest flatly refused each one; the chick sat through three correct verses and went duller with each."
+            },
+            {
+              "id": "mana-r4",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "So the rite would be a heresy, and the first one I ever intend to keep. Not flat as a mistake - flat where the song rises, on purpose, until the note inside matches me instead of me matching it."
+            },
+            {
+              "id": "mana-r5",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The wrong note needed practice. At midnight, in the shrine pantry, where her voice carries least, she worked the flat note until it sat where she wanted it."
+            },
+            {
+              "id": "mana-r6",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "For the record: my midnight voice carries a little further than the pantry believes. The bakery was kind about it, and I am polite about not knowing they heard."
+            },
+            {
+              "id": "mana-r7",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Then the rite ran, wrong by design: flat where the song rises, until the note inside matched her error and held it. Within two nights the shells brightened out of their wet chalk."
+            },
+            {
+              "id": "mana-r8",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The rest was quiet logistics. Kyle wound cloth around the ladder's metal rungs so nothing would ring - he had heard them ring half the climb up - and then held a still vigil for hours at a stretch while the rite ran."
+            },
+            {
+              "id": "mana-r9",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "He counted the shifts the way he counts anything: by the chick's silences. Seventeen, over the two nights - and the one he was proudest of came when the count ended, because it meant the hush held without him."
+            },
+            {
+              "id": "mana-r10",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Daisy restocked the leaning ledges with oven-warmed straw, heat only, so the other two clutches rode warm; the bakers' quarter stayed muffled, and warm bread came down so nobody had to shout a meal."
+            },
+            {
+              "id": "mana-r11",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Claire kept three nights of silence and wrote the rule the moment asked for: no voices past the tree line."
+            },
+            {
+              "id": "mana-r12",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "On the coldest night, Kyle's ladder-foot slid on the icy rock; Dolbur, out on the high path taking the frost-line reading, dropped his spare rope down, and Kyle caught it mid-slip. Both called it an introduction; neither called it a rescue."
+            },
+            {
+              "id": "mana-r13",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "The almanac gets the hatch-day. The rite record gets the method, exactly as run. What neither record gets is the margin note: some things mend when you stop correcting them."
+            },
+            {
+              "id": "mana-r14",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "By the week's end every egg of the frost had hatched safe, and the roost's hatch-days went into the shrine almanac - red, blue, and gold - in the same tidy hand."
+            },
+            {
+              "id": "mana-r15",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The frost broke inside the week and left the orchard without lasting damage. When the quiet held, the crag - named, protected - went onto the patrol schedule in Claire's hand: the site that asked for hush would get a watch."
+            },
+            {
+              "id": "mana-r16",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The chick hatched healthy and sang flat all spring - the crag's mornings led by one patient bluebird - and its true song came back only after winter, the season the region remembers as quiet."
+            },
+            {
+              "id": "mana-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "What stayed was this: the wrong-lullaby rite on the shrine's records as a working rite, and a town that walks the orchard path hushed at nesting time, every spring."
+            }
+          ]
+        },
+        {
+          "family": 2,
+          "familyLabel": "Stamina",
+          "material": "Wyvern's egg",
+          "confirmBeats": [
+            {
+              "id": "stamina-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The wyvern egg has rolled loose along the failing ledge's lip, and the other two clutches shiver through the frost. The mother came down circling - wide, patient, in no mood for committee."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "stamina-dep",
+              "phase": "departure",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "No climb moves one stone without her leave. I will have the compresses ready, a settling word learned by midnight, and her own signs read before anything shifts."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "stamina-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts at the crag, with a rule of the place: nothing up there moves without the mother's leave, and the night's first work is learning what her leave looks like."
+            },
+            {
+              "id": "stamina-r2",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The mother's circling invited no advice: Claire's cordons closed the orchard path and every roofline a spectator might use, and the region's people, to their credit, stayed behind them."
+            },
+            {
+              "id": "stamina-r3",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Dolbur climbed the winter-hardened rock, and one piton bent on the first reach. He reported it before his boots were down, immediately and cheerfully - which is half of why the climb worked."
+            },
+            {
+              "id": "stamina-r4",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "He had started early because he had heard her first - a sound like stone getting annoyed, he said - so the climb was half-rigged while everyone else was still deciding who would climb."
+            },
+            {
+              "id": "stamina-r5",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Kyle anchored from the storeroom's spare rope and counted every carry. Neet's part was quieter: compresses and a settling word readied long before they were needed, and her eyes on the mother's wings and tail for the right hour."
+            },
+            {
+              "id": "stamina-r6",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "The lesson I learned and kept to myself: approach when her wings folded, wait when her tail set. One wrong guess and the committee convenes itself - and the ledger can suffer a blank when patience is the entry."
+            },
+            {
+              "id": "stamina-r7",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The hour was not ours to decide. Daisy had been up all night regardless, and what she carried out at first light settled the argument better than words could: a loaf, set down on the warm stone at the quarry's foot."
+            },
+            {
+              "id": "stamina-r8",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The mother circled once more over the stone, landed beside the loaf, and the landing decided it: the move went ahead under her leave."
+            },
+            {
+              "id": "stamina-r9",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Four carries later - dry stone, no blasting in its history, room to turn around - the brood was whole at the old quarry ledge, and the mother's next circle was drawn around them."
+            },
+            {
+              "id": "stamina-r10",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The carry baskets were lined with oven-warmed straw, heat only - the roost trick, by week's end, had earned its second career as courier-bedding."
+            },
+            {
+              "id": "stamina-r11",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "My margin, kept for myself: she was never guarding the old ledge. She was deciding whether the quarry was good enough - and the quarry was. Four carries say so better than I did."
+            },
+            {
+              "id": "stamina-r12",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "When the gear came down, the last coil dropped from the ledge straight into Kyle's waiting hands."
+            },
+            {
+              "id": "stamina-r13",
+              "phase": "return",
+              "speaker": "neet",
+              "portrait": "neet",
+              "text": "The landing finished the argument, so I sent the only sign-off I had: one nod, from the correct distance, at a wyvern's eye level. It is not in any record, hers or ours."
+            },
+            {
+              "id": "stamina-r14",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The roost's hatch-days went into the shrine almanac as they came, one line beside the red and blue entries, in the same tidy hand as the rest of the frost week's bookkeeping."
+            },
+            {
+              "id": "stamina-r15",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "When Claire's cordons came down, they came down into something: the crag - named, protected - went onto the patrol schedule in her handwriting, and the quarry ledge went onto the map."
+            },
+            {
+              "id": "stamina-r16",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The frost broke inside seven days and left the orchard untouched. The moved egg hatched safe at the quarry - the first brood its new household ever raised - and the other two clutches hatched untroubled on the crag."
+            },
+            {
+              "id": "stamina-r17",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The crag lost a tenant and gained a neighbor: the wyvern household lives at the quarry ledge now, a fixed point on the map, on an adjusted patrol route - and the one the mother tolerates is Dolbur."
+            },
+            {
+              "id": "stamina-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "And the first sentence of every version of that week stays the same, in the almanac and everywhere it is copied: nobody owns wild things."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

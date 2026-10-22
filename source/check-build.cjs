@@ -1,9 +1,9 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const root=path.resolve(__dirname,'..'),html=fs.readFileSync(path.join(root,'Potion-Maker.html'),'utf8');
-assert.ok(!/__(?:ASSETS|GAME_DATA|ECONOMY_DATA|COSTUME_DATA|FLAVOR_DATA|MATERIAL_TEXT|VISITOR_DIALOGUE|FAIRY_DATA|CORE|STORAGE|APP)__/.test(html),'Unreplaced build token');
+assert.ok(!/__(?:ASSETS|GAME_DATA|ECONOMY_DATA|COSTUME_DATA|FLAVOR_DATA|MATERIAL_TEXT|VISITOR_DIALOGUE|FAIRY_DATA|EXPEDITION_STORY_DATA|EXPEDITION_CHAPTER_DATA|CORE|STORAGE|APP)__/.test(html),'Unreplaced build token');
 const scripts=[...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m=>m[1]);assert.equal(scripts.length,11);scripts.forEach(s=>new vm.Script(s));
 const ctx=vm.createContext({Date,Math});scripts.slice(0,-1).forEach(s=>vm.runInContext(s,ctx));
-for(const[name,file]of [['GAME_DATA','game-data.json'],['ECONOMY_DATA','economy.json'],['FLAVOR_TEXT','flavor-text.json'],['MATERIAL_TEXT','material-descriptions.json'],['VISITOR_DIALOGUE','visitor-dialogue.json'],['FAIRY_DATA','fairies.json']]){
+for(const[name,file]of [['GAME_DATA','game-data.json'],['ECONOMY_DATA','economy.json'],['FLAVOR_TEXT','flavor-text.json'],['MATERIAL_TEXT','material-descriptions.json'],['VISITOR_DIALOGUE','visitor-dialogue.json'],['FAIRY_DATA','fairies.json'],['EXPEDITION_STORY_DATA','expedition-stories.json'],['EXPEDITION_CHAPTER_DATA','expedition-chapters.json']]){
  const actual=vm.runInContext('JSON.stringify('+name+')',ctx),expected=JSON.stringify(JSON.parse(fs.readFileSync(path.join(root,'data',file),'utf8')));assert.equal(actual,expected,file);
 }
 for(const[file,index]of [['core.js',8],['storage.js',9],['app.js',10]])assert.equal(scripts[index].trim(),fs.readFileSync(path.join(root,'source',file),'utf8').trim(),'Stale embedded '+file);
@@ -12,6 +12,8 @@ const required=vm.runInContext('[...TRAVELERS.map(t=>t.portrait),...FAIRIES.map(
 for(const key of required)assert.ok(keys.has(normalize(key)),'Missing embedded art: '+key);
 assert.ok(Object.values(assets).every(s=>s.startsWith('data:')));
 const ids=[...html.slice(0,html.indexOf('<script>')).matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);assert.equal(new Set(ids).size,ids.length,'Duplicate HTML IDs');
+const uiMarkup=html.slice(0,html.indexOf('<script>')),devStart=uiMarkup.indexOf('<details class="dev-cheats">'),devCheats=uiMarkup.slice(devStart,uiMarkup.indexOf('</details>',devStart)+10),rackNote=uiMarkup.slice(uiMarkup.indexOf('<div class="rack-note">'),uiMarkup.indexOf('</div>',uiMarkup.indexOf('<div class="rack-note">'))+6);assert.ok(devStart>=0&&devCheats.includes('id="ingredient-mode-toggle"'),'Exact-ingredient debug control must live in Dev cheats');assert.ok(!rackNote.includes('id="ingredient-mode-toggle"'),'Exact-ingredient control must not remain in the brewing rack');assert.match(devCheats,/>\+100,000,000 coins</);assert.doesNotMatch(devCheats,/>\+10,000 coins</);assert.match(uiMarkup,/Story route material/);assert.doesNotMatch(uiMarkup,/Material to gather/);assert.match(uiMarkup,/The material shapes the story and is not awarded when the trip returns\./);assert.match(uiMarkup,/id="expedition-chapters"/);assert.match(uiMarkup,/id="expedition-chapter-list"/);assert.match(uiMarkup,/id="expedition-story-next"/);assert.match(uiMarkup,/id="expedition-story-secondary"/);assert.match(uiMarkup,/Tier chapters/);assert.match(uiMarkup,/expedition-chapter-card/);
+assert.match(scripts[8],/expeditionChapterDraft/);assert.match(scripts[10],/Ready to continue/);assert.match(scripts[10],/openExpeditionChapterReport/);
 assert.ok(!/<script[^>]+src=|<link[^>]+(?:href="https?:|rel="stylesheet")|<img[^>]+src="https?:/.test(html));
 assert.ok(!/\bfetch\s*\(|XMLHttpRequest|navigator\.sendBeacon|new WebSocket/.test(scripts.at(-1)));
 console.log(`Passed: current sources/data embedded, unique UI IDs, ${Object.keys(assets).length} local media files and no network dependency.`);

@@ -22,15 +22,15 @@ try{home.multipliers[3]=null;g=new PotionGame();g.state.tiers[1]=5;g.collect(1,5
 g=new PotionGame();g.tick(1000,()=>0);assert.equal(g.state.nextVisitorAt,21000);assert.equal(g.tick(20999,()=>0).length,0);
 assert.equal(g.tick(21000,()=>0)[0].kind,'arrived');assert.equal(g.state.travelers[0].phase,'offer');
 assert.equal(g.state.travelers[0].deadline,0);g.collect(0,0);assert.equal(g.canDeliver(0,22000),false);
-assert.equal(g.acceptQuest(0,30000),true);assert.equal(g.state.travelers[0].deadline,90000);assert.equal(g.acceptQuest(0,40000),false);
-assert.equal(g.canDeliver(0,89999),true);assert.equal(g.canDeliver(0,90000),false);
+assert.equal(g.acceptQuest(0,30000,()=>0),true);assert.equal(g.state.travelers[0].deadline,75000);assert.equal(g.acceptQuest(0,40000),false);
+assert.equal(g.canDeliver(0,74999),true);assert.equal(g.canDeliver(0,75000),false);
 const frozen=JSON.stringify(g.questRequirement(0));g.state.tiers[0]=24;assert.equal(JSON.stringify(g.questRequirement(0)),frozen);
-assert.equal(g.deliver(0,31000),true);assert.equal(g.state.potion,null);assert.equal(g.state.travelers[0].phase,'returning');assert.equal(g.state.powerups.protection,0);assert.equal(g.state.travelers[0].quests,0);assert.equal(g.settle(60999).length,0);assert.equal(g.settle(61000).length,1);
+assert.equal(g.deliver(0,31000),true);assert.equal(g.state.potion,null);assert.equal(g.state.travelers[0].phase,'returning');assert.equal(g.state.powerups.protection,0);assert.equal(g.state.travelers[0].quests,0);assert.equal(g.settle(60999).length,0);const rewards=g.settle(61000);assert.equal(rewards.length,1);assert.deepEqual(rewards[0].boost,{type:'protection',amount:1});assert.equal(rewards[0].tickets,2);assert.equal(rewards[0].fairyId,null);
 g=new PotionGame(sanitizeSave(JSON.parse(JSON.stringify(g.state))));assert.equal(g.settle(91000).length,0);
 assert.equal(g.state.powerups.protection,1);assert.equal(g.state.travelers[0].quests,1);
-assert.equal(g.state.travelers[0].phase,'complete');assert.equal(g.dismissVisitor(0,92000,()=>1),true);assert.equal(g.state.nextVisitorAt,152000);
+assert.equal(g.state.travelers[0].phase,'away');assert.equal(g.state.travelers[0].leaveAt,0);assert.equal(g.state.travelers[0].rewardBoost,null);assert.equal(g.state.travelers[0].requirement,null);
 // Deadline survives a reload; failure neither pays a reward nor destroys the potion.
-g=new PotionGame();g.tick(1000,()=>0);g.tick(21000,()=>0);g.acceptQuest(0,22000);g.collect(0,0);
+g=new PotionGame();g.tick(1000,()=>0);g.tick(21000,()=>0);g.acceptQuest(0,22000,()=>0);g.collect(0,0);
 g=new PotionGame(sanitizeSave(JSON.parse(JSON.stringify(g.state))));assert.equal(g.tick(82000,()=>0)[0].kind,'failed');
 assert.equal(g.state.travelers[0].phase,'failed');assert.ok(g.state.potion);assert.equal(g.deliver(0,82000),false);
 assert.equal(g.state.powerups.protection,0);assert.equal(g.state.travelers[0].quests,0);assert.equal(g.settle(900000).length,0);
@@ -80,7 +80,7 @@ g=new PotionGame();g.collect(0,0);g.collect(1,0);g.state.powerups={protection:1,
 assert.equal(g.enhance(0),'success');assert.equal(g.enhance(.999),'protected');const price=g.sell();
 assert.equal(g.state.metrics.brewsStarted,1);assert.deepEqual(g.state.metrics.ingredientsByFamily,[1,1,0]);assert.equal(g.state.metrics.enhancementAttempts,2);assert.equal(g.state.metrics.enhancementsSucceeded,1);assert.equal(g.state.metrics.enhancementsFailed,1);assert.equal(g.state.metrics.protectedFailures,1);assert.equal(g.state.metrics.potionsLost,0);assert.equal(g.state.metrics.coinsEarned,price);assert.deepEqual(g.state.metrics.powerupsUsed,{protection:1,enhancement:1,selling:1});assert.equal(g.state.metrics.recipes['0-0'].highestLevel,2);
 g.collect(1,0);g.sell();assert.equal(g.state.metrics.soldLevelOne,1);g.state.coins=1000;assert.equal(g.buy('speed'),true);assert.equal(g.state.metrics.coinsSpent,137);assert.equal(g.state.metrics.upgradesBought,1);g.recordPlayTime(1000);assert.equal(g.state.metrics.activePlayMs,1000);assert.deepEqual(sanitizeSave(g.state),g.state);
-g=new PotionGame();g.tick(1,()=>0);g.tick(20001,()=>0);g.acceptQuest(0,21000);g.tick(81000,()=>0);assert.equal(g.state.metrics.questsOffered,1);assert.equal(g.state.metrics.questsAccepted,1);assert.equal(g.state.metrics.questsFailed,1);assert.equal(g.state.metrics.visitors.neet.failed,1);
+g=new PotionGame();g.tick(1,()=>0);g.tick(20001,()=>0);g.acceptQuest(0,21000,()=>0);g.tick(81000,()=>0);assert.equal(g.state.metrics.questsOffered,1);assert.equal(g.state.metrics.questsAccepted,1);assert.equal(g.state.metrics.questsFailed,1);assert.equal(g.state.metrics.visitors.neet.failed,1);
 let oldStats={...INITIAL(),version:4};delete oldStats.metrics;oldStats.sold=99;oldStats.ingredients=300;oldStats.failed=21;let statsMigrated=sanitizeSave(oldStats);assert.equal(statsMigrated.sold,99);assert.equal(statsMigrated.ingredients,300);assert.equal(statsMigrated.failed,21);assert.equal(statsMigrated.metrics.historyPartial,true);assert.equal(statsMigrated.metrics.coinsEarned,0);assert.deepEqual(sanitizeSave(statsMigrated),statsMigrated);
 assert.throws(()=>sanitizeSave({...INITIAL(),metrics:{...INITIAL().metrics,coinsEarned:-1}}));assert.throws(()=>sanitizeSave({...INITIAL(),metrics:{...INITIAL().metrics,recipes:{'9-9':{}}}}));
 console.log('Passed: action counters, family/potion details, powerup use, play time, quest statistics, partial-history migration and malformed-stat rejection.');

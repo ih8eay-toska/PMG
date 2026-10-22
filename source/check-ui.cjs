@@ -65,14 +65,173 @@ ctx.game=new core.PotionGame();ctx.upgradeNodes=new Map();ctx.renderUpgradeSumma
 Object.assign(ctx,{progress:new Element(),replayScene:new Element(),buttons:['Pio','Tia'].map(name=>{const b=new Element();b.dataset.character=name;return b;}),trigger:new Element(),portrait:new Element(),selectWardrobe(){}});ctx.window.brewerCharacter='Pio';run(pio.split(/\r?\n/).find(s=>s.includes('function updateChoices(){')).trim());ctx.updateChoices();assert.equal(ctx.buttons[1].disabled,true);ctx.game.state.tiaUnlocked=true;ctx.updateChoices();assert.equal(ctx.buttons[1].disabled,false);ctx.window.brewerCharacter='Tia';ctx.updateChoices();assert.equal(ctx.buttons[1].getAttribute('aria-pressed'),'true');ctx.game.state.tiaUnlocked=false;ctx.updateChoices();assert.equal(ctx.window.brewerCharacter,'Pio');
 // Real sell handler delivers matching orders without awarding a sale or selling boost.
 ctx.game=new core.PotionGame();ctx.game.state.nextVisitorAt=1;ctx.game.tick(now,()=>0);ctx.game.acceptQuest(0,now);ctx.game.collect(0,0);ctx.game.state.powerups.selling=1;
-ctx.updateVisitorShortcut();assert.ok($('visitor-shortcut').classes.has('quest-complete'));ctx.updateSellAction();assert.match($('sell').firstChild.textContent,/Advance quest/);
-line("$('sell').onclick=");$('sell').click();assert.equal(ctx.game.state.travelers[0].phase,'returning');assert.equal(ctx.game.state.coins,0);assert.equal(ctx.game.state.powerups.selling,1);assert.equal(ctx.game.state.potion,null);
-ctx.updateVisitorShortcut();assert.equal($('visitor-shortcut').classes.has('quest-complete'),false);now=ctx.game.state.travelers[0].readyAt;ctx.game.settle(now);ctx.updateVisitorShortcut();assert.ok($('visitor-shortcut').classes.has('quest-complete'));assert.match($('visitor-shortcut').getAttribute('aria-label'),/Quest complete/);
-ctx.game.dismissVisitor(0,now,()=>0);ctx.updateVisitorShortcut();assert.ok($('visitor-shortcut').hidden);
+ctx.updateVisitorShortcut();assert.ok($('visitor-shortcut').classes.has('quest-complete'));ctx.updateSellAction();assert.match($('sell').firstChild.textContent,/Advance quest/);assert.ok($('sell').classes.has('quest-ready'));
+line("$('sell').onclick=");$('sell').click();assert.equal(ctx.game.state.travelers[0].phase,'returning');assert.equal(ctx.game.state.coins,0);assert.equal(ctx.game.state.powerups.selling,1);assert.equal(ctx.game.state.potion,null);ctx.updateSellAction();assert.equal($('sell').classes.has('quest-ready'),false);
+ctx.updateVisitorShortcut();assert.equal($('visitor-shortcut').classes.has('quest-complete'),false);now=ctx.game.state.travelers[0].readyAt;ctx.game.settle(now);assert.equal(ctx.game.state.travelers[0].phase,'away');ctx.updateVisitorShortcut();assert.ok($('visitor-shortcut').hidden);
 // A locked/migrated Tia intro waits for dialogs/visibility, retries and runs once.
 const intro=pio.slice(pio.indexOf('window.playTiaUnlockScene=()=>'),pio.indexOf(';updateChoices();render();',pio.indexOf('window.playTiaUnlockScene=()=>')));assert.ok(intro.length>0);run(intro);
 ctx.window.playTiaUnlockScene();assert.equal(timeouts.length,0);ctx.game.state.tiaUnlocked=true;modal=true;ctx.window.playTiaUnlockScene();timeouts.shift()();assert.equal(scenePlays,0);modal=false;
 ctx.window.playTiaUnlockScene();timeouts.shift()();assert.equal(scenePlays,1);ctx.window.playTiaUnlockScene();assert.equal(timeouts.length,0);
+// Moved debug controls: exact brewing stays opt-in, labels expose the active mode and the larger coin cheat respects the cap.
+ctx.game=new core.PotionGame();ctx.conveyor=new core.MaterialConveyor(456,[0,0,0],()=>0,()=>({}),false);ctx.ingredientMode='conveyor';ctx.startBelt(false);
+line("$('ingredient-mode-toggle').onclick=");
+assert.equal($('ingredient-mode-toggle').textContent,'Choose exact ingredients (debug)');assert.equal($('ingredient-mode-toggle').getAttribute('aria-pressed'),'false');assert.equal($('ingredient-mode-status').textContent,'Conveyor (default)');assert.equal($('dev-cheats-mode').hidden,true);
+$('ingredient-mode-toggle').click();assert.equal(ctx.ingredientMode,'manual');assert.equal($('ingredient-mode-toggle').textContent,'Return to conveyor');assert.equal($('ingredient-mode-toggle').getAttribute('aria-pressed'),'true');assert.equal($('ingredient-mode-status').textContent,'Exact ingredients (debug)');assert.equal($('dev-cheats-mode').hidden,false);assert.match($('rack-label').textContent,/debug/i);
+$('ingredient-mode-toggle').click();assert.equal(ctx.ingredientMode,'conveyor');assert.equal($('ingredient-mode-toggle').textContent,'Choose exact ingredients (debug)');assert.equal($('dev-cheats-mode').hidden,true);assert.equal($('rack-label').textContent,'Catch an ingredient to start');
+let lastNotice='';const previousNotice=ctx.notice;ctx.notice=text=>{lastNotice=text;};line("$('dev-coins').onclick=");const coinsBefore=ctx.game.state.coins;$('dev-coins').click();assert.equal(ctx.game.state.coins,coinsBefore+100000000);assert.equal(lastNotice,'Debug cheat: added 100,000,000 coins.');ctx.game.state.coins=1e300;$('dev-coins').click();assert.equal(ctx.game.state.coins,1e300);ctx.notice=previousNotice;
+// Legacy Neet tier-1 journeys render as four separate paragraphs before the outcome, and the journal rereads both.
+run(app.slice(app.indexOf('function appendStoryParagraphs('),app.indexOf('function markExpeditionStorySeen(')));
+run(app.slice(app.indexOf('function renderExpeditionJournal('),app.indexOf("$('expedition-journal-open')")));
+{
+ ctx.game=new core.PotionGame();ctx.game.state.expeditionStories=[{kind:'route',traveler:'neet',tier:0,family:0,at:1000,seen:true}];
+ const journeyStory=ctx.game.recordExpeditionStory(0,{family:0,tier:0},1000,false,null);
+ ctx.renderExpeditionStory(journeyStory);
+ const storyContent=$('expedition-story-content'),journeySection=storyContent.children[0],outcomeSection=storyContent.children[1];
+ assert.equal(storyContent.children.length,2);
+ assert.equal(journeySection.dataset.kind,'journey');assert.equal(journeySection.children[0].textContent,'Journey');
+ assert.equal(journeySection.children.length,5);assert.equal(journeySection.children.slice(1).length,4);
+ assert.equal(journeySection.children.slice(1).map(paragraph=>paragraph.textContent).join('\n\n'),journeyStory.sections[0].text);
+ assert.equal(outcomeSection.dataset.kind,'outcome');assert.equal(outcomeSection.children[1].textContent,journeyStory.sections[1].text);
+ ctx.renderExpeditionJournal();
+ const journalDetails=$('expedition-journal').children.find(child=>child.className==='expedition-journal-group'),routeArticle=journalDetails.children[1];
+ assert.equal(routeArticle.children[2].textContent,'Journey');assert.equal(routeArticle.children.slice(3,7).length,4);
+ assert.equal(routeArticle.children[7].textContent,'Outcome');assert.equal(routeArticle.children[8].textContent,journeyStory.sections[1].text);
+}
+// Tier chapter flows: picker card, opening choice, route change, absent dispatch, completion beats, journal replay and saved-time notice.
+{
+ const chapter=require('../data/expedition-chapters.json').chapters.find(entry=>entry.id==='neet-t2-mushroom-foraging');
+ const storyDialog=$('expedition-story-dialog'),next=$('expedition-story-next'),secondary=$('expedition-story-secondary'),content=$('expedition-story-content');
+ const previousNow=now;storyDialog.open=false;storyDialog.showModal=()=>{storyDialog.open=true;};storyDialog.close=()=>{storyDialog.open=false;};
+ const lastText=()=>content.children[0].children.at(-1).children.at(-1).textContent;
+ run(app.slice(app.indexOf('function renderExpeditionChapters('),app.indexOf('function renderExpeditions(')));
+ line("$('expedition-story-next').onclick=");line("$('expedition-story-secondary').onclick=");line('function markExpeditionStorySeen(');line('function queueExpeditionStory(');
+
+ // The card is visible and opens even while Neet is away; dispatch is disabled without charge.
+ ctx.game=new core.PotionGame();ctx.game.state.tiers=[1,0,0];ctx.game.state.travelers[0].phase='away';ctx.game.state.coins=1234;
+ ctx.renderExpeditionChapters();
+ const cardFor=tier=>$('expedition-chapter-list').children.find(entry=>entry.children[0].textContent.startsWith('Tier '+tier+' · '));
+ assert.equal($('expedition-chapters').hidden,false);assert.equal($('expedition-chapter-list').children.length,2);
+ assert.match($('expedition-chapter-list').children[0].children[0].textContent,/Tier 1.*Herbs for the Shrine/);assert.match($('expedition-chapter-list').children[1].children[0].textContent,/Tier 2.*Mushroom Foraging/);
+ const card=cardFor(2);assert.ok(card);assert.match(card.children[2].textContent,/Read now/);
+ card.click();assert.equal(storyDialog.open,true);assert.equal(lastText(),chapter.opening[0].text);
+ ctx.advanceExpeditionChapter();assert.equal(lastText(),chapter.opening[1].text);
+ ctx.advanceExpeditionChapter();assert.equal(lastText(),chapter.opening[2].text);assert.equal(next.hidden,true);
+ const absentOptions=content.children[1];assert.equal(absentOptions.children.length,1);assert.match(absentOptions.children[0].children[1].textContent,/Life/);assert.match(absentOptions.children[0].children[1].textContent,/Dense caps/);
+ absentOptions.children[0].click();ctx.advanceExpeditionChapter();
+ assert.equal(next.textContent,'Begin trip');assert.equal(next.disabled,true);assert.match(content.children.at(-1).textContent,/not in the shop/);assert.match(content.children.at(-1).textContent,/No gold is charged/);
+ assert.equal(ctx.game.state.coins,1234);assert.equal(ctx.game.state.expedition,null);assert.deepEqual(ctx.game.state.expeditionChapterDraft,{chapterId:chapter.id,family:0});storyDialog.close();
+ ctx.game=new core.PotionGame(core.sanitizeSave(JSON.parse(JSON.stringify(ctx.game.state))));
+ assert.deepEqual(ctx.game.state.expeditionChapterDraft,{chapterId:chapter.id,family:0});
+ ctx.openExpeditionChapter(0,1);
+ assert.equal(lastText(),chapter.routes.find(route=>route.family===0).departureBeats[0].text);
+ assert.equal(next.textContent,'Begin trip');assert.equal(next.disabled,true);assert.match(content.children.at(-1).textContent,/not in the shop/);storyDialog.close();
+
+ // With all three materials at tier 2, changing route costs nothing; dispatch saves the second route.
+ ctx.game=new core.PotionGame();ctx.game.state.tiers=[1,1,1];ctx.game.state.travelers[0].phase='offer';ctx.game.state.coins=100000;
+ ctx.openExpeditionChapter(0,1);ctx.advanceExpeditionChapter();ctx.advanceExpeditionChapter();assert.equal(content.children[1].children.length,3);
+ const routeCoins=ctx.game.state.coins;content.children[1].children[0].click();ctx.advanceExpeditionChapter();assert.equal(next.textContent,'Begin trip');assert.deepEqual(ctx.game.state.expeditionChapterDraft,{chapterId:chapter.id,family:0});
+ secondary.click();assert.equal(content.children[1].children.length,3);assert.equal(ctx.game.state.coins,routeCoins);assert.equal(ctx.game.state.expedition,null);assert.equal(ctx.game.state.expeditionChapterDraft,null);
+ content.children[1].children[1].click();ctx.advanceExpeditionChapter();assert.deepEqual(ctx.game.state.expeditionChapterDraft,{chapterId:chapter.id,family:1});storyDialog.close();
+ ctx.game.state.travelers[0].requirement={family:0,tier:0,level:0};ctx.game.state.travelers[0].rewardBoost={type:'protection',amount:3};ctx.game.state.travelers[0].leaveAt=now+60000;
+ ctx.game=new core.PotionGame(core.sanitizeSave(JSON.parse(JSON.stringify(ctx.game.state))));
+ assert.deepEqual(ctx.game.state.expeditionChapterDraft,{chapterId:chapter.id,family:1});
+ ctx.openExpeditionChapter(0,1);assert.equal(lastText(),chapter.routes.find(route=>route.family===1).departureBeats[0].text);assert.equal(next.textContent,'Begin trip');assert.equal(next.disabled,false);
+ now=1000;next.click();
+ assert.equal(ctx.game.state.expedition.material.family,1);assert.equal(ctx.game.state.expedition.material.tier,1);assert.ok(ctx.game.state.coins<routeCoins);assert.equal(ctx.game.state.expeditionChapterDraft,null);assert.equal(next.textContent,'Close');storyDialog.close();
+
+ // Completion does not open over gameplay; the chapter card offers Ready to continue.
+ const completed=ctx.game.settleExpedition(ctx.game.state.expedition.readyAt);assert.ok(completed?.story);const story=completed.story;
+ storyDialog.open=false;ctx.queueExpeditionStory(story);assert.equal(storyDialog.open,false);
+ ctx.renderExpeditionChapters();let readyCard=cardFor(2);
+ assert.match(readyCard.children[2].textContent,/Ready to continue/);assert.match(readyCard.className,/ready/);assert.equal(ctx.game.state.expeditionStories[0].seen,false);
+ readyCard.click();assert.equal(storyDialog.open,true);assert.equal(lastText(),story.beats[0].text);assert.equal(ctx.game.state.expeditionStories[0].seen,false);
+ ctx.advanceExpeditionStory();assert.equal(lastText(),story.beats[1].text);storyDialog.close();
+
+ // Closing before the report ends keeps the action available after reload.
+ ctx.game=new core.PotionGame(core.sanitizeSave(JSON.parse(JSON.stringify(ctx.game.state))));
+ ctx.renderExpeditionChapters();readyCard=cardFor(2);
+ assert.match(readyCard.children[2].textContent,/Ready to continue/);readyCard.click();assert.equal(storyDialog.open,true);assert.equal(lastText(),story.beats[0].text);
+ for(let i=1;i<story.beats.length;i++)ctx.advanceExpeditionStory();
+ assert.equal(lastText(),story.beats.at(-1).text);assert.equal(next.textContent,'Finish');ctx.advanceExpeditionStory();
+ assert.equal(storyDialog.open,false);assert.equal(ctx.game.state.expeditionStories[0].seen,true);
+
+ // Reading completes the report; the card returns to the repeatable chapter.
+ ctx.renderExpeditionChapters();const repeatCard=cardFor(2);
+ assert.doesNotMatch(repeatCard.children[2].textContent,/Ready to continue/);repeatCard.click();assert.equal(storyDialog.open,true);assert.equal(lastText(),chapter.opening[0].text);storyDialog.close();
+
+ // The journal offers the same chapter report again.
+ ctx.renderExpeditionJournal();const details=$('expedition-journal').children.find(child=>child.className==='expedition-journal-group'),article=details.children[1];
+ assert.equal(article.children[2].textContent,'Replay chapter report');article.children[2].click();assert.equal(storyDialog.open,true);assert.equal(lastText(),story.beats[1].text);storyDialog.close();
+
+ // A matching sale announces the timer saving; the persisted deadline is what changed.
+ line('function savedTime(');ctx.game=new core.PotionGame();ctx.game.state.coins=100000;ctx.game.state.tiers=[1,1,0];ctx.game.state.travelers[0].phase='offer';now=1000;assert.equal(ctx.game.dispatchCombinedExpedition(0,1,0,1000,()=>0),true);ctx.game.collect(0,1);const saleDeadline=Date.now()+120000;ctx.game.state.expedition.readyAt=saleDeadline;
+ const notices=[],previousNotice=ctx.notice;ctx.notice=text=>notices.push(text);$('sell').click();ctx.notice=previousNotice;
+ assert.equal(notices.length,1);assert.equal(notices[0],"Sold for 7 coins. 5s saved on Neet's expedition timer.");assert.equal(ctx.game.state.expedition.readyAt,saleDeadline-5000);
+ now=previousNow;
+ console.log('Passed: tier-chapter card visibility with Neet absent, opening choice, exact-tier options, persisted route drafts across close/reload, route change without charge, deferred Ready to continue action, early-close reload, repeat-trip reopening, journal replay and saved-time notice.');
+}
+// Tier-1 chapter flows: new-game card, all three routes, saved draft, dispatch, report and journal replay.
+{
+ const chapter=require('../data/expedition-chapters.json').chapters.find(entry=>entry.id==='neet-t1-herbs-for-the-shrine');
+ const storyDialog=$('expedition-story-dialog'),next=$('expedition-story-next'),content=$('expedition-story-content');
+ storyDialog.open=false;storyDialog.showModal=()=>{storyDialog.open=true;};storyDialog.close=()=>{storyDialog.open=false;};
+ const lastText=()=>content.children[0].children.at(-1).children.at(-1).textContent;
+ const cardFor=tier=>$('expedition-chapter-list').children.find(entry=>entry.children[0].textContent.startsWith('Tier '+tier+' · '));
+ ctx.game=new core.PotionGame();ctx.game.state.travelers[0].phase='away';ctx.game.state.coins=100000;
+ ctx.renderExpeditionChapters();
+ assert.equal($('expedition-chapter-list').children.length,1);
+ const card=$('expedition-chapter-list').children[0];assert.match(card.children[0].textContent,/Tier 1.*Herbs for the Shrine/);assert.match(card.children[1].textContent,/3 unlocked routes/);assert.match(card.children[2].textContent,/Read now/);
+ card.click();assert.equal(storyDialog.open,true);assert.equal(lastText(),chapter.opening[0].text);
+ ctx.advanceExpeditionChapter();assert.equal(lastText(),chapter.opening[1].text);
+ ctx.advanceExpeditionChapter();assert.equal(lastText(),chapter.opening[2].text);
+ const options=content.children[1];assert.equal(options.children.length,3);
+ assert.match(options.children[0].children[0].textContent,/Red herb/);assert.match(options.children[0].children[1].textContent,/Life/);
+ assert.match(options.children[1].children[0].textContent,/Blue herb/);assert.match(options.children[1].children[1].textContent,/Mana/);
+ assert.match(options.children[2].children[0].textContent,/Yellow herb/);assert.match(options.children[2].children[1].textContent,/Stamina/);
+ options.children[1].click();ctx.advanceExpeditionChapter();
+ assert.equal(next.textContent,'Begin trip');assert.equal(next.disabled,true);assert.match(content.children.at(-1).textContent,/not in the shop/);
+ assert.deepEqual(ctx.game.state.expeditionChapterDraft,{chapterId:chapter.id,family:1});storyDialog.close();
+ ctx.game=new core.PotionGame(core.sanitizeSave(JSON.parse(JSON.stringify(ctx.game.state))));
+ assert.deepEqual(ctx.game.state.expeditionChapterDraft,{chapterId:chapter.id,family:1});
+ ctx.openExpeditionChapter(0,0);assert.equal(lastText(),chapter.routes.find(route=>route.family===1).departureBeats[0].text);assert.equal(next.disabled,true);storyDialog.close();
+ ctx.game.state.travelers[0].phase='offer';ctx.game.state.coins=100000;
+ ctx.openExpeditionChapter(0,0);assert.equal(lastText(),chapter.routes.find(route=>route.family===1).departureBeats[0].text);assert.equal(next.disabled,false);
+ const dispatchedAt=Date.now();next.click();assert.equal(ctx.game.state.expedition.material.family,1);assert.equal(ctx.game.state.expedition.material.tier,0);assert.ok(ctx.game.state.expedition.readyAt-dispatchedAt>=120000);assert.ok(ctx.game.state.expedition.readyAt-dispatchedAt<121000);assert.equal(ctx.game.state.expeditionChapterDraft,null);assert.equal(next.textContent,'Close');storyDialog.close();
+ const completed=ctx.game.settleExpedition(ctx.game.state.expedition.readyAt);assert.ok(completed?.story);const story=completed.story;
+ storyDialog.open=false;ctx.queueExpeditionStory(story);assert.equal(storyDialog.open,false);
+ ctx.renderExpeditionChapters();const readyCard=cardFor(1);assert.match(readyCard.children[2].textContent,/Ready to continue/);assert.equal(ctx.game.state.expeditionStories[0].seen,false);
+ readyCard.click();assert.equal(storyDialog.open,true);assert.equal(lastText(),story.beats[0].text);
+ for(let i=1;i<story.beats.length;i++)ctx.advanceExpeditionStory();
+ assert.equal(lastText(),story.beats.at(-1).text);assert.equal(next.textContent,'Finish');ctx.advanceExpeditionStory();
+ assert.equal(storyDialog.open,false);assert.equal(ctx.game.state.expeditionStories[0].seen,true);
+ ctx.renderExpeditionJournal();const details=$('expedition-journal').children.find(child=>child.className==='expedition-journal-group'),article=details.children[1];
+ assert.equal(article.children[2].textContent,'Replay chapter report');article.children[2].click();assert.equal(storyDialog.open,true);assert.equal(lastText(),story.beats[1].text);storyDialog.close();
+ for(const legacySeen of [true,false]){
+  ctx.game=new core.PotionGame();ctx.game.state.travelers[0].phase='offer';ctx.game.state.coins=100000;ctx.game.state.expeditionStories=[{kind:'route',traveler:'neet',tier:0,family:1,at:500,seen:legacySeen}];
+  assert.equal(ctx.game.dispatchCombinedExpedition(0,0,1,1000,()=>0),true);const repeated=ctx.game.settleExpedition(121000).story;assert.equal(repeated.chapterId,chapter.id);
+  ctx.renderExpeditionChapters();const repeatReady=cardFor(1);assert.match(repeatReady.children[2].textContent,/Ready to continue/);
+  repeatReady.click();assert.equal(storyDialog.open,true);assert.equal(lastText(),repeated.beats[0].text);storyDialog.close();
+  assert.equal(ctx.game.state.expeditionStories[0].seen,legacySeen);
+ }
+ console.log('Passed: tier-1 chapter card on a new game, three-route opening choice, saved draft across reload, dispatch with 120s timer, deferred Ready to continue report, journal replay and Ready report after repeating seen/unread legacy routes.');
+}
+// Tier-5 chapter flows: five-beat opening, unlocked egg choices, full first report, later viewpoint report, Daisy portrait, journal replay.
+{
+ const chapter=require('../data/expedition-chapters.json').chapters.find(entry=>entry.id==='neet-t5-tend-the-nesting-grounds'),lifeViewpoint=require('../data/expedition-stories.json').travelers.neet.viewpoints['0'].text;
+ const storyDialog=$('expedition-story-dialog'),next=$('expedition-story-next'),content=$('expedition-story-content');
+ const previousNow=now;storyDialog.open=false;storyDialog.showModal=()=>{storyDialog.open=true;};storyDialog.close=()=>{storyDialog.open=false;};
+ const lastText=()=>content.children[0].children.at(-1).children.at(-1).textContent,cardFor=tier=>$('expedition-chapter-list').children.find(entry=>entry.children[0].textContent.startsWith('Tier '+tier+' · '));
+ ctx.game=new core.PotionGame();ctx.game.state.tiers=[4,0,0];ctx.game.state.travelers[0].phase='offer';ctx.game.state.coins=1e6;ctx.openExpeditionChapter(0,4);
+ assert.equal(chapter.opening.length,5);assert.equal(lastText(),chapter.opening[0].text);for(let i=1;i<5;i++)ctx.advanceExpeditionChapter();assert.equal(lastText(),chapter.opening[4].text);
+ const oneOption=content.children[1];assert.equal(oneOption.children.length,1);assert.match(oneOption.children[0].children[0].textContent,/Rainbow bird's egg/);storyDialog.close();
+ ctx.game=new core.PotionGame();ctx.game.state.tiers=[4,4,4];ctx.game.state.travelers[0].phase='offer';ctx.game.state.coins=1e6;ctx.openExpeditionChapter(0,4);for(let i=1;i<5;i++)ctx.advanceExpeditionChapter();
+ const options=content.children[1];assert.equal(options.children.length,3);options.children[0].click();ctx.advanceExpeditionChapter();assert.equal(next.textContent,'Begin trip');const dispatchedAt=Date.now();next.click();assert.equal(ctx.game.state.expedition.material.family,0);assert.equal(ctx.game.state.expedition.readyAt-dispatchedAt,120000);storyDialog.close();
+ const first=ctx.game.settleExpedition(ctx.game.state.expedition.readyAt).story;assert.equal(first.chapterId,chapter.id);assert.equal(first.beats.length,17);ctx.renderExpeditionChapters();const ready=cardFor(5);assert.match(ready.children[2].textContent,/Ready to continue/);ready.click();assert.equal(lastText(),first.beats[0].text);ctx.advanceExpeditionStory();assert.equal(content.children[0].children.length,1);for(let i=2;i<7;i++)ctx.advanceExpeditionStory();assert.equal(lastText(),'That is all right. We can try again another time.');assert.equal(content.children[0].children.length,2);assert.equal(content.children[0].children[0].src,'DaisyPortrait.png');storyDialog.close();
+ ctx.game.markExpeditionStorySeen(first.recordIds);ctx.renderExpeditionJournal();const details=$('expedition-journal').children.find(child=>child.className==='expedition-journal-group'),article=details.children[1];assert.equal(article.children[2].textContent,'Replay chapter report');article.children[2].click();assert.equal(lastText(),chapter.routes.find(route=>route.family===0).returnBeats[0].text);storyDialog.close();
+ ctx.game.state.travelers[0].phase='offer';assert.equal(ctx.game.dispatchCombinedExpedition(0,4,0,2000,()=>0),true);const later=ctx.game.settleExpedition(ctx.game.state.expedition.readyAt).story;assert.equal(later.beats.length,2);assert.equal(later.beats[0].id,'trip-end');assert.equal(later.beats[1].id,'viewpoint');assert.equal(later.beats[1].text,lifeViewpoint);ctx.renderExpeditionChapters();const laterReady=cardFor(5);assert.match(laterReady.children[2].textContent,/Ready to continue/);laterReady.click();assert.equal(lastText(),later.beats[0].text);ctx.advanceExpeditionStory();assert.equal(lastText(),lifeViewpoint);assert.equal(content.children[0].children.length,1);storyDialog.close();
+ now=previousNow;
+ console.log('Passed: tier-5 chapter opening and egg-option gating, 120s dispatch, full first report, exact later viewpoint, Daisy beat portrait, narrator portrait-free beats and journal replay.');
+}
 // Use the actual reveal handler: rewards/save/quota commit before animation resolves.
 Object.assign(ctx,{rewardKind:'hourly',rewardBusy:false,rewardAnimation:null,rewardDialog:new Element(),rewardButtons:Object.fromEntries(['hourly','tickets','skin'].map(k=>[k,{detail:new Element()}])),rewardLabels:{tickets:'tickets',rubies:'rubies',protection:'protection',enhancement:'enhancement',selling:'selling',fairy:'fairy',skin:'skin'},CURRENCY_UNITS:core.ECONOMY.bank.units,rewardArt:x=>x,rewardDescription:r=>r.amount+' '+r.currency});
 run(app.slice(app.indexOf('async function openChest('),app.indexOf("rewardDialog.querySelector('.reward-open').onclick")));
@@ -84,5 +243,5 @@ run(app.slice(app.indexOf('async function openChest('),app.indexOf("rewardDialog
   await ctx.openChest();await ctx.openChest();const history=ctx.game.state.rewardHistory.length;await ctx.openChest();assert.equal(ctx.game.state.rewardHistory.length,history);assert.equal(ctx.rewardDialog.querySelector('.reward-open').disabled,true);assert.match(ctx.rewardDialog.querySelector('.reward-quota').textContent,/0 \/ 3/);
   await ctx.openChest(true);assert.equal(ctx.game.state.rewardHistory.length,history+1);assert.equal(ctx.game.paidBoostInfo().remaining,0);
  }
- console.log('Passed: real UI handlers for manual drops/mode switches/keys, quest handover/completion badge, deferred Tia intro, chest reveals and saved quotas with reduced motion.');
+ console.log('Passed: real UI handlers for moved exact-ingredient debug control, expanded coin cheat, manual drops/mode switches/keys, quest handover and immediate post-reward departure, deferred Tia intro, legacy Neet tier-1 journey/journal paragraph rendering, chest reveals and saved quotas with reduced motion.');
 })().catch(error=>{console.error(error);process.exitCode=1;});

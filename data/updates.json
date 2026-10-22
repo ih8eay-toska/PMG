@@ -1,6 +1,19 @@
 {
   "entries": [
     {
+      "id": "2026-10-22-neet-story-chapters",
+      "date": "2026-10-22",
+      "title": "Neet's story chapters are here",
+      "rubies": 10,
+      "notes": [
+        "Neet’s tier-1 through tier-5 story chapters are now playable.",
+        "Inside a chapter, choose any unlocked Life, Mana or Stamina route to shape the story.",
+        "Read the trip report afterward, and replay it anytime in the Story journal.",
+        "Selling a matching potion shortens an active story trip’s wait.",
+        "A one-time gift of 10 rubies is waiting below."
+      ]
+    },
+    {
       "id": "2026-10-17-commissions-expeditions",
       "date": "2026-10-17",
       "title": "New journeys, potion commissions, and a livelier shop",
@@ -10,7 +23,7 @@
         "Commission names follow potion tiers, and each Life, Mana and Stamina offer chooses a random unlocked recipe. Choices remain saved until you complete a commission. The permanent Orders icon below the visitor shows progress and delivers a qualifying potion with one click. Matching short visitor quests keep priority on the Sell button.",
         "Visitor expeditions now have their own menu. Choose a portrait, read the visitor’s introduction and Pio- or Tia-specific greeting, then choose a job from the three-column material-tier grid. Kyle sits beside Tirami in the visitor picker.",
         "There are 250 original character-inspired expedition jobs: 25 for every visitor. Neet gathers supplies for her shrine, Daisy works around bakery deliveries, Demian checks records, Kyle searches his stockpile, and the others have their own approaches.",
-        "Each job tier requires that material tier in all three families. Only a visitor currently offering or waiting for a potion order can be dispatched. Dispatch replaces that order and costs gold; prices increase with the assignment and material tier. Other visitors, brewing and commissions continue during a trip.",
+        "A job tier opens when any one material family reaches that tier; only families at that tier can offer their material as that job's story route. The material shapes the story and is not awarded when the trip returns. Only a visitor currently offering or waiting for a potion order can be dispatched. Dispatch replaces that order and costs gold; prices increase with the assignment and material tier. Other visitors, brewing and commissions continue during a trip.",
         "Expeditions continue while the game is closed. Every new trip combines guaranteed stamps, likeability and character-specific supplies with random fairy and currency bonuses. Higher tiers increase supplies and stamp payouts. Fairy pools follow both visitor specialties and material progression.",
         "Fairies are selected from the available pool at dispatch. Misses are saved for each fairy, with a guaranteed find after two misses when that fairy is selected again. Supply bonuses and fairy results are combined into one trip; hover a job to inspect its full reward information.",
         "The Stamp Exchange lets you choose boost charges, Pushcat tickets or fairy copies. All 42 fairy entries are included behind material-tier gates; maxed fairies cannot be exchanged. Stamps and promised trip rewards are saved, and older trips retain their original rewards.",

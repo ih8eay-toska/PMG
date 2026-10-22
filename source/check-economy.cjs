@@ -17,6 +17,7 @@ assert.ok(ECONOMY.conveyor.ticketProbability+ECONOMY.conveyor.solutionProbabilit
 for(const n of ['activeMs','breakMs','skinCost','boostCost'])positive(ECONOMY.events[n]);
 assert.deepEqual(ECONOMY.events.boostBundle,{protection:1,enhancement:1,selling:1});
 assert.ok(ECONOMY.visitors.waitMaxMs>=ECONOMY.visitors.waitMinMs);
+assert.equal(ECONOMY.visitors.prepareMinMs,45000);assert.equal(ECONOMY.visitors.prepareMaxMs,90000);
 assert.ok(ECONOMY.visitors.boostMax>=ECONOMY.visitors.boostMin);
 for(const n of Object.values(ECONOMY.visitors))assert.ok(Number.isSafeInteger(n)&&n>=0);
 assert.equal(ECONOMY.visitors.rubyReward,0);assert.equal(ECONOMY.visitors.ticketReward,2);
@@ -24,7 +25,7 @@ for(const kind of ['hourly','tickets','skin']){const c=ECONOMY.chests[kind];posi
 // Change the shared config in an isolated engine; consumers must use it at runtime.
 const savedConfig=structuredClone(ECONOMY),corePath=path.join(__dirname,'core.js'),changed=structuredClone(ECONOMY);
 changed.upgrades.materials.costs[0][0]=123;changed.upgrades.materials.costs[0][1]=492;
-changed.costumes.ticketPrice=777;changed.events.skinCost=42;changed.events.boostCost=2;changed.events.boostBundle={protection:2,enhancement:3,selling:4};changed.chests.hourly.priceBands[0].cost=12345;changed.chests.tickets.cost.amount=7;changed.chests.duplicateTickets=500;changed.visitors.prepareMs=45000;changed.visitors.boostMax=7;
+changed.costumes.ticketPrice=777;changed.events.skinCost=42;changed.events.boostCost=2;changed.events.boostBundle={protection:2,enhancement:3,selling:4};changed.chests.hourly.priceBands[0].cost=12345;changed.chests.tickets.cost.amount=7;changed.chests.duplicateTickets=500;changed.visitors.prepareMinMs=45000;changed.visitors.prepareMaxMs=45000;changed.visitors.boostMax=7;
 const ctx=vm.createContext({ECONOMY_DATA:changed,require:createRequire(corePath),module:{exports:{}},Date,Math});vm.runInContext(fs.readFileSync(corePath,'utf8'),ctx);const game=new ctx.module.exports.PotionGame();
 assert.equal(game.upgradeInfo('tier0').cost,123);game.state.tiers[0]=1;assert.equal(game.upgradeInfo('tier0').cost,492);
 game.state.tickets=777;assert.ok(game.buyCostume('Kids_Costume.png'));assert.equal(game.state.tickets,0);

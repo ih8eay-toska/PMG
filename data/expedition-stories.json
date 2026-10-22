@@ -1,0 +1,993 @@
+{
+  "batch": "v2-stories-t1-5",
+  "event": {
+    "name": "The Cold Roost",
+    "tier": 5,
+    "opening": "The frost came early and did not send word ahead. By the first hard night, three wild clutches - one bright as a rumor, one singing to itself in the dark, one far too large for anyone's comfort - had come down from the high nests to the one crag by the orchard, where the shelf of stone was already leaning toward winter. Nobody owns wild things. That is the law of the region and also the excuse of anyone who owes a favor, which is why a shrine keeper, a warrior, a knight, a baker, and a challenger all ended up keeping the same freezing watch before dawn - giant opinions, empty hands. Whoever wrote it down first used the same first line in every version: the ledge would not wait, and neither, in the end, did anyone.",
+    "routes": {
+      "0": {
+        "family": "Life",
+        "material": "Rainbow bird's egg",
+        "name": "The Cold Roost - Life telling",
+        "text": "The frost knocked the rainbow clutch loose of its high nest before anyone noticed it sat light there; by morning the strange eggs lay cooling among ordinary ones, bright as sugar - and the crisis was custody, because wild things do not accept strange eggs on the strength of a speech about community. Daisy bricked the ledge in oven-warmed straw, heat only, turning each strange egg a quarter-twist, twice a day, like dough through its rise; Neet carried a feather from every host nest nose-to-nose until the crag smelled of tenants, not trespassers. On the first evening Dolbur hauled up a rope and dropped the coil; Kyle caught it one-handed - 'an introduction,' they agreed, ever after. The rainbow chicks hatched into borrowed warmth and fledged across the whole roost, which considered itself mixed ever after; the bluebird and wyvern eggs hatched without incident the same week, so every egg of the frost came out of its shell safe. Neet entered the roost's hatch-days in the shrine almanac, first line of its three-version record; the crag - named, protected, with the schedule in Claire's hand - stayed famous every spring for rainbow feathers catching light along the orchard trellis; and the frost broke within the week, leaving the orchard - trellis, fence, and fruit - without a lasting scar."
+      },
+      "1": {
+        "family": "Mana",
+        "material": "Bluebird's egg",
+        "name": "The Cold Roost - Mana telling",
+        "text": "The bluebird clutch dulled overnight - shells gone from paint-bright to wet chalk, the song inside failing. Not an enemy, not a wind: a song losing its note while the other two clutches cooled and a wyvern egg loosened on the ledge - one event, three needs. Neet led with correct lullabies; the nest refused each one. So she sang wrong on purpose - flat where the song rises - until the note inside matched her error and held; the loosened wyvern egg was settled safe against the stone under the night watch, and Daisy restocked the leaning ledges with warmed straw so the cooling clutches steadied. Kyle cloth-wrapped the ladder's rungs and kept stillness for hours; Dolbur dropped his spare rope down the icy rock when Kyle's foot slipped, and called it an introduction, not a rescue. The shells brightened in two nights; by the week's end every egg of the frost had hatched safe, and all three hatch-days went into the shrine almanac - red, blue, and gold - in the same tidy hand. Once the quiet could be trusted, the crag - named, protected - went onto the patrol schedule in Claire's hand; the frost broke inside the week and left the orchard without lasting damage. And the chick sang flat all spring - healthy, then hushed, which the region remembers as the quiet season - recovering its true song only after winter; Neet's wrong-lullaby rite went into the shrine's records as a working rite, and the town kept the custom of walking the orchard path hushed at nesting time."
+      },
+      "2": {
+        "family": "Stamina",
+        "material": "Wyvern's egg",
+        "name": "The Cold Roost - Stamina telling",
+        "text": "The wyvern mother came down circling - wide, patient, in no mood for committee - while her egg rolled loose on the failing ledge and the other two clutches shivered through the frost. Claire's cordons closed the orchard path; Dolbur climbed the winter-hardened rock, one piton bending on the first reach - reported immediately, which is half of why the climb worked; Kyle anchored from his storeroom rope and counted everything. The move waited for permission: Daisy's dawn loaf went onto the warm stone at the quarry's foot, the mother landed, and the landing decided it. Four carries later the brood was whole at the old quarry ledge, the mother's next circle drawn around them, and the last coil dropped straight into Kyle's hands. The frost broke inside seven days and the orchard came through it without lasting damage; every egg of the three clutches hatched safe - rainbow, bluebird, wyvern - and the roost's hatch-days went into the shrine almanac in the same tidy hand. The crag was named and put onto the patrol schedule, the quarry ledge went onto the map - where the wyvern household still lives - and the first sentence of every version stayed the same: nobody owns wild things."
+      }
+    }
+  },
+  "travelers": {
+    "charlotte": {
+      "participant": false,
+      "routes": {
+        "1": {
+          "0": {
+            "job": "Arrange a Herbal Tea Delivery",
+            "material": "Red herb",
+            "hook": "A widowed cousin's winter mornings have been running thin, and she would refuse charity from anyone she knows. Charlotte is scheduling an anonymous Tuesday.",
+            "outcome": "She arranges a red-herb tea delivery under a false signature - 'a well-wisher' - with the best service and no publicity. The standing order holds all winter; the cousin never learns the donor, and Charlotte pretends not to know either, darling ♡, flawlessly."
+          },
+          "1": {
+            "job": "Arrange a Herbal Tea Delivery",
+            "material": "Blue herb",
+            "hook": "The blue-herb tisane has been paired with the good china at every gathering this season, and the servants' hall has noticed. Charlotte has noticed too.",
+            "outcome": "She renews the estate's subscription quietly, the servants' hall first and the parlor second. Servants first ♡ - she calls it taste, and this once the word applies without modification."
+          },
+          "2": {
+            "job": "Arrange a Herbal Tea Delivery",
+            "material": "Yellow herb",
+            "hook": "The garden party order has doubled three days ahead of itself, and any delay now would be a tragedy with guests present. Charlotte takes out the household ledger.",
+            "outcome": "She fixes the delivery window herself and books the second cart from her own accounts. Nothing spills, nothing is late; the tea-merchant gives her his smallest bow and largest invoice, and she accepts both ♡."
+          }
+        },
+        "2": {
+          "0": {
+            "job": "Select Mushrooms for the Kitchen",
+            "material": "Sturdy mushroom",
+            "hook": "The kitchen wants sturdy mushrooms, and the market's old mushroom woman has had a slow autumn. Charlotte is choosing a basket with her whole attention.",
+            "outcome": "Charlotte selects for the kitchen, and the old woman's basket gets sold first whether or not it is her turn - charity wears pearls on this street. The old woman's winter is sold out by November ♡, the estate's cellar is stocked, and nobody is the wiser."
+          },
+          "1": {
+            "job": "Select Mushrooms for the Kitchen",
+            "material": "Clever mushroom",
+            "hook": "The clever mushroom has applied for a place above the estate's table, and Charlotte is conducting the auditions with a notebook.",
+            "outcome": "Proper tastings follow, with notes: her tasting ledger runs three words to the line - 'darling, no' / 'darling, yes' / 'darling, again.' The ledger becomes famously legible ♡, and caterers book by it as though it were law."
+          },
+          "2": {
+            "job": "Select Mushrooms for the Kitchen",
+            "material": "Lively mushroom",
+            "hook": "A lively mushroom jumped from the noble plate at dinner, and the scandal has outrun the stain. Charlotte is redesigning the coolroom before breakfast.",
+            "outcome": "The coolroom gets shelved low and broad so nothing can leap far, and the seating so nothing leaps near. Dignity is preserved ♡, and a note to the market closes the case: 'lively is for the pot, never the cloth.'"
+          }
+        },
+        "3": {
+          "0": {
+            "job": "An Afternoon at the Orchard",
+            "material": "Fruit of power",
+            "hook": "The orchard's apple fund is having a bad year, and the whole town can see it. Charlotte is hostessing a picnic that has a ledger in the hamper.",
+            "outcome": "Charlotte's afternoon at the orchard is a charity picnic on paper - everyone fed, everyone welcome, nobody audited. The apple fund survives its first bad year because she quietly underwrote the bins ♡, signing the ledger with a flourish that fools nobody and bothers nobody either."
+          },
+          "1": {
+            "job": "An Afternoon at the Orchard",
+            "material": "Fruit of wisdom",
+            "hook": "The parlor bowl has been dull since the last piece broke, and the wisdom fruit wears its best color at dusk. Charlotte goes to the orchard personally, which is an event.",
+            "outcome": "She chooses one fruit for the color and keeps it for the conversation. Guests arrive with gossip and leave with questions ♡, which she considers the bowl's finest decoration - herself excluded, obviously."
+          },
+          "2": {
+            "job": "An Afternoon at the Orchard",
+            "material": "Fruit of spirit",
+            "hook": "The far orchard is worth the visit and is two towns of bad road away, and no hired carriage in town will drive it in one day. Charlotte packs the hamper herself.",
+            "outcome": "Wheels, patience, and weather unimpressed by anybody's title bring the route comfortably into one day, unhurried - Charlotte does not outsource an afternoon ♡. The coachman is thereafter legally entitled to brag about it."
+          }
+        },
+        "4": {
+          "0": {
+            "job": "Feathers for an Elegant Fan",
+            "material": "Rainbow bird feathers",
+            "hook": "The retired music mistress is leaving for the coast, and a fan is the only present that says the right thing by saying nothing. Charlotte has found the right feathers.",
+            "outcome": "A fan of rainbow feathers, gathered from the orchard trellis's bright drift and washed soft, chosen one at a time, is given with a card signed 'Charlotte, obviously' ♡. The mistress cries properly, which was the entire intended effect."
+          },
+          "1": {
+            "job": "Feathers for an Elegant Fan",
+            "material": "Bluebird feathers",
+            "hook": "The blue feathers for the new fan keep shifting hue between morning and dusk, and the fan-maker calls it a defect. Charlotte calls it a discovery.",
+            "outcome": "Stencil blue at noon and dusk violet by evening - the accident is declared intentional immediately ♡. The two-color fan is copied by three fan-makers within the season and credited, vaguely, to fashion itself."
+          },
+          "2": {
+            "job": "Feathers for an Elegant Fan",
+            "material": "Wyvern feathers",
+            "hook": "The estate's great fan has been re-ribbed four times and still wilts, and wyvern feather is rumored never to wear at all. Charlotte commissions the frame and attends the test herself.",
+            "outcome": "The wyvern-feather rib frame does not wilt, snap, or gossip; she tests it against one driving breeze herself ♡. It outlasts the season's fashions and one careless niece, and is expected to outlast the next."
+          }
+        }
+      },
+      "neutral": {
+        "job": "Choose Eggs for the Estate",
+        "hook": "The estate's decor order has come back wanting eggs for the mantle - natural, unremarkable. Charlotte is dressing for the mantelpiece consultation.",
+        "text": "The estate's decor order asks Charlotte to choose eggs 'for the mantle, natural, unremarkable.' Charlotte declines in the third person: 'Charlotte keeps nothing that was meant to hatch, darling ♡.' She visits the frost-roost fence once, at the correct distance, in the correct hat, and approves of the protection without ever mentioning she could have bought the whole ledge. Some commissions resolve themselves ♡."
+      }
+    },
+    "claire": {
+      "participant": true,
+      "routes": {
+        "1": {
+          "0": {
+            "job": "Medicinal Herbs for the Patrol",
+            "material": "Red herb",
+            "hook": "Regulation says every patrol kit carries red-herb dressings in date. Claire is conducting the check as though the regulation had personally asked her.",
+            "outcome": "Two dressings have expired, and that is a fact, not an opinion. She restocks, dates every entry, and logs the fault against herself rather than the quartermaster's clerk. The dated-kit standard follows, and one quartermaster is grateful beyond policy."
+          },
+          "1": {
+            "job": "Medicinal Herbs for the Patrol",
+            "material": "Blue herb",
+            "hook": "A patch of blue herbs on the patrol route has grown oversized inside a fairy ring and glows, faintly, at dusk. The route report has no field for that.",
+            "outcome": "Claire consults the rulebook, finds nothing literal, and files a margin note. The margin note is annexed: enchanted flora now gets a line in the route report, which she considers the rulebook improving itself."
+          },
+          "2": {
+            "job": "Medicinal Herbs for the Patrol",
+            "material": "Yellow herb",
+            "hook": "The infirmary wants yellow herbs kept through winter, which means drying them perfectly, which means slowly. Claire has requisitioned patience accordingly.",
+            "outcome": "She writes the drying roster, watches it to the end, and signs her own shift first. The barracks infirmary has run her roster every winter since, and no jar of yellow has gone moldy under it."
+          }
+        },
+        "2": {
+          "0": {
+            "job": "Check the Forest Rations",
+            "material": "Sturdy mushroom",
+            "hook": "A flooded trail has shortened the forest rations, and the count has to be honest before anything can be fixed. Claire has brought her own pen.",
+            "outcome": "One ranger has been skipping meals to stretch the rations; Claire doubles that ranger's portion by standing order - 'eat first, report after' - and files the shortage herself. The eat-first order holds, and no ranger on her patrol skips a meal again."
+          },
+          "1": {
+            "job": "Check the Forest Rations",
+            "material": "Clever mushroom",
+            "hook": "A traveling trader sells ration seals of very good wax, and the wax is not his. Claire intends to establish whose it is, courteously, in that order.",
+            "outcome": "She checks provenance by asking before accusing and finds the assistant copying the master's waxcut without his knowledge. The seal design is changed, and the grateful trader teaches her workshop the difference himself."
+          },
+          "2": {
+            "job": "Check the Forest Rations",
+            "material": "Lively mushroom",
+            "hook": "Ration crates of lively mushrooms leap on the forest road, and the count sheets riding with them never arrive legible. Claire is riding along with the tally.",
+            "outcome": "She lays the sheets flat, counts by loading order, and signs each one before the wheels turn. Sheets arrive readable from then on, and her loading-order tally is adopted at the depot gate for everything that hops."
+          }
+        },
+        "3": {
+          "0": {
+            "job": "Escort the Orchard Workers",
+            "material": "Fruit of power",
+            "hook": "A wasp scare has half the picking crew at the orchard's far edge, and the escort run includes them whether or not they want walking home. Claire is bringing a bell.",
+            "outcome": "She teaches the bell-code - one ring, stand; two rings, walk - and rings it herself all afternoon. The code is still hung by the orchard gate, in her phrasing, shorter than any rulebook."
+          },
+          "1": {
+            "job": "Escort the Orchard Workers",
+            "material": "Fruit of wisdom",
+            "hook": "The escort route crosses a grove where the wisdom fruit is said to fray direction, and Claire never leads through a rumor. She walks it once alone first.",
+            "outcome": "Walking straight turns out to be rumor rather than fact, so she routes the crew by test-ribbon, tying one at arm's height every ten paces and walking by ribbon rather than certainty. The ribbon-path outlives the season, and grove-walkers still follow it without knowing whose rule it was."
+          },
+          "2": {
+            "job": "Escort the Orchard Workers",
+            "material": "Fruit of spirit",
+            "hook": "The spirit row's track has churned to mud under the harvest carts, and the escort walks it twice a day regardless. Claire has requisitioned sticks and rope.",
+            "outcome": "She lays stick-and-rope footing the length of the lane - slow, exact, correct. The dry-track holds under cartload and boot alike to this day, and the orchard stops losing boots to the lane entirely."
+          }
+        },
+        "4": {
+          "0": {
+            "job": "Survey the Feathered Watchtower",
+            "material": "Rainbow bird feathers",
+            "hook": "The watchtower garrison reports rainbow down on its ledges and considers it decorative. Claire has been sent to survey what decoration builds nests.",
+            "outcome": "She surveys, marks the niches, and shelters them in the survey findings themselves. The tower's niche list is attached to its garrison orders - protection by paperwork, which survives every change of garrison after it."
+          },
+          "1": {
+            "job": "Survey the Feathered Watchtower",
+            "material": "Bluebird feathers",
+            "hook": "The tower's blue-dyed banner shifted hue at dusk last week and was read as the wrong signal by three different lookouts. Claire has the signal log open.",
+            "outcome": "She pins all blue-signal hours to fixed light rather than the clock alone and assigns the dusk hours a second lookout. That is the dusk-lock rule, and the wrong-signal scare never repeats under it."
+          },
+          "2": {
+            "job": "Survey the Feathered Watchtower",
+            "material": "Wyvern feathers",
+            "hook": "The tower stair is missing a step, or has camouflaged one, and the garrison has stopped agreeing on which floor lands where. Claire counts stairs the way she counts anything: twice.",
+            "outcome": "Her season survey renumbers every stair and finds the worn ghost. The stair census joins the season list, and the missing step is rebuilt in black oak so it can hide from nobody ever again."
+          }
+        }
+      },
+      "viewpoints": {
+        "0": {
+          "job": "Protect the Cliffside Nests",
+          "material": "Rainbow bird's egg",
+          "text": "The schedule on the crag is in her handwriting, filed before anyone asked, because paperwork delayed is patrolling gone. Her route: two boundary walks to the orchard fence - dawn and dusk, three on frost nights - timed to the frost's retreat, which is how the frost got its date. What she does not put on record: she watched Neet carry feathers nose-to-nose like a diplomat presenting credentials, and concluded the shrine's machinery of welcome did more for the roost than her schedule ever would. A regulation exists to hold the door; it does not have to be the reason anyone enters."
+        },
+        "1": {
+          "job": "Protect the Cliffside Nests",
+          "material": "Bluebird's egg",
+          "text": "Claire set the no-voices rule at the tree line and kept three nights of her own silence, standing exactly where the wind crossed, so even her mail's rustle could not carry. What no rule records: she counted her own heartbeats to keep from checking the ledge, and on those nights she signed nothing - because paper whispers, and a signature is still a sound."
+        },
+        "2": {
+          "job": "Protect the Cliffside Nests",
+          "material": "Wyvern's egg",
+          "text": "Claire drew the cordons along the orchard's existing fence-line - a boundary that already existed, so no new fence was bought and no tree was cut. She opened the watching days to the town bell only, and closed them the same way. Her margin, written for herself and filed under unsent: 'a regulation held generously is kept better than one enforced.'"
+        }
+      }
+    },
+    "daisy": {
+      "participant": true,
+      "routes": {
+        "1": {
+          "0": {
+            "job": "Herbs for Savoury Bread",
+            "material": "Red herb",
+            "hook": "A neighbor is getting by on plain bread and a bad cough, and priced suggestions have failed twice already. Daisy ties her apron differently - the good crust is coming.",
+            "outcome": "She sets red-herb oil in a separate brush - sealed and apart, always - and bakes the good crusty savory. The no-complaints loaf appears on three doorsteps, unlabeled, on time, and the coughs do not outlast the batch."
+          },
+          "1": {
+            "job": "Herbs for Savoury Bread",
+            "material": "Blue herb",
+            "hook": "The blue herb tea has been selling slowly beside bread that sells fast, and Daisy suspects the bread is not the problem. The counter wants cards.",
+            "outcome": "She writes pairing cards to go beside the loaves: this tea with this crust, nothing exotic, nothing wasted. The cards become the shop's first written menu, and the regulars collect them out of loyalty and hunger in equal parts."
+          },
+          "2": {
+            "job": "Herbs for Savoury Bread",
+            "material": "Yellow herb",
+            "hook": "Festival week doubles every order the morning it is announced, and the yellow-herb buns lead the queue. Daisy has flipped the counter slate to a promise list.",
+            "outcome": "She bakes in two shifts and keeps the promise list open where customers can watch it shrink. Every order goes out on time, and the promise list becomes permanent furniture."
+          }
+        },
+        "2": {
+          "0": {
+            "job": "Mushrooms for the Morning Loaves",
+            "material": "Sturdy mushroom",
+            "hook": "The shop's earliest customers count coins before calories, and Daisy does not intend either of them to lose. The mushroom crate has drawn her eye.",
+            "outcome": "Sturdy caps go into a new savory base - oven-sealed, separate from the sweet work, as everything stays. The copper loaf, quarter price and full smell, becomes the morning regular and never once costs the shop its name."
+          },
+          "1": {
+            "job": "Mushrooms for the Morning Loaves",
+            "material": "Clever mushroom",
+            "hook": "The evening test batch keeps out-tasting the morning one, and the mushrooms are identical. Daisy suspects the sky is an ingredient.",
+            "outcome": "Clever mushrooms change their flavor after sunset; she times the bake by the sky from then on instead of the clock. The sunset-timing note sits in her recipe book's margin, followed by bakers two streets over who do not know it is hers."
+          },
+          "2": {
+            "job": "Mushrooms for the Morning Loaves",
+            "material": "Lively mushroom",
+            "hook": "The lively mushrooms are already jumping on the cutting board - to everyone's amusement and nobody's supper. It is Daisy's turn to deal with them.",
+            "outcome": "The first batch leaps free; she thanks them politely, 'That is all right. We can try again another time,' and tries again with a weighted cloth. The second bakes without a single escapee, the board-weight becomes habit, and no grudge survives the day."
+          }
+        },
+        "3": {
+          "0": {
+            "job": "Help Pick the Orchard Fruit",
+            "material": "Fruit of power",
+            "hook": "Daisy has a wedding-cake order and an orchard-gate bin full of exactly the right fruit that is not hers. She is standing in front of the bin working out the polite approach.",
+            "outcome": "She asks before borrowing, which almost nobody thinks to do. The bin comes back full of three loaves as thanks, and the orchard and the bakery have traded ever since without a single invoice."
+          },
+          "1": {
+            "job": "Help Pick the Orchard Fruit",
+            "material": "Fruit of wisdom",
+            "hook": "Daisy is picking with a proof-sheet propped on her basket, because the reading will not wait and the fruit will not either. The wisdom rows look interested in both.",
+            "outcome": "Fruit of wisdom tastes faintly of whatever was being read while it ripened - the wedding cake seems well-read and none of the guests can say why. The reading-pairing experiment enters her notebook: one careful paragraph, never repeated aloud."
+          },
+          "2": {
+            "job": "Help Pick the Orchard Fruit",
+            "material": "Fruit of spirit",
+            "hook": "The spirit rows are high, the ladders are tall, and two hired pickers are working with hands too cold to cooperate. Daisy checks her apron knot.",
+            "outcome": "She brings her apron-front carry and teaches it to both pickers on the spot. They keep their fruit and their warmth; the orchard's children copy the carry for blackberry season and rename nothing."
+          }
+        },
+        "4": {
+          "0": {
+            "job": "Feathers for a Pastry Brush",
+            "material": "Rainbow bird feathers",
+            "hook": "The old pastry brush is down to its last honest bristles, and a neighbor has been waving something soft and bright at the shop window since morning. Daisy waves back.",
+            "outcome": "The neighbor trades her washed rainbow feathers for two morning loaves, and the brush is bound that same day. The retired one goes into her keepsake tin - its first resident, which every tin must someday have."
+          },
+          "1": {
+            "job": "Feathers for a Pastry Brush",
+            "material": "Bluebird feathers",
+            "hook": "The frost mornings have been dyeing feathers blue by night and un-dyeing them by noon, and the shop window shows both stories at once. Daisy is choosing sides.",
+            "outcome": "Frost-blue brushes exactly right for celebration icing and wrong for every plain day, so she keeps two. One is reserved for festival days and labeled in ribbon, so nobody borrows it by accident."
+          },
+          "2": {
+            "job": "Feathers for a Pastry Brush",
+            "material": "Wyvern feathers",
+            "hook": "Heavy glaze has destroyed three pastry brushes this season, and the scrubbing sink has become a war memorial. Daisy knows who trades for old wyvern feathers.",
+            "outcome": "One worn wyvern feather - old-shed, traded off the heath gatherers for a bag of day-old buns - is bound to an honest handle, permission asked first. The big-glaze brush outlasts three wooden handles and is expected to outlast the fourth."
+          }
+        }
+      },
+      "viewpoints": {
+        "0": {
+          "job": "Eggs for a Fresh Cake Batch",
+          "material": "Rainbow bird's egg",
+          "text": "Daisy never got upset, not even the morning her first straw blanket went out too thick and insulated worse. 'That is all right. We can try again another time' - and she meant it. What she told no one at the ledge: the strange eggs were warm at the center when found, like dough with one more proof than anyone knew, so the rainbow mother had left recently. Her two quarter-turns a day ran on written labels so Neet would not worry whose egg was turned; the eggs stayed sealed and apart from the oven's business, and the cake batch used farm-market eggs from the kitchen side. The straw is a heat trick, and the heat is for the eggs."
+        },
+        "1": {
+          "job": "Eggs for a Fresh Cake Batch",
+          "material": "Bluebird's egg",
+          "text": "Daisy kept the bakers' quarter muffled and restocked the leaning ledges with warmed straw so the other two clutches rode warm through the rite. Her private ear knew first: the bluebird's song had slowed the way a proof slows when the room turns cold. She kept working, and moved her morning bell to noon for three days. The town never learned why the silence had a volunteer."
+        },
+        "2": {
+          "job": "Eggs for a Fresh Cake Batch",
+          "material": "Wyvern's egg",
+          "text": "The story people tell is that the mother accepted the move because Daisy, absurdly, baked. True, and also not: she baked because a long watch with no meal service is, in her opinion, a form of cold. The oven was fired at the bakery's back so no heat or noise reached the eggs, and the loaf never crossed toward the nests - it went the other way entirely, to the quarry. Her unsaid observation: the mother was not circling the egg, she was circling the quarry - measured the way she measures proof, rise by how much shape changes. When the loaf landed at dawn, the mother landed after it."
+        }
+      }
+    },
+    "demian": {
+      "participant": false,
+      "routes": {
+        "1": {
+          "0": {
+            "job": "Inspect the Herbal Inventory",
+            "material": "Red herb",
+            "hook": "The red-herb inventory is short one jar, and the ledger says it was sold somewhere no herb of that grade is sold. Demian finds the entry interesting rather than alarming.",
+            "outcome": "The trail ends at a clerk's honest slip, not a theft; the correction goes into both books, and the clerk is praised for the paper trail ♡ - not scolded for the jar. He closes the file: 'Hmm. The arithmetic forgave you before I did.'"
+          },
+          "1": {
+            "job": "Inspect the Herbal Inventory",
+            "material": "Blue herb",
+            "hook": "The blue-herb lots carry numbers that stopped parsing mid-season, and the office default is suspicion. Demian starts with questions instead.",
+            "outcome": "The grower's signet changed mid-season without filing; the questions find an heir's unregistered mark, which is properly registered ♡, and the market's paperwork quietly improves wherever his review has walked once."
+          },
+          "2": {
+            "job": "Inspect the Herbal Inventory",
+            "material": "Yellow herb",
+            "hook": "The yellow-herb depot counts its stock by feel, and the depot master calls the feeling experience. Demian counts it as a habit that has never met a second hand.",
+            "outcome": "Two tallies, two hands, one sheet becomes the depot rule. The depot master learns it in an afternoon and teaches it better than the office pamphlet did ♡, which Demian notes with the closest thing he has to a smile."
+          }
+        },
+        "2": {
+          "0": {
+            "job": "Check the Mushroom Weight Tickets",
+            "material": "Sturdy mushroom",
+            "hook": "The mushroom weight tickets are honest, and every scale around them says they are wrong. Both cannot be true, and Demian wants to hear the scale's side too.",
+            "outcome": "The tickets are true and the scale plate is corroded - four grams of rust, exactly. He orders the plate replaced and does not fine the seller whose weights were honest ♡, noting that the scale, like the ledger, is owed maintenance rather than suspicion."
+          },
+          "1": {
+            "job": "Check the Mushroom Weight Tickets",
+            "material": "Clever mushroom",
+            "hook": "The clever-mushroom tickets are arithmetically fine and profitably wrong in the second digits. Demian pulls the whole manifest column to be sure.",
+            "outcome": "Twos for sevens, everywhere it profits; he cross-checks against the manifest column and initials every margin. The cross-check habit stays ♡, and the swap-artist's route quietly closes under fresh per-ticket numbering without one public word."
+          },
+          "2": {
+            "job": "Check the Mushroom Weight Tickets",
+            "material": "Lively mushroom",
+            "hook": "Lively mushrooms weigh one way before they jump and another after, and the depot's flat fee does not believe there is a difference. Demian is writing the schedule.",
+            "outcome": "The bounce rule lands: weigh in half-full brackets, exact to the fee schedule. The disputes end ♡, and clerks quote the rule back to him years later believing it older than it is."
+          }
+        },
+        "3": {
+          "0": {
+            "job": "Audit the Orchard Receipts",
+            "material": "Fruit of power",
+            "hook": "The orchard's receipt book pays 'the crew,' which was six names at harvest and is one name by winter. Demian is going to the orchard in person, with his hat.",
+            "outcome": "He verifies payees on site, hat in hand, courteous as arithmetic, and the crew's own tally is honored to the copper ♡. The file closes on a margin he keeps for himself: 'Hmm. Money is not the only thing that was owed here.'"
+          },
+          "1": {
+            "job": "Audit the Orchard Receipts",
+            "material": "Fruit of wisdom",
+            "hook": "The harvest ledger's second column is in a different hand than the first - and was written a season later. Demian does not raise his voice; he raises a crosswalk page.",
+            "outcome": "He re-links the columns line by line, so the discrepancy can be seen rather than argued. The crosswalk sheet becomes the orchard's standard audit exhibit ♡, quoted at three other farms by autumn."
+          },
+          "2": {
+            "job": "Audit the Orchard Receipts",
+            "material": "Fruit of spirit",
+            "hook": "The grand audit is days of receipts with one inkwell, which - unlike almost anything else he does - Demian would do for free. The orchard gate will have a rule on it by Friday.",
+            "outcome": "He posts it himself: receipts read, totals agreed, then fruit moves. The orchard master copies his phrasing verbatim onto the gate ♡ and, after three attempts, cannot improve it."
+          }
+        },
+        "4": {
+          "0": {
+            "job": "Count the Feather Import Bundles",
+            "material": "Rainbow bird feathers",
+            "hook": "The rainbow-bundle import count skips the festival's dusk arrivals, which is legal and - in Demian's opinion - the most expensive kind of clever. He decides to count them himself.",
+            "outcome": "He counts the dusk arrivals at the gate, twice, importer present both times. The loophole closes itself out of embarrassment ♡, which he considers the cheapest regulation ever enforced."
+          },
+          "1": {
+            "job": "Count the Feather Import Bundles",
+            "material": "Bluebird feathers",
+            "hook": "The blue bundles' shade moves both grade and duty, and the tickets are being politely unhelpful about which is which. Demian requests samples with the paperwork.",
+            "outcome": "He samples, initials, and rules the grading fair - then writes the sampling method into the margin for next season. It becomes the office's first margin note ♡, inherited by every auditor since without knowing whose hand it is."
+          },
+          "2": {
+            "job": "Count the Feather Import Bundles",
+            "material": "Wyvern feathers",
+            "hook": "The wyvern-bundle freight is riding on carts that were hoped at rather than rated, and the load sheets know it. Demian starts at the corners.",
+            "outcome": "He checks every axle rating against its load sheet, corner to corner, and the load-sheet rule follows - one cart, one rating, no folklore ♡. Two wagoners still say 'rated, not hoped' as though they thought of it."
+          }
+        }
+      },
+      "neutral": {
+        "job": "Review the Egg Handling Permits",
+        "hook": "The frost week's permits are arriving early, complete, and paid - which is, for a permit file, the most suspicious thing Demian has seen all season. He has opened the folder.",
+        "text": "The frost week's permits are filed correctly by everyone - which is, to Demian, the suspicious part - until he reads the roost's: 'nobody owns wild things,' written plainly in the purposes field, in an almanac hand he half recognizes. He stamps it, waives the fee with a margin line - 'weather, not profit' - and says 'Hmm' in the tone that means approval. That week's paperwork remains his favorite file ♡."
+      }
+    },
+    "dolbur": {
+      "participant": true,
+      "routes": {
+        "1": {
+          "0": {
+            "job": "Trailside Herb Hunt",
+            "material": "Red herb",
+            "hook": "The trail clinic wants red herbs, and Dolbur knows a shortcut that is technically a trail. He is halfway down it already.",
+            "outcome": "A hiker's ankle turns on the far ledge, and the shortcut is the reason. He reports the wrong turn first, carries them back second, splint third, apology throughout. Every hunt after starts with a splint kit check, which the town clinic calls his finest invention and he calls overdue paperwork."
+          },
+          "1": {
+            "job": "Trailside Herb Hunt",
+            "material": "Blue herb",
+            "hook": "The blue-herb patch by the trail head is being raided bird by bird, and Dolbur has been assigned six rows to defend with his voice.",
+            "outcome": "Shouting only teaches the birds to wait, so he ties a decoy bundle - carrot tops, red rag, plenty of cheer - and the birds mob that instead. The patch survives, and the decoy trick spreads from base camp to base camp."
+          },
+          "2": {
+            "job": "Trailside Herb Hunt",
+            "material": "Yellow herb",
+            "hook": "The yellow-herb bundles are heavier than they look, and Dolbur has announced he will carry the biggest one in a single trip.",
+            "outcome": "The ropes snap, and something in him snaps politely along with them. He repairs cheerfully and splits the load into three trips; the three-trip walk-back rhythm becomes how the trail shares heavy loads."
+          }
+        },
+        "2": {
+          "0": {
+            "job": "Mushrooms at Base Camp",
+            "material": "Sturdy mushroom",
+            "hook": "Storm season is early and the base camp awning is older than everyone standing under it. Dolbur has promised the camp a mushroom dinner and a dry night.",
+            "outcome": "He props the frame on sturdy crates and gets the caps into the pot on schedule. The awning holds, 'crate-brace first, cook after' is camp law with his name on the margin, and dinner is good."
+          },
+          "1": {
+            "job": "Mushrooms at Base Camp",
+            "material": "Clever mushroom",
+            "hook": "Base camp's clever mushrooms rearrange themselves every dawn, and the scouts want to know whether the arrangement means anything. Dolbur treats the question seriously.",
+            "outcome": "He pegs a string through the line they keep refusing, and the string-line traces to a spring nobody knew was close. The scouts credit the mushrooms, and he lets them."
+          },
+          "2": {
+            "job": "Mushrooms at Base Camp",
+            "material": "Lively mushroom",
+            "hook": "Dinner is lively mushrooms in the pan, which means timing matters and checking matters more. Dolbur has one job and one salt cellar.",
+            "outcome": "He salts the pan before checking whether they are ready - his documented way to lose dinner. He owns it at once, re-rinses, weights the lid with a stone, and dinner survives twice; the pot-lid stone is glued into the camp rulebook's margin as a lesson."
+          }
+        },
+        "3": {
+          "0": {
+            "job": "Haul the Orchard Harvest",
+            "material": "Fruit of power",
+            "hook": "The harvest cart is fully loaded and the orchard lane has a dip in it that eats wheels. Dolbur volunteers before he has seen the lane.",
+            "outcome": "The cart mires mid-way; he hauls it out alone, then makes everyone unload - including himself - before the second pull. 'Unload first' is painted on the orchard gate, and the mire has never eaten a cart since."
+          },
+          "1": {
+            "job": "Haul the Orchard Harvest",
+            "material": "Fruit of wisdom",
+            "hook": "The wisdom rows are known to turn compasses, and the harvest wagons have to cross them twice a day. Someone has to lead and someone has to count.",
+            "outcome": "Dolbur navigates the wagons by fence posts, counting aloud in order - his kind of arithmetic. The orchard paints a cart-lane exactly where his counting held, and the wagoneers call it the counting lane."
+          },
+          "2": {
+            "job": "Haul the Orchard Harvest",
+            "material": "Fruit of spirit",
+            "hook": "The grand single haul across the spirit rows is a legend everyone talks Dolbur into every year. This time he walks the route first, with a rope in one hand and a plan in his head.",
+            "outcome": "He splits everything into three lighter loads before touching a single rope, and takes them through without a snap or a story. The trip-loading lesson lands with the orchard's head-row veteran, who thanks him by name, and he is unbearable about it for exactly a week."
+          }
+        },
+        "4": {
+          "0": {
+            "job": "Scout the Feathered Cliffs",
+            "material": "Rainbow bird feathers",
+            "hook": "A fledgling's cry has been coming off the feathered cliffs all morning, and the rainbow down drifting past it never answers. Dolbur is checking the rope twice, at two different people's insistence.",
+            "outcome": "He climbs and re-nests the fledgling by hand. The fledgling is home, the ledge carries a warning flag so nobody serenades the same spot twice, and the two people who checked his rope get the first telling."
+          },
+          "1": {
+            "job": "Scout the Feathered Cliffs",
+            "material": "Bluebird feathers",
+            "hook": "The echo caves behind the cliffs return every sound wrong, and the bluebird-feather pickers want their paths back. Dolbur is asked to scout because he is loud enough to double-check.",
+            "outcome": "The caves scatter feathers and directions with equal mischief, so he ties his marked cord at each fork and laughs at himself for needing it, which makes it easier for everyone else to admit they need it too. The cord-path becomes the scouts' map of the caves."
+          },
+          "2": {
+            "job": "Scout the Feathered Cliffs",
+            "material": "Wyvern feathers",
+            "hook": "The scree below the cliffs is heavy with old-shed wyvern feathers - worth their weight in winter stores, and heavy is exactly the problem. Dolbur is going anyway.",
+            "outcome": "He marks every rest point with a distance-stone, his first plan built for other people's feet. The scree has mile-markers from that day on, and nobody drops a bundle short of a stone again."
+          }
+        }
+      },
+      "viewpoints": {
+        "0": {
+          "job": "Guard the Nesting Ridge",
+          "material": "Rainbow bird's egg",
+          "text": "Dolbur kept the crag's night watch so the eggs were never alone - all frost week, kenneling downwind so his snoring could not reach the ledge, counting each clutch aloud at dusk until the number matched. He fell asleep mid-count twice and made it up by walking the cold hours so someone else could rest. The report says 'watch kept.' The truth beneath it: nothing bent, snapped, or needed re-roping on his watch, and he is quietly prouder of that than of anything he has climbed."
+        },
+        "1": {
+          "job": "Guard the Nesting Ridge",
+          "material": "Bluebird's egg",
+          "text": "The perimeter was the hardest duty Dolbur ever volunteered for: stillness in snow, no humming, none. He paced only the long side, upwind, so his steps drifted sound away from the ledge. What nothing records: he practiced at base camp with a coin balanced on his boot, lost it eleven times, found it every time, and counted the practice a success on principle."
+        },
+        "2": {
+          "job": "Guard the Nesting Ridge",
+          "material": "Wyvern's egg",
+          "text": "Dolbur's report leads with its apology: one (1) piton, bent, reported immediately - told Kyle before his boots were down, re-roped, climb finished. What he does not tell everyone: he heard the mother before anybody, a sound like stone getting annoyed, which is why the climb started early. He also announced two carries when four turned out right; the correction, at guild volume, is how the town learned both numbers. As far as he is concerned, his rank is now 'the one she circles with.'"
+        }
+      }
+    },
+    "kyle": {
+      "participant": true,
+      "routes": {
+        "1": {
+          "0": {
+            "job": "Find Suitable Herbs in Storage",
+            "material": "Red herb",
+            "hook": "The shop's shelf has no red-herb dressing tonight, and someone needs it tonight. Kyle knows a storeroom that keeps promises under dust.",
+            "outcome": "His storeroom has it - labeled, dated, real - and he runs the delivery himself after dark. The shelf-order habit starts that same evening, 'everything once, then twice,' and his storeroom has not surprised him since."
+          },
+          "1": {
+            "job": "Find Suitable Herbs in Storage",
+            "material": "Blue herb",
+            "hook": "Blue bundles with three different labels and one actual contents are sitting in incoming stock, and someone has to be the person who checks. Kyle appoints himself.",
+            "outcome": "He tests each label against the leaf, no shortcuts; the bundles go out re-labeled correct, and his own label standard is written the same night - name, date, and where the last label was wrong. Nothing in the shop surprises him either now."
+          },
+          "2": {
+            "job": "Find Suitable Herbs in Storage",
+            "material": "Yellow herb",
+            "hook": "The heavy yellow stock has to go down a stair built for people with empty hands, and bravado has already been tried once. Kyle counts the turns first.",
+            "outcome": "One man, two hands, one count: he counts each step aloud, sets the load down breathing, and goes again until it is done. The two-hands rule ends up chalked on the stair post, where the loads can read it."
+          }
+        },
+        "2": {
+          "0": {
+            "job": "Sort the Mushroom Stockpile",
+            "material": "Sturdy mushroom",
+            "hook": "The mushroom stockpile has to split into keep, cook, and finished, and the third pile is the one nobody claims. Kyle has been counting the stockpile all morning.",
+            "outcome": "He splits it clean and then refuses to call the past-it pile waste: the dry caps are pressed into fuel briquettes for the bakehouse ovens. Nothing in that storeroom is wasted once, and nothing is wasted twice."
+          },
+          "1": {
+            "job": "Sort the Mushroom Stockpile",
+            "material": "Clever mushroom",
+            "hook": "Clever mushrooms have moved into the stockpile and rearranged its labels overnight, which the stockroom has logged as sabotage. Kyle treats it as a dare.",
+            "outcome": "He answers with a fresh label rule - initials, a tick, and one small check - and re-tags everything by hand. The mushrooms win the day regardless; his inventory entry concedes it, and the stockroom calls it his most mature entry to date."
+          },
+          "2": {
+            "job": "Sort the Mushroom Stockpile",
+            "material": "Lively mushroom",
+            "hook": "Lively mushrooms are rolling off every shelf lip in the old racks in slow, deliberate arcs, and catching them is not a plan. Kyle has a hammer.",
+            "outcome": "He bends a lip on each shelf - one evening, no rant - and nothing has rolled off since. A victory over physics rather than mushrooms, and he counts it honestly as the more impressive of the two."
+          }
+        },
+        "3": {
+          "0": {
+            "job": "Check the Fruit Crates",
+            "material": "Fruit of power",
+            "hook": "The bruised fruit at the crate bottoms has been written off all week, and the press house has been cold all week. Kyle has noticed both facts at once.",
+            "outcome": "The bruise-first crates go to the press house the same day, and the winter jam happens because of it. His rule goes up on the beam: 'bottoms first.'"
+          },
+          "1": {
+            "job": "Check the Fruit Crates",
+            "material": "Fruit of wisdom",
+            "hook": "The wisdom crates ripen unevenly and sort themselves in ways the eye distrusts, and the loft believes its eyes. Kyle prefers his hands.",
+            "outcome": "He re-sorts by feel, twice, and stands by the second count; the saying goes up in his own hand - 'if it rolls to you, it is yours to carry' - and the loft adopts it as wages policy."
+          },
+          "2": {
+            "job": "Check the Fruit Crates",
+            "material": "Fruit of spirit",
+            "hook": "Spirit-fruit crates climb the loft one man and one stair at a time, which is arithmetic against the man. Kyle has been staring at the stairway wall.",
+            "outcome": "He builds the crate ramp - an evening of planks and pegs - and tests it with himself as the load before trusting it with any fruit. The ramp holds, and loft time drops from an hour to minutes."
+          }
+        },
+        "4": {
+          "0": {
+            "job": "Dust off the Feather Bundles",
+            "material": "Rainbow bird feathers",
+            "hook": "The loft has an unopened crate with a name on it that is not anyone's business except the name's. Kyle reads it anyway, which is where the job begins.",
+            "outcome": "He dusts the crate, carries it down whole, and asks around until it reaches its owner's hands arriving exactly as found. A loft rule follows: names are investigated, not stored."
+          },
+          "1": {
+            "job": "Dust off the Feather Bundles",
+            "material": "Bluebird feathers",
+            "hook": "The blue bundles have been shedding their color onto everything pale, including invoices. Kyle is tagging before the next sale rather than after the next argument.",
+            "outcome": "Every bundle gets its shade marked, wet and dry, so the next buyer buys honestly. His own bundle sells as what it was rather than what it looked like - logged under 'losses' and 'profits' at once."
+          },
+          "2": {
+            "job": "Dust off the Feather Bundles",
+            "material": "Wyvern feathers",
+            "hook": "The wyvern bundles punish the same backs the loft has punished for years, and no one has ever written the lifting rules where the lifting happens. Kyle has chalk.",
+            "outcome": "The beam charter goes up mid-job: legs, not back; count your stairs; set it down and breathe. Three helpers adopt it before he finishes writing, and the beam is consulted more than the ladder after that."
+          }
+        }
+      },
+      "viewpoints": {
+        "0": {
+          "job": "Inspect the Egg Packing Straw",
+          "material": "Rainbow bird's egg",
+          "text": "Kyle measured his dare before taking it: knots on the belt rope, the ledge's fall counted, the climb line chosen twice. First to the abandoned nest, as promised - and back down with knots to spare. When Dolbur dropped the coil, the catch was one-handed. 'A catch,' he filed it. 'Recreatable on request.' What never got logged: he timed the climb, and he will admit only that the time was good."
+        },
+        "1": {
+          "job": "Inspect the Egg Packing Straw",
+          "material": "Bluebird's egg",
+          "text": "Kyle counts dares by challenges mastered, and this one fought dirty: stillness cannot be trained on any rock he knows. His answer was inventory thinking. The ladder's rungs rang - he heard it on the way up - so he wrapped them in cloth strips from his kit; the storeroom labels everything, and now, apparently, clothes it. He counted the shifts by the chick's silences - seventeen, across the two nights - and was prouder of the hush after his count ended, because it held without him. He checked the wind hourly, kept upwind of the ledge; the thing that breaks a vigil is never the person holding it, it is whatever the wind was carrying."
+        },
+        "2": {
+          "job": "Inspect the Egg Packing Straw",
+          "material": "Wyvern's egg",
+          "text": "Kyle built the anchor from his own spare rope - tagged 'good rope' in the storeroom, never issued, now issued. He counted the carries - four, matching Dolbur's loud correction - and re-set the sling knots before each one, because a knot slides when you stop looking at it. His private count: breaths, four to a carry, hands steady by the second breath of each. Storeroom discipline, applied to a winged mother; the rope went back on its hook after, with the tag updated - 'issued once.'"
+        }
+      }
+    },
+    "luke": {
+      "participant": false,
+      "routes": {
+        "1": {
+          "0": {
+            "job": "Herbs for the Familiars",
+            "material": "Red herb",
+            "hook": "A familiar limps in off the north road, and the stall's herbs are not what the paw wants. Luke is already taking off his hat.",
+            "outcome": "The hat carries the patient home; the red bed gives what the paw asks for, and it heals. The hat keeps its dent. His ledger line for the week: '...the dent stays. On purpose.'"
+          },
+          "1": {
+            "job": "Herbs for the Familiars",
+            "material": "Blue herb",
+            "hook": "The familiars refuse the blue herb twice, and Luke is asked what they do want. He says nothing, which everyone present takes for an agreement to find out.",
+            "outcome": "He waits; then the familiar leads him past the stall beds, past the good labels, to a far patch the tastings missed, and the tea is made from that. He does not label any of it. Ledger line: '...no labels needed, apparently.'"
+          },
+          "2": {
+            "job": "Herbs for the Familiars",
+            "material": "Yellow herb",
+            "hook": "The old dog's winter is a long one this year, and yellow herb can help - weakly, steadily, the way an old dog prefers its help. Luke starts the kettle.",
+            "outcome": "He mixes the tea the weak way, because strong and sudden is for emergencies and this is neither. One line goes on the stall door: 'Every evening. Even when it rains.' The dog agrees by sleeping closer, and the line is never taken down."
+          }
+        },
+        "2": {
+          "0": {
+            "job": "Find Familiar-Safe Mushrooms",
+            "material": "Sturdy mushroom",
+            "hook": "Someone small wants the high shelf, and the only ladder in the shop has rules attached to it. Luke goes to look at the sturdy caps instead.",
+            "outcome": "Sturdy caps, wide as saucers, make fine stairs; he counts them twice and leaves the third alone, because a nest is holding its shadow there now. The mushroom-stairs last all spring, and one kitten approves - loudly, per his note: '...loudly.'"
+          },
+          "1": {
+            "job": "Find Familiar-Safe Mushrooms",
+            "material": "Clever mushroom",
+            "hook": "Familiars have been answering voices that are not attached to anything, and the clever-mushroom patch is the prime suspect. Luke takes the case quietly.",
+            "outcome": "The mushrooms copy familiar calls, but the copied voice is off; he finds the true cluster by sitting still until a call comes honestly. The imitation patch gets one small chalk line - nothing scary - and the familiars stop being fooled. Notebook entry: '...the chalk holds.'"
+          },
+          "2": {
+            "job": "Find Familiar-Safe Mushrooms",
+            "material": "Lively mushroom",
+            "hook": "The young one is racing the roofline at dusk again, and the neighbors have begun learning its name by heart. Luke is considering one drop of tea.",
+            "outcome": "One drop of lively-mushroom tea goes into the supper dish, and the quiet hour arrives on its own, surprised to be wanted. He writes the hour into every day after that; the young one forgives him by Tuesday, which he noted in advance: '...Tuesday.'"
+          }
+        },
+        "3": {
+          "0": {
+            "job": "Fruit Treats for the Pets",
+            "material": "Fruit of power",
+            "hook": "Stall signs promise that fruit of power is good for every age, and one of the pets is young enough to believe a stall sign. Luke is not.",
+            "outcome": "He keeps the fruit on the windowsill anyway and feeds soft mash instead, twice a day, saying nothing out loud about later. The promise holds; so does the note underneath the pot: '...patient fruit, he decides.'"
+          },
+          "1": {
+            "job": "Fruit Treats for the Pets",
+            "material": "Fruit of wisdom",
+            "hook": "The talking-bird has been asking a single word since the wisdom fruit went near it, and the word is 'why.' The word is aimed directly at Luke.",
+            "outcome": "It asked for three days straight; he trades riddles until the bird trades better, and the truce holds - mostly. The perch stays with the question, and the closing tally reads: '...a good word to have won.'"
+          },
+          "2": {
+            "job": "Fruit Treats for the Pets",
+            "material": "Fruit of spirit",
+            "hook": "The old dog's evening walks have been getting shorter by the week, and spirit fruit promises nothing it cannot keep. Luke cuts the slivers thin.",
+            "outcome": "Thin slivers go into the evening bowl, and the slow walks get longer, street by street. Not healed - kinder. The ledger entries that week run three ellipses deep: '...good.'"
+          }
+        },
+        "4": {
+          "0": {
+            "job": "Soft Feathers for New Bedding",
+            "material": "Rainbow bird feathers",
+            "hook": "A fledgling is too light for wool bedding, and the autumn cold does not care about dignity. Luke goes gathering with a clean jar.",
+            "outcome": "Rainbow down, washed soft, makes a nesting jar - shallow on purpose, so small birds can leave when they choose. One does, and comes back; that gets a second line in the ledger, the most the ledger has ever said: '...it came back.'"
+          },
+          "1": {
+            "job": "Soft Feathers for New Bedding",
+            "material": "Bluebird feathers",
+            "hook": "The winter boxes keep losing heat at night, and Luke has heard of a bedding that sings about weather before the weather arrives. He is willing to listen.",
+            "outcome": "Bluebird down sings when the cold comes - a thin note under the door, a chaperone for the frost - so he lines the winter boxes with it. The small ones sleep through their own warnings now, which is what bedding is for. Ledger note: '...hears the weather first.'"
+          },
+          "2": {
+            "job": "Soft Feathers for New Bedding",
+            "material": "Wyvern feathers",
+            "hook": "The winter litter needs a den, and the wind has spent the month redesigning the garden. One old-shed feather is wider than the whole doorway.",
+            "outcome": "Wyvern feather, taken with a permission that asked everyone including the wind; the winter litter sleeps under it, one piece. It keeps the frost out and - somehow - the fear out too. His note is the longest of the month: '...fear is smaller under big roofs.'"
+          }
+        }
+      },
+      "neutral": {
+        "job": "Watch over Familiar Eggs",
+        "hook": "Familiar eggs are due across the frost week, and Luke's own nesting corner has gone quiet in the wrong way. He has a hat, a stool, and the patience to sit through either.",
+        "text": "The frost week: Luke watched the crag from the mill path with two familiars pretending to be rocks. He did not cross the tree line; the wild eggs were not his to keep, and his own familiar's eggs nested warm at home without coaxing. The roost stayed safe - that much the town knows - and the small cold birds on the mill roof voted to keep their opinions private. His only remark went home with him: '...some weeks, watching is the job.'"
+      }
+    },
+    "neet": {
+      "participant": true,
+      "routes": {
+        "1": {
+          "0": {
+            "job": "Herbs for the Shrine",
+            "material": "Red herb",
+            "hook": "The fever cart coughs at the gate, and the shrine's red shelf has been leaned on hard this week. Neet walks the whole shelf before promising anyone anything.",
+            "journey": "Neet finishes the shelf walk and leaves through the gate, the strong batch's last measured share in her basket. The fever cart is just ahead, its driver shaking his head over a wrapper-stripped shelf. 'Whole road's coughing,' he says. 'Two stops behind yours.' He has nothing to sell her.\n\nThe settlement on his round is next, its strong beds stripped bare weeks ago - every root that promised speed bought the minute the coughing began. What remains is the settlement's own kitchen-row patch of mild red leaf, planted for household coughs: same root, slower in the cup, unwanted all season because the fever has everyone buying fast. A grandmother has held the queue since dawn, three grandchildren coughing in turns, and Neet counts her basket against it and sees the arithmetic nobody says aloud: not enough.\n\nSo she offers one bargain, plainly: the strong share in her basket, weighed to two jars, for the whole spare cutting of the mild row. The grandmother looks at the strong bundle, then at Neet. 'It's the same root, girl. Just slower.' 'And the fever does not wait,' Neet agrees. The grandmother shakes hands on it - two jars for the row - and Neet pays the two, adding nothing beyond the price they named.\n\nBy her count on the walk home, the mild cutting is four times the leaf she left with: slower by half, but the same root - enough to keep the shrine's shelf and first kit stocked.",
+            "outcome": "She reorders the red shelf by urgency instead of alphabet - fever jars nearest the door - and quietly refills the first kit before anyone asks. 'Urgent first' becomes the shelf rule, and the first kit has never been short since."
+          },
+          "1": {
+            "job": "Herbs for the Shrine",
+            "material": "Blue herb",
+            "hook": "Two of the blue-herb beds carry labels nobody can read anymore. Neet agrees to straighten the beds without agreeing to trust them.",
+            "journey": "The blue-herb beds' real trouble is the ledger: it kept the bad ink's story, reading the sunward bed as mild and the shaded bed as strong.\n\nDosed by the ledger's story, the strong crop plays mild and the mild plays strong - half a remedy or a double one - and the seed saved from its 'best' bed would plant the error again. Neet tastes a leaf from each - one bitter first, then cold, the other answering differently - but the hot dry week slurs the harvests; a tongue can say the crops differ, not whose story is true. The two wait in separate cups.\n\nMena, the youngest volunteer, finally comes off the wall: she knows. She watered both beds the year before the labels went, was scolded for overwatering the shaded one, and kept them straight ever since: the mean, bitter leaf always came off the sunward bed - the one the ledger reads as mild. She gives it up like a small crime confessed.\n\nNeet does not taste again - the tongue said its all. Mena's account is testable another way: an overwatered bed keeps its drenching, so Neet walks where Mena says she stood with the can, and finds the ground there still draining late. Ground sides with memory: shaded bed pampered, sunward bed mean and bitter - the ledger backward all along. 'So the sun remembers even when the ink did not,' she says. 'Then we will not correct you. We will write you down.'",
+            "outcome": "She re-inks every label, then does the unfashionable thing: corrects the bed-ledger to match the truth of the beds, not the habit of the ledger. The bed-ledger tells the truth again, and the label ink she mixed is the one still in use."
+          },
+          "2": {
+            "job": "Herbs for the Shrine",
+            "material": "Yellow herb",
+            "hook": "A heavy yellow-herb season is coming, and the drying loft groans when the wind does. Neet inspects the loft before the first load goes up.",
+            "journey": "The first yellow-herb load comes off the cart wrong: this year's cut is sap-heavy, taken young and wet because the fields came late and the shrine ordered early. The same trays that went up light as chaff last year now take both hands, and Neet weighs one against her hip before she says anything at all.\n\n'They will dry lighter than they travel,' the grower admits, which is exactly the trouble - the loft has to carry them at their heaviest.\n\nInside, volunteers are loading at a speed that means nobody has counted the load. Neet watches one tray go up and hears the beam take it with a sound she does not like - a long wooden note, the kind furniture makes before it stops being furniture. She stops the next tray at the bottom of the stair. 'We will count what goes up,' she says, 'before the loft decides we did not.' The volunteers look caught rather than annoyed. Gorram, the oldest, has hauled yellow bundles all morning and does not stop to argue. 'Nothing ever fell in thirty years,' he says, which is what everyone always says about beams.\n\nNeet climbs anyway, walks the loft heel to heel with a measuring string, and finds the middle beam carrying more than its share, a thumb's width below its brothers. She marks it in chalk, sorts the wettest yellow bundles onto the side beams, and puts the string back where the next hand will find it and wonder.",
+            "outcome": "She doubles the braces, ropes the racks, and - because a loft that holds more invites people - leaves a bench in the warm corner. The loft holds double, and rain-guests still sleep there by custom."
+          }
+        },
+        "2": {
+          "0": {
+            "job": "Mushroom Foraging",
+            "material": "Sturdy mushroom",
+            "hook": "The shrine soup pot wants sturdy caps, and the porter's basket always seems lighter on the way back up. Neet decides to weigh the basket once, out of politeness.",
+            "outcome": "A false bottom has been shorting the count for weeks; she double-counts by weight, catches it kindly, and cooks nothing until every cap is accounted. Jars of sturdy-cap soup go out to the pilgrims, and the twice-counted rule becomes the children's first lesson in counting anything."
+          },
+          "1": {
+            "job": "Mushroom Foraging",
+            "material": "Clever mushroom",
+            "hook": "The clever mushrooms present themselves for labeling, which is exactly how Neet knows they are lying. The beds have been acting suspicious all week.",
+            "outcome": "They keep flattening into leaf litter at the first touch of a label, so she stops labeling and starts rhyming, sorting by where they refuse to grow. A basket is collected in order, and the sorting rhyme enters the children's lesson, where it is credited to the mushrooms."
+          },
+          "2": {
+            "job": "Mushroom Foraging",
+            "material": "Lively mushroom",
+            "hook": "The lively mushrooms have been escaping crates since dawn, and the downhill trip to the village is today. Neet checks the rope twice.",
+            "outcome": "She lattices the crates with rope - not lids: rope, so the jumping is visible and the failure honest. Not one loss goes on the record, and the village pantry copies her lattice by month's end."
+          }
+        },
+        "3": {
+          "0": {
+            "job": "Helping in the Orchard",
+            "material": "Fruit of power",
+            "hook": "The power rows pay pickers in bruises, and the hired crew will not admit their arms ache. Neet is working the row and watching arms instead of fruit.",
+            "outcome": "She sets a rest rota nobody asked for and stocks a cold-compress barrel at the row's end. The rows finish before dark, and the rota quietly becomes the orchard's autumn custom - signed, as everything of hers is, with a small tidy hand."
+          },
+          "1": {
+            "job": "Helping in the Orchard",
+            "material": "Fruit of wisdom",
+            "hook": "The wisdom grove's scales have been disagreeing since harvest began, and three pickers are arguing over which one to believe. Neet brings a notebook instead of an opinion.",
+            "outcome": "She records pick-weight by row and hour, and finds the east rows sweeten early in shade. The picking order is rebuilt around her notes - the ledger doing the diplomacy she never learned."
+          },
+          "2": {
+            "job": "Helping in the Orchard",
+            "material": "Fruit of spirit",
+            "hook": "The spirit fruit hangs farthest out, and the old ladders beneath it wobble worst. Neet looks at the ladder feet first and the fruit second.",
+            "outcome": "She braces every leg and ropes every top rung, no shortcuts taken even while the crew groans at the pace. Nobody falls; the brace pattern is saved under the barn for next season."
+          }
+        },
+        "4": {
+          "0": {
+            "job": "Gather Fallen Feathers",
+            "material": "Rainbow bird feathers",
+            "hook": "Rainbow bird feathers have been drifting along the mill path all week, bright as scattered festival litter. Neet is walking it with a basket and a plan.",
+            "outcome": "She gathers the feathers for a pilgrims' quilting circle of her own starting, washing and sorting by warmth rather than shade. The circle is founded on one basket of fetched luck - the first of the region's comfort-works, as she writes in the margin - and it is still the warmest."
+          },
+          "1": {
+            "job": "Gather Fallen Feathers",
+            "material": "Bluebird feathers",
+            "hook": "Bluebird feathers are being graded wet and sold dry, and the market's arguments about color have outlasted the colors. Neet is asked to look at the evidence.",
+            "outcome": "She catalogs wet-light against dry-light and writes the difference into her ledger. Every later dispute ends before it starts; the market graders ask for a copy, and it sits beside hers."
+          },
+          "2": {
+            "job": "Gather Fallen Feathers",
+            "material": "Wyvern feathers",
+            "hook": "Where the heath path climbs, the winter wind has been shedding old wyvern feathers for weeks. Neet wants them for the shrine stores, and wants them gathered honestly.",
+            "outcome": "She walks the marked path with an escort and refuses every shortcut, taking old-shed only. The winter stores gain a wyvern line, and the heath path earns its first marker stone."
+          }
+        }
+      },
+      "viewpoints": {
+        "0": {
+          "job": "Tend the Nesting Grounds",
+          "material": "Rainbow bird's egg",
+          "text": "Neet made the introductions nobody thought to plan: a feather from each host nest carried nose-to-nose, morning by morning, until the crag smelled of tenants, not trespassers. Her private notes go further - the rainbow clutch's nest was empty long enough that the mother is not coming back. She wrote that in her margin, not aloud, and kept one rainbow feather for the fledging day. The almanac's hatch-day line is in the same hand."
+        },
+        "1": {
+          "job": "Tend the Nesting Grounds",
+          "material": "Bluebird's egg",
+          "text": "Neet confirms, formally, that the difficult part was learning to sing badly. She practiced at midnight, in the shrine pantry, where her voice carries least, until the flat note sat where she wanted it. What the written rite omits: correct lullabies only made the clutch duller; the deliberately wrong one matched, and held. The almanac gets the hatch-day; the rite record gets the method; the margin note - 'some things mend when you stop correcting them' - gets neither."
+        },
+        "2": {
+          "job": "Tend the Nesting Grounds",
+          "material": "Wyvern's egg",
+          "text": "Neet readied the compresses and a settling word long before they were needed, and read the mother's body language well enough to time everything: approach when her wings folded, wait when her tail set. Her private measurement - the mother was not guarding the old ledge; she was deciding whether the quarry was good enough. Neet's stamp of approval, one nod at the correct distance, is not in any record."
+        }
+      }
+    },
+    "piria": {
+      "participant": false,
+      "routes": {
+        "1": {
+          "0": {
+            "job": "A Quiet Visit to the Herb Market",
+            "material": "Red herb",
+            "hook": "The herb market after dark is technically closed, and the red-herb drawer has been emptying itself anyway. Piria works nights either way.",
+            "outcome": "The real thief is the stall's own cat, so she removes it - gently, by the window, at midnight, as a professional courtesy - and hands it back at dawn with a note: 'your mouser, promoted.' The cat is hired, the drawer is safe, and the note keeps being retold at the market."
+          },
+          "1": {
+            "job": "A Quiet Visit to the Herb Market",
+            "material": "Blue herb",
+            "hook": "The blue herb she wants sits locked inside a drawer that belongs to someone careful. Piria can tell it is careful, and she likes that too much to spoil it.",
+            "outcome": "She grades the lock silently - 'better than mine' - and buys the herb instead. The owner later finds her note, 'your lock taught me patience,' and hires her weeks on to build it stronger; her best clients are the ones she never robs."
+          },
+          "2": {
+            "job": "A Quiet Visit to the Herb Market",
+            "material": "Yellow herb",
+            "hook": "A back-alley stall is selling yellow herb 'for pain,' which would be fine except it is beet-flavored nothing. Piria buys one packet, for evidence.",
+            "outcome": "She tastes it once, pays the asking price, and returns the fake to its maker with a receipt, unsigned. The maker refunds everyone quietly; her invoice line reads 'consolation, not blackmail.'"
+          }
+        },
+        "2": {
+          "0": {
+            "job": "Mushrooms from a Secret Path",
+            "material": "Sturdy mushroom",
+            "hook": "Sturdy-cap foragers are being sent up a cliff path that has been quietly rotting all season. Piria has climbed every way up that cliff and knows which of them lie.",
+            "outcome": "She ropes the crumbling stretch and chalks a note: 'rotate your grip, not your ankle.' The rope holds one season and is replaced by the town with a proper chain - her kindness noted, her name left out, both to her taste."
+          },
+          "1": {
+            "job": "Mushrooms from a Secret Path",
+            "material": "Clever mushroom",
+            "hook": "The clever-mushroom hollow has been sitting on exactly the wrong kind of secret, because mushrooms have no pockets. Piria goes to see what they are guarding.",
+            "outcome": "It is a lost pocketbook; she reads the name, walks the return trip on her lunch hour, and leaves it on the doorstep - unsigned, unwatched, unboasted. A thank-you pie appears at her own door with no card, and the case closes itself."
+          },
+          "2": {
+            "job": "Mushrooms from a Secret Path",
+            "material": "Lively mushroom",
+            "hook": "The lively mushrooms have found a way downhill that the maps have not, and Piria does not enjoy being shown up by produce.",
+            "outcome": "She follows their long silent arcs and finds a shortcut the maps missed, then chalks the arrow herself and lets the mushrooms keep the credit. The arrow is still the correct way down, and the mushrooms still get the reviews."
+          }
+        },
+        "3": {
+          "0": {
+            "job": "An Orchard Shortcut",
+            "material": "Fruit of power",
+            "hook": "Her shortcut through the orchard fence has picked up regular traffic, and today's traffic includes one picker, one turned ankle, and one full basket of heavy fruit. Piria carries the first two without complaint about either.",
+            "outcome": "She asks the gatekeeper, properly, to leave the dawn gate unlocked for the workers. The gate keeps dawn hours from then on, and the shortcut gets its own repaired boards."
+          },
+          "1": {
+            "job": "An Orchard Shortcut",
+            "material": "Fruit of wisdom",
+            "hook": "The wisdom rows make everyone philosophical, including the crate-stacking, which has developed opinions about gravity. Piria is asked to stack quietly, and does not laugh even once.",
+            "outcome": "She chalks balance marks in perfect silence and ties the wobbliest crates down by hand. The balance chalk becomes the orchard crew's own mark afterward, drawn on crates she will never touch."
+          },
+          "2": {
+            "job": "An Orchard Shortcut",
+            "material": "Fruit of spirit",
+            "hook": "The festival needs its spirit-fruit haul moved at night - quietly, legally, and fast. The owner wants it in writing, and so does Piria.",
+            "outcome": "With the owner's blessing in hers, she runs it: three trips, no lanterns, everyone paid. A standing thank-you crate appears at her door each festival after, addressed to 'the shortcut,' which she refuses to correct."
+          }
+        },
+        "4": {
+          "0": {
+            "job": "Find the Hidden Feather Cache",
+            "material": "Rainbow bird feathers",
+            "hook": "A child's rainbow-feather cache sits behind the mill, hoarded honestly, and the mill damp has been eating at it. Piria knows what a collection demands.",
+            "outcome": "She builds the cache a dry shelf and trades fairly for the keeping of it - two polish cloths and a promise to keep the location secret. The promise is kept; the loft has a bright dry corner now, and a secret with a shelf."
+          },
+          "1": {
+            "job": "Find the Hidden Feather Cache",
+            "material": "Bluebird feathers",
+            "hook": "A spell-latched box has been in the hollow longer than the hollow has had a name, and picking is not the answer to it. Piria has an hour and a riddle's worth of patience.",
+            "outcome": "The latch opens for a riddle rather than a pick; she sits with it, answers it, and leaves the bluebird cache exactly as found - taking only the riddle's oldest wrong answer, since nobody needs it. The box re-latches; the latch's owner never knows."
+          },
+          "2": {
+            "job": "Find the Hidden Feather Cache",
+            "material": "Wyvern feathers",
+            "hook": "A wyvern-shed cache is riding a high rock, and every ladder in the market has already refused the climb. Piria has read the guttering above the rock.",
+            "outcome": "She takes the rain-gutter route - the one she would never offer a client - and delivers the cache to its claimant whole. A flag pole on the rock afterward gives the next gust competition."
+          }
+        }
+      },
+      "neutral": {
+        "job": "Negotiate a Nesting Permit",
+        "hook": "Nesting permits are the least exciting paperwork in town during the frost week, which is precisely why nobody has beaten the line yet. Piria likes quiet errands.",
+        "text": "The frost week put a permit desk in the town hall's coldest corner, so Piria filed the roost crew's nesting paperwork herself - walking in, no window theatrics, stamps before sunrise. The wild eggs were nobody's inventory; guardianship simply needed a bit of speed. The clerk now stamps her forms first, on principle, and has never once asked what she is filing. That is her favorite kind of license."
+      }
+    },
+    "tirami": {
+      "participant": false,
+      "routes": {
+        "1": {
+          "0": {
+            "job": "Compare the Herb Merchants",
+            "material": "Red herb",
+            "hook": "The rival has undercut the red-herb copper again this morning. Tirami does not chase the price down; she sharpens a tag.",
+            "outcome": "She prints the honest tag - this bed, this week, this price, no wiggles - and the honest tag outsells the wiggles by end of day. She reprints it proudly ★ and has the plate cut for a smaller stall's use too."
+          },
+          "1": {
+            "job": "Compare the Herb Merchants",
+            "material": "Blue herb",
+            "hook": "Half the blue-herb market has sprouted framed certificates this week, and frames are cheap. Tirami owns a magnifying glass.",
+            "outcome": "She checks every certificate against grower signets instead of trusting the frames; two fakes quietly fade from the market. Her certificate wall is real, and she says so ★ at a volume the fakes can hear."
+          },
+          "2": {
+            "job": "Compare the Herb Merchants",
+            "material": "Yellow herb",
+            "hook": "Two stalls, one scale, and the market's heaviest yellow-herb buyers standing in the wrong queue. Tirami weighs in on the side of the needle.",
+            "outcome": "She pays for the fair scale's repair herself and pins its weights openly where every buyer can read them. The market's heaviest sales migrate to the honest needle; she takes it personally ★ - in the best available sense of personally."
+          }
+        },
+        "2": {
+          "0": {
+            "job": "Find the Finest Mushrooms",
+            "material": "Sturdy mushroom",
+            "hook": "Sturdy caps are arriving in three quality grades and one seller's face, and no buyer knows what they are looking at. Tirami has brought a chalkboard.",
+            "outcome": "She grades publicly - cap thickness, the snap, the seller's face - and lets the buyers watch every stroke. Her grade spreads past her stall, the rival copies the chalkboard ★, and she allows it, brutally graciously, in writing."
+          },
+          "1": {
+            "job": "Find the Finest Mushrooms",
+            "material": "Clever mushroom",
+            "hook": "Ordinary mushrooms are being polished and sold as clever, and polished they do look clever. Tirami has a candle and no patience.",
+            "outcome": "She invents the twinkle test on the spot: real clever-caps dull under her candle and brighten after. Three fakes leave the market; the test is named after her stall ★, and she signs the naming twice."
+          },
+          "2": {
+            "job": "Find the Finest Mushrooms",
+            "material": "Lively mushroom",
+            "hook": "Yesterday's lively mushrooms are bouncing on the shelf as though nothing happened, which is exactly the problem. Tirami draws a line and labels it 'until morning.'",
+            "outcome": "The same-morning rule lands: nothing sold that spent a night in her shop. It becomes the street's promise ★, audited by nobody and passing anyway, which is how she likes audits."
+          }
+        },
+        "3": {
+          "0": {
+            "job": "Win the Orchard Contract",
+            "material": "Fruit of power",
+            "hook": "The orchard contract is up, the rival has brought fireworks, and the fruit has to survive the week after the money changes hands. Tirami has brought crates.",
+            "outcome": "She pitches crates that breathe, rides that do not bruise, and a bad-batch refund written in her own hand. The contract signs; the rival's bid was flashier and half as careful. She is unbearable about it for a week ★, then quietly extends the refund to every customer she has."
+          },
+          "1": {
+            "job": "Win the Orchard Contract",
+            "material": "Fruit of wisdom",
+            "hook": "Wisdom-fruit buying is a rumor war this season, and the loudest rumor belongs to the rival. Tirami fights rumors with a ledger.",
+            "outcome": "Her ledger beats the rival's loudness by knowing the storage houses by name - early harvests, cool rooms, doors that stick - and by one written guarantee on every invoice. The contract goes with the quiet bid ★, and the guarantee becomes market language without her raising her voice at all."
+          },
+          "2": {
+            "job": "Win the Orchard Contract",
+            "material": "Fruit of spirit",
+            "hook": "The big spirit-fruit order will not wait past dawn, and a wagoner's word is worth exactly as much as his breakfast. Tirami has booked a table.",
+            "outcome": "She pre-books the wagoners' breakfasts - logistics, she insists, not kindness - and the loading happens at dawn, every trip, contract done early ★. The wagoners ask for her by name at other people's diligences too."
+          }
+        },
+        "4": {
+          "0": {
+            "job": "Grade the Feather Bundles",
+            "material": "Rainbow bird feathers",
+            "hook": "Festival week sells feather bundles on dazzle, and dazzle does not tell the truth about warmth. Tirami means to prove it by carrying every bundle herself.",
+            "outcome": "She grades by warmth and wear, carrying each bundle one street corner to feel what the light is hiding. Her grade sheet becomes the feather market's printed standard ★, credited in small letters; she frames it beside her own name in large ones."
+          },
+          "1": {
+            "job": "Grade the Feather Bundles",
+            "material": "Bluebird feathers",
+            "hook": "Blue bundles are graded wet and sold dry, and the difference is somebody's profit twice over. Tirami has put the damp and the dry in one stall on purpose.",
+            "outcome": "She shades every sample before pricing and stamps the truth onto the tags. Two loud 'bargains' die of exposure ★ without a single accusation from her, and the shade-tested tag becomes the stall's signature."
+          },
+          "2": {
+            "job": "Grade the Feather Bundles",
+            "material": "Wyvern feathers",
+            "hook": "Wyvern bundles are heavy freight wearing small price tags, and the market's helpers are lifting with their backs for other people's margins. Tirami has paper, string, and rules.",
+            "outcome": "She posts the two-lift rule at her own stall: anyone lifting alone works alone - meaning no one does. Backs stay intact; the rule spreads by mimicry rather than magic ★."
+          }
+        }
+      },
+      "neutral": {
+        "job": "Bid for Prized Eggs",
+        "hook": "A buyer's letter has arrived about the frost-roost clutch, written in the tone of someone who has not heard the word no recently. Tirami is composing a reply.",
+        "text": "A remote buyer sends coin for 'the frost-roost clutch, any condition,' and Tirami declines him twice, in writing, with a printed card: wild things are not inventory - and this is not a sale she would brag about, and she brags about everything. The frost week she sells warm straw and thermoses at honest prices instead. The card stays on her stall longer than the frost does ★, and the buyer's letters stop."
+      }
+    }
+  }
+}

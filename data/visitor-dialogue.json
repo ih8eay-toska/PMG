@@ -1,87 +1,238 @@
 {
-  "provenance": "Original fan-written normal-quest responses. Portraits are original archived wiki assets. Tirami tone is inspired by the documented challenge dialogue, not presented as a normal-quest transcript. Added visitor/fairy conversations are also original fan-written text for the temporary reward mode. User-provided original dialogue for Tirami, Luke, Charlotte and Demian is stored under documented; other lines remain fan-written.",
+  "provenance": "Original fan-written normal-quest responses. Each traveler has five fan-written request/flavor pairs; documented facts (occupation, temperament, and speech) come from the primary character sheets listed in sources, while specific scenes, motives, and supporting details are fan-written extrapolation. Existing user-provided original dialogue for Tirami, Luke, Charlotte and Demian remains under documented. Portraits are original archived wiki assets. Added visitor/fairy conversations are also original fan-written text for the temporary reward mode.",
   "sources": [
     "https://potionmaker.fandom.com/wiki/Neet",
     "https://potionmaker.fandom.com/wiki/Dolbur",
-    "https://potionmaker.fandom.com/wiki/Tirami/dialogues"
+    "https://potionmaker.fandom.com/wiki/Tirami",
+    "https://potionmaker.fandom.com/wiki/Tirami/dialogues",
+    "https://potionmaker.fandom.com/wiki/Claire",
+    "https://potionmaker.fandom.com/wiki/Luke",
+    "https://potionmaker.fandom.com/wiki/Piria",
+    "https://potionmaker.fandom.com/wiki/Charlotte",
+    "https://potionmaker.fandom.com/wiki/Demian",
+    "https://potionmaker.fandom.com/wiki/Daisy",
+    "https://potionmaker.fandom.com/wiki/Kyle"
   ],
   "entries": {
     "neet": {
-      "offer": "Could you prepare a potion for me?",
+      "offer": [
+        "Could you prepare a Lv. {level} {potion} for the shrine? The supply shelf is nearly empty, and I would like it restocked before the next pilgrims arrive.",
+        "I am keeping watch at the shrine tonight. A Lv. {level} {potion} would complete the night kit I keep by the door.",
+        "One of the garden volunteers took a fall this morning. I would be grateful for a Lv. {level} {potion} to restock the care room before the next shift.",
+        "A group of traveling clerics will pass through tomorrow. Could you make a Lv. {level} {potion} so I can send them on their way properly supplied?",
+        "The children’s lessons ran long, and several of them are tired and fussy. A Lv. {level} {potion} would help me restock the evening supplies before their parents arrive."
+      ],
+      "offerFlavor": [
+        "Pilgrims often reach the shrine after the roads close, when the nearest physician is already asleep. A full shelf lets Neet offer them something before they continue on their way.",
+        "The shrine is quiet after sunset, but not empty. Neet keeps the lamp lit for anyone who arrives late, and she prefers not to doze through a knock at the door.",
+        "The shrine’s herb beds are tended by volunteers who rarely ask for anything. Neet keeps a small care room for them, stocked from her own stipend when the shrine’s funds run short.",
+        "These visitors carry letters and supplies between shrines. Neet always sends them off with something from her own shelf, even when the visit is brief.",
+        "The children wait in the courtyard for their parents to finish work. Neet has learned to keep a deck of cards and a quiet corner ready for the wait."
+      ],
       "active": "Thank you. I will wait here while you prepare it.",
       "returning": "This will help. I will return with something for your shop.",
       "complete": "Thank you for the potion. Please take these with you.",
       "failed": "It seems the potion is not ready. Perhaps another time."
     },
     "dolbur": {
-      "offer": "I could use a potion for my next adventure!",
+      "offer": [
+        "Ha! I am heading out on a new adventure, and I need a Lv. {level} {potion} in my pack before I go. A warrior should never leave town unprepared!",
+        "The captain wants a sparring match this afternoon. A Lv. {level} {potion} would make the bout feel properly official.",
+        "There is a monster hunt at the old quarry tomorrow. A Lv. {level} {potion} would complete our party’s supplies.",
+        "I am guiding a group over the mountain trail. A Lv. {level} {potion} would round out the supplies for the climb.",
+        "The guild exam is coming up, and I have been training nonstop. A Lv. {level} {potion} would be the last item on my preparation list."
+      ],
+      "offerFlavor": [
+        "Dolbur has a map, three spare belts, and a first-aid kit he cannot find. He is determined that this expedition will be the one where he arrives with everything he meant to bring.",
+        "The captain has been undefeated for six months, and Dolbur keeps volunteering anyway. He says a good loss teaches more than an easy win, though he would rather not test that theory too often.",
+        "The quarry hunt is a guild tradition, and Dolbur has been put in charge of supplies. He is trying to look responsible while quietly checking that everyone else brought rope.",
+        "The upper path is narrow, and the weather changes without warning. Dolbur has led this route before; he knows which stretches leave travelers shivering by midday.",
+        "The instructors will judge him on more than enthusiasm for the first time. Dolbur has been practicing his forms at dawn so he does not freeze when they call his name."
+      ],
       "active": "I am counting on you!",
       "returning": "Just what I needed! I will be back with your reward.",
       "complete": "Back from the road! Here is something to help your brewing.",
       "failed": "Out of time! I had better get going. We can try again later."
     },
     "tirami": {
-      "offer": "Show me what your shop can make! ★",
+      "offer": [
+        "My stall sold out before noon! I need a Lv. {level} {potion} to restock before the evening crowd arrives. ★",
+        "I have been working on my own version of {potion}. Let me see your Lv. {level} batch so I can compare notes. ★",
+        "The merchant guild is holding a tasting contest. I need a Lv. {level} {potion} good enough to put my rivals in their place!",
+        "I am testing a new label design and need a proper bottle to show it off. A Lv. {level} {potion} would be perfect for the display.",
+        "A very particular customer wants something impressive. I would rather learn from your Lv. {level} {potion} than guess at what they expect."
+      ],
+      "offerFlavor": [
+        "Tirami keeps her best bottles at the front of the stall, where the afternoon light catches the glass. A restock is also a chance to rearrange the display before the wealthier customers arrive.",
+        "Tirami keeps a private ledger of every merchant who claims to have a better recipe. She is not above adding a new page when a batch surprises her.",
+        "The judges score taste, color, and presentation. Tirami has already chosen the cloth for her table and is not planning to lose on the last two.",
+        "Tirami draws every label herself, usually late at night after the stall closes. She insists a bottle should look as confident as the merchant selling it.",
+        "The buyer is a retired court physician who has outlasted three apprentices and remembers every slight. Tirami has already prepared a list of questions and a very modest opening offer."
+      ],
       "active": "Let us see how that potion turns out! ★",
       "returning": "That will do! Wait here for your reward. ★",
       "complete": "Fine, that potion passes. Next time, I will do better! ★",
       "failed": "Time is up! I will be back for another round. ★"
     },
     "claire": {
-      "offer": "I require a potion for my journey. Can you assist?",
+      "offer": [
+        "I am preparing for a palace patrol and require a Lv. {level} {potion} for the company’s supplies. Please see that it is properly made.",
+        "The gate watch is short-handed tonight. A Lv. {level} {potion} would complete the watch kit I keep at the gate.",
+        "Several knights were injured during training. A Lv. {level} {potion} would help restock the infirmary shelves.",
+        "I am escorting a royal messenger through the eastern road. A Lv. {level} {potion} is a necessary part of our preparations.",
+        "The knight-commander will inspect our kit tomorrow. A Lv. {level} {potion} would ensure my supplies meet the palace standard."
+      ],
+      "offerFlavor": [
+        "The pre-patrol inspection is strict, down to the wrapping on each bottle. Claire would rather answer a question about the label than explain a missing item.",
+        "The gate watch is quieter than it looks, which is precisely when mistakes happen. Claire keeps her attention on the road and her supplies within reach.",
+        "The training yard has been busy all week, and the infirmary is running through its usual stores. Claire is the one who notices before the shelves are bare.",
+        "There are few inns between the last outpost and the capital. Claire plans the escort’s supplies around the longest stretch, not the shortest.",
+        "The inspection checks readiness, not perfection. Claire still intends for every item in the kit to be accounted for and properly sealed."
+      ],
       "active": "I shall wait while you prepare it.",
-      "returning": "A fine preparation. I will return with a small companion.",
+      "returning": "A fine preparation. I shall return with the payment your shop has earned.",
       "complete": "Please welcome this fairy into your shop.",
       "failed": "My departure cannot wait. We will try another day."
     },
     "luke": {
-      "offer": "...A potion, please.",
+      "offer": [
+        "My cat... is sneezing... need a Lv. {level} {potion}... for the pet shelf.",
+        "Puppy... first trip... need a Lv. {level} {potion}... for the road.",
+        "Small bird... hurt wing... need a Lv. {level} {potion}... for the nest box.",
+        "Magic... unstable today... need a Lv. {level} {potion}... for the workbench.",
+        "Night... cold... pets... need a Lv. {level} {potion}... for the night kit."
+      ],
+      "offerFlavor": [
+        "Luke’s cat has claimed the warmest corner of his workbench and refuses to move. He has been checking on it between customers, though he will not say so out loud.",
+        "The puppy is small enough to fit in Luke’s coat, and it has never been farther than the garden. He wants the first trip to be a good memory, not a lesson in fear.",
+        "Luke found the bird below the window and has been feeding it from a spoon. It is already hopping around his desk, which he takes as a good sign.",
+        "Luke’s magic has been flickering since morning, and he has stopped casting anything that might startle his pets. He is waiting for the flicker to pass.",
+        "Luke’s room is warmed by a single stove, and his pets have claimed most of the blankets. He would rather fix the draft than move them."
+      ],
       "active": "...Thank you. I can wait a little.",
-      "returning": "...I know a fairy who would like it here.",
+      "returning": "...Good potion... I will bring something back... for the shop.",
       "complete": "...A new friend for your shop.",
       "failed": "...Perhaps next time."
     },
     "piria": {
-      "offer": "Have a potion to spare? I have something interesting in return.",
+      "offer": [
+        "Hey. I have a night job coming up and could use a Lv. {level} {potion} before I slip out. No questions, right?",
+        "An informant agreed to meet me in the back alleys. I want to bring a Lv. {level} {potion} as a token of good faith.",
+        "There is a rooftop route I have been meaning to try. A Lv. {level} {potion} would make the landing a little less exciting.",
+        "I have a meeting with a fence who only trades in favors. A Lv. {level} {potion} would be a very useful favor to bring.",
+        "A client wants a delivery made without any noise. I need a Lv. {level} {potion} to complete the parcel."
+      ],
+      "offerFlavor": [
+        "The work tends to start with a locked door and end with an empty street. She never gives the same explanation twice, and she rarely gives one at all.",
+        "Nervous informants charge more, and this one has been jumpy all week. Piria plans to arrive early and let the informant do most of the talking.",
+        "Piria has mapped the gaps between the roofs but not the landing spots. She is confident; she is also careful enough to bring a backup plan.",
+        "The fence has a memory like a ledger and a taste for rare bottles. Piria has been saving this meeting for a week when she needs his attention more than his goodwill.",
+        "The shortest route crosses three roofs and one guard post. Piria would rather be careful than fast."
+      ],
       "active": "Take your time. Well, just a little time!",
-      "returning": "Perfect! I will bring a little friend over.",
+      "returning": "Perfect! Keep the light on - I will slip back with your payment.",
       "complete": "Look who followed me back! Take good care of this fairy.",
       "failed": "Time to slip away. Catch you next time!"
     },
     "charlotte": {
-      "offer": "Charlotte would appreciate a potion from your lovely shop.",
+      "offer": [
+        "Charlotte is hosting afternoon tea and would like a Lv. {level} {potion} to impress her guests. Something worthy of the table, darling. ♡",
+        "The garden party is tomorrow, and Charlotte needs a Lv. {level} {potion} whose color complements the flowers. She has standards, you understand.",
+        "Charlotte is sitting for a portrait this week. A Lv. {level} {potion} would make a striking addition to the setting, darling. ♡",
+        "Charlotte is donating a selection to the charity auction. A Lv. {level} {potion} would be a generous and very fashionable contribution.",
+        "A duchess has been boasting about her latest acquisition. Charlotte would like a Lv. {level} {potion} that makes a more elegant impression."
+      ],
+      "offerFlavor": [
+        "The tea service is being set in the west parlor, where the light is best. Charlotte has already chosen the cups and is now considering what the table will say about her taste.",
+        "The new roses will be on display for the right people. Charlotte has strong opinions about which colors should be seen together and which should not.",
+        "The portrait is for the family gallery, where every generation is expected to look composed. Charlotte has spent more time on the pose than on the painter’s schedule.",
+        "The room will be full of people whose opinions matter, and Charlotte intends her donation to be remembered. She has already requested the best table near the entrance.",
+        "The duchess’s acquisition is large, foreign, and impossible to ignore. Charlotte has decided the best response is something smaller, rarer, and in better taste."
+      ],
       "active": "Charlotte is looking forward to it.",
-      "returning": "Delightful. Charlotte has a little surprise for you.",
+      "returning": "Delightful. Charlotte always settles her debts, darling ♡.",
       "complete": "Charlotte hopes this fairy feels at home here.",
       "failed": "Another day, perhaps. Charlotte must be going."
     },
     "demian": {
-      "offer": "I have a potion order for your establishment.",
+      "offer": [
+        "An official inspection requires a sample for valuation. Prepare a Lv. {level} {potion}, and see that the label is in order.",
+        "The ledger shows a discrepancy in this shop’s stock. A Lv. {level} {potion} will resolve the matter cleanly.",
+        "The department is conducting an audit of local potion stock. A Lv. {level} {potion} must be submitted for review.",
+        "A magistrate has requested a suitable potion for an official matter. I require a Lv. {level} {potion} delivered without delay.",
+        "The border checkpoint needs a sample for its records. A Lv. {level} {potion} should satisfy the requirement."
+      ],
+      "offerFlavor": [
+        "The inspector will compare the sample against the shop’s ledger, not against the shelf. Demian wants the paperwork and the bottle to agree before the visit begins.",
+        "It is small enough to be a clerical error and large enough to attract attention. Demian prefers to resolve it with a proper entry rather than an explanation.",
+        "The review covers potions sold in the last quarter, including those made for visitors. Demian has been compiling the list since the notice arrived.",
+        "The court expects the delivery to be punctual and the seal unbroken. Demian has already cleared the time in his schedule.",
+        "Samples are kept for inspection and comparison at the gate. Demian would rather provide one voluntarily than have an officer request it."
+      ],
       "active": "I will await your delivery.",
-      "returning": "Order received. A fairy will accompany my return.",
+      "returning": "Order received. The settlement has been entered and will arrive as scheduled.",
       "complete": "Delivery complete. This fairy is now in your care.",
       "failed": "The allotted time has expired. I must depart."
     },
     "daisy": {
-      "offer": "Hello! Could you prepare a potion for me today?",
+      "offer": [
+        "Good morning! The first bread batch is already rising, and I would love a Lv. {level} {potion} to complete the morning order.",
+        "The festival order is bigger than I expected. Could you make a Lv. {level} {potion}? I want the honey rolls to be ready on time.",
+        "I am testing a new recipe today. A Lv. {level} {potion} would let me finish the trial batch without falling behind.",
+        "A wedding cake is due this weekend. I would like a Lv. {level} {potion} to make sure the finishing touches go smoothly.",
+        "The children’s baking class is this afternoon. A Lv. {level} {potion} would complete the supplies I set out for them."
+      ],
+      "offerFlavor": [
+        "The bakery opens before the sun is up, and the first batch is always the one the regulars ask about. Daisy wants the morning to start with something she can be proud of.",
+        "Three market stalls are expecting honey rolls by noon. Daisy has been practicing the recipe on her family, who have stopped complaining.",
+        "The new formula uses a slower rise and a little more patience. Daisy would rather test it on a small batch than discover a problem in front of customers.",
+        "The couple met in the bakery, and Daisy has been saving the best decorating tips for the final layer.",
+        "Mostly it is flour fights and laughter, with a little baking in between. Daisy wants everyone to leave with something edible and a good memory."
+      ],
       "active": "Thank you! I will wait here.",
-      "returning": "Lovely! I will come back with a little friend.",
+      "returning": "Lovely! I will be right back with a thank-you for the shop.",
       "complete": "Here is your new fairy friend. I hope you get along!",
       "failed": "That is all right. We can try again another time."
     },
     "kyle": {
-      "offer": "Could I ask you to make a potion?",
+      "offer": [
+        "I have a dare from my friends, and I am not backing down. Make me a Lv. {level} {potion}, and let us see if it is worth the bragging rights.",
+        "The guild test is next week. A Lv. {level} {potion} would help me prove I am ready for the real thing.",
+        "There is a race through the old road this weekend. A Lv. {level} {potion} would complete my race kit.",
+        "The festival contest has a potion category this year. A Lv. {level} {potion} would be my entry.",
+        "A friend says this shop cannot make anything impressive. I would like a Lv. {level} {potion} to prove them wrong."
+      ],
+      "offerFlavor": [
+        "Kyle’s friends have a habit of making dares in front of an audience. He has learned that backing down costs more than seeing the dare through.",
+        "The instructors care more about composure than strength. Kyle has been practicing in the yard every morning, though he still talks about it like a race.",
+        "The course is rougher than it looks, and the local crowd knows every shortcut. Kyle has walked it twice and already knows where he wants to make his move.",
+        "The entry list is already full of merchants and adventurers. Kyle has never entered before, and he is treating the category as a personal challenge.",
+        "The friend in question is loud, competitive, and usually right. Kyle would like to enjoy proving him wrong at least once."
+      ],
       "active": "Let us see how it turns out.",
       "returning": "Thanks! I will be back with something for your shop.",
       "complete": "A fairy wanted to come along. Would you look after it?",
       "failed": "Looks like our time is up. See you around."
     }
   },
+  "rewardAssumptions": {
+    "claire": { "complete": "fairy" },
+    "luke": { "complete": "fairy" },
+    "piria": { "complete": "fairy" },
+    "charlotte": { "complete": "fairy" },
+    "demian": { "complete": "fairy" },
+    "daisy": { "complete": "fairy" },
+    "kyle": { "complete": "fairy" }
+  },
+  "rewardAssumptionsProvenance": "Authored complete-phase lines tagged fairy assume a fairy reward. They remain in the authored data for reference, but are not displayed when the current order rewards no fairy. Completed visits now depart immediately after payout, so these tags do not affect normal return cards; GLM should rewrite the complete lines for the boost and ticket reward mode before they could be shown again.",
   "documented": {
     "tirami": {
       "Pio": {
         "offer": [
           "Hey, Pio! Today we'll finally decide who makes better potions!"
+        ],
+        "offerFlavor": [
+          "The challenge has been building since Tirami’s last visit. She has already cleared a space on her stall for the bottle she intends to compare against Pio’s work."
         ],
         "complete": [
           "Grr...To..today was only practice! I'll get the better of you next time!",
@@ -95,6 +246,10 @@
         "offer": [
           "Tia, I challenge you!\nI'll show you the real value of my potions!",
           "Let's see how great your potion really is! Go on, make me a Lv. {level} {potion}!"
+        ],
+        "offerFlavor": [
+          "Tirami has been waiting for a chance to test Tia’s work in person. She has a habit of turning friendly visits into contests, though she always brings her best manners to the table.",
+          "Tirami has heard Tia’s customers boast about the shop’s quality. She wants to see whether the reputation holds up when the bottle is opened."
         ],
         "complete": [
           "I..I wasn't feeling all too good. I went easy on you!!"
@@ -113,6 +268,11 @@
         "I.......Go......Dragon slaying......Need......Lv. {level} {potion}.......",
         "I.......Go......Undead suppression......Need......Lv. {level} {potion}........"
       ],
+      "offerFlavor": [
+        "Luke has been searching the alleys since sunrise. The cat is shy and will likely bolt at a loud voice, which is why Luke has barely spoken all day.",
+        "The ridge has been closed since the dragon was sighted. Luke has volunteered to go with the guild’s party, though he has said little about why.",
+        "The old ruin has been restless for a week. Luke knows the paths inside better than most, and he does not intend to let the undead reach the road."
+      ],
       "complete": [
         "Thx.. help... this.. present..."
       ],
@@ -124,6 +284,9 @@
       "offer": [
         "Charlotte~ wants the most gorgeous potion...hope you understand? ♡"
       ],
+      "offerFlavor": [
+        "Charlotte’s family arrives next week, and she wants the house to feel finished before they see it. The request is less about the bottle than about the impression it will make."
+      ],
       "complete": [
         "Thank you darling ♡ It's wonderful! I'll be able to show it off to my family."
       ],
@@ -134,6 +297,9 @@
     "demian": {
       "offer": [
         "This shop has not been paying enough taxes lately. I demand payback."
+      ],
+      "offerFlavor": [
+        "Demian has been reviewing the shop’s accounts for weeks. He is not interested in excuses; he wants the balance settled in a form the crown will accept."
       ],
       "complete": [
         "Hmm...alright. I'm counting on you.",
@@ -417,5 +583,5 @@
       "Kyle has chosen this {family} potion as his next challenge for the shop. He is interested in seeing what you can brew from these particular materials.\n\nThe fallen-tear tier is the shop’s most advanced material range. This order is a request to demonstrate how far your potion making has come."
     ]
   },
-  "orderFlavorProvenance": "Original fan-written order motivations and material-tier context; not transcribed character dialogue."
+  "orderFlavorProvenance": "Original fan-written material-tier context. Request-specific scene and character context is paired in entries.*.offerFlavor and documented.*.offerFlavor. Only the material-tier paragraph is displayed alongside the paired context. Not transcribed character dialogue."
 }
