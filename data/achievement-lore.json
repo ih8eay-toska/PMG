@@ -1,307 +1,307 @@
 {
   "source": "Fan-written mastery names and descriptions based on PotionMaker-REA localized potion names and each material’s lore.",
-  "note": "These 75 records are remake mastery achievements. Each title pairs a potion with its signature material; each description ties reaching maximum enhancement to that ingredient’s origin and brewing role. Original Pio/Tia comments appear in the Potion Book and unlock at the potion’s maximum level.",
-  "provenance": "Original game titles and potion descriptions remain in the Potion Book. Achievement names and descriptions are fan-written; mastery mechanics are a remake feature.",
+  "note": "These are fan-written mastery records for the remake, not recovered APK achievements. All 75 titles and descriptions are individually written from the paired potion label and note, material lore, supplier note, available customer review, and Pio/Tia mastery comments. The original APK contains only the listed customer reviews; entries without one draw on their original bottle note.",
+  "provenance": "Every mastery title and description is original fan writing. Each entry combines its potion and material pairing with original localized text, the paired material lore and supplier note, available customer reviews, and the corresponding Pio/Tia commentary. No customer review is invented where none was extracted.",
   "entries": {
     "0-0": {
-      "title": "Sample Red Potion · Red herb Pinnacle",
-      "lore": "At level 3, Sample Red Potion reaches its pinnacle through Red herb. Red herbs grow along sun-warmed stone walls, where their pigment deepens after rain. A short steep lends the Sample Red Potion its plain color and gentle, beginner-friendly character."
+      "title": "Apron-Splatter Apotheosis",
+      "lore": "At the pinnacle of Sample Red Potion, sun-warmed Red Herb still offers only a modest beginner’s brew. Pio calls the cooperative’s “mild” label optimistic after the pigment crossed two wrappers; Tia keeps the one-day chill notice beside the stained apron."
     },
     "0-1": {
-      "title": "Baby HP Potion · Sturdy mushroom Pinnacle",
-      "lore": "The max-level seal belongs to Baby HP Potion, perfected with Sturdy mushroom: Sturdy mushrooms push up beneath old orchard roots and store the damp chill of the soil. Their soft cap thickens the Infant HP Potion into a child-sized, soothing brew."
+      "title": "The Basket Filed a Complaint",
+      "lore": "Sturdy Mushroom’s orchard chill makes Baby HP Potion sticky and small, just as the original label promises. Pio checked the stopper twice; Tia filed the supplier’s protesting FRAGILE basket under evidence and kept the doctor’s note in view."
     },
     "0-2": {
-      "title": "Raspberry Potion · Fruit of power Pinnacle",
-      "lore": "Mastery records Raspberry Potion at level 5, with Fruit of power defining the finished brew. Power fruit ripens on steep terraces and tastes brighter after a clear night. Its tart juice gives Raspberry Potion its dessert-like finish without hiding the useful warmth beneath."
+      "title": "Terrace Fruit, Missing by the Ounce",
+      "lore": "Raspberry Potion belongs beside desserts: clear-night Power Fruit brings the tartness, and the tasting card already says “more, please.” The supplier charges by weight, so Pio’s sampling habit is now itemized separately from the recipe."
     },
     "0-3": {
-      "title": "Small HP Potion · Rainbow bird feathers Pinnacle",
-      "lore": "Only the final refinement earns Small HP Potion its Rainbow bird feathers crest. Rainbow birds shed these feathers at the edge of the spring migration route. Their fine shafts dissolve into a portable Small HP Potion with a faint, honest bitterness."
+      "title": "Three Stars, One Sneeze",
+      "lore": "Rainbow feathers make Small HP Potion easy to carry, but Alex’s three-star review says, “Drink it quickly, but cautiously!” Pio took the warning as permission to sip at a sprint and sneezed halfway through; Tia now keeps the supplier’s feather parcel sealed until the tasting table is clear."
     },
     "0-4": {
-      "title": "Collagen Potion · Rainbow bird's egg Pinnacle",
-      "lore": "Level 5 marks Collagen Potion complete; its signature ingredient is Rainbow bird's egg. The egg’s shell is flecked by minerals from the cliff nests where it is laid. Its nourishing yolk smooths Collagen Potion into a refreshing, vegetable-like tonic."
+      "title": "A Collagen Color Check",
+      "lore": "Mineral-flecked bird eggs smooth Collagen Potion into a nourishing tea-like tonic. The original label says to reject a changed color or misshapen bottle; Tia inspects each one while Pio keeps the discounted cracked shells out of the brew."
     },
     "0-5": {
-      "title": "Homemade HP Potion · Strange powder Pinnacle",
-      "lore": "At level 5, Homemade HP Potion reaches its pinnacle through Strange powder. This powder gathers in dry hollows where old roots leave a pale mineral dust. A careful pinch gives Home HP Potion its steady, travel-ready body; too much settles like flour."
+      "title": "The Upright, One-Star Remedy",
+      "lore": "Strange Powder settles into Homemade HP Potion, whose label promises help with fatigue and insists on upright storage. Jake’s one-star “tastes bad” review made Pio laugh until the dust reached his throat; Tia has since sealed the packet and the tasting panel’s mouths."
     },
     "0-6": {
-      "title": "Normal HP Potion · Drunkagora Pinnacle",
-      "lore": "The max-level seal belongs to Normal HP Potion, perfected with Drunkagora: Drunkagora grows around springs frequented by thirsty woodland beasts. Its mellow root rounds out Normal HP Potion, the dependable flask travelers reach for between towns."
+      "title": "Road Flask, Not Knock-Off",
+      "lore": "Drunkagora grows beside springs used by thirsty woodland beasts, making Normal HP Potion the travelers’ dependable choice. The village’s anti-counterfeit warning sits above the shelf; Pio stopped calling it a drinking contest after Tia read the notice aloud."
     },
     "0-7": {
-      "title": "Carbonated Cherry Potion · Manticore fur Pinnacle",
-      "lore": "Mastery records Carbonated Cherry Potion at level 5, with Manticore fur defining the finished brew. Manticore fur catches static on the high ridges and crackles when brushed. That lively charge helps Carbonated Cherry Potion hold a vigorous fizz and a surprisingly firm effect."
+      "title": "Cork Marks on the Ceiling",
+      "lore": "Static-prone Manticore fur gives Carbonated Cherry Potion its forceful fizz. The supplier says the fur is naturally shed; Pio’s ceiling still bears the first cork, and Tia now opens the nutrition-labeled bottle over the sink."
     },
     "0-8": {
-      "title": "Large HP Potion · Mom's Heart Pinnacle",
-      "lore": "Only the final refinement earns Large HP Potion its Mom's Heart crest. The Life ledger depicts Mom’s Heart as a folded pink letter closed with a red heart seal, not a fruit. Its affectionate ink is steeped into Large HP Potion, giving the travel-size restorative a keepsake warmth that suits its generous bottle."
+      "title": "Mom’s Heart Is Paper",
+      "lore": "The Life ledger depicts Mom’s Heart as a sealed letter, not fruit; its ink gives Large HP Potion a keepsake warmth for long journeys. A bulk-sale banner hangs nearby, but Tia ships the heart flat and Pio no longer searches it for seeds."
     },
     "0-9": {
-      "title": "Blessed HP Potion · Dancing flower Pinnacle",
-      "lore": "Level 5 marks Blessed HP Potion complete; its signature ingredient is Dancing flower. Dancing flowers turn toward music carried across the valley and collect dew in their cupped petals. Their bright pollen gives Blessing HP Potion a clean, almost sacred finish."
+      "title": "The Sword’s Dewy Encore",
+      "lore": "Dancing Flower nectar brightens Blessed HP Potion, and Brother Akai’s note says a pour can bless an old sword. Pio wanted to test it on every blade in the shop; Tia made him start with the rusty practice one."
     },
     "0-10": {
-      "title": "Strawberry Potion · S Class strawberry jam Pinnacle",
-      "lore": "At level 5, Strawberry Potion reaches its pinnacle through S Class strawberry jam. S-class strawberries come from a small jam orchard where the berries are reduced slowly instead of boiled hard. The preserve sets Strawberry Potion into a sweet, glossy jelly texture."
+      "title": "Jam Before the Dungeon Bell",
+      "lore": "S-class strawberry jam makes Strawberry Potion glossy and fruity, but opening it in a dungeon may summon monsters. The stubborn jar lid has defeated Pio twice; Tia keeps the discounted harvest in the pantry, far from the dungeon door."
     },
     "0-11": {
-      "title": "Elixir of Strength · Eye of giant bat Pinnacle",
-      "lore": "The max-level seal belongs to Elixir of Strength, perfected with Eye of giant bat: Giant bats shed their eyeshine as a crystallized membrane near cave roosts; the collected lens is inert once properly sealed. It focuses the Elixir of Strength’s brief surge into a concentrated, measured dose."
+      "title": "Double Vial, Single Dose",
+      "lore": "A sealed giant-bat eyeshine lens focuses Elixir of Strength’s temporary boost. The old warning says repeated doses may dull intelligence; Pio’s excitement is why Tia follows the supplier’s double-vial and no-eye-contact instructions exactly."
     },
     "0-12": {
-      "title": "Shining HP Potion · Flower fairy wings Pinnacle",
-      "lore": "Mastery records Shining HP Potion at level 5, with Flower fairy wings defining the finished brew. Flower fairies leave these wings caught in dew nets at dawn. Their scarlet shimmer refracts through Shining HP Potion, making the bottle glow like a tiny lantern."
+      "title": "The Scarlet Circuit on Display",
+      "lore": "Flower Fairy wings gathered at dawn tint Shining HP Potion red, but the bottle label reads like an appliance plate: 220 volts, 300 watts. Pio wants to wire a shop window around it; Tia has removed the plug, laid the bruised wings flat, and forbidden damp sleeves near the display."
     },
     "0-13": {
-      "title": "Advanced HP Potion · Fang of fire dragon Pinnacle",
-      "lore": "Only the final refinement earns Advanced HP Potion its Fang of fire dragon crest. Fire dragons shed their fangs when the old enamel loosens, and licensed collectors cool them before transport. A sliver contributes the durable, high-grade base of Advanced HP Potion."
+      "title": "Romorie’s Undead Campaign, in One Tooth",
+      "lore": "Fire Dragon fang is the costly, sharp ingredient behind Advanced HP Potion. Romorie’s original note places it in an undead assault; Pio performs the battle as a one-man opera, while Tia uses wooden tongs and keeps the supplier’s collector license beside the case."
     },
     "0-14": {
-      "title": "Fire resistance Potion · Red crystal Pinnacle",
-      "lore": "Level 5 marks Fire resistance Potion complete; its signature ingredient is Red crystal. Red crystals form where lava meets iron-rich earth and then cools over many seasons. Their heat-stable facets bind the Fire Resistance Potion so it keeps its protective warmth."
+      "title": "A Hot Pot Without the Panic",
+      "lore": "Lava-cooled Red Crystal lends Fire Resistance Potion its heat-ready character, matching the original promise that hot pots are no problem. The supplier’s packing straw is not heat-proof, so Pio carries the crate away from the stove himself."
     },
     "0-15": {
-      "title": "Enriched HP Potion · Meteor scroll Pinnacle",
-      "lore": "At level 5, Enriched HP Potion reaches its pinnacle through Meteor scroll. Meteor scrolls are fragments of star maps scorched during a meteor shower and preserved by observatory scribes. Their compressed ink gives Enriched HP Potion its dense, powerful core."
+      "title": "The Observatory Scroll Goes in the Pot",
+      "lore": "Meteor ink leaves Enriched HP Potion heavy with the scorched-map flavor of a fallen observatory. The old kitchen directions demand ten parts water to one part mix, plus sugar. Pio tried using the star chart to find the pantry; Tia has drawn a clear line between astronomy and measuring cups."
     },
     "0-16": {
-      "title": "Elixir of Rage · Succubu`s tear Pinnacle",
-      "lore": "The max-level seal belongs to Elixir of Rage, perfected with Succubu`s tear: Succubi leave a single tear when a vow is broken, which collectors bind in a silver ampoule. Its fierce pulse makes Elixir of Rage hit hard, while the recipe keeps the rest of the blend spare."
+      "title": "The Vial That Asked for a Doctor",
+      "lore": "A Succubus’s tear, shed after a broken vow, supplies Elixir of Rage with its sudden attack surge. The original bottle directs drinkers to consult a doctor. Pio wants to shake the volatile-looking ampoule; Tia has put the medical note on top and the vial behind glass."
     },
     "0-17": {
-      "title": "Celestial HP Potion · Rune of seraph Pinnacle",
-      "lore": "Mastery records Celestial HP Potion at level 5, with Rune of seraph defining the finished brew. Seraph runes are copied from a choir stone that rings only at sunrise. Their balanced lines harmonize the Celestial HP Potion into a polished, almost heavenly drink."
+      "title": "Heaven, Four Stars",
+      "lore": "Sunrise Seraph runes harmonize Celestial HP Potion, and Edward’s four-star review says it feels like heaven. Pio tried singing over the ink; Tia points out the supplier sent reagent, not karaoke paper, and keeps the sunrise copy safely dry."
     },
     "0-18": {
-      "title": "Ancient HP Potion · Fire dragon scale Pinnacle",
-      "lore": "Only the final refinement earns Ancient HP Potion its Fire dragon scale crest. Fire dragon scales are shed during the ancient molt and cured in ash-free air. Their layered pattern stabilizes Ancient HP Potion, an old restorative whose flavor has never been its selling point."
+      "title": "Ancient Recipe, Modern Gloves",
+      "lore": "Fire Dragon scales stabilize Ancient HP Potion, but its old promise of universal healing cannot soften the flavor. The warning says electricity may cause an explosion; Tia keeps gloves on, while Pio lets the tasting panel critique it from a safe distance."
     },
     "0-19": {
-      "title": "Elixir of Legends · Stone of Sage Pinnacle",
-      "lore": "Level 5 marks Elixir of Legends complete; its signature ingredient is Stone of Sage. Sage stones are said to form around a philosopher’s abandoned hourglass, slowly gathering its patient mineral pulse. Ground into the Elixir of Legends, they support the recipe’s impossible promise of lasting life."
+      "title": "Immortality, Dog-Approved",
+      "lore": "Sage Stone gathers around a philosopher’s abandoned hourglass and lends Elixir of Legends its impossible promise. Red’s five-star review says the dog loves it; Pio saved the receipt, though Tia reminds him the supplier sells stone, not immortality insurance."
     },
     "0-20": {
-      "title": "Elixir of Dawn · Pendant of dawn Pinnacle",
-      "lore": "At level 5, Elixir of Dawn reaches its pinnacle through Pendant of dawn. Pendant stones are found where dawn first reaches the Underworld’s upper caverns. Their pale gleam gives Elixir of Dawn its strange passage between waking light and shadow."
+      "title": "Dawn Is Not a Map",
+      "lore": "The Pendant of Dawn forms where morning reaches the Underworld, giving Elixir of Dawn a red-light-of-doom finish that ends at daybreak. Pio followed its glow once; Tia now packs a real map beside the supplier’s non-navigation reminder."
     },
     "0-21": {
-      "title": "Cursed Bloody Reagent · Cursed Ruby ring Pinnacle",
-      "lore": "The max-level seal belongs to Cursed Bloody Reagent, perfected with Cursed Ruby ring: Cursed ruby rings are recovered from sealed experiment drawers, where their red glass has absorbed years of unfinished notes. A trace lends Bloody Cursed Reagents their binding mark for controlled trials."
+      "title": "The Ring Screamed First",
+      "lore": "Cursed Ruby glass holds unfinished lab notes for Bloody Cursed Reagents, not a wearable jewel. The package is beautiful, the bottle seems to scream, and Tia lets Pio record the noise while keeping the experimental tag firmly attached."
     },
     "0-22": {
-      "title": "Demon's Minor HP Potion · Demon`s red horn Pinnacle",
-      "lore": "Mastery records Demon's Minor HP Potion at level 5, with Demon`s red horn defining the finished brew. Demon horns grow in ridged layers that hold a little warmth from the Underworld. A shaved curl gives Demon’s Minor HP Potion its compact, adventurer-friendly restorative kick."
+      "title": "Underworld Price, Human Warning",
+      "lore": "Warm Demon’s Red Horn gives the minor HP brew a compact restorative kick. It costs less below ground, but the original note warns humans about the difference; Pio measures carefully and Tia leaves both horn caps on until the cauldron is ready."
     },
     "0-23": {
-      "title": "Red Plague Serum · Red plague of spore Pinnacle",
-      "lore": "Only the final refinement earns Red Plague Serum its Red plague of spore crest. Red plague spores are collected from a quarantined crimson shelf fungus and rendered inactive for the sealed serum recipe. Their patterned culture gives Red Plague Serum its wide-ranging experimental profile."
+      "title": "Crimson Lace, Purpose Still Missing",
+      "lore": "Red Plague spores are neutralized before they reach the serum, but nobody can say what the finished reagent is for—and demons are unaffected. Pio likes the lace-like scarlet pattern; Tia treats the supplier’s quarantine seal as the only useful answer and logs the jar unopened."
     },
     "0-24": {
-      "title": "Red Essence of Pride · Lucifer`s red tears Pinnacle",
-      "lore": "Level 5 marks Red Essence of Pride complete; its signature ingredient is Lucifer`s red tears. Lucifer’s red tears are crystallized droplets found on the edge of a pride shrine after its keeper departs. Their concentrated gleam becomes the finishing note in Red Essence of Pride."
+      "title": "Red Tears, No Long Gazes",
+      "lore": "The red tears are said to belong to Lucifer, and their color gives Red Essence of Pride its ceremonial luster. Its original warning is blunt: prolonged staring is dangerous. Pio proposes a portrait session; Tia replaces the mirror with a closed cabinet and a note to admire the legend from memory."
     },
     "1-0": {
-      "title": "Sample Blue potion · Blue herb Pinnacle",
-      "lore": "At level 3, Sample Blue potion reaches its pinnacle through Blue herb. Blue herbs grow in misty ravines and draw their cool color from mineral-rich runoff. Their mild infusion gives Sample Blue Potion its simple beginner’s profile and clean, quiet finish."
+      "title": "Blue Herb, One-Day Deadline",
+      "lore": "Mist-ravine Blue Herb makes Sample Blue Potion a quiet beginner’s infusion; the original note says to drink it soon after opening. Pio put the bundle in the icebox, but Tia moved it back beside the recipe and saved the lunch."
     },
     "1-1": {
-      "title": "Infant MP potion · Clever mushroom Pinnacle",
-      "lore": "The max-level seal belongs to Infant MP potion, perfected with Clever mushroom: Clever mushrooms grow in rings around fallen beech trunks, where their bitter cap develops slowly. They give Infant MP Potion a gentle, focused base suited to a small serving."
+      "title": "Clever Caps, Resting Orders",
+      "lore": "Clever Mushroom’s beechwood bitterness gives Infant MP Potion its small, focused dose. The label tells children to stop fighting and rest; Pio still checks under the straw for missing caps, and Tia has added “no wrestling near inventory.”"
     },
     "1-2": {
-      "title": "Blueberry potion · Fruit of wisdom Pinnacle",
-      "lore": "Mastery records Blueberry potion at level 5, with Fruit of wisdom defining the finished brew. Wisdom fruit ripens in the university gardens after students leave for summer. Its tart skin brightens Blueberry Potion, a snack-like blend that keeps its thoughtful, crisp edge."
+      "title": "A Free Blueberry, No Homework",
+      "lore": "University Wisdom Fruit gives Blueberry Potion a tart snack-time character, and the sign promises buy-one-get-one. The supplier says the fruit cannot finish homework; Pio ate the study guide anyway, so Tia now counts books as well as berries."
     },
     "1-3": {
-      "title": "Small MP potion · Bluebird feathers Pinnacle",
-      "lore": "Only the final refinement earns Small MP potion its Bluebird feathers crest. Bluebirds drop these feathers beside cold mountain streams during their annual molt. Their light barbs make Small MP Potion easy to carry, with a curious but restrained taste."
+      "title": "Refund Requested at Altitude",
+      "lore": "Bluebird feathers make Small MP Potion easy to carry, though Maria’s two-star review asks for a refund. Pio says the feathers escaped during counting; Tia notes the refund request and tells the supplier that floating inventory still belongs on the invoice."
     },
     "1-4": {
-      "title": "Mineral potion · Bluebird's egg Pinnacle",
-      "lore": "Level 5 marks Mineral potion complete; its signature ingredient is Bluebird's egg. Bluebird eggs collect a mineral bloom from nests built over limestone pools. The mineral-rich yolk rounds Mineral Potion into a nourishing drink with a gentle herbal-tea note."
+      "title": "The Lid Learned to Fly",
+      "lore": "A limestone mineral bloom enriches Bluebird eggs for Mineral Potion. The original warning says shaking may blow off the lid; Pio discovered the range, and Tia now stores each padded egg and finished bottle well apart."
     },
     "1-5": {
-      "title": "Home MP potion · Suspicious powder Pinnacle",
-      "lore": "At level 5, Home MP potion reaches its pinnacle through Suspicious powder. Suspicious powder forms in abandoned observatory cupboards where old cooling charms have powdered the dust. A measured dose settles Home MP Potion into a fever-soothing, upright-stored tonic."
+      "title": "Ina’s Difficult Sip",
+      "lore": "Suspicious Powder cools Home MP Potion, whose name is less damning than its abandoned-observatory origin. Ina’s three-star review admits it is hard to drink and secretly liked it; Pio believes her, while Tia keeps the “probably legal” health-law note nearby."
     },
     "1-6": {
-      "title": "Normal MP potion · Whyragora Pinnacle",
-      "lore": "The max-level seal belongs to Normal MP potion, perfected with Whyragora: Whyragora roots thread through shaded creek banks and absorb the steady rhythm of running water. Their economical infusion gives Normal MP Potion a strong effect for an everyday traveler’s price."
+      "title": "A Root That Whistles Back",
+      "lore": "Whyragora threads through shaded creek banks and lends Normal MP Potion a steady traveler’s rhythm. The health-law label ends in “probably”; Pio sliced the root and started a chorus, while Tia recorded the batch under approved, pending legal review."
     },
     "1-7": {
-      "title": "Carbonated soda potion · Werewolf fur Pinnacle",
-      "lore": "Mastery records Carbonated soda potion at level 5, with Werewolf fur defining the finished brew. Werewolf fur is gathered from the silver undercoat left after a winter molt. Its springy fibers help Carbonated Soda Potion keep a lively head, though the potency stays modest."
+      "title": "Silver Molt, Zero Cholesterol",
+      "lore": "Werewolf underfur leaves Carbonated Soda Potion with a vigorous fizz; its nutrition card claims 250 mana and 20 intelligence. The molt is ethical, the bubbles are not quiet, and Pio now opens the bottle below the ceiling fan."
     },
     "1-8": {
-      "title": "Large MP potion · Dad's Youth Pinnacle",
-      "lore": "Only the final refinement earns Large MP potion its Dad's Youth crest. Dad’s Youth is shown as a pale blue letter with a blue heart seal, its careful handwriting preserved in the Mana archive. The ink dissolves into Large MP Potion as a steady, cool infusion, while the large bottle keeps enough of the old message for a long journey."
+      "title": "Dad’s Youth, Corner-Protected",
+      "lore": "The blue-heart letter called Dad’s Youth gives Large MP Potion a sentimental recipe story and a smart-adventurer discount. Pio wanted to fold the envelope into the bottle; Tia made the supplier ship it between boards, corners intact."
     },
     "1-9": {
-      "title": "Blessing MP potion · Dreamy flower Pinnacle",
-      "lore": "Level 5 marks Blessing MP potion complete; its signature ingredient is Dreamy flower. Dreamy flowers bloom beside pools that mirror the night sky even at noon. Their calm scent softens Blessing MP Potion and leaves the finished brew unusually clear."
+      "title": "Bedtime in the Bishop’s Cup",
+      "lore": "Dreamy flowers mirror the night sky even at noon, lending Blessing MP Potion a sleepy glow. Bishop Ellen’s note says it can revive a dead monster; Pio read it twice, while Tia keeps the bedtime-scented crate away from the cemetery."
     },
     "1-10": {
-      "title": "Grape potion · S Class grape jam Pinnacle",
-      "lore": "At level 5, Grape potion reaches its pinnacle through S Class grape jam. S-class grapes are pressed in small batches until their skins lend the syrup a deep violet gloss. The jam turns Grape Potion into a sweet, jelly-like drink with a lingering fruit note."
+      "title": "Grape Gloss, Jar Lock",
+      "lore": "S-class grape jam colors Grape Potion violet, but the label warns that minors may overindulge. Pio admires the gloss; Tia has placed the sealed jar high on the shelf and stopped calling the one-free offer a child’s allowance."
     },
     "1-11": {
-      "title": "Elixir of Wisdom · Eye of gargoyle Pinnacle",
-      "lore": "The max-level seal belongs to Elixir of Wisdom, perfected with Eye of gargoyle: Gargoyle eyes are polished stones shed from old rooftop statues after storms. Their faceted focus sharpens Elixir of Wisdom’s temporary clarity, a favorite among students with looming exams."
+      "title": "Gargoyle Lens, Exam Season",
+      "lore": "Storm-loosened stone eyes focus Elixir of Wisdom’s temporary intelligence boost; the original warning says users may forget sleep and exams. Pio polished the lens until it reflected his own all-nighter, and Tia moved the alarm clock beside the bottle."
     },
     "1-12": {
-      "title": "Shining MP potion · Lake fairy wings Pinnacle",
-      "lore": "Mastery records Shining MP potion at level 5, with Lake fairy wings defining the finished brew. Lake fairies leave blue wings on reeds after moonlit dances over still water. Their cool iridescence gives Shining MP Potion a luminous blue glow without clouding the liquid."
+      "title": "A Blue Glow Under a Heavy Book",
+      "lore": "Lake Fairy wings gleam through Shining MP Potion, but the 220-volt label belongs nowhere near damp reeds or heavy books. Pio’s journal nearly flattened a wing; Tia made a weight limit and reserved the shelf for the fragile moonlit harvest."
     },
     "1-13": {
-      "title": "Advanced MP potion · Fang of water dragon Pinnacle",
-      "lore": "Only the final refinement earns Advanced MP potion its Fang of water dragon crest. Water dragons shed their fangs near deep river bends where the current wears the enamel smooth. A tiny shaving lends Advanced MP Potion its seasoned, high-effect base."
+      "title": "The Drake Hunt Receipt",
+      "lore": "A river-worn Water Dragon fang gives Advanced MP Potion its veteran edge. Romorie’s label credits the great drake hunt; Pio tells the expedition story, and Tia keeps the sharp tip in a case that paper sacks cannot lose."
     },
     "1-14": {
-      "title": "Frost resistance potion · Blue crystal Pinnacle",
-      "lore": "Level 5 marks Frost resistance potion complete; its signature ingredient is Blue crystal. Blue crystals grow in glacier caves as meltwater freezes around ancient mineral seams. Their cold-stable structure anchors Frost Resistance Potion and helps it keep a crisp finish."
+      "title": "One Bite of Winter",
+      "lore": "Glacier Blue Crystal binds Frost Resistance Potion, matching the old promise that ice cream can finally be eaten whole. The supplier says the crystal is not candy; Pio asked anyway, and Tia marked the tin with a very large snowflake and “not edible.”"
     },
     "1-15": {
-      "title": "Enriched MP potion · Blizzard scroll Pinnacle",
-      "lore": "At level 5, Enriched MP potion reaches its pinnacle through Blizzard scroll. Blizzard scrolls are inked on frost-silk during the annual whiteout and sealed before the thaw. Their condensed runes make Enriched MP Potion exceptionally dense and effective."
+      "title": "A Blizzard’s Most Important Ingredient: Sugar",
+      "lore": "Blizzard ink gives Enriched MP Potion its cold, dense character, and its recipe is oddly domestic: dilute at 10:1 and add sugar. Pio suggested warming the scroll over a brazier; Tia stopped him before the frost-silk curled and posted the thaw warning beside the cupboard."
     },
     "1-16": {
-      "title": "Elixir of Calmness · Siren's Tear Pinnacle",
-      "lore": "The max-level seal belongs to Elixir of Calmness, perfected with Siren's Tear: A siren’s tear is caught in a shell at the point where song becomes silence. Its quiet pulse steadies Elixir of Calmness, helping the blend sharpen concentration without a dramatic aftertaste."
+      "title": "The Siren’s Quiet Prescription",
+      "lore": "A siren’s tear is caught where song becomes silence, a fitting source for Elixir of Calmness. The original note says to consult a doctor; Pio whispers around the sound-stoppered ampoule, and Tia prefers that to another loud taste test."
     },
     "1-17": {
-      "title": "Celestial MP potion · Runes of cherub Pinnacle",
-      "lore": "Mastery records Celestial MP potion at level 5, with Runes of cherub defining the finished brew. Cherub runes are copied from a marble cradle whose carvings remain warm in winter. Their balanced pattern gives Celestial MP Potion its smooth, otherworldly harmony."
+      "title": "Three Stars, Long Delivery",
+      "lore": "Cherub runes from a warm marble cradle give Celestial MP Potion its measured grace. Leah’s three-star review complains about delivery time; Pio wants to blame the heavens, while Tia has already copied the supplier’s vellum-only packing note."
     },
     "1-18": {
-      "title": "Ancient MP Potion · Water dragon scale Pinnacle",
-      "lore": "Only the final refinement earns Ancient MP Potion its Water dragon scale crest. Water dragon scales are shed in deep caves and polished by underground streams. Their layered blue sheen stabilizes Ancient MP Potion, an old recipe promising magic that does not run dry."
+      "title": "Do Not Shake the Deep Scale",
+      "lore": "Underground streams polish Water Dragon scales for Ancient MP Potion. The original warning says shaking may summon monsters; Pio once tested the rattle, and Tia now keeps the slippery scales dry and the bottle very still."
     },
     "1-19": {
-      "title": "Elixir of Fantasy · Stone of Deep-sea Pinnacle",
-      "lore": "Level 5 marks Elixir of Fantasy complete; its signature ingredient is Stone of Deep-sea. Deep-sea stones are found in trenches where sunlight has never reached the seabed. Their compressed mineral memory lends Elixir of Fantasy its fabled, all-knowledge ambition."
+      "title": "Gray’s Knowledgeable Bargain",
+      "lore": "Deep-sea stone stores the ocean floor’s mineral memory for Elixir of Fantasy, which promises all knowledge. Gray gave it five stars for value; Pio asked it for the receipt, but Tia says the supplier’s box contains no answers."
     },
     "1-20": {
-      "title": "Elixir of daybreak · Pendant of daybreak Pinnacle",
-      "lore": "At level 6, Elixir of daybreak reaches its pinnacle through Pendant of daybreak. Daybreak pendants form in the Underworld where the first shaft of morning slips through a cavern roof. Their pale blue gleam guides Elixir of Daybreak between two very different skies."
+      "title": "Daybreak Without a Conversation",
+      "lore": "A pendant forms where dawn slips into the Underworld, while the original note warns its blue light may leave the drinker unable to speak. Pio likes the mystery; Tia packed a writing slate beside the daybreak charm."
     },
     "1-21": {
-      "title": "Ashy cursed reagents · Cursed Sapphire Ring Pinnacle",
-      "lore": "The max-level seal belongs to Ashy cursed reagents, perfected with Cursed Sapphire Ring: Cursed sapphire rings are recovered from a locked cabinet of unfinished blue experiments. Their cool trace marks Ashy Cursed Reagents as a measured component for controlled studies."
+      "title": "Sapphire Tag, No Jewelry Bonus",
+      "lore": "Cursed Sapphire Ring carries unfinished blue experiments into Ashy Cursed Reagents. The parcel’s screaming is noted but unexplained; Pio listened at the box, and Tia glued the stone to its tag before it could reach the jewelry case."
     },
     "1-22": {
-      "title": "Demon's minor MP potion · Demon's blue horn Pinnacle",
-      "lore": "Mastery records Demon's minor MP potion at level 6, with Demon's blue horn defining the finished brew. Blue demon horns hold a cool undertone beneath their dark ridges. Their carefully shaved dust gives Demon’s Minor MP Potion a practical boost for Underworld expeditions."
+      "title": "A Cool Horn, Double-Bagged",
+      "lore": "Blue Demon Horn dust gives the minor MP potion a measured Underworld lift. Pio nearly left a cobalt sneeze on the ledger; Tia now uses the supplier’s mask, seals the bags, and keeps the receipt out of the dust cloud."
     },
     "1-23": {
-      "title": "Blue plague serum · Blue plague of spore Pinnacle",
-      "lore": "Only the final refinement earns Blue plague serum its Blue plague of spore crest. Blue plague spores grow in a sealed cave garden where moonlight turns every thread cobalt. Rendered inactive for the formula, they give Blue Plague Serum its broad experimental character."
+      "title": "Cobalt Lace Under Lock",
+      "lore": "Moonlit Blue Plague spores are neutralized for a serum with no known purpose and no effect on demons. The guild’s “inactive” seal stays shut; Pio admires the cave-grown color through glass, and Tia records no unauthorized peeking."
     },
     "1-24": {
-      "title": "Blue essence of pride · Lucifer's blue tears Pinnacle",
-      "lore": "Level 6 marks Blue essence of pride complete; its signature ingredient is Lucifer's blue tears. Lucifer’s blue tears crystallize where a pride shrine meets a cold spring. Their sharp blue glint finishes Blue Essence of Pride with a note that seems to reflect more than the bottle."
+      "title": "The Mirror Keeps Fingerprints",
+      "lore": "Blue tears from the cold spring finish Blue Essence of Pride with a sharp reflection. The original warning says prolonged looking is dangerous; Pio checks for fingerprints instead, and Tia hands him a cloth rather than a second mirror."
     },
     "2-0": {
-      "title": "Sample Yellow potion · Yellow herb Pinnacle",
-      "lore": "At level 3, Sample Yellow potion reaches its pinnacle through Yellow herb. Yellow herbs grow on windy hillsides where the leaves face the sun from dawn onward. Their mild color and easy infusion make Sample Yellow Potion a straightforward first brew."
+      "title": "Crooked Stalk, Straightforward Brew",
+      "lore": "Wind-facing Yellow Herb makes Sample Yellow Potion a simple first infusion. The bottleneck expiry label is almost unreadable and names Pio as manufacturer; Tia writes the date clearly while he straightens crooked stems for the sheer satisfaction."
     },
     "2-1": {
-      "title": "Infant SP potion · Lively mushroom Pinnacle",
-      "lore": "The max-level seal belongs to Infant SP potion, perfected with Lively mushroom: Lively mushrooms spring up after warm summer rain and seem to bounce when the basket shifts. Their sweet, buoyant infusion makes Infant SP Potion gentle on a small stomach."
+      "title": "Mushroom After the Rain",
+      "lore": "Lively Mushroom softens Infant SP Potion for small stomachs, while the original note says any ache should be temporary. The basket seems to disagree with the supplier’s aroma explanation; Pio closes the lid before the mushrooms can make a run for it."
     },
     "2-2": {
-      "title": "Orange potion · Fruit of spirit Pinnacle",
-      "lore": "Mastery records Orange potion at level 3, with Fruit of spirit defining the finished brew. Spirit fruit grows in orchards planted near old festival grounds, where the trees retain a bright, celebratory scent. Its citrus sweetness forms Orange Potion, a popular treat with a spirited finish."
+      "title": "Six-Pack, Strong Perfume",
+      "lore": "Festival Spirit Fruit gives Orange Potion a bright citrus finish, and the old offer waives shipping on a six-pack. Pio nearly invoiced the fragrance as a seventh customer; Tia keeps the scented fruit away from the paperwork."
     },
     "2-3": {
-      "title": "Small SP potion · Wyvern feathers Pinnacle",
-      "lore": "Only the final refinement earns Small SP potion its Wyvern feathers crest. Wyverns drop these feathers while circling warm updrafts above the cliffs. Their light fibers leave Small SP Potion portable and give the compact blend a pleasant sour edge."
+      "title": "Kane’s Discount Negotiation",
+      "lore": "Wyvern feathers make Small SP Potion pocketable, but Kane’s two-star review asks for a review-writing discount. The supplier packed them spine-first; Pio fanned himself with the parcel, and Tia charged him by the missing feather."
     },
     "2-4": {
-      "title": "Vitamin potion · Wyvern's egg Pinnacle",
-      "lore": "Level 5 marks Vitamin potion complete; its signature ingredient is Wyvern's egg. Wyvern eggs develop in sunlit nests where the shell gathers a vitamin-rich golden bloom. Their nourishing contents give Vitamin Potion its refreshing, tea-like character."
+      "title": "Two Hands on the Vitamin Crate",
+      "lore": "A golden bloom from Wyvern eggs turns Vitamin Potion into a nourishing tea-like brew. The bottle must not be shaken; Pio carried the crate with both hands after the courier demonstrated exactly why that warning exists."
     },
     "2-5": {
-      "title": "Home SP potion · Dangerous powder Pinnacle",
-      "lore": "At level 6, Home SP potion reaches its pinnacle through Dangerous powder. Dangerous powder is scraped from the dry heart of a storm-burnt seedpod and stabilized by the guild. A little of its wakeful warmth gives Home SP Potion a steady, sleep-resistant profile."
+      "title": "Olive’s Four-Star Wake-Up",
+      "lore": "Storm-burnt Dangerous Powder gives Home SP Potion a wakeful warmth; Olive’s four-star review says it works when tired. Pio keeps the packet upright and away from sparks, while Tia praises the review for once being shorter than the supplier note."
     },
     "2-6": {
-      "title": "Normal SP potion · Whatdragora Pinnacle",
-      "lore": "The max-level seal belongs to Normal SP potion, perfected with Whatdragora: Whatdragora root grows where three trails meet and takes on a different scent from each path. Its versatile broth lends Normal SP Potion a modest, travel-friendly energy lift."
+      "title": "Refund the Tampered Trail",
+      "lore": "Three-path Whatdragora gives Normal SP Potion its travel-ready lift. The original note demands a refund if the bottle looks tampered with; Pio followed the root’s scent to the shop, and Tia inspected every seal on the way."
     },
     "2-7": {
-      "title": "Carbonated lemon potion · Kobold fur Pinnacle",
-      "lore": "Mastery records Carbonated lemon potion at level 8, with Kobold fur defining the finished brew. Kobolds leave their winter underfur in warm basalt dens, where it picks up a faint lemony mineral scent. The resilient fibers help Carbonated Lemon Potion keep its crisp fizz and strong kick."
+      "title": "Empty Den, Full Fizz",
+      "lore": "Kobold winter fur from warm basalt dens gives Carbonated Lemon Potion its crisp mineral kick. The nutrition card boasts 250 energy; Pio still checks the empty den with tongs, and Tia has forbidden bare-handed cave inspections."
     },
     "2-8": {
-      "title": "Large SP potion · Uncle's Mystery Pinnacle",
-      "lore": "Only the final refinement earns Large SP potion its Uncle's Mystery crest. Uncle’s Mystery appears as a yellow letter bearing a golden heart, addressed but never fully explained in the Stamina collection. A measured wash of its curious ink gives Large SP Potion a bright, sustaining finish, bottled beautifully for the road ahead."
+      "title": "The Explorer’s Golden Envelope",
+      "lore": "Uncle’s Mystery is a yellow heart-sealed letter steeped into Large SP Potion; the dungeon-special ad promises a monthly discount. Pio found no return address, and Tia stopped him checking the envelope for fruit a third time."
     },
     "2-9": {
-      "title": "Blessing SP potion · Singing flower Pinnacle",
-      "lore": "Level 10 marks Blessing SP potion complete; its signature ingredient is Singing flower. Singing flowers bloom beside the old stone stage and vibrate softly when wind crosses their petals. Their resonant nectar lends Blessing SP Potion a bright, unexpectedly potent finish."
+      "title": "Saitama’s Hair-Raising Blessing",
+      "lore": "Singing Flower nectar makes Blessing SP Potion hum beside the old stage. Saitama’s note claims a pour can regrow hair; Pio offered the bottle to the mirror, while Tia asks customers to keep it off the singing petals."
     },
     "2-10": {
-      "title": "Potion of Riddle · Jam of mystery Pinnacle",
-      "lore": "At level 11, Potion of Riddle reaches its pinnacle through Jam of mystery. Mystery jam is made from fruit gathered at the edge of the riddle grove, where no two baskets smell quite alike. It gives Potion of Riddle its glossy jelly texture and refreshing sweetness."
+      "title": "The Jam Opens Before the Question",
+      "lore": "Riddle-grove jam makes Potion of Riddle glossy and overwhelmingly refreshing as soon as the bottle opens. Pio still asks what fruit went in; Tia points to the supplier contract, which is more mysterious than the flavor."
     },
     "2-11": {
-      "title": "Elixir of Energy · Eye of ogre Pinnacle",
-      "lore": "The max-level seal belongs to Elixir of Energy, perfected with Eye of ogre: Ogre eyes are polished amber stones found in the ruins of a watchtower. Their warm focus gives Elixir of Energy a temporary lift that city workers favor during long shifts."
+      "title": "Amber Eyes, Bathroom Breaks",
+      "lore": "Ogre-eye lenses focus Elixir of Energy for city shifts, but the original warning mentions sleepiness and repeated restroom trips at high doses. Pio admires the amber reflection; Tia measures carefully and schedules a very convenient break."
     },
     "2-12": {
-      "title": "Shining SP potion · Forest fairy wings Pinnacle",
-      "lore": "Mastery records Shining SP potion at level 13, with Forest fairy wings defining the finished brew. Forest fairies leave golden wings caught on bramble flowers after autumn dances. Their warm shimmer scatters through Shining SP Potion, turning the bottle into a little sunbeam."
+      "title": "A Golden Wingbeat in the Conservatory",
+      "lore": "Autumn Forest Fairy wings make Shining SP Potion glow like a pocket-sized sun. The old 220V/300W warning is enough to keep Pio from calling it a night-light; Tia instead records the harvest’s dry-season origin and hangs the wings above the rain barrel."
     },
     "2-13": {
-      "title": "Advanced SP potion · Fang of thunder dragon Pinnacle",
-      "lore": "Only the final refinement earns Advanced SP potion its Fang of thunder dragon crest. Thunder dragons shed fangs on storm peaks where lightning has glazed the enamel. A fine shaving gives Advanced SP Potion its seasoned, high-impact foundation."
+      "title": "Thunder Fang, Griffin Field Record",
+      "lore": "Advanced SP Potion’s Thunder Dragon tooth carries lightning scars from the griffin-capture expedition described in Romorie’s note. Pio adds sound effects every time the fang flashes; Tia labels the wooden scoop “for this tooth only” after he reached for it barehanded."
     },
     "2-14": {
-      "title": "Electric resistance potion · Gold crystal Pinnacle",
-      "lore": "Level 15 marks Electric resistance potion complete; its signature ingredient is Gold crystal. Gold crystals form inside hills struck repeatedly by summer lightning. Their conductive lattice anchors Electric Resistance Potion and helps the protective blend hold its bright finish."
+      "title": "No Sweater Shock, No Lightning Rod",
+      "lore": "Summer-struck Gold Crystal anchors Electric Resistance Potion, whose old note promises fewer shocks while removing a sweater. The supplier says it is not a lightning rod; Pio took the hint and stopped posing beside exposed wires."
     },
     "2-15": {
-      "title": "Enriched SP potion · Thunderbolt scroll Pinnacle",
-      "lore": "At level 16, Enriched SP potion reaches its pinnacle through Thunderbolt scroll. Thunderbolt scrolls are written during distant storms on paper that briefly holds a spark. Their tightly packed symbols concentrate Enriched SP Potion into a dense, forceful brew."
+      "title": "A Recipe Best Read Dry",
+      "lore": "Thunderbolt scroll ink packs Enriched SP Potion with storm density; the cooking card calls for water and sugar. Pio tried unfolding it near steam, so Tia moved the parchment to a dry shelf and made the warning part of the recipe."
     },
     "2-16": {
-      "title": "Elixir of Vigor · Harpy's tear Pinnacle",
-      "lore": "The max-level seal belongs to Elixir of Vigor, perfected with Harpy's tear: Harpy tears fall into highland anemones after a long flight through rough weather. Their bright, tireless pulse gives Elixir of Vigor its sustained lift without weighing down the blend."
+      "title": "Anemone Keepsake from the Harpy Route",
+      "lore": "Harpy tears caught among anemones are the unusual source of Elixir of Vigor’s enduring pulse. The bottle also says to seek medical advice. Pio packs a hat for the highland collection trip; Tia refuses to let either the hat or the unopened sample leave the labeled case."
     },
     "2-17": {
-      "title": "Celestial SP potion · Rune of thrones Pinnacle",
-      "lore": "Mastery records Celestial SP potion at level 18, with Rune of thrones defining the finished brew. Runes of thrones are copied from a golden seat buried beneath the old royal observatory. Their deliberate symmetry gives Celestial SP Potion a regal balance and exquisite finish."
+      "title": "Throne Runes, No Armrests",
+      "lore": "Cherub runes copied from a golden throne make Celestial SP Potion worthy of the gods’ table. Eden’s five-star review—“It is delicious. It is so incredibly delicious.”—has become Pio’s favorite proof; Tia still reminds him that the throne itself did not fit in the parcel."
     },
     "2-18": {
-      "title": "Ancient SP Potion · Thunder dragon scale Pinnacle",
-      "lore": "Only the final refinement earns Ancient SP Potion its Thunder dragon scale crest. Thunder dragon scales are shed in the storm season and tempered by mountain rain. Their golden ridges steady Ancient SP Potion, a fabled recipe said to renew youth."
+      "title": "The Scale Is Dry, the Warning Isn’t",
+      "lore": "Storm-season Thunder Dragon scales steady Ancient SP Potion, though rising body temperature may alter the effect. Pio keeps the gloves on after the supplier’s electrical warning; Tia keeps the tasting notes away from the thunderstorm collection."
     },
     "2-19": {
-      "title": "Elixir of Hero · Stone of Glory Pinnacle",
-      "lore": "Level 20 marks Elixir of Hero complete; its signature ingredient is Stone of Glory. Glory stones form in the footprints of heroes after a battle has passed into legend. Their bright mineral grain gives Elixir of Hero its mythic strength and rare, hard-to-find finish."
+      "title": "Dazy’s Express Heroism",
+      "lore": "Glory Stone carries a hero’s battle legend into Elixir of Hero; Dazy’s five-star review praises the very fast delivery. Pio asked whether a bard could certify the stone, and Tia added the supplier’s receipt instead."
     },
     "2-20": {
-      "title": "Elixir of twilight · Pendant of dusk Pinnacle",
-      "lore": "At level 21, Elixir of twilight reaches its pinnacle through Pendant of dusk. Dusk pendants crystallize in the Underworld’s last-lit passage as the evening star appears above. Their amber glow shapes Elixir of Twilight, a brew balanced between day’s end and night."
+      "title": "Where Sunset Blurs the World",
+      "lore": "Dusk Pendant marks the Underworld’s last light, matching the old note about a golden boundary between reality and illusion. Pio likes the peaceful horizon; Tia stores the glowing charm in its pouch so the night porter can sleep."
     },
     "2-21": {
-      "title": "Sunset cursed reagents · Cursed Topaz ring Pinnacle",
-      "lore": "The max-level seal belongs to Sunset cursed reagents, perfected with Cursed Topaz ring: Cursed topaz rings come from a yellow-glass experiment abandoned when its inventor changed careers. A measured shaving lends Sunset Cursed Reagents their golden mark for careful trials."
+      "title": "A Ring, a Scream, and No Proposal",
+      "lore": "Cursed Topaz Ring gives Sunset Cursed Reagents their yellow-glass experiment history. The beautiful parcel still seems to scream; Pio nearly opened the jewelry case, and Tia reassigned the ring to the locked lab drawer."
     },
     "2-22": {
-      "title": "Demon's Minor SP potion · Demon's yellow horn Pinnacle",
-      "lore": "Mastery records Demon's Minor SP potion at level 23, with Demon's yellow horn defining the finished brew. Yellow demon horns carry the warm tint of the Underworld’s ember fields. Their fine powder contributes a compact restorative note to Demon’s Minor SP Potion for adventurers on the move."
+      "title": "The Horn That Pays Less Below",
+      "lore": "Yellow Demon Horn powder warms the minor SP potion for Underworld travelers. It is cheaper underground, but the old note warns humans may react differently; Pio seals the dust and Tia checks the licensed collector’s label."
     },
     "2-23": {
-      "title": "Yellow Plague Serum · Yellow plague of spore Pinnacle",
-      "lore": "Only the final refinement earns Yellow Plague Serum its Yellow plague of spore crest. Yellow plague spores form a bright lace beneath a quarantined shelf fungus and are neutralized before the serum is packed. Their varied culture gives Yellow Plague Serum its wide-ranging experimental profile."
+      "title": "Yellow Spores and the Unanswered Label",
+      "lore": "The yellow plague culture is rendered inactive for its serum, yet the original entry admits its use remains unknown and demons shrug it off. Pio calls the pattern guild-worthy; Tia files the supplier certificate under containment and will not break the seal for a better look."
     },
     "2-24": {
-      "title": "Gold Essence of Pride · Lucifer's golden tears Pinnacle",
-      "lore": "Level 25 marks Gold Essence of Pride complete; its signature ingredient is Lucifer's golden tears. Lucifer’s golden tears crystallize on a sunlit ledge beside an old pride shrine. Their warm gleam completes Gold Essence of Pride with a finish that looks almost molten."
+      "title": "Gold Seal, Not a Gold Coin",
+      "lore": "Gold Essence of Pride gets its warm gleam from Lucifer’s golden tears, collected in a fragile ampoule. The label warns that looking too long can harm you; the supplier clarifies that the gold-colored seal is not bullion. Pio asks about resale value, and Tia locks the vial upright."
     }
   }
 }
