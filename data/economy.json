@@ -164,7 +164,28 @@
     },
     "speed": {
       "max": 19,
-      "bonusPerLevel": 0.12,
+      "materialsPerSecond": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
       "costs": [
         137,
         177,
@@ -218,28 +239,15 @@
     "ticketPrice": 200,
     "tiaMasteryStars": 20
   },
-  "bank": {
-    "units": {
-      "tickets": 10,
-      "rubies": 1
-    },
-    "pairs": [
-      [
-        "tickets",
-        "rubies"
-      ],
-      [
-        "rubies",
-        "tickets"
-      ]
-    ]
+  "currencyUnits": {
+    "tickets": 10,
+    "rubies": 1
   },
   "conveyor": {
     "spacing": 76,
-    "baseSpeed": 80,
+    "baseSpeed": 300,
     "ticketProbability": 0.009900990099009901,
     "solutionProbability": 0.009900990099009901,
-    "emptySpeedMultiplier": 0.5,
     "specialDropsInManual": true
   },
   "events": {
@@ -643,5 +651,106 @@
         "fairyTierCost": 2
       }
     }
+  },
+  "shop": {
+    "coinSecondsPerRuby": 60,
+    "products": [
+      {
+        "id": "small-enhancement-package",
+        "name": "Enhancement Pack",
+        "grants": {
+          "enhancement": 5,
+          "protection": 3
+        },
+        "cost": {
+          "currency": "rubies",
+          "amount": 3
+        }
+      },
+      {
+        "id": "micro-ruby-bundle",
+        "name": "10 rubies",
+        "grants": {
+          "rubies": 10
+        }
+      },
+      {
+        "id": "small-ruby-bundle",
+        "name": "52 rubies",
+        "grants": {
+          "rubies": 52
+        }
+      },
+      {
+        "id": "medium-ruby-bundle",
+        "name": "110 rubies",
+        "grants": {
+          "rubies": 110
+        }
+      },
+      {
+        "id": "large-ruby-bundle",
+        "name": "350 rubies",
+        "grants": {
+          "rubies": 350
+        }
+      },
+      {
+        "id": "micro-ticket-bundle",
+        "name": "100 tickets",
+        "grants": {
+          "tickets": 100
+        }
+      },
+      {
+        "id": "small-ticket-bundle",
+        "name": "520 tickets",
+        "grants": {
+          "tickets": 520
+        }
+      },
+      {
+        "id": "medium-ticket-bundle",
+        "name": "1,100 tickets",
+        "grants": {
+          "tickets": 1100
+        }
+      },
+      {
+        "id": "large-ticket-bundle",
+        "name": "3,500 tickets",
+        "grants": {
+          "tickets": 3500
+        }
+      },
+      {
+        "id": "micro-coin-bundle",
+        "name": "5,000,000 gold",
+        "grants": {
+          "coins": 5000000
+        }
+      },
+      {
+        "id": "small-coin-bundle",
+        "name": "30,000,000 gold",
+        "grants": {
+          "coins": 30000000
+        }
+      },
+      {
+        "id": "medium-coin-bundle",
+        "name": "125,000,000 gold",
+        "grants": {
+          "coins": 125000000
+        }
+      },
+      {
+        "id": "large-coin-bundle",
+        "name": "10,100,000,000 gold",
+        "grants": {
+          "coins": 10100000000
+        }
+      }
+    ]
   }
 }

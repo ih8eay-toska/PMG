@@ -1,0 +1,84 @@
+{
+  "traveler": "tirami",
+  "batch": "v2-stories-t1-5",
+  "chapters": [
+    {
+      "kind": "route", "tier": 1, "family": "Life", "material": "Red herb",
+      "job": "Compare the Herb Merchants",
+      "hook": "The rival has undercut the red-herb copper again this morning. Tirami does not chase the price down; she sharpens a tag.",
+      "outcome": "She prints the honest tag - this bed, this week, this price, no wiggles - and the honest tag outsells the wiggles by end of day. She reprints it proudly ★ and has the plate cut for a smaller stall's use too."
+    },
+    {
+      "kind": "route", "tier": 1, "family": "Mana", "material": "Blue herb",
+      "job": "Compare the Herb Merchants",
+      "hook": "Half the blue-herb market has sprouted framed certificates this week, and frames are cheap. Tirami owns a magnifying glass.",
+      "outcome": "She checks every certificate against grower signets instead of trusting the frames; two fakes quietly fade from the market. Her certificate wall is real, and she says so ★ at a volume the fakes can hear."
+    },
+    {
+      "kind": "route", "tier": 1, "family": "Stamina", "material": "Yellow herb",
+      "job": "Compare the Herb Merchants",
+      "hook": "Two stalls, one scale, and the market's heaviest yellow-herb buyers standing in the wrong queue. Tirami weighs in on the side of the needle.",
+      "outcome": "She pays for the fair scale's repair herself and pins its weights openly where every buyer can read them. The market's heaviest sales migrate to the honest needle; she takes it personally ★ - in the best available sense of personally."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Life", "material": "Sturdy mushroom",
+      "job": "Find the Finest Mushrooms",
+      "hook": "Sturdy caps are arriving in three quality grades and one seller's face, and no buyer knows what they are looking at. Tirami has brought a chalkboard.",
+      "outcome": "She grades publicly - cap thickness, the snap, the seller's face - and lets the buyers watch every stroke. Her grade spreads past her stall, the rival copies the chalkboard ★, and she allows it, brutally graciously, in writing."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Mana", "material": "Clever mushroom",
+      "job": "Find the Finest Mushrooms",
+      "hook": "Ordinary mushrooms are being polished and sold as clever, and polished they do look clever. Tirami has a candle and no patience.",
+      "outcome": "She invents the twinkle test on the spot: real clever-caps dull under her candle and brighten after. Three fakes leave the market; the test is named after her stall ★, and she signs the naming twice."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Stamina", "material": "Lively mushroom",
+      "job": "Find the Finest Mushrooms",
+      "hook": "Yesterday's lively mushrooms are bouncing on the shelf as though nothing happened, which is exactly the problem. Tirami draws a line and labels it 'until morning.'",
+      "outcome": "The same-morning rule lands: nothing sold that spent a night in her shop. It becomes the street's promise ★, audited by nobody and passing anyway, which is how she likes audits."
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Life", "material": "Fruit of power",
+      "job": "Win the Orchard Contract",
+      "hook": "The orchard contract is up, the rival has brought fireworks, and the fruit has to survive the week after the money changes hands. Tirami has brought crates.",
+      "outcome": "She pitches crates that breathe, rides that do not bruise, and a bad-batch refund written in her own hand. The contract signs; the rival's bid was flashier and half as careful. She is unbearable about it for a week ★, then quietly extends the refund to every customer she has."
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Mana", "material": "Fruit of wisdom",
+      "job": "Win the Orchard Contract",
+      "hook": "Wisdom-fruit buying is a rumor war this season, and the loudest rumor belongs to the rival. Tirami fights rumors with a ledger.",
+      "outcome": "Her ledger beats the rival's loudness by knowing the storage houses by name - early harvests, cool rooms, doors that stick - and by one written guarantee on every invoice. The contract goes with the quiet bid ★, and the guarantee becomes market language without her raising her voice at all."
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Stamina", "material": "Fruit of spirit",
+      "job": "Win the Orchard Contract",
+      "hook": "The big spirit-fruit order will not wait past dawn, and a wagoner's word is worth exactly as much as his breakfast. Tirami has booked a table.",
+      "outcome": "She pre-books the wagoners' breakfasts - logistics, she insists, not kindness - and the loading happens at dawn, every trip, contract done early ★. The wagoners ask for her by name at other people's diligences too."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Life", "material": "Rainbow bird feathers",
+      "job": "Grade the Feather Bundles",
+      "hook": "Festival week sells feather bundles on dazzle, and dazzle does not tell the truth about warmth. Tirami means to prove it by carrying every bundle herself.",
+      "outcome": "She grades by warmth and wear, carrying each bundle one street corner to feel what the light is hiding. Her grade sheet becomes the feather market's printed standard ★, credited in small letters; she frames it beside her own name in large ones."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Mana", "material": "Bluebird feathers",
+      "job": "Grade the Feather Bundles",
+      "hook": "Blue bundles are graded wet and sold dry, and the difference is somebody's profit twice over. Tirami has put the damp and the dry in one stall on purpose.",
+      "outcome": "She shades every sample before pricing and stamps the truth onto the tags. Two loud 'bargains' die of exposure ★ without a single accusation from her, and the shade-tested tag becomes the stall's signature."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Stamina", "material": "Wyvern feathers",
+      "job": "Grade the Feather Bundles",
+      "hook": "Wyvern bundles are heavy freight wearing small price tags, and the market's helpers are lifting with their backs for other people's margins. Tirami has paper, string, and rules.",
+      "outcome": "She posts the two-lift rule at her own stall: anyone lifting alone works alone - meaning no one does. Backs stay intact; the rule spreads by mimicry rather than magic ★."
+    },
+    {
+      "kind": "neutral", "tier": 5, "applies_to": "any",
+      "job": "Bid for Prized Eggs", "surface": "job",
+      "hook": "A buyer's letter has arrived about the frost-roost clutch, written in the tone of someone who has not heard the word no recently. Tirami is composing a reply.",
+      "text": "A remote buyer sends coin for 'the frost-roost clutch, any condition,' and Tirami declines him twice, in writing, with a printed card: wild things are not inventory - and this is not a sale she would brag about, and she brags about everything. The frost week she sells warm straw and thermoses at honest prices instead. The card stays on her stall longer than the frost does ★, and the buyer's letters stop."
+    }
+  ]
+}

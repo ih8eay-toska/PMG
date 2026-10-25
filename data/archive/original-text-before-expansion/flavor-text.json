@@ -1,0 +1,306 @@
+{
+  "source": "PotionMaker-REA extracted English_245.bin localization (English.json); potion descriptions keyed by native family and tier.",
+  "credit": "Original English game strings. Text after the native // separator is retained as the bottle note; Unity rich-text tags are removed for plain-text display.",
+  "entries": {
+    "0-0": {
+      "description": "Basic red potion. Even beginners can create it. Little efficiency. Odourless.",
+      "bottle_note": "Expiration date: 1 day since the date of purchase. Store in a cool place!"
+    },
+    "0-1": {
+      "description": "Small potion for children. Good against colds. Feels slightly sticky.",
+      "bottle_note": "Note: Please consult a doctor before drinking."
+    },
+    "0-2": {
+      "description": "Serve with desserts or snacks. Specifically popular with young women.",
+      "bottle_note": "Result of the last taste-test:\n Yay! More, please!"
+    },
+    "0-3": {
+      "description": "Small potion, easy to carry. Minor effect. Tastes a little bitter.",
+      "bottle_note": "Customer: Alex \nReview: ★★★\nDrink it quickly, but cautiously!"
+    },
+    "0-4": {
+      "description": "Very nutritious. Very refreshing. Tastes kind of like vegetable juice.",
+      "bottle_note": "If the bottle is deformed or the color of the contents has changed then do not drink!"
+    },
+    "0-5": {
+      "description": "Always keep in an upright position. Good against fatigue.",
+      "bottle_note": "Customer: Jake\nReview: ★\nThis tastes bad..."
+    },
+    "0-6": {
+      "description": "Potion generally used by travellers. Decent effect, decent taste.",
+      "bottle_note": "Knock-off potions will be reported to the village administration without hesitation."
+    },
+    "0-7": {
+      "description": "Strongly carbonated. Popular among young people. Surprisingly good effect.",
+      "bottle_note": "Nutrition Data: One potion of 250ml provides +250 stamina, +20 Strength, 0g fat."
+    },
+    "0-8": {
+      "description": "Large potion for a long trip. Has a large and beautiful bottle.",
+      "bottle_note": "Produced in large quantities! \n20% off for the next month!"
+    },
+    "0-9": {
+      "description": "Holy potion that has received a blessing. Similar effect to normal potion.",
+      "bottle_note": "\"My old sword is as good as new!\"\n●Brother Akai (Paladin)\nJust pour a blessed potion onto a sword to bless it."
+    },
+    "0-10": {
+      "description": "Fruity Potion that looks like jelly. Very sweet.",
+      "bottle_note": "Note: When opened in a dungeon the smell is likely to gather monsters."
+    },
+    "0-11": {
+      "description": "This potion to increases power temporarily. Side effects last for 1-2days.",
+      "bottle_note": "Warning: Do not consume multiple potions of this kind per day or it may decrease your intelligence."
+    },
+    "0-12": {
+      "description": "Emits a beautiful red light. Well suited as gift and as interior decoration.",
+      "bottle_note": "Voltage: 220V\nPower Consumption: 300W"
+    },
+    "0-13": {
+      "description": "Advanced Potion for veteran travellers. Very effective.",
+      "bottle_note": "Official potion of the Romorie kingdom! This potion has been used in the assault against the undead!"
+    },
+    "0-14": {
+      "description": "Enhances fire resistance. It's also very useful when cooking.",
+      "bottle_note": "A hot pot is no problem any more!"
+    },
+    "0-15": {
+      "description": "This potion has been concentrated until reaching very high density. Tastes very bitter, but has an enormous effect.",
+      "bottle_note": "When cooking mix with water in a ratio of 10:1 and add sugar."
+    },
+    "0-16": {
+      "description": "Greatly increases attack power but causes a state of intense anger. Has almost no other side effects.",
+      "bottle_note": "Please be sure to always consult a doctor before drinking."
+    },
+    "0-17": {
+      "description": "The potion that the gods drink . Exquisite taste and effect. Tastes like heaven.",
+      "bottle_note": "Customer: Edward\nReview: ★★★★\nI feel like I am in heaven."
+    },
+    "0-18": {
+      "description": "Potion made using an ancient recipe. It's taste is bad beyond imagination, but it can heal every decease.",
+      "bottle_note": "Attention: Can explode when it comes in contact with electricity. Please be careful."
+    },
+    "0-19": {
+      "description": "Legendary potion makes immortal. Almost noone has ever found a bottle of it",
+      "bottle_note": "Customer: Red\nReview: ★★★★★\nMy dog loves it!"
+    },
+    "0-20": {
+      "description": "One of the potions of the Underworld.",
+      "bottle_note": "Effects end at Dawn. Wakes up the true red light of doom within you."
+    },
+    "0-21": {
+      "description": "This reagent is used in some experiments.",
+      "bottle_note": "It is packaged beautifully. There seems to be screaming coming from inside the bottle..."
+    },
+    "0-22": {
+      "description": "A potion adventurers use in Underworld.",
+      "bottle_note": "It is much cheaper when purchased in the Underworld. When humans drink it however..."
+    },
+    "0-23": {
+      "description": "A serum which can cause a wide range of plagues.",
+      "bottle_note": "Who created it and for what purpose is unknown. Has no effect on demons."
+    },
+    "0-24": {
+      "description": "The essence of the devil's pride.",
+      "bottle_note": "Looking at the bottle for a long time can be dangerous."
+    },
+    "1-0": {
+      "description": "Basic blue potion. Even beginners can create it. Little efficiency. Odourless.",
+      "bottle_note": "Please drink as soon as possible after opening."
+    },
+    "1-1": {
+      "description": "Small potion for children. Good against headaches. Tastes slightly bitter.",
+      "bottle_note": "Note: Please stop fighting and rest after drinking this potion."
+    },
+    "1-2": {
+      "description": "Serve with desserts or snacks. Specifically popular with students.",
+      "bottle_note": "Buy now and get one free.\nGreat Deal!"
+    },
+    "1-3": {
+      "description": "Small potion, easy to carry. Minor effect. Tastes a little weird.",
+      "bottle_note": "Customer: Maria\nReview: ★★\nI want a refund!"
+    },
+    "1-4": {
+      "description": "Very nutritious. Very refreshing. Tastes kind of like herbal tea.",
+      "bottle_note": "If the bottle has been shaken the lid may be blown of."
+    },
+    "1-5": {
+      "description": "Always keep in an upright position. Good against fever.",
+      "bottle_note": "Customer: Ina\nReview: ★★★\nThe potion is difficult to drink.\nHehehe... I totally like it."
+    },
+    "1-6": {
+      "description": "Potion generally used by travellers. High effect in comparison to the price.",
+      "bottle_note": "This potion has been brewed according to the Potion and Health Laws. Probably."
+    },
+    "1-7": {
+      "description": "Strongly carbonated. Popular among young people. Barely any effect.",
+      "bottle_note": "Nutrition Data: One potion of 250ml provides +250 mana, +20 intelligence, 0g cholesterol."
+    },
+    "1-8": {
+      "description": "Large potion for a long trip. Has a large and beautiful bottle.",
+      "bottle_note": "The potion for the smart adventurer! \n20% off for the next month!"
+    },
+    "1-9": {
+      "description": "Holy potion that has received a blessing. Good effect.",
+      "bottle_note": "\"The monster has been revived!\"\n●Ellen (Bishop)\nJust throw a blessed potion onto a dead monster to revive it."
+    },
+    "1-10": {
+      "description": "Fruity Potion that looks like jelly. Has an addictive flavour.",
+      "bottle_note": "Note: There are cases where minors became fat by becoming addicted to the potion."
+    },
+    "1-11": {
+      "description": "Greatly increases intelligence temporarily. It is the favourite of many students.",
+      "bottle_note": "Warning: Consumption may cause you to forget to sleep and to attend exams after learning."
+    },
+    "1-12": {
+      "description": "Emits a beautiful blue light. Well suited as gift and as interior decoration.",
+      "bottle_note": "Voltage: 220V\nPower Consumption: 300W"
+    },
+    "1-13": {
+      "description": "Advanced Potion for veteran travellers. Very effective.",
+      "bottle_note": "Official potion of the Romorie kingdom! This potion has been used in the great drake hunt!"
+    },
+    "1-14": {
+      "description": "Enhances frost resistance. It's also useful for climbing mountains.",
+      "bottle_note": "Finally it is possible to eat the ice cream in one bite!"
+    },
+    "1-15": {
+      "description": "This potion has been concentrated until reaching very high density. Tastes very bitter, but has an enormous effect.",
+      "bottle_note": "When cooking mix with water in a ratio of 10:1 and add sugar."
+    },
+    "1-16": {
+      "description": "This potion calms the user and greatly enhances his concentration and ability to judge. Has almost no side effects.",
+      "bottle_note": "Please be sure to always consult a doctor before drinking."
+    },
+    "1-17": {
+      "description": "The potion that the gods drink . Exquisite taste and effect. Tastes like heaven.",
+      "bottle_note": "Customer: Leah\nReview: ★★★\nDelivery takes pretty long."
+    },
+    "1-18": {
+      "description": "Potion made using an ancient recipe. It's taste is bad beyond imagination, but it gives eternal magical power.",
+      "bottle_note": "Attention: May summon monsters when being shaken."
+    },
+    "1-19": {
+      "description": "This potion will give the user all knowledge in the world when drunk. Almost noone has ever found a bottle of it.",
+      "bottle_note": "Customer: Gray\nReview: ★★★★★\nThat's a really good deal!"
+    },
+    "1-20": {
+      "description": "One of the potions of the Underworld.",
+      "bottle_note": "The potion will make you unable to communicate with anyone causing a deep feeling of loneliness until the blue light rises."
+    },
+    "1-21": {
+      "description": "This reagent is used in some experiments.",
+      "bottle_note": "It is packaged beautifully. There seems to be screaming coming from inside the bottle..."
+    },
+    "1-22": {
+      "description": "A potion adventurers use in Underworld.",
+      "bottle_note": "It is much cheaper when purchased in the Underworld. When humans drink it however..."
+    },
+    "1-23": {
+      "description": "A serum which can cause a wide range of plagues.",
+      "bottle_note": "Who created it and for what purpose is unknown. Has no effect on demons."
+    },
+    "1-24": {
+      "description": "The essence of the devil's pride.",
+      "bottle_note": "Looking at the bottle for a long time can be dangerous."
+    },
+    "2-0": {
+      "description": "Basic yellow potion. Even beginners can create it. Little efficiency. Odourless.",
+      "bottle_note": "Date of expiry: see bottleneck\nManufacturer: Pio"
+    },
+    "2-1": {
+      "description": "Small potion for children. Good against stomach pain. Tastes slightly sweet.",
+      "bottle_note": "Note: May cause some stomach pain. It's temporary and harmless."
+    },
+    "2-2": {
+      "description": "Serve with desserts or snacks. Specifically popular with young men.",
+      "bottle_note": "Free shipping if you purchase the 6-pack!"
+    },
+    "2-3": {
+      "description": "Small potion, easy to carry. Minor effect. Tastes a little sour.",
+      "bottle_note": "Customer: Kane\nReview: ★★\nCan I get a discount if I write a review?"
+    },
+    "2-4": {
+      "description": "Very nutritious. Very refreshing. Tastes kind of like vitamin tea.",
+      "bottle_note": "Warning: Be careful when handling the bottle. Do not shake!"
+    },
+    "2-5": {
+      "description": "Always keep in an upright position. Good against sleeping problems.",
+      "bottle_note": "Customer: Olive\nReview: ★★★★ \nGood when you're tired!"
+    },
+    "2-6": {
+      "description": "Potion generally used by travellers. Slightly too expensive compared to its effect.",
+      "bottle_note": "Do not drink if you suspect that the bottle has been tempered with. In that case demand a refund!"
+    },
+    "2-7": {
+      "description": "Strongly carbonated. Popular among young people. Major effect.",
+      "bottle_note": "Nutrition Data: One potion of 250ml provides +250 energy, +20 endurance, 0g saturated fat."
+    },
+    "2-8": {
+      "description": "Large potion for a long trip. Has a large and beautiful bottle.",
+      "bottle_note": "The Dungeon Explorer Special! Buy it now! \n20% off for the next month!"
+    },
+    "2-9": {
+      "description": "Holy potion that has received a blessing. Surprisingly effective.",
+      "bottle_note": "\"My hair grew back!\"\n ●Saitama (village resident) \n Just pour a blessed potion onto where you want hair to grow."
+    },
+    "2-10": {
+      "description": "Fruity Potion that looks like jelly. Tastes very refreshing.",
+      "bottle_note": "Note: You might feel overwhelmingly refreshed when opening the bottle."
+    },
+    "2-11": {
+      "description": "This potion increases the user's energy temporarily. Popular in large cities.",
+      "bottle_note": "Warning: Excessive doses can cause sleepiness and repeated rest room usage"
+    },
+    "2-12": {
+      "description": "Emits a beautiful yellow light. Well suited as gift and as interior decoration.",
+      "bottle_note": "Voltage: 220V\nPower Consumption: 300W"
+    },
+    "2-13": {
+      "description": "Advanced Potion for veteran travellers. Very effective.",
+      "bottle_note": "Official potion of the Romorie kingdom! This potion has been used in the griffin capture expedition."
+    },
+    "2-14": {
+      "description": "Enhances shock resistance. It's also very handy for engineering.",
+      "bottle_note": "Now you don't have to be afraid of electric shocks when taking off your sweaters."
+    },
+    "2-15": {
+      "description": "This potion has been concentrated until reaching very high density. Tastes very bitter, but has an enormous effect.",
+      "bottle_note": "When cooking mix with water in a ratio of 10:1 and add sugar."
+    },
+    "2-16": {
+      "description": "Energizes the body and spirit causing it to never become tired. Has almost no side effects.",
+      "bottle_note": "Please be sure to always consult a doctor before drinking."
+    },
+    "2-17": {
+      "description": "The potion that the gods drink . Exquisite taste and effect. Tastes like heaven.",
+      "bottle_note": "Customer: Eden\nReview: ★★★★★\nIt is delicious. It is so incredibly delicious."
+    },
+    "2-18": {
+      "description": "Potion made using an ancient recipe. It's taste is bad beyond imagination, but it could give you eternal youth.",
+      "bottle_note": "Attention: If your body temperature is increased the effects may differ. You have been warned."
+    },
+    "2-19": {
+      "description": "A fabled potion that contains the power of heroes. Almost noone has ever found a bottle of it.",
+      "bottle_note": "Customer: Dazy\nReview: ★★★★★\nVery fast delivery!"
+    },
+    "2-20": {
+      "description": "One of the potions of the Underworld.",
+      "bottle_note": "Brings you to the glittering golden sunset, the boundary between reality and illusion. The ethereal horizon where the soul finds peace."
+    },
+    "2-21": {
+      "description": "This reagent is used in some experiments.",
+      "bottle_note": "It is packaged beautifully. There seems to be screaming coming from inside the bottle..."
+    },
+    "2-22": {
+      "description": "A potion adventurers use in Underworld.",
+      "bottle_note": "It is much cheaper when purchased in the Underworld. When humans drink it however..."
+    },
+    "2-23": {
+      "description": "A serum which can cause a wide range of plagues.",
+      "bottle_note": "Who created it and for what purpose is unknown. Has no effect on demons."
+    },
+    "2-24": {
+      "description": "The essence of the devil's pride.",
+      "bottle_note": "Looking at the bottle for a long time can be dangerous."
+    }
+  }
+}

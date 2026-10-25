@@ -1,0 +1,46 @@
+/* Recovered logical UI units; Unity upward-positive Y is negated below. */
+.room[data-apk-layout] { height:var(--apk-render-height); min-height:0; }
+.room[data-apk-layout] .room-top { position:absolute; left:0; top:0; width:100%; height:calc(101 * var(--apk-u)); min-height:0; padding:0; z-index:8; background:none; }
+.room[data-apk-layout] .room-top .currency-balances { position:absolute; left:calc(50% - 351 * var(--apk-u)); top:calc(9.5 * var(--apk-u)); width:calc(596 * var(--apk-u)); height:calc(59 * var(--apk-u)); background:var(--apk-coin-frame) center/100% 100% no-repeat; padding:0 calc(35 * var(--apk-u)); }
+.room[data-apk-layout] .room-top .coins { width:100%; transform:none; gap:calc(8 * var(--apk-u)); }
+.room[data-apk-layout] .room-top #coin-icon { width:calc(32 * var(--apk-u)); height:calc(32 * var(--apk-u)); }
+.room[data-apk-layout] .room-top #coins { position:static; transform:none; font-size:calc(30 * var(--apk-u)); }
+.room[data-apk-layout] #game-menu-open { left:calc(50% + 259 * var(--apk-u)); top:calc(11 * var(--apk-u)); right:auto; width:calc(74 * var(--apk-u)); height:calc(74 * var(--apk-u)); transform:none; }
+.room[data-apk-layout] #game-menu-open:hover:enabled { transform:none; }
+.room[data-apk-layout] .rack.conveyor-rack { position:absolute; top:calc(82 * var(--apk-u)); left:0; width:100%; height:calc(141 * var(--apk-u)); margin:0; padding-top:calc(25 * var(--apk-u)); padding-bottom:0; z-index:6; }
+.room[data-apk-layout] .rack.conveyor-rack::before,.room[data-apk-layout] .rack.conveyor-rack::after { width:calc(128 * var(--apk-u)); height:calc(237 * var(--apk-u)); top:calc(-6 * var(--apk-u)); }
+.room[data-apk-layout] .ingredients.conveyor,.room[data-apk-layout] .conveyor .ingredient { height:calc(90 * var(--apk-u)); }
+.room[data-apk-layout] .conveyor .ingredient img { width:calc(72 * var(--apk-u)); height:calc(72 * var(--apk-u)); }
+.room[data-apk-layout] .brew-scene { position:absolute; inset:0; width:100%; height:100%; min-height:0; margin:0; overflow:hidden; }
+.room[data-apk-layout] .brew-scene .window,.room[data-apk-layout] .brew-scene .table,.room[data-apk-layout] .brew-scene .flame { display:none; }
+.room[data-apk-layout] .cauldron.original-cauldron { position:absolute; left:50%; top:calc(50% + 151 * var(--apk-u)); bottom:auto; width:calc(602 * var(--apk-u)); height:calc(224 * var(--apk-u)); min-height:0; margin:0; transform:translateX(-50%); z-index:4; }
+.room[data-apk-layout] .cauldron.original-cauldron .liquid { left:calc(50% - 236 * var(--apk-u)); top:calc(-24.5 * var(--apk-u)); right:auto; width:calc(488 * var(--apk-u)); height:calc(179 * var(--apk-u)); transform:none; }
+/* World-space model projection is unverified; preserve its existing aspect ratio. */
+.room[data-apk-layout] .pio-canvas { left:50%!important; right:auto!important; bottom:auto!important; top:calc(50% - 454 * var(--apk-u))!important; width:calc(660 * var(--apk-u))!important; height:calc(729.474 * var(--apk-u))!important; transform:translateX(-50%)!important; }
+.room[data-apk-layout] #brew-character { left:50%; right:auto; top:calc(50% - 454 * var(--apk-u)); bottom:auto; width:calc(660 * var(--apk-u)); height:calc(729.474 * var(--apk-u)); transform:translateX(-50%); object-fit:contain; }
+.room[data-apk-layout] .visitor-shortcut { left:calc(50% - 325 * var(--apk-u)); top:calc(558.2 * var(--apk-u)); width:calc(96 * var(--apk-u)); height:calc(96 * var(--apk-u)); }
+.room[data-apk-layout] .pushcat-controls { left:calc(50% + 215 * var(--apk-u)); right:auto; top:calc(524.5 * var(--apk-u)); width:calc(140 * var(--apk-u)); font-size:calc(18 * var(--apk-u)); }
+.room[data-apk-layout] .pushcat-controls #pushcat-summon { width:100%; }
+.room[data-apk-layout] .fairy-shortcut,.room[data-apk-layout] .commission-shortcut { bottom:auto; top:calc(50% + 250 * var(--apk-u)); width:calc(84 * var(--apk-u)); height:calc(84 * var(--apk-u)); }
+.room[data-apk-layout] .fairy-shortcut { right:calc(50% - 340 * var(--apk-u)); }
+.room[data-apk-layout] .commission-shortcut { left:calc(50% - 340 * var(--apk-u)); }
+.room[data-apk-layout] .potion-card { position:absolute; left:calc(12 * var(--apk-u)); top:calc(50% + 362 * var(--apk-u)); width:calc(100% - 24 * var(--apk-u)); height:calc(264 * var(--apk-u)); min-height:0; margin:0; padding:0; display:block; z-index:7; }
+.room[data-apk-layout] .potion-card .actions { display:contents; }
+.room[data-apk-layout] .potion-card .actions>button { position:absolute; left:calc(50% - 337.5 * var(--apk-u)); width:calc(215 * var(--apk-u)); height:calc(116 * var(--apk-u)); min-height:0; margin:0; border-width:calc(12 * var(--apk-u)); border-image-width:calc(12 * var(--apk-u)); font-size:calc(30 * var(--apk-u)); }
+.room[data-apk-layout] .potion-card .actions>#sell { top:calc(138 * var(--apk-u)); }
+.room[data-apk-layout] .potion-card .actions>#enhance { left:calc(50% + 122.5 * var(--apk-u)); top:calc(138 * var(--apk-u)); }
+.room[data-apk-layout] .potion-card .actions>.portrait-upgrades { top:calc(14 * var(--apk-u)); }
+.room[data-apk-layout] .portrait-upgrades::before { width:calc(90 * var(--apk-u)); height:calc(55 * var(--apk-u)); }
+.room[data-apk-layout] .potion-card .potion-heading { position:absolute; left:calc(50% - 119 * var(--apk-u)); top:calc(11 * var(--apk-u)); width:calc(238 * var(--apk-u)); height:calc(238 * var(--apk-u)); margin:0; padding:calc(24 * var(--apk-u)) calc(4 * var(--apk-u)) 0; grid-template-rows:minmax(0,1fr) calc(34 * var(--apk-u)); }
+.room[data-apk-layout] .potion-card .potion-heading .bottle,.room[data-apk-layout] .potion-card .potion-heading #bottle-wrap.has-potion .bottle { width:calc(105 * var(--apk-u)); height:calc(154 * var(--apk-u)); }
+.room[data-apk-layout] .potion-card .potion-summary { height:calc(34 * var(--apk-u)); padding:calc(5 * var(--apk-u)); }
+.room[data-apk-layout] .potion-card .potion-summary h3 { font-size:calc(17 * var(--apk-u)); }
+.room[data-apk-layout] .potion-card .potion-heading #potion-level { left:calc(10 * var(--apk-u)); top:calc(7 * var(--apk-u)); transform-origin:top left; }
+.room[data-apk-layout] .potion-card>.enhance-panel { position:absolute; left:calc(50% + 128.8 * var(--apk-u)); top:calc(11.9 * var(--apk-u)); width:calc(214.2 * var(--apk-u)); height:calc(100 * var(--apk-u)); padding:0; }
+.room[data-apk-layout] .potion-card .enhance-details { padding:0; }
+.room[data-apk-layout] .potion-card .enhance-details::before { font-size:calc(20 * var(--apk-u)); }
+.room[data-apk-layout] .potion-card .sale-price,.room[data-apk-layout] .potion-card #value,.room[data-apk-layout] .potion-card .enhance-multiplier { font-size:calc(25 * var(--apk-u)); }
+
+@media(prefers-reduced-motion:reduce) { .room[data-apk-layout] * { scroll-behavior:auto; } }
+.room[data-apk-layout] .room-top { background:var(--apk-wood-top) center/100% 100% no-repeat; }
+.room[data-apk-layout] { background-size:calc(720 * var(--apk-u)) calc(1024 * var(--apk-u)); background-position:center; background-repeat:no-repeat; }

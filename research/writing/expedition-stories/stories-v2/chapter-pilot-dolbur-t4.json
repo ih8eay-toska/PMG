@@ -1,0 +1,400 @@
+{
+  "pilot": "chapter-click-09",
+  "traveler": "dolbur",
+  "tier": 4,
+  "job": "Scout the Feathered Cliffs",
+  "purpose": "Owner-review draft: Dolbur's tier-4 click-through chapter (Rainbow bird feathers, Bluebird feathers, Wyvern feathers), written in the reviewed Dolbur tier-1 through tier-3 chapter formats - chapter-pilot-dolbur-t3.json is the immediate same-traveler benchmark (pilot chapter-click-08). The chapter opens as soon as any material family reaches tier 4; the player picks one currently unlocked material inside the opening scene; the choice sets the route; Dolbur is dispatched to the feathered cliffs; after the trip the player opens a click-through continuation carrying the journey's action, setbacks, decisions, and growth. Each route stands alone and holds the mandate the owner set for it: Life makes the fledgling rescue and the twice-checked rope matter on screen - the re-tightened loop catches his one slip, and the two people who insisted on the second check get the story first, with the ledge-marking earned by what the morning's cry drew; Mana lets the misleading cave echoes create a real navigation problem, shows why a knot at every fork out-argues the echoes, and stages his loud self-laughter as the permission the pickers needed to stop pretending; Stamina makes the scree and the old-shed feather load tangible and earns his stone piles as a plan for other people's feet, built while his own shoulders were paying the slope. Dolbur stays energetic and boastful while the growth shows as conduct, with no textual callbacks to any particular earlier route. Nothing here edits data/, source/, or the playable HTML.",
+  "sourceMaterial": [
+    "research/writing/expedition-stories/stories-v2/dolbur-t1-5.json - tier-4 Life/Mana/Stamina hooks and outcomes, quoted byte-exact (verified -ceq against this pack 3/3 hooks and 3/3 outcomes - pack lines 62-63, 68-69, 74-75 - and against data/expedition-stories.json travelers.dolbur.routes '4' rows 3/3 and 3/3, data lines 480-481, 486-487, 492-493)",
+    "research/writing/expedition-stories/stories-v2/chapter-pilot-dolbur-t3.json - reviewed same-traveler format benchmark (pilot chapter-click-08): chapter shape, beat rules, box discipline, ownership split, and the verification suite",
+    "research/writing/expedition-stories/stories-v2/HANDOFF.md - batch schema and display model: hook shown before dispatch, outcome shown once after completion, never concatenated",
+    "data/expedition-jobs.json - job name 'Scout the Feathered Cliffs' (byte-exact, line 120) and the established job voice (line 121): 'Scout the Feathered Cliffs. This assignment concerns bird and wyvern feathers. Dolbur treats the job as another energetic adventure, checking the route before setting out.'",
+    "data/game-data.json - tier-4 material names Rainbow bird feathers (line 33) / Bluebird feathers (line 748) / Wyvern feathers (line 1483), byte-exact, under the Life / Mana / Stamina family labels",
+    "source/core.js - TRAVELERS roster line 12: dolbur portrait 'DolburPortrait.png'; file assets/characters/DolburPortrait.webp (verified present). Tier-4 flow: pre-dispatch hook preview and post-completion sections (core.js recordExpeditionStory line 309, journal story loop line 365); chapter gating and unlocked-route filtering (core.js expeditionChapter, setExpeditionChapterDraft line 293, unlockedExpeditionChapters line 295); award application (settleExpedition line 300)",
+    "source/app.js - EXPEDITION_PROFILES line 138, profile index 1: 'An energetic warrior who approaches adventures with plenty of enthusiasm.'; the story preview flow updates the pre-dispatch hook (updateExpeditionStoryPreview, function at line 142, hook text at line 147, from the route preview in source/core.js)",
+    "data/visitor-dialogue.json - Dolbur flavor pool used as established behavior anchors: 'a first-aid kit he cannot find' (line 46), 'a good loss teaches more than an easy win' (line 47), 'quietly checking that everyone else brought rope' (line 48), and his route-leading familiarity (line 49)"
+  ],
+  "presentationModel": "Player opens a tier chapter when any material family reaches that tier. Inside the opening scene the player chooses one currently unlocked tier material; that choice determines the route. Dolbur is dispatched. When the trip finishes, the player opens a click-through continuation showing what happened around the feathered cliffs and the route's outcome. Other unlocked routes can be played on later trips, one active route at a time.",
+  "playerFlow": "op-01 -> op-02 -> choice -> confirm = byte-exact hook box for the chosen family -> one route departure box -> trip-start (dispatch, no result) -> trip timer -> trip-end (click to open the report) -> route return boxes in order, last box = byte-exact outcome. After the chapter, other unlocked choices remain available on later trips.",
+  "implementationNotes": {
+    "chapterOpen": "The chapter becomes available as soon as any material family reaches tier 4, per the engine's chapter gating (source/core.js expeditionChapter and unlockedExpeditionChapters, which open a chapter when a family's tier meets the chapter and filter routes to unlocked families; setExpeditionChapterDraft line 293 validates the chosen family against the chapter's routes before the draft is stored). Suggested UI copy, outside the story beats: 'New chapter - Scout the Feathered Cliffs.'",
+    "optionGating": "Show only options for material families currently unlocked at this tier; one, two, or three options are all valid states. The opening prose is written to hold when only one option exists.",
+    "routeLock": "The material choice sets the active route for this trip; other unlocked choices remain available on later trips, one active route at a time.",
+    "tripTimer": "The trip runs about two minutes on the game timer. The timer belongs to implementation and UI, not to story text.",
+    "awardHandling": "The script never states or implies that the player receives the chosen feathers: the feather names which journey the telling follows, not freight. source/core.js settleExpedition (line 300) awards stamps, likeability, boost bundles, and bonuses only - no ingredient, no feathers - and the trip-end beat only opens Dolbur's report; awarding belongs to the game's existing systems, outside story text.",
+    "displayModel": "Current in-game flow this script mirrors: the hook for the selected family already shows as the story preview before dispatch (source/app.js updateExpeditionStoryPreview, function at line 142, with the hook text assigned at line 147, from the route preview in source/core.js), and the outcome shows once after the trip (source/core.js recordExpeditionStory line 309; journal story loop at line 365). The confirm box repeats the hook, the final click-through beat repeats the outcome, and nothing pre-dispatch states outcome facts."
+  },
+  "beatRules": [
+    "Every beat carries id, phase, speaker, portrait, text. The choice beat additionally carries its note and its three option texts.",
+    "Narrator beats stay brief and set place, action, or a visible action. Dolbur carries the recognition, reasoning, and decisions in his own spoken lines; judgment growth comes through what he climbs, knots, stacks, and hands over - never through mood labels. No route side character speaks: no accepted journey draft exists for Dolbur tier 4, so no dialogue is invented for the two rope inspectors, the pickers, or the scree carriers; each side presence stays narrator-carried with one scene function.",
+    "Each return route opens with a 'The report starts...' narrator sentence so the post-trip account runs chronologically from where the trip went.",
+    "Each box is written to be comfortable in a dialogue box: about 40 words (whitespace token audit, hard ceiling 43 for every new beat). The byte-exact hook quote (confirm) and the byte-exact outcome quote (final return box) repeat already accepted screen text and are exempt from the target.",
+    "Portrait availability (verified): speaker 'narrator' is unvoiced scene text with no portrait. Speaker 'dolbur' shows the Dolbur portrait ('dolbur' - source/core.js TRAVELERS line 12 'DolburPortrait.png'; file assets/characters/DolburPortrait.webp). No other speaker beats exist: the rope inspectors, the pickers, and the carriers stay narrator-carried, so no 'none-new-side-character' beat appears in this chapter.",
+    "No outcome fact appears anywhere before the trip ends. Pre-dispatch boxes carry only hook facts and Dolbur's spoken intentions; the six shared units (op-01, op-02, choice text and note, trip-start, trip-end) carry no route-specific hook facts either, since the choice precedes the confirm.",
+    "Aftermath wording stays owned by the final byte-exact outcome beats (the Life outcome's hand re-nesting, 'The fledgling is home', the 'warning flag' with the nobody-serenades rule, and the two rope-checkers who 'get the first telling'; the Mana outcome's cord tied at each fork, the self-laugh 'for needing it', the easier admissions, and the 'cord-path' that becomes 'the scouts' map of the caves'; the Stamina outcome's 'distance-stone' at 'every rest point', the 'first plan built for other people's feet', the mile-markers 'from that day on', and nobody dropping 'a bundle short of a stone again'). Scene beats show the same journey facts in scene time in their own words; the ownership scan verifies zero outcome-phrase reuse in non-final beats.",
+    "Route independence: no beat assumes another route was seen, no cross-route characters or props except generic cliff fixtures, no Neet-route assumptions, and no earlier-tier vocabulary outside the accepted outcomes (no shortcut, decoy, splint, herb, mob, timetable, or crate, awning, rulebook, salt cellar, patch, spring, string, chalk customs; no tier-3 unload, gate, mire, cart-lane, counting lane, arithmetic, rigs, legend, or veteran language), and no tier-5 material referenced (no eggs, no ridge). Words the tier-4 job and materials own - scout, bird, feathers, cliffs - are job-shared inside this chapter; 'cord' and 'stone' are each one route's tool and stay inside it. Each of the three routes stands alone and reads cleanly in any play order.",
+    "Award discipline: no beat states or implies the player receives the chosen feathers; the trip's rewards belong to the game's existing settlement systems outside story text (source/core.js settleExpedition)."
+  ],
+  "opening": {
+    "beats": [
+      {
+        "id": "op-01",
+        "phase": "opening",
+        "speaker": "narrator",
+        "portrait": "none",
+        "text": "The feathered cliff jobs are waiting this morning, and the cliff work is Dolbur's."
+      },
+      {
+        "id": "op-02",
+        "phase": "opening",
+        "speaker": "dolbur",
+        "portrait": "dolbur",
+        "text": "Pio! Cliff day! Harness, gloves, and grit, all checked by hand this morning. Point me at the cliffs, and I will make the assignment worth retelling."
+      },
+      {
+        "id": "choice",
+        "phase": "choice",
+        "speaker": "narrator",
+        "portrait": "none",
+        "text": "Choose which feathers send Dolbur out.",
+        "note": "Only options whose material family is unlocked at this tier are shown. The opening prose above is written to hold whether one option or three are available. The chosen feathers name the journey this telling follows; they are the story's focus, never a settlement award.",
+        "options": [
+          {
+            "material": "Rainbow bird feathers",
+            "teaser": "A fledgling crying down its spot on the feathered cliffs all morning, rainbow down drifting past without an answer, and a climber rechecking his rope on two people's request."
+          },
+          {
+            "material": "Bluebird feathers",
+            "teaser": "Caves behind the cliffs that answer every call wrong, and the bluebird-feather pickers asking for their paths back."
+          },
+          {
+            "material": "Wyvern feathers",
+            "teaser": "A scree heavy with old-shed wyvern feathers - winter-store weight, and heavy is exactly the trouble."
+          }
+        ]
+      }
+    ]
+  },
+  "sharedDispatch": [
+    {
+      "id": "trip-start",
+      "phase": "trip",
+      "speaker": "narrator",
+      "portrait": "none",
+      "text": "Dolbur takes the assignment and gets to it; whatever happens out there comes home with him."
+    },
+    {
+      "id": "trip-end",
+      "phase": "trip",
+      "speaker": "narrator",
+      "portrait": "none",
+      "text": "The trip is over. Open Dolbur's report to see what happened, and how it ended."
+    }
+  ],
+  "routes": [
+    {
+      "family": "Life",
+      "material": "Rainbow bird feathers",
+      "confirmBeats": [
+        {
+          "id": "life-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "A fledgling's cry has been coming off the feathered cliffs all morning, and the rainbow down drifting past it never answers. Dolbur is checking the rope twice, at two different people's insistence."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "life-dep",
+          "phase": "departure",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Rainbow bird feathers, then! A fledgling's been crying all morning and nobody's cry answers it - I am going up to be the answer. The rope gets checked twice first, because two separate people made me swear."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "life-r1",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The report starts beneath the feathered cliffs with the morning still working: the fledgling's cry came off the rock in thin bursts, the rainbow down drifted past it going nowhere, and every ear on the ground was quietly failing to answer."
+        },
+        {
+          "id": "life-r2",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The rope got its two look-overs the way its two inspectors demanded: the first counted the bottom splice's turns out loud, the second said nothing and re-tightened one loop anyway, and any argument Dolbur had died under that second look."
+        },
+        {
+          "id": "life-r3",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Halfway to the cry, the cliff answered his hurry with a crumble: a hold came away in his hand, and the fall went to knee-height and stopped - the re-tightened loop taking all of it while his boots found the wall again."
+        },
+        {
+          "id": "life-r4",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "At the top of the sound he found the speaker: a fledgling the size of a fist, sitting on bare rock where a gust or a wrong hop had dropped it, wings half-grown and eyes very sure he was the problem."
+        },
+        {
+          "id": "life-r5",
+          "phase": "return",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Right. You yelled at the entire valley and the entire valley yelled back wrong, so it is my turn. The old nest is two spans above you; we go up the slow way, you in one palm, the rope and I."
+        },
+        {
+          "id": "life-r6",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The last climb was the slowest one: one hand on rock, the other making a roof of fingers around the little cargo, until the old nest took its chick back and the cliff's morning argument stopped like a tap turned off."
+        },
+        {
+          "id": "life-r7",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Down again, he gave the two rope inspectors the story first - crumble, palm, quiet, end to end - and then went back up to tie a bright strip of his sash above the empty shelf, a keep-out for the next curious ear."
+        },
+        {
+          "id": "life-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "He climbs and re-nests the fledgling by hand. The fledgling is home, the ledge carries a warning flag so nobody serenades the same spot twice, and the two people who checked his rope get the first telling."
+        }
+      ]
+    },
+    {
+      "family": "Mana",
+      "material": "Bluebird feathers",
+      "confirmBeats": [
+        {
+          "id": "mana-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The echo caves behind the cliffs return every sound wrong, and the bluebird-feather pickers want their paths back. Dolbur is asked to scout because he is loud enough to double-check."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "mana-dep",
+          "phase": "departure",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Bluebird feathers, then! The caves answer every question wrong and the pickers want their paths back. My whole credential is loud, so I will shout the caves happy - and scout with my own two feet and hands."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "mana-r1",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The report starts at the first wrong answer: a picker shouted a hello into the dark and the dark handed it back from four directions, and the branch they took on the echo went two hundred paces before admitting it was nobody's path."
+        },
+        {
+          "id": "mana-r2",
+          "phase": "return",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Nothing said inside these walls counts - the caves tell you what you hoped to hear. So I set a marked cord, one knot at every fork, and let the walls gossip. Ears lie; knots hold."
+        },
+        {
+          "id": "mana-r3",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The proving walk ran fork by fork: each branching got its knot, echoes ignored, and where the voices argued wide, the knots said otherwise and won - out at the daylight hole where the lost picker waited, the way home tied behind."
+        },
+        {
+          "id": "mana-r4",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The best part was the noise: he tied each knot and announced the caves had beaten him too, and by the third fork the pickers were copying - knot, bow, and a joke at their own expense, and pretending was done."
+        },
+        {
+          "id": "mana-r5",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "By dusk the cord had crossed every fork: the pickers walked their old paths one knot at a time, laughter carried farther than any echo, and the bluebird feather bags started filling the way they did before the caves got clever."
+        },
+        {
+          "id": "mana-r6",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "He left the deep branches the same way: knotted at every fork down to the dead ends, so the waiting picker from the daylight hole walked out alone by knots, reading them backward to the door, no voice required."
+        },
+        {
+          "id": "mana-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The caves scatter feathers and directions with equal mischief, so he ties his marked cord at each fork and laughs at himself for needing it, which makes it easier for everyone else to admit they need it too. The cord-path becomes the scouts' map of the caves."
+        }
+      ]
+    },
+    {
+      "family": "Stamina",
+      "material": "Wyvern feathers",
+      "confirmBeats": [
+        {
+          "id": "stamina-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The scree below the cliffs is heavy with old-shed wyvern feathers - worth their weight in winter stores, and heavy is exactly the problem. Dolbur is going anyway."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "stamina-dep",
+          "phase": "departure",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Wyvern feathers, then! The scree is overfull with old-shed treasure and heavy is the whole problem - which has never once stopped me. I will haul my share of winter stores up that slope, and I will do it loudly."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "stamina-r1",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The report starts on the scree itself: a slope of loose flat stones that rolled under every boot, and a first load of old-shed feathers as wide as a door and heavier than the door had ever been."
+        },
+        {
+          "id": "stamina-r2",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The first climb taught the slope's real price: three steps up for every two back, boot-falls that traveled downhill on their own, and bundles set down wherever the shoulder gave out - every bundle far short of wherever the load was wanted."
+        },
+        {
+          "id": "stamina-r3",
+          "phase": "return",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Hold on - I have been solving this like it is my problem alone, and every stop out here is somebody quitting early. The mountain stays cruel. My stops should not: marked from here up, for the next pair of boots."
+        },
+        {
+          "id": "stamina-r4",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "So the rest became the plan: every breather spot got its hip-high pile, spaced by the count of his own heavy steps, each stone in sight of the next - so a climber could judge how much climb was left."
+        },
+        {
+          "id": "stamina-r5",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Then the plan started working for other boots: carriers worked the slope pile to pile, and one gray-bearded carrier, pacing his progress by the piles, made the third pile his target, arrived breathing hard but whole, and went again without dropping a thing."
+        },
+        {
+          "id": "stamina-r6",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The last of the winter-store loads went up on the stones' schedule: pile by pile, breath by breath, the whole way marked for anyone whose knees had less argument left in them than his."
+        },
+        {
+          "id": "stamina-r7",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "He walked back down tapping each pile like a drum line, already composing the ballad of the mountain he had made friendlier - a song the scree's next visitors would get for free."
+        },
+        {
+          "id": "stamina-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "He marks every rest point with a distance-stone, his first plan built for other people's feet. The scree has mile-markers from that day on, and nobody drops a bundle short of a stone again."
+        }
+      ]
+    }
+  ],
+  "mapping": {
+    "life": {
+      "hook": "life-hook quotes the tier-4 Life hook byte-exact as the confirm box after the choice.",
+      "inBetween": "No accepted journey draft exists for Dolbur tier 4, so the beats between hook and outcome are new fan-written scene work built to the outcome's own action order: the morning cry still unanswered at the cliff base, with every ground-level ear failing (life-r1), the twice-check exactly as its two inspectors ran it - one counting the bottom splice's turns out loud, one re-tightening a loop in silence (life-r2), the crumble on the hurried climb that put the re-tightened loop to work at knee-height (life-r3), the fist-sized fledgling found on bare rock with half-grown wings (life-r4), the spoken rescue decision addressed to the bird itself (life-r5), the slowest climb of the day done by hand until the old nest took its chick back (life-r6), and the payoff order - story first for the two inspectors, then the bright strip tied above the empty shelf (life-r7).",
+      "outcome": "life-out quotes the outcome byte-exact as the final box; 'He climbs and re-nests the fledgling by hand', 'The fledgling is home', the 'warning flag' with the nobody-serenades rule, and the two rope-checkers who 'get the first telling' stay owned by this beat alone.",
+      "notes": "The user-mandated order: the twice-checked rope is made to matter by staging what the second look actually did (life-r2's re-tightened loop, which earns the inspectors their names in the leaving line life-r7) and then paying it off one slip later (life-r3 catches Dolbur's fall at knee-height); the rescue is by hand throughout (life-r5's 'you in one palm', life-r6's roof of fingers, the unpacked words 're-nests the fledgling by hand' ceded to the outcome); the warning mark is earned as the morning's cause - a cry that drew every ear gives the empty shelf a keep-out as the next curious ear's dismissal (life-r7) - and the telling is staged as story-first order (life-r7 says 'got the story first', never the outcome's 'first telling'). The beats never use the outcome's words: the scene says 'roof of fingers', 'took its chick back', 'keep-out for the next curious ear', and never 're-nest', 'flag', 'serenade', 'ledge', 'warning', or 'telling'; the warning-flag rule exists only in the byte-exact outcome."
+    },
+    "mana": {
+      "hook": "mana-hook quotes the tier-4 Mana hook byte-exact as the confirm box.",
+      "inBetween": "New fan-written between hook and outcome, per owner directive: the wrong-answer morning - one hello returning from four directions and the branch that turned out to be nobody's path (mana-r1), the spoken diagnosis and the marked-cord commitment (mana-r2), the proving walk where the knots out-argue the echoes at the contested fork and reach the lost picker waiting at the daylight hole (mana-r3), the loud self-confession that becomes a copyable ritual - knot, bow, joke at their own expense (mana-r4), the paths reopened one knot at a time with laughter carrying farther than any echo (mana-r5), and the handover - deep branches knotted down to their dead ends, so that same picker walks out alone by the knots (mana-r6).",
+      "outcome": "mana-out quotes the outcome byte-exact as the final box; 'ties his marked cord at each fork', 'laughs at himself for needing it', the easier admissions the laugh buys, and the 'cord-path' that becomes 'the scouts' map of the caves' stay owned by this beat alone.",
+      "notes": "The user-mandated order: the echo problem is real navigation on screen (mana-r1 walks a wrong branch two hundred paces past its use), the method is committed in scene time (mana-r2: 'One knot at every fork'; the rule 'ears lie; knots hold' names why it works), and the why-it-works proof is the contested fork where the voices argue wide and the knots say otherwise and win - ending at the daylight hole where the lost picker waits (mana-r3) - then works alone for that same picker with no voice required (mana-r6). The self-laughter is the growth beat: he announces the caves had beaten him too (mana-r4) and the pickers copy the confession, at which point pretending was done - the outcome's 'easier for everyone else to admit they need it too' staged in scene words. The scene may use 'cord', 'fork', and 'knot' as the visible method words the mandate requires, but keeps the outcome's standing claims - 'ties his marked cord at each fork', 'cord-path', 'map of the caves', and the single word 'map' - inside the byte-exact beat, and 'mischief' never leaves it."
+    },
+    "stamina": {
+      "hook": "stamina-hook quotes the tier-4 Stamina hook byte-exact as the confirm box.",
+      "inBetween": "New fan-written between hook and outcome, per owner directive: the scree met directly - loose flat stones rolling under every boot and a first load wider than a door (stamina-r1), the slope's real price paid in three steps up for two back and bundles set down short of wherever the load was wanted (stamina-r2), the spoken pivot from his own shoulders to everyone's stops, marked from where he stands for 'the next pair of boots' (stamina-r3), the rest turned into the plan - every breather spot marked with a hip-high pile, the piles spaced by the count of his own steps with each stone in sight of the next so a climber can judge how much climb is left (stamina-r4), the plan proving itself for carriers working the slope pile to pile, one gray-bearded carrier pacing his progress by the piles, arriving breathing hard but whole and going again without dropping a thing (stamina-r5), his own last load climbing on the stones' schedule (stamina-r6), and the drum-line descent composing the ballad of the mountain made friendlier (stamina-r7).",
+      "outcome": "stamina-out quotes the outcome byte-exact as the final box; 'He marks every rest point with a distance-stone', the 'first plan built for other people's feet', the mile-markers 'from that day on', and nobody dropping 'a bundle short of a stone again' stay owned by this beat alone.",
+      "notes": "The user-mandated order: the load and the scree are made tangible before any plan exists (stamina-r1's door-wide first load and rolling stones; stamina-r2's steps, downhill boot-falls, and bundles set down short), the pivot is spoken on the slope exactly where the problem shows (stamina-r3: 'my problem alone' named and dropped, the stops marked from where he stands for 'the next pair of boots'), the stones do double duty as rest marks and measured distance - stamina-r4 places every breather pile by the count of his own heavy steps with each stone in sight of the next, so a later climber can judge how much climb is left - and they prove themselves for other feet on screen (stamina-r5's carriers working the slope pile to pile and one gray-bearded carrier pacing his progress by the piles before arriving breathing hard but whole and going again without dropping a thing). The scene words stay scene words - 'piles', 'stones', 'breather', 'count', 'spaced', 'schedule' - while 'distance-stone', 'rest point', 'mile-marker', 'first plan built for other people's feet', and 'bundle short' stay owned by the byte-exact outcome; r2's 'three steps up for every two back' carries no 'three lighter loads' contiguity."
+    }
+  },
+  "byteReuse": [
+    "A fledgling's cry has been coming off the feathered cliffs all morning, and the rainbow down drifting past it never answers. Dolbur is checking the rope twice, at two different people's insistence.",
+    "He climbs and re-nests the fledgling by hand. The fledgling is home, the ledge carries a warning flag so nobody serenades the same spot twice, and the two people who checked his rope get the first telling.",
+    "The echo caves behind the cliffs return every sound wrong, and the bluebird-feather pickers want their paths back. Dolbur is asked to scout because he is loud enough to double-check.",
+    "The caves scatter feathers and directions with equal mischief, so he ties his marked cord at each fork and laughs at himself for needing it, which makes it easier for everyone else to admit they need it too. The cord-path becomes the scouts' map of the caves.",
+    "The scree below the cliffs is heavy with old-shed wyvern feathers - worth their weight in winter stores, and heavy is exactly the problem. Dolbur is going anyway.",
+    "He marks every rest point with a distance-stone, his first plan built for other people's feet. The scree has mile-markers from that day on, and nobody drops a bundle short of a stone again."
+  ],
+  "skillStages": {
+    "planning": "planning.md outputs restated for the Dolbur tier-4 chapter: the reviewed tier-3 chapter shape (opening -> choice -> hook confirm -> departure -> dispatch -> return beats -> outcome), with the same documented deviation - no accepted journey draft exists for Dolbur tier 4, so the continuation between hook and outcome is planned as new fan-written scene work to each outcome's own action order. POV limits: pre-dispatch boxes may state hook facts and Dolbur's spoken intentions only - no result - and the six shared units carry no route-specific facts since the choice precedes the confirm. The owner's three route mandates drive the beat orders: Life makes the twice-checked rope matter by showing what the second look caught and what that loop caught in return, then earns the keep-out strip and the story-first order for the two inspectors; Mana builds a real navigation problem out of wrong echoes and shows the knot-at-every-fork method winning, with his self-laughter as the permission the pickers copy; Stamina makes scree and load tangible and earns the stone piles as a plan for feet other than his own, built during rests he was already taking.",
+    "drafting": "dialogue-and-behavior.md governs the boxes: Dolbur's lines are energetic and direct (established anchor: 'An energetic warrior who approaches adventures with plenty of enthusiasm'; the job description's 'another energetic adventure, checking the route before setting out'), and the growth shows as conduct - honoring the swear he made to two separate people, laughing at himself first so others can admit need, and building a plan that serves boots that are not his. No side-character dialogue invented: the two rope inspectors act only through their look-overs and receive the story first in narration, the pickers copy the confession ritual in narration, the carriers aim their loads pile to pile, all unnamed. The end of each route is the accepted outcome beat, so each route ends with the pack's own claim. Dolbur's 'Pio!' salute in op-02 uses the established expedition greeting register (source/app.js profile index 1) with plain ASCII punctuation.",
+    "reviewing": "revision-checklist pass on all three click-throughs: choice causality (the feathers name the route; no theme confusion), no pre-dispatch outcome disclosure, route independence (no cross-route characters or props beyond generic cliff fixtures, no Neet-route assumptions, no tier-1 through tier-3 custom recitations outside the byte-exact outcomes), character anchoring (the rope inspectors as the check that catches him, the pickers as the ritual's copyists, the carriers as the piles' beneficiaries), voice consistency in every spoken box, box economy, and mapping completeness (each outcome's action order shows fully in the scene before the final quote)."
+  },
+  "characterNotes": {
+    "dolbur": "Tier-4 Dolbur is the established warrior: energetic, direct, and now working other people into the plan - he takes a twice-check he did not ask for and pays it back with the story first (Life), makes his own lostness loud and funny so the pickers can admit theirs (Mana), and builds his first plan for feet other than his own (Stamina). The growth is behavioral because the campaign cannot assume the player saw a Dolbur tier-1, tier-2, or tier-3 route: no outcome or scene references what any earlier telling established. His tier-5 material is not referenced. Portrait: 'dolbur' (verified: source/core.js TRAVELERS line 12 'DolburPortrait.png'; file assets/characters/DolburPortrait.webp).",
+    "ropeInspectors": "Life route only, unnamed: the two people who insisted on the double check. Their only on-screen action is the look-over pair - one counting the bottom splice's turns, one re-tightening a loop in silence (life-r2) - and their payoff arrives as the story-first order after the rescue (life-r7). No speaker beats, no portrait; narrator-carried.",
+    "featherPickers": "Mana route only, unnamed: the bluebird-feather pickers who lost their paths to the caves, including the lost picker who waits at the daylight hole the proving walk reaches (mana-r3) and who walks out alone by the knots at day's end (mana-r6). They copy his confession ritual in body - knot, bow, joke at their own expense - in narration, never speaker boxes. No speaker beats, no portrait; narrator-carried.",
+    "screeCarriers": "Stamina route only, unnamed: the carriers working the scree, including one gray-bearded carrier who paces his progress by the piles, makes the third pile his target, arrives breathing hard but whole, and goes again without dropping a thing (stamina-r5). No speaker beats, no portrait; narrator-carried."
+  },
+  "factProvenance": {
+    "documented": "Hooks, outcomes, material names (Rainbow bird feathers / Bluebird feathers / Wyvern feathers), and the job (Scout the Feathered Cliffs) are byte-exact from dolbur-t1-5.json (and data/expedition-stories.json travelers.dolbur.routes '4' rows, byte-identical). Job voice anchor from data/expedition-jobs.json line 121: 'Scout the Feathered Cliffs. This assignment concerns bird and wyvern feathers. Dolbur treats the job as another energetic adventure, checking the route before setting out.'",
+    "established": "Dolbur's voice and behavior anchors are the game's own: the expedition profile line 'An energetic warrior who approaches adventures with plenty of enthusiasm.' (source/app.js line 138, profile index 1; also the shop greeting register behind op-02's salute, story beats use narrative voice), the warrior task lines in source/core.js EXPEDITION_TASKS, and the visitor-dialogue flavor pool ('a first-aid kit he cannot find', 'a good loss teaches more than an easy win', 'quietly checking that everyone else brought rope', his route-leading familiarity). The display split (hook pre-dispatch, outcome post-trip, never concatenated) is the HANDOFF model with the engine points cited in implementationNotes.displayModel (app.js updateExpeditionStoryPreview :142 with the hook at :147; core.js recordExpeditionStory :309 and the journal story loop :365). Portrait support: source/core.js TRAVELERS line 12 ('DolburPortrait.png') and assets/characters/DolburPortrait.webp.",
+    "newFanWritten": "Everything between hook and outcome: the opening frame (op-01; op-02's checklist and the 'Pio!' salute, which borrows the established greeting register without quoting it), the three option teasers (rephrasing hook facts only), the three departure lines (new Dolbur speech, in voice, no results), the three in-scene spoken boxes (life-r5, mana-r2, stamina-r3, plus op-02), trip-start/trip-end adapted from the series-standard Neet dispatch lines, and the entire post-trip scene layer (the unanswered cry at the cliff base and the failing ears; the two look-overs with counted turns and the re-tightened loop; the crumble and the caught fall at knee-height; the fist-sized fledgling on bare rock; the spoken rescue plan and the roof of fingers; the old nest taking its chick back; the story-first order and the sash strip over the empty shelf; the hello that came back from four directions and the branch that was nobody's path; the marked cord with one knot at every fork and the ears-versus-knots rule; the proving walk where the knots out-argue the echoes and reach the lost picker waiting at the daylight hole; the confession ritual the pickers copy; the paths walked one knot at a time with laughter carrying; the deep branches knotted to dead ends and that same picker's solo walk-out by knots; the rolling flat stones and the door-wide first load; the slope's price in steps and short bundles; the spoken pivot to the next pair of boots; the hip-high breather piles spaced by the count of his own steps, each stone in sight of the next; the carriers working the slope pile to pile and the gray-bearded carrier pacing his progress by the piles; the last load on the stones' schedule; the drum-line descent and the composed ballad). The rope inspectors, the pickers, and the carriers stay unnamed and unvoiced; no new named characters, no new customs outside the final beats."
+  },
+  "continuityFlags": [
+    "No accepted journey draft exists for Dolbur tier 4 (the journey-pilot files cover Neet t1 and t2 only). All beats between hook and outcome are new fan-written scene work staged to each outcome's own action order; the owner may want a companion journey-pilot-dolbur-t4 before v2 integration. Hooks and outcomes are the only protected texts.",
+    "Shared-unit spoiler discipline: op-01, op-02, the choice text and note, and the two dispatch lines carry no route-specific hook or outcome facts; per-route hook facts appear only in each route's own option teaser, byte-exact hook, and departure line. Per-option teasers restate hook facts in fresh wording, as in the reviewed tier-1 through tier-3 benchmarks.",
+    "Scene-versus-outcome wording split: the beats show the outcomes' journey facts in scene time (the double look-over and the loop that caught his one slip; the marked cord knotting every fork and the copied confession; the breather spots and the hip-high piles) but in their own words; each phrase the outcome uses as its standing claim ('re-nests the fledgling by hand', 'The fledgling is home', 'the ledge carries a warning flag', 'nobody serenades the same spot twice', 'the first telling'; 'ties his marked cord at each fork', 'laughs at himself for needing it', 'easier for everyone else to admit they need it too', \"the scouts' map of the caves\"; 'marks every rest point with a distance-stone', 'his first plan built for other people's feet', 'mile-markers from that day on', 'nobody drops a bundle short of a stone again') is verified to appear only in the byte-exact outcome beats. The Mana scene uses 'cord', 'fork', and 'knot' as the visible method words the mandate requires, but never the outcome's compounds ('cord-path'), institutions ('map'), or flavor words ('mischief'); the Stamina scene uses 'stones', 'piles', and 'breather' as the visible method words, but never 'distance-stone', 'rest point', 'mile-marker', or 'bundle short'; the Life scene never uses 're-nest', 'warning', 'flag', 'serenade', 'ledge', or 'first telling'.",
+    "Route independence verified by scan: no traveler names other than Dolbur; fledgling, cry, rope, nest, flag, and ledge only in Life; echo, cave, fork, cord, knot, and picker only in Mana (whose scene needs its method words); scree, wyvern, stone, pile, bundle, and carrier only in Stamina; no Neet-route assumptions; no Dolbur tier-1 vocabulary (shortcut, decoy, splint, herb, mob, timetable, three trips), tier-2 vocabulary (crate, awning, rulebook, salt cellar, patch, spring, string, chalk), or tier-3 vocabulary (unload, gate, painted, mire, cart-lane, counting lane, arithmetic, rig, legend, veteran) outside those accepted outcomes; no tier-5 material referenced (no eggs, no ridge). 'Scout', 'bird', 'feathers', and 'cliffs' are job- and material-shared words at this tier ('scout' was guarded as a tier-2 custom in earlier chapters; the tier-4 job owns it here). Each of the three routes stands alone and reads cleanly in any play order. The judgment growth is behavioral only (keeps the swear two people imposed, laughs at himself first, builds for other feet) with no textual callbacks to any earlier route.",
+    "Pre-dispatch content (opening, teasers, hooks, departures, dispatch lines) is safe for the current display model: hook facts and declared intentions only. Departures announce method, not result ('I am going up to be the answer', 'I will shout the caves happy', 'I will do it loudly') - the results happen after the trip, in the return beats.",
+    "Portrait support verified during the pass: source/core.js TRAVELERS line 12 carries 'DolburPortrait.png' and assets/characters/DolburPortrait.webp is present; the unnamed side characters never reach the portrait system because they carry no speaker beats."
+  ],
+  "flags": [
+    "Portrait authority: Dolbur keeps the established 'dolbur' portrait id (verified against source/core.js TRAVELERS line 12 and assets/characters/); the narrator is unvoiced with no portrait; the rope inspectors, the pickers, and the carriers stay narrator-carried with no speaker beats, so no 'none-new-side-character' id appears in this chapter.",
+    "Only the choice beat branches, and the route stays locked for that trip. All mechanics (chapter-open trigger, option gating, one-active-route model, trip timer) live in implementationNotes and the choice beat's note, never inside story text.",
+    "Implementation caveat (same standing as chapter-click-01 and chapter-click-06 through chapter-click-08): this is a script draft. Multi-beat click-through playback, option buttons, and the trip timer all need renderer work; nothing here edits game files.",
+    "The confirm box (hook) and the final return box (outcome) are intentionally longer boxes because they quote accepted screen text byte-exact; per the current display model the hook already shows pre-dispatch and the outcome once after completion, and if the game later shows the outcome on its own completion screen, the out beat can be swapped for that canned screen without breaking the script.",
+    "Award discipline is verified below in coverageChecks: no beat claims the player receives the chosen feathers; implementationNotes.awardHandling cites the award application in source/core.js settleExpedition (stamps, likeability, boost bundles, bonuses; no ingredients).",
+    "No new named characters anywhere: the rope inspectors (Life), the pickers and the morning's lost picker (Mana), and the scree carriers (Stamina) stay unnamed and unvoiced, each with one scene function; the naming precedent belongs to the Neet tier-1 journeys where accepted named side characters (Mena, Gorram) exist."
+  ],
+  "coverageChecks": {
+    "anchors": "PASS - hooks 3/3 and outcomes 3/3 byte-exact by -ceq against dolbur-t1-5.json tier-4 entries (Life=Rainbow bird feathers, Mana=Bluebird feathers, Stamina=Wyvern feathers; pack lines 62-63, 68-69, 74-75), and 3/3 plus 3/3 again against data/expedition-stories.json travelers.dolbur.routes '4' rows (pack and data byte-identical; data lines 480-481, 486-487, 492-493). Job name 'Scout the Feathered Cliffs' verified byte-exact (-ceq) in data/expedition-jobs.json and against the pilot field. Material names verified byte-exact (-ceq) in data/game-data.json under Life/Mana/Stamina and against the pack route material fields and the pilot's route fields.",
+    "byteReuse": "6 byte-exact pack quotes registered (3 hooks + 3 outcomes); all 6 verified present in dolbur-t1-5.json, in data/expedition-stories.json, and in exactly their own beats (0 beat misses, 0 orphan entries). 0 other journey fragments: no journey draft exists for Dolbur tier 4, and the scene layer quoting discipline keeps every outcome phrase out of the non-final beats (option teasers rephrase hook facts only).",
+    "boxLengths": "34 boxes total (opening 2 + choice 1 + dispatch 2; per route: hook 1 + departure 1 + return-stage boxes - Life 7, Mana 6, Stamina 7, each ending in the byte-exact outcome box). All 28 new beats at or under the 43-token comfort target (whitespace-split token audit, battery-measured): at the ceiling 43 - life-r7, mana-r1, stamina-r5; at 42 - life-r3, mana-r3, stamina-r2; at 41 - life-r1, life-r4, life-r5, life-r6, mana-r4, mana-r5, stamina-r3; at 40 - life-r2, stamina-r4, stamina-dep; mana-r6 39, mana-dep and stamina-r1 38, life-dep 37, mana-r2 36, stamina-r6 34, stamina-r7 33. The byte-exact hook and outcome boxes are quotes and exempt from the target (measured lengths: hooks 32/30/28 and outcomes 37/47/34 for Life/Mana/Stamina; option teasers 29/18/16 for Rainbow/Bluebird/Wyvern; shared units op-01 14, op-02 26, choice 6, trip-start 16, trip-end 15; the choice note, guidance text not a beat, 45).",
+    "preDispatchLeakScan": "12 pre-dispatch text units (op-01, op-02, choice text and note, 3 option teasers, trip-start, trip-end, 3 departures) scanned against the outcome-side vocabulary (re-nest, warning, flag, serenade, ledge, first telling, cord, fork, knot, map, mischief, laugh, nest, inspect, distance-stone, rest point, mile-marker, bundle): 0 hits. Departures announce method only ('I am going up to be the answer', 'I will shout the caves happy and scout with my own two feet and hands', 'I will haul my share of winter stores up that slope'). Run a second guard over the six shared units only (op-01, op-02, choice text and note, trip-start, trip-end) against route-specific hook words (fledgling, cry, rope, rainbow, echo, cave, scree, wyvern, old-shed, picker, bluebird; 'cliff' and 'feather(s)' excluded as job-shared): 0 hits - hook facts stay in the teasers, hooks, and departure lines where routes are already named.",
+    "outcomeOwnershipScan": "Each route's outcome-exclusive phrases and singles (Life: 're-nest', 'warning', 'flag', 'serenade', 'ledge', 'first telling'; Mana: 'cord-path', 'map', 'mischief', 'ties his marked', 'laughs at himself', 'for needing it', 'easier for everyone else', 'admit they need'; Stamina: 'distance-stone', 'mile-marker', 'rest point', 'from that day on', 'first plan built', 'other people's feet', 'drops a bundle', 'bundle short') scanned over every non-quote text of the other routes plus the six shared units and the choice note and the other two option teasers, each route's own prose and its own teaser exempt: 0 hits. The scene stages the same journey facts in its own words ('roof of fingers', 'one knot at every fork; ears lie; knots hold', 'hip-high pile at every breather spot', 'the next pair of boots'). 'Cord', 'fork', 'knot', 'stone', 'pile', and 'plan' stay inside their own routes as scene method words by mandate - the ownership guard only protects the outcome's standing compounds and institutions.",
+    "routeIndependenceScan": "Traveler-name scan across all 34 beat texts, the choice note, and the 3 option teasers (Neet, Tirami, Claire, Daisy, Kyle, Luke, Piria, Charlotte, Demian): 0 hits. Borrow vocabulary (tier-1: shortcut, decoy, splint, herb, mob, timetable, three trips; tier-2: crate, awning, rulebook, salt cellar, patch, spring, string, chalk; tier-3: unload, gate, painted, mire, cart-lane, counting lane, arithmetic, rig, legend, veteran; tier-5 guards: egg, ridge; plus the t4-own compound spur 'distance' kept out of scene prose) scanned over the 28 non-quote texts, the note, and the 3 teasers with word-boundary matching - quote beats are protected pack text (the Stamina outcome's own 'distance-stone' carries 'distance' by the pack's wording; 'bright' discharges the 'rig' substring risk): 0 hits. Per-route signature-noun guard (fledgling, cry, rope, nest, flag, ledge / echo, cave, fork, cord, knot, picker / scree, wyvern, stone, pile, bundle, carrier), scanned over every non-quote text of the other routes plus the six shared units and the choice note, each route's own prose and teaser exempt: 0 hits - fledgling/cry/rope/nest only in Life, echo/cave/fork/cord/knot/picker only in Mana (whose scene uses its own method words by mandate; the rope's 'knot' collision is discharged - life-r2 counts a 'splice's turns'), scree/stone/pile/bundle/carrier only in Stamina; words inside the protected pack quotes are pack-owned. Cross-material guard, case-sensitive: each material name 'Rainbow bird feathers' / 'Bluebird feathers' / 'Wyvern feathers' appears exactly once in the script text - inside its own route's departure salute ('Rainbow bird feathers, then!' / 'Bluebird feathers, then!' / 'Wyvern feathers, then!') - and nowhere else (the Mana hook's pack-owned 'bluebird-feather pickers' is lowercase-hyphenated pack text). Cast placement: the rope inspectors only in Life; the pickers only in Mana; the carriers only in Stamina; the shared dispatch lines name none of them. Each route reads standalone in any order.",
+    "awardClaimScan": "34 beat texts plus 3 option teasers scanned against award/claim vocabulary (award, reward, receive, gives you, yours, claim, collect, gather): 0 hits. The choice note states the discipline in guidance language ('the story's focus, never a settlement award'), matching the Neet tier-5 choice-note precedent; implementationNotes.awardHandling cites the award application in source/core.js (settleExpedition: stamps, likeability, boost bundles, bonuses only - no ingredient, no feathers).",
+    "beatInventory": "Shared layer: op-01, op-02, choice (+3 option teasers), trip-start, trip-end. Life: life-hook confirm, life-dep departure, life-r1..life-r7 returns, life-out outcome. Mana: mana-hook, mana-dep, mana-r1..mana-r6 returns, mana-out outcome. Stamina: stamina-hook, stamina-dep, stamina-r1..stamina-r7 returns, stamina-out outcome. 34 unique beat ids; each route's final box is the byte-exact outcome.",
+    "fileCheck": "JSON parses via ConvertFrom-Json (UTF8); 21 top-level keys; whole file 0 non-ASCII chars; 34 beats, all 34 ids unique; speaker-portrait pairing verified with 0 violations (narrator=none, dolbur=dolbur; no other speaker appears). Anchors verified -ceq 3/3 hooks and 3/3 outcomes against dolbur-t1-5.json AND against data/expedition-stories.json travelers.dolbur.routes '4' rows (pack and data byte-identical); job name and tier-4 material names -ceq against data/expedition-jobs.json and data/game-data.json. All scans 0 hits (pre-dispatch leak over the 12 pre-dispatch units, shared-unit route guard over the 6 shared units, outcome-phrase ownership over the 28 non-quote beats plus note and teasers, per-route signature nouns, traveler names and borrow vocabulary, award claims). The file was assembled with placeholder markers section by section and all markers were replaced and re-verified before this check; data/, source/, and the playable HTML untouched."
+  }
+}

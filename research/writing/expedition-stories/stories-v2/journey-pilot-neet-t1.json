@@ -1,0 +1,56 @@
+{
+  "pilot": "journey-expansion-01",
+  "traveler": "neet",
+  "tier": 1,
+  "job": "Herbs for the Shrine",
+  "purpose": "Owner-review draft: post-completion journey scenes sitting between the pre-dispatch hook and the established outcome. Nothing here edits data/, source/, or the playable HTML. If integrated, Neet tier 1 entries gain a 'journey' field read between hook and outcome on the completion screen.",
+  "rules": [
+    "Hooks and outcomes quote neet-t1-5.json unchanged; journey prose repeats no outcome fact (shelf rule, ledger correction, loft braces are owned by the outcome beat alone).",
+    "Each journey is self-contained: no scene assumes another route was seen first.",
+    "The named herb drives the problem and its resolution rather than appearing as set dressing.",
+    "Voice anchors: data/visitor-dialogue.json (Neet offer/active/failed lines), drafts/neet.json, and Neet's accepted M1 viewpoints - formal diction, dry understatement, habits written down then quietly crossed out."
+  ],
+  "routes": [
+    {
+      "kind": "route", "tier": 1, "family": "Life", "material": "Red herb",
+      "hook": "The fever cart coughs at the gate, and the shrine's red shelf has been leaned on hard this week. Neet walks the whole shelf before promising anyone anything.",
+      "journey": "Neet finishes the shelf walk and leaves through the gate, the strong batch's last measured share in her basket. The fever cart is just ahead, its driver shaking his head over a wrapper-stripped shelf. 'Whole road's coughing,' he says. 'Two stops behind yours.' He has nothing to sell her.\n\nThe settlement on his round is next, its strong beds stripped bare weeks ago - every root that promised speed bought the minute the coughing began. What remains is the settlement's own kitchen-row patch of mild red leaf, planted for household coughs: same root, slower in the cup, unwanted all season because the fever has everyone buying fast. A grandmother has held the queue since dawn, three grandchildren coughing in turns, and Neet counts her basket against it and sees the arithmetic nobody says aloud: not enough.\n\nSo she offers one bargain, plainly: the strong share in her basket, weighed to two jars, for the whole spare cutting of the mild row. The grandmother looks at the strong bundle, then at Neet. 'It's the same root, girl. Just slower.' 'And the fever does not wait,' Neet agrees. The grandmother shakes hands on it - two jars for the row - and Neet pays the two, adding nothing beyond the price they named.\n\nBy her count on the walk home, the mild cutting is four times the leaf she left with: slower by half, but the same root - enough to keep the shrine's shelf and first kit stocked.",
+      "outcome": "She reorders the red shelf by urgency instead of alphabet - fever jars nearest the door - and quietly refills the first kit before anyone asks. 'Urgent first' becomes the shelf rule, and the first kit has never been short since.",
+      "materialAccuracyNotes": "Red herb is the medicinal material of the Life family at tier 1; the scene treats a short, weak, and strong share of the same red stock - fade and fever strength - without inventing a second material.",
+      "wordCount": "About 250."
+    },
+    {
+      "kind": "route", "tier": 1, "family": "Mana", "material": "Blue herb",
+      "hook": "Two of the blue-herb beds carry labels nobody can read anymore. Neet agrees to straighten the beds without agreeing to trust them.",
+      "journey": "The blue-herb beds' real trouble is the ledger: it kept the bad ink's story, reading the sunward bed as mild and the shaded bed as strong.\n\nDosed by the ledger's story, the strong crop plays mild and the mild plays strong - half a remedy or a double one - and the seed saved from its 'best' bed would plant the error again. Neet tastes a leaf from each - one bitter first, then cold, the other answering differently - but the hot dry week slurs the harvests; a tongue can say the crops differ, not whose story is true. The two wait in separate cups.\n\nMena, the youngest volunteer, finally comes off the wall: she knows. She watered both beds the year before the labels went, was scolded for overwatering the shaded one, and kept them straight ever since: the mean, bitter leaf always came off the sunward bed - the one the ledger reads as mild. She gives it up like a small crime confessed.\n\nNeet does not taste again - the tongue said its all. Mena's account is testable another way: an overwatered bed keeps its drenching, so Neet walks where Mena says she stood with the can, and finds the ground there still draining late. Ground sides with memory: shaded bed pampered, sunward bed mean and bitter - the ledger backward all along. 'So the sun remembers even when the ink did not,' she says. 'Then we will not correct you. We will write you down.'",
+      "outcome": "She re-inks every label, then does the unfashionable thing: corrects the bed-ledger to match the truth of the beds, not the habit of the ledger. The bed-ledger tells the truth again, and the label ink she mixed is the one still in use.",
+      "materialAccuracyNotes": "Blue herb is the Mana material at tier 1; the scene keeps the material's identity problem - which bed is really which - rather than inventing a secondary reagent.",
+      "wordCount": "About 250."
+    },
+    {
+      "kind": "route", "tier": 1, "family": "Stamina", "material": "Yellow herb",
+      "hook": "A heavy yellow-herb season is coming, and the drying loft groans when the wind does. Neet inspects the loft before the first load goes up.",
+      "journey": "The first yellow-herb load comes off the cart wrong: this year's cut is sap-heavy, taken young and wet because the fields came late and the shrine ordered early. The same trays that went up light as chaff last year now take both hands, and Neet weighs one against her hip before she says anything at all.\n\n'They will dry lighter than they travel,' the grower admits, which is exactly the trouble - the loft has to carry them at their heaviest.\n\nInside, volunteers are loading at a speed that means nobody has counted the load. Neet watches one tray go up and hears the beam take it with a sound she does not like - a long wooden note, the kind furniture makes before it stops being furniture. She stops the next tray at the bottom of the stair. 'We will count what goes up,' she says, 'before the loft decides we did not.' The volunteers look caught rather than annoyed. Gorram, the oldest, has hauled yellow bundles all morning and does not stop to argue. 'Nothing ever fell in thirty years,' he says, which is what everyone always says about beams.\n\nNeet climbs anyway, walks the loft heel to heel with a measuring string, and finds the middle beam carrying more than its share, a thumb's width below its brothers. She marks it in chalk, sorts the wettest yellow bundles onto the side beams, and puts the string back where the next hand will find it and wonder.",
+      "outcome": "She doubles the braces, ropes the racks, and - because a loft that holds more invites people - leaves a bench in the warm corner. The loft holds double, and rain-guests still sleep there by custom.",
+      "materialAccuracyNotes": "Yellow herb is the Stamina material at tier 1; the scene's weight problem is caused by this season's yellow herb itself - sap-heavy, wet cuttings taken early - and the wettest bundles are what Neet re-sorts, rather than introducing any second material.",
+      "wordCount": "About 250."
+    }
+  ],
+  "characterNotes": {
+    "life": "Neet as quiet economist of care: she counts before she promises, trades rather than pleads, and prefers an honest shortage handled visibly to a comfortable surplus handled silently. Formal diction ('And the fever does not wait') carries both the decision and the comfort.",
+    "mana": "Neet as provenance keeper: she trusts a leaf over a ledger, is willing to be wrong politely, and turns a forgotten volunteer's memory into the shrine's official record - the same instinct that later produces her M1 almanac hand. The dry line 'we will not correct you, we will write you down' is her ledger habit turned generous.",
+    "stamina": "Neet as patient inspector: she stops an overconfident crew without shaming them, measures rather than lectures, and plants the next person's curiosity in her place ('will wonder'). The calm under-reported number is her M1 margin-note habit seeded early."
+  },
+  "flags": [
+    "No existing outcome blocks its scene. Each outcome's institution (shelf rule, corrected ledger, braced loft) is presented here as a decision the journey makes inevitable - the outcome line lands as the natural formalizing of what the journey discovered.",
+    "Ledger-name risk avoided deliberately: the Mana scene names the volunteer Mena and the Stamina scene names Gorram; no settlement award, no herb award, and no egg is promised at any point.",
+    "Route independence check: none of the three journeys references another route's events, materials, or NPCs beyond shrine-generic staff."
+  ],
+  "coverageChecks": {
+    "length": "Three journeys at roughly 250 words each (revised counts: 247 / 250 / 249), in four short paragraphs, suitable for a completion dialog with a scrollable/text pane.",
+    "routeIndependence": "Pass: written scenes are self-contained and route order does not matter.",
+    "materialAccuracy": "Pass: Red/Blue/Yellow herbs remain the sole materials at tier 1 for Life/Mana/Stamina; no invented ingredients, no award of any material.",
+    "jobFit": "Pass: each journey starts from the job's established hook problem and hands off to the existing outcome beat without repeating it.",
+    "screenFit": "Each journey forms four paragraphs, separated by blank lines as written. No claim is made that those breaks display in-game yet: the current completion renderer would need separate implementation work to show multi-paragraph prose before this formatting can be relied on."
+  }
+}

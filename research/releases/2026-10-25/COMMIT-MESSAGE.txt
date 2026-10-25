@@ -1,0 +1,52 @@
+feat: restore original workshop art, expand Dolbur chapters and revise supply systems
+
+Document and commit the accumulated changes since f67f158.
+
+Workshop/UI:
+- Rebuild the portrait brewing screen with original parchment, rack gears,
+  quest portraits, summon paw, Orders book, potion card and action buttons.
+- Embed Basic_337 for the game section; preserve outside panel fonts.
+- Add live full coin balances, level/MAX artwork, rate number assets and
+  clear empty/filled sale and enhancement displays; hide buff UI only.
+- Recover 720x1280 Expand scaling, manual nine-button menu geometry,
+  collection grids and shop shell; retain Shop/Save/Mail in an extra row.
+- Center the background without stretching; preserve approximate model
+  framing and improve device-density Live2D backing-buffer resolution.
+- Preserve keyboard access and expand/scroll compact collection details.
+
+Original media/effects:
+- Map stable asset keys to owner-supplied original portraits, costumes,
+  fairies, materials, potions, scene/UI, font and action/theme WAV files.
+- Remove non-banner wiki media, derived crops and obsolete embedded caches;
+  retain all 12 user-approved historical event/promotion banners.
+- Add Bubble/Boiling, enhancing/result/plop sheets and original action audio
+  with reduced-motion, visibility and overlap handling.
+- Regenerate the offline playable build, asset library and manifest.
+
+Supply/economy:
+- Separate 1-20/s base emission from constant conveyor movement; apply
+  supported fairy CardsPerSecond arrays before the 3/s empty-cauldron cap.
+- Retain interval catch-up/fractional remainder; remove speed preference;
+  pause helpers when empty or no next enhancement remains.
+- Preserve the original 19 speed purchase prices.
+- Add 13 earned-currency supply/bundle products and progression-based gold
+  quotes; remove Bank/direct exchange while preserving 10 tickets = 1 ruby.
+- Record that current rack-width travel mapping is still an APK fidelity gap.
+
+Stories/compatibility:
+- Integrate Dolbur tiers 1-5 across all three families into existing chapters.
+- Persist/validate active chapter identity and keep legacy unmarked trip
+  settlement, frozen rewards, first/later family scenes and journal history.
+- Clarify expedition dispatch costs/replacement and reward descriptions.
+- Include writing source archives, UI-copy audits, art provenance and checks.
+
+Documentation/validation:
+- Add comprehensive changes since f67f158, per-file hash/size inventory,
+  prepared in-game mail without assigning a gift, and current check results.
+- Add/update original-media, UI, effects, economy and story regression checks.
+- All current Node checks pass except check-late-balance: conveyor luck 3,
+  price 0, tier 21 spread 1.2504049974132487. This is recorded, not suppressed.
+- Preserve existing save IDs/formats; no push, publication or deployment.
+
+See research/releases/2026-10-25/CHANGES.md, FILE-INVENTORY.tsv and CHECKS.md
+for full scope, verification and remaining fidelity limitations.

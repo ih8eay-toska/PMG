@@ -1,0 +1,288 @@
+{
+  "provenance": "Original fan-written expedition stories for review; not official game text. Maps to data/expedition-jobs.json entries.tirami by 1-based tier (array index 0-24). Job names unchanged. Materials and potion names follow data/game-data.json.",
+  "potion_tier_note": "potionTier lists canonical recipe names from families[].recipes[].name in data/game-data.json (not materials[].starting_name); capitalization copied verbatim, including irregular forms.",
+  "sources": [
+    "research/wiki/Tirami.json + Tirami_dialogues.json (canon: 14-year-old merchant, Pio's rival, stars in text, blushes on loss, brags on win; documented challenge lines are tone anchors only)",
+    "data/visitor-dialogue.json entries.tirami + documented.tirami (project-established fan-written voice + user-provided originals)",
+    "data/game-data.json (material tiers and potion names)"
+  ],
+  "character_note": "Arc: Tirami starts as pure market aggression, and by the mythic tiers keeps the bravado but earns a reputation for honesty and framing (her wall: the glass 'decorative nerve,' the fairy riddle, the wreath, the one objection, and the clawmark beside the clause warning—while the waived fee stays deliberately unframed). Rivalry stays fond throughout.",
+  "entries": {
+    "tier1-compare-the-herb-merchants": {
+      "tier": 1,
+      "name": "Compare the Herb Merchants",
+      "materials": "Red herb · Blue herb · Yellow herb",
+      "potionTier": "Sample Red Potion / Sample Blue potion / Sample Yellow potion",
+      "description": "Three herb sellers set up on the square, and Tirami descends to grade them. She buys one full bunch of each—red, blue, and yellow—samples everything publicly, and hands each seller a signed review card, including the one she hopes reads worse. By market's end all three are quoting her ratings back at her, which she counts as a great victory and not, whatever they claim, as free advertising.",
+      "notes": [
+        "Competitive grading voice from established fan-written offers (guild tasting contest, judging).",
+        "Materials: game-data tier 1 trio."
+      ]
+    },
+    "tier2-find-the-finest-mushrooms": {
+      "tier": 2,
+      "name": "Find the Finest Mushrooms",
+      "materials": "Sturdy mushroom · Clever mushroom · Lively mushroom",
+      "potionTier": "Baby HP Potion / Infant MP potion / Infant SP potion",
+      "description": "The finest mushrooms, rumor says, are selling out of a basket with no stall attached. Tirami tracks the basket through three back lanes, samples sturdy against clever against lively until her notes give out, and buys every top specimen before the pickers themselves have finished breakfast. The pickers track her down to be paid properly, which she had planned anyway, and the market opens on the finest stock in memory.",
+      "notes": [
+        "Rumor-chasing beat mirrors her established 'new stall across the square' plots without repeating one.",
+        "Materials: game-data tier 2 trio."
+      ]
+    },
+    "tier3-win-the-orchard-contract": {
+      "tier": 3,
+      "name": "Win the Orchard Contract",
+      "materials": "Fruit of power · Fruit of wisdom · Fruit of spirit",
+      "potionTier": "Raspberry Potion / Blueberry potion / Orange potion",
+      "description": "The orchard's season contract is awarded on price, promise, and nerve, and Tirami arrives with a prepared speech. Her rivals undercut her twice; she counters with guaranteed shelving, a free tasting day, and a written promise to buy the bruised fruit too, because the bruised batches are her bestsellers. The contract is signed on the picket fence, and the speech goes unread, which she agrees saved everyone time.",
+      "notes": [
+        "Materials: game-data tier 3 trio.",
+        "Winning move is logistics, not volume—keeps her sharp rather than loud."
+      ]
+    },
+    "tier4-grade-the-feather-bundles": {
+      "tier": 4,
+      "name": "Grade the Feather Bundles",
+      "materials": "Rainbow bird feathers · Bluebird feathers · Wyvern feathers",
+      "potionTier": "Small HP Potion / Small MP potion / Small SP potion",
+      "description": "Grading committee day, and the sellers all want exactly one examiner: Tirami, whose grades stick to the bundles for a whole season. She grades rainbow bird, bluebird, and wyvern feathers under three lights, passes every bundle with notes, and docks one ribbon for insufficient shimmer so loudly that three buyers ask for that bundle first. That, she explains to the committee, is called understanding your market.",
+      "notes": [
+        "Committee grading echoes 'grade the feather bundles' name; deliberately unlike Neet's quiet feather ledger.",
+        "Materials: game-data tier 4."
+      ]
+    },
+    "tier5-bid-for-prized-eggs": {
+      "tier": 5,
+      "name": "Bid for Prized Eggs",
+      "materials": "Rainbow bird's egg · Bluebird's egg · Wyvern's egg",
+      "potionTier": "Collagen Potion / Mineral potion / Vitamin potion",
+      "description": "The spring egg auction lists rainbow bird, bluebird, and wyvern clutches, and Tirami has memorized every bidder's tells. She drops two lots early specifically to watch a rival overpay, wins the bluebird clutch at half its gossip value, and accepts the auctioneer's handshake like a medal. Her cold-cart padding guarantee is, she announces, included tonight only.",
+      "notes": [
+        "Strategic losing—her documented pattern inverted (blushes when she loses; here the losing is the plan).",
+        "Materials: game-data tier 5 trio."
+      ]
+    },
+    "tier6-outsource-the-powder-sorting": {
+      "tier": 6,
+      "name": "Outsource the Powder Sorting",
+      "materials": "Strange powder · Suspicious powder · Dangerous powder",
+      "potionTier": "Homemade HP Potion / Home MP potion / Home SP potion",
+      "description": "Sorting strange, suspicious, and dangerous powders is not Tirami's job; it is her contractors' job, and her standards are not for sale. She interviews three sorting crews with sealed sample trays and hires the only one that asks what the powders do. The other two quoted cheaper; she prices in lawsuits. Delivery contracts, she writes on the sheet, are cheaper than one good scandal.",
+      "notes": [
+        "Outsourcing framed as risk management—merchant competence over comedy for this tier.",
+        "Materials: game-data tier 6."
+      ]
+    },
+    "tier7-choose-the-loudest-mandragoras": {
+      "tier": 7,
+      "name": "Choose the Loudest Mandragoras",
+      "materials": "Drunkagora · Whyragora · Whatdragora",
+      "potionTier": "Normal HP Potion / Normal MP potion / Normal SP potion",
+      "description": "Tirami auditions her nursery stock in person, because a mandragora with good lungs is worth three quiet ones at market, or so says the rumor she started herself. The Drunkagora hums, the Whyragora debates, and the Whatdragora gives three different answers, two of them rude. She buys the whole bed and posts the audition scores at her stall like a race result.",
+      "notes": [
+        "Rumor-she-started callback to her tier 2 basket chase; loudness plot fits the name.",
+        "Materials: game-data tier 7."
+      ]
+    },
+    "tier8-appraise-the-fur-shipment": {
+      "tier": 8,
+      "name": "Appraise the Fur Shipment",
+      "materials": "Manticore fur · Werewolf fur · Kobold fur",
+      "potionTier": "Carbonated Cherry Potion / Carbonated soda potion / Carbonated lemon potion",
+      "description": "A barge of furs arrives with paperwork prettier than the pelts, and Tirami is hired to reconcile the two. She grades every manticore, werewolf, and kobold lock by feel, finds four bales padded with politely combed dog, and files the discovery as 'shipping error, resolved amicably' after one look at the captain's face. The good bales leave under her own seal, which is now worth more than the cargo it covers—a fact already in her next advertisement.",
+      "notes": [
+        "Fraud caught kindly; her integrity shown in paperwork, per established voice.",
+        "Materials: game-data tier 8 trio."
+      ]
+    },
+    "tier9-survey-the-family-tonic-market": {
+      "tier": 9,
+      "name": "Survey the Family Tonic Market",
+      "materials": "Mom's Heart · Dad's Youth · Uncle's Mystery",
+      "potionTier": "Large HP Potion / Large MP potion / Large SP potion",
+      "description": "The keepsake remedy market pays in sentiment, and Tirami has researched it thoroughly despite herself. She surveys the Mom's Heart stalls, the Dad's Youth counters, and one Uncle's Mystery clearance bin, then publishes a fair-rate sheet for the whole district. The sellers print her name in the sheet's corner, which she displays at her stall as a kind of slogan.",
+      "notes": [
+        "Fair-pricing beat is the warm streak under the rivalry, established in the dialogue pools.",
+        "Materials: game-data tier 9 trio."
+      ]
+    },
+    "tier10-reserve-the-best-flower-stall": {
+      "tier": 10,
+      "name": "Reserve the Best Flower Stall",
+      "materials": "Dancing flower · Dreamy flower · Singing flower",
+      "potionTier": "Blessed HP Potion / Blessing MP potion / Blessing SP potion",
+      "description": "The flower market's corner stall goes to the first argument that lasts. Tirami arrives at dawn with a camp chair, a thermos of tea, and a rehearsed case that dancing, dreamy, and singing flowers anchor an entire market street. The clerk concedes around ten o'clock, mostly to save the pavement, and the reservation is hers. She tips the clerk graciously, which is new behavior, and blames the flowers.",
+      "notes": [
+        "Persistence plot; the blame-the-flowers ending keeps the charm self-aware rather than boastful.",
+        "Materials: game-data tier 10 trio."
+      ]
+    },
+    "tier11-a-premium-preserves-deal": {
+      "tier": 11,
+      "name": "A Premium Preserves Deal",
+      "materials": "S Class strawberry jam · S Class grape jam · Jam of mystery",
+      "potionTier": "Strawberry Potion / Grape potion / Potion of Riddle",
+      "description": "The preserves dealer keeps S Class strawberry, S Class grape, and a jar of mystery behind the counter, and Tirami wants all three at her price. The dealer's terms are unusual: she must taste them honestly in front of customers, and sales follow the verdict. She takes it; strawberry and grape pass with commentary, and the mystery jam is declared, on record, 'weird but interesting.' It outsells the other two all week, and her honesty card is renewed for a year.",
+      "notes": [
+        "Honest-verdict beat consistent with her established habit of rating shop work truthfully.",
+        "Materials: game-data tier 11."
+      ]
+    },
+    "tier12-evaluate-monster-eye-specimens": {
+      "tier": 12,
+      "name": "Evaluate Monster Eye Specimens",
+      "materials": "Eye of giant bat · Eye of gargoyle · Eye of ogre",
+      "potionTier": "Elixir of Strength / Elixir of Wisdom / Elixir of Energy",
+      "description": "The monster eye shipment comes with a price list, and Tirami comes with a lens. The giant bat's eye passes on breadth, the gargoyle's on patience, and the ogre's is caught mid-lens as painted glass—good paintwork, she admits, and she charges the seller only the appraisal fee. The real pair ships on; the glass one stays in her stall window, labeled 'decorative nerve.'",
+      "notes": [
+        "Forgery caught with grace; the display trophy pattern starts here (clawmark and clause warning follow).",
+        "Materials: game-data tier 12 trio."
+      ]
+    },
+    "tier13-negotiate-for-shed-fairy-wings": {
+      "tier": 13,
+      "name": "Negotiate for Shed Fairy Wings",
+      "materials": "Flower fairy wings · Lake fairy wings · Forest fairy wings",
+      "potionTier": "Shining HP Potion / Shining MP potion / Shining SP potion",
+      "description": "Shed fairy wings are traded, never gathered, and Tirami's season price sheet is finally accepted by the three fairy courts after a negotiation conducted entirely in compliments. Flower, lake, and forest fairy wings arrive in three small crates, each with a riddle for a receipt, and she solves two. The third riddle she has framed instead, on the grounds that some terms are better displayed than obeyed.",
+      "notes": [
+        "Compliment-negotiation keeps fairies friendly, consistent with the repo's fairy etiquette.",
+        "Materials: game-data tier 13."
+      ]
+    },
+    "tier14-check-the-dragonfang-certificates": {
+      "tier": 14,
+      "name": "Check the Dragonfang Certificates",
+      "materials": "Fang of fire dragon · Fang of water dragon · Fang of thunder dragon",
+      "potionTier": "Advanced HP Potion / Advanced MP potion / Advanced SP potion",
+      "description": "The certificates arrive with the fangs—fire, water, and thunder—and Tirami reads paperwork the way other merchants read coins: closely, and with one eyebrow up. Two seals match the frontier registry; the third is a fresh clawmark not yet on file, which she enters under 'recently registered, by necessity.' All three fangs ship in the morning, and the new clawmark becomes her favorite line in the ledger.",
+      "notes": [
+        "Clawmark trophy referenced again at tiers 23 and 25—running gag with a home file.",
+        "Materials: game-data tier 14."
+      ]
+    },
+    "tier15-outbid-the-crystal-dealer": {
+      "tier": 15,
+      "name": "Outbid the Crystal Dealer",
+      "materials": "Red crystal · Blue crystal · Gold crystal",
+      "potionTier": "Fire resistance Potion / Frost resistance potion / Electric resistance potion",
+      "description": "The crystal dealer has cornered the season auction for years, buying red, blue, and gold before anyone else and reselling at heirloom prices. Tirami outbids her exactly once, publicly, on a single red crystal, and posts the paid slip in her own window. With the corner broken, the market redraws its price board by Friday; the dealer sends a gracious wreath, and Tirami frames that too, since a fair rival is the best advertising.",
+      "notes": [
+        "Dealer framed as the monopoly buyer; one public outbid breaks the corner, not the friendship. Framed-wreath beat is the fond-rivalry signature.",
+        "Materials: game-data tier 15 trio."
+      ]
+    },
+    "tier16-proofread-the-scroll-catalogue": {
+      "tier": 16,
+      "name": "Proofread the Scroll Catalogue",
+      "materials": "Meteor scroll · Blizzard scroll · Thunderbolt scroll",
+      "potionTier": "Enriched HP Potion / Enriched MP potion / Enriched SP potion",
+      "description": "The weather scroll catalogue—meteor, blizzard, thunderbolt—comes bound and priced, and Tirami reads proofs as a public service nobody asked for. She finds one transposed figure that would have sold a thunderbolt scroll at scrap value, stops the print run two pages from the binder, and takes her fee in exchange credit. The guild's thank-you letter is read aloud at her stall twice; she approved both readings.",
+      "notes": [
+        "Clerical heroics for a merchant—contrast with Neet's restoration work on the same scrolls.",
+        "Materials: game-data tier 16."
+      ]
+    },
+    "tier17-bottle-the-finest-spirit-tears": {
+      "tier": 17,
+      "name": "Bottle the Finest Spirit Tears",
+      "materials": "Succubu`s tear · Siren's Tear · Harpy's tear",
+      "potionTier": "Elixir of Rage / Elixir of Calmness / Elixir of Vigor",
+      "description": "Bottling succubus, siren, and harpy tears is a negotiation wearing a cork, and Tirami runs all three accounts. Payment differs by spirit: gossip for one, sheet music for another, and for the harpy, the right of refusal on any ribbon she finds too frilly. The bottles sell out by noon, and her ledger notes, without comment, that this is the strangest, best business on the coast.",
+      "notes": [
+        "Consent-based sourcing kept intact; no spirit is harvested—payment is barter and consideration.",
+        "Materials: game-data tier 17 trio."
+      ]
+    },
+    "tier18-authenticate-the-angelic-runes": {
+      "tier": 18,
+      "name": "Authenticate the Angelic Runes",
+      "materials": "Rune of seraph · Runes of cherub · Rune of thrones",
+      "potionTier": "Celestial HP Potion / Celestial MP potion / Celestial SP potion",
+      "description": "A rune lot with suspiciously fresh provenance reaches the exchange, and Tirami is deputized to authenticate it before the seller leaves town. The seraph rune passes, the cherub runes pass, and the rune of thrones fails her final test—copies are cut quickly, originals are cut slowly, and she can always tell. She signs the verdict with the seller's tea still warm; the seller thanks her, because the forgery was his apprentice's, and it sells better as a lesson than as a relic.",
+      "notes": [
+        "Authentication = the merchant's honor; verdict scene distinct from Neet's copying scene.",
+        "Materials: game-data tier 18."
+      ]
+    },
+    "tier19-compare-dragon-scale-grades": {
+      "tier": 19,
+      "name": "Compare Dragon Scale Grades",
+      "materials": "Fire dragon scale · Water dragon scale · Thunder dragon scale",
+      "potionTier": "Ancient HP Potion / Ancient MP Potion / Ancient SP Potion",
+      "description": "Dragon scale grades are set once a year and argued over for eleven months. Tirami hosts the committee this year, lays out fire, water, and thunder scales under her best lamp, and ends a three-way dispute by tapping each scale and letting the whole room hear the difference. The grades are entered, the minutes are kept, and her tap method becomes annual procedure over exactly one objection, which she frames.",
+      "notes": [
+        "Hosting-the-committee beat outranks her tier 4 grading job in seniority, not structure.",
+        "Materials: game-data tier 19 trio."
+      ]
+    },
+    "tier20-a-rival-bid-for-sage-stones": {
+      "tier": 20,
+      "name": "A Rival Bid for Sage Stones",
+      "materials": "Stone of Sage · Stone of Deep-sea · Stone of Glory",
+      "potionTier": "Elixir of Legends / Elixir of Fantasy / Elixir of Hero",
+      "description": "The three legend stones—Sage, Deep-sea, and Glory—surface at auction together, which happens roughly once per respectable career. Her rival across the aisle has saved for years and takes the Sage stone with visible joy; Tirami congratulates her, wins the Deep-sea stone on the final gavel, and lets the Glory stone pass unsold before starting, loudly, a rumor that its buyers always regret it. The rumor is untrue, and it is also what keeps the speculators away until the stone finds a collector who means to keep it, not flip it. That owner sends thanks years later for the fair price; Tirami never confirms the rumor, on the principle that her prices stay honest so her gossip can work for a living.",
+      "notes": [
+        "Losing-then-winning structure mirrors her documented challenge pattern (blush, then brag).",
+        "Deliberate complication of the honesty arc, not a contradiction: her prices stay honest; the untrue rumor is attention-craft, and the text says so.",
+        "Materials: game-data tier 20."
+      ]
+    },
+    "tier21-display-the-dawn-collection": {
+      "tier": 21,
+      "name": "Display the Dawn Collection",
+      "materials": "Pendant of dawn · Pendant of daybreak · Pendant of dusk",
+      "potionTier": "Elixir of Dawn / Elixir of daybreak / Elixir of twilight",
+      "description": "Her display window is set for the twilight pendants: dawn in front, daybreak behind, dusk deepest, a fade she rehearsed for a week. Customers start arriving at actual sunrise to see it lit, which was exactly the plan, and the daybreak pendant sells to a buyer who never asked its price. The display stays up anyway, she says, for the light.",
+      "notes": [
+        "Presentation craft is the skill her documented offers already hint at (label design, displays).",
+        "Materials: game-data tier 21 trio."
+      ]
+    },
+    "tier22-price-the-cursed-ring-collection": {
+      "tier": 22,
+      "name": "Price the Cursed Ring Collection",
+      "materials": "Cursed Ruby ring · Cursed Sapphire Ring · Cursed Topaz ring",
+      "potionTier": "Cursed Bloody Reagent / Ashy cursed reagents / Sunset cursed reagents",
+      "description": "The cursed collection lands on her counter—ruby, sapphire, and topaz rings—with price tags and no caveats, so Tirami prices both. Ruby rings sell with a disclosure card, sapphire rings with two, and the topaz ring's card is a full page, sealed at the buyer's request, 'for later.' Her returns bin stays empty; the disclosure cards become the district's most-copied document, cited at three other shops' counters by Friday.",
+      "notes": [
+        "Honesty-as-strategy consistent with her arc; rings stay cursed as materials.",
+        "Materials: game-data tier 22."
+      ]
+    },
+    "tier23-a-deal-at-the-demon-market": {
+      "tier": 23,
+      "name": "A Deal at the Demon Market",
+      "materials": "Demon`s red horn · Demon's blue horn · Demon's yellow horn",
+      "potionTier": "Demon's Minor HP Potion / Demon's minor MP potion / Demon's Minor SP potion",
+      "description": "The demon market opens after nightfall, prices in favors, and Tirami closes the largest horn order of the night—red, blue, and yellow—before midnight. The clerk tests her twice on terms and gives up out of respect. Payment arrives in three horns, one favor owed to her instead of by her, and a written warning that she is now known downstairs as 'the clause merchant.' She has it framed next to the clawmark.",
+      "notes": [
+        "Running trophy gag pays off; demons dealt with respectfully, consistent with Neet/Dolbur tier 23 treatments.",
+        "Materials: game-data tier 23 trio."
+      ]
+    },
+    "tier24-source-sealed-spore-samples": {
+      "tier": 24,
+      "name": "Source Sealed Spore Samples",
+      "materials": "Red plague of spore · Blue plague of spore · Yellow plague of spore",
+      "potionTier": "Red Plague Serum / Blue plague serum / Yellow Plague Serum",
+      "description": "Sourcing sealed spore samples—red, blue, and yellow—takes licenses, patience, and the ability to walk slowly while being interesting. Tirami secures all three lots for the alchemists' market, signs the handling conditions without skimming, and is disappointed to learn the whole job runs on boredom. The alchemists pay well for boring, she reports, and adds a clause to her own contracts about it: no unsealing, ever, for anything.",
+      "notes": [
+        "Safety clause as her personal trophy; spores stay sealed, matching the repo's quarantine ethics.",
+        "Materials: game-data tier 24."
+      ]
+    },
+    "tier25-the-ultimate-tear-appraisal": {
+      "tier": 25,
+      "name": "The Ultimate Tear Appraisal",
+      "materials": "Lucifer`s red tears · Lucifer's blue tears · Lucifer's golden tears",
+      "potionTier": "Red Essence of Pride / Blue essence of pride / Gold Essence of Pride",
+      "description": "The ultimate appraisal of her career arrives under escort: Lucifer's three tears—red, blue, and gold—and a blank certificate awaiting one opinion. Tirami studies them for a long, uncharacteristic quiet, then writes: genuine, beyond pricing, to travel with care. She waives the fee on the condition that nobody ever finds out, and the courier's discretion costs her exactly one favor, which she considers the industry's fairest rate.",
+      "notes": [
+        "Arc close: the waived fee is her one unframed trophy—the joke is that it is the most valuable.",
+        "Materials: game-data tier 25 trio."
+      ]
+    }
+  }
+}

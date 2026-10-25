@@ -1,0 +1,400 @@
+{
+  "pilot": "chapter-click-08",
+  "traveler": "dolbur",
+  "tier": 3,
+  "job": "Haul the Orchard Harvest",
+  "purpose": "Owner-review draft: Dolbur's tier-3 click-through chapter (Fruit of power, Fruit of wisdom, Fruit of spirit), written in the reviewed Dolbur tier-1 and tier-2 chapter formats - chapter-pilot-dolbur-t2.json is the immediate same-traveler benchmark (pilot chapter-click-07). The chapter opens as soon as any material family reaches tier 3; the player picks one currently unlocked material inside the opening scene; the choice sets the route; Dolbur is dispatched to the orchard; after the trip the player opens a click-through continuation carrying the journey's action, setbacks, decisions, and growth. Each route stands alone and holds the mandate the owner set for it: Life has him volunteer before he has seen the wheel-eating dip, shows the lone haul out and why it cannot be the whole answer, and makes the climb-down-before-the-next-pull decision - himself first - credible, with the orchard-gate rule earned only in the outcome; Mana shows the turned compasses misrouting a wagon, then a fence-post count called out loud in a way the wagoner can repeat, so the painted lane follows from the route he proved; Stamina has him walk the route with a rope in hand and decide on three lighter loads before anything is rigged or pulled, a self-contained decision with no tier-1 callback, and the head-row veteran's thanks lands as character development without revealing the outcome early. Dolbur's judgment grows behaviorally without textual callbacks to any particular earlier route. Nothing here edits data/, source/, or the playable HTML.",
+  "sourceMaterial": [
+    "research/writing/expedition-stories/stories-v2/dolbur-t1-5.json - tier-3 Life/Mana/Stamina hooks and outcomes, quoted byte-exact (verified -ceq against this pack 3/3 hooks and 3/3 outcomes - pack lines 44-45, 50-51, 56-57 - and against data/expedition-stories.json travelers.dolbur.routes '3' rows 3/3 and 3/3, data lines 460-461, 466-467, 472-473)",
+    "research/writing/expedition-stories/stories-v2/chapter-pilot-dolbur-t2.json - reviewed same-traveler format benchmark (pilot chapter-click-07): chapter shape, beat rules, box discipline, ownership split, and the verification suite",
+    "research/writing/expedition-stories/stories-v2/HANDOFF.md - batch schema and display model: hook shown before dispatch, outcome shown once after completion, never concatenated",
+    "data/expedition-jobs.json - job name 'Haul the Orchard Harvest' (byte-exact, line 116) and the established job voice (line 117): 'Haul the Orchard Harvest. This assignment concerns power, wisdom, and spirit fruit. Dolbur treats the job as another energetic adventure, checking the route before setting out.'",
+    "data/game-data.json - tier-3 material names Fruit of power (line 27) / Fruit of wisdom (line 742) / Fruit of spirit (line 1477), byte-exact, under the Life / Mana / Stamina family labels",
+    "source/core.js - TRAVELERS roster line 12: dolbur portrait 'DolburPortrait.png'; file assets/characters/DolburPortrait.webp (verified present). Tier-3 flow: pre-dispatch hook preview and post-completion sections (core.js recordExpeditionStory line 309, journal story loop line 365); chapter gating and unlocked-route filtering (core.js expeditionChapter, setExpeditionChapterDraft line 293, unlockedExpeditionChapters line 295); award application (settleExpedition line 300)",
+    "source/app.js - EXPEDITION_PROFILES line 138, profile index 1: 'An energetic warrior who approaches adventures with plenty of enthusiasm.'; the story preview flow updates the pre-dispatch hook (updateExpeditionStoryPreview, function at line 142, hook text at line 147, from the route preview in source/core.js)",
+    "data/visitor-dialogue.json - Dolbur flavor pool used as established behavior anchors: 'a first-aid kit he cannot find' (line 46), 'a good loss teaches more than an easy win' (line 47), 'quietly checking that everyone else brought rope' (line 48), and his route-leading familiarity (line 49)"
+  ],
+  "presentationModel": "Player opens a tier chapter when any material family reaches that tier. Inside the opening scene the player chooses one currently unlocked tier material; that choice determines the route. Dolbur is dispatched. When the trip finishes, the player opens a click-through continuation showing what happened around the orchard and the route's outcome. Other unlocked routes can be played on later trips, one active route at a time.",
+  "playerFlow": "op-01 -> op-02 -> choice -> confirm = byte-exact hook box for the chosen family -> one route departure box -> trip-start (dispatch, no result) -> trip timer -> trip-end (click to open the report) -> route return boxes in order, last box = byte-exact outcome. After the chapter, other unlocked choices remain available on later trips.",
+  "implementationNotes": {
+    "chapterOpen": "The chapter becomes available as soon as any material family reaches tier 3, per the engine's chapter gating (source/core.js expeditionChapter and unlockedExpeditionChapters, which open a chapter when a family's tier meets the chapter and filter routes to unlocked families; setExpeditionChapterDraft line 293 validates the chosen family against the chapter's routes before the draft is stored). Suggested UI copy, outside the story beats: 'New chapter - Haul the Orchard Harvest.'",
+    "optionGating": "Show only options for material families currently unlocked at this tier; one, two, or three options are all valid states. The opening prose is written to hold when only one option exists.",
+    "routeLock": "The material choice sets the active route for this trip; other unlocked choices remain available on later trips, one active route at a time.",
+    "tripTimer": "The trip runs about two minutes on the game timer. The timer belongs to implementation and UI, not to story text.",
+    "awardHandling": "The script never states or implies that the player receives the chosen fruit: the fruit names which journey the telling follows, not freight. source/core.js settleExpedition (line 300) awards stamps, likeability, boost bundles, and bonuses only - no ingredient, no fruit - and the trip-end beat only opens Dolbur's report; awarding belongs to the game's existing systems, outside story text.",
+    "displayModel": "Current in-game flow this script mirrors: the hook for the selected family already shows as the story preview before dispatch (source/app.js updateExpeditionStoryPreview, function at line 142, with the hook text assigned at line 147, from the route preview in source/core.js), and the outcome shows once after the trip (source/core.js recordExpeditionStory line 309; journal story loop at line 365). The confirm box repeats the hook, the final click-through beat repeats the outcome, and nothing pre-dispatch states outcome facts."
+  },
+  "beatRules": [
+    "Every beat carries id, phase, speaker, portrait, text. The choice beat additionally carries its note and its three option texts.",
+    "Narrator beats stay brief and set place, action, or a visible action. Dolbur carries the recognition, reasoning, and decisions in his own spoken lines; judgment growth comes through what he walks, counts, orders, and hauls - never through mood labels. No route side character speaks: no accepted journey draft exists for Dolbur tier 3, so no dialogue is invented for the harvest cart crew, the wagoner, or the head-row veteran; each side presence stays narrator-carried with one scene function. The wagoner's repetition of the count (mana-r4) is narrated, never a speaker box.",
+    "Each return route opens with a 'The report starts...' narrator sentence so the post-trip account runs chronologically from where the trip went.",
+    "Each box is written to be comfortable in a dialogue box: about 40 words (whitespace token audit, hard ceiling 43 for every new beat). The byte-exact hook quote (confirm) and the byte-exact outcome quote (final return box) repeat already accepted screen text and are exempt from the target.",
+    "Portrait availability (verified): speaker 'narrator' is unvoiced scene text with no portrait. Speaker 'dolbur' shows the Dolbur portrait ('dolbur' - source/core.js TRAVELERS line 12 'DolburPortrait.png'; file assets/characters/DolburPortrait.webp). No other speaker beats exist: the cart crew, the wagoner, and the veteran stay narrator-carried, so no 'none-new-side-character' beat appears in this chapter.",
+    "No outcome fact appears anywhere before the trip ends. Pre-dispatch boxes carry only hook facts and Dolbur's spoken intentions; the six shared units (op-01, op-02, choice text and note, trip-start, trip-end) carry no route-specific hook facts either, since the choice precedes the confirm.",
+    "Aftermath wording stays owned by the final byte-exact outcome beats (the Life outcome's lone haul, 'makes everyone unload - including himself -', 'before the second pull', and the 'Unload first' motto painted on the orchard gate that the mire has never eaten a cart since; the Mana outcome's fence-post navigation, 'counting aloud in order', 'his kind of arithmetic', the painted cart-lane where his counting held, and the wagoneers' 'counting lane'; the Stamina outcome's three lighter loads split 'before touching a single rope', 'without a snap or a story', the trip-loading lesson landing with the head-row veteran who 'thanks him by name', and the week of being unbearable). Scene beats show the same journey facts in scene time in their own words; the ownership scan verifies zero outcome-phrase reuse in non-final beats.",
+    "Route independence: no beat assumes another route was seen, no cross-route characters or props except generic orchard fixtures, no Neet-route assumptions, no Dolbur tier-1 or tier-2 vocabulary outside the accepted outcomes (no shortcut, decoy, splint, birds, timetable, or crate, awning, rulebook, salt cellar, patch, scout, spring, stone, string, chalk customs), no tier-4 or later references (no feathers, wyverns, or cliffs), and no customs recited outside the byte-exact outcome beats. Each of the three routes stands alone and reads cleanly in any play order. 'Rope' is the tier-3 Stamina hook's own carried word (hook and visitor-dialogue flavor pool line 48 both carry one) and stays inside the Stamina route.",
+    "Award discipline: no beat states or implies the player receives the chosen fruit; the trip's rewards belong to the game's existing settlement systems outside story text (source/core.js settleExpedition)."
+  ],
+  "opening": {
+    "beats": [
+      {
+        "id": "op-01",
+        "phase": "opening",
+        "speaker": "narrator",
+        "portrait": "none",
+        "text": "The orchard harvest jobs are waiting this morning, and the harvest work is Dolbur's."
+      },
+      {
+        "id": "op-02",
+        "phase": "opening",
+        "speaker": "dolbur",
+        "portrait": "dolbur",
+        "text": "Pio! Haul day! Gloves, straps, and solid boots, all checked by hand this morning. Point me at the orchard, and I will make the assignment worth retelling."
+      },
+      {
+        "id": "choice",
+        "phase": "choice",
+        "speaker": "narrator",
+        "portrait": "none",
+        "text": "Choose which fruit sends Dolbur out.",
+        "note": "Only options whose material family is unlocked at this tier are shown. The opening prose above is written to hold whether one option or three are available. The chosen fruit names the journey this telling follows; it is the story's focus, never a settlement award.",
+        "options": [
+          {
+            "material": "Fruit of power",
+            "teaser": "A fully loaded harvest cart, a dip that eats wheels somewhere ahead on the lane, and a volunteer who signed on before laying eyes on any of it."
+          },
+          {
+            "material": "Fruit of wisdom",
+            "teaser": "Rows that turn compasses, wagons that must cross them twice a day, and a leader-and-a-counter job that wants filling."
+          },
+          {
+            "material": "Fruit of spirit",
+            "teaser": "An annual single-haul legend across the spirit rows, and this year he walks the ground first, rope in hand, plan in head."
+          }
+        ]
+      }
+    ]
+  },
+  "sharedDispatch": [
+    {
+      "id": "trip-start",
+      "phase": "trip",
+      "speaker": "narrator",
+      "portrait": "none",
+      "text": "Dolbur takes the assignment and gets to it; whatever happens out there comes home with him."
+    },
+    {
+      "id": "trip-end",
+      "phase": "trip",
+      "speaker": "narrator",
+      "portrait": "none",
+      "text": "The trip is over. Open Dolbur's report to see what happened, and how it ended."
+    }
+  ],
+  "routes": [
+    {
+      "family": "Life",
+      "material": "Fruit of power",
+      "confirmBeats": [
+        {
+          "id": "life-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The harvest cart is fully loaded and the orchard lane has a dip in it that eats wheels. Dolbur volunteers before he has seen the lane."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "life-dep",
+          "phase": "departure",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Fruit of power, then! One cart, loaded to the last apple, and a lane I have not met yet - I signed on first, I will look second. Wheels do not out-pull me, and the harvest is home by supper."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "life-r1",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The report starts at the lane mouth, where Dolbur met his assignment for the first time: down its middle, between the trees and the hedgerow, ran a long shallow dip with a taste for wheels."
+        },
+        {
+          "id": "life-r2",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The loaded cart went down into the dip trusting its hubs, and the dip kept them: both front wheels sank past the rims halfway across, and the whole harvest hung there between one tree row and the next."
+        },
+        {
+          "id": "life-r3",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "He freed it the honest way: boots braced on the hub, drawbar taken low, and walked it out wheel-length by wheel-length until the wheels bit firm ground - then pressed on, and the dip's far bowl took the full load again."
+        },
+        {
+          "id": "life-r4",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "One pull proved two problems: the dip charges by the pound, and the cart arrived fully loaded to pay. Every pass sinks at the same spot no matter whose shoulders haul. Muscle covers half of it, and weight is the other half."
+        },
+        {
+          "id": "life-r5",
+          "phase": "return",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "The dip was never fighting my shoulders - it was fighting the load. So everything climbs down before the next pull, and every hand carries its share across the dip to the far side. I take the first armful - the volunteer's share."
+        },
+        {
+          "id": "life-r6",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The cart came apart into arms: boxes, baskets, and sacks walked up the far side and stacked under the hedgerow until the bed stood bare, and the first pair of shoulders down belonged to him."
+        },
+        {
+          "id": "life-r7",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The next pull was a different animal: an empty cart, a long steadying grip, and the dip gave up its wheels without a fight - bare bed across on one go, with every hand and every box already waiting on the far side."
+        },
+        {
+          "id": "life-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The cart mires mid-way; he hauls it out alone, then makes everyone unload - including himself - before the second pull. 'Unload first' is painted on the orchard gate, and the mire has never eaten a cart since."
+        }
+      ]
+    },
+    {
+      "family": "Mana",
+      "material": "Fruit of wisdom",
+      "confirmBeats": [
+        {
+          "id": "mana-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The wisdom rows are known to turn compasses, and the harvest wagons have to cross them twice a day. Someone has to lead and someone has to count."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "mana-dep",
+          "phase": "departure",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Fruit of wisdom, then! The rows that turn compasses, twice a day, and the wagons with them. The plan is an old one: I lead, I count, and the count leads the wagons. Compasses can spin if they want; numbers hold still."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "mana-r1",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The report starts at the first of the day's two crossings: a wagon's compass spun its needle inside the wisdom rows, the driver steered by it, and the wagon left the trodden lane for the young trees on the far side."
+        },
+        {
+          "id": "mana-r2",
+          "phase": "return",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Trust nothing that spins; trust the number you are on instead. The orchard's far fence has posts from corner to crossroad, and I will count them out loud - every wagon, every crossing. 'Post eight' turns, 'post nine' goes home."
+        },
+        {
+          "id": "mana-r3",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The proving run went on foot at the lead: every post got its number carried up the line of wagons, the young-tree wagon eased back onto the hard ground at 'post eight', and the second crossing went the same way, no needle consulted."
+        },
+        {
+          "id": "mana-r4",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The rear wagoner took the count on faith and then on practice: by the afternoon runs he was calling the posts up behind, same order, same rhythm, and the whole train crossed with its eyes on the posts instead of the spinning glass."
+        },
+        {
+          "id": "mana-r5",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "By evening the pattern was patient and plain: the needle wandered where the rows began, and the posts never did - the count and the hard ground agreed at the crossing, every run, every wagon, both directions."
+        },
+        {
+          "id": "mana-r6",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "He left the proof where the orchard could use it: the counted posts carrying their numbers at every crossing, and the wagon-width of the young-tree corner written down next to them for next season's needles to argue with."
+        },
+        {
+          "id": "mana-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Dolbur navigates the wagons by fence posts, counting aloud in order - his kind of arithmetic. The orchard paints a cart-lane exactly where his counting held, and the wagoneers call it the counting lane."
+        }
+      ]
+    },
+    {
+      "family": "Stamina",
+      "material": "Fruit of spirit",
+      "confirmBeats": [
+        {
+          "id": "stamina-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The grand single haul across the spirit rows is a legend everyone talks Dolbur into every year. This time he walks the route first, with a rope in one hand and a plan in his head."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "stamina-dep",
+          "phase": "departure",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Fruit of spirit, then! The grand single haul, the legend, the whole parade. This year the route gets walked before anything gets roped; the rope came along for company, the plan comes first. The ground negotiates on foot before it meets my shoulders."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "stamina-r1",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The report starts on the walk the legend always skipped: from the spirit rows' loading edge to the main road, the rope held in one hand, the other doing the prodding - every rut, root, and soft spot getting noted."
+        },
+        {
+          "id": "stamina-r2",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The walk did the math the legend never bothered with: one grand load meant one shared axle through every soft spot, double weight at the worst of them, and no second chance if anything leaned wrong. The rope stayed coiled."
+        },
+        {
+          "id": "stamina-r3",
+          "phase": "return",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Decision, made on the spot and in the open: three loads this year, light ones, each with its own go - because the ground has now told me, in person, what weight costs around here. Rope stays coiled until the splitting is done."
+        },
+        {
+          "id": "stamina-r4",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Only then did the rope come out of its coil: the splitting stayed ahead of it on purpose, and three smaller, lighter rigs went out instead of one grand one, each anchored and checked while the legend's faithful watched from the rows."
+        },
+        {
+          "id": "stamina-r5",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Three times the loads went across the soft ground - first, second, third - and three times nothing leaned, nothing dropped, nothing needed rescuing. The day ran out of grandeur before it ran out of light."
+        },
+        {
+          "id": "stamina-r6",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The head row's veteran pulled the grand load every year the legend ran, arms folded, until the third rig took its pass clean. Then he named Dolbur in front of the queue and thanked him properly - like it cost him something."
+        },
+        {
+          "id": "stamina-r7",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The last rig came home empty on schedule. The veteran's thank-you went into Dolbur's careful pocket, next to the ones he actually keeps, and the middle of three clean lines got the worst attempt at modesty the orchard had seen."
+        },
+        {
+          "id": "stamina-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "He splits everything into three lighter loads before touching a single rope, and takes them through without a snap or a story. The trip-loading lesson lands with the orchard's head-row veteran, who thanks him by name, and he is unbearable about it for exactly a week."
+        }
+      ]
+    }
+  ],
+  "mapping": {
+    "life": {
+      "hook": "life-hook quotes the tier-3 Life hook byte-exact as the confirm box after the choice.",
+      "inBetween": "No accepted journey draft exists for Dolbur tier 3, so the beats between hook and outcome are new fan-written scene work built to the outcome's own action order: the lane met at first arrival, dip and all (life-r1), the loaded cart settling into the dip halfway across (life-r2), the freeing haul - boots braced on the hub, drawbar taken low, walked out wheel-length by wheel-length - followed by the full load sinking again in the dip's far bowl before the second pull could happen (life-r3), the count that names weight as the other half of the problem (life-r4), the spoken decision to climb everything down and carry it across share by share, with his own armful first (life-r5), the unload staged in scene words with boxes, baskets, and sacks (life-r6), and the light second pull that takes the bare bed across at once (life-r7).",
+      "outcome": "life-out quotes the outcome byte-exact as the final box; 'The cart mires mid-way', 'he hauls it out alone', 'makes everyone unload - including himself -', 'before the second pull', the 'Unload first' motto painted on the orchard gate, and 'the mire has never eaten a cart since' stay owned by this beat alone.",
+      "notes": "The user-mandated order: the volunteer-before-looking is kept as staged irony (life-dep says 'signed on first, look second'; life-r1 is the first sight of the lane), the lone haul is shown succeeding and still insufficient (life-r3 frees the cart with visible method - boots braced, drawbar low, wheel-length by wheel-length - and then the full load sinks again in the dip's far bowl; life-r4 names why every full pass would sink again: the dip charges by the pound and the cart arrived fully loaded to pay), and the unload decision is spoken on that count (life-r5) and modeled by him first (life-r6). The beats never use the outcome's words: the scene says 'everything climbs down', 'every hand carries its share', 'before the next pull', and 'boxes, baskets, and sacks', and never 'mire', 'unload', 'painted', or 'gate'; the orchard-gate rule exists only in the byte-exact outcome."
+    },
+    "mana": {
+      "hook": "mana-hook quotes the tier-3 Mana hook byte-exact as the confirm box.",
+      "inBetween": "New fan-written between hook and outcome, per owner directive: the turned needle that steers a wagon off the trodden lane into the young trees at the day's first crossing (mana-r1), the spoken fix - number the orchard's far fence posts out loud and call the turn by the count (mana-r2), the proving run on foot at the lead with every post's number carried up the line (mana-r3), the rear wagoner taking the count over in practice (mana-r4), the evening pattern that shows the needle wandering while the posts hold (mana-r5), and the handed-over proof, counted posts at every crossing plus the wagon-width of the young-tree corner (mana-r6).",
+      "outcome": "mana-out quotes the outcome byte-exact as the final box; 'navigates the wagons by fence posts', 'counting aloud in order', 'his kind of arithmetic', 'paints a cart-lane exactly where his counting held', and 'the wagoneers call it the counting lane' stay owned by this beat alone.",
+      "notes": "The user-mandated order: the problem is practical and on screen (mana-r1), the choice of fence posts and the count-aloud formula happen mid-trip (mana-r2, committed to on the spot), and the count is built to be repeatable - the formula is short ('Post eight' turns; 'post nine' goes home), the numbers are carried up the line run by run (mana-r3), and the wagoner adopts the same order and rhythm in narration, never in a speaker box (mana-r4). The departure (mana-dep) announces lead-and-count from the hook without naming posts, because he has not chosen his ruler yet. The painted lane follows from what the route proved (mana-r5's pattern, mana-r6's handed-over record); painting, the lane name, and the wagoneers stay in the byte-exact outcome."
+    },
+    "stamina": {
+      "hook": "stamina-hook quotes the tier-3 Stamina hook byte-exact as the confirm box.",
+      "inBetween": "New fan-written between hook and outcome, per owner directive: the walk the legend skips, rope coiled, every soft spot prodded (stamina-r1), the walk's math - one grand load means one shared axle through every soft spot with no second chance (stamina-r2), the spoken three-loads decision with its own go each, made before anything is tied (stamina-r3), the rope coming out only after the splitting, three rigs anchored and checked (stamina-r4), the three passes across the soft ground with nothing leaned or dropped (stamina-r5), the head row's veteran folding his doubts away until the third rig proves itself and then delivering the thanks, like it cost him something (stamina-r6), and Dolbur pocketing the thank-you among the ones he actually keeps (stamina-r7).",
+      "outcome": "stamina-out quotes the outcome byte-exact as the final box; 'He splits everything into three lighter loads before touching a single rope', 'without a snap or a story', 'The trip-loading lesson lands with the orchard's head-row veteran' who 'thanks him by name', and 'he is unbearable about it for exactly a week' stay owned by this beat alone.",
+      "notes": "The user-mandated order: the decision exists before the rigging. The hook's carried rope is staged as inspection only (stamina-r1 coil, stamina-r2 'The rope stayed coiled'), the three-loads decision is spoken in scene time and stays self-contained - no tier-1 callback, no assumed earlier route (stamina-r3) - and the rope is touched only after the splitting is done on purpose (stamina-r4's 'the splitting stayed ahead of it on purpose'). The thanks land on screen as character development (stamina-r6 says 'thanked him properly', never 'thanks him by name'), and the outcome's week of being unbearable is hinted only as the terrible attempt at modesty (stamina-r7) - no early reveal. The words 'snap' and 'story' stay out of the scene; the stakes are carried by what does not happen - nothing leaned, nothing dropped, nothing needed rescuing."
+    }
+  },
+  "byteReuse": [
+    "The harvest cart is fully loaded and the orchard lane has a dip in it that eats wheels. Dolbur volunteers before he has seen the lane.",
+    "The cart mires mid-way; he hauls it out alone, then makes everyone unload - including himself - before the second pull. 'Unload first' is painted on the orchard gate, and the mire has never eaten a cart since.",
+    "The wisdom rows are known to turn compasses, and the harvest wagons have to cross them twice a day. Someone has to lead and someone has to count.",
+    "Dolbur navigates the wagons by fence posts, counting aloud in order - his kind of arithmetic. The orchard paints a cart-lane exactly where his counting held, and the wagoneers call it the counting lane.",
+    "The grand single haul across the spirit rows is a legend everyone talks Dolbur into every year. This time he walks the route first, with a rope in one hand and a plan in his head.",
+    "He splits everything into three lighter loads before touching a single rope, and takes them through without a snap or a story. The trip-loading lesson lands with the orchard's head-row veteran, who thanks him by name, and he is unbearable about it for exactly a week."
+  ],
+  "skillStages": {
+    "planning": "planning.md outputs restated for the Dolbur tier-3 chapter: the reviewed tier-2 chapter shape (opening -> choice -> hook confirm -> departure -> dispatch -> return beats -> outcome), with the same documented deviation - no accepted journey draft exists for Dolbur tier 3, so the continuation between hook and outcome is planned as new fan-written scene work to each outcome's own action order. POV limits: pre-dispatch boxes may state hook facts and Dolbur's spoken intentions only - no result - and the six shared units carry no route-specific facts since the choice precedes the confirm. The owner's three route mandates drive the beat orders: Life stages the volunteer-before-looking irony, the successful-but-insufficient lone haul, and the weight-before-muscle climb-down decision without announcing the gate rule; Mana stages the turned-compass wagon problem and builds the repeatable fence-post count that the painted lane later follows; Stamina stages the walk-first inspection and the three-loads decision made before any rigging, with the veteran's thanks landing without revealing the outcome.",
+    "drafting": "dialogue-and-behavior.md governs the boxes: Dolbur's lines are energetic and direct (established anchor: 'An energetic warrior who approaches adventures with plenty of enthusiasm'; the job description's 'another energetic adventure, checking the route before setting out'), and the growth shows as conduct - looking second when he has signed on first, choosing a ruler that cannot be fooled and making it repeatable, deciding the load's shape before the rig exists. No side-character dialogue invented: the cart crew climbs down and carries in body, the wagoner repeats the count in narration, the veteran's thanks arrive through the narrator's report, all unnamed. The end of each route is the accepted outcome beat, so each route ends with the pack's own claim. Dolbur's 'Pio!' salute in op-02 uses the established expedition greeting register (source/app.js profile index 1) with plain ASCII punctuation.",
+    "reviewing": "revision-checklist pass on all three click-throughs: choice causality (the fruit names the route; no theme confusion), no pre-dispatch outcome disclosure, route independence (no cross-route characters or props beyond generic orchard fixtures, no Neet-route assumptions, no tier-1, tier-2, or tier-4 custom recitations outside the byte-exact outcomes), character anchoring (the cart crew as the unload's hands, the wagoner as the count's repeater, the veteran as the lesson's recipient), voice consistency in every spoken box, box economy, and mapping completeness (each outcome's action order shows fully in the scene before the final quote)."
+  },
+  "characterNotes": {
+    "dolbur": "Tier-3 Dolbur is the established warrior: energetic, direct, and now planning one step ahead - he signs on before looking and then looks properly (Life), builds a ruler that cannot be fooled and makes it repeatable for others (Mana), and decides the load's shape before any rigging exists (Stamina). The growth is behavioral because the campaign cannot assume the player saw a Dolbur tier-1 or tier-2 route: no outcome or scene references what any earlier telling established. His tier-4..5 material is not referenced. Portrait: 'dolbur' (verified: source/core.js TRAVELERS line 12 'DolburPortrait.png'; file assets/characters/DolburPortrait.webp).",
+    "harvestCartCrew": "Life route only, unnamed: the cart crew whose labor the lone haul was quietly borrowing. They unload in body - climb down, carry boxes, baskets, and sacks up the far side - and are back at the top for the light second pull. No speaker beats, no portrait; narrator-carried.",
+    "wagoner": "Mana route only, unnamed: the rear wagoner who takes the fence-post count from faith to practice. His repetition of the count is narrated, never a speaker box, so the count stays Dolbur's invention working without him. No speaker beats, no portrait; narrator-carried.",
+    "headRowVeteran": "Stamina route only, unnamed: the head row's veteran who has pulled the grand load every year the legend ran. He holds his doubts in body (arms folded) until the third rig proves itself, then delivers his thanks through the narrator's report - never a speaker box - and the thanks land as the character development the owner set. No speaker beats, no portrait; narrator-carried."
+  },
+  "factProvenance": {
+    "documented": "Hooks, outcomes, material names (Fruit of power / Fruit of wisdom / Fruit of spirit), and the job (Haul the Orchard Harvest) are byte-exact from dolbur-t1-5.json (and data/expedition-stories.json travelers.dolbur.routes '3' rows, byte-identical). Job voice anchor from data/expedition-jobs.json line 117: 'Haul the Orchard Harvest. This assignment concerns power, wisdom, and spirit fruit. Dolbur treats the job as another energetic adventure, checking the route before setting out.'",
+    "established": "Dolbur's voice and behavior anchors are the game's own: the expedition profile line 'An energetic warrior who approaches adventures with plenty of enthusiasm.' (source/app.js line 138, profile index 1; also the shop greeting register behind op-02's salute, story beats use narrative voice), the warrior task lines in source/core.js EXPEDITION_TASKS, and the visitor-dialogue flavor pool ('a first-aid kit he cannot find', 'a good loss teaches more than an easy win', 'quietly checking that everyone else brought rope', his route-leading familiarity). The display split (hook pre-dispatch, outcome post-trip, never concatenated) is the HANDOFF model with the engine points cited in implementationNotes.displayModel (app.js updateExpeditionStoryPreview :142 with the hook at :147; core.js recordExpeditionStory :309 and the journal story loop :365). Portrait support: source/core.js TRAVELERS line 12 ('DolburPortrait.png') and assets/characters/DolburPortrait.webp.",
+    "newFanWritten": "Everything between hook and outcome: the opening frame (op-01; op-02's checklist and the 'Pio!' salute, which borrows the established greeting register without quoting it), the three option teasers (rephrasing hook facts only), the three departure lines (new Dolbur speech, in voice, no results), the four in-scene spoken boxes (life-r5, mana-r2, stamina-r3, plus op-02), trip-start/trip-end adapted from the series-standard Neet dispatch lines, and the entire post-trip scene layer (the dip met at the lane mouth and the sunk front wheels; the successful-but-insufficient shoulder haul and the by-the-pound reasoning; the climb-down with himself first and the unload in scene words; the light second pull; the spun needle at the first crossing and the wagon off the lane; the fence-post ruler and the count-aloud formula; the number-carrying proving run; the wagoner's adopted count; the needle-versus-posts evening pattern; the handed-over proof; the walked route with the coiled rope; the one-axle math; the spoken three-loads decision; the three rigs after the splitting; the three clean passes; the veteran's delivered thanks; the pocketed thank-you). The cart crew, the wagoner, and the veteran stay unnamed and unvoiced; no new named characters, no new customs outside the final beats."
+  },
+  "continuityFlags": [
+    "No accepted journey draft exists for Dolbur tier 3 (the journey-pilot files cover Neet t1 and t2 only). All beats between hook and outcome are new fan-written scene work staged to each outcome's own action order; the owner may want a companion journey-pilot-dolbur-t3 before v2 integration. Hooks and outcomes are the only protected texts.",
+    "Shared-unit spoiler discipline: op-01, op-02, the choice text and note, and the two dispatch lines carry no route-specific hook or outcome facts; per-route hook facts appear only in each route's own option teaser, byte-exact hook, and departure line. Per-option teasers restate hook facts in fresh wording, as in the reviewed tier-1 and tier-2 benchmarks.",
+    "Scene-versus-outcome wording split: the beats show the outcomes' journey facts in scene time (the freeing haul and the climb-down with his own armful first; the fence-post count and the adopted rhythm; the walked soft spots and the three light rigs) but in their own words; each phrase the outcome uses as its standing claim ('he hauls it out alone', 'makes everyone unload', 'including himself', 'before the second pull', the 'Unload first' motto on the orchard gate, 'never eaten a cart since'; 'navigates the wagons by fence posts', 'counting aloud in order', 'his kind of arithmetic', 'paints a cart-lane', 'the counting lane'; 'three lighter loads', 'before touching a single rope', 'without a snap or a story', 'trip-loading lesson', 'head-row veteran', 'thanks him by name', 'unbearable about it for exactly a week') is verified to appear only in the byte-exact outcome beats.",
+    "Route independence verified by scan: no traveler names other than Dolbur; cart, dip, and wheels only in Life; compasses, wagons, and fence posts only in Mana; rope, rigs, the legend, and the veteran only in Stamina; no Neet-route assumptions; no Dolbur tier-1 vocabulary (shortcut, decoy, splint, herb, mob, timetable, three trips) or tier-2 vocabulary (crate, awning, rulebook, salt cellar, patch, scout, spring, stone, string, chalk) outside those accepted outcomes; no tier-4 material referenced (no feathers, wyverns, or cliffs). 'Rope' stays inside the Stamina route - it is that hook's own carried word (dolbur-t1-5.json Stamina hook; the visitor-dialogue.json line 48 echo is not recited). The judgment growth is behavioral only (look properly, choose a ruler that holds, decide before rigging) with no textual callbacks to any earlier route.",
+    "Pre-dispatch content (opening, teasers, hooks, departures, dispatch lines) is safe for the current display model: hook facts and declared intentions only. Departures announce method, not result ('I signed on first, I will look second', 'I lead, I count, and the count leads the wagons', 'the route gets walked before anything gets roped') - the results happen after the trip, in the return beats.",
+    "Portrait support verified during the pass: source/core.js TRAVELERS line 12 carries 'DolburPortrait.png' and assets/characters/DolburPortrait.webp is present; the unnamed side characters never reach the portrait system because they carry no speaker beats."
+  ],
+  "flags": [
+    "Portrait authority: Dolbur keeps the established 'dolbur' portrait id (verified against source/core.js TRAVELERS line 12 and assets/characters/); the narrator is unvoiced with no portrait; the cart crew, the wagoner, and the veteran stay narrator-carried with no speaker beats, so no 'none-new-side-character' id appears in this chapter.",
+    "Only the choice beat branches, and the route stays locked for that trip. All mechanics (chapter-open trigger, option gating, one-active-route model, trip timer) live in implementationNotes and the choice beat's note, never inside story text.",
+    "Implementation caveat (same standing as chapter-click-01, chapter-click-06, and chapter-click-07): this is a script draft. Multi-beat click-through playback, option buttons, and the trip timer all need renderer work; nothing here edits game files.",
+    "The confirm box (hook) and the final return box (outcome) are intentionally longer boxes because they quote accepted screen text byte-exact; per the current display model the hook already shows pre-dispatch and the outcome once after completion, and if the game later shows the outcome on its own completion screen, the out beat can be swapped for that canned screen without breaking the script.",
+    "Award discipline is verified below in coverageChecks: no beat claims the player receives the chosen fruit; implementationNotes.awardHandling cites the award application in source/core.js settleExpedition (stamps, likeability, boost bundles, bonuses; no ingredients).",
+    "No new named characters anywhere: the cart crew (Life), the wagoner (Mana), and the veteran (Stamina) stay unnamed and unvoiced, each with one scene function; the naming precedent belongs to the Neet tier-1 journeys where accepted named side characters (Mena, Gorram) exist."
+  ],
+  "coverageChecks": {
+    "anchors": "PASS - hooks 3/3 and outcomes 3/3 byte-exact by -ceq against dolbur-t1-5.json tier-3 entries (Life=Fruit of power, Mana=Fruit of wisdom, Stamina=Fruit of spirit), and 3/3 plus 3/3 again against data/expedition-stories.json travelers.dolbur.routes '3' rows (pack and data byte-identical). Job name 'Haul the Orchard Harvest' verified byte-exact (-ceq) in data/expedition-jobs.json and against the pilot field. Material names verified byte-exact (-ceq) in data/game-data.json under Life/Mana/Stamina and against the pack route material fields and the pilot's route fields.",
+    "byteReuse": "6 byte-exact pack quotes registered (3 hooks + 3 outcomes); all 6 verified present in dolbur-t1-5.json, in data/expedition-stories.json, and in exactly their own beats (0 beat misses, 0 orphan entries). 0 other journey fragments: no journey draft exists for Dolbur tier 3, and the scene layer quoting discipline keeps every outcome phrase out of the non-final beats (option teasers rephrase hook facts only).",
+    "boxLengths": "34 boxes total (opening 2 + choice 1 + dispatch 2; per route: hook 1 + departure 1 + 6-7 return-stage boxes - Life 7, Mana 6, Stamina 7, each ending in the byte-exact outcome box). All 28 new beats at or under the 43-token comfort target (whitespace-split token audit, measured): at the ceiling 43 - life-r5, life-r7, stamina-r3, stamina-dep, mana-r3, mana-r4; at 42 - life-r4, mana-dep, stamina-r4, stamina-r6; all others 41 and under. The byte-exact hook and outcome boxes are quotes and exempt from the target (measured lengths: hooks 26/28/36 and outcomes 38/34/46 for Life/Mana/Stamina; option teasers 28/19/22 for power/wisdom/spirit; shared units op-01 14, op-02 27, choice 6, trip-start 16, trip-end 15).",
+    "preDispatchLeakScan": "12 pre-dispatch text units (op-01, op-02, choice text and note, 3 option teasers, trip-start, trip-end, 3 departures) scanned against the outcome-side vocabulary (mire, unload, gate, painted, navigates, arithmetic, wagoneer, cart-lane, counting lane, paint, post, splits, three lighter loads, snap, veteran, thanks, unbearable, trip-loading; 'rope' excluded as a hook-carried word): 0 hits. Departures announce method only ('I signed on first, I will look second', 'I lead, I count, and the count leads the wagons', 'the route gets walked before anything gets roped'). Run a second guard over the six shared units only (op-01, op-02, choice text and note, trip-start, trip-end) against route-specific hook words (cart, dip, wheel, compass, wagon, count, rope, legend, grand, single, walk, cross; 'haul' and 'orchard' excluded as job-shared): 0 hits - hook facts stay in the teasers, hooks, and departure lines where routes are already named.",
+    "outcomeOwnershipScan": "Each route's outcome-end-exclusive phrases (Life: 'mires mid-way', 'hauls it out alone', 'makes everyone unload', 'including himself', 'before the second pull', 'Unload first', 'painted on the orchard gate', 'never eaten a cart since', plus singles 'mire', 'unload', 'gate', 'painted'; Mana: 'navigates the wagons by fence posts', 'counting aloud in order', 'his kind of arithmetic', 'paints a cart-lane', 'exactly where his counting held', 'the wagoneers call it the counting lane', plus singles 'arithmet', 'wagoneer', 'cart-lane', 'navigat', 'paint'; Stamina: 'splits everything into three lighter loads', 'three lighter loads', 'before touching a single rope', 'without a snap or a story', 'The trip-loading lesson lands', 'head-row veteran', 'thanks him by name', 'unbearable about it for exactly a week', plus singles 'snap', 'unbearable', 'trip-loading') scanned across all 28 non-quote beats (the 5 shared boxes plus 23 non-quote route boxes) plus the choice note and option teasers: 0 hits. The scene stages the same journey facts in its own words ('everything climbs down', 'count them out loud', 'the splitting stayed ahead of it on purpose').",
+    "routeIndependenceScan": "Traveler-name scan across all 34 beat texts, the choice note, and the 3 option teasers (Neet, Tirami, Claire, Daisy, Kyle, Luke, Piria, Charlotte, Demian) plus Dolbur tier-1, tier-2, and tier-4 borrow vocabulary (shortcut, decoy, splint, herb, mob, timetable, three trips, crate, awning, rulebook, salt cellar, patch, scout, spring, stone, string, chalk, feather, wyvern, bird, cliff, distance): 0 hits. Per-route signature-noun guard (cart, dip, wheel, unload, gate / compass, wagon, post, count / rope, rig, legend, veteran, split, snap), scanned over every non-quote text of the other routes plus the six shared units and the choice note, each route's own prose and teaser exempt: 0 hits - rope occurs only in Stamina, compass/wagon/post only in Mana, cart/dip only in Life; words inside the protected pack quotes are pack-owned (the Mana outcome's 'cart-lane' carries 'cart' by the pack's own wording). Cross-material guard, case-sensitive: each material name 'Fruit of power' / 'Fruit of wisdom' / 'Fruit of spirit' appears exactly once in the script text - inside its own route's departure salute ('Fruit of power, then!' / 'Fruit of wisdom, then!' / 'Fruit of spirit, then!') - and nowhere else. Cast placement: the cart crew only in Life; the wagoner and his count only in Mana; the veteran and the rigs only in Stamina; the shared dispatch lines name none of them. Each route reads standalone in any order.",
+    "awardClaimScan": "34 beat texts plus 3 option teasers scanned against award/claim vocabulary (award, reward, receive, gives you, yours, claim, collect, gather): 0 hits. The choice note states the discipline in guidance language ('the story's focus, never a settlement award'), matching the Neet tier-5 choice-note precedent; implementationNotes.awardHandling cites the award application in source/core.js (settleExpedition: stamps, likeability, boost bundles, bonuses only - no ingredient, no fruit).",
+    "beatInventory": "Shared layer: op-01, op-02, choice (+3 option teasers), trip-start, trip-end. Life: life-hook confirm, life-dep departure, life-r1..life-r7 returns, life-out outcome. Mana: mana-hook, mana-dep, mana-r1..mana-r6 returns, mana-out outcome. Stamina: stamina-hook, stamina-dep, stamina-r1..stamina-r7 returns, stamina-out outcome. 34 unique beat ids; each route's final box is the byte-exact outcome.",
+    "fileCheck": "JSON parses via ConvertFrom-Json (UTF8); 21 top-level keys; whole file 0 non-ASCII chars; 34 beats, all 34 ids unique; speaker-portrait pairing verified with 0 violations (narrator=none, dolbur=dolbur; no other speaker appears). Anchors verified -ceq 3/3 hooks and 3/3 outcomes against dolbur-t1-5.json AND against data/expedition-stories.json travelers.dolbur.routes '3' rows (pack and data byte-identical); job name and tier-3 material names -ceq against data/expedition-jobs.json and data/game-data.json. All scans 0 hits (pre-dispatch leak over the 12 pre-dispatch units, shared-unit route guard over the 6 shared units, outcome-phrase ownership over the 28 non-quote beats plus note and teasers, per-route signature nouns, traveler names and borrow vocabulary, award claims). The file was assembled with placeholder markers section by section and all markers were replaced and re-verified before this check; data/, source/, and the playable HTML untouched."
+  }
+}

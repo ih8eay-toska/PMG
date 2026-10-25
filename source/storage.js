@@ -7,4 +7,7 @@ function loadStoredGame(storage,key){
  return{game,blocked:false,warning};
 }
 function writeStoredGame(storage,key,state){const next=JSON.stringify(state),previous=storage.getItem(key);if(previous===next)return;let valid=false;if(previous){try{SAVE_MODEL.sanitizeSave(JSON.parse(previous));valid=true;}catch{}}if(valid)storage.setItem(key+'-recovery',previous);storage.setItem(key,next);}
-if(typeof module!=='undefined')module.exports={loadStoredGame,writeStoredGame};
+function namedSaveSlotKey(key,slot){if(!Number.isInteger(slot)||slot<1||slot>3)throw Error('Invalid save slot.');return key+'-slot-'+slot;}
+function readNamedSaveSlot(storage,key,slot){const raw=storage.getItem(namedSaveSlotKey(key,slot));if(raw===null)return null;const entry=JSON.parse(raw);if(!entry||entry.version!==1||typeof entry.name!=='string'||!entry.name.trim()||entry.name.length>40||!Number.isSafeInteger(entry.savedAt)||entry.savedAt<0||entry.savedAt>8640000000000000)throw Error('This slot is unreadable. Export your current shop before replacing it.');return{version:1,name:entry.name,savedAt:entry.savedAt,state:SAVE_MODEL.sanitizeSave(entry.state)};}
+function writeNamedSaveSlot(storage,key,slot,name,state){const target=namedSaveSlotKey(key,slot);if(typeof name!=='string'||!name.trim()||name.trim().length>40)throw Error('Use a slot name of 1–40 characters.');const entry={version:1,name:name.trim(),savedAt:Date.now(),state:SAVE_MODEL.sanitizeSave(JSON.parse(JSON.stringify(state)))};storage.setItem(target,JSON.stringify(entry));return entry;}
+if(typeof module!=='undefined')module.exports={loadStoredGame,writeStoredGame,namedSaveSlotKey,readNamedSaveSlot,writeNamedSaveSlot};

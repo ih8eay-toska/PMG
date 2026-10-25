@@ -1,0 +1,93 @@
+{
+  "traveler": "dolbur",
+  "batch": "v2-stories-t1-5",
+  "chapters": [
+    {
+      "kind": "route", "tier": 1, "family": "Life", "material": "Red herb",
+      "job": "Trailside Herb Hunt",
+      "hook": "The trail clinic wants red herbs, and Dolbur knows a shortcut that is technically a trail. He is halfway down it already.",
+      "outcome": "A hiker's ankle turns on the far ledge, and the shortcut is the reason. He reports the wrong turn first, carries them back second, splint third, apology throughout. Every hunt after starts with a splint kit check, which the town clinic calls his finest invention and he calls overdue paperwork."
+    },
+    {
+      "kind": "route", "tier": 1, "family": "Mana", "material": "Blue herb",
+      "job": "Trailside Herb Hunt",
+      "hook": "The blue-herb patch by the trail head is being raided bird by bird, and Dolbur has been assigned six rows to defend with his voice.",
+      "outcome": "Shouting only teaches the birds to wait, so he ties a decoy bundle - carrot tops, red rag, plenty of cheer - and the birds mob that instead. The patch survives, and the decoy trick spreads from base camp to base camp."
+    },
+    {
+      "kind": "route", "tier": 1, "family": "Stamina", "material": "Yellow herb",
+      "job": "Trailside Herb Hunt",
+      "hook": "The yellow-herb bundles are heavier than they look, and Dolbur has announced he will carry the biggest one in a single trip.",
+      "outcome": "The ropes snap, and something in him snaps politely along with them. He repairs cheerfully and splits the load into three trips; the three-trip walk-back rhythm becomes how the trail shares heavy loads."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Life", "material": "Sturdy mushroom",
+      "job": "Mushrooms at Base Camp",
+      "hook": "Storm season is early and the base camp awning is older than everyone standing under it. Dolbur has promised the camp a mushroom dinner and a dry night.",
+      "outcome": "He props the frame on sturdy crates and gets the caps into the pot on schedule. The awning holds, 'crate-brace first, cook after' is camp law with his name on the margin, and dinner is good."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Mana", "material": "Clever mushroom",
+      "job": "Mushrooms at Base Camp",
+      "hook": "Base camp's clever mushrooms rearrange themselves every dawn, and the scouts want to know whether the arrangement means anything. Dolbur treats the question seriously.",
+      "outcome": "He pegs a string through the line they keep refusing, and the string-line traces to a spring nobody knew was close. The scouts credit the mushrooms, and he lets them."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Stamina", "material": "Lively mushroom",
+      "job": "Mushrooms at Base Camp",
+      "hook": "Dinner is lively mushrooms in the pan, which means timing matters and checking matters more. Dolbur has one job and one salt cellar.",
+      "outcome": "He salts the pan before checking whether they are ready - his documented way to lose dinner. He owns it at once, re-rinses, weights the lid with a stone, and dinner survives twice; the pot-lid stone is glued into the camp rulebook's margin as a lesson."
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Life", "material": "Fruit of power",
+      "job": "Haul the Orchard Harvest",
+      "hook": "The harvest cart is fully loaded and the orchard lane has a dip in it that eats wheels. Dolbur volunteers before he has seen the lane.",
+      "outcome": "The cart mires mid-way; he hauls it out alone, then makes everyone unload - including himself - before the second pull. 'Unload first' is painted on the orchard gate, and the mire has never eaten a cart since."
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Mana", "material": "Fruit of wisdom",
+      "job": "Haul the Orchard Harvest",
+      "hook": "The wisdom rows are known to turn compasses, and the harvest wagons have to cross them twice a day. Someone has to lead and someone has to count.",
+      "outcome": "Dolbur navigates the wagons by fence posts, counting aloud in order - his kind of arithmetic. The orchard paints a cart-lane exactly where his counting held, and the wagoneers call it the counting lane."
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Stamina", "material": "Fruit of spirit",
+      "job": "Haul the Orchard Harvest",
+      "hook": "The grand single haul across the spirit rows is a legend everyone talks Dolbur into every year. This time he walks the route first, with a rope in one hand and a plan in his head.",
+      "outcome": "He splits everything into three lighter loads before touching a single rope, and takes them through without a snap or a story. The trip-loading lesson lands with the orchard's head-row veteran, who thanks him by name, and he is unbearable about it for exactly a week."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Life", "material": "Rainbow bird feathers",
+      "job": "Scout the Feathered Cliffs",
+      "hook": "A fledgling's cry has been coming off the feathered cliffs all morning, and the rainbow down drifting past it never answers. Dolbur is checking the rope twice, at two different people's insistence.",
+      "outcome": "He climbs and re-nests the fledgling by hand. The fledgling is home, the ledge carries a warning flag so nobody serenades the same spot twice, and the two people who checked his rope get the first telling."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Mana", "material": "Bluebird feathers",
+      "job": "Scout the Feathered Cliffs",
+      "hook": "The echo caves behind the cliffs return every sound wrong, and the bluebird-feather pickers want their paths back. Dolbur is asked to scout because he is loud enough to double-check.",
+      "outcome": "The caves scatter feathers and directions with equal mischief, so he ties his marked cord at each fork and laughs at himself for needing it, which makes it easier for everyone else to admit they need it too. The cord-path becomes the scouts' map of the caves."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Stamina", "material": "Wyvern feathers",
+      "job": "Scout the Feathered Cliffs",
+      "hook": "The scree below the cliffs is heavy with old-shed wyvern feathers - worth their weight in winter stores, and heavy is exactly the problem. Dolbur is going anyway.",
+      "outcome": "He marks every rest point with a distance-stone, his first plan built for other people's feet. The scree has mile-markers from that day on, and nobody drops a bundle short of a stone again."
+    },
+    {
+      "kind": "viewpoint", "tier": 5, "family": "Life", "material": "Rainbow bird's egg",
+      "job": "Guard the Nesting Ridge", "surface": "job",
+      "text": "Dolbur kept the crag's night watch so the eggs were never alone - all frost week, kenneling downwind so his snoring could not reach the ledge, counting each clutch aloud at dusk until the number matched. He fell asleep mid-count twice and made it up by walking the cold hours so someone else could rest. The report says 'watch kept.' The truth beneath it: nothing bent, snapped, or needed re-roping on his watch, and he is quietly prouder of that than of anything he has climbed."
+    },
+    {
+      "kind": "viewpoint", "tier": 5, "family": "Mana", "material": "Bluebird's egg",
+      "job": "Guard the Nesting Ridge", "surface": "job",
+      "text": "The perimeter was the hardest duty Dolbur ever volunteered for: stillness in snow, no humming, none. He paced only the long side, upwind, so his steps drifted sound away from the ledge. What nothing records: he practiced at base camp with a coin balanced on his boot, lost it eleven times, found it every time, and counted the practice a success on principle."
+    },
+    {
+      "kind": "viewpoint", "tier": 5, "family": "Stamina", "material": "Wyvern's egg",
+      "job": "Guard the Nesting Ridge", "surface": "job",
+      "text": "Dolbur's report leads with its apology: one (1) piton, bent, reported immediately - told Kyle before his boots were down, re-roped, climb finished. What he does not tell everyone: he heard the mother before anybody, a sound like stone getting annoyed, which is why the climb started early. He also announced two carries when four turned out right; the correction, at guild volume, is how the town learned both numbers. As far as he is concerned, his rank is now 'the one she circles with.'"
+    }
+  ]
+}

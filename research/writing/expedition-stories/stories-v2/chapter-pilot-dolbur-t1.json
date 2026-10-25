@@ -1,0 +1,409 @@
+{
+  "pilot": "chapter-click-06",
+  "traveler": "dolbur",
+  "tier": 1,
+  "job": "Trailside Herb Hunt",
+  "purpose": "Owner-review draft: Dolbur's tier-1 click-through chapter (Red herb, Blue herb, Yellow herb), written in the established Neet chapter format - chapter-pilot-neet-t1.json is the same-tier benchmark (pilot chapter-click-02). The chapter opens as soon as any material family reaches tier 1; the player picks one currently unlocked material inside the opening scene; the choice sets the route; Dolbur is dispatched; after the trip the player opens a click-through continuation carrying the journey's action, setbacks, decisions, and growth. Each route stands alone and holds the accountability arc the pack's outcome gives it: Life shows him owning the shortcut he led other feet onto, Mana shows him reading his own failure and building the answer, Stamina shows him converting a broken boast into a working plan. Nothing here edits data/, source/, or the playable HTML.",
+  "sourceMaterial": [
+    "research/writing/expedition-stories/stories-v2/dolbur-t1-5.json - tier-1 Life/Mana/Stamina hooks and outcomes, quoted byte-exact (verified -ceq against this pack 3/3 hooks, 3/3 outcomes, and against data/expedition-stories.json travelers.dolbur.routes tier-1 rows 3/3 and 3/3)",
+    "research/writing/expedition-stories/stories-v2/chapter-pilot-neet-t1.json - same-tier format benchmark: chapter shape, beat rules, tier-1 box discipline, and the verification suite",
+    "research/writing/expedition-stories/stories-v2/HANDOFF.md - batch schema and tier-1 display model: hook shown before dispatch, outcome shown once after completion, never concatenated",
+    "data/expedition-jobs.json - job name 'Trailside Herb Hunt' (byte-exact; entries index 0 = tier 1, per HANDOFF) and the established job voice: 'Dolbur treats the job as another energetic adventure, checking the route before setting out.'",
+    "data/game-data.json - tier-1 material names Red herb / Blue herb / Yellow herb (byte-exact) under the Life / Mana / Stamina family labels",
+    "source/core.js - TRAVELERS roster line 12: dolbur portrait 'DolburPortrait.png'; file assets/characters/DolburPortrait.webp (verified present). Tier-1 flow: pre-dispatch hook preview (core.js expeditionStoryPreview) and post-completion sections (core.js recordExpeditionStory, journal at line 363)",
+    "source/app.js line 138 EXPEDITION_PROFILES - established Dolbur voice anchor: 'An energetic warrior who approaches adventures with plenty of enthusiasm.' (profile index 1; also the shop greeting, story beats use narrative voice)",
+    "data/visitor-dialogue.json - Dolbur flavor pool used as established behavior anchors: 'a first-aid kit he cannot find' (line 46), 'a good loss teaches more than an easy win' (line 47), 'quietly checking that everyone else brought rope' (line 48), and his route-leading familiarity (line 49)"
+  ],
+  "presentationModel": "Player opens a tier chapter when any material family reaches that tier. Inside the opening scene the player chooses one currently unlocked tier material; that choice determines the route. Dolbur is dispatched. When the trip finishes, the player opens a click-through continuation showing what happened on the trail and the route's outcome. Other unlocked routes can be played on later trips, one active route at a time.",
+  "playerFlow": "op-01 -> op-02 -> choice -> confirm = byte-exact hook box for the chosen family -> one route departure box -> trip-start (dispatch, no result) -> trip timer -> trip-end (click to open the report) -> route return boxes in order, last box = byte-exact outcome. After the chapter, other unlocked choices remain available on later trips.",
+  "implementationNotes": {
+    "chapterOpen": "The chapter becomes available as soon as any herb material family reaches tier 1. Suggested UI copy, outside the story beats: 'New chapter - Trailside Herb Hunt.'",
+    "optionGating": "Show only options for material families currently unlocked at this tier; one, two, or three options are all valid states. The opening prose is written to hold when only one option exists.",
+    "routeLock": "The material choice sets the active route for this trip; other unlocked choices remain available on later trips, one active route at a time.",
+    "tripTimer": "The trip runs about two minutes on the game timer. The timer belongs to implementation and UI, not to story text.",
+    "awardHandling": "The script never states or implies that the player receives the chosen herb: the herb names which journey the telling follows, not freight. source/core.js:269 awards stamps, likeability, boosts, and bonuses only - no ingredient, no herb - and the trip-end beat only opens Dolbur's report; awarding belongs to the game's existing systems, outside story text.",
+    "displayModel": "Current in-game flow this script mirrors: the hook for the selected family already shows as the story preview before dispatch (source/app.js:147, from the tier-1 route preview in source/core.js), and the outcome shows once after the trip (source/core.js recordExpeditionStory sections; journal at line 363). The confirm box repeats the hook, the final click-through beat repeats the outcome, and nothing pre-dispatch states outcome facts."
+  },
+  "beatRules": [
+    "Every beat carries id, phase, speaker, portrait, text. The choice beat additionally carries its note and its three option texts.",
+    "Narrator beats stay brief and set place, action, or a visible action. Dolbur carries the recognition, reasoning, and decisions in his own spoken lines; accountability comes through what he does, orders, and re-ties - never through mood labels. No route side character speaks: no accepted journey draft exists for Dolbur tier 1, so no dialogue is invented for the hiker or the trail carriers; each side presence stays narrator-carried with one scene function.",
+    "Each return route opens with a 'The report starts...' narrator sentence so the post-trip account runs chronologically from where the trip went.",
+    "Each box is written to be comfortable in a dialogue box: about 40 words (whitespace token audit, hard ceiling 43 for every new beat). The byte-exact hook quote (confirm) and the byte-exact outcome quote (final return box) repeat already accepted screen text and are exempt from the target.",
+    "Portrait availability (verified): speaker 'narrator' is unvoiced scene text with no portrait. Speaker 'dolbur' shows the Dolbur portrait ('dolbur' - source/core.js TRAVELERS line 12 'DolburPortrait.png'; file assets/characters/DolburPortrait.webp). No other speaker beats exist: the hiker and the yard's carriers stay narrator-carried, so no 'none-new-side-character' beat appears in this chapter.",
+    "No outcome fact appears anywhere before the trip ends. Pre-dispatch boxes carry only hook facts and Dolbur's spoken intentions.",
+    "Aftermath wording stays owned by the final byte-exact outcome beats (the splint kit check, the clinic's 'finest invention', his 'overdue paperwork'; the decoy's spread from base camp to base camp; the three-trip walk-back rhythm becoming trail standard). Scene beats show the same journey facts in scene time in their own words; the ownership scan verifies zero outcome-phrase reuse in non-final beats.",
+    "Route independence: no beat assumes another route was seen, no cross-route character appearances, no Neet-route assumptions, no tier-2 references, no later-tier references, and no customs recited outside the byte-exact outcome beats. Each of the three routes stands alone and reads cleanly in any play order.",
+    "Award discipline: no beat states or implies the player receives the chosen herb; the trip's rewards belong to the game's existing settlement systems outside story text (source/core.js:269)."
+  ],
+  "opening": {
+    "beats": [
+      {
+        "id": "op-01",
+        "phase": "opening",
+        "speaker": "narrator",
+        "portrait": "none",
+        "text": "The trailside herb jobs are waiting this morning, and the herb work is Dolbur's."
+      },
+      {
+        "id": "op-02",
+        "phase": "opening",
+        "speaker": "dolbur",
+        "portrait": "dolbur",
+        "text": "Trail day! Boots, pack frame, and rope, all checked by hand this morning. Point me at the herb, and I will make the trip worth talking about."
+      },
+      {
+        "id": "choice",
+        "phase": "choice",
+        "speaker": "narrator",
+        "portrait": "none",
+        "text": "Choose which herb sends Dolbur out.",
+        "note": "Only options whose material family is unlocked at this tier are shown. The opening prose above is written to hold whether one option or three are available. The chosen herb names the journey this telling follows; it is the story's focus, never a settlement award.",
+        "options": [
+          {
+            "material": "Red herb",
+            "teaser": "The clinic's red order is urgent, and Dolbur's known shortcut is technically a trail."
+          },
+          {
+            "material": "Blue herb",
+            "teaser": "Birds are working the blue patch from the air, and the assigned defense is one loud voice."
+          },
+          {
+            "material": "Yellow herb",
+            "teaser": "The yellow bundles are heavier than they look, and a single-trip record has already been announced."
+          }
+        ]
+      }
+    ]
+  },
+  "sharedDispatch": [
+    {
+      "id": "trip-start",
+      "phase": "trip",
+      "speaker": "narrator",
+      "portrait": "none",
+      "text": "Dolbur takes the assignment and goes; whatever happens out there comes home with him."
+    },
+    {
+      "id": "trip-end",
+      "phase": "trip",
+      "speaker": "narrator",
+      "portrait": "none",
+      "text": "The trip is over. Open Dolbur's report to see what happened, and how it ended."
+    }
+  ],
+  "routes": [
+    {
+      "family": "Life",
+      "material": "Red herb",
+      "confirmBeats": [
+        {
+          "id": "life-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The trail clinic wants red herbs, and Dolbur knows a shortcut that is technically a trail. He is halfway down it already."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "life-dep",
+          "phase": "departure",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Red herbs, then! The shortcut is the shorter line, and I have run it plenty of times without complaint. The clinic will have its red well before the kettle sings."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "life-r1a",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The report starts at the fork, reached twice: Dolbur had dropped halfway down the shortcut alone, then climbed back when a hiker - out for the day and glad of company that knows the hill - turned up at the sign."
+        },
+        {
+          "id": "life-r1b",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Confident from the test run, he offered the faster line - his boots had just proved it - and the hiker took it, pace set by the boots ahead."
+        },
+        {
+          "id": "life-r2",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The far ledge was the shortcut's honest half: shelf rock with nobody's care on it, a crossing only his boots had ever learned. The step there that held his weight all season went loose under an ankle it had never met."
+        },
+        {
+          "id": "life-r3",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The hiker went down hard on the shelf, hands first, ankle swelling in the time a step takes twice. The line had made his offer sound safe; now it had to own the difference."
+        },
+        {
+          "id": "life-r4",
+          "phase": "return",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "The report comes first, and it is mine: my shortcut, my line, and a crossing stone nobody tends. The ankle turned on all three. I am sorry. Hold still - the carry is mine, and the splint waits at the clinic."
+        },
+        {
+          "id": "life-r5",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Then he went back over the same crossing with a passenger: the hiker up on his back, every step on the line his own boots knew, and the apology running under it the whole way - low, steady, and pointed at himself."
+        },
+        {
+          "id": "life-r6",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "At the clinic, the splint came third: board, wrap, and strap set by his own hands at the senior's word. Then the desk got the same report he gave on the ledge - shortcut named, crossing named, fault taken twice."
+        },
+        {
+          "id": "life-r7",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The evening went into his kit: splint board first, then wraps, tape, a spare cord, and the list pinned where his hands could find it without asking his memory. That afternoon the only splint board in reach had belonged to the clinic."
+        },
+        {
+          "id": "life-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "A hiker's ankle turns on the far ledge, and the shortcut is the reason. He reports the wrong turn first, carries them back second, splint third, apology throughout. Every hunt after starts with a splint kit check, which the town clinic calls his finest invention and he calls overdue paperwork."
+        }
+      ]
+    },
+    {
+      "family": "Mana",
+      "material": "Blue herb",
+      "confirmBeats": [
+        {
+          "id": "mana-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The blue-herb patch by the trail head is being raided bird by bird, and Dolbur has been assigned six rows to defend with his voice."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "mana-dep",
+          "phase": "departure",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Blue herbs, then! Six rows, one voice, and an assignment I cannot refuse: I am the defense. The birds are about to get the loudest afternoon the patch has ever heard."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "mana-r1",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The report starts on the watch: he opened the defense at a volume that carries across three fields, calling the six rows to order one by one and declaring every leaf's interest to the whole valley."
+        },
+        {
+          "id": "mana-r2",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The birds came anyway, and they came on a timetable: every raid ran in the pause after a bellow. By the third pass it was plain - the noise had edges, and the raid lived in them."
+        },
+        {
+          "id": "mana-r3",
+          "phase": "return",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Ha - my own timetable, reading me back! Fine: the volume ends, and a rival takes its place. Give me the rag - the red one, off the kit - and every carrot green going spare. Their schedule has company coming."
+        },
+        {
+          "id": "mana-r4",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "He built the rival standing up: greens bundled loud and bright, the rag's red end flying from the knot, posted one fence post over from the rows where the raiders would have to pick a side."
+        },
+        {
+          "id": "mana-r5",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Then the test: a raid dropped off the rail, caught the rag in its eye, and turned in one body. The six rows kept their leaf end to end - defended, that hour, by something that would hold still."
+        },
+        {
+          "id": "mana-r6",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "He let the evening finish it: two passersby asked, and he walked them through rag, greens, and knot step by step, then sent them off with spare greens and a dare."
+        },
+        {
+          "id": "mana-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Shouting only teaches the birds to wait, so he ties a decoy bundle - carrot tops, red rag, plenty of cheer - and the birds mob that instead. The patch survives, and the decoy trick spreads from base camp to base camp."
+        }
+      ]
+    },
+    {
+      "family": "Stamina",
+      "material": "Yellow herb",
+      "confirmBeats": [
+        {
+          "id": "stamina-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The yellow-herb bundles are heavier than they look, and Dolbur has announced he will carry the biggest one in a single trip."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "stamina-dep",
+          "phase": "departure",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Yellow herbs, then! The big bundle rides my back, and the yard heard me say the word 'single' out loud. The ropes get tied at full stretch - the way my shoulders like them."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "stamina-r1",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The report starts at the loading yard: the big bundle went on his back tied at a pull that made the yard's older shoulders whistle, and it held beautifully - for exactly as far as the last of the flat."
+        },
+        {
+          "id": "stamina-r2",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The snap came at the switchback in two voices - the belly line first, then the shoulder rope. The bundles let go down the slope, scattering yellow leaf over the grass, and nothing worth keeping was hurt except the announcement."
+        },
+        {
+          "id": "stamina-r3",
+          "phase": "return",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Two ropes gone, one announcement left. Fine: the boast re-ties first, then the rope. The yard was promised delivery, not carry. The big load splits into three trips, each tied to what a rope bears."
+        },
+        {
+          "id": "stamina-r4a",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The salvage came first: both snapped lengths picked up off the slope, the injured ends cut clean, the good parts bound into one honest working line. A broken rope, he said, is a job with a beginning and an end."
+        },
+        {
+          "id": "stamina-r4b",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The new rule: a line earns its load by proving itself. Shorter than it started, it walked the switchback twice with nothing aboard, came back unchanged, and only then got handed something that mattered."
+        },
+        {
+          "id": "stamina-r5",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The split held: three loads under the rope's honest limit, walked in order with breath at the yard between trips. The two other carriers working the same switchback watched one round and split their own bundles before the afternoon ran out."
+        },
+        {
+          "id": "stamina-r6",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "At the gate he delivered the yard its herbs in three working loads and told the count himself: the single-carry promise failed and got named; the delivery promise held, and the thanks he earned that evening he did not argue with."
+        },
+        {
+          "id": "stamina-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The ropes snap, and something in him snaps politely along with them. He repairs cheerfully and splits the load into three trips; the three-trip walk-back rhythm becomes how the trail shares heavy loads."
+        }
+      ]
+    }
+  ],
+  "mapping": {
+    "life": {
+      "hook": "life-hook quotes the tier-1 Life hook byte-exact as the confirm box after the choice.",
+      "inBetween": "No accepted journey draft exists for Dolbur tier 1, so the beats between hook and outcome are new fan-written scene work built to the outcome's own action order: the return to the signed fork and the offer (life-r1a and life-r1b, reconciling the hook's 'halfway down it already' with a before-the-offer meeting), the shortcut injury (life-r2 and life-r3), the report before any rescue (life-r4), the carry (life-r5), the splint and the desk report (life-r6), and the kit work that seeds the habit (life-r7).",
+      "outcome": "life-out quotes the outcome byte-exact as the final box; the 'every hunt after' habit, the clinic's 'finest invention', and his 'overdue paperwork' stay owned by this beat alone.",
+      "notes": "The scene keeps the outcome's sequence exactly: report first (life-r4, spoken to the hiker), carry second (life-r5), splint third (life-r6). The injury cause is the unmaintained ledge his boots knew and the hiker's did not, so the recognition is instant and specific. life-r7's pinned kit list nods to the established visitor-dialogue gag ('a first-aid kit he cannot find') without reusing the outcome's habit wording. The outcome's humor ('finest invention', 'overdue paperwork') is left for the final beat to land."
+    },
+    "mana": {
+      "hook": "mana-hook quotes the tier-1 Mana hook byte-exact as the confirm box.",
+      "inBetween": "New fan-written between hooks and outcome, per owner directive: the shouting watch with its clear failure reason (mana-r1 and mana-r2 - his volume is loud on a rhythm, and every raid runs in the pause after a bellow), Dolbur's spoken observation and decision (mana-r3), the decoy build (mana-r4), the test (mana-r5), and the same-evening seed of the trick (mana-r6).",
+      "outcome": "mana-out quotes the outcome byte-exact as the final box; the birds' learned waiting, 'carrot tops, red rag, plenty of cheer', the mobbing, the patch's survival wording, and the spread from base camp to base camp stay owned by this beat alone.",
+      "notes": "The user-mandated difference from a stumble: Dolbur observes the pattern (mana-r2), names it aloud (mana-r3, 'my own timetable, reading me back'), and devises the rival bundle deliberately (mana-r4) before any trial. Scene wording avoids the outcome's own phrases: 'carrot greens' not 'carrot tops', 'the rag, the red one' not 'red rag', 'a rival' not 'decoy', 'kept their leaf' not 'The patch survives', and no 'mob' or 'spreads' outside the final quote. mana-r6 shows only two passersby seeded; the outcome owns the base-camp-to-base-camp spread."
+    },
+    "stamina": {
+      "hook": "stamina-hook quotes the tier-1 Stamina hook byte-exact as the confirm box.",
+      "inBetween": "New fan-written between hooks and outcome, per owner directive: the boast's proud loading (stamina-r1), the two-voice snap (stamina-r2), Dolbur's spoken accounting and the active split decision (stamina-r3), the salvage of both snapped lengths bound into one shorter working line, with the cheerful job-ahead line (stamina-r4a), the line earning its load by testing (stamina-r4b), the working split and the same-day adoption by two other carriers (stamina-r5), and the delivery with the broken promise named (stamina-r6).",
+      "outcome": "stamina-out quotes the outcome byte-exact as the final box; 'snaps politely', 'repairs cheerfully', the outcome's own split sentence, and the three-trip walk-back rhythm becoming how the trail shares heavy loads stay owned by this beat alone.",
+      "notes": "The user-mandated shape: the snap is his (stamina-r2), and the split is his active choice - 'the boast re-ties first, then the rope' (stamina-r3) - with a credibility rule behind it: both snapped lengths are salvaged and bound into one shorter line before it is tested (stamina-r4a and stamina-r4b), and each load is then tied to what that line bears. The cheerful repair the outcome names is staged by r3's 'two ropes gone, one announcement left' accounting and r4a's broken-rope-is-a-job line, without reusing the outcome's wording. The scene does not claim the lasting custom; five beat words stay short of the outcome's 'becomes' claim, which the final quote makes alone. 'three trips' as a count is journey material shown in scene and quoted again in the outcome, per the Neet tier-1 handling of journey facts."
+    }
+  },
+  "byteReuse": [
+    "The trail clinic wants red herbs, and Dolbur knows a shortcut that is technically a trail. He is halfway down it already.",
+    "The blue-herb patch by the trail head is being raided bird by bird, and Dolbur has been assigned six rows to defend with his voice.",
+    "The yellow-herb bundles are heavier than they look, and Dolbur has announced he will carry the biggest one in a single trip.",
+    "A hiker's ankle turns on the far ledge, and the shortcut is the reason. He reports the wrong turn first, carries them back second, splint third, apology throughout. Every hunt after starts with a splint kit check, which the town clinic calls his finest invention and he calls overdue paperwork.",
+    "Shouting only teaches the birds to wait, so he ties a decoy bundle - carrot tops, red rag, plenty of cheer - and the birds mob that instead. The patch survives, and the decoy trick spreads from base camp to base camp.",
+    "The ropes snap, and something in him snaps politely along with them. He repairs cheerfully and splits the load into three trips; the three-trip walk-back rhythm becomes how the trail shares heavy loads."
+  ],
+  "skillStages": {
+    "planning": "planning.md outputs restated for the Dolbur tier-1 chapter: the approved tier-1 chapter shape (opening -> choice -> hook confirm -> departure -> dispatch -> return beats -> outcome), with one deviation documented: no accepted journey draft exists for Dolbur tier 1, so the continuation between hook and outcome is planned as new fan-written scene work to the outcome's own action order, and the in-between beats exist to stage decisions already implied by the outcome. POV limits: pre-dispatch boxes may state hook facts and Dolbur's spoken intentions only - no result. Each route's return is a chronological report ('The report starts...'), so the account runs forward from the trip's first scene. The report-first mandate (user directive) drives Life's beat order; the observe-then-devise mandate drives Mana's; the active-split mandate drives Stamina's.",
+    "drafting": "dialogue-and-behavior.md governs the boxes: Dolbur's lines are energetic and direct (established anchor: 'An energetic warrior who approaches adventures with plenty of enthusiasm'; the job description's 'another energetic adventure'), while the accountability beats are staged as action orders - a report he gives before carrying anyone, a rival he builds on purpose, a boast he re-ties before a rope. No side-character dialogue invented: the hiker reacts in body (the sit-down, the carried ride), the birds answer in behavior (the timetable, the turned flock), the carriers adopt in one afternoon. The end of each route is the accepted outcome beat, so each route ends with the pack's own claim.",
+    "reviewing": "revision-checklist pass on all three click-throughs: choice causality, no pre-dispatch outcome disclosure, route independence (no cross-route characters, no Neet-route assumptions, no tier-2 references, no outcome recitation outside the byte-exact beats), character anchoring (the hiker enters with role and first impression; the birds are a behaving flock, not scenery; the carriers are present witness with one function), voice consistency (Dolbur in the same register in every spoken box), box economy, and mapping completeness (each outcome's action order shows fully in the scene before the final quote)."
+  },
+  "characterNotes": {
+    "dolbur": "Tier-1 Dolbur is the established warrior at the start of his habits: energetic, direct, and not yet checking his plan for other feet. The routes give him the beginning of the later accountability and practicality: he names his own line as the cause (Life), reads a failure off the birds instead of shouting harder (Mana), and re-ties the boast before the rope (Stamina). His tier-5 viewpoint material (the nest watch, the coin practice, the bent piton) belongs to the shared event and is not borrowed here. Portrait: 'dolbur' (verified: source/core.js TRAVELERS line 12 'DolburPortrait.png'; file assets/characters/DolburPortrait.webp).",
+    "hiker": "Life route only, unnamed; out for a day's walk, glad of company that knows the hill, and the accountability's receiver. Enters with role and first impression; never speaks; carried back on Dolbur's back per the outcome. No portrait asset in the game's established set (checked the TRAVELERS roster in source/core.js and assets/characters/); narrator-carried.",
+    "patchRaiders": "Mana route only: a behaving flock, not scenery. They arrive on a timetable, teach the watch to fail, and turn as one body when the rival goes up; the outcome owns their learned waiting and the decoy's spread. Unnamed by design. No speaker beat.",
+    "trailCarriers": "Stamina route only, unnamed; the yard's older shoulders and the two carriers on the same switchback. Purposeful as the adoption witnesses - they split their own bundles the same day after watching one round. The outcome owns the lasting custom. No speaker beat."
+  },
+  "factProvenance": {
+    "documented": "Hooks, outcomes, material names (Red/Blue/Yellow herb), and the job (Trailside Herb Hunt) are byte-exact from dolbur-t1-5.json (and data/expedition-stories.json travelers.dolbur.routes tier-1 rows, byte-identical). Job voice anchor from data/expedition-jobs.json: 'another energetic adventure, checking the route before setting out.'",
+    "established": "Dolbur's voice and behavior anchors are the game's own: the expedition profile line 'An energetic warrior who approaches adventures with plenty of enthusiasm.' (source/app.js line 138), the warrior task lines in source/core.js EXPEDITION_TASKS, and the visitor-dialogue flavor pool ('a first-aid kit he cannot find', 'a good loss teaches more than an easy win', 'quietly checking that everyone else brought rope', his route-leading familiarity). The display split (hook pre-dispatch, outcome post-trip, never concatenated) is the HANDOFF tier-1 model with the engine points cited in implementationNotes.displayModel. Portrait support: source/core.js TRAVELERS ('DolburPortrait.png') and assets/characters/DolburPortrait.webp.",
+    "newFanWritten": "Everything between hook and outcome: the opening frame (op-01; op-02's kit checklist and 'point me at the herb'), the three option teasers (rephrasing hook facts only), the three departure lines (new Dolbur speech, in voice, no results), the four in-scene spoken lines (life-r4, mana-r3, stamina-r3, plus op-02), trip-start/trip-end adapted from the series-standard Neet dispatch lines by name exchange, and the entire post-trip scene layer (the fork reached twice - his solo half-drop before the offer - the shortcut crossing, the hiker's day-walk context, the ledge splinting at the clinic, the patch watch's timetable failure, the rival bundle and its fence-post placement, the loading yard, the switchback, the two-rope salvage bound into one tested working line, the three-load split, the delivery count). The hiker and the carriers stay unnamed; no new named characters, no new customs outside the final beats. The Life kit beat (life-r7) applies the established visitor-dialogue gag to a new scene instance and is labeled here so the owner can vet the linkage."
+  },
+  "continuityFlags": [
+    "No accepted journey draft exists for Dolbur tier 1 (the journey-pilot files cover Neet t1/t2 only). All beats between hook and outcome are new fan-written scene work staged to each outcome's own action order; the owner may want a companion journey-pilot-dolbur-t1 before v2 integration. Hooks and outcomes are the only protected texts.",
+    "Life kit linkage: life-r7's pinned list leans on the established visitor-dialogue gag ('a first-aid kit he cannot find', line 46) as a standing character trait applied to this new scene day. If the owner prefers the gag unlinked, the beat reads fine without the inference; the outcome's 'overdue paperwork' joke is unaffected.",
+    "Scene-versus-outcome wording split: the click-through beats show the outcome's journey facts in scene time (report, carry, splint; the shouting failure and the rival bundle; the two-voice snap and the split) but in their own words; each phrase the outcome uses as its aftermath claim (the habit naming, 'finest invention', 'overdue paperwork', the learned waiting, 'carrot tops, red rag, plenty of cheer', the patch's survival wording, the base-camp spread, 'snaps politely', 'repairs cheerfully', the walk-back rhythm) is verified to appear only in the byte-exact outcome beats.",
+    "Route independence verified by scan: no traveler names other than Dolbur appear anywhere; the hiker appears only in Life, the birds only in Mana, the yard's carriers only in Stamina; no Neet-route assumptions, no tier-2 references, no customs recited outside the byte-exact outcome beats; each route reads cleanly first, in either order.",
+    "The pre-dispatch content (opening, teasers, hooks, departures, dispatch lines) is safe for the current display model: hook facts only, plus declared intentions. The hooks themselves are the game's own pre-dispatch preview text.",
+    "No cross-borrowing from Dolbur's later tiers: the splint-kit habit, the decoy spread, and the walk-back rhythm are each given their first airing by their own outcome beat here; the tier-2..4 camp customs and the tier-5 shared-event material are not referenced.",
+    "Portrait support verified during the pass: source/core.js TRAVELERS line 12 carries 'DolburPortrait.png' and assets/characters/DolburPortrait.webp is present; the unnamed side characters never reach the portrait system because they carry no speaker beats.",
+    "Owner-directed continuity reconciliations (revision pass): Life - the byte-exact hook has Dolbur halfway down the shortcut, so life-r1a shows that first solo drop and his climb back to the signed fork when the hiker turns up, and life-r1b makes the offer from the boots' test run; the report -> carry -> splint order and the accountability beat are unchanged. Stamina - both ropes snap in stamina-r2, so stamina-r4a salvages both lengths (ends cut clean, bound into one shorter working line, with the cheerful broken-rope-is-a-job line) and stamina-r4b tests the line unloaded before the split; the earlier 'surviving line' phrasing is gone."
+  ],
+  "flags": [
+    "Portrait authority: Dolbur keeps the established 'dolbur' portrait id (verified against source/core.js TRAVELERS and assets/characters/); the narrator is unvoiced with no portrait; the hiker, the raiding birds, and the trail carriers stay narrator-carried with no speaker beats, so no 'none-new-side-character' id appears in this chapter.",
+    "Only the choice beat branches, and the route stays locked for that trip. All mechanics (chapter-open trigger, option gating, one-active-route model, trip timer) live in implementationNotes and the choice beat's note, never inside story text.",
+    "Implementation caveat (same standing as chapter-click-01): this is a script draft. Multi-beat click-through playback, option buttons, and the trip timer all need renderer work; nothing here edits game files.",
+    "The confirm box (hook) and the final return box (outcome) are intentionally longer boxes because they quote accepted screen text byte-exact; per the current display model the hook already shows pre-dispatch and the outcome once after completion, and if the game later shows the outcome on its own completion screen, the out beat can be swapped for that canned screen without breaking the script.",
+    "Award discipline is verified below in coverageChecks: no beat claims the player receives the chosen herb; implementationNotes.awardHandling cites source/core.js:269 (stamps, likeability, boosts, bonuses; no ingredients).",
+    "No new named characters anywhere: the hiker (Life) and the carriers (Stamina) stay unnamed and unvoiced, each with one scene function; the naming precedent belongs to the Neet tier-1 journeys where accepted named side characters (Mena, Gorram) exist."
+  ],
+  "coverageChecks": {
+    "anchors": "PASS - hooks 3/3 and outcomes 3/3 byte-exact by -ceq against dolbur-t1-5.json tier-1 entries (Life=Red herb, Mana=Blue herb, Stamina=Yellow herb), and 3/3 plus 3/3 again against data/expedition-stories.json travelers.dolbur.routes '1' rows (pack and data byte-identical). Job name 'Trailside Herb Hunt' verified byte-exact (-ceq) in data/expedition-jobs.json and against the pilot field. Material names verified byte-exact (-ceq) in data/game-data.json under Life/Mana/Stamina and against the pack route material fields and the pilot's route fields.",
+    "byteReuse": "6 byte-exact pack quotes registered (3 hooks + 3 outcomes); all 6 verified present in dolbur-t1-5.json, in data/expedition-stories.json, and in exactly their own beats (0 beat misses, 0 orphan entries). 0 other journey fragments: no journey draft exists for Dolbur tier 1, and the scene layer quoting discipline keeps every outcome phrase out of the non-final beats.",
+    "boxLengths": "35 boxes total (opening 2 + choice 1 + dispatch 2; per route: hook 1 + departure 1 + 7-9 return-stage boxes - Life 9, Mana 7, Stamina 8, each ending in the byte-exact outcome box). All new beats at or under the 43-token comfort target (whitespace-split token audit); longest new beats: life-r5 and life-r7 at 42, and at 41: life-r1a, life-r2, life-r4, mana-r3, stamina-r5, stamina-r6. The hook and outcome boxes are byte-exact quotes and exempt from the target (recorded lengths: life-out 50, mana-out 42, stamina-out 33, hooks 22/25/22).",
+    "preDispatchLeakScan": "12 pre-dispatch text units (op-01, op-02, choice text and note, 3 option teasers, trip-start, trip-end, 3 departures) scanned against the outcome-and-setback vocabulary (ankle, hiker, splint and apolog stems, decoy, rival, mob, snap, timetable, three trips, rhythm): 0 hits. Departures announce method only ('The shortcut is the shorter line...', 'I am the defense...', 'The ropes get tied at full stretch').",
+    "outcomeOwnershipScan": "Each route's outcome-end-exclusive phrases (Life: 'Every hunt after starts', 'finest invention', 'overdue paperwork', 'apology throughout', 'carries them back second', 'splint third', 'wrong turn'; Mana: 'teaches the birds to wait', 'carrot tops', 'red rag', 'plenty of cheer', 'the birds mob', 'The patch survives', 'decoy', 'spreads from base camp'; Stamina: 'The ropes snap', 'snaps politely', 'repairs cheerfully', 'splits the load into three trips', 'three-trip', 'walk-back rhythm', 'becomes how the trail') scanned across all 29 non-quote beats (the 5 shared boxes plus 24 non-quote route boxes) plus the choice note and option teasers: 0 hits. The scene stages the same journey facts in its own words; where the count 'three trips' legitimately shows (stamina-r3), the phrase shape differs from the outcome's own sentence.",
+    "routeIndependenceScan": "Traveler-name scan across all 35 beat texts, the choice note, and the 3 option teasers (Neet, Claire, Daisy, Kyle, Tirami, Luke, Piria, Charlotte, Demian, plus tier-2 'mushroom' vocabulary): 0 hits. Cast placement inside the route beats: the hiker only in Life, the raiding birds and fence rail only in Mana, the loading-yard carriers only in Stamina; the shared dispatch lines name none of them, and the shared choice teasers state hook facts only. Each route reads standalone in both orders.",
+    "awardClaimScan": "35 beat texts plus 3 option teasers scanned against award/claim vocabulary (award, reward, receive, gives you, yours, claim, collect, gather): 0 hits. The choice note states the discipline in guidance language ('the story's focus, never a settlement award'), matching the Neet tier-5 choice-note precedent; implementationNotes.awardHandling cites source/core.js:269 (stamps, likeability, boosts, bonuses only - no ingredient, no herb).",
+    "beatInventory": "Shared layer: op-01, op-02, choice (+3 option teasers), trip-start, trip-end. Life: life-hook confirm, life-dep departure, life-r1a, life-r1b, life-r2..life-r7 returns, life-out outcome. Mana: mana-hook, mana-dep, mana-r1..mana-r6, mana-out. Stamina: stamina-hook, stamina-dep, stamina-r1..stamina-r3, stamina-r4a, stamina-r4b, stamina-r5..stamina-r6, stamina-out. 35 unique beat ids; each route's final box is the byte-exact outcome.",
+    "fileCheck": "JSON parses via ConvertFrom-Json (UTF8); 21 top-level keys; whole file 0 non-ASCII chars; 35 beats, all 35 ids unique; speaker-portrait pairing verified with 0 violations (narrator=none, dolbur=dolbur; no other speaker appears). Anchors verified -ceq 3/3 hooks and 3/3 outcomes against dolbur-t1-5.json AND against data/expedition-stories.json travelers.dolbur.routes '1' rows (pack and data byte-identical); job name and tier-1 material names -ceq against data/expedition-jobs.json and data/game-data.json. All four scans 0 hits (pre-dispatch leak 12 units, outcome ownership, route independence, award claims). The file was assembled with placeholder markers section by section and all markers were replaced and re-verified before this check; data/, source/, and the playable HTML untouched."
+  }
+}

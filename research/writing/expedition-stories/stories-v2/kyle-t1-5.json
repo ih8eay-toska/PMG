@@ -1,0 +1,93 @@
+{
+  "traveler": "kyle",
+  "batch": "v2-stories-t1-5",
+  "chapters": [
+    {
+      "kind": "route", "tier": 1, "family": "Life", "material": "Red herb",
+      "job": "Find Suitable Herbs in Storage",
+      "hook": "The shop's shelf has no red-herb dressing tonight, and someone needs it tonight. Kyle knows a storeroom that keeps promises under dust.",
+      "outcome": "His storeroom has it - labeled, dated, real - and he runs the delivery himself after dark. The shelf-order habit starts that same evening, 'everything once, then twice,' and his storeroom has not surprised him since."
+    },
+    {
+      "kind": "route", "tier": 1, "family": "Mana", "material": "Blue herb",
+      "job": "Find Suitable Herbs in Storage",
+      "hook": "Blue bundles with three different labels and one actual contents are sitting in incoming stock, and someone has to be the person who checks. Kyle appoints himself.",
+      "outcome": "He tests each label against the leaf, no shortcuts; the bundles go out re-labeled correct, and his own label standard is written the same night - name, date, and where the last label was wrong. Nothing in the shop surprises him either now."
+    },
+    {
+      "kind": "route", "tier": 1, "family": "Stamina", "material": "Yellow herb",
+      "job": "Find Suitable Herbs in Storage",
+      "hook": "The heavy yellow stock has to go down a stair built for people with empty hands, and bravado has already been tried once. Kyle counts the turns first.",
+      "outcome": "One man, two hands, one count: he counts each step aloud, sets the load down breathing, and goes again until it is done. The two-hands rule ends up chalked on the stair post, where the loads can read it."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Life", "material": "Sturdy mushroom",
+      "job": "Sort the Mushroom Stockpile",
+      "hook": "The mushroom stockpile has to split into keep, cook, and finished, and the third pile is the one nobody claims. Kyle has been counting the stockpile all morning.",
+      "outcome": "He splits it clean and then refuses to call the past-it pile waste: the dry caps are pressed into fuel briquettes for the bakehouse ovens. Nothing in that storeroom is wasted once, and nothing is wasted twice."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Mana", "material": "Clever mushroom",
+      "job": "Sort the Mushroom Stockpile",
+      "hook": "Clever mushrooms have moved into the stockpile and rearranged its labels overnight, which the stockroom has logged as sabotage. Kyle treats it as a dare.",
+      "outcome": "He answers with a fresh label rule - initials, a tick, and one small check - and re-tags everything by hand. The mushrooms win the day regardless; his inventory entry concedes it, and the stockroom calls it his most mature entry to date."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Stamina", "material": "Lively mushroom",
+      "job": "Sort the Mushroom Stockpile",
+      "hook": "Lively mushrooms are rolling off every shelf lip in the old racks in slow, deliberate arcs, and catching them is not a plan. Kyle has a hammer.",
+      "outcome": "He bends a lip on each shelf - one evening, no rant - and nothing has rolled off since. A victory over physics rather than mushrooms, and he counts it honestly as the more impressive of the two."
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Life", "material": "Fruit of power",
+      "job": "Check the Fruit Crates",
+      "hook": "The bruised fruit at the crate bottoms has been written off all week, and the press house has been cold all week. Kyle has noticed both facts at once.",
+      "outcome": "The bruise-first crates go to the press house the same day, and the winter jam happens because of it. His rule goes up on the beam: 'bottoms first.'"
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Mana", "material": "Fruit of wisdom",
+      "job": "Check the Fruit Crates",
+      "hook": "The wisdom crates ripen unevenly and sort themselves in ways the eye distrusts, and the loft believes its eyes. Kyle prefers his hands.",
+      "outcome": "He re-sorts by feel, twice, and stands by the second count; the saying goes up in his own hand - 'if it rolls to you, it is yours to carry' - and the loft adopts it as wages policy."
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Stamina", "material": "Fruit of spirit",
+      "job": "Check the Fruit Crates",
+      "hook": "Spirit-fruit crates climb the loft one man and one stair at a time, which is arithmetic against the man. Kyle has been staring at the stairway wall.",
+      "outcome": "He builds the crate ramp - an evening of planks and pegs - and tests it with himself as the load before trusting it with any fruit. The ramp holds, and loft time drops from an hour to minutes."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Life", "material": "Rainbow bird feathers",
+      "job": "Dust off the Feather Bundles",
+      "hook": "The loft has an unopened crate with a name on it that is not anyone's business except the name's. Kyle reads it anyway, which is where the job begins.",
+      "outcome": "He dusts the crate, carries it down whole, and asks around until it reaches its owner's hands arriving exactly as found. A loft rule follows: names are investigated, not stored."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Mana", "material": "Bluebird feathers",
+      "job": "Dust off the Feather Bundles",
+      "hook": "The blue bundles have been shedding their color onto everything pale, including invoices. Kyle is tagging before the next sale rather than after the next argument.",
+      "outcome": "Every bundle gets its shade marked, wet and dry, so the next buyer buys honestly. His own bundle sells as what it was rather than what it looked like - logged under 'losses' and 'profits' at once."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Stamina", "material": "Wyvern feathers",
+      "job": "Dust off the Feather Bundles",
+      "hook": "The wyvern bundles punish the same backs the loft has punished for years, and no one has ever written the lifting rules where the lifting happens. Kyle has chalk.",
+      "outcome": "The beam charter goes up mid-job: legs, not back; count your stairs; set it down and breathe. Three helpers adopt it before he finishes writing, and the beam is consulted more than the ladder after that."
+    },
+    {
+      "kind": "viewpoint", "tier": 5, "family": "Life", "material": "Rainbow bird's egg",
+      "job": "Inspect the Egg Packing Straw", "surface": "job",
+      "text": "Kyle measured his dare before taking it: knots on the belt rope, the ledge's fall counted, the climb line chosen twice. First to the abandoned nest, as promised - and back down with knots to spare. When Dolbur dropped the coil, the catch was one-handed. 'A catch,' he filed it. 'Recreatable on request.' What never got logged: he timed the climb, and he will admit only that the time was good."
+    },
+    {
+      "kind": "viewpoint", "tier": 5, "family": "Mana", "material": "Bluebird's egg",
+      "job": "Inspect the Egg Packing Straw", "surface": "job",
+      "text": "Kyle counts dares by challenges mastered, and this one fought dirty: stillness cannot be trained on any rock he knows. His answer was inventory thinking. The ladder's rungs rang - he heard it on the way up - so he wrapped them in cloth strips from his kit; the storeroom labels everything, and now, apparently, clothes it. He counted the shifts by the chick's silences - seventeen, across the two nights - and was prouder of the hush after his count ended, because it held without him. He checked the wind hourly, kept upwind of the ledge; the thing that breaks a vigil is never the person holding it, it is whatever the wind was carrying."
+    },
+    {
+      "kind": "viewpoint", "tier": 5, "family": "Stamina", "material": "Wyvern's egg",
+      "job": "Inspect the Egg Packing Straw", "surface": "job",
+      "text": "Kyle built the anchor from his own spare rope - tagged 'good rope' in the storeroom, never issued, now issued. He counted the carries - four, matching Dolbur's loud correction - and re-set the sling knots before each one, because a knot slides when you stop looking at it. His private count: breaths, four to a carry, hands steady by the second breath of each. Storeroom discipline, applied to a winged mother; the rope went back on its hook after, with the tag updated - 'issued once.'"
+    }
+  ]
+}

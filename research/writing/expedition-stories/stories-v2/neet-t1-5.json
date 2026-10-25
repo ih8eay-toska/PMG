@@ -1,0 +1,93 @@
+{
+  "traveler": "neet",
+  "batch": "v2-stories-t1-5",
+  "chapters": [
+    {
+      "kind": "route", "tier": 1, "family": "Life", "material": "Red herb",
+      "job": "Herbs for the Shrine",
+      "hook": "The fever cart coughs at the gate, and the shrine's red shelf has been leaned on hard this week. Neet walks the whole shelf before promising anyone anything.",
+      "outcome": "She reorders the red shelf by urgency instead of alphabet - fever jars nearest the door - and quietly refills the first kit before anyone asks. 'Urgent first' becomes the shelf rule, and the first kit has never been short since."
+    },
+    {
+      "kind": "route", "tier": 1, "family": "Mana", "material": "Blue herb",
+      "job": "Herbs for the Shrine",
+      "hook": "Two of the blue-herb beds carry labels nobody can read anymore. Neet agrees to straighten the beds without agreeing to trust them.",
+      "outcome": "She re-inks every label, then does the unfashionable thing: corrects the bed-ledger to match the truth of the beds, not the habit of the ledger. The bed-ledger tells the truth again, and the label ink she mixed is the one still in use."
+    },
+    {
+      "kind": "route", "tier": 1, "family": "Stamina", "material": "Yellow herb",
+      "job": "Herbs for the Shrine",
+      "hook": "A heavy yellow-herb season is coming, and the drying loft groans when the wind does. Neet inspects the loft before the first load goes up.",
+      "outcome": "She doubles the braces, ropes the racks, and - because a loft that holds more invites people - leaves a bench in the warm corner. The loft holds double, and rain-guests still sleep there by custom."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Life", "material": "Sturdy mushroom",
+      "job": "Mushroom Foraging",
+      "hook": "The shrine soup pot wants sturdy caps, and the porter's basket always seems lighter on the way back up. Neet decides to weigh the basket once, out of politeness.",
+      "outcome": "A false bottom has been shorting the count for weeks; she double-counts by weight, catches it kindly, and cooks nothing until every cap is accounted. Jars of sturdy-cap soup go out to the pilgrims, and the twice-counted rule becomes the children's first lesson in counting anything."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Mana", "material": "Clever mushroom",
+      "job": "Mushroom Foraging",
+      "hook": "The clever mushrooms present themselves for labeling, which is exactly how Neet knows they are lying. The beds have been acting suspicious all week.",
+      "outcome": "They keep flattening into leaf litter at the first touch of a label, so she stops labeling and starts rhyming, sorting by where they refuse to grow. A basket is collected in order, and the sorting rhyme enters the children's lesson, where it is credited to the mushrooms."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Stamina", "material": "Lively mushroom",
+      "job": "Mushroom Foraging",
+      "hook": "The lively mushrooms have been escaping crates since dawn, and the downhill trip to the village is today. Neet checks the rope twice.",
+      "outcome": "She lattices the crates with rope - not lids: rope, so the jumping is visible and the failure honest. Not one loss goes on the record, and the village pantry copies her lattice by month's end."
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Life", "material": "Fruit of power",
+      "job": "Helping in the Orchard",
+      "hook": "The power rows pay pickers in bruises, and the hired crew will not admit their arms ache. Neet is working the row and watching arms instead of fruit.",
+      "outcome": "She sets a rest rota nobody asked for and stocks a cold-compress barrel at the row's end. The rows finish before dark, and the rota quietly becomes the orchard's autumn custom - signed, as everything of hers is, with a small tidy hand."
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Mana", "material": "Fruit of wisdom",
+      "job": "Helping in the Orchard",
+      "hook": "The wisdom grove's scales have been disagreeing since harvest began, and three pickers are arguing over which one to believe. Neet brings a notebook instead of an opinion.",
+      "outcome": "She records pick-weight by row and hour, and finds the east rows sweeten early in shade. The picking order is rebuilt around her notes - the ledger doing the diplomacy she never learned."
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Stamina", "material": "Fruit of spirit",
+      "job": "Helping in the Orchard",
+      "hook": "The spirit fruit hangs farthest out, and the old ladders beneath it wobble worst. Neet looks at the ladder feet first and the fruit second.",
+      "outcome": "She braces every leg and ropes every top rung, no shortcuts taken even while the crew groans at the pace. Nobody falls; the brace pattern is saved under the barn for next season."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Life", "material": "Rainbow bird feathers",
+      "job": "Gather Fallen Feathers",
+      "hook": "Rainbow bird feathers have been drifting along the mill path all week, bright as scattered festival litter. Neet is walking it with a basket and a plan.",
+      "outcome": "She gathers the feathers for a pilgrims' quilting circle of her own starting, washing and sorting by warmth rather than shade. The circle is founded on one basket of fetched luck - the first of the region's comfort-works, as she writes in the margin - and it is still the warmest."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Mana", "material": "Bluebird feathers",
+      "job": "Gather Fallen Feathers",
+      "hook": "Bluebird feathers are being graded wet and sold dry, and the market's arguments about color have outlasted the colors. Neet is asked to look at the evidence.",
+      "outcome": "She catalogs wet-light against dry-light and writes the difference into her ledger. Every later dispute ends before it starts; the market graders ask for a copy, and it sits beside hers."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Stamina", "material": "Wyvern feathers",
+      "job": "Gather Fallen Feathers",
+      "hook": "Where the heath path climbs, the winter wind has been shedding old wyvern feathers for weeks. Neet wants them for the shrine stores, and wants them gathered honestly.",
+      "outcome": "She walks the marked path with an escort and refuses every shortcut, taking old-shed only. The winter stores gain a wyvern line, and the heath path earns its first marker stone."
+    },
+    {
+      "kind": "viewpoint", "tier": 5, "family": "Life", "material": "Rainbow bird's egg",
+      "job": "Tend the Nesting Grounds", "surface": "job",
+      "text": "Neet made the introductions nobody thought to plan: a feather from each host nest carried nose-to-nose, morning by morning, until the crag smelled of tenants, not trespassers. Her private notes go further - the rainbow clutch's nest was empty long enough that the mother is not coming back. She wrote that in her margin, not aloud, and kept one rainbow feather for the fledging day. The almanac's hatch-day line is in the same hand."
+    },
+    {
+      "kind": "viewpoint", "tier": 5, "family": "Mana", "material": "Bluebird's egg",
+      "job": "Tend the Nesting Grounds", "surface": "job",
+      "text": "Neet confirms, formally, that the difficult part was learning to sing badly. She practiced at midnight, in the shrine pantry, where her voice carries least, until the flat note sat where she wanted it. What the written rite omits: correct lullabies only made the clutch duller; the deliberately wrong one matched, and held. The almanac gets the hatch-day; the rite record gets the method; the margin note - 'some things mend when you stop correcting them' - gets neither."
+    },
+    {
+      "kind": "viewpoint", "tier": 5, "family": "Stamina", "material": "Wyvern's egg",
+      "job": "Tend the Nesting Grounds", "surface": "job",
+      "text": "Neet readied the compresses and a settling word long before they were needed, and read the mother's body language well enough to time everything: approach when her wings folded, wait when her tail set. Her private measurement - the mother was not guarding the old ledge; she was deciding whether the quarry was good enough. Neet's stamp of approval, one nod at the correct distance, is not in any record."
+    }
+  ]
+}

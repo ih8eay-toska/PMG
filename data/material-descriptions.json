@@ -1,83 +1,306 @@
 {
-  "source": "https://potionmaker.fandom.com/wiki/Materials",
-  "provenance": "The wiki lists material names, base prices, and starting potions but has no individual flavor descriptions. These short descriptions are original fan-written interpretations inspired by each name; they do not add gameplay effects.",
+  "source": "Fan-written material lore and supplier notes. Potion pairings follow local game data; origins and brewing effects are fictional additions.",
+  "provenance": "Every entry is original fan writing. Lore explains a fictional origin and how the ingredient shapes its paired starting potion. Supplier notes are individually written; handling reminders are fictional, not real-world safety guidance.",
   "entries": {
-    "0-0": "A small red herb, gathered fresh for a simple first brew.",
-    "0-1": "A dense mushroom with a cap tough enough to survive a tumble in the basket.",
-    "0-2": "A bright fruit said to lend a little strength to whatever it joins.",
-    "0-3": "Soft rainbow feathers that shimmer with every color as they drift by.",
-    "0-4": "A speckled egg from a rainbow bird, warm and faintly iridescent.",
-    "0-5": "A pinch of odd-colored powder whose origin is anyone's guess.",
-    "0-6": "A curious plant with a name almost as lively as its leaves.",
-    "0-7": "A tuft of striped manticore fur, prickly and surprisingly clean.",
-    "0-8": "A keepsake said to carry a mother's steadfast warmth.",
-    "0-9": "A flower that sways even when the room is perfectly still.",
-    "0-10": "Rich strawberry jam, smooth, sweet, and fit for a royal pantry.",
-    "0-11": "One enormous bat's eye, still gleaming in the lamplight.",
-    "0-12": "Delicate wings dusted with pollen from a tiny flower fairy.",
-    "0-13": "A curved fang warmed by the breath of a fire dragon.",
-    "0-14": "A clear red crystal with a ember-like glow at its heart.",
-    "0-15": "A weathered scroll that crackles with the memory of a meteor shower.",
-    "0-16": "A single tear with a faintly mischievous sparkle.",
-    "0-17": "A seraph's rune, etched in pale light and careful lines.",
-    "0-18": "A scale from a fire dragon, bright as a coal and just as warm.",
-    "0-19": "A smooth sage's stone, heavy with the look of old wisdom.",
-    "0-20": "A dawn-colored pendant that catches the first light of morning.",
-    "0-21": "A ruby ring marked by a curse no jeweler will explain.",
-    "0-22": "A demon's red horn, polished at the tip from years of use.",
-    "0-23": "Red spores cling together in a little cloud of unsettling color.",
-    "0-24": "Golden-red tears said to have fallen from Lucifer himself.",
-
-    "1-0": "A cool blue herb, crisp and fragrant after a little rain.",
-    "1-1": "A mushroom with a clever curl to its cap and a firm white stem.",
-    "1-2": "A bright fruit with a clean scent and a reputation for wisdom.",
-    "1-3": "Bluebird feathers that shine like a patch of clear sky.",
-    "1-4": "A bluebird's egg with a smooth shell and cloudlike speckles.",
-    "1-5": "A little suspicious-looking powder, carefully sealed in its pouch.",
-    "1-6": "A curious plant with a name that sounds like a question.",
-    "1-7": "A thick lock of werewolf fur, soft despite its fearsome owner.",
-    "1-8": "A mysterious keepsake said to preserve a father's youthful spirit.",
-    "1-9": "A dream-soft flower whose petals look almost too blue to be real.",
-    "1-10": "A sweet grape jam, dark and glossy like a little pool of twilight.",
-    "1-11": "A gargoyle's eye, sternly watching from its glass jar.",
-    "1-12": "Pale wings gathered near a lake fairy's quiet waters.",
-    "1-13": "A water dragon's fang, cool to the touch and glassy at the edge.",
-    "1-14": "A blue crystal with a frost-colored gleam inside.",
-    "1-15": "A scroll edged in ice, its ink as sharp as winter air.",
-    "1-16": "A siren's tear that glints like a drop of seawater.",
-    "1-17": "Cherub runes, linked together in a delicate pattern.",
-    "1-18": "A water dragon's scale, smooth and cool as a deep pool.",
-    "1-19": "A sea-dark stone with tiny flecks that resemble distant stars.",
-    "1-20": "A pendant colored like the pale light just before sunrise.",
-    "1-21": "A sapphire ring carrying a curse with a distinctly ashy finish.",
-    "1-22": "A demon's blue horn, polished until it reflects a cold gleam.",
-    "1-23": "A blue-green spore cloud that settles slowly in the jar.",
-    "1-24": "Lucifer's blue tears, bright as a winter star.",
-
-    "2-0": "A sunny yellow herb with a fresh, grassy scent.",
-    "2-1": "A lively mushroom, springy beneath its spotted cap.",
-    "2-2": "A fragrant fruit with a lightness that suggests a nimble spirit.",
-    "2-3": "Wyvern feathers, long and golden with a faint metallic sheen.",
-    "2-4": "A wyvern's egg, sturdy-shelled and warm from the nest.",
-    "2-5": "A vial of dangerous-looking powder, best handled with care.",
-    "2-6": "A peculiar plant with a name as unpredictable as its scent.",
-    "2-7": "A soft kobold fur tuft, mottled like a patch of woodland shade.",
-    "2-8": "A keepsake wrapped in mystery, with no clue to its maker.",
-    "2-9": "A flower whose petals seem to hum a tune too quiet to hear.",
-    "2-10": "A jar of mysterious jam, sweet at first and puzzling at the end.",
-    "2-11": "An ogre's eye, broad and bright beneath its heavy brow.",
-    "2-12": "Forest fairy wings, green-gold and veined like tiny leaves.",
-    "2-13": "A thunder dragon's fang, humming faintly before a storm.",
-    "2-14": "A gold crystal with a lively spark trapped in its center.",
-    "2-15": "A scroll streaked with lightning-shaped marks.",
-    "2-16": "A harpy's tear, caught in a feather-shaped glass vial.",
-    "2-17": "A rune of thrones, engraved with a crownlike design.",
-    "2-18": "A thunder dragon's scale that flashes when the light shifts.",
-    "2-19": "A polished stone bearing the quiet weight of glory.",
-    "2-20": "A dusk-colored pendant that glows softly as evening falls.",
-    "2-21": "A topaz ring under a sunset curse, warm with amber light.",
-    "2-22": "A demon's yellow horn, bright as a shard of polished brass.",
-    "2-23": "Yellow spores swirl together like a tiny cloud at sunset.",
-    "2-24": "Lucifer's golden tears, glowing like drops of molten sunlight."
+    "0-0": {
+      "lore": "Red herbs grow along sun-warmed stone walls, where their pigment deepens after rain. A short steep lends the Sample Red Potion its plain color and gentle, beginner-friendly character.",
+      "supplier_note": "The cooperative’s label says “mild.” The courier says the bundle stains through two layers of paper, so keep it off the good apron."
+    },
+    "0-1": {
+      "lore": "Sturdy mushrooms push up beneath old orchard roots and store the damp chill of the soil. Their soft cap thickens the Infant HP Potion into a child-sized, soothing brew.",
+      "supplier_note": "We packed these in a basket marked FRAGILE; the basket objected. Brush away the root clumps before blaming our scales."
+    },
+    "0-2": {
+      "lore": "Power fruit ripens on steep terraces and tastes brighter after a clear night. Its tart juice gives Raspberry Potion its dessert-like finish without hiding the useful warmth beneath.",
+      "supplier_note": "The fruit is sold by weight, not by how many you eat while counting. We learned to write that distinction on the invoice."
+    },
+    "0-3": {
+      "lore": "Rainbow birds shed these feathers at the edge of the spring migration route. Their fine shafts dissolve into a portable Small HP Potion with a faint, honest bitterness.",
+      "supplier_note": "Please do not test the feathers by tickling your own nose. The last buyer sneezed a whole measuring spoon onto the ledger."
+    },
+    "0-4": {
+      "lore": "The egg’s shell is flecked by minerals from the cliff nests where it is laid. Its nourishing yolk smooths Collagen Potion into a refreshing, vegetable-like tonic.",
+      "supplier_note": "Cracked eggs are discounted, not pre-opened. Keep the shell fragments out of the bottle unless you sell very ambitious soup."
+    },
+    "0-5": {
+      "lore": "This powder gathers in dry hollows where old roots leave a pale mineral dust. A careful pinch gives Home HP Potion its steady, travel-ready body; too much settles like flour.",
+      "supplier_note": "The word “strange” is the product name, not a quality grade. Avoid inhaling the dust; our return policy cannot process dramatic coughing."
+    },
+    "0-6": {
+      "lore": "Drunkagora grows around springs frequented by thirsty woodland beasts. Its mellow root rounds out Normal HP Potion, the dependable flask travelers reach for between towns.",
+      "supplier_note": "It is not named after the person who packed it. Keep the cork on; the scent has caused several unnecessary drinking contests."
+    },
+    "0-7": {
+      "lore": "Manticore fur catches static on the high ridges and crackles when brushed. That lively charge helps Carbonated Cherry Potion hold a vigorous fizz and a surprisingly firm effect.",
+      "supplier_note": "The fur is shed naturally. Do not ask the manticore for a closer trim, and ground your whisk before opening the parcel."
+    },
+    "0-8": {
+      "lore": "The Life ledger depicts Mom’s Heart as a folded pink letter closed with a red heart seal, not a fruit. Its affectionate ink is steeped into Large HP Potion, giving the travel-size restorative a keepsake warmth that suits its generous bottle.",
+      "supplier_note": "We ship the letter flat so the red heart seal stays uncreased. Please do not open it looking for seeds; if the message is private, the supplier has not read it either."
+    },
+    "0-9": {
+      "lore": "Dancing flowers turn toward music carried across the valley and collect dew in their cupped petals. Their bright pollen gives Blessing HP Potion a clean, almost sacred finish.",
+      "supplier_note": "The flowers are not actually dancing on the invoice. If they sway near the stove, move the bundle away from the flame."
+    },
+    "0-10": {
+      "lore": "S-class strawberries come from a small jam orchard where the berries are reduced slowly instead of boiled hard. The preserve sets Strawberry Potion into a sweet, glossy jelly texture.",
+      "supplier_note": "The jar lids are stubborn by design. Use a cloth for grip; the supplier accepts no blame for heroic attempts with your teeth."
+    },
+    "0-11": {
+      "lore": "Giant bats shed their eyeshine as a crystallized membrane near cave roosts; the collected lens is inert once properly sealed. It focuses the Elixir of Strength’s brief surge into a concentrated, measured dose.",
+      "supplier_note": "Eye material is sealed in a double vial. Never touch your eyes after handling the outer case; yes, we put that warning on the invoice after the incident."
+    },
+    "0-12": {
+      "lore": "Flower fairies leave these wings caught in dew nets at dawn. Their scarlet shimmer refracts through Shining HP Potion, making the bottle glow like a tiny lantern.",
+      "supplier_note": "The wings bruise if folded. We have wrapped them flat, so please do not “improve” the packing with a pocket."
+    },
+    "0-13": {
+      "lore": "Fire dragons shed their fangs when the old enamel loosens, and licensed collectors cool them before transport. A sliver contributes the durable, high-grade base of Advanced HP Potion.",
+      "supplier_note": "Fang is cooled and sealed, but the tip remains sharp. Lift it with the provided tongs; a brave thumb is still a thumb."
+    },
+    "0-14": {
+      "lore": "Red crystals form where lava meets iron-rich earth and then cools over many seasons. Their heat-stable facets bind the Fire Resistance Potion so it keeps its protective warmth.",
+      "supplier_note": "The crystal is heat-tolerant; the packing straw is not. Store the crate away from the stove unless you want a very literal hot shipment."
+    },
+    "0-15": {
+      "lore": "Meteor scrolls are fragments of star maps scorched during a meteor shower and preserved by observatory scribes. Their compressed ink gives Enriched HP Potion its dense, powerful core.",
+      "supplier_note": "The scroll is for brewing, not navigation. Do not unfold it near a candle; our insurer has a surprisingly specific clause about astronomy."
+    },
+    "0-16": {
+      "lore": "Succubi leave a single tear when a vow is broken, which collectors bind in a silver ampoule. Its fierce pulse makes Elixir of Rage hit hard, while the recipe keeps the rest of the blend spare.",
+      "supplier_note": "The vial is emotionally volatile, according to the guild label. Keep it upright and do not shake it to see whether it is “still sad.”"
+    },
+    "0-17": {
+      "lore": "Seraph runes are copied from a choir stone that rings only at sunrise. Their balanced lines harmonize the Celestial HP Potion into a polished, almost heavenly drink.",
+      "supplier_note": "The original stone is not included. Please do not sing over the ink to check the pitch; it is a reagent, not a karaoke invitation."
+    },
+    "0-18": {
+      "lore": "Fire dragon scales are shed during the ancient molt and cured in ash-free air. Their layered pattern stabilizes Ancient HP Potion, an old restorative whose flavor has never been its selling point.",
+      "supplier_note": "The scale is safe to handle with gloves, but it can splinter along the grain. We recommend gloves; the tasting panel recommends a clothespin."
+    },
+    "0-19": {
+      "lore": "Sage stones are said to form around a philosopher’s abandoned hourglass, slowly gathering its patient mineral pulse. Ground into the Elixir of Legends, they support the recipe’s impossible promise of lasting life.",
+      "supplier_note": "We sell a stone, not immortality insurance. Keep the receipt anyway; the returns desk enjoys meeting hopeful customers."
+    },
+    "0-20": {
+      "lore": "Pendant stones are found where dawn first reaches the Underworld’s upper caverns. Their pale gleam gives Elixir of Dawn its strange passage between waking light and shadow.",
+      "supplier_note": "The charm is not a navigation device. Do not follow it into a cave unless you also brought a map and a sensible friend."
+    },
+    "0-21": {
+      "lore": "Cursed ruby rings are recovered from sealed experiment drawers, where their red glass has absorbed years of unfinished notes. A trace lends Bloody Cursed Reagents their binding mark for controlled trials.",
+      "supplier_note": "This is an experimental reagent, not jewelry. Wear it and the lab clerk will charge you for a replacement ring and a new clerk."
+    },
+    "0-22": {
+      "lore": "Demon horns grow in ridged layers that hold a little warmth from the Underworld. A shaved curl gives Demon’s Minor HP Potion its compact, adventurer-friendly restorative kick.",
+      "supplier_note": "The horn is capped at both ends. Keep the caps on until brewing; the supplier cannot retrieve a curl from your sleeve."
+    },
+    "0-23": {
+      "lore": "Red plague spores are collected from a quarantined crimson shelf fungus and rendered inactive for the sealed serum recipe. Their patterned culture gives Red Plague Serum its wide-ranging experimental profile.",
+      "supplier_note": "This lot is certified inactive and double-contained. Do not open the sample jar; “just one look” is not a recognized safety procedure."
+    },
+    "0-24": {
+      "lore": "Lucifer’s red tears are crystallized droplets found on the edge of a pride shrine after its keeper departs. Their concentrated gleam becomes the finishing note in Red Essence of Pride.",
+      "supplier_note": "The name is poetic, not a guarantee of infernal origin. Handle the glass ampoule carefully; pride offers no protection from broken glass."
+    },
+    "1-0": {
+      "lore": "Blue herbs grow in misty ravines and draw their cool color from mineral-rich runoff. Their mild infusion gives Sample Blue Potion its simple beginner’s profile and clean, quiet finish.",
+      "supplier_note": "The bundle is blue because of the leaf, not because it has been chilled. Please do not put it in the icebox beside your lunch."
+    },
+    "1-1": {
+      "lore": "Clever mushrooms grow in rings around fallen beech trunks, where their bitter cap develops slowly. They give Infant MP Potion a gentle, focused base suited to a small serving.",
+      "supplier_note": "These caps are clever enough to hide under the straw. Check the basket before weighing, or the straw may earn a higher price than the mushroom."
+    },
+    "1-2": {
+      "lore": "Wisdom fruit ripens in the university gardens after students leave for summer. Its tart skin brightens Blueberry Potion, a snack-like blend that keeps its thoughtful, crisp edge.",
+      "supplier_note": "The fruit does not complete homework. We tried adding a study guide to the crate; the students ate that too."
+    },
+    "1-3": {
+      "lore": "Bluebirds drop these feathers beside cold mountain streams during their annual molt. Their light barbs make Small MP Potion easy to carry, with a curious but restrained taste.",
+      "supplier_note": "Each feather is counted twice because they float away during counting. If one escapes, it is not a free writing quill."
+    },
+    "1-4": {
+      "lore": "Bluebird eggs collect a mineral bloom from nests built over limestone pools. The mineral-rich yolk rounds Mineral Potion into a nourishing drink with a gentle herbal-tea note.",
+      "supplier_note": "The eggs are padded individually. Please do not stack them into a tower; the packaging test already found the tower’s weak point."
+    },
+    "1-5": {
+      "lore": "Suspicious powder forms in abandoned observatory cupboards where old cooling charms have powdered the dust. A measured dose settles Home MP Potion into a fever-soothing, upright-stored tonic.",
+      "supplier_note": "The powder is suspicious by name, not by inspection. Keep the pouch sealed and stop asking it questions; it has no answers and poor manners."
+    },
+    "1-6": {
+      "lore": "Whyragora roots thread through shaded creek banks and absorb the steady rhythm of running water. Their economical infusion gives Normal MP Potion a strong effect for an everyday traveler’s price.",
+      "supplier_note": "The root whistles when sliced. That is normal; the noise is not an order to whistle back during business hours."
+    },
+    "1-7": {
+      "lore": "Werewolf fur is gathered from the silver undercoat left after a winter molt. Its springy fibers help Carbonated Soda Potion keep a lively head, though the potency stays modest.",
+      "supplier_note": "It is ethically shed fur. Do not howl at the package to confirm; the warehouse dog has enough opinions already."
+    },
+    "1-8": {
+      "lore": "Dad’s Youth is shown as a pale blue letter with a blue heart seal, its careful handwriting preserved in the Mana archive. The ink dissolves into Large MP Potion as a steady, cool infusion, while the large bottle keeps enough of the old message for a long journey.",
+      "supplier_note": "The blue envelope is packed between two stiff boards because sentimental letters dislike corners. No, we cannot confirm whether “Dad” wrote back; our postroom refuses to discuss family matters."
+    },
+    "1-9": {
+      "lore": "Dreamy flowers bloom beside pools that mirror the night sky even at noon. Their calm scent softens Blessing MP Potion and leaves the finished brew unusually clear.",
+      "supplier_note": "The blossoms can make the storeroom smell like bedtime. Keep them away from the clock; we still need deliveries to leave on schedule."
+    },
+    "1-10": {
+      "lore": "S-class grapes are pressed in small batches until their skins lend the syrup a deep violet gloss. The jam turns Grape Potion into a sweet, jelly-like drink with a lingering fruit note.",
+      "supplier_note": "The jar is sealed against wandering fingers. The supplier’s official advice is “use a spoon”; the unofficial advice is “buy two jars.”"
+    },
+    "1-11": {
+      "lore": "Gargoyle eyes are polished stones shed from old rooftop statues after storms. Their faceted focus sharpens Elixir of Wisdom’s temporary clarity, a favorite among students with looming exams.",
+      "supplier_note": "These are stone lenses, not live eyes. Still, do not point the pupil-shaped end at the sun unless you fancy explaining a scorch mark."
+    },
+    "1-12": {
+      "lore": "Lake fairies leave blue wings on reeds after moonlit dances over still water. Their cool iridescence gives Shining MP Potion a luminous blue glow without clouding the liquid.",
+      "supplier_note": "The wings are delicate enough to crease under a heavy book. We advise against using this parcel as a bookmark, however poetic the moment."
+    },
+    "1-13": {
+      "lore": "Water dragons shed their fangs near deep river bends where the current wears the enamel smooth. A tiny shaving lends Advanced MP Potion its seasoned, high-effect base.",
+      "supplier_note": "The fang tip can pierce a paper sack. The inner tin is not decorative; keep the lid closed until your cauldron is ready."
+    },
+    "1-14": {
+      "lore": "Blue crystals grow in glacier caves as meltwater freezes around ancient mineral seams. Their cold-stable structure anchors Frost Resistance Potion and helps it keep a crisp finish.",
+      "supplier_note": "The crystal is cold, not edible candy. If it fogs your spectacles, step back and let the parcel acclimate before opening."
+    },
+    "1-15": {
+      "lore": "Blizzard scrolls are inked on frost-silk during the annual whiteout and sealed before the thaw. Their condensed runes make Enriched MP Potion exceptionally dense and effective.",
+      "supplier_note": "This scroll dislikes warmth. Keep it away from radiators and eager campfires; the courier’s snow boots are not included as a cooling system."
+    },
+    "1-16": {
+      "lore": "A siren’s tear is caught in a shell at the point where song becomes silence. Its quiet pulse steadies Elixir of Calmness, helping the blend sharpen concentration without a dramatic aftertaste.",
+      "supplier_note": "The ampoule is stoppered against sound. Do not sing at it to test the seal; the warehouse staff has voted against encores."
+    },
+    "1-17": {
+      "lore": "Cherub runes are copied from a marble cradle whose carvings remain warm in winter. Their balanced pattern gives Celestial MP Potion its smooth, otherworldly harmony.",
+      "supplier_note": "The runes are only ink on vellum in this parcel. If you hear a choir, check the next crate; the music supplier is always late."
+    },
+    "1-18": {
+      "lore": "Water dragon scales are shed in deep caves and polished by underground streams. Their layered blue sheen stabilizes Ancient MP Potion, an old recipe promising magic that does not run dry.",
+      "supplier_note": "The scales are slippery when wet. The crate has a dry liner; please do not test that claim by tossing one in the sink."
+    },
+    "1-19": {
+      "lore": "Deep-sea stones are found in trenches where sunlight has never reached the seabed. Their compressed mineral memory lends Elixir of Fantasy its fabled, all-knowledge ambition.",
+      "supplier_note": "No actual knowledge is stored in the shipping box. We asked the stone where the missing receipt went; it declined to comment."
+    },
+    "1-20": {
+      "lore": "Daybreak pendants form in the Underworld where the first shaft of morning slips through a cavern roof. Their pale blue gleam guides Elixir of Daybreak between two very different skies.",
+      "supplier_note": "This pendant does not tell time. If it glows before dawn, that is the cave crystal catching light—not permission to wake the neighbors."
+    },
+    "1-21": {
+      "lore": "Cursed sapphire rings are recovered from a locked cabinet of unfinished blue experiments. Their cool trace marks Ashy Cursed Reagents as a measured component for controlled studies.",
+      "supplier_note": "The sapphire is glued to the sample tag, not offered as a bonus. Do not pry it free; the lab’s paperwork is more cursed than the ring."
+    },
+    "1-22": {
+      "lore": "Blue demon horns hold a cool undertone beneath their dark ridges. Their carefully shaved dust gives Demon’s Minor MP Potion a practical boost for Underworld expeditions.",
+      "supplier_note": "The horn dust is double-bagged because it travels everywhere. Wear the supplied mask; nobody wants a blue sneeze on the stock ledger."
+    },
+    "1-23": {
+      "lore": "Blue plague spores grow in a sealed cave garden where moonlight turns every thread cobalt. Rendered inactive for the formula, they give Blue Plague Serum its broad experimental character.",
+      "supplier_note": "The culture has passed the guild’s containment check. Keep it closed anyway; the word “inactive” is not an invitation to conduct your own test."
+    },
+    "1-24": {
+      "lore": "Lucifer’s blue tears crystallize where a pride shrine meets a cold spring. Their sharp blue glint finishes Blue Essence of Pride with a note that seems to reflect more than the bottle.",
+      "supplier_note": "The ampoule is glass, despite the dramatic label. Set it down gently; neither vanity nor the Underworld can mend a cracked vial."
+    },
+    "2-0": {
+      "lore": "Yellow herbs grow on windy hillsides where the leaves face the sun from dawn onward. Their mild color and easy infusion make Sample Yellow Potion a straightforward first brew.",
+      "supplier_note": "The yellow stalks are naturally crooked. Straightening them does not improve the potion, though it does make a very satisfying little pile."
+    },
+    "2-1": {
+      "lore": "Lively mushrooms spring up after warm summer rain and seem to bounce when the basket shifts. Their sweet, buoyant infusion makes Infant SP Potion gentle on a small stomach.",
+      "supplier_note": "The “lively” part refers to the aroma, not the mushrooms jumping out of the crate. Close the lid before the carrier starts charging for a chase."
+    },
+    "2-2": {
+      "lore": "Spirit fruit grows in orchards planted near old festival grounds, where the trees retain a bright, celebratory scent. Its citrus sweetness forms Orange Potion, a popular treat with a spirited finish.",
+      "supplier_note": "The fruit has a strong perfume. Keep it away from the invoice; last week the clerk filed the smell as a separate customer."
+    },
+    "2-3": {
+      "lore": "Wyverns drop these feathers while circling warm updrafts above the cliffs. Their light fibers leave Small SP Potion portable and give the compact blend a pleasant sour edge.",
+      "supplier_note": "We packed them spine-first so they would not poke through. Please do not fan yourself with the shipment; the scales are based on weight."
+    },
+    "2-4": {
+      "lore": "Wyvern eggs develop in sunlit nests where the shell gathers a vitamin-rich golden bloom. Their nourishing contents give Vitamin Potion its refreshing, tea-like character.",
+      "supplier_note": "The shells are stronger than they look and weaker than a dropped crate. Carry with both hands; the courier has already learned this lesson once."
+    },
+    "2-5": {
+      "lore": "Dangerous powder is scraped from the dry heart of a storm-burnt seedpod and stabilized by the guild. A little of its wakeful warmth gives Home SP Potion a steady, sleep-resistant profile.",
+      "supplier_note": "Its name comes from the old seedpod, not the sealed product. Keep the packet away from sparks; we prefer customers alert, not dramatically illuminated."
+    },
+    "2-6": {
+      "lore": "Whatdragora root grows where three trails meet and takes on a different scent from each path. Its versatile broth lends Normal SP Potion a modest, travel-friendly energy lift.",
+      "supplier_note": "The root has no map despite its name. We include directions to the shop, but not directions to wherever it grew."
+    },
+    "2-7": {
+      "lore": "Kobolds leave their winter underfur in warm basalt dens, where it picks up a faint lemony mineral scent. The resilient fibers help Carbonated Lemon Potion keep its crisp fizz and strong kick.",
+      "supplier_note": "This fur is collected from empty dens. Still, never reach into a dark crevice bare-handed; our sample tongs are cheaper than a surprise guest."
+    },
+    "2-8": {
+      "lore": "Uncle’s Mystery appears as a yellow letter bearing a golden heart, addressed but never fully explained in the Stamina collection. A measured wash of its curious ink gives Large SP Potion a bright, sustaining finish, bottled beautifully for the road ahead.",
+      "supplier_note": "This yellow letter arrived without a return address, which is why the catalogue calls it a mystery. We have checked the envelope for fruit twice; it contains paper, ink, and one very nosy postage stamp."
+    },
+    "2-9": {
+      "lore": "Singing flowers bloom beside the old stone stage and vibrate softly when wind crosses their petals. Their resonant nectar lends Blessing SP Potion a bright, unexpectedly potent finish.",
+      "supplier_note": "They sing only in a breeze. Keep the crate vented, but do not leave it by an open window unless you enjoy chasing petals through town."
+    },
+    "2-10": {
+      "lore": "Mystery jam is made from fruit gathered at the edge of the riddle grove, where no two baskets smell quite alike. It gives Potion of Riddle its glossy jelly texture and refreshing sweetness.",
+      "supplier_note": "We are contractually forbidden from guessing the fruit. The supplier’s note is therefore: enjoy the taste, and stop asking the jars."
+    },
+    "2-11": {
+      "lore": "Ogre eyes are polished amber stones found in the ruins of a watchtower. Their warm focus gives Elixir of Energy a temporary lift that city workers favor during long shifts.",
+      "supplier_note": "They are amber lenses, not organic samples. Avoid staring into the polished face; it reflects your tired expression with unsettling accuracy."
+    },
+    "2-12": {
+      "lore": "Forest fairies leave golden wings caught on bramble flowers after autumn dances. Their warm shimmer scatters through Shining SP Potion, turning the bottle into a little sunbeam.",
+      "supplier_note": "The wings are dry and fragile. Keep them away from damp sleeves; the cleaning fee for a glittering cloak is not included in the wholesale rate."
+    },
+    "2-13": {
+      "lore": "Thunder dragons shed fangs on storm peaks where lightning has glazed the enamel. A fine shaving gives Advanced SP Potion its seasoned, high-impact foundation.",
+      "supplier_note": "The tooth is insulated for shipping, but its point is still a point. Use the wooden scoop, and keep the storm stories outside the storeroom."
+    },
+    "2-14": {
+      "lore": "Gold crystals form inside hills struck repeatedly by summer lightning. Their conductive lattice anchors Electric Resistance Potion and helps the protective blend hold its bright finish.",
+      "supplier_note": "The crystal is not a lightning rod. Store it in its padded tin, away from exposed wires and any customer who says “watch this.”"
+    },
+    "2-15": {
+      "lore": "Thunderbolt scrolls are written during distant storms on paper that briefly holds a spark. Their tightly packed symbols concentrate Enriched SP Potion into a dense, forceful brew.",
+      "supplier_note": "The scroll has been discharged for transport. Keep it dry regardless; soggy labels are hard to invoice and harder to read."
+    },
+    "2-16": {
+      "lore": "Harpy tears fall into highland anemones after a long flight through rough weather. Their bright, tireless pulse gives Elixir of Vigor its sustained lift without weighing down the blend.",
+      "supplier_note": "The sealed tear is not a bottled wind. Do not open it on a rooftop; the buyer is responsible for both hats and paperwork."
+    },
+    "2-17": {
+      "lore": "Runes of thrones are copied from a golden seat buried beneath the old royal observatory. Their deliberate symmetry gives Celestial SP Potion a regal balance and exquisite finish.",
+      "supplier_note": "The throne itself is much too large for this parcel. Please do not send us a furniture claim because the runes arrived without armrests."
+    },
+    "2-18": {
+      "lore": "Thunder dragon scales are shed in the storm season and tempered by mountain rain. Their golden ridges steady Ancient SP Potion, a fabled recipe said to renew youth.",
+      "supplier_note": "The scales have been dried, not de-electrified by magic. Handle with dry gloves and leave the thunderstorm collection to licensed crews."
+    },
+    "2-19": {
+      "lore": "Glory stones form in the footprints of heroes after a battle has passed into legend. Their bright mineral grain gives Elixir of Hero its mythic strength and rare, hard-to-find finish.",
+      "supplier_note": "The stone does not certify heroic deeds. We can supply a receipt, but the bard’s endorsement is extra and currently booked through winter."
+    },
+    "2-20": {
+      "lore": "Dusk pendants crystallize in the Underworld’s last-lit passage as the evening star appears above. Their amber glow shapes Elixir of Twilight, a brew balanced between day’s end and night.",
+      "supplier_note": "The glow is a natural reflection, not a signal from below. Store it in the pouch if it makes the night porter nervous."
+    },
+    "2-21": {
+      "lore": "Cursed topaz rings come from a yellow-glass experiment abandoned when its inventor changed careers. A measured shaving lends Sunset Cursed Reagents their golden mark for careful trials.",
+      "supplier_note": "The ring is tagged as lab stock and must stay out of the jewelry case. Our supplier license does not cover awkward proposals or accidental engagements."
+    },
+    "2-22": {
+      "lore": "Yellow demon horns carry the warm tint of the Underworld’s ember fields. Their fine powder contributes a compact restorative note to Demon’s Minor SP Potion for adventurers on the move.",
+      "supplier_note": "The horns were trimmed by a licensed collector. Keep the dust sealed; a yellow trail through the shop is not a breadcrumb system."
+    },
+    "2-23": {
+      "lore": "Yellow plague spores form a bright lace beneath a quarantined shelf fungus and are neutralized before the serum is packed. Their varied culture gives Yellow Plague Serum its wide-ranging experimental profile.",
+      "supplier_note": "Containment is verified at dispatch. Do not open the culture to check the color; the color is already printed on the label."
+    },
+    "2-24": {
+      "lore": "Lucifer’s golden tears crystallize on a sunlit ledge beside an old pride shrine. Their warm gleam completes Gold Essence of Pride with a finish that looks almost molten.",
+      "supplier_note": "The ampoule has a gold seal, not solid gold. Keep it upright, and please do not test the seal with a coin."
+    }
   }
 }

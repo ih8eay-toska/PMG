@@ -1,0 +1,128 @@
+[
+  {
+    "check": "check-audio.cjs",
+    "exitCode": 0,
+    "seconds": 1.01,
+    "output": "Passed: original ingredient Plop decodes once, reuses the shared context, starts at impact, respects mute/hidden/reduced-motion/effects-volume, caps overlap at three voices, cleans up nodes, and excludes tickets/solutions/failed catches. Measured isolated peak 0.281738 and rapid peak 0.281738 at maximum volume; 0.084521 at normal volume.\n"
+  },
+  {
+    "check": "check-build.cjs",
+    "exitCode": 0,
+    "seconds": 2.47,
+    "output": "Passed: current sources/data embedded, unique UI IDs, 400 local media files and no network dependency.\nPassed: offline Pio model, 48 wardrobe textures, motions, runtime syntax and current controller embedded.\nPassed: Tia rig, default outfit, animations, fallback and character selector artwork embedded offline.\nPassed: original-only media mapping, costume previews, and approved event-banner exception.\nPassed: all 12 historical event/promotion banners restored and embedded.\nPassed: recovered APK UI module syntax and exact current UI source embedding.\n"
+  },
+  {
+    "check": "check-commissions.cjs",
+    "exitCode": 0,
+    "seconds": 1.04,
+    "output": "Passed: three choices, single acceptance, no fee, matching and level requirements, three consumed deliveries, saved progress, one-time rewards, guaranteed third fairy and old-save defaults.\nPassed: independent unlocked tiers for all three families, stable board choices, save persistence and locked-tier refusal.\n"
+  },
+  {
+    "check": "check-core.cjs",
+    "exitCode": 0,
+    "seconds": 1.2,
+    "output": "Passed: randomized evenly spaced conveyor, emission speeds, random visitors, acceptance deadlines, failure/reload, reward idempotency, v1/v2 migration, 75 complete recipes, six restored enhancement paths, selected Mana tables, unknown-data guard, powerup consumption, delayed quest rewards, v1 migration, invalid-save rejection.\nPassed: all 10 visitor arrivals, random boost rewards, 42 collectible fairies, duplicate prevention, delayed delivery and v3 migration.\nPassed: action counters, family/potion details, powerup use, play time, quest statistics, partial-history migration and malformed-stat rejection.\nPassed: all fairy timer/level round trips, fractional-save recovery, both version-6 formats, all 35 request rewards, EXP progression and all 75 mastery paths.\nPassed: 99% ceiling across all families, stacked fairy bonuses, failure boundary, boost consumption, and current lower chances.\nPassed: all 75 selected recipe tables, preserved in-progress values, and current enhancement multipliers.\nPassed: 100:1 ingredient/ticket spawning, shared spacing/speed, one-time removal, isolated ticket rewards and save round trip.\nPassed: long-frame visible emission matches fine-grained updates.\nPassed: APK constant conveyor speed, upgrade cadence, empty-belt cap, fairy rate bonus and responsive coordinate scaling.\n"
+  },
+  {
+    "check": "check-economy.cjs",
+    "exitCode": 0,
+    "seconds": 0.32,
+    "output": "Passed: schema 2, isolated config wiring, all material prices/gates, bundle exchange parity and exact case odds/returns in all compensation states.\nPassed: all 13 shop purchases, refusal without mutation, save/reload, 10:1 parity, overflow guards and progression-priced gold.\n"
+  },
+  {
+    "check": "check-enhancement-fx.cjs",
+    "exitCode": 0,
+    "seconds": 0.11,
+    "output": "Passed: success VFX is cauldron-local, spark/ripple animated, static and self-cleaning under reduced motion, replaces duplicate effects, and success/failure sounds follow the actual enhancement result.\nPassed: original enhancement/drop sprite grids, bounded rapid drops, cleanup and static reduced-motion frames.\n"
+  },
+  {
+    "check": "check-enhancement.cjs",
+    "exitCode": 0,
+    "seconds": 0.11,
+    "output": "Timed enhancements: wait, repeat prevention, sale guard, blocked collection, failure, fairy durations, reload and replaced state passed.\n"
+  },
+  {
+    "check": "check-events.cjs",
+    "exitCode": 0,
+    "seconds": 0.14,
+    "output": "Passed: 15/5 timing, full rotation, save migration, redemption, ownership, caps, and matching ticket/token drop rates.\n"
+  },
+  {
+    "check": "check-expedition-stories.cjs",
+    "exitCode": 0,
+    "seconds": 0.23,
+    "output": "Passed: story data mapping, tier 1-4 hooks/outcomes, unconverted Tirami tier-1 outcomes, legacy Neet four-paragraph journeys, journal rereading, tier 5 event ordering, neutral tier 5 text, save/reload idempotency and offline settlement.\nPassed: Neet tier-1 chapter matches the reviewed script, opens on new-game materials with all three routes, uses the 120s timer, persists chapter records/reports and preserves seen and unread legacy tier-1 records/stories when the same route is replayed as a chapter.\nPassed: chapter route beats for all three materials, exact outcomes, deferred chapter-report readiness, repeat-trip reset, journal replay data, save/reload and offline settlement, and unconverted-route fallback.\nPassed: Neet tier-3 and tier-4 chapters match the reviewed scripts, unlock only from their tier, expose only unlocked routes, persist drafts, refuse absent dispatch without charging, and preserve timer, reports, repeat trips and journal replay.\nPassed: Neet tier-5 chapter matches the reviewed script, unlocks from any tier-5 egg, exposes only unlocked options, keeps first family completions full, shows exact later viewpoints for Life, Mana and Stamina after same-traveler and other-traveler first completions, preserves unread stories, and survives reload with journal replay.\nPassed: Dolbur tier 1-4 chapters match all twelve reviewed routes byte-for-byte, open from any family tier with only unlocked choices, persist and change drafts, refuse absent dispatch without charge, keep cost/one-trip/120s/sale saving, repeat and reload reports, preserve unread legacy records, and settle offline with journal replay.\nPassed: Dolbur tier-5 chapter matches the reviewed script byte-for-byte, unlocks from any tier-5 egg, exposes only unlocked routes, keeps cost/one-trip/120s/sale saving, shows full first family completions and exact later viewpoints after same-traveler, Neet-first and unmarked legacy trips, preserves unread records and journal replay, and settles offline once.\n"
+  },
+  {
+    "check": "check-expeditions.cjs",
+    "exitCode": 0,
+    "seconds": 0.13,
+    "output": "Passed: exact expedition charges, single dispatch, other visitor arrivals, concurrent commission, saved/offline rewards, idempotency, targeted fairy pity and maxed-fairy refusal.\nPassed: higher tier-scaled prices, ten distinct character tasks, three-charge bundles and preserved in-flight legacy supplies.\nPassed: potion-themed expedition context persists and locked material jobs refuse payment.\nPassed: in-shop visitor-order gate, per-family material-tier gate, replaced order and 250 character-specific jobs.\nPassed: tier and visitor fairy pools, selected targets, frozen scaled rewards, stamp persistence, exact exchange deductions and tier locks.\nPassed: combined randomized fairy and bonus rolls, guaranteed supplies/stamps, combined save round trip and exhausted fairy pools.\nPassed: Life/Mana/Stamina expedition materials, per-family tier locks, invalid choices, save/reload stability and legacy material handling.\nPassed: tier-1 to tier-5 chapter availability/order, new-game tier-1 routes, exact-tier routes, pre-dispatch draft validation/persistence, locked/absent no-charge dispatch, 120s combined timing, route persistence and revisit, matching sale reductions (5s/linear/20s cap/remaining), nonmatching/visitor/commission non-reduction, save/reload and legacy deadlines.\n"
+  },
+  {
+    "check": "check-helpers.cjs",
+    "exitCode": 0,
+    "seconds": 0.15,
+    "output": "Passed: summon cost/idempotency, empty pause, overhead ingredient collection, saved timers, expiry, 15 upgrade levels, full-belt Blackcat, helper fairy effects and malformed-save guards.\nPassed: real summon handler failure refund and independent ticket charges.\nPassed: eight cats, independent expiry, paused timers, unique catches and legacy single-helper migration.\nPassed: fixed slots, overhead-only collection, ready waiting, cooldown after catches and unique saved slots.\nVerified collection at max emission: level 1 60 versus level 15 200 ingredients per working minute.\nPassed: live upgrade effects, event/break multipliers and cap, four added fairy effects, documented summon milestones, ticket and quest-material bonuses.\nPassed: ticket/solution catches, no duplicate payout, inactive-event refusal, balance caps, separate statistics and special-drop animation artwork.\nPassed: randomized available slots, occupied-slot exclusion, stable existing positions and invalid spawn-roll refusal.\nPassed: flight and cat jump triggering, element reuse/cleanup and reduced motion.\n"
+  },
+  {
+    "check": "check-late-balance.cjs",
+    "exitCode": 1,
+    "seconds": 0.26,
+    "output": "node:internal/assert/utils:77\n    throw err;\n    ^\n\nAssertionError [ERR_ASSERTION]: conveyor, luck 3, price 0, tier 21: spread 1.2504049974132487\n    at Object.<anonymous> (C:\\Users\\Toska\\Documents\\GitHub\\PMG\\source\\check-late-balance.cjs:16:10)\n    at Module._compile (node:internal/modules/cjs/loader:1929:14)\n    at Object..js (node:internal/modules/cjs/loader:2060:10)\n    at Module.load (node:internal/modules/cjs/loader:1651:32)\n    at Module._load (node:internal/modules/cjs/loader:1443:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47 {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: false,\n  expected: true,\n  operator: '==',\n  diff: 'simple'\n}\n\nNode.js v24.22.1\n"
+  },
+  {
+    "check": "check-mail.cjs",
+    "exitCode": 0,
+    "seconds": 0.1,
+    "output": "Passed: one-time update claims, reload/export state, legacy saves, invalid IDs, balance limits and save-failure rollback.\nPassed: Claim all skips previous claims, saves exactly once, refuses overflow atomically and restores all gifts on save failure.\n"
+  },
+  {
+    "check": "check-migration.cjs",
+    "exitCode": 0,
+    "seconds": 0.22,
+    "output": "Passed: v1–14 backups/migration, legacy promises and request results, unchanged balances, chest quota/cooldown boundaries, safe refusals and the twentieth unique star.\n"
+  },
+  {
+    "check": "check-presentation.cjs",
+    "exitCode": 0,
+    "seconds": 0.12,
+    "output": "Passed: family colors, reward icons/amounts, accessible labels, plural bonuses and excluded text boundaries.\n"
+  },
+  {
+    "check": "check-save-files.cjs",
+    "exitCode": 0,
+    "seconds": 0.14,
+    "output": "Passed: portable compressed save round trip, preview/cancel, backup restoration, quota failure, malformed and oversized file refusal.\n"
+  },
+  {
+    "check": "check-settings.cjs",
+    "exitCode": 0,
+    "seconds": 0.09,
+    "output": "Passed: saved preference validation/defaults, reduced motion, audio volume, text size, disabled idle chatter and dialogue duration.\nPassed: visitor bell resets playback, respects effects volume and stays silent when muted or hidden.\n"
+  },
+  {
+    "check": "check-storage.cjs",
+    "exitCode": 0,
+    "seconds": 0.11,
+    "output": "Passed: backup quota failure preserves a loaded shop; invalid/unavailable storage never overwrites its original.\nPassed: validated recovery rotation, corrupt-primary recovery, quota protection, fixed five-second batching and retained dirty state on failure.\n"
+  },
+  {
+    "check": "check-success-upgrades.cjs",
+    "exitCode": 0,
+    "seconds": 0.17,
+    "output": "Passed: all 19 bonus steps/prices, exact deductions/max refusal, legacy progress, extended save round trip and all 75 recipes across 20 ranks with capped boosts.\n"
+  },
+  {
+    "check": "check-ui.cjs",
+    "exitCode": 0,
+    "seconds": 0.21,
+    "output": "Passed: tier-chapter card visibility with Neet absent, opening choice, exact-tier options, persisted route drafts across close/reload, route change without charge, deferred Ready to continue action, early-close reload, repeat-trip reopening, journal replay and saved-time notice.\nPassed: tier-1 chapter card on a new game, three-route opening choice, saved draft across reload, dispatch with 120s timer, deferred Ready to continue report, journal replay and Ready report after repeating seen/unread legacy routes.\nPassed: tier-5 chapter opening and egg-option gating, 120s dispatch, full first report, exact later viewpoint, Daisy beat portrait, narrator portrait-free beats and journal replay.\nPassed: Dolbur tier-5 chapter opening and egg options, 120s dispatch, full first report, Daisy portrait, journal replay and exact later viewpoint.\nPassed: Dolbur tier-1 chapter card, absent dispatch, saved draft across reload, route change, 120s dispatch, early-close report reload, repeat-trip card and journal replay.\nPassed: real UI handlers for moved exact-ingredient debug control, expanded coin cheat, manual drops/mode switches/keys, quest handover and immediate post-reward departure, deferred Tia intro, legacy Neet tier-1 journey/journal paragraph rendering, chest reveals and saved quotas with reduced motion.\nPassed: success VFX is cauldron-local, spark/ripple animated, static and self-cleaning under reduced motion, replaces duplicate effects, and success/failure sounds follow the actual enhancement result.\nPassed: original enhancement/drop sprite grids, bounded rapid drops, cleanup and static reduced-motion frames.\n"
+  },
+  {
+    "check": "check-visitors.cjs",
+    "exitCode": 0,
+    "seconds": 0.15,
+    "output": "Passed: 60-second offer expiry, five unique authored request/flavor pairs with placeholders per visitor, aligned documented pools, exact reward-neutral returning lines, complete-only reward-assumption tags, 25 paired material notes per visitor, all boost types and amounts, 30-second payout, immediate post-reward departure, reload idempotency, legacy completion dismissal without double pay, and preserved legacy fairy reward.\n"
+  }
+]

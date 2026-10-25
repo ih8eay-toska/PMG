@@ -1,0 +1,287 @@
+{
+  "provenance": "Original fan-written expedition stories for review; not official game text. Maps to data/expedition-jobs.json entries.dolbur by 1-based tier (array index 0-24). Job names unchanged. Materials and potion names follow data/game-data.json.",
+  "potion_tier_note": "potionTier lists canonical recipe names from families[].recipes[].name in data/game-data.json (not materials[].starting_name); capitalization copied verbatim, including irregular forms.",
+  "sources": [
+    "research/wiki/Dolbur.json (canon: 21-year-old warrior; Pio quote: 'always positive. But sometimes he makes mistakes.')",
+    "data/visitor-dialogue.json entries.dolbur (project-established fan-written voice)",
+    "data/game-data.json (material tiers and potion names)"
+  ],
+  "character_note": "Arc: Dolbur starts with cheerful bluster and small documented-style mistakes, and by the mythic tiers is genuinely dependable — growth earned through repetition, never self-doubt.",
+  "entries": {
+    "tier1-trailside-herb-hunt": {
+      "tier": 1,
+      "name": "Trailside Herb Hunt",
+      "materials": "Red herb · Blue herb · Yellow herb",
+      "potionTier": "Sample Red Potion / Sample Blue potion / Sample Yellow potion",
+      "description": "Dolbur swears he can spot a useful herb at twenty paces, so the trailside hunt becomes an unofficial quiz. He returns with armfuls of red, blue, and yellow herbs, one decorative shrub he refuses to discuss, and a new respect for the guild handbook's picture pages. The party eats well, and nobody asks about the shrub.",
+      "notes": [
+        "Documented trait played straight: enthusiastic, small mistake, positive recovery (Pio's wiki quote).",
+        "Materials: game-data tier 1 trio."
+      ]
+    },
+    "tier2-mushrooms-at-base-camp": {
+      "tier": 2,
+      "name": "Mushrooms at Base Camp",
+      "materials": "Sturdy mushroom · Clever mushroom · Lively mushroom",
+      "potionTier": "Baby HP Potion / Infant MP potion / Infant SP potion",
+      "description": "The expedition tents go up at the mist line, and the camp cook issues mushroom law before anyone lifts a basket: sturdy for stew, clever for drying, lively only if it stops wriggling. Dolbur gathers all three families to specification, bags them in three labeled sacks, and draws a picture on each label. One drawing has five legs; the cook forgives him; dinner is excellent.",
+      "notes": [
+        "Mistake stays small and admitted, per documented trait.",
+        "Materials: game-data tier 2 trio."
+      ]
+    },
+    "tier3-haul-the-orchard-harvest": {
+      "tier": 3,
+      "name": "Haul the Orchard Harvest",
+      "materials": "Fruit of power · Fruit of wisdom · Fruit of spirit",
+      "potionTier": "Raspberry Potion / Blueberry potion / Orange potion",
+      "description": "The orchard counts on the guild to bring the harvest down from the terraces, and Dolbur volunteers both shoulders. He hauls barrels of power, wisdom, and spirit fruit along the switchbacks without dropping a single crate—almost. The last crate wobbles at the final bend and he catches it against his chin, heroically, and the farmer's 'thanks' painted on a barrel lid outlasts the bruise.",
+      "notes": [
+        "Materials: game-data tier 3 trio.",
+        "Boastful framing with physical comedy; no lasting harm."
+      ]
+    },
+    "tier4-scout-the-feathered-cliffs": {
+      "tier": 4,
+      "name": "Scout the Feathered Cliffs",
+      "materials": "Rainbow bird feathers · Bluebird feathers · Wyvern feathers",
+      "potionTier": "Small HP Potion / Small MP potion / Small SP potion",
+      "description": "The feathered cliffs shed rainbow bird and wyvern feathers straight into the updrafts, and somebody with good boots has to learn where they all land. Dolbur climbs twice as high as planned, plants a flag he sewed that morning, and maps three collecting ledges by dark. The map is upside down; the ledges, he insists, still count.",
+      "notes": [
+        "Materials: game-data tier 4 (bluebird feathers tracked by the map's owner, not the scouts).",
+        "Flag-sewing beat shows earnestover-competence without slowing the job."
+      ]
+    },
+    "tier5-guard-the-nesting-ridge": {
+      "tier": 5,
+      "name": "Guard the Nesting Ridge",
+      "materials": "Rainbow bird's egg · Bluebird's egg · Wyvern's egg",
+      "potionTier": "Collagen Potion / Mineral potion / Vitamin potion",
+      "description": "Nesting-ridge duty means protecting rainbow bird, bluebird, and wyvern clutches while doing one's best impression of scenery. Dolbur posts himself downwind and stands so still that a rainbow bird briefly reassigns him as a perch. The ridge goes untroubled, every egg hatches on schedule, and he logs the perch incident as a promotion.",
+      "notes": [
+        "Materials: game-data tier 5 trio.",
+        "Stillness gag reframes his energy as discipline when it counts."
+      ]
+    },
+    "tier6-carry-the-powder-kegs": {
+      "tier": 6,
+      "name": "Carry the Powder Kegs",
+      "materials": "Strange powder · Suspicious powder · Dangerous powder",
+      "potionTier": "Homemade HP Potion / Home MP potion / Home SP potion",
+      "description": "The mine buys alchemical powder in three moods—strange, suspicious, and dangerous—and the guild draws the carrying job. Dolbur volunteers first, invents a solemn walking pace on the spot, and delivers every keg without a single bounce on the goat path. The foreman asks what the pace is for; he answers 'professionalism' and keeps it up for a week.",
+      "notes": [
+        "Growth beat: this tier, he follows procedure perfectly.",
+        "Materials: game-data tier 6."
+      ]
+    },
+    "tier7-a-mandragora-misadventure": {
+      "tier": 7,
+      "name": "A Mandragora Misadventure",
+      "materials": "Drunkagora · Whyragora · Whatdragora",
+      "potionTier": "Normal HP Potion / Normal MP potion / Normal SP potion",
+      "description": "The captain sends Dolbur to dig the mandragoras because, quote, 'he is used to loud things.' The Drunkagora comes up singing, the Whyragora asks eleven questions before the roots part, and the Whatdragora gives a different answer to each. He returns muddy, delighted, and carrying three pots of exactly what the expedition order asked for.",
+      "notes": [
+        "Whyragora question-shape from data/material-descriptions.json (fan-written imagery).",
+        "Materials: game-data tier 7."
+      ]
+    },
+    "tier8-track-the-furred-beasts": {
+      "tier": 8,
+      "name": "Track the Furred Beasts",
+      "materials": "Manticore fur · Werewolf fur · Kobold fur",
+      "potionTier": "Carbonated Cherry Potion / Carbonated soda potion / Carbonated lemon potion",
+      "description": "The guild's spring order asks for manticore, werewolf, and kobold fur, gathered by brushing rather than brawling, and Dolbur reads the job posting twice to be sure. He sets up a brush station by the mountain hot spring, and cooperation arrives on its own: one manticore, one werewolf, one kobold, and a very long afternoon. He comes home with three full sacks and several new acquaintances who now wave at him in the market.",
+      "notes": [
+        "Sourcing ethic: brushed, not hunted—keeps creatures' dignity and friendships.",
+        "Materials: game-data tier 8 trio."
+      ]
+    },
+    "tier9-deliver-the-family-tonic-crates": {
+      "tier": 9,
+      "name": "Deliver the Family Tonic Crates",
+      "materials": "Mom's Heart · Dad's Youth · Uncle's Mystery",
+      "potionTier": "Large HP Potion / Large MP potion / Large SP potion",
+      "description": "Delivering the family tonics is the gentlest job on Dolbur's list, and he rises to it completely. Mom's Heart rides cushioned at the top of the pack, Dad's Youth gets buckled in like a small relative, and Uncle's Mystery is saluted at every bump for reasons he refuses to explain. All three arrive perfect; the hugs at delivery were unnecessary but well received.",
+      "notes": [
+        "Keepsake-tender joke based on material names.",
+        "Materials: game-data tier 9 trio."
+      ]
+    },
+    "tier10-clear-a-path-to-the-flowers": {
+      "tier": 10,
+      "name": "Clear a Path to the Flowers",
+      "materials": "Dancing flower · Dreamy flower · Singing flower",
+      "potionTier": "Blessed HP Potion / Blessing MP potion / Blessing SP potion",
+      "description": "A rockslide has shut the flower valley road, and the festival wagon needs dancing, dreamy, and singing flowers by morning. Dolbur rolls boulders until noon, apologizes to each flower he nearly flattens, and finishes with a path smoother than the old one. The wagon driver calls it the nicest road he has ever rattled down.",
+      "notes": [
+        "Materials: game-data tier 10.",
+        "Physical-labor comedy kept distinct from his herb and mushroom mishap beats."
+      ]
+    },
+    "tier11-stock-the-camp-with-jam": {
+      "tier": 11,
+      "name": "Stock the Camp with Jam",
+      "materials": "S Class strawberry jam · S Class grape jam · Jam of mystery",
+      "potionTier": "Strawberry Potion / Grape potion / Potion of Riddle",
+      "description": "The expedition vote on camp rations is unanimous and immediate: jam. Dolbur hauls strawberry, grape, and mystery jam up the mountain in one padded crate and stands guard over it like a battle standard. Nobody pockets a single spoonful; nobody definitively admits to two; and the mystery jam wins the informal taste test by popular acclaim.",
+      "notes": [
+        "Materials: game-data tier 11.",
+        "Gentle innuendo-free comedy."
+      ]
+    },
+    "tier12-face-the-watchful-monsters": {
+      "tier": 12,
+      "name": "Face the Watchful Monsters",
+      "materials": "Eye of giant bat · Eye of gargoyle · Eye of ogre",
+      "potionTier": "Elixir of Strength / Elixir of Wisdom / Elixir of Energy",
+      "description": "The ridge road holds three famous caves, and the specimen order calls for one eye from each: the giant bat's, the gargoyle's, and the ogre's. Dolbur walks in and stares every tenant down, winning the standoff against the bat, tying the gargoyle, and settling the ogre with lunch. All three jars come home properly sealed, and the ogre has booked him for birthday visits.",
+      "notes": [
+        "Materials: game-data tier 12 trio.",
+        "Stare-down comedy; specimens are already shed/jarred in-world, no creature is harmed."
+      ]
+    },
+    "tier13-escort-the-fairy-caravan": {
+      "tier": 13,
+      "name": "Escort the Fairy Caravan",
+      "materials": "Flower fairy wings · Lake fairy wings · Forest fairy wings",
+      "potionTier": "Shining HP Potion / Shining MP potion / Shining SP potion",
+      "description": "The fairy caravan moves its trade in naturally shed wings twice a year, and the elders have somehow concluded that Dolbur is precisely the escort they want. He walks out front humming, checks every wagon axle twice, and cures a mudslide with one sturdy shoulder. Payment arrives in three glimmers—flower, lake, and forest fairy wings—and one small hug that he will not stop telling people about.",
+      "notes": [
+        "Materials: game-data tier 13 trio.",
+        "Fair-as-trade ethics consistent with wing sourcing."
+      ]
+    },
+    "tier14-trophy-fangs-from-the-frontier": {
+      "tier": 14,
+      "name": "Trophy Fangs from the Frontier",
+      "materials": "Fang of fire dragon · Fang of water dragon · Fang of thunder dragon",
+      "potionTier": "Advanced HP Potion / Advanced MP potion / Advanced SP potion",
+      "description": "The frontier outpost trades for dragon fangs—fire, water, and thunder—under signposted agreements, because treaties are cheaper than battles. Dolbur walks the collection circuit alone, trades a cask of pickles for the thunder fang, and does honest scrambling for the other two. He comes home with all three and a reputation: the pickles, dragons reportedly agree, are worth the trip.",
+      "notes": [
+        "Materials: game-data tier 14.",
+        "Trade-and-treaty framing keeps dragons friendly and contrasts with Neet's solemn reliquary recovery of the same materials."
+      ]
+    },
+    "tier15-break-open-the-crystal-vein": {
+      "tier": 15,
+      "name": "Break Open the Crystal Vein",
+      "materials": "Red crystal · Blue crystal · Gold crystal",
+      "potionTier": "Fire resistance Potion / Frost resistance potion / Electric resistance potion",
+      "description": "The guild stakes a claim on red, blue, and gold crystal, and Dolbur is issued the least delicate tool on the site. His first swing removes half a scaffold; his second swing takes the hint; by afternoon the mine captain has him breaking rock on purpose with excellent results. The vein comes out in display-quality pieces, and the scaffold forgives him in writing.",
+      "notes": [
+        "Materials: game-data tier 15 trio.",
+        "Mistake-then-growth beat in miniaturized form; no injured parties."
+      ]
+    },
+    "tier16-recover-the-battle-scrolls": {
+      "tier": 16,
+      "name": "Recover the Battle Scrolls",
+      "materials": "Meteor scroll · Blizzard scroll · Thunderbolt scroll",
+      "potionTier": "Enriched HP Potion / Enriched MP potion / Enriched SP potion",
+      "description": "Three guild battle scrolls—meteor, blizzard, and thunderbolt—went downriver with a swamped supply raft, and Dolbur volunteers to fish for paperwork. He dredges the shallows for a day and a half, finds the thunderbolt scroll first because it kept sparking loudly enough to announce itself, and spreads the recovered trio to dry on sun-warmed rocks. The guild scribe cries gently over the drying line; Dolbur quietly does not mention that it also rained.",
+      "notes": [
+        "Materials: game-data tier 16.",
+        "Thunderbolt spark behavior is narrative flavor, not a mechanic claim."
+      ]
+    },
+    "tier17-a-rescue-at-the-weeping-shore": {
+      "tier": 17,
+      "name": "A Rescue at the Weeping Shore",
+      "materials": "Succubu`s tear · Siren's Tear · Harpy's tear",
+      "potionTier": "Elixir of Rage / Elixir of Calmness / Elixir of Vigor",
+      "description": "A fishing boat runs aground beneath the weeping shore, where a succubus, a siren, and a harpy have been crying all week. Dolbur rows out with rope and one large idea, tows the boat clear, and consoles the three spirits by honestly reporting that fishermen only ever weep about the nets. The rescue works; three tears—unprompted and unnamed by anyone—plip into his kit as thanks.",
+      "notes": [
+        "Materials: game-data tier 17 trio.",
+        "Console-by-honesty beat: his sincerity beats polish."
+      ]
+    },
+    "tier18-carry-the-sacred-rune-standard": {
+      "tier": 18,
+      "name": "Carry the Sacred Rune Standard",
+      "materials": "Rune of seraph · Runes of cherub · Rune of thrones",
+      "potionTier": "Celestial HP Potion / Celestial MP potion / Celestial SP potion",
+      "description": "The pilgrimage needs a standard-bearer for the rune staff, etched with seraph, cherub, and throne runes, and Dolbur volunteers at a volume that settles the selection committee. He marches twelve miles without one wobble, hands the staff back at the chapel steps with a bow, and only then remembers his feet. The chapel keeper's note to the guild reads: sent your strongest, got your politest.",
+      "notes": [
+        "Materials: game-data tier 18 (runes carried as a standard, not consumed as ingredients in-world).",
+        "Solemnity played straight through his body, comedy through the aftermath."
+      ]
+    },
+    "tier19-retrieve-dragon-scale-trophies": {
+      "tier": 19,
+      "name": "Retrieve Dragon Scale Trophies",
+      "materials": "Fire dragon scale · Water dragon scale · Thunder dragon scale",
+      "potionTier": "Ancient HP Potion / Ancient MP Potion / Ancient SP Potion",
+      "description": "The molt cliffs below the peaks shed fire, water, and thunder dragon scales each spring, and the guild hall wants trophies for its rafters. Dolbur beats the tide to the lowest shelf, salutes a passing water dragon out of pure reflex, and comes down with all three. The trophies hang flush on the beam; the salute is, reportedly, returned.",
+      "notes": [
+        "Materials: game-data tier 19 trio.",
+        "Kept distinct from his fang trade story (tier 14): molt gathering rather than trade."
+      ]
+    },
+    "tier20-an-expedition-for-legendary-stones": {
+      "tier": 20,
+      "name": "An Expedition for Legendary Stones",
+      "materials": "Stone of Sage · Stone of Deep-sea · Stone of Glory",
+      "potionTier": "Elixir of Legends / Elixir of Fantasy / Elixir of Hero",
+      "description": "The season's prestige job goes hunting for the three legend stones: Sage, Deep-sea, and Glory. Dolbur leads the rope team, misreads the map twice, and ends up standing in exactly the right cave anyway. All three stones ride home on his own back, and the guild scribe files his navigation under 'hope, followed by luck.'",
+      "notes": [
+        "Materials: game-data tier 20.",
+        "Documented mistake-pattern paid off against him kindly."
+      ]
+    },
+    "tier21-find-the-lost-dawn-pendant": {
+      "tier": 21,
+      "name": "Find the Lost Dawn Pendant",
+      "materials": "Pendant of dawn · Pendant of daybreak · Pendant of dusk",
+      "potionTier": "Elixir of Dawn / Elixir of daybreak / Elixir of twilight",
+      "description": "A courier loses the dawn pendant somewhere along the east road, and Dolbur takes the reward notice as a personal insult. He retraces her whole day—gate, bridge, lunch stop, detour past the landslide—and finds the pendant after dark, glinting on a fencepost. Delivered before the shrine locks up; the fencepost gets mended the same evening, since he owes it one.",
+      "notes": [
+        "Materials: game-data tier 21 (focus on the dawn pendant for story unity; daybreak/dusk packed in the courier's recovered case).",
+        "Possibly adjust line to nod at all three pendants before merge."
+      ]
+    },
+    "tier22-brave-the-ring-of-curses": {
+      "tier": 22,
+      "name": "Brave the Ring of Curses",
+      "materials": "Cursed Ruby ring · Cursed Sapphire Ring · Cursed Topaz ring",
+      "potionTier": "Cursed Bloody Reagent / Ashy cursed reagents / Sunset cursed reagents",
+      "description": "Three cursed rings—ruby, sapphire, topaz—must reach the shrine vault by Friday, and the rotation lands on the nobody-else-free column: Dolbur. He goes in whistling, carries the lined box at full arm's length, and returns with all three plus a week of goosebumps he insists is professional development. The curses did their best, as the guild scribe records with something like respect.",
+      "notes": [
+        "Materials: game-data tier 22 trio.",
+        "Fearless-acceptance of a scary job; comedic not haunted, matching his documented positivity."
+      ]
+    },
+    "tier23-horns-at-the-demon-gate": {
+      "tier": 23,
+      "name": "Horns at the Demon Gate",
+      "materials": "Demon`s red horn · Demon's blue horn · Demon's yellow horn",
+      "potionTier": "Demon's Minor HP Potion / Demon's minor MP potion / Demon's Minor SP potion",
+      "description": "The guild holds the checkpoint trade at the demon gate this quarter, and the week's shipment is horns: red, blue, and yellow. Dolbur checks the paperwork like a professional, splits his bread with the gate warden out of pure nerves, and is thereupon adopted by the entire customs office as 'the polite one' for the season. All three horns ship on time, and the gate now waves him through.",
+      "notes": [
+        "Materials: game-data tier 23 trio.",
+        "Friendly-demon trade consistent with his equal-opportunity cheer."
+      ]
+    },
+    "tier24-seal-the-infected-cavern": {
+      "tier": 24,
+      "name": "Seal the Infected Cavern",
+      "materials": "Red plague of spore · Blue plague of spore · Yellow plague of spore",
+      "potionTier": "Red Plague Serum / Blue plague serum / Yellow Plague Serum",
+      "description": "An upcounty cave goes spore-red, then spore-blue, then spore-yellow in one bad week, and the county physician needs the entrance sealed by Sunday. Dolbur hauls stone while the physician chalks the containment lines, and neither of them argues about who is sneezing more. The cavern seals true, the county pays in a long dinner, and the boots are burned on his own recommendation.",
+      "notes": [
+        "Materials: game-data tier 24 trio.",
+        "Serious tier handled with competence; no levity at the town's expense."
+      ]
+    },
+    "tier25-the-last-march-for-fallen-tears": {
+      "tier": 25,
+      "name": "The Last March for Fallen Tears",
+      "materials": "Lucifer`s red tears · Lucifer's blue tears · Lucifer's golden tears",
+      "potionTier": "Red Essence of Pride / Blue essence of pride / Gold Essence of Pride",
+      "description": "The season's last job is a single sealed case—Lucifer's three tears, red, blue, and gold—plus a route card that reads, in full, 'deliver to the shrine, quietly.' Dolbur takes the final stretch alone at sunrise, walking at the most respectful pace he owns, and sets the case down without one scratch. The shrine feeds him breakfast, and the season closes, he tells the table, as a triumph.",
+      "notes": [
+        "Materials: game-data tier 25.",
+        "Closing entry for Dolbur's arc: earnestness as its own ceremony."
+      ]
+    }
+  }
+}

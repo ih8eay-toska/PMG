@@ -1,0 +1,287 @@
+{
+  "provenance": "Original fan-written expedition stories for review; not official game text. Maps to data/expedition-jobs.json entries.claire by 1-based tier (array index 0-24). Job names unchanged. Materials and potion names follow data/game-data.json.",
+  "potion_tier_note": "potionTier lists canonical recipe names from families[].recipes[].name in data/game-data.json (not materials[].starting_name); capitalization copied verbatim, including irregular forms.",
+  "sources": [
+    "research/wiki/Claire.json (canon: 23-year-old palace knight, formal speech, 'famous' per Tia)",
+    "data/visitor-dialogue.json entries.claire (project-established fan-written voice: patrol, gate watch, infirmary, escort, inspections, squire mentorship)",
+    "data/game-data.json (material tiers and potion names)"
+  ],
+  "character_note": "Arc: Claire opens with procedure as armor, and her warmth shows through interpretation of the rules—courtesy as enforcement, paperwork as care. By the mythic tiers the regiment trusts her with anything, and the stories end on quiet trust rather than spectacle.",
+  "entries": {
+    "tier1-medicinal-herbs-for-the-patrol": {
+      "tier": 1,
+      "name": "Medicinal Herbs for the Patrol",
+      "materials": "Red herb · Blue herb · Yellow herb",
+      "potionTier": "Sample Red Potion / Sample Blue potion / Sample Yellow potion",
+      "description": "The patrol's medicine chest runs short, and Claire manages the restock as a drill: an itemized list, a planned route, and a set time for every stop. She buys red, blue, and yellow herbs from three separate growers on purpose, so that no single flooded road can empty the kit, and has each purchase countersigned at the door. The youngest grower asks to watch how a knight shops, and is permitted to observe her count change.",
+      "notes": [
+        "Redundancy-as-care beat from her established supply-order voice.",
+        "Materials: game-data tier 1 trio."
+      ]
+    },
+    "tier2-check-the-forest-rations": {
+      "tier": 2,
+      "name": "Check the Forest Rations",
+      "materials": "Sturdy mushroom · Clever mushroom · Lively mushroom",
+      "potionTier": "Baby HP Potion / Infant MP potion / Infant SP potion",
+      "description": "Rations, in Claire's ledger, means three checks: what is stored, what is sound, and what is actually in the barrels. She opens every mushroom cask in the patrol reserve—sturdy, clever, and lively—and re-inks the dates in her own handwriting. One cask is labeled a month older than it is, and the quartermaster owns it on the spot: backdated arrivals keep the ledger a month ahead of the shelf, so rationing is called while the medicine is still good—his margin against a late supply convoy. Claire corrects the dates, thanks him for the intent, and writes the same margin honestly: one cask of each held in reserve, counted in the ledger, replenished first at every restock.",
+      "notes": [
+        "The trick is understood, the record corrected, and the intent given an honest mechanism—sets the arc's tone early.",
+        "Materials: game-data tier 2 trio."
+      ]
+    },
+    "tier3-escort-the-orchard-workers": {
+      "tier": 3,
+      "name": "Escort the Orchard Workers",
+      "materials": "Fruit of power · Fruit of wisdom · Fruit of spirit",
+      "potionTier": "Raspberry Potion / Blueberry potion / Orange potion",
+      "description": "Harvest crews reach the orchard through patrol roads, so Claire walks them in at dawn and stands the whole first day. Power, wisdom, and spirit fruit demand steady ladder work, and she paces the picking with rests on the hour and water at the gate. The pickers repay her by teaching her the fruit-sorting song, which she claims by dusk not to know—quietly, in perfect time.",
+      "notes": [
+        "Warmth under formality; the song beat echoes her established squire-mentorship softness.",
+        "Materials: game-data tier 3 trio."
+      ]
+    },
+    "tier4-survey-the-feathered-watchtower": {
+      "tier": 4,
+      "name": "Survey the Feathered Watchtower",
+      "materials": "Rainbow bird feathers · Bluebird feathers · Wyvern feathers",
+      "potionTier": "Small HP Potion / Small MP potion / Small SP potion",
+      "description": "The old watchtower gets a survey every spring, and Claire adds a subsidiary report on its tenants, who molt rainbow bird and wyvern feathers across the parapet. Sightlines are good, the stairs are sound, and one wyvern has claimed the southeast ledge with what she logs as 'squatter's rights.' Rather than evict, she reroutes the patrol bell around the ledge, and the tower works better for it: the tenants, after all, watch the same road she does.",
+      "notes": [
+        "Cooperation over eviction; tenants as fellow watchmen, distinct from Dolbur's perch comedy.",
+        "Materials: game-data tier 4 (bluebird feathers implied by the colony; not the survey's focus)."
+      ]
+    },
+    "tier5-protect-the-cliffside-nests": {
+      "tier": 5,
+      "name": "Protect the Cliffside Nests",
+      "materials": "Rainbow bird's egg · Bluebird's egg · Wyvern's egg",
+      "potionTier": "Collagen Potion / Mineral potion / Vitamin potion",
+      "description": "Protecting the cliff nests is a matter of engineering rather than heroics, and Claire treats it that way: a rope line at the path's edge, a sentry schedule with no double shifts, and signs she lettered herself. Rainbow bird, bluebird, and wyvern clutches all hatch undisturbed. The posting's only incident is a tourist with a sketchbook, handled by lending him her own stool at the safe distance.",
+      "notes": [
+        "Enforcement-through-courtesy is the arc's signature move.",
+        "Materials: game-data tier 5 trio."
+      ]
+    },
+    "tier6-inspect-the-powder-stores": {
+      "tier": 6,
+      "name": "Inspect the Powder Stores",
+      "materials": "Strange powder · Suspicious powder · Dangerous powder",
+      "potionTier": "Homemade HP Potion / Home MP potion / Home SP potion",
+      "description": "The powder stores are inspected to a route Claire wrote herself: strange, then suspicious, then dangerous—each shelf opened, each seal pressed, each lamp choice deliberate and unglamorous. She finds one stopper seated wrong, one ledger entry shorter than its shelf, and one junior clerk who has alphabetized the dangerous cabinet out of nerves. All three findings are filed with praise where praise is due, which is how she gets her corrections obeyed.",
+      "notes": [
+        "Correct per-family powder names; inspection craft, no comedy at the clerk's expense.",
+        "Materials: game-data tier 6."
+      ]
+    },
+    "tier7-quiet-the-mandragora-outpost": {
+      "tier": 7,
+      "name": "Quiet the Mandragora Outpost",
+      "materials": "Drunkagora · Whyragora · Whatdragora",
+      "potionTier": "Normal HP Potion / Normal MP potion / Normal SP potion",
+      "description": "The outpost's mandragora beds took to howling at dusk, and the garrison answered with earplugs. Claire answers with the old groundskeeper's rotation, which says plainly that the plants quiet for steady hands: hers, every second day—pruning the Drunkagoras, answering the Whyragoras, and agreeing out loud with the Whatdragoras. The beds settle by the week's end. The garrison keeps the earplugs, she allows, and she keeps the routine.",
+      "notes": [
+        "Care routine as discipline; distinct from Dolbur's digging misadventure.",
+        "Materials: game-data tier 7."
+      ]
+    },
+    "tier8-reinforce-the-winter-uniforms": {
+      "tier": 8,
+      "name": "Reinforce the Winter Uniforms",
+      "materials": "Manticore fur · Werewolf fur · Kobold fur",
+      "potionTier": "Carbonated Cherry Potion / Carbonated soda potion / Carbonated lemon potion",
+      "description": "The winter requisition needs fur, and Claire samples all three lots herself before the quartermaster may buy: manticore for the saddle cloaks, werewolf for the wet posts, kobold for the collars. Two lots pass; one is honest fur badly packed, and she repacks it with the recruits as an afternoon's lesson in why packing is a discipline. Every uniform ships warm, and her letter back to the castle names the packers, which was the point.",
+      "notes": [
+        "Credit-giving close continues the praise-where-due thread from tier 2 and 6.",
+        "Materials: game-data tier 8 trio."
+      ]
+    },
+    "tier9-audit-the-infirmary-tonics": {
+      "tier": 9,
+      "name": "Audit the Infirmary Tonics",
+      "materials": "Mom's Heart · Dad's Youth · Uncle's Mystery",
+      "potionTier": "Large HP Potion / Large MP potion / Large SP potion",
+      "description": "The infirmary audit is Claire's quietest duty: every shelf checked, every dose logged, every keepsake accounted to the last vial. Mom's Heart is exact; Dad's Youth is two vials short, and the head nurse's note, already on file, reconciles them—both went, with signed permission, to a retiring porter. Uncle's Mystery is present, unopened, and counted as exactly what its label promises. The audit closes with one new rule—keepsakes counted by hand, not by memory—and a framed copy of that reconciliation note, which everyone agrees is the infirmary's best supporting document.",
+      "notes": [
+        "The uncounted vials were a kindness, not a theft—mercy found inside the paperwork.",
+        "Materials: game-data tier 9 trio."
+      ]
+    },
+    "tier10-guard-the-royal-flowerbeds": {
+      "tier": 10,
+      "name": "Guard the Royal Flowerbeds",
+      "materials": "Dancing flower · Dreamy flower · Singing flower",
+      "potionTier": "Blessed HP Potion / Blessing MP potion / Blessing SP potion",
+      "description": "Guarding the royal flowerbeds is a posting with three rules: stay on the path, keep visitors on the path, and be quiet near the singing flowers, which resent raised voices. Claire adds a fourth of her own—shoes brushed before entering—after one disapproving glance from the head gardener. The dancing, dreamy, and singing flower season passes without incident, unless one counts the gardener accepting her suggestion to widen the path by half a pace, which both parties call a victory.",
+      "notes": [
+        "Shared-victory ending; the gardener stays an unnamed office, per the gap list.",
+        "Materials: game-data tier 10 trio."
+      ]
+    },
+    "tier11-replenish-the-palace-preserves": {
+      "tier": 11,
+      "name": "Replenish the Palace Preserves",
+      "materials": "S Class strawberry jam · S Class grape jam · Jam of mystery",
+      "potionTier": "Strawberry Potion / Grape potion / Potion of Riddle",
+      "description": "The palace preserves requisition lands on the patrol as an escort job, and Claire treats a wagon of jam like a wagon of dispatches: sealed, logged, and sworn to. S Class strawberry is bound for the children's wing, S Class grape for the officers' table, and one jar of mystery, which the requisition declines to describe beyond the word 'reserve.' The reserve jar is locked in the second pantry, and she signs for it with the keyholder and one witness, on the grounds that mysteries are safest in triplicate.",
+      "notes": [
+        "The unnamed 'reserve' mystery is left unexplained on purpose; no new lore invented.",
+        "Materials: game-data tier 11."
+      ]
+    },
+    "tier12-watch-the-monster-approach": {
+      "tier": 12,
+      "name": "Watch the Monster Approach",
+      "materials": "Eye of giant bat · Eye of gargoyle · Eye of ogre",
+      "potionTier": "Elixir of Strength / Elixir of Wisdom / Elixir of Energy",
+      "description": "The ridge watch is a watching job: the giant bat at dusk, the gargoyle at stone-dark, and the ogre whenever the ogre feels like walking. Claire keeps the log in three columns—seen, heard, and waved at—and the third column grows friendlier every week. The month's report concludes, in her neatest hand, that the duty is less about warning the valley and more about introducing it.",
+      "notes": [
+        "Surveillance softened into neighborliness; no monster is confronted or harmed.",
+        "Materials: game-data tier 12 trio (referenced by the watched tenants)."
+      ]
+    },
+    "tier13-escort-the-wing-traders": {
+      "tier": 13,
+      "name": "Escort the Wing Traders",
+      "materials": "Flower fairy wings · Lake fairy wings · Forest fairy wings",
+      "potionTier": "Shining HP Potion / Shining MP potion / Shining SP potion",
+      "description": "The wing traders' carts carry flower, lake, and forest fairy wings down the mountain road twice a season, and their escort is a standing patrol assignment. Claire walks ahead, checks every axle at the fords, and stands one very quiet afternoon while the traders renegotiate a bridge toll down to courtesy. The cargo arrives counted, credited, and exactly as listed, and the traders' guild sends her a ribbon she pins inside her shield: the safest cargo, it reads, is a fair road.",
+      "notes": [
+        "Trade fairness over force; toll renegotiated 'down to courtesy' keeps everyone whole.",
+        "Materials: game-data tier 13."
+      ]
+    },
+    "tier14-secure-the-dragonfang-crossing": {
+      "tier": 14,
+      "name": "Secure the Dragonfang Crossing",
+      "materials": "Fang of fire dragon · Fang of water dragon · Fang of thunder dragon",
+      "potionTier": "Advanced HP Potion / Advanced MP potion / Advanced SP potion",
+      "description": "The high pass closes for one week a year while the three dragon kinds cross it, molting as they go, and securing that week is Claire's standing assignment. She posts the road, halts the coach traffic with a courtesy she has practiced into excellence, and lets the crossing finish exactly on its printed schedule. The troopers call it the quietest week of the year, and the new fangs left on the verge are claimed by the shrine under her signature.",
+      "notes": [
+        "Molt-and-crossing framing complements, rather than repeats, Dolbur's trade outpost and Neet's vault.",
+        "Materials: game-data tier 14."
+      ]
+    },
+    "tier15-guard-the-crystal-convoy": {
+      "tier": 15,
+      "name": "Guard the Crystal Convoy",
+      "materials": "Red crystal · Blue crystal · Gold crystal",
+      "potionTier": "Fire resistance Potion / Frost resistance potion / Electric resistance potion",
+      "description": "The crystal convoy carries red, blue, and gold down the river road under a one-line escort brief: nothing touches the wagons. When a flash flood drowns the ford for the afternoon, she holds the caravan on high ground, reroutes by a shepherd's track, and delivers every crate with dust on it and nothing else. The exchange returns her report sealed in gold wax, which she files under 'regulation,' where it stays slightly crooked.",
+      "notes": [
+        "Flood reroute shows judgment over force; the crooked filing is the one unarmored line.",
+        "Materials: game-data tier 15 trio."
+      ]
+    },
+    "tier16-retrieve-the-regiment-scrolls": {
+      "tier": 16,
+      "name": "Retrieve the Regiment Scrolls",
+      "materials": "Meteor scroll · Blizzard scroll · Thunderbolt scroll",
+      "potionTier": "Enriched HP Potion / Enriched MP potion / Enriched SP potion",
+      "description": "The regiment archive takes river water to the third shelf in one bad night, and the meteor, blizzard, and thunderbolt scrolls sit on the second. Claire wades in at first light, carries them out wrapped in her own cloak, and stands the drying line herself with a spacing she declines to explain. The scrolls straighten nearly perfect; the cloak is washed, thanked, and entered in the record as 'carried heavy, dried fast.'",
+      "notes": [
+        "Rescue-of-documents plot distinct from Tirami's proofread and Neet's restoration.",
+        "Materials: game-data tier 16."
+      ]
+    },
+    "tier17-protect-the-weeping-sanctuary": {
+      "tier": 17,
+      "name": "Protect the Weeping Sanctuary",
+      "materials": "Succubu`s tear · Siren's Tear · Harpy's tear",
+      "potionTier": "Elixir of Rage / Elixir of Calmness / Elixir of Vigor",
+      "description": "The weeping sanctuary is a reach of shore where succubus, siren, and harpy keep to their grief, and Claire's posting is to guard the quiet: pilgrims may leave offerings, not questions. When a young pilgrim arrives carrying more grief than rules, she makes the posting's one judgment call—walking him to the offering stone herself, close enough for courtesy, far enough for privacy. The spirits let him grieve in peace, and on her last morning the watch log holds three unrequested gifts, which she signs for on the garrison's behalf.",
+      "notes": [
+        "Presence-as-protection; nothing is collected—the three gifts are left for her, not taken—contrast with the bottling and comforting stories.",
+        "Materials: game-data tier 17 trio."
+      ]
+    },
+    "tier18-stand-watch-at-the-rune-chapel": {
+      "tier": 18,
+      "name": "Stand Watch at the Rune Chapel",
+      "materials": "Rune of seraph · Runes of cherub · Rune of thrones",
+      "potionTier": "Celestial HP Potion / Celestial MP potion / Celestial SP potion",
+      "description": "Standing watch at the rune chapel is the quietest duty in the regiment: the seraph, cherub, and throne runes rest under glass, and the watch speaks not once from dusk until relief. The quiet is not empty, though: on the second night the curtain moves wrong for the hour, and Claire follows the draught's path across the room—where it slides past the display case it leaves a stripe the dust will not settle into, betraying a hairline gap in the case's wax seal. She has the keeper roused before dawn can reach it; the seal is redone by lamplight, and when he asks how she knew, her answer—'the curtain told me'—becomes the chapel's own account of why its relics keep.",
+      "notes": [
+        "Her discipline catches the failure; the keeper does the mending, and no rune is touched or copied.",
+        "Materials: game-data tier 18."
+      ]
+    },
+    "tier19-inspect-the-dragonscale-shields": {
+      "tier": 19,
+      "name": "Inspect the Dragonscale Shields",
+      "materials": "Fire dragon scale · Water dragon scale · Thunder dragon scale",
+      "potionTier": "Ancient HP Potion / Ancient MP Potion / Ancient SP Potion",
+      "description": "The armoury's parade shields carry fire, water, and thunder dragon scale inlays, and their annual inspection falls to Claire. She checks every setting for lift and every edge for burr, and finds exactly one shield worn out of turn: a recruit borrowing his grandfather's. The repair list is filed, the heirloom is logged back to its family, and the recruit is permitted to keep borrowing it, once the paperwork catches up with the pride.",
+      "notes": [
+        "Heirloom subplot gives the inspection a heart without breaking a rule.",
+        "Materials: game-data tier 19 trio."
+      ]
+    },
+    "tier20-secure-the-legendary-stone-vault": {
+      "tier": 20,
+      "name": "Secure the Legendary Stone Vault",
+      "materials": "Stone of Sage · Stone of Deep-sea · Stone of Glory",
+      "potionTier": "Elixir of Legends / Elixir of Fantasy / Elixir of Hero",
+      "description": "The legendary stone vault receives its three tenants—Sage, Deep-sea, and Glory—under a custody schedule Claire rewrites in week one: visits logged, guards paired, no posted watch knowing more than one door's business. Mid-season a visiting magistrate requests a private holding of the Sage stone, citing his rank; she declines the holding, offers him the standing viewing hour, and stands at the case herself while he looks his fill. His written thanks goes up beside the schedule—security is mostly the art of scheduling other people's temptation—and by season's end the viewing hour is simply called 'the magistrate's window.' All three stones stay as bright as ever, every signature accounted for.",
+      "notes": [
+        "A rank-blind refusal done gracefully; the temptation joke stays procedural, and the consequence is visible at the door.",
+        "Materials: game-data tier 20."
+      ]
+    },
+    "tier21-recover-the-knights-pendant": {
+      "tier": 21,
+      "name": "Recover the Knight’s Pendant",
+      "materials": "Pendant of dawn · Pendant of daybreak · Pendant of dusk",
+      "potionTier": "Elixir of Dawn / Elixir of daybreak / Elixir of twilight",
+      "description": "A recruit reports the old knight's pendant lost after the dawn muster, and regulation asks for a written report. Claire walks the field at the same hour for three mornings, and on the third the pendant glints where the morning colors come down. It is back at the recruit's throat before she files anything, and her report reads, in full: recovered, quietly, per regulation.",
+      "notes": [
+        "Inference (fan-written): the dawn muster is story dressing for the pendant-of-dawn tier; the job name's curly apostrophe is copied verbatim from the data file.",
+        "Materials: game-data tier 21 trio (daybreak/dusk pendants referenced as the chapel's remaining pair, not the plot's object)."
+      ]
+    },
+    "tier22-quarantine-the-cursed-jewellery": {
+      "tier": 22,
+      "name": "Quarantine the Cursed Jewellery",
+      "materials": "Cursed Ruby ring · Cursed Sapphire Ring · Cursed Topaz ring",
+      "potionTier": "Cursed Bloody Reagent / Ashy cursed reagents / Sunset cursed reagents",
+      "description": "The customs house surrenders a trader's box of cursed jewellery—ruby, sapphire, and topaz rings—and quarantine is procedure, not drama: separate boxes, labeled shelves, wax seals dated and initialed, and absolutely no one tries anything on, a rule Claire enforces on herself out loud. The rings wait their turn for the shrine, cursed as they arrived. Her closing line—'contained, cursed, and bored'—is quoted back to her for years.",
+      "notes": [
+        "Curses preserved (they remain brewing materials); the humor is at procedure's expense, not the curse's victims'.",
+        "Materials: game-data tier 22."
+      ]
+    },
+    "tier23-guard-the-demonic-horn-relics": {
+      "tier": 23,
+      "name": "Guard the Demonic Horn Relics",
+      "materials": "Demon`s red horn · Demon's blue horn · Demon's yellow horn",
+      "potionTier": "Demon's Minor HP Potion / Demon's minor MP potion / Demon's Minor SP potion",
+      "description": "Three demonic horns arrive at the chapel as relics—red, blue, and yellow—papered, sealed, and catalogued like anything sacred, because the paperwork is the point. The watch treats them with ceremony rather than fear, and it is tested the night a draft carries a curtain across a lit candle: the hem catches fire a hand's breadth from the yellow horn's shelf, and Claire has the candle out, the curtain smothered and pinned to its hook, and the incident logged before the shift bell finishes. Reading her incident entry, the demon courier adds her name to his own custody registry in ink, which the keeper swears is not done downstairs. Chain of custody, she agrees, is the same religion everywhere.",
+      "notes": [
+        "A fire-drill reflex earns the rarest courtesy—a demon's ink. Respect earned, not suspicion confirmed.",
+        "Materials: game-data tier 23 trio."
+      ]
+    },
+    "tier24-patrol-the-spore-quarantine": {
+      "tier": 24,
+      "name": "Patrol the Spore Quarantine",
+      "materials": "Red plague of spore · Blue plague of spore · Yellow plague of spore",
+      "potionTier": "Red Plague Serum / Blue plague serum / Yellow Plague Serum",
+      "description": "The spore quarantine holds red, blue, and yellow lots under unglamorous rules, and the patrol circuit is Claire's for the season: wax, cloth, ledger—in that order, every round. The season's one event is a recruit spotting a sweating wax seal two rounds after she trained him, and she walks him through the report twice so the third will be his own. The seal is remade before midday and the lot never unsettles; the commendation at season's end names them both, and she has him read it aloud once before marching them back to the circuit.",
+      "notes": [
+        "Dullness as achievement, with the training paying its one dividend; credit shared down the chain—the arc's thesis in one tier.",
+        "Materials: game-data tier 24 trio."
+      ]
+    },
+    "tier25-escort-the-fallen-tear-reliquary": {
+      "tier": 25,
+      "name": "Escort the Fallen Tear Reliquary",
+      "materials": "Lucifer`s red tears · Lucifer's blue tears · Lucifer's golden tears",
+      "potionTier": "Red Essence of Pride / Blue essence of pride / Gold Essence of Pride",
+      "description": "The season's highest escort is assigned by the crown's signature alone: the fallen tear reliquary, carrying Lucifer's red, blue, and gold tears to the shrine. Claire plans the route with a single river crossing and makes her one request—no honor guard, only a quiet cart at the reliquary's keepers' pace, slower than drill and exactly right. At the ford she walks ahead of the wheels; at the shrine steps the cleric who keeps such vigils signs with a hand as careful as her patrol, and asks her to stay for the first candle. She does, and that much never reaches any report at all.",
+      "notes": [
+        "Arc close: crown trust, then a shared candle; ties to Neet's T25 vigil and Dolbur's T25 march without repeating either.",
+        "Materials: game-data tier 25 trio."
+      ]
+    }
+  }
+}

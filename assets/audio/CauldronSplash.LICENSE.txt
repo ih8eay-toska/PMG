@@ -1,0 +1,6 @@
+Splash, small #2 by Joseph SARDIN
+https://bigsoundbank.com/splash-small-2-s1530.html
+CC0 1.0: https://creativecommons.org/publicdomain/zero/1.0/
+Candidate A approved for Potion Maker on 2026-10-20.
+Trimmed 0.11 seconds of leading ambience, retained 650 ms from the impact, limited peak to 0.28, and applied a 90 ms fade-out. PCM16 mono 48 kHz.
+Review original: C:/Users/Toska/Documents/Codex/2026-10-20/ex/cauldron-sfx-review/candidate-a.wav

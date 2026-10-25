@@ -7,9 +7,8 @@ for(let luck=0;luck<=10;luck++)for(let price=0;price<=4;price++)for(const mode o
  for(let tier=0;tier<25;tier++){
   const rates=FAMILIES.map((family,f)=>{
    const l=ladder(f,tier,{luck,price});let best=0;
-   const multiplier=mode==='conveyor'?ECONOMY.conveyor.emptySpeedMultiplier:1;
    const p=(1-(ECONOMY.conveyor.ticketProbability+ECONOMY.conveyor.solutionProbability*.75))/3/(tier+1);
-   const wait=mode==='conveyor'?ECONOMY.conveyor.spacing/(ECONOMY.conveyor.baseSpeed*multiplier*p):0;
+   const wait=mode==='conveyor'?1/(Math.min(20,3)*p):0;
    for(let target=0;target<l.values.length;target++){const r=evaluate(l,target);best=Math.max(best,r.expectedGold/(wait+r.actions*.5)*60);}
    assert.ok(Number.isFinite(best)&&best>0);return best;
   });

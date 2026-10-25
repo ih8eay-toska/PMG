@@ -1,0 +1,1667 @@
+{
+  "source": "Owner-provided extraction of the original Potion Maker game APK.",
+  "modifications": "Copied verbatim; no image editing or recompression. The largest available sprite export was chosen for material icons when present.",
+  "rights_note": "Original game artwork is credited to Sinsiroad and its artists. Redistribution terms were not independently verified.",
+  "assets": [
+    {
+      "path": "assets/original-apk/materials/life-material1.png",
+      "category": "materials",
+      "extraction_filename": "life-material1-sprite-resources-assets-875.png",
+      "width": 178,
+      "height": 174,
+      "format": "PNG",
+      "bytes": 35706,
+      "sha256": "84a634357c2ff439500cc520306e14cb15348f30f6a5bf17b52f6ad77e6652c8"
+    },
+    {
+      "path": "assets/original-apk/materials/life-material10.png",
+      "category": "materials",
+      "extraction_filename": "life-material10-sprite-resources-assets-913.png",
+      "width": 137,
+      "height": 178,
+      "format": "PNG",
+      "bytes": 28027,
+      "sha256": "5ace71044d336139c95229397bb708bae02ca9a81c6c96cb86b5e56190deb1c1"
+    },
+    {
+      "path": "assets/original-apk/materials/life-material11.png",
+      "category": "materials",
+      "extraction_filename": "life-material11-sprite-resources-assets-1062.png",
+      "width": 119,
+      "height": 160,
+      "format": "PNG",
+      "bytes": 32875,
+      "sha256": "96220c5734dc2cfa9ebe8a613908ff70ca1e9a0acbd57a841603581a933b549e"
+    },
+    {
+      "path": "assets/original-apk/materials/life-material12.png",
+      "category": "materials",
+      "extraction_filename": "life-material12-sprite-resources-assets-1050.png",
+      "width": 102,
+      "height": 105,
+      "format": "PNG",
+      "bytes": 13869,
+      "sha256": "522d31b6193947cfa3115596e0cab35cf8c90b7c06f164c172fe5db615cf513d"
+    },
+    {
+      "path": "assets/original-apk/materials/life-material13.png",
+      "category": "materials",
+      "extraction_filename": "life-material13-sprite-resources-assets-718.png",
+      "width": 118,
+      "height": 159,
+      "format": "PNG",
+      "bytes": 20286,
+      "sha256": "41fd1d5625a0f99b54038b1130ad3f6d295cace87549c5ee2133933017a9216c"
+    },
+    {
+      "path": "assets/original-apk/materials/life-material14.png",
+      "category": "materials",
+      "extraction_filename": "life-material14-sprite-resources-assets-993.png",
+      "width": 109,
+      "height": 176,
+      "format": "PNG",
+      "bytes": 21673,
+      "sha256": "c08fbd6290293e77f398a983a602301951dd4097ad6428263644f66785794293"
+    },
+    {
+      "path": "assets/original-apk/materials/life-material15.png",
+      "category": "materials",
+      "extraction_filename": "life-material15-sprite-resources-assets-896.png",
+      "width": 92,
+      "height": 159,
+      "format": "PNG",
+      "bytes": 14297,
+      "sha256": "4c6acbc874d389e83b5e152df87dd16d02ecc08c674d76c95dd39ff0a564ea3f"
+    },
+    {
+      "path": "assets/original-apk/materials/life-material16.png",
+      "category": "materials",
+      "extraction_filename": "life-material16-sprite-resources-assets-752.png",
+      "width": 151,
+      "height": 177,
+      "format": "PNG",
+      "bytes": 27907,
+      "sha256": "a1ddf512832be988b39227ec939e0bff3a188642ca8787f9e0ce333cbaf94e63"
+    },
+    {
+      "path": "assets/original-apk/materials/life-material17.png",
+      "category": "materials",
+      "extraction_filename": "life-material17-sprite-resources-assets-1145.png",
+      "width": 118,
+      "height": 166,
+      "format": "PNG",
+      "bytes": 22435,
+      "sha256": "8b420de5e1920dae7ff2d6438e7d655629b43700a0ec96db91dc1c6333dae0cb"
+    },
+    {
+      "path": "assets/original-apk/materials/life-material18.png",
+      "category": "materials",
+      "extraction_filename": "life-material18-sprite-resources-assets-1027.png",
+      "width": 149,
+      "height": 170,
+      "format": "PNG",
+      "bytes": 40565,
+      "sha256": "a99ad6169d07c3f8cdb6aa3f2f0511d63597c760dbf97fd50700c6830107427c"
+    },
+    {
+      "path": "assets/original-apk/materials/life-material19.png",
+      "category": "materials",
+      "extraction_filename": "life-material19-sprite-resources-assets-1142.png",
+      "width": 152,
+      "height": 146,
+      "format": "PNG",
+      "bytes": 30825,
+      "sha256": "101514d276339d81d0f2ba4ae2eb0a6e94bc623cd4b4dfc980ebfb5f084acf5d"
+    },
+    {
+      "path": "assets/original-apk/materials/life-material2.png",
+      "category": "materials",
+      "extraction_filename": "life-material2-sprite-resources-assets-877.png",
+      "width": 163,
+      "height": 168,
+      "format": "PNG",
+      "bytes": 33147,
+      "sha256": "1008366113343a1461cc9a95413913d1c249be386ab0256ee65ac0ea4a124817"
+    },
+    {
+      "path": "assets/original-apk/materials/life-material20.png",
+      "category": "materials",
+      "extraction_filename": "life-material20-sprite-resources-assets-712.png",
+      "width": 118,
+      "height": 186,
+      "format": "PNG",
+      "bytes": 36198,
+      "sha256": "581872e167964da62c3e7ad7d8117257717f742b93bd0a9d04ea987102326a76"
+    },
+    {
+      "path": "assets/original-apk/materials/life-material21.png",
+      "category": "materials",
+      "extraction_filename": "life-material21-sprite-resources-assets-1117.png",
+      "width": 170,
+      "height": 184,
+      "format": "PNG",
+      "bytes": 49673,
+      "sha256": "cf8fda790f7de446d780aeb1a5db7cb54b463b71c672a99e6122364e89053676"
+    },
+    {
+      "path": "assets/original-apk/materials/life-material22.png",
+      "category": "materials",
+      "extraction_filename": "life-material22-sprite-resources-assets-607.png",
+      "width": 152,
+      "height": 150,
+      "format": "PNG",
+      "bytes": 36697,
+      "sha256": "5a4d0f7d8d993f95d41b3de09b202c479d7cae97af16ef11382e078e14dfb9de"
+    },
+    {
+      "path": "assets/original-apk/materials/life-material23.png",
+      "category": "materials",
+      "extraction_filename": "life-material23-sprite-resources-assets-907.png",
+      "width": 164,
+      "height": 188,
+      "format": "PNG",
+      "bytes": 24812,
+      "sha256": "9c348098c832c7d13efff2e36e239ca864f1a3930731665dc0318232e9d59df0"
+    },
+    {
+      "path": "assets/original-apk/materials/life-material24.png",
+      "category": "materials",
+      "extraction_filename": "life-material24-sprite-resources-assets-1098.png",
+      "width": 173,
+      "height": 168,
+      "format": "PNG",
+      "bytes": 36397,
+      "sha256": "37c0f07aaebf4d3a47e7323851fb56d268cc7418fd5596d5976c1bf8ebe1dd46"
+    },
+    {
+      "path": "assets/original-apk/materials/life-material25.png",
+      "category": "materials",
+      "extraction_filename": "life-material25-sprite-resources-assets-938.png",
+      "width": 174,
+      "height": 178,
+      "format": "PNG",
+      "bytes": 39991,
+      "sha256": "d566dd0efbc31f36e5266e97d9680fd436fcf423ec700ab7eacc47188c7ba3b1"
+    },
+    {
+      "path": "assets/original-apk/materials/life-material3.png",
+      "category": "materials",
+      "extraction_filename": "life-material3-sprite-resources-assets-837.png",
+      "width": 127,
+      "height": 143,
+      "format": "PNG",
+      "bytes": 19574,
+      "sha256": "01786336b750e26658c56259449d4b06697e2fbdd8d9b61ddc0a4ba4cabc0ce2"
+    },
+    {
+      "path": "assets/original-apk/materials/life-material4.png",
+      "category": "materials",
+      "extraction_filename": "life-material4-sprite-resources-assets-959.png",
+      "width": 165,
+      "height": 162,
+      "format": "PNG",
+      "bytes": 17929,
+      "sha256": "7a163bb24934420ba56a23fea4563809541023ae81ce9f665356a3129063510f"
+    },
+    {
+      "path": "assets/original-apk/materials/life-material5.png",
+      "category": "materials",
+      "extraction_filename": "life-material5-sprite-resources-assets-1049.png",
+      "width": 135,
+      "height": 162,
+      "format": "PNG",
+      "bytes": 26380,
+      "sha256": "fcdf9dfebd4835bbaa6f61c308da6b25874aafd422b3c14d1545910ad72c5a84"
+    },
+    {
+      "path": "assets/original-apk/materials/life-material6.png",
+      "category": "materials",
+      "extraction_filename": "life-material6-sprite-resources-assets-1048.png",
+      "width": 141,
+      "height": 112,
+      "format": "PNG",
+      "bytes": 17015,
+      "sha256": "94188d66d48a36c8d1ba0b831b5dbb786566da7e5b44adb11da53dbbdb1ccd93"
+    },
+    {
+      "path": "assets/original-apk/materials/life-material7.png",
+      "category": "materials",
+      "extraction_filename": "life-material7-sprite-resources-assets-1144.png",
+      "width": 167,
+      "height": 179,
+      "format": "PNG",
+      "bytes": 28286,
+      "sha256": "7373567847e4b528a87bd363df895d626bc752a02dfd472dc8ccf61a1c2596de"
+    },
+    {
+      "path": "assets/original-apk/materials/life-material8.png",
+      "category": "materials",
+      "extraction_filename": "life-material8-sprite-resources-assets-802.png",
+      "width": 153,
+      "height": 167,
+      "format": "PNG",
+      "bytes": 23034,
+      "sha256": "e099a716c9e9688c44b42a2b61cbfb169e6b2754203fe7c5316857b56c6ce084"
+    },
+    {
+      "path": "assets/original-apk/materials/life-material9.png",
+      "category": "materials",
+      "extraction_filename": "life-material9-sprite-resources-assets-777.png",
+      "width": 166,
+      "height": 144,
+      "format": "PNG",
+      "bytes": 22990,
+      "sha256": "81f676d66fafcb599b7403534a9a4aaed8bc2bf3c8601ba5d1b410e9f775ab79"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material1.png",
+      "category": "materials",
+      "extraction_filename": "mana-material1-sprite-resources-assets-743.png",
+      "width": 178,
+      "height": 174,
+      "format": "PNG",
+      "bytes": 35201,
+      "sha256": "05dfc63b17136c8f539a15fcc0bfb72253496a20c028e678f83dfd0bbf8d6873"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material10.png",
+      "category": "materials",
+      "extraction_filename": "mana-material10-sprite-resources-assets-800.png",
+      "width": 137,
+      "height": 178,
+      "format": "PNG",
+      "bytes": 28324,
+      "sha256": "cfb74791a331b064e0c8875f1f1b8ff6fa4ce59e07ac4c32329964b13144bcc2"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material11.png",
+      "category": "materials",
+      "extraction_filename": "mana-material11-sprite-resources-assets-1097.png",
+      "width": 119,
+      "height": 160,
+      "format": "PNG",
+      "bytes": 33095,
+      "sha256": "9dd896401272cc50c37eef52074c3b2321900e008d864a1b84e1a0b3dfeafa83"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material12.png",
+      "category": "materials",
+      "extraction_filename": "mana-material12-sprite-resources-assets-755.png",
+      "width": 102,
+      "height": 105,
+      "format": "PNG",
+      "bytes": 13919,
+      "sha256": "52ddf7bd2f3325a459b312c9a9b6eaa2340b72fdad625af391e370a2b7ede95c"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material13.png",
+      "category": "materials",
+      "extraction_filename": "mana-material13-sprite-resources-assets-1149.png",
+      "width": 118,
+      "height": 159,
+      "format": "PNG",
+      "bytes": 21008,
+      "sha256": "34c97c48b9b6d43dfe93f469cde51ad3dff5fee0da48642eff66db30d5d13b88"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material14.png",
+      "category": "materials",
+      "extraction_filename": "mana-material14-sprite-resources-assets-1090.png",
+      "width": 109,
+      "height": 176,
+      "format": "PNG",
+      "bytes": 21938,
+      "sha256": "b67ae4565503d74724477d840ddceee9a2b672e13d47bc3d4dc51a123de3f390"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material15.png",
+      "category": "materials",
+      "extraction_filename": "mana-material15-sprite-resources-assets-614.png",
+      "width": 92,
+      "height": 159,
+      "format": "PNG",
+      "bytes": 14005,
+      "sha256": "09f7a2a2e28091667d7c191e0be0f5cb3e2f43f3700bbbfbfd8906633175d2b5"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material16.png",
+      "category": "materials",
+      "extraction_filename": "mana-material16-sprite-resources-assets-1127.png",
+      "width": 151,
+      "height": 177,
+      "format": "PNG",
+      "bytes": 28179,
+      "sha256": "07ecc9e8b5e349ecb7e2e498466681d003cbfff4b9cbcd0313e2e88ceabacd65"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material17.png",
+      "category": "materials",
+      "extraction_filename": "mana-material17-sprite-resources-assets-650.png",
+      "width": 118,
+      "height": 166,
+      "format": "PNG",
+      "bytes": 23480,
+      "sha256": "992b95f51cd77599faa5885348059749f3dda8c495817394dc9beea445b82277"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material18.png",
+      "category": "materials",
+      "extraction_filename": "mana-material18-sprite-resources-assets-799.png",
+      "width": 149,
+      "height": 170,
+      "format": "PNG",
+      "bytes": 41302,
+      "sha256": "7994bc2149c3b3d6c08480772b53ec80c321f0d2e5182ff252c45e27333e40e4"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material19.png",
+      "category": "materials",
+      "extraction_filename": "mana-material19-sprite-resources-assets-957.png",
+      "width": 152,
+      "height": 146,
+      "format": "PNG",
+      "bytes": 33451,
+      "sha256": "08b646636340bbc00197261adb7206b2396f6d089824bea086c319f511f8401d"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material2.png",
+      "category": "materials",
+      "extraction_filename": "mana-material2-sprite-resources-assets-924.png",
+      "width": 163,
+      "height": 168,
+      "format": "PNG",
+      "bytes": 33014,
+      "sha256": "4623c229d3aef354a1c6c17b6b1c577640e96271a6e8b48a0b785012a2f2d22c"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material20.png",
+      "category": "materials",
+      "extraction_filename": "mana-material20-sprite-resources-assets-662.png",
+      "width": 118,
+      "height": 186,
+      "format": "PNG",
+      "bytes": 36679,
+      "sha256": "04ad9af7c0f4798bd380fae2c6f2e8c6e0a6a28461af6e3174d912df2aa5a476"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material21.png",
+      "category": "materials",
+      "extraction_filename": "mana-material21-sprite-resources-assets-1158.png",
+      "width": 170,
+      "height": 184,
+      "format": "PNG",
+      "bytes": 49143,
+      "sha256": "e216462441cbf707c55cd909035d1f2c713065c1cebb46794ee651f93797ace5"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material22.png",
+      "category": "materials",
+      "extraction_filename": "mana-material22-sprite-resources-assets-1120.png",
+      "width": 152,
+      "height": 150,
+      "format": "PNG",
+      "bytes": 37058,
+      "sha256": "5f890029f861bfe1e739356b850d02555785aaba9752a1431d0321dced29e5ac"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material23.png",
+      "category": "materials",
+      "extraction_filename": "mana-material23-sprite-resources-assets-1002.png",
+      "width": 164,
+      "height": 188,
+      "format": "PNG",
+      "bytes": 25433,
+      "sha256": "3f18d62c1f2e8cfd0e1ff6a714896e3afaefecd88bda2e135d0d45067b8b7653"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material24.png",
+      "category": "materials",
+      "extraction_filename": "mana-material24-sprite-resources-assets-1133.png",
+      "width": 173,
+      "height": 168,
+      "format": "PNG",
+      "bytes": 36141,
+      "sha256": "46ea86d35958601fa806eb322faa844fd55a926337acb918a278b8043d02a8aa"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material25.png",
+      "category": "materials",
+      "extraction_filename": "mana-material25-sprite-resources-assets-660.png",
+      "width": 174,
+      "height": 178,
+      "format": "PNG",
+      "bytes": 41706,
+      "sha256": "5811e52bb097c9c7f6ec04070b86d4a2396378394100fff63dae50e9f1f324e9"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material3.png",
+      "category": "materials",
+      "extraction_filename": "mana-material3-sprite-resources-assets-833.png",
+      "width": 127,
+      "height": 143,
+      "format": "PNG",
+      "bytes": 20886,
+      "sha256": "a7213d4fb1dc6f7040294ae249d8bd807c18902216fa7b7e7c4d320e72e64b31"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material4.png",
+      "category": "materials",
+      "extraction_filename": "mana-material4-sprite-resources-assets-942.png",
+      "width": 165,
+      "height": 162,
+      "format": "PNG",
+      "bytes": 18085,
+      "sha256": "38033ad9a5589d308509f3288b4747f290c5f71bccea3ca8945ee1d53c21346b"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material5.png",
+      "category": "materials",
+      "extraction_filename": "mana-material5-sprite-resources-assets-688.png",
+      "width": 135,
+      "height": 162,
+      "format": "PNG",
+      "bytes": 26087,
+      "sha256": "1b450a2385cd3964220584113b54c3b56ab36b03e633eef475dcb6a74cd2017c"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material6.png",
+      "category": "materials",
+      "extraction_filename": "mana-material6-sprite-resources-assets-601.png",
+      "width": 141,
+      "height": 112,
+      "format": "PNG",
+      "bytes": 17506,
+      "sha256": "2ffe15de5975056291aeae1ae6af9e0346b9888e7b55d797870ac771b3e4cbd1"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material7.png",
+      "category": "materials",
+      "extraction_filename": "mana-material7-sprite-resources-assets-1029.png",
+      "width": 167,
+      "height": 179,
+      "format": "PNG",
+      "bytes": 28146,
+      "sha256": "841239a6e7798c4b52092502e38e39c7b2494600b5be737b453f0e5ad65b6089"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material8.png",
+      "category": "materials",
+      "extraction_filename": "mana-material8-sprite-resources-assets-857.png",
+      "width": 153,
+      "height": 167,
+      "format": "PNG",
+      "bytes": 23433,
+      "sha256": "2087521e6dc10d062a89606e9232b67376eed931468f4e15554f27523990aa63"
+    },
+    {
+      "path": "assets/original-apk/materials/mana-material9.png",
+      "category": "materials",
+      "extraction_filename": "mana-material9-sprite-resources-assets-711.png",
+      "width": 166,
+      "height": 144,
+      "format": "PNG",
+      "bytes": 23292,
+      "sha256": "6ee01764694fa402a39940ab6f07f80f0e01cda73a257d584bed30d07d4665cb"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material1.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material1-sprite-resources-assets-1024.png",
+      "width": 178,
+      "height": 174,
+      "format": "PNG",
+      "bytes": 34359,
+      "sha256": "2ee735f9d602fad38514b9b88a7b2b9cfea2b258eea3c139a35c1450ebe4c140"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material10.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material10-sprite-resources-assets-1136.png",
+      "width": 137,
+      "height": 178,
+      "format": "PNG",
+      "bytes": 28272,
+      "sha256": "4bcf601c2732e02315a018e5b4670a5fc3f971d693978ecbdc01c316ae430fec"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material11.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material11-sprite-resources-assets-845.png",
+      "width": 119,
+      "height": 160,
+      "format": "PNG",
+      "bytes": 33496,
+      "sha256": "58b78f3ebfc80092ec5f8d12867de30aabdec4a922c2ee8044df26628d9aed1f"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material12.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material12-sprite-resources-assets-983.png",
+      "width": 102,
+      "height": 105,
+      "format": "PNG",
+      "bytes": 14194,
+      "sha256": "a625e19bdaaf7eb317d28b7b8a85201270cf875d978a6bfed042b2dd29a74a64"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material13.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material13-sprite-resources-assets-971.png",
+      "width": 118,
+      "height": 159,
+      "format": "PNG",
+      "bytes": 19489,
+      "sha256": "da33a96dfbd278dab8a5271ef37c898443f9fb95b402ee93d06346e042708422"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material14.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material14-sprite-resources-assets-700.png",
+      "width": 109,
+      "height": 176,
+      "format": "PNG",
+      "bytes": 21667,
+      "sha256": "c09472d476d22243c55f5e55632ef397c5d3bc70df9d69e59e07850579c6bd82"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material15.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material15-sprite-resources-assets-1054.png",
+      "width": 92,
+      "height": 159,
+      "format": "PNG",
+      "bytes": 14114,
+      "sha256": "ecfe15121d580a54e297ea74bf35769031da10d12844cd248bfab828a8c7ccf3"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material16.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material16-sprite-resources-assets-687.png",
+      "width": 151,
+      "height": 177,
+      "format": "PNG",
+      "bytes": 28311,
+      "sha256": "da3de819816ecc82485738bc3087effd47b3bff9faba931d53a591acf4b5e221"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material17.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material17-sprite-resources-assets-792.png",
+      "width": 118,
+      "height": 166,
+      "format": "PNG",
+      "bytes": 22613,
+      "sha256": "ae7a52ba510b62eccb52fb37e2e5b431319711b3716db4441a3f65a09c63af75"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material18.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material18-sprite-resources-assets-979.png",
+      "width": 149,
+      "height": 170,
+      "format": "PNG",
+      "bytes": 40926,
+      "sha256": "b11f73d90b45dfd43254fb41da9239a77584e386ed8ad68c4c0d38b9807ef460"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material19.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material19-sprite-resources-assets-911.png",
+      "width": 152,
+      "height": 146,
+      "format": "PNG",
+      "bytes": 32583,
+      "sha256": "cefb58692cd253120a61c928f4f5120ac476794e3116530c78e49c30cbfedd28"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material2.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material2-sprite-resources-assets-679.png",
+      "width": 163,
+      "height": 168,
+      "format": "PNG",
+      "bytes": 31036,
+      "sha256": "adfdbfc6ffddc790b2415574bf7d2f7337de4d848aabb3f58ddfedf632cb12d2"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material20.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material20-sprite-resources-assets-991.png",
+      "width": 118,
+      "height": 186,
+      "format": "PNG",
+      "bytes": 35996,
+      "sha256": "2d70067d39eafe03aabf3d3a706adc670f14c5e4ebaec7dc4f977fce09ea1619"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material21.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material21-sprite-resources-assets-889.png",
+      "width": 170,
+      "height": 184,
+      "format": "PNG",
+      "bytes": 48798,
+      "sha256": "9be555d642ccf37f3354c6b652780df00e742cd502ba1e989d204f7f5dc64000"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material22.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material22-sprite-resources-assets-1023.png",
+      "width": 152,
+      "height": 150,
+      "format": "PNG",
+      "bytes": 37976,
+      "sha256": "820f3b43c73b6c3b0a0f66b1f38354d041b3b85d28b3c16ddb8749c687c2c885"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material23.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material23-sprite-resources-assets-1150.png",
+      "width": 164,
+      "height": 188,
+      "format": "PNG",
+      "bytes": 24640,
+      "sha256": "59e5345b042550b1aff351d8c6e0c7e8306ae1f71debf5fd41f86cca7c5b0b57"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material24.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material24-sprite-resources-assets-973.png",
+      "width": 173,
+      "height": 168,
+      "format": "PNG",
+      "bytes": 35927,
+      "sha256": "84edb035b55d39bf597a478f1afb31325aa0c2c1a379daa5cc1135d281b02441"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material25.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material25-sprite-resources-assets-786.png",
+      "width": 174,
+      "height": 178,
+      "format": "PNG",
+      "bytes": 41447,
+      "sha256": "1790c9870055079cae4417be42b6e28c7ab615c085f92fd5b1a56344f0ea5370"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material3.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material3-sprite-resources-assets-994.png",
+      "width": 127,
+      "height": 143,
+      "format": "PNG",
+      "bytes": 19916,
+      "sha256": "14be38966910fc4dbc47ecc40be4702b8223c5e0babbba90a95a146f521efeb6"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material4.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material4-sprite-resources-assets-683.png",
+      "width": 165,
+      "height": 162,
+      "format": "PNG",
+      "bytes": 18539,
+      "sha256": "e27f7ca94d36442713e37051c66b9a634fff70b28bb5f31ab0003c4860c5b7f9"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material5.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material5-sprite-resources-assets-1082.png",
+      "width": 135,
+      "height": 162,
+      "format": "PNG",
+      "bytes": 25064,
+      "sha256": "97c2bb91bc189714d65b5bc347001b95cefcf9279e5107c425610cdb5cbfc428"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material6.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material6-sprite-resources-assets-766.png",
+      "width": 141,
+      "height": 112,
+      "format": "PNG",
+      "bytes": 16982,
+      "sha256": "46a405686fb8a573a3e64245a7c1021c85c8c2144a180b0499041daba1fb9a1d"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material7.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material7-sprite-resources-assets-629.png",
+      "width": 167,
+      "height": 179,
+      "format": "PNG",
+      "bytes": 27488,
+      "sha256": "29bea716d193258cb699a0a3a300dc3708d88687fe2d2f9dc011cf09dbbac5ef"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material8.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material8-sprite-resources-assets-1175.png",
+      "width": 153,
+      "height": 167,
+      "format": "PNG",
+      "bytes": 23687,
+      "sha256": "f6cf870ef8e555167d6e02adb821d264648466baf2424519496208037b452226"
+    },
+    {
+      "path": "assets/original-apk/materials/stamina-material9.png",
+      "category": "materials",
+      "extraction_filename": "stamina-material9-sprite-resources-assets-1018.png",
+      "width": 166,
+      "height": 144,
+      "format": "PNG",
+      "bytes": 23038,
+      "sha256": "03e5d82314f0953d926450ccdafec43f2280cca1cbe694d4665095b7b4dff8f5"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion1.png",
+      "category": "potions",
+      "extraction_filename": "life-potion1.png",
+      "width": 105,
+      "height": 142,
+      "format": "PNG",
+      "bytes": 18749,
+      "sha256": "cb4874b90f21947bc037a22be63dbb4524848e0e17e7f3135259adeb70e1f139"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion10.png",
+      "category": "potions",
+      "extraction_filename": "life-potion10.png",
+      "width": 152,
+      "height": 166,
+      "format": "PNG",
+      "bytes": 23484,
+      "sha256": "83b0973da4072392371182d3dcf1a8c50efbcd74e3ed17433242448ae6d81de2"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion11.png",
+      "category": "potions",
+      "extraction_filename": "life-potion11.png",
+      "width": 104,
+      "height": 162,
+      "format": "PNG",
+      "bytes": 24305,
+      "sha256": "8056022f7d7243e71609cbc1eee4a398dbfd7e9d3b4cb4be4266a48ba998bce6"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion12.png",
+      "category": "potions",
+      "extraction_filename": "life-potion12.png",
+      "width": 140,
+      "height": 180,
+      "format": "PNG",
+      "bytes": 21324,
+      "sha256": "b1f8814ce7745d9249c6f91f9129e9f96d0ce8315220134290c0eab0d902fb33"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion13.png",
+      "category": "potions",
+      "extraction_filename": "life-potion13.png",
+      "width": 136,
+      "height": 188,
+      "format": "PNG",
+      "bytes": 21541,
+      "sha256": "2262a6bd79fcc8d63256fafc2a2f9736030960198c9b0bdef27877edc5456fd8"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion14.png",
+      "category": "potions",
+      "extraction_filename": "life-potion14.png",
+      "width": 96,
+      "height": 197,
+      "format": "PNG",
+      "bytes": 27305,
+      "sha256": "c0bbfb38e95321c673497bb94750283c9bc6478e2d0e3fa8ada50821f82de0c0"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion15.png",
+      "category": "potions",
+      "extraction_filename": "life-potion15.png",
+      "width": 127,
+      "height": 185,
+      "format": "PNG",
+      "bytes": 25056,
+      "sha256": "2112db8b0617cbae5a73d9efb5ccac7d8d371c93f608439c2385657d10964f77"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion16.png",
+      "category": "potions",
+      "extraction_filename": "life-potion16.png",
+      "width": 67,
+      "height": 172,
+      "format": "PNG",
+      "bytes": 16692,
+      "sha256": "f59d831f0f793e9427f6f6f84b2307071af290f0430ddccdf85d56ef7067767b"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion17.png",
+      "category": "potions",
+      "extraction_filename": "life-potion17.png",
+      "width": 117,
+      "height": 153,
+      "format": "PNG",
+      "bytes": 28619,
+      "sha256": "183fd61af2619f12417c4035eaf7c0edbcca7fa8dc709a763635aa8d0d7fc533"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion18.png",
+      "category": "potions",
+      "extraction_filename": "life-potion18.png",
+      "width": 146,
+      "height": 191,
+      "format": "PNG",
+      "bytes": 29544,
+      "sha256": "530a1be77a2e3775e56ae9e88e474870bac9d97032fab9350b577a3a1bf32df4"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion19.png",
+      "category": "potions",
+      "extraction_filename": "life-potion19.png",
+      "width": 104,
+      "height": 186,
+      "format": "PNG",
+      "bytes": 30716,
+      "sha256": "dfb5103f95133089c392c3b4ef7374f57a6e09ec0e2d69238d160acdbdaf7855"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion2.png",
+      "category": "potions",
+      "extraction_filename": "life-potion2.png",
+      "width": 75,
+      "height": 120,
+      "format": "PNG",
+      "bytes": 13016,
+      "sha256": "f7a819b855dc9cffa842d0161d44b6e8f0d0b3a8cb15894fd421f5f33abe90f1"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion20.png",
+      "category": "potions",
+      "extraction_filename": "life-potion20.png",
+      "width": 125,
+      "height": 162,
+      "format": "PNG",
+      "bytes": 30253,
+      "sha256": "7548080cefdc8d9220a45c2c9f875afb07045940e4c5e51160fe01064e9b080e"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion21.png",
+      "category": "potions",
+      "extraction_filename": "life-potion21.png",
+      "width": 108,
+      "height": 192,
+      "format": "PNG",
+      "bytes": 25077,
+      "sha256": "dc8aa6856ced9059f4aace0f7803f233b410f42399abaf566dabaf648d048c6b"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion22.png",
+      "category": "potions",
+      "extraction_filename": "life-potion22.png",
+      "width": 103,
+      "height": 183,
+      "format": "PNG",
+      "bytes": 33066,
+      "sha256": "e92c3376ac4f1dbc3ed563961f45e9f5023b9c7593b3fbef12aa787deea262da"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion23.png",
+      "category": "potions",
+      "extraction_filename": "life-potion23.png",
+      "width": 148,
+      "height": 188,
+      "format": "PNG",
+      "bytes": 25359,
+      "sha256": "ed0dfbfefa4053f0e0dcab0717d7030b00bfcf9585f0110675f4b836497b5118"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion24.png",
+      "category": "potions",
+      "extraction_filename": "life-potion24.png",
+      "width": 150,
+      "height": 190,
+      "format": "PNG",
+      "bytes": 27565,
+      "sha256": "b981be739a3af951da814fe4123c514886a3dd851668d7fe1143fc7f952d34d9"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion25.png",
+      "category": "potions",
+      "extraction_filename": "life-potion25.png",
+      "width": 150,
+      "height": 189,
+      "format": "PNG",
+      "bytes": 42772,
+      "sha256": "3a816907979f461d636ac002f0929da4ebc9436a88640bc6b0d3f025d3530634"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion3.png",
+      "category": "potions",
+      "extraction_filename": "life-potion3.png",
+      "width": 81,
+      "height": 139,
+      "format": "PNG",
+      "bytes": 15176,
+      "sha256": "7106715d58fe8aacc377e54cac6a28f372818c02eeaaa5ccd2ea54946347c92c"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion4.png",
+      "category": "potions",
+      "extraction_filename": "life-potion4.png",
+      "width": 102,
+      "height": 139,
+      "format": "PNG",
+      "bytes": 20784,
+      "sha256": "083d91c6c57e91f29393f5ef775b975a14c7771505ad09f472893339295b71dd"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion5.png",
+      "category": "potions",
+      "extraction_filename": "life-potion5.png",
+      "width": 140,
+      "height": 175,
+      "format": "PNG",
+      "bytes": 28804,
+      "sha256": "b0f918bb5846179d2436f379fde2b5a5ad5de2a8c13b7292d32c2de24bef22db"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion6.png",
+      "category": "potions",
+      "extraction_filename": "life-potion6.png",
+      "width": 171,
+      "height": 164,
+      "format": "PNG",
+      "bytes": 31309,
+      "sha256": "9ec5d1f11c54c310aa473e784c4dcc70b1741b5080c5acc88e42a86068275f9b"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion7.png",
+      "category": "potions",
+      "extraction_filename": "life-potion7.png",
+      "width": 100,
+      "height": 176,
+      "format": "PNG",
+      "bytes": 13985,
+      "sha256": "4822146542d7b848588bc1c614165ee1d2f0fcd537306a0803288174717dc6e7"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion8.png",
+      "category": "potions",
+      "extraction_filename": "life-potion8.png",
+      "width": 124,
+      "height": 182,
+      "format": "PNG",
+      "bytes": 23238,
+      "sha256": "f714b2cf18c516ad23b4aba8b6fd07463a36f4a09916d51b6eaa14718813927f"
+    },
+    {
+      "path": "assets/original-apk/potions/life-potion9.png",
+      "category": "potions",
+      "extraction_filename": "life-potion9.png",
+      "width": 92,
+      "height": 180,
+      "format": "PNG",
+      "bytes": 13806,
+      "sha256": "ee6ead53cb011d8b08ae15d6d6c9556cd4576d398c868e4a89566e7420c38fab"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion1.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion1.png",
+      "width": 105,
+      "height": 142,
+      "format": "PNG",
+      "bytes": 18689,
+      "sha256": "ff8c2c86f1a5a2c72b7e7a0cb4f4a5d9ccc05dc3fd1411c7001526899d6af769"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion10.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion10.png",
+      "width": 152,
+      "height": 166,
+      "format": "PNG",
+      "bytes": 23472,
+      "sha256": "c63f7d6e6ddc2bd79da0d5d4f60549d9d10af63d0ed077832e9c095e629cd315"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion11.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion11.png",
+      "width": 104,
+      "height": 162,
+      "format": "PNG",
+      "bytes": 24664,
+      "sha256": "0a75dbee7f46bc201847619012b60123947f48d3dee9d68bceb598dba7bc25a2"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion12.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion12.png",
+      "width": 140,
+      "height": 180,
+      "format": "PNG",
+      "bytes": 21731,
+      "sha256": "527f0c51dcf9a9c738187a9457f300f274b936a71b511c897df2cc3cea0eafe4"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion13.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion13.png",
+      "width": 136,
+      "height": 188,
+      "format": "PNG",
+      "bytes": 22237,
+      "sha256": "586aa12a176b1a7819a1f6cb72b04e694448b0df9e4fb71f3f22820e47f94a7d"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion14.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion14.png",
+      "width": 96,
+      "height": 197,
+      "format": "PNG",
+      "bytes": 27131,
+      "sha256": "4449b52fd26419abd96c905416ad731cfda6b54feb7c40057c55615d218cf987"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion15.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion15.png",
+      "width": 127,
+      "height": 185,
+      "format": "PNG",
+      "bytes": 25006,
+      "sha256": "6aa0e620fc76308c340597c0ce00d79cac9f76186062271b243dc0a55443b9cb"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion16.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion16.png",
+      "width": 67,
+      "height": 172,
+      "format": "PNG",
+      "bytes": 16976,
+      "sha256": "b3d5f686960e7d3c71a3d9bf0d874dd5cc367c3b0cd5cce62a8a2f1c74fc8557"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion17.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion17.png",
+      "width": 117,
+      "height": 153,
+      "format": "PNG",
+      "bytes": 28865,
+      "sha256": "272caa05b95d7f41847982ac722df1d5a64eba02229b56953d16371db1eee0a6"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion18.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion18.png",
+      "width": 146,
+      "height": 191,
+      "format": "PNG",
+      "bytes": 29741,
+      "sha256": "94a9f6217a54212f06a530720b41e1ffef869309962e6ecc0d63c7ac815ea7c1"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion19.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion19.png",
+      "width": 104,
+      "height": 186,
+      "format": "PNG",
+      "bytes": 30861,
+      "sha256": "b6d31f74744bdf2eb9e67a6e3ceda171ee3d245c810978be0ee8b945c875c534"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion2.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion2.png",
+      "width": 75,
+      "height": 120,
+      "format": "PNG",
+      "bytes": 13065,
+      "sha256": "2a1f80dcbd3147888211753724dbafad73459bf00658528447a544641b0dbfba"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion20.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion20.png",
+      "width": 125,
+      "height": 162,
+      "format": "PNG",
+      "bytes": 30415,
+      "sha256": "d1572f7eedca47487f7470f807bd5e074179d1007baf565d5282de630243d007"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion21.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion21.png",
+      "width": 108,
+      "height": 192,
+      "format": "PNG",
+      "bytes": 24985,
+      "sha256": "a153fcecfb61d1e2473dbe638341e57408ed93171553bb693d6309aac9ae40bb"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion22.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion22.png",
+      "width": 103,
+      "height": 183,
+      "format": "PNG",
+      "bytes": 33357,
+      "sha256": "d1ce11526f9a07ac72186aef02639f2c62fd1452579986f86387de8a6792b0d4"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion23.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion23.png",
+      "width": 148,
+      "height": 188,
+      "format": "PNG",
+      "bytes": 25298,
+      "sha256": "ab96a94cca7500fa74cecae3f1cd2ff19b5e8ea43216cebb42487f9b14dcb8af"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion24.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion24.png",
+      "width": 150,
+      "height": 190,
+      "format": "PNG",
+      "bytes": 27581,
+      "sha256": "80854cf84fd850fa5b84f33a5702248393f3e05f4074a9c3ec1ff6b35af42c6f"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion25.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion25.png",
+      "width": 150,
+      "height": 189,
+      "format": "PNG",
+      "bytes": 42964,
+      "sha256": "3e708c976eaae3ef4512031df4be445268b242a095f0f0783f810fa93c4211e4"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion3.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion3.png",
+      "width": 81,
+      "height": 139,
+      "format": "PNG",
+      "bytes": 15320,
+      "sha256": "80670b83f1ad6a6b78027fd9116a6f7d5a89b88504705417a82d88fa9b03c351"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion4.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion4.png",
+      "width": 102,
+      "height": 139,
+      "format": "PNG",
+      "bytes": 20994,
+      "sha256": "95c8be7db33d256353377724fee27c9da0f949fb2a2aaddceab7f68b2c069b12"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion5.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion5.png",
+      "width": 140,
+      "height": 175,
+      "format": "PNG",
+      "bytes": 28281,
+      "sha256": "7eed813dcdd40c934e50848d86ff3a243d18c71ff8ed9953c6f089a09300f2e7"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion6.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion6.png",
+      "width": 171,
+      "height": 164,
+      "format": "PNG",
+      "bytes": 30769,
+      "sha256": "44da22bba4297e5af4ecba715e76546e8b9c3b17c146423ffbf7717125151ab3"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion7.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion7.png",
+      "width": 100,
+      "height": 176,
+      "format": "PNG",
+      "bytes": 13892,
+      "sha256": "3ad2b12442ee97f5cb61129e802553846e4293ca72fd7e1c43bc38fa01e21520"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion8.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion8.png",
+      "width": 124,
+      "height": 182,
+      "format": "PNG",
+      "bytes": 22914,
+      "sha256": "28d9f1afafca68b981996967694e3ea95aefd946df0ab4a73fcc55a49834f96e"
+    },
+    {
+      "path": "assets/original-apk/potions/mana-potion9.png",
+      "category": "potions",
+      "extraction_filename": "mana-potion9.png",
+      "width": 92,
+      "height": 180,
+      "format": "PNG",
+      "bytes": 13409,
+      "sha256": "1611992c70af50bcf36500c797e03168f01f2b24481f08eb78abbba7fbdc315b"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion1.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion1.png",
+      "width": 105,
+      "height": 142,
+      "format": "PNG",
+      "bytes": 18372,
+      "sha256": "ec2821d0c50df777031a36f2c52911cf4cedaf6fcf34731e362b3886989f22c2"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion10.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion10.png",
+      "width": 152,
+      "height": 166,
+      "format": "PNG",
+      "bytes": 22223,
+      "sha256": "c1107b41023afc21f2686387fa233c826fe374a6b5d1edb6a400edca4aa2871c"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion11.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion11.png",
+      "width": 104,
+      "height": 162,
+      "format": "PNG",
+      "bytes": 22540,
+      "sha256": "1dca36cdef585cc0cdaebe34a0c8c1709b29ea0232a83ee0bffb9d5ee8ab717d"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion12.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion12.png",
+      "width": 140,
+      "height": 180,
+      "format": "PNG",
+      "bytes": 20136,
+      "sha256": "07569c1d92c14a4dfd49c69003cbc456cec0d00a99af5bea182bdc3fdf29bd9b"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion13.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion13.png",
+      "width": 136,
+      "height": 188,
+      "format": "PNG",
+      "bytes": 21271,
+      "sha256": "5ab1ec9cb67abf154b97641f0e1f861cacf673ccc2ffcad384307075dc3b0f90"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion14.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion14.png",
+      "width": 96,
+      "height": 197,
+      "format": "PNG",
+      "bytes": 26355,
+      "sha256": "4114fcf802618bc4db86e8960d9c34bc3204c933ae09a82778aa679600791d43"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion15.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion15.png",
+      "width": 127,
+      "height": 185,
+      "format": "PNG",
+      "bytes": 24238,
+      "sha256": "eb373abdc636f3f29a2429f56bfce5bfe9fa6a3c24932ddbe090277dfc3f6d62"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion16.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion16.png",
+      "width": 67,
+      "height": 172,
+      "format": "PNG",
+      "bytes": 16286,
+      "sha256": "71a9b4efb5e0abb200e87f96e4393448915462c1c46e96858c5db5910c710d04"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion17.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion17.png",
+      "width": 117,
+      "height": 153,
+      "format": "PNG",
+      "bytes": 28419,
+      "sha256": "163cf166e620ce0bd0ab522f0794509faa81ab48a84d88880c5bb7fdfd640ada"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion18.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion18.png",
+      "width": 146,
+      "height": 191,
+      "format": "PNG",
+      "bytes": 29611,
+      "sha256": "1cccafdd7b77607d9a68a53fa38f84a194746b7164fbb3d60b95fecaf479b00c"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion19.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion19.png",
+      "width": 104,
+      "height": 186,
+      "format": "PNG",
+      "bytes": 30692,
+      "sha256": "961ef6d02a1834679ea4a31afa7790d86d956d220fa53420ec1cf5219077afb6"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion2.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion2.png",
+      "width": 75,
+      "height": 120,
+      "format": "PNG",
+      "bytes": 13096,
+      "sha256": "cfcf32f6ef73586ac9ead70ba3ec683a6ebc3723b1a349acee0e9679428e96d8"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion20.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion20.png",
+      "width": 125,
+      "height": 162,
+      "format": "PNG",
+      "bytes": 30163,
+      "sha256": "e8feb4487748e091773d6cd397af7f3561728b4c72a6ad1f4712d2c322d5e804"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion21.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion21.png",
+      "width": 108,
+      "height": 192,
+      "format": "PNG",
+      "bytes": 24739,
+      "sha256": "7eb9b1dbf755b65b670e94030107c06c8fa2632729bad04b0ae58006dd73901c"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion22.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion22.png",
+      "width": 103,
+      "height": 183,
+      "format": "PNG",
+      "bytes": 32263,
+      "sha256": "d2ba9172580111a973adf1bd6710cf5c7243e5d7ba1a920e2bd5b82f618a9dbb"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion23.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion23.png",
+      "width": 148,
+      "height": 188,
+      "format": "PNG",
+      "bytes": 25377,
+      "sha256": "55a68bbec0020db3390b06c7e029d5ad0dc1895754babd01da7f2f184c8ea492"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion24.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion24.png",
+      "width": 150,
+      "height": 190,
+      "format": "PNG",
+      "bytes": 27489,
+      "sha256": "e9c5ec0d604e0c1f474ee0c94c3823020f5d910e8c023317a36741233a483f60"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion25.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion25.png",
+      "width": 150,
+      "height": 189,
+      "format": "PNG",
+      "bytes": 42552,
+      "sha256": "f07f9019bcc4ca2b135ecc5bfa579388cf9cadcd06032ce44e94d511375a65f1"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion3.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion3.png",
+      "width": 81,
+      "height": 139,
+      "format": "PNG",
+      "bytes": 15087,
+      "sha256": "65bbe062f01332b7ee08a5d797a735d6063ea3c845f1a94bc0f043dce2a61e56"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion4.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion4.png",
+      "width": 102,
+      "height": 139,
+      "format": "PNG",
+      "bytes": 20792,
+      "sha256": "8c9fd14150b0c6621449c9a7f3477f366623868f75ca9074184e2d89c5945238"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion5.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion5.png",
+      "width": 140,
+      "height": 175,
+      "format": "PNG",
+      "bytes": 28612,
+      "sha256": "b34178b70b11f685fce8d544033a981f816f0ba377338e3e5ac37a60642aa8f2"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion6.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion6.png",
+      "width": 171,
+      "height": 164,
+      "format": "PNG",
+      "bytes": 30356,
+      "sha256": "6bf9d86c65cbc0075bad08d184858d787d25cd16de90d6827afcf645c55e1e7c"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion7.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion7.png",
+      "width": 100,
+      "height": 176,
+      "format": "PNG",
+      "bytes": 13687,
+      "sha256": "ed3d121c29dae6ee7914305a8bfef1ad0f690f7c00b78fab0f19438f01d3e5f2"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion8.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion8.png",
+      "width": 124,
+      "height": 182,
+      "format": "PNG",
+      "bytes": 22241,
+      "sha256": "286e1ef3e1461fcb3bf4a8f01493528b9a617630a04a97a82357ac4bd88b845e"
+    },
+    {
+      "path": "assets/original-apk/potions/stamina-potion9.png",
+      "category": "potions",
+      "extraction_filename": "stamina-potion9.png",
+      "width": 92,
+      "height": 180,
+      "format": "PNG",
+      "bytes": 13304,
+      "sha256": "0be34e67a9ce3bef33ba4952a023fcb293970a73d7b6ab25abc278c57ab2a65f"
+    },
+    {
+      "path": "assets/original-apk/scene/cauldron.png",
+      "category": "scene",
+      "extraction_filename": "cauldron.png",
+      "width": 602,
+      "height": 224,
+      "format": "PNG",
+      "bytes": 126642,
+      "sha256": "38dc898a82149dfe00cf1a40c894a2b8a9ee58b6a1ff17e9078f9fe1f66b8b4a"
+    },
+    {
+      "path": "assets/original-apk/ui/achievements.png",
+      "category": "ui",
+      "extraction_filename": "achievements.png",
+      "width": 101,
+      "height": 76,
+      "format": "PNG",
+      "bytes": 11866,
+      "sha256": "8c28e63c4169fae3b277b3b10cb88f828a50ef528fa152b153db8d9f69e47e68"
+    },
+    {
+      "path": "assets/original-apk/ui/archive.png",
+      "category": "ui",
+      "extraction_filename": "archive.png",
+      "width": 106,
+      "height": 99,
+      "format": "PNG",
+      "bytes": 16598,
+      "sha256": "56c07a46f004981a41471fd9773ac584130829c6bf48f0ab4a9fdc5b4949072a"
+    },
+    {
+      "path": "assets/original-apk/ui/contest.png",
+      "category": "ui",
+      "extraction_filename": "contest.png",
+      "width": 105,
+      "height": 82,
+      "format": "PNG",
+      "bytes": 14849,
+      "sha256": "6d6d01b0b25a5bdfe96fbb5a47b16a8ee8b5b384f35da327f11975c3b1559695"
+    },
+    {
+      "path": "assets/original-apk/ui/costumes.png",
+      "category": "ui",
+      "extraction_filename": "costumes.png",
+      "width": 100,
+      "height": 81,
+      "format": "PNG",
+      "bytes": 15955,
+      "sha256": "d7513ecc13715bc6f44fe8038f7c6c22c683e0a04b4b660fa72a4ca9fbd7b276"
+    },
+    {
+      "path": "assets/original-apk/ui/explorations.png",
+      "category": "ui",
+      "extraction_filename": "explorations.png",
+      "width": 108,
+      "height": 82,
+      "format": "PNG",
+      "bytes": 16201,
+      "sha256": "b8451ff7da0288223770ed0aa59b586e93f7098531f58160955adbc89424d679"
+    },
+    {
+      "path": "assets/original-apk/ui/fairies.png",
+      "category": "ui",
+      "extraction_filename": "fairies.png",
+      "width": 87,
+      "height": 78,
+      "format": "PNG",
+      "bytes": 12400,
+      "sha256": "656dbe283f007da9ef02ae005022093e5b7a4283a8473352ad9864d1c147f444"
+    },
+    {
+      "path": "assets/original-apk/ui/help.png",
+      "category": "ui",
+      "extraction_filename": "help.png",
+      "width": 91,
+      "height": 73,
+      "format": "PNG",
+      "bytes": 6208,
+      "sha256": "ba8d323b6ca4ec731f07bbf06c4ce1c49fc024e674e48d132e551234083ed638"
+    },
+    {
+      "path": "assets/original-apk/ui/in-app-products.png",
+      "category": "ui",
+      "extraction_filename": "in-app-products.png",
+      "width": 113,
+      "height": 108,
+      "format": "PNG",
+      "bytes": 18443,
+      "sha256": "c8530eaa18ba811e4e6acd98acf6d19f5547d5e5129422d29b8b7da4d4336086"
+    },
+    {
+      "path": "assets/original-apk/ui/items.png",
+      "category": "ui",
+      "extraction_filename": "items.png",
+      "width": 95,
+      "height": 67,
+      "format": "PNG",
+      "bytes": 12340,
+      "sha256": "06c16195ba48a648071295cb847605e50cc8cbc89ebe2fd2cd9f07af5c2a29e8"
+    },
+    {
+      "path": "assets/original-apk/ui/mailbox.png",
+      "category": "ui",
+      "extraction_filename": "mailbox.png",
+      "width": 94,
+      "height": 88,
+      "format": "PNG",
+      "bytes": 10491,
+      "sha256": "e7c9973687369098292993c6d0f0f41c3f763f1039099046717deb3a72408972"
+    },
+    {
+      "path": "assets/original-apk/ui/settings.png",
+      "category": "ui",
+      "extraction_filename": "settings.png",
+      "width": 107,
+      "height": 86,
+      "format": "PNG",
+      "bytes": 16726,
+      "sha256": "a2876dc471d57f79e096ed53373d2c0d243c88bc091f8dc338bf9dbe084a2376"
+    },
+    {
+      "path": "assets/original-apk/ui/stats.png",
+      "category": "ui",
+      "extraction_filename": "stats.png",
+      "width": 77,
+      "height": 65,
+      "format": "PNG",
+      "bytes": 8454,
+      "sha256": "a0d0c54ee9a39e99455b64094e3ecdd8fdc1a5de9ae0fa5eb7958d55c776aa0e"
+    },
+    {
+      "path": "assets/original-apk/scene/brewing-background.png",
+      "category": "scene",
+      "extraction_filename": "background.png",
+      "width": 720,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 660397,
+      "sha256": "5941403fe0f1ce45887196b955e10655496c947e7a7e7e2551dc52e13c864847"
+    },
+    {
+      "path": "assets/original-apk/ui/brewing/potion-slot.png",
+      "category": "ui",
+      "extraction_filename": "small-item-slot.png",
+      "width": 119,
+      "height": 119,
+      "format": "PNG",
+      "bytes": 27418,
+      "sha256": "4d90218cfcc52e1ecb729cb1fe473af49ff6bb9637838382f6157a550c4c7ae5"
+    },
+    {
+      "path": "assets/original-apk/scene/cauldron-content.png",
+      "category": "scene",
+      "extraction_filename": "cauldron-content.png",
+      "width": 488,
+      "height": 179,
+      "format": "PNG",
+      "bytes": 54468,
+      "sha256": "d29ce6654428baab6befe48f0a13f4a2e99417c3325fd58d451bf1bc2fb37e0e"
+    }
+  ]
+}

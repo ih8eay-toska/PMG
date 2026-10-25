@@ -1768,14 +1768,14 @@
               "phase": "return",
               "speaker": "narrator",
               "portrait": "none",
-              "text": "The rest was quiet logistics. Kyle wound cloth around the ladder's metal rungs so nothing would ring - he had heard them ring half the climb up - and then held a still vigil for hours at a stretch while the rite ran."
+              "text": "The rest was quiet logistics. Kyle wound cloth around the ladder's metal rungs so nothing would ring, and then held a still vigil for hours at a stretch while the rite ran."
             },
             {
               "id": "mana-r9",
               "phase": "return",
               "speaker": "narrator",
               "portrait": "none",
-              "text": "He counted the shifts the way he counts anything: by the chick's silences. Seventeen, over the two nights - and the one he was proudest of came when the count ended, because it meant the hush held without him."
+              "text": "She counted the only way her ear can - by what interrupted: over the two nights of wrong verses, nothing rose from the wrapped rungs to answer, and the hush around her note did not shift once."
             },
             {
               "id": "mana-r10",
@@ -1983,6 +1983,1720 @@
               "speaker": "narrator",
               "portrait": "none",
               "text": "And the first sentence of every version of that week stays the same, in the almanac and everywhere it is copied: nobody owns wild things."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dolbur-t1-trailside-herb-hunt",
+      "traveler": "dolbur",
+      "tier": 1,
+      "job": "Trailside Herb Hunt",
+      "opening": [
+        {
+          "id": "op-01",
+          "phase": "opening",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The trailside herb jobs are waiting this morning, and the herb work is Dolbur's."
+        },
+        {
+          "id": "op-02",
+          "phase": "opening",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Trail day! Boots, pack frame, and rope, all checked by hand this morning. Point me at the herb, and I will make the trip worth talking about."
+        },
+        {
+          "id": "choice",
+          "phase": "choice",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Choose which herb sends Dolbur out.",
+          "note": "Only options whose material family is unlocked at this tier are shown. The opening prose above is written to hold whether one option or three are available. The chosen herb names the journey this telling follows; it is the story's focus, never a settlement award.",
+          "options": [
+            {
+              "material": "Red herb",
+              "teaser": "The clinic's red order is urgent, and Dolbur's known shortcut is technically a trail."
+            },
+            {
+              "material": "Blue herb",
+              "teaser": "Birds are working the blue patch from the air, and the assigned defense is one loud voice."
+            },
+            {
+              "material": "Yellow herb",
+              "teaser": "The yellow bundles are heavier than they look, and a single-trip record has already been announced."
+            }
+          ]
+        }
+      ],
+      "dispatch": [
+        {
+          "id": "trip-start",
+          "phase": "trip",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Dolbur takes the assignment and goes; whatever happens out there comes home with him."
+        },
+        {
+          "id": "trip-end",
+          "phase": "trip",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The trip is over. Open Dolbur's report to see what happened, and how it ended."
+        }
+      ],
+      "routes": [
+        {
+          "family": 0,
+          "familyLabel": "Life",
+          "material": "Red herb",
+          "confirmBeats": [
+            {
+              "id": "life-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The trail clinic wants red herbs, and Dolbur knows a shortcut that is technically a trail. He is halfway down it already."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "life-dep",
+              "phase": "departure",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "Red herbs, then! The shortcut is the shorter line, and I have run it plenty of times without complaint. The clinic will have its red well before the kettle sings."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "life-r1a",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts at the fork, reached twice: Dolbur had dropped halfway down the shortcut alone, then climbed back when a hiker - out for the day and glad of company that knows the hill - turned up at the sign."
+            },
+            {
+              "id": "life-r1b",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Confident from the test run, he offered the faster line - his boots had just proved it - and the hiker took it, pace set by the boots ahead."
+            },
+            {
+              "id": "life-r2",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The far ledge was the shortcut's honest half: shelf rock with nobody's care on it, a crossing only his boots had ever learned. The step there that held his weight all season went loose under an ankle it had never met."
+            },
+            {
+              "id": "life-r3",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The hiker went down hard on the shelf, hands first, ankle swelling in the time a step takes twice. The line had made his offer sound safe; now it had to own the difference."
+            },
+            {
+              "id": "life-r4",
+              "phase": "return",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "The report comes first, and it is mine: my shortcut, my line, and a crossing stone nobody tends. The ankle turned on all three. I am sorry. Hold still - the carry is mine, and the splint waits at the clinic."
+            },
+            {
+              "id": "life-r5",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Then he went back over the same crossing with a passenger: the hiker up on his back, every step on the line his own boots knew, and the apology running under it the whole way - low, steady, and pointed at himself."
+            },
+            {
+              "id": "life-r6",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "At the clinic, the splint came third: board, wrap, and strap set by his own hands at the senior's word. Then the desk got the same report he gave on the ledge - shortcut named, crossing named, fault taken twice."
+            },
+            {
+              "id": "life-r7",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The evening went into his kit: splint board first, then wraps, tape, a spare cord, and the list pinned where his hands could find it without asking his memory. That afternoon the only splint board in reach had belonged to the clinic."
+            },
+            {
+              "id": "life-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "A hiker's ankle turns on the far ledge, and the shortcut is the reason. He reports the wrong turn first, carries them back second, splint third, apology throughout. Every hunt after starts with a splint kit check, which the town clinic calls his finest invention and he calls overdue paperwork."
+            }
+          ]
+        },
+        {
+          "family": 1,
+          "familyLabel": "Mana",
+          "material": "Blue herb",
+          "confirmBeats": [
+            {
+              "id": "mana-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The blue-herb patch by the trail head is being raided bird by bird, and Dolbur has been assigned six rows to defend with his voice."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "mana-dep",
+              "phase": "departure",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "Blue herbs, then! Six rows, one voice, and an assignment I cannot refuse: I am the defense. The birds are about to get the loudest afternoon the patch has ever heard."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "mana-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts on the watch: he opened the defense at a volume that carries across three fields, calling the six rows to order one by one and declaring every leaf's interest to the whole valley."
+            },
+            {
+              "id": "mana-r2",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The birds came anyway, and they came on a timetable: every raid ran in the pause after a bellow. By the third pass it was plain - the noise had edges, and the raid lived in them."
+            },
+            {
+              "id": "mana-r3",
+              "phase": "return",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "Ha - my own timetable, reading me back! Fine: the volume ends, and a rival takes its place. Give me the rag - the red one, off the kit - and every carrot green going spare. Their schedule has company coming."
+            },
+            {
+              "id": "mana-r4",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "He built the rival standing up: greens bundled loud and bright, the rag's red end flying from the knot, posted one fence post over from the rows where the raiders would have to pick a side."
+            },
+            {
+              "id": "mana-r5",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Then the test: a raid dropped off the rail, caught the rag in its eye, and turned in one body. The six rows kept their leaf end to end - defended, that hour, by something that would hold still."
+            },
+            {
+              "id": "mana-r6",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "He let the evening finish it: two passersby asked, and he walked them through rag, greens, and knot step by step, then sent them off with spare greens and a dare."
+            },
+            {
+              "id": "mana-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Shouting only teaches the birds to wait, so he ties a decoy bundle - carrot tops, red rag, plenty of cheer - and the birds mob that instead. The patch survives, and the decoy trick spreads from base camp to base camp."
+            }
+          ]
+        },
+        {
+          "family": 2,
+          "familyLabel": "Stamina",
+          "material": "Yellow herb",
+          "confirmBeats": [
+            {
+              "id": "stamina-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The yellow-herb bundles are heavier than they look, and Dolbur has announced he will carry the biggest one in a single trip."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "stamina-dep",
+              "phase": "departure",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "Yellow herbs, then! The big bundle rides my back, and the yard heard me say the word 'single' out loud. The ropes get tied at full stretch - the way my shoulders like them."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "stamina-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts at the loading yard: the big bundle went on his back tied at a pull that made the yard's older shoulders whistle, and it held beautifully - for exactly as far as the last of the flat."
+            },
+            {
+              "id": "stamina-r2",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The snap came at the switchback in two voices - the belly line first, then the shoulder rope. The bundles let go down the slope, scattering yellow leaf over the grass, and nothing worth keeping was hurt except the announcement."
+            },
+            {
+              "id": "stamina-r3",
+              "phase": "return",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "Two ropes gone, one announcement left. Fine: the boast re-ties first, then the rope. The yard was promised delivery, not carry. The big load splits into three trips, each tied to what a rope bears."
+            },
+            {
+              "id": "stamina-r4a",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The salvage came first: both snapped lengths picked up off the slope, the injured ends cut clean, the good parts bound into one honest working line. A broken rope, he said, is a job with a beginning and an end."
+            },
+            {
+              "id": "stamina-r4b",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The new rule: a line earns its load by proving itself. Shorter than it started, it walked the switchback twice with nothing aboard, came back unchanged, and only then got handed something that mattered."
+            },
+            {
+              "id": "stamina-r5",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The split held: three loads under the rope's honest limit, walked in order with breath at the yard between trips. The two other carriers working the same switchback watched one round and split their own bundles before the afternoon ran out."
+            },
+            {
+              "id": "stamina-r6",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "At the gate he delivered the yard its herbs in three working loads and told the count himself: the single-carry promise failed and got named; the delivery promise held, and the thanks he earned that evening he did not argue with."
+            },
+            {
+              "id": "stamina-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The ropes snap, and something in him snaps politely along with them. He repairs cheerfully and splits the load into three trips; the three-trip walk-back rhythm becomes how the trail shares heavy loads."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dolbur-t2-mushrooms-at-base-camp",
+      "traveler": "dolbur",
+      "tier": 2,
+      "job": "Mushrooms at Base Camp",
+      "opening": [
+        {
+          "id": "op-01",
+          "phase": "opening",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The mushroom assignments are stacked on the camp table this morning, and the mushroom work is Dolbur's."
+        },
+        {
+          "id": "op-02",
+          "phase": "opening",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Pio! Camp day! Belt, boots, and rations, all checked by hand this morning. Point me at the mushrooms, and I will make the assignment worth retelling."
+        },
+        {
+          "id": "choice",
+          "phase": "choice",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Choose which mushroom sends Dolbur out.",
+          "note": "Only options whose material family is unlocked at this tier are shown. The opening prose above is written to hold whether one option or three are available. The chosen mushroom names the journey this telling follows; it is the story's focus, never a settlement award.",
+          "options": [
+            {
+              "material": "Sturdy mushroom",
+              "teaser": "Storm season arrived early, the old awning is crabby, and one promise covers dinner and the evening's weather."
+            },
+            {
+              "material": "Clever mushroom",
+              "teaser": "The camp mushrooms redraw themselves every dawn, and the scouts want to know if the moving means anything."
+            },
+            {
+              "material": "Lively mushroom",
+              "teaser": "A pan of lively mushrooms, one salt cellar, and a dinner where timing beats seasoning."
+            }
+          ]
+        }
+      ],
+      "dispatch": [
+        {
+          "id": "trip-start",
+          "phase": "trip",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Dolbur takes the assignment and gets to it; whatever happens out there comes home with him."
+        },
+        {
+          "id": "trip-end",
+          "phase": "trip",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The trip is over. Open Dolbur's report to see what happened, and how it ended."
+        }
+      ],
+      "routes": [
+        {
+          "family": 0,
+          "familyLabel": "Life",
+          "material": "Sturdy mushroom",
+          "confirmBeats": [
+            {
+              "id": "life-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Storm season is early and the base camp awning is older than everyone standing under it. Dolbur has promised the camp a mushroom dinner and a dry night."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "life-dep",
+              "phase": "departure",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "Sturdy mushrooms, then! Storm's coming early, the awning is older than everyone it shelters, and I promised the camp the evening meal and the weather. Both will behave by suppertime - the storm is invited to watch me keep them."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "life-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts under the old awning: the season's first wet gust ran through camp, the canvas swung, the frame groaned at its joints, and beneath that roof sat the cookfire, the pot, and both of the evening's promises."
+            },
+            {
+              "id": "life-r2",
+              "phase": "return",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "That roof is one shove from a wiped-out supper. Weight speaks before fire does tonight: the cargo crates to me, the lot, and the pot's clock keeps running. Both promises get kept in one piece."
+            },
+            {
+              "id": "life-r3",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The crates piled in two deep: wedged under the long frame at the sagging corner, boxed around the middle pole's feet, and walked along row by row with a shove until the canvas stopped swinging and stood still over the fire."
+            },
+            {
+              "id": "life-r4",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The pot kept its hour: caps checked one basket at a time, then in, exactly on the camp's evening clock. The fix asked the dinner for nothing - that was the point of doing the roof in daylight."
+            },
+            {
+              "id": "life-r5",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The storm arrived after lamps with its better push: gusts leaned on the canvas line, water sheeted off the awning, and the crates answered every shove - flame straight, boots dry, camp dry under its old roof."
+            },
+            {
+              "id": "life-r6",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Dinner ran the tables: bowls emptied, seconds went around, and the camp counted its kept promises on two fingers - fed, and dry, with the cookfire's light still leaning on the crates."
+            },
+            {
+              "id": "life-r7",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "By next morning the working order hung painted over the cookfire arch - weight before fire, crates before pots - with his belt tally signed underneath as the author."
+            },
+            {
+              "id": "life-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "He props the frame on sturdy crates and gets the caps into the pot on schedule. The awning holds, 'crate-brace first, cook after' is camp law with his name on the margin, and dinner is good."
+            }
+          ]
+        },
+        {
+          "family": 1,
+          "familyLabel": "Mana",
+          "material": "Clever mushroom",
+          "confirmBeats": [
+            {
+              "id": "mana-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Base camp's clever mushrooms rearrange themselves every dawn, and the scouts want to know whether the arrangement means anything. Dolbur treats the question seriously."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "mana-dep",
+              "phase": "departure",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "The clever patch, then! It moves house every dawn and the scouts want the meaning. I take that question personally: dawn to dawn, mark by mark, and their theories stand a test. Two dawns of eyes beat one dawn of guessing."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "mana-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts at the mushroom patch at first light: half the caps stood somewhere new to every eye in camp, and the scouts had theories before the mist burned off - wind, ground, or a good week coming."
+            },
+            {
+              "id": "mana-r2",
+              "phase": "return",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "Fine question, worth a real test: every cap gets marked where it stands tonight and again at tomorrow's dawn, and whatever holds its ground across both dawns gets its own look. Guesses are for card tables. Patches get tested."
+            },
+            {
+              "id": "mana-r3",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Chalked rings went down around every cap before dark. By next dawn the patch had shifted its majority again, fresh caps upright in the gaps, and one strip of dirt stood exactly as bare as the evening before."
+            },
+            {
+              "id": "mana-r4",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Dawn two moved everything else and the strip none. Laid side by side, the dawn maps agreed: the bare strip ran straight as a fence rail from the patch's near corner out past the drying racks."
+            },
+            {
+              "id": "mana-r5",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Wind's theory collapsed first: a shoving gust leaves no ruler-straight, always-bare lane behind. Twice bare and dead straight, the strip read as a decision, and decisions come from somewhere. The patch had started answering back."
+            },
+            {
+              "id": "mana-r6",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The only instrument the scouts never brought was a straight edge, so he brought the straight: cord over shoulder, stakes in hand, and the whole camp of theories parked at the patch's edge waiting on a walking test."
+            },
+            {
+              "id": "mana-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "He pegs a string through the line they keep refusing, and the string-line traces to a spring nobody knew was close. The scouts credit the mushrooms, and he lets them."
+            }
+          ]
+        },
+        {
+          "family": 2,
+          "familyLabel": "Stamina",
+          "material": "Lively mushroom",
+          "confirmBeats": [
+            {
+              "id": "stamina-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Dinner is lively mushrooms in the pan, which means timing matters and checking matters more. Dolbur has one job and one salt cellar."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "stamina-dep",
+              "phase": "departure",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "Lively mushrooms, then! One pan, one salt cellar, and a dinner that will not sit still. The rule tonight: eyes first, salt second, checking before anything touches a hot pan. I have been rehearsing my patient face all week."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "stamina-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts at the kitchen corner: pan singing, one salt cellar riding his belt, the lively caps going in like dice. He knew pans, said the hour, and the salt went in ahead of any checking at all."
+            },
+            {
+              "id": "stamina-r2",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Salted too young, the caps surrendered their water early and turned tight and shy in a pan ready to glorify them. The sizzle died to a hiss, and the kitchen smelled like an evening backing out of its own promise."
+            },
+            {
+              "id": "stamina-r3",
+              "phase": "return",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "Stop. That was my hand - salt before eyes, confidence before checking. The caps and the pan did nothing wrong; the mistake is mine in full. The batch goes to the wash, and the salt cellar gets exiled to the far counter."
+            },
+            {
+              "id": "stamina-r4a",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The salted batch went into clean water before the pan had stopped complaining, and came out honest again - not the evening's proudest serving, but a true one, and the camp's long tables took it without complaint."
+            },
+            {
+              "id": "stamina-r4b",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Batch two ran by the book: caps checked one by one before the salt got anywhere near. Then the pan opened its second act - the liveliest caps leaping the rim, and the loose lid bouncing like it wanted to join them."
+            },
+            {
+              "id": "stamina-r5",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "A hearth stone came down square on the lid and the performance stopped mid-air. The pan kept its cargo, the second batch cooked out clean, and the tables would never know how close it ran."
+            },
+            {
+              "id": "stamina-r6",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The stone stayed on post after the washing-up, holding the lid out of habit, and Dolbur told its story to anyone parked near the fire until the fire banked itself. A stone cannot blush; he pretended not to notice."
+            },
+            {
+              "id": "stamina-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "He salts the pan before checking whether they are ready - his documented way to lose dinner. He owns it at once, re-rinses, weights the lid with a stone, and dinner survives twice; the pot-lid stone is glued into the camp rulebook's margin as a lesson."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dolbur-t3-haul-the-orchard-harvest",
+      "traveler": "dolbur",
+      "tier": 3,
+      "job": "Haul the Orchard Harvest",
+      "opening": [
+        {
+          "id": "op-01",
+          "phase": "opening",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The orchard harvest jobs are waiting this morning, and the harvest work is Dolbur's."
+        },
+        {
+          "id": "op-02",
+          "phase": "opening",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Pio! Haul day! Gloves, straps, and solid boots, all checked by hand this morning. Point me at the orchard, and I will make the assignment worth retelling."
+        },
+        {
+          "id": "choice",
+          "phase": "choice",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Choose which fruit sends Dolbur out.",
+          "note": "Only options whose material family is unlocked at this tier are shown. The opening prose above is written to hold whether one option or three are available. The chosen fruit names the journey this telling follows; it is the story's focus, never a settlement award.",
+          "options": [
+            {
+              "material": "Fruit of power",
+              "teaser": "A fully loaded harvest cart, a dip that eats wheels somewhere ahead on the lane, and a volunteer who signed on before laying eyes on any of it."
+            },
+            {
+              "material": "Fruit of wisdom",
+              "teaser": "Rows that turn compasses, wagons that must cross them twice a day, and a leader-and-a-counter job that wants filling."
+            },
+            {
+              "material": "Fruit of spirit",
+              "teaser": "An annual single-haul legend across the spirit rows, and this year he walks the ground first, rope in hand, plan in head."
+            }
+          ]
+        }
+      ],
+      "dispatch": [
+        {
+          "id": "trip-start",
+          "phase": "trip",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Dolbur takes the assignment and gets to it; whatever happens out there comes home with him."
+        },
+        {
+          "id": "trip-end",
+          "phase": "trip",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The trip is over. Open Dolbur's report to see what happened, and how it ended."
+        }
+      ],
+      "routes": [
+        {
+          "family": 0,
+          "familyLabel": "Life",
+          "material": "Fruit of power",
+          "confirmBeats": [
+            {
+              "id": "life-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The harvest cart is fully loaded and the orchard lane has a dip in it that eats wheels. Dolbur volunteers before he has seen the lane."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "life-dep",
+              "phase": "departure",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "Fruit of power, then! One cart, loaded to the last apple, and a lane I have not met yet - I signed on first, I will look second. Wheels do not out-pull me, and the harvest is home by supper."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "life-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts at the lane mouth, where Dolbur met his assignment for the first time: down its middle, between the trees and the hedgerow, ran a long shallow dip with a taste for wheels."
+            },
+            {
+              "id": "life-r2",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The loaded cart went down into the dip trusting its hubs, and the dip kept them: both front wheels sank past the rims halfway across, and the whole harvest hung there between one tree row and the next."
+            },
+            {
+              "id": "life-r3",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "He freed it the honest way: boots braced on the hub, drawbar taken low, and walked it out wheel-length by wheel-length until the wheels bit firm ground - then pressed on, and the dip's far bowl took the full load again."
+            },
+            {
+              "id": "life-r4",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "One pull proved two problems: the dip charges by the pound, and the cart arrived fully loaded to pay. Every pass sinks at the same spot no matter whose shoulders haul. Muscle covers half of it, and weight is the other half."
+            },
+            {
+              "id": "life-r5",
+              "phase": "return",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "The dip was never fighting my shoulders - it was fighting the load. So everything climbs down before the next pull, and every hand carries its share across the dip to the far side. I take the first armful - the volunteer's share."
+            },
+            {
+              "id": "life-r6",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The cart came apart into arms: boxes, baskets, and sacks walked up the far side and stacked under the hedgerow until the bed stood bare, and the first pair of shoulders down belonged to him."
+            },
+            {
+              "id": "life-r7",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The next pull was a different animal: an empty cart, a long steadying grip, and the dip gave up its wheels without a fight - bare bed across on one go, with every hand and every box already waiting on the far side."
+            },
+            {
+              "id": "life-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The cart mires mid-way; he hauls it out alone, then makes everyone unload - including himself - before the second pull. 'Unload first' is painted on the orchard gate, and the mire has never eaten a cart since."
+            }
+          ]
+        },
+        {
+          "family": 1,
+          "familyLabel": "Mana",
+          "material": "Fruit of wisdom",
+          "confirmBeats": [
+            {
+              "id": "mana-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The wisdom rows are known to turn compasses, and the harvest wagons have to cross them twice a day. Someone has to lead and someone has to count."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "mana-dep",
+              "phase": "departure",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "Fruit of wisdom, then! The rows that turn compasses, twice a day, and the wagons with them. The plan is an old one: I lead, I count, and the count leads the wagons. Compasses can spin if they want; numbers hold still."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "mana-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts at the first of the day's two crossings: a wagon's compass spun its needle inside the wisdom rows, the driver steered by it, and the wagon left the trodden lane for the young trees on the far side."
+            },
+            {
+              "id": "mana-r2",
+              "phase": "return",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "Trust nothing that spins; trust the number you are on instead. The orchard's far fence has posts from corner to crossroad, and I will count them out loud - every wagon, every crossing. 'Post eight' turns, 'post nine' goes home."
+            },
+            {
+              "id": "mana-r3",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The proving run went on foot at the lead: every post got its number carried up the line of wagons, the young-tree wagon eased back onto the hard ground at 'post eight', and the second crossing went the same way, no needle consulted."
+            },
+            {
+              "id": "mana-r4",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The rear wagoner took the count on faith and then on practice: by the afternoon runs he was calling the posts up behind, same order, same rhythm, and the whole train crossed with its eyes on the posts instead of the spinning glass."
+            },
+            {
+              "id": "mana-r5",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "By evening the pattern was patient and plain: the needle wandered where the rows began, and the posts never did - the count and the hard ground agreed at the crossing, every run, every wagon, both directions."
+            },
+            {
+              "id": "mana-r6",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "He left the proof where the orchard could use it: the counted posts carrying their numbers at every crossing, and the wagon-width of the young-tree corner written down next to them for next season's needles to argue with."
+            },
+            {
+              "id": "mana-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Dolbur navigates the wagons by fence posts, counting aloud in order - his kind of arithmetic. The orchard paints a cart-lane exactly where his counting held, and the wagoneers call it the counting lane."
+            }
+          ]
+        },
+        {
+          "family": 2,
+          "familyLabel": "Stamina",
+          "material": "Fruit of spirit",
+          "confirmBeats": [
+            {
+              "id": "stamina-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The grand single haul across the spirit rows is a legend everyone talks Dolbur into every year. This time he walks the route first, with a rope in one hand and a plan in his head."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "stamina-dep",
+              "phase": "departure",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "Fruit of spirit, then! The grand single haul, the legend, the whole parade. This year the route gets walked before anything gets roped; the rope came along for company, the plan comes first. The ground negotiates on foot before it meets my shoulders."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "stamina-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts on the walk the legend always skipped: from the spirit rows' loading edge to the main road, the rope held in one hand, the other doing the prodding - every rut, root, and soft spot getting noted."
+            },
+            {
+              "id": "stamina-r2",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The walk did the math the legend never bothered with: one grand load meant one shared axle through every soft spot, double weight at the worst of them, and no second chance if anything leaned wrong. The rope stayed coiled."
+            },
+            {
+              "id": "stamina-r3",
+              "phase": "return",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "Decision, made on the spot and in the open: three loads this year, light ones, each with its own go - because the ground has now told me, in person, what weight costs around here. Rope stays coiled until the splitting is done."
+            },
+            {
+              "id": "stamina-r4",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Only then did the rope come out of its coil: the splitting stayed ahead of it on purpose, and three smaller, lighter rigs went out instead of one grand one, each anchored and checked while the legend's faithful watched from the rows."
+            },
+            {
+              "id": "stamina-r5",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Three times the loads went across the soft ground - first, second, third - and three times nothing leaned, nothing dropped, nothing needed rescuing. The day ran out of grandeur before it ran out of light."
+            },
+            {
+              "id": "stamina-r6",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The head row's veteran pulled the grand load every year the legend ran, arms folded, until the third rig took its pass clean. Then he named Dolbur in front of the queue and thanked him properly - like it cost him something."
+            },
+            {
+              "id": "stamina-r7",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The last rig came home empty on schedule. The veteran's thank-you went into Dolbur's careful pocket, next to the ones he actually keeps, and the middle of three clean lines got the worst attempt at modesty the orchard had seen."
+            },
+            {
+              "id": "stamina-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "He splits everything into three lighter loads before touching a single rope, and takes them through without a snap or a story. The trip-loading lesson lands with the orchard's head-row veteran, who thanks him by name, and he is unbearable about it for exactly a week."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dolbur-t4-scout-the-feathered-cliffs",
+      "traveler": "dolbur",
+      "tier": 4,
+      "job": "Scout the Feathered Cliffs",
+      "opening": [
+        {
+          "id": "op-01",
+          "phase": "opening",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The feathered cliff jobs are waiting this morning, and the cliff work is Dolbur's."
+        },
+        {
+          "id": "op-02",
+          "phase": "opening",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Pio! Cliff day! Harness, gloves, and grit, all checked by hand this morning. Point me at the cliffs, and I will make the assignment worth retelling."
+        },
+        {
+          "id": "choice",
+          "phase": "choice",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Choose which feathers send Dolbur out.",
+          "note": "Only options whose material family is unlocked at this tier are shown. The opening prose above is written to hold whether one option or three are available. The chosen feathers name the journey this telling follows; they are the story's focus, never a settlement award.",
+          "options": [
+            {
+              "material": "Rainbow bird feathers",
+              "teaser": "A fledgling crying down its spot on the feathered cliffs all morning, rainbow down drifting past without an answer, and a climber rechecking his rope on two people's request."
+            },
+            {
+              "material": "Bluebird feathers",
+              "teaser": "Caves behind the cliffs that answer every call wrong, and the bluebird-feather pickers asking for their paths back."
+            },
+            {
+              "material": "Wyvern feathers",
+              "teaser": "A scree heavy with old-shed wyvern feathers - winter-store weight, and heavy is exactly the trouble."
+            }
+          ]
+        }
+      ],
+      "dispatch": [
+        {
+          "id": "trip-start",
+          "phase": "trip",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Dolbur takes the assignment and gets to it; whatever happens out there comes home with him."
+        },
+        {
+          "id": "trip-end",
+          "phase": "trip",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The trip is over. Open Dolbur's report to see what happened, and how it ended."
+        }
+      ],
+      "routes": [
+        {
+          "family": 0,
+          "familyLabel": "Life",
+          "material": "Rainbow bird feathers",
+          "confirmBeats": [
+            {
+              "id": "life-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "A fledgling's cry has been coming off the feathered cliffs all morning, and the rainbow down drifting past it never answers. Dolbur is checking the rope twice, at two different people's insistence."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "life-dep",
+              "phase": "departure",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "Rainbow bird feathers, then! A fledgling's been crying all morning and nobody's cry answers it - I am going up to be the answer. The rope gets checked twice first, because two separate people made me swear."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "life-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts beneath the feathered cliffs with the morning still working: the fledgling's cry came off the rock in thin bursts, the rainbow down drifted past it going nowhere, and every ear on the ground was quietly failing to answer."
+            },
+            {
+              "id": "life-r2",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The rope got its two look-overs the way its two inspectors demanded: the first counted the bottom splice's turns out loud, the second said nothing and re-tightened one loop anyway, and any argument Dolbur had died under that second look."
+            },
+            {
+              "id": "life-r3",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Halfway to the cry, the cliff answered his hurry with a crumble: a hold came away in his hand, and the fall went to knee-height and stopped - the re-tightened loop taking all of it while his boots found the wall again."
+            },
+            {
+              "id": "life-r4",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "At the top of the sound he found the speaker: a fledgling the size of a fist, sitting on bare rock where a gust or a wrong hop had dropped it, wings half-grown and eyes very sure he was the problem."
+            },
+            {
+              "id": "life-r5",
+              "phase": "return",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "Right. You yelled at the entire valley and the entire valley yelled back wrong, so it is my turn. The old nest is two spans above you; we go up the slow way, you in one palm, the rope and I."
+            },
+            {
+              "id": "life-r6",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The last climb was the slowest one: one hand on rock, the other making a roof of fingers around the little cargo, until the old nest took its chick back and the cliff's morning argument stopped like a tap turned off."
+            },
+            {
+              "id": "life-r7",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Down again, he gave the two rope inspectors the story first - crumble, palm, quiet, end to end - and then went back up to tie a bright strip of his sash above the empty shelf, a keep-out for the next curious ear."
+            },
+            {
+              "id": "life-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "He climbs and re-nests the fledgling by hand. The fledgling is home, the ledge carries a warning flag so nobody serenades the same spot twice, and the two people who checked his rope get the first telling."
+            }
+          ]
+        },
+        {
+          "family": 1,
+          "familyLabel": "Mana",
+          "material": "Bluebird feathers",
+          "confirmBeats": [
+            {
+              "id": "mana-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The echo caves behind the cliffs return every sound wrong, and the bluebird-feather pickers want their paths back. Dolbur is asked to scout because he is loud enough to double-check."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "mana-dep",
+              "phase": "departure",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "Bluebird feathers, then! The caves answer every question wrong and the pickers want their paths back. My whole credential is loud, so I will shout the caves happy - and scout with my own two feet and hands."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "mana-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts at the first wrong answer: a picker shouted a hello into the dark and the dark handed it back from four directions, and the branch they took on the echo went two hundred paces before admitting it was nobody's path."
+            },
+            {
+              "id": "mana-r2",
+              "phase": "return",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "Nothing said inside these walls counts - the caves tell you what you hoped to hear. So I set a marked cord, one knot at every fork, and let the walls gossip. Ears lie; knots hold."
+            },
+            {
+              "id": "mana-r3",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The proving walk ran fork by fork: each branching got its knot, echoes ignored, and where the voices argued wide, the knots said otherwise and won - out at the daylight hole where the lost picker waited, the way home tied behind."
+            },
+            {
+              "id": "mana-r4",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The best part was the noise: he tied each knot and announced the caves had beaten him too, and by the third fork the pickers were copying - knot, bow, and a joke at their own expense, and pretending was done."
+            },
+            {
+              "id": "mana-r5",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "By dusk the cord had crossed every fork: the pickers walked their old paths one knot at a time, laughter carried farther than any echo, and the bluebird feather bags started filling the way they did before the caves got clever."
+            },
+            {
+              "id": "mana-r6",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "He left the deep branches the same way: knotted at every fork down to the dead ends, so the waiting picker from the daylight hole walked out alone by knots, reading them backward to the door, no voice required."
+            },
+            {
+              "id": "mana-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The caves scatter feathers and directions with equal mischief, so he ties his marked cord at each fork and laughs at himself for needing it, which makes it easier for everyone else to admit they need it too. The cord-path becomes the scouts' map of the caves."
+            }
+          ]
+        },
+        {
+          "family": 2,
+          "familyLabel": "Stamina",
+          "material": "Wyvern feathers",
+          "confirmBeats": [
+            {
+              "id": "stamina-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The scree below the cliffs is heavy with old-shed wyvern feathers - worth their weight in winter stores, and heavy is exactly the problem. Dolbur is going anyway."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "stamina-dep",
+              "phase": "departure",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "Wyvern feathers, then! The scree is overfull with old-shed treasure and heavy is the whole problem - which has never once stopped me. I will haul my share of winter stores up that slope, and I will do it loudly."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "stamina-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The report starts on the scree itself: a slope of loose flat stones that rolled under every boot, and a first load of old-shed feathers as wide as a door and heavier than the door had ever been."
+            },
+            {
+              "id": "stamina-r2",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The first climb taught the slope's real price: three steps up for every two back, boot-falls that traveled downhill on their own, and bundles set down wherever the shoulder gave out - every bundle far short of wherever the load was wanted."
+            },
+            {
+              "id": "stamina-r3",
+              "phase": "return",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "Hold on - I have been solving this like it is my problem alone, and every stop out here is somebody quitting early. The mountain stays cruel. My stops should not: marked from here up, for the next pair of boots."
+            },
+            {
+              "id": "stamina-r4",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "So the rest became the plan: every breather spot got its hip-high pile, spaced by the count of his own heavy steps, each stone in sight of the next - so a climber could judge how much climb was left."
+            },
+            {
+              "id": "stamina-r5",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Then the plan started working for other boots: carriers worked the slope pile to pile, and one gray-bearded carrier, pacing his progress by the piles, made the third pile his target, arrived breathing hard but whole, and went again without dropping a thing."
+            },
+            {
+              "id": "stamina-r6",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The last of the winter-store loads went up on the stones' schedule: pile by pile, breath by breath, the whole way marked for anyone whose knees had less argument left in them than his."
+            },
+            {
+              "id": "stamina-r7",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "He walked back down tapping each pile like a drum line, already composing the ballad of the mountain he had made friendlier - a song the scree's next visitors would get for free."
+            },
+            {
+              "id": "stamina-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "He marks every rest point with a distance-stone, his first plan built for other people's feet. The scree has mile-markers from that day on, and nobody drops a bundle short of a stone again."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dolbur-t5-guard-the-nesting-ridge",
+      "traveler": "dolbur",
+      "tier": 5,
+      "job": "Guard the Nesting Ridge",
+      "opening": [
+        {
+          "id": "op-01",
+          "phase": "opening",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The frost came early and did not send word ahead. By the first hard night, three wild clutches were off the high nests: one bright as a rumor, one singing to itself in the dark, one far too large for anyone's comfort."
+        },
+        {
+          "id": "op-02",
+          "phase": "opening",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The crag by the orchard caught them, on a shelf of stone already leaning toward winter. Nobody owns wild things. That is the law of the region, and also the excuse of anyone who owes a favor - and everyone here owed one."
+        },
+        {
+          "id": "op-03",
+          "phase": "opening",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "By the hour before dawn, five keepers held one freezing ledge - shrine keeper, warrior, knight, baker, challenger: giant opinions, empty hands. Every version keeps the same first line: the ledge would not wait, and neither, in the end, did anyone."
+        },
+        {
+          "id": "op-04",
+          "phase": "opening",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "The watch is held and the route check is done - twice. Point me at the egg whose night needs me most: the ridge gets my kind of honesty, loud where it helps and quiet where the eggs are sleeping."
+        },
+        {
+          "id": "choice",
+          "phase": "choice",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Choose the egg Dolbur's night will follow.",
+          "note": "Only options whose egg family is unlocked at this tier are shown; one, two, or three options are all valid states. This is one shared event, The Cold Roost: the opening lines are true whichever egg is chosen, and the chosen telling covers what the week did for all three clutches. No route is canon-locked; the other eggs stay available on later trips. The chosen egg is the story's focus, never a settlement award.",
+          "options": [
+            {
+              "material": "Rainbow bird's egg",
+              "teaser": "Bright as a rumor - in the open, where any frost in the region can find it."
+            },
+            {
+              "material": "Bluebird's egg",
+              "teaser": "Singing to itself in the dark - the smallest spot on the shelf, held by the smallest voice."
+            },
+            {
+              "material": "Wyvern's egg",
+              "teaser": "Far too large for anyone's comfort - and the stone under it is losing its grip on winter."
+            }
+          ]
+        }
+      ],
+      "dispatch": [
+        {
+          "id": "trip-start",
+          "phase": "trip",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Dolbur takes the assignment and goes; whatever happens out there comes home with him."
+        },
+        {
+          "id": "trip-end",
+          "phase": "trip",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The trip is over. Open Dolbur's report to see what happened, and how it ended."
+        }
+      ],
+      "routes": [
+        {
+          "family": 0,
+          "familyLabel": "Life",
+          "material": "Rainbow bird's egg",
+          "confirmBeats": [
+            {
+              "id": "life-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The rainbow clutch's crisis is not cold alone - it is custody. Wild things do not accept strange eggs on the strength of a speech about community."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "life-dep",
+              "phase": "departure",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "Route check done: the ledge is sound, the warmth has hands, the introductions will have their nose. The dark shift is mine - I have kept worse watches in better weather, and this one I keep without waking a single bird."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "life-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The week starts where the frost did its one useful thing: it knocked the rainbow clutch free of its high nest before anyone noticed it sat light there. By morning, the strange eggs lay cooling among ordinary ones, bright as sugar."
+            },
+            {
+              "id": "life-r2",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The crisis was not the cold: every nest on the crag belonged to somebody, and no speech talks wild keepers into adopting strangers. The daylight work split itself among four keepers - and the dark shift went unclaimed, until somebody claimed it loudly."
+            },
+            {
+              "id": "life-r3",
+              "phase": "return",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "The dark shift wants no fanfare: I bed downwind so my snoring keeps itself away from the ledge, and at dusk I count every clutch out loud until the number matches. The eggs sleep; the numbers confirm it."
+            },
+            {
+              "id": "life-r4",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Daisy took the warm half of the problem head-on: the ledge got bricked in oven-warmed straw, heat only, and every strange egg took its quarter-twist twice a day, turned the way she steadies dough through its rise."
+            },
+            {
+              "id": "life-r5",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The first blanket went out too thick and insulated worse - a quiet, egg-safe failure worth keeping on the record."
+            },
+            {
+              "id": "life-r6",
+              "phase": "return",
+              "speaker": "daisy",
+              "portrait": "daisy",
+              "text": "That is all right. We can try again another time."
+            },
+            {
+              "id": "life-r7",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "First evening came the weight test: whether the crag's stone would hold the rope work the week would need. Dolbur hauled himself up, then dropped the coil back down for the hands below. Kyle caught it one-handed."
+            },
+            {
+              "id": "life-r8",
+              "phase": "return",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "An introduction - that is all it was, and all it needed. Weight held, rope ran, and the catch waited at the bottom like a handshake with working hands."
+            },
+            {
+              "id": "life-r9",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Kyle's version is shorter and more precise: it was a catch. Between them the week now had its greeting, and both used it - an introduction, a catch - every shift that followed."
+            },
+            {
+              "id": "life-r10",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "While the dark shift counted, Neet ran the introductions: a feather from every host nest carried nose-to-nose, morning by morning, until the crag smelled of tenants instead of trespassers."
+            },
+            {
+              "id": "life-r11",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The dark shift kept itself orderly for the whole week: dusk counts until every number matched, the bed pitched downwind, and - the part nothing records - nothing bent, nothing snapped, nothing needed re-roping."
+            },
+            {
+              "id": "life-r12",
+              "phase": "return",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "Twice I fell asleep mid-count, and walked the cold hours after to make it up - per the record, 'watch kept.' I am quietly prouder of one uneventful week of that than of anything I have ever climbed."
+            },
+            {
+              "id": "life-r13",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "By the third morning the crag had stopped noticing which eggs were strange; the ledges rode warm, and the strange eggs now had neighbors who did not bother counting them twice."
+            },
+            {
+              "id": "life-r14",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Hatch week held the promise the frost made them all keep: the rainbow chicks broke shell into borrowed warmth, and the bluebird and wyvern eggs hatched without incident in the same days. Every egg of the frost came out of its shell safe."
+            },
+            {
+              "id": "life-r15",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The rainbow chicks fledged across the whole roost - among bluebirds, along the wyvern family's edges - until the roost considered itself mixed, and nobody could say afterwards which nest had started it."
+            },
+            {
+              "id": "life-r16",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Neet entered the roost's hatch-days in the shrine almanac - the first line of the three-version record - and before the company scattered, Claire named the crag and reclassified it protected, the patrol schedule going up on the spot in her handwriting."
+            },
+            {
+              "id": "life-r17",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The frost, by Claire's log, broke inside the week and left the orchard untouched - trellis, fence, and fruit without a lasting scar."
+            },
+            {
+              "id": "life-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The frost's lasting answer on this crag is a mixed roost: every spring, rainbow feathers turn up catching light along the orchard trellis, the town walks out to count them, and the roost stays famous for colors that got along."
+            }
+          ]
+        },
+        {
+          "family": 1,
+          "familyLabel": "Mana",
+          "material": "Bluebird's egg",
+          "confirmBeats": [
+            {
+              "id": "mana-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The bluebird clutch dulled overnight - shells gone from paint-bright to wet chalk, the song inside failing. Not an enemy, not a wind: a song losing its note."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "mana-dep",
+              "phase": "departure",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "So the crag's problem is a song. I cannot beat silence with volume, and I checked the route twice looking for something to carry - the assignment will be patience instead. Whatever the perimeter asks, it gets no humming from me. None."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "mana-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The frost week's trouble was one trouble in three places: the bluebird song failing, the other clutches cooling, and the far ledge already letting its biggest egg work loose."
+            },
+            {
+              "id": "mana-r2",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Dolbur offered, at volume, to captain the anti-frost expedition; the town's answer went to the perimeter instead - the quiet patrol around the ledge, the one post where being Dolbur was the hardest work he could still do right."
+            },
+            {
+              "id": "mana-r3",
+              "phase": "return",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "The perimeter is mine, then, and I took the drill back to base camp: a coin balanced on the boot, stillness, no humming, counted - eleven drops, eleven finds, which the practice counts a success on principle."
+            },
+            {
+              "id": "mana-r4",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "On the crag, the patrol went the way the drill promised: only the long side, only upwind, so his pacing carried sound away from the ledge instead of into it, and the snow got no humming back for its trouble."
+            },
+            {
+              "id": "mana-r5",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Neet's lullabies came out correct and the nest refused every one of them - three correct verses in a row went back duller than they arrived."
+            },
+            {
+              "id": "mana-r6",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "So the rite went wrong on purpose - flat where the song rises - until the note inside the shell matched her error and held."
+            },
+            {
+              "id": "mana-r7",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Within two nights the shells brightened back out of the wet chalk, and the hush around the ledge did the rest: Kyle cloth-wrapped the ladder's metal rungs so nothing rang, then held the stillness hour after hour while the rite ran."
+            },
+            {
+              "id": "mana-r8",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The rounds kept their own record of the hush: the cloth-wrapped ladder silent at the ledge's foot, and one patch the frost favored - the icy rock at the ladder's base, thicker on every pass Dolbur logged."
+            },
+            {
+              "id": "mana-r9",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Daisy ran the far side of the quiet: straw restocked on the ledges that leaned, for the other two clutches, the bakers' quarter muffled, and warm bread down so nobody had to shout a meal."
+            },
+            {
+              "id": "mana-r10",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Claire gave the quiet its law and its keeping: three nights of silence on her own schedule, and the rule written the moment it mattered - no voices past the tree line."
+            },
+            {
+              "id": "mana-r11",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "On the coldest night the ice took Kyle's ladder-foot sideways, and the rope that answered came down from the high path: Dolbur, out on the frost-line rounds, offloading his spare. Kyle caught the coil mid-slip."
+            },
+            {
+              "id": "mana-r12",
+              "phase": "return",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "Both of us called it an introduction, and neither of us called it a rescue - the log stands. My frost-line rounds had me up on the high path with a spare rope already on the shoulder when the ice started the argument."
+            },
+            {
+              "id": "mana-r13",
+              "phase": "return",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "That is what the coin on the boot bought: a walker who knows how to be quiet exactly where the quiet is needed. Eleven drops at base camp paid for the one catch that mattered."
+            },
+            {
+              "id": "mana-r14",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "By the week's end every egg of the frost had hatched safe, and the roost's hatch-days went into the shrine almanac in the same tidy hand - red, blue, and gold, side by side."
+            },
+            {
+              "id": "mana-r15",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The frost broke inside the week and left the orchard without lasting damage. When the quiet held, the crag went onto the patrol schedule in Claire's handwriting - named, protected - and the crag got to keep the watch that had answered it."
+            },
+            {
+              "id": "mana-r16",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The bluebird chick hatched healthy and spent the spring singing flat - healthy, then hushed, mornings led by one patient song - and its true voice came back only after winter, which the region keeps on file as the quiet season."
+            },
+            {
+              "id": "mana-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "What stayed from the quiet season is still working: the town walks the orchard path hushed at nesting time, and Neet's wrong-lullaby rite went into the shrine's records as a working rite."
+            }
+          ]
+        },
+        {
+          "family": 2,
+          "familyLabel": "Stamina",
+          "material": "Wyvern's egg",
+          "confirmBeats": [
+            {
+              "id": "stamina-hook",
+              "phase": "confirm",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The wyvern egg rolls loose along the failing ledge's lip while the mother circles the crag - wide, patient, and in no mood for committee - and the other two clutches shiver through the frost nearby."
+            }
+          ],
+          "departureBeats": [
+            {
+              "id": "stamina-dep",
+              "phase": "departure",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "Route check says winter first, climb second: frost-hardened rock, rope against it, and a count for everything above. Her decision is not mine to carry; I bring the work and the honest reports, and she keeps the schedule, the sky, and the say-so."
+            }
+          ],
+          "returnBeats": [
+            {
+              "id": "stamina-r1",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The ridge opened with its own rule: the move, whatever the crew wanted, would be offered and not taken - the ledge's owner was in the air around it, and her circling was the only committee the week would convene."
+            },
+            {
+              "id": "stamina-r2",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Claire answered the spectator problem the practical way: cordons closed the orchard path and every roofline that offered a view, and the region's people, to their lasting credit, stayed behind them."
+            },
+            {
+              "id": "stamina-r3",
+              "phase": "return",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "My climb report starts the way it should: one (1) piton, bent, on the first reach - told Kyle before my boots were down, re-roped, climb finished. Apologies climb well when they go first, and the climb worked half because of it."
+            },
+            {
+              "id": "stamina-r4",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "He had started before the argument finished, because he had heard her first - a sound he still files under 'stone getting annoyed' - and by the time the crew decided who would climb, the route had already been rigged and half-roped."
+            },
+            {
+              "id": "stamina-r5",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The rock below held the plan instead: Kyle anchored Dolbur from the storeroom's spare rope, winter-heavy and shoulder-proof, and counted everything that went up and anything that came down, the way he counts."
+            },
+            {
+              "id": "stamina-r6",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The egg was ready to move; the rock was ready to hold it; the move itself waited on her leave, and she was not nearly done circling."
+            },
+            {
+              "id": "stamina-r7",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The permission did not come from the crew. It came at first light, from the baker who had been up all night anyway: Daisy's dawn loaf went out the far side, to the warm stone at the quarry's foot."
+            },
+            {
+              "id": "stamina-r8",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "She circled once more above the stone, folded herself down beside the loaf, and the landing decided it. The egg, the nest, and the patience all got her answer at once."
+            },
+            {
+              "id": "stamina-r9",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Four carries, Kyle's count from the anchor line, and the brood went whole to the old quarry ledge: dry stone with no blasting in its history, room to turn around, and a mother whose next circle was drawn around them."
+            },
+            {
+              "id": "stamina-r10",
+              "phase": "return",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "And the honest part of the count: I announced two carries, and the plan itself said four. I corrected it at the guild, at the top of my voice, so the town now owns both numbers."
+            },
+            {
+              "id": "stamina-r11",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The carry baskets arrived lined with oven-warmed straw, heat only - the roost trick, on its second career as courier-bedding - and nothing that went up to the ledge or down to the quarry needed a word of complaint about the cold."
+            },
+            {
+              "id": "stamina-r12",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "When the gear came down, the last coil dropped from the ledge straight into Kyle's waiting hands - the week's rope-work ending the way it planned to, with a catch at the right end."
+            },
+            {
+              "id": "stamina-r13",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The hatch-days went into the shrine almanac as they came - one line beside the red and the blue, in the same tidy hand as the rest of the frost week's bookkeeping."
+            },
+            {
+              "id": "stamina-r14",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "Claire's cordons came down into something: the crag went onto the patrol schedule in her handwriting, and the quarry ledge went onto the map - a fixed point, marked on purpose."
+            },
+            {
+              "id": "stamina-r15",
+              "phase": "return",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The frost broke inside seven days and left the orchard untouched; the moved egg hatched safe at the quarry - the first brood its new household ever raised - and the rainbow and bluebird clutches hatched untroubled on their own ledges."
+            },
+            {
+              "id": "stamina-r16",
+              "phase": "return",
+              "speaker": "dolbur",
+              "portrait": "dolbur",
+              "text": "And my new rank, by the mother's own routing: she circles with me instead of at me, the only one she does that for. I have decided this is a rank, and my official position is that I hold it proudly."
+            },
+            {
+              "id": "stamina-out",
+              "phase": "outcome",
+              "speaker": "narrator",
+              "portrait": "none",
+              "text": "The crag lost a tenant and gained a neighbor: the wyvern household lives at the old quarry ledge now, fixed on the map and on the adjusted patrol route. And the first sentence of every version stays the same: nobody owns wild things."
             }
           ]
         }

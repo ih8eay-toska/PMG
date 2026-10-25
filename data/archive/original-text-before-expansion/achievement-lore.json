@@ -1,0 +1,306 @@
+{
+  "source": "PotionMaker-REA extracted English_245.bin localization (English.json) and Potions_318.bin table.",
+  "note": "These are the remake’s existing per-potion mastery records, not the APK achievement list. Titles use original localized potion names; no per-potion mastery lore was found in the APK. Empty lore is intentional.",
+  "entries": {
+    "0-0": {
+      "title": "Sample Red Potion",
+      "lore": ""
+    },
+    "0-1": {
+      "title": "Baby HP Potion",
+      "lore": ""
+    },
+    "0-2": {
+      "title": "Raspberry Potion",
+      "lore": ""
+    },
+    "0-3": {
+      "title": "Small HP Potion",
+      "lore": ""
+    },
+    "0-4": {
+      "title": "Collagen Potion",
+      "lore": ""
+    },
+    "0-5": {
+      "title": "Homemade HP Potion",
+      "lore": ""
+    },
+    "0-6": {
+      "title": "Normal HP Potion",
+      "lore": ""
+    },
+    "0-7": {
+      "title": "Carbonated Cherry Potion",
+      "lore": ""
+    },
+    "0-8": {
+      "title": "Large HP Potion",
+      "lore": ""
+    },
+    "0-9": {
+      "title": "Blessing HP Potion",
+      "lore": ""
+    },
+    "0-10": {
+      "title": "Strawberry Potion",
+      "lore": ""
+    },
+    "0-11": {
+      "title": "Elixir of Strength",
+      "lore": ""
+    },
+    "0-12": {
+      "title": "Shining HP Potion",
+      "lore": ""
+    },
+    "0-13": {
+      "title": "Advanced HP Potion",
+      "lore": ""
+    },
+    "0-14": {
+      "title": "Fire resistance Potion",
+      "lore": ""
+    },
+    "0-15": {
+      "title": "Enriched HP Potion",
+      "lore": ""
+    },
+    "0-16": {
+      "title": "Elixir of Rage",
+      "lore": ""
+    },
+    "0-17": {
+      "title": "Celestial HP Potion",
+      "lore": ""
+    },
+    "0-18": {
+      "title": "Ancient HP Potion",
+      "lore": ""
+    },
+    "0-19": {
+      "title": "Elixir of Legends",
+      "lore": ""
+    },
+    "0-20": {
+      "title": "Elixir of Dawn",
+      "lore": ""
+    },
+    "0-21": {
+      "title": "Cursed Bloody Reagent",
+      "lore": ""
+    },
+    "0-22": {
+      "title": "Demon's Minor HP Potion",
+      "lore": ""
+    },
+    "0-23": {
+      "title": "Red Plague Serum",
+      "lore": ""
+    },
+    "0-24": {
+      "title": "Red Essence of Pride",
+      "lore": ""
+    },
+    "1-0": {
+      "title": "Sample Blue Potion",
+      "lore": ""
+    },
+    "1-1": {
+      "title": "Baby MP Potion",
+      "lore": ""
+    },
+    "1-2": {
+      "title": "Blueberry Potion",
+      "lore": ""
+    },
+    "1-3": {
+      "title": "Small MP Potion",
+      "lore": ""
+    },
+    "1-4": {
+      "title": "Mineral Potion",
+      "lore": ""
+    },
+    "1-5": {
+      "title": "Homemade MP Potion",
+      "lore": ""
+    },
+    "1-6": {
+      "title": "Normal MP Potion",
+      "lore": ""
+    },
+    "1-7": {
+      "title": "Carbonated Soda Potion",
+      "lore": ""
+    },
+    "1-8": {
+      "title": "Large MP Potion",
+      "lore": ""
+    },
+    "1-9": {
+      "title": "Blessed MP Potion",
+      "lore": ""
+    },
+    "1-10": {
+      "title": "Grape Potion",
+      "lore": ""
+    },
+    "1-11": {
+      "title": "Elixir of Wisdom",
+      "lore": ""
+    },
+    "1-12": {
+      "title": "Shining MP Potion",
+      "lore": ""
+    },
+    "1-13": {
+      "title": "Advanced MP Potion",
+      "lore": ""
+    },
+    "1-14": {
+      "title": "Frost resistance Potion",
+      "lore": ""
+    },
+    "1-15": {
+      "title": "Enriched MP Potion",
+      "lore": ""
+    },
+    "1-16": {
+      "title": "Elixir of Calmness",
+      "lore": ""
+    },
+    "1-17": {
+      "title": "Celestial MP Potion",
+      "lore": ""
+    },
+    "1-18": {
+      "title": "Ancient MP Potion",
+      "lore": ""
+    },
+    "1-19": {
+      "title": "Elixir of Fantasy",
+      "lore": ""
+    },
+    "1-20": {
+      "title": "Elixir of Daybreak",
+      "lore": ""
+    },
+    "1-21": {
+      "title": "Cursed Ashen Reagents",
+      "lore": ""
+    },
+    "1-22": {
+      "title": "Demon's Minor MP Potion",
+      "lore": ""
+    },
+    "1-23": {
+      "title": "Blue Plague Serum",
+      "lore": ""
+    },
+    "1-24": {
+      "title": "Blue Essence of Pride",
+      "lore": ""
+    },
+    "2-0": {
+      "title": "Sample Yellow Potion",
+      "lore": ""
+    },
+    "2-1": {
+      "title": "Infant SP Potion",
+      "lore": ""
+    },
+    "2-2": {
+      "title": "Orange Potion",
+      "lore": ""
+    },
+    "2-3": {
+      "title": "Small SP Potion",
+      "lore": ""
+    },
+    "2-4": {
+      "title": "Vitamin Potion",
+      "lore": ""
+    },
+    "2-5": {
+      "title": "Homemade SP Potion",
+      "lore": ""
+    },
+    "2-6": {
+      "title": "Normal SP Potion",
+      "lore": ""
+    },
+    "2-7": {
+      "title": "Carbonated Lemon Potion",
+      "lore": ""
+    },
+    "2-8": {
+      "title": "Large SP Potion",
+      "lore": ""
+    },
+    "2-9": {
+      "title": "Blessed SP Potion",
+      "lore": ""
+    },
+    "2-10": {
+      "title": "Mysterious SP Potion",
+      "lore": ""
+    },
+    "2-11": {
+      "title": "Elixir of Energy",
+      "lore": ""
+    },
+    "2-12": {
+      "title": "Shining SP Potion",
+      "lore": ""
+    },
+    "2-13": {
+      "title": "Advanced SP Potion",
+      "lore": ""
+    },
+    "2-14": {
+      "title": "Electrical resistance Potion",
+      "lore": ""
+    },
+    "2-15": {
+      "title": "Enriched SP Potion",
+      "lore": ""
+    },
+    "2-16": {
+      "title": "Elixir of Vigor",
+      "lore": ""
+    },
+    "2-17": {
+      "title": "Celestial SP Potion",
+      "lore": ""
+    },
+    "2-18": {
+      "title": "Ancient SP Potion",
+      "lore": ""
+    },
+    "2-19": {
+      "title": "Elixir of Hero",
+      "lore": ""
+    },
+    "2-20": {
+      "title": "Elixir of Twilight",
+      "lore": ""
+    },
+    "2-21": {
+      "title": "Cursed Sunset Reagent",
+      "lore": ""
+    },
+    "2-22": {
+      "title": "Demon's Minor SP Potion",
+      "lore": ""
+    },
+    "2-23": {
+      "title": "Yellow Plague Serum",
+      "lore": ""
+    },
+    "2-24": {
+      "title": "Golden Essence of Pride",
+      "lore": ""
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "traveler": "charlotte",
+  "batch": "v2-stories-t1-5",
+  "chapters": [
+    {
+      "kind": "route", "tier": 1, "family": "Life", "material": "Red herb",
+      "job": "Arrange a Herbal Tea Delivery",
+      "hook": "A widowed cousin's winter mornings have been running thin, and she would refuse charity from anyone she knows. Charlotte is scheduling an anonymous Tuesday.",
+      "outcome": "She arranges a red-herb tea delivery under a false signature - 'a well-wisher' - with the best service and no publicity. The standing order holds all winter; the cousin never learns the donor, and Charlotte pretends not to know either, darling ♡, flawlessly."
+    },
+    {
+      "kind": "route", "tier": 1, "family": "Mana", "material": "Blue herb",
+      "job": "Arrange a Herbal Tea Delivery",
+      "hook": "The blue-herb tisane has been paired with the good china at every gathering this season, and the servants' hall has noticed. Charlotte has noticed too.",
+      "outcome": "She renews the estate's subscription quietly, the servants' hall first and the parlor second. Servants first ♡ - she calls it taste, and this once the word applies without modification."
+    },
+    {
+      "kind": "route", "tier": 1, "family": "Stamina", "material": "Yellow herb",
+      "job": "Arrange a Herbal Tea Delivery",
+      "hook": "The garden party order has doubled three days ahead of itself, and any delay now would be a tragedy with guests present. Charlotte takes out the household ledger.",
+      "outcome": "She fixes the delivery window herself and books the second cart from her own accounts. Nothing spills, nothing is late; the tea-merchant gives her his smallest bow and largest invoice, and she accepts both ♡."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Life", "material": "Sturdy mushroom",
+      "job": "Select Mushrooms for the Kitchen",
+      "hook": "The kitchen wants sturdy mushrooms, and the market's old mushroom woman has had a slow autumn. Charlotte is choosing a basket with her whole attention.",
+      "outcome": "Charlotte selects for the kitchen, and the old woman's basket gets sold first whether or not it is her turn - charity wears pearls on this street. The old woman's winter is sold out by November ♡, the estate's cellar is stocked, and nobody is the wiser."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Mana", "material": "Clever mushroom",
+      "job": "Select Mushrooms for the Kitchen",
+      "hook": "The clever mushroom has applied for a place above the estate's table, and Charlotte is conducting the auditions with a notebook.",
+      "outcome": "Proper tastings follow, with notes: her tasting ledger runs three words to the line - 'darling, no' / 'darling, yes' / 'darling, again.' The ledger becomes famously legible ♡, and caterers book by it as though it were law."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Stamina", "material": "Lively mushroom",
+      "job": "Select Mushrooms for the Kitchen",
+      "hook": "A lively mushroom jumped from the noble plate at dinner, and the scandal has outrun the stain. Charlotte is redesigning the coolroom before breakfast.",
+      "outcome": "The coolroom gets shelved low and broad so nothing can leap far, and the seating so nothing leaps near. Dignity is preserved ♡, and a note to the market closes the case: 'lively is for the pot, never the cloth.'"
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Life", "material": "Fruit of power",
+      "job": "An Afternoon at the Orchard",
+      "hook": "The orchard's apple fund is having a bad year, and the whole town can see it. Charlotte is hostessing a picnic that has a ledger in the hamper.",
+      "outcome": "Charlotte's afternoon at the orchard is a charity picnic on paper - everyone fed, everyone welcome, nobody audited. The apple fund survives its first bad year because she quietly underwrote the bins ♡, signing the ledger with a flourish that fools nobody and bothers nobody either."
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Mana", "material": "Fruit of wisdom",
+      "job": "An Afternoon at the Orchard",
+      "hook": "The parlor bowl has been dull since the last piece broke, and the wisdom fruit wears its best color at dusk. Charlotte goes to the orchard personally, which is an event.",
+      "outcome": "She chooses one fruit for the color and keeps it for the conversation. Guests arrive with gossip and leave with questions ♡, which she considers the bowl's finest decoration - herself excluded, obviously."
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Stamina", "material": "Fruit of spirit",
+      "job": "An Afternoon at the Orchard",
+      "hook": "The far orchard is worth the visit and is two towns of bad road away, and no hired carriage in town will drive it in one day. Charlotte packs the hamper herself.",
+      "outcome": "Wheels, patience, and weather unimpressed by anybody's title bring the route comfortably into one day, unhurried - Charlotte does not outsource an afternoon ♡. The coachman is thereafter legally entitled to brag about it."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Life", "material": "Rainbow bird feathers",
+      "job": "Feathers for an Elegant Fan",
+      "hook": "The retired music mistress is leaving for the coast, and a fan is the only present that says the right thing by saying nothing. Charlotte has found the right feathers.",
+      "outcome": "A fan of rainbow feathers, gathered from the orchard trellis's bright drift and washed soft, chosen one at a time, is given with a card signed 'Charlotte, obviously' ♡. The mistress cries properly, which was the entire intended effect."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Mana", "material": "Bluebird feathers",
+      "job": "Feathers for an Elegant Fan",
+      "hook": "The blue feathers for the new fan keep shifting hue between morning and dusk, and the fan-maker calls it a defect. Charlotte calls it a discovery.",
+      "outcome": "Stencil blue at noon and dusk violet by evening - the accident is declared intentional immediately ♡. The two-color fan is copied by three fan-makers within the season and credited, vaguely, to fashion itself."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Stamina", "material": "Wyvern feathers",
+      "job": "Feathers for an Elegant Fan",
+      "hook": "The estate's great fan has been re-ribbed four times and still wilts, and wyvern feather is rumored never to wear at all. Charlotte commissions the frame and attends the test herself.",
+      "outcome": "The wyvern-feather rib frame does not wilt, snap, or gossip; she tests it against one driving breeze herself ♡. It outlasts the season's fashions and one careless niece, and is expected to outlast the next."
+    },
+    {
+      "kind": "neutral", "tier": 5, "applies_to": "any",
+      "job": "Choose Eggs for the Estate", "surface": "job",
+      "hook": "The estate's decor order has come back wanting eggs for the mantle - natural, unremarkable. Charlotte is dressing for the mantelpiece consultation.",
+      "text": "The estate's decor order asks Charlotte to choose eggs 'for the mantle, natural, unremarkable.' Charlotte declines in the third person: 'Charlotte keeps nothing that was meant to hatch, darling ♡.' She visits the frost-roost fence once, at the correct distance, in the correct hat, and approves of the protection without ever mentioning she could have bought the whole ledge. Some commissions resolve themselves ♡."
+    }
+  ]
+}

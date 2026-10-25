@@ -1,0 +1,38 @@
+{
+  "event": "The Cold Roost",
+  "tier": 5,
+  "batch": "v2-stories-t1-5",
+  "premise": "Milestone layer for the shared Cold Roost event (M1 pilot, accepted). Display order per completion scene: shared opening, then the route telling for the selected family, then that traveler's viewpoint. The scene is stored for rereading in the replay journal; it does NOT replay automatically on later visits (see HANDOFF.md). The selected material is the story's focus, never a settlement award (source/core.js:269 awards no ingredient).",
+  "texts": [
+    {
+      "kind": "shared",
+      "name": "The Cold Roost - shared opening (spine S1)",
+      "surface": "event",
+      "text": "The frost came early and did not send word ahead. By the first hard night, three wild clutches - one bright as a rumor, one singing to itself in the dark, one far too large for anyone's comfort - had come down from the high nests to the one crag by the orchard, where the shelf of stone was already leaning toward winter. Nobody owns wild things. That is the law of the region and also the excuse of anyone who owes a favor, which is why a shrine keeper, a warrior, a knight, a baker, and a challenger all ended up keeping the same freezing watch before dawn - giant opinions, empty hands. Whoever wrote it down first used the same first line in every version: the ledge would not wait, and neither, in the end, did anyone."
+    },
+    {
+      "kind": "route",
+      "family": "Life",
+      "material": "Rainbow bird's egg",
+      "name": "The Cold Roost - Life telling",
+      "surface": "event",
+      "text": "The frost knocked the rainbow clutch loose of its high nest before anyone noticed it sat light there; by morning the strange eggs lay cooling among ordinary ones, bright as sugar - and the crisis was custody, because wild things do not accept strange eggs on the strength of a speech about community. Daisy bricked the ledge in oven-warmed straw, heat only, turning each strange egg a quarter-twist, twice a day, like dough through its rise; Neet carried a feather from every host nest nose-to-nose until the crag smelled of tenants, not trespassers. On the first evening Dolbur hauled up a rope and dropped the coil; Kyle caught it one-handed - 'an introduction,' they agreed, ever after. The rainbow chicks hatched into borrowed warmth and fledged across the whole roost, which considered itself mixed ever after; the bluebird and wyvern eggs hatched without incident the same week, so every egg of the frost came out of its shell safe. Neet entered the roost's hatch-days in the shrine almanac, first line of its three-version record; the crag - named, protected, with the schedule in Claire's hand - stayed famous every spring for rainbow feathers catching light along the orchard trellis; and the frost broke within the week, leaving the orchard - trellis, fence, and fruit - without a lasting scar."
+    },
+    {
+      "kind": "route",
+      "family": "Mana",
+      "material": "Bluebird's egg",
+      "name": "The Cold Roost - Mana telling",
+      "surface": "event",
+      "text": "The bluebird clutch dulled overnight - shells gone from paint-bright to wet chalk, the song inside failing. Not an enemy, not a wind: a song losing its note while the other two clutches cooled and a wyvern egg loosened on the ledge - one event, three needs. Neet led with correct lullabies; the nest refused each one. So she sang wrong on purpose - flat where the song rises - until the note inside matched her error and held; the loosened wyvern egg was settled safe against the stone under the night watch, and Daisy restocked the leaning ledges with warmed straw so the cooling clutches steadied. Kyle cloth-wrapped the ladder's rungs and kept stillness for hours; Dolbur dropped his spare rope down the icy rock when Kyle's foot slipped, and called it an introduction, not a rescue. The shells brightened in two nights; by the week's end every egg of the frost had hatched safe, and all three hatch-days went into the shrine almanac - red, blue, and gold - in the same tidy hand. Once the quiet could be trusted, the crag - named, protected - went onto the patrol schedule in Claire's hand; the frost broke inside the week and left the orchard without lasting damage. And the chick sang flat all spring - healthy, then hushed, which the region remembers as the quiet season - recovering its true song only after winter; Neet's wrong-lullaby rite went into the shrine's records as a working rite, and the town kept the custom of walking the orchard path hushed at nesting time."
+    },
+    {
+      "kind": "route",
+      "family": "Stamina",
+      "material": "Wyvern's egg",
+      "name": "The Cold Roost - Stamina telling",
+      "surface": "event",
+      "text": "The wyvern mother came down circling - wide, patient, in no mood for committee - while her egg rolled loose on the failing ledge and the other two clutches shivered through the frost. Claire's cordons closed the orchard path; Dolbur climbed the winter-hardened rock, one piton bending on the first reach - reported immediately, which is half of why the climb worked; Kyle anchored from his storeroom rope and counted everything. The move waited for permission: Daisy's dawn loaf went onto the warm stone at the quarry's foot, the mother landed, and the landing decided it. Four carries later the brood was whole at the old quarry ledge, the mother's next circle drawn around them, and the last coil dropped straight into Kyle's hands. The frost broke inside seven days and the orchard came through it without lasting damage; every egg of the three clutches hatched safe - rainbow, bluebird, wyvern - and the roost's hatch-days went into the shrine almanac in the same tidy hand. The crag was named and put onto the patrol schedule, the quarry ledge went onto the map - where the wyvern household still lives - and the first sentence of every version stayed the same: nobody owns wild things."
+    }
+  ]
+}

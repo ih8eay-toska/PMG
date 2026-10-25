@@ -57,36 +57,36 @@ const complete=(g,index,tier,family)=>{g.state.travelers[index].phase='offer';co
 const reload=state=>new PotionGame(sanitizeSave(JSON.parse(JSON.stringify(state))));
 
 // Tier 1-4 routes without a chapter keep the unconverted preview, completion, journal, reload and replay behavior.
-let g=baseGame(),preview=g.expeditionStoryPreview(1,0,0);
+let g=baseGame(),preview=g.expeditionStoryPreview(2,0,0);
 assert.equal(preview.kind,'route');
-assert.equal(preview.hook,stories.travelers.dolbur.routes['1']['0'].hook);
-let result=complete(g,1,0,0);
+assert.equal(preview.hook,stories.travelers.tirami.routes['1']['0'].hook);
+let result=complete(g,2,0,0);
 assert.equal(result.material.family,0);
 assert.equal(result.material.tier,0);
 assert.equal(result.story.kind,'route');
 assert.equal(result.story.sections.length,1);
 assert.equal(result.story.sections[0].kind,'outcome');
-assert.equal(result.story.sections[0].text,stories.travelers.dolbur.routes['1']['0'].outcome);
+assert.equal(result.story.sections[0].text,stories.travelers.tirami.routes['1']['0'].outcome);
 assert.equal(g.state.expeditionStories.length,1);
 assert.equal(g.state.expeditionStories[0].kind,'route');
 assert.equal(g.state.expeditionStories[0].seen,false);
 assert.equal(g.pendingExpeditionStory().kind,'route');
 assert.equal(g.expeditionJournal().routes.length,1);
 assert.equal(g.expeditionJournal().routes[0].journey,'');
-assert.equal(g.expeditionJournal().routes[0].outcome,stories.travelers.dolbur.routes['1']['0'].outcome);
+assert.equal(g.expeditionJournal().routes[0].outcome,stories.travelers.tirami.routes['1']['0'].outcome);
 let restored=reload(g.state);
 assert.equal(restored.state.expeditionStories.length,1);
 assert.equal(restored.expeditionJournal().routes[0].journey,'');
-assert.equal(restored.expeditionJournal().routes[0].outcome,stories.travelers.dolbur.routes['1']['0'].outcome);
+assert.equal(restored.expeditionJournal().routes[0].outcome,stories.travelers.tirami.routes['1']['0'].outcome);
 const pending=restored.pendingExpeditionStory();
 assert.equal(pending.sections.length,1);
 assert.equal(pending.sections[0].kind,'outcome');
-assert.equal(pending.sections[0].text,stories.travelers.dolbur.routes['1']['0'].outcome);
+assert.equal(pending.sections[0].text,stories.travelers.tirami.routes['1']['0'].outcome);
 assert.ok(restored.markExpeditionStorySeen(pending.recordIds));
 assert.equal(restored.pendingExpeditionStory(),null);
 let restoredAgain=reload(restored.state);
 assert.equal(restoredAgain.pendingExpeditionStory(),null);
-const replay=complete(restoredAgain,1,0,0);
+const replay=complete(restoredAgain,2,0,0);
 assert.equal(replay.story.kind,'route');
 assert.equal(replay.story.sections.length,1);
 assert.equal(replay.story.sections[0].kind,'outcome');
@@ -94,10 +94,10 @@ assert.equal(restoredAgain.state.expeditionStories.length,1);
 assert.equal(restoredAgain.expeditionJournal().routes.length,1);
 assert.equal(restoredAgain.expeditionJournal().routes[0].journey,'');
 
-// The other two Dolbur tier-1 routes carry their own outcomes.
+// The other two Tirami tier-1 routes carry their own outcomes.
 for(const family of [1,2]){
- g=baseGame();result=complete(g,1,0,family);
- const entry=stories.travelers.dolbur.routes['1'][String(family)];
+ g=baseGame();result=complete(g,2,0,family);
+ const entry=stories.travelers.tirami.routes['1'][String(family)];
  assert.equal(result.story.sections.length,1);
  assert.equal(result.story.sections[0].kind,'outcome');
  assert.equal(result.story.sections[0].text,entry.outcome);
@@ -177,25 +177,25 @@ assert.equal(restored.pendingExpeditionStory(),null);
 assert.equal(restored.expeditionJournal().events.length,1);
 assert.equal(restored.expeditionJournal().events[0].viewpoints.length,1);
 
-// A Dolbur tier-1 route settles offline and remains in the journal after reload.
-g=baseGame();g.state.travelers[1].phase='offer';const journeyInfo=g.combinedExpeditionInfo(1,0);
-assert.ok(g.startExpedition(1,journeyInfo.requestId,'combined',1000,0,{family:2,tier:0},null,0));
+// An unconverted tier-1 route settles offline and remains in the journal after reload.
+g=baseGame();g.state.travelers[2].phase='offer';const journeyInfo=g.combinedExpeditionInfo(2,0);
+assert.ok(g.startExpedition(2,journeyInfo.requestId,'combined',1000,0,{family:2,tier:0},null,0));
 const journeyReady=g.state.expedition.readyAt,offlineJourney=reload(g.state);
 const journeyEvents=offlineJourney.tick(journeyReady);
 assert.ok(journeyEvents.some(event=>event.kind==='expedition'&&event.story?.sections?.[0]?.kind==='outcome'));
 assert.equal(offlineJourney.expeditionJournal().routes.length,1);
 assert.equal(offlineJourney.expeditionJournal().routes[0].journey,'');
-assert.equal(offlineJourney.expeditionJournal().routes[0].outcome,stories.travelers.dolbur.routes['1']['2'].outcome);
+assert.equal(offlineJourney.expeditionJournal().routes[0].outcome,stories.travelers.tirami.routes['1']['2'].outcome);
 const journeyPending=offlineJourney.pendingExpeditionStory();
 assert.equal(journeyPending.sections.length,1);
 assert.equal(journeyPending.sections[0].kind,'outcome');
-assert.equal(journeyPending.sections[0].text,stories.travelers.dolbur.routes['1']['2'].outcome);
+assert.equal(journeyPending.sections[0].text,stories.travelers.tirami.routes['1']['2'].outcome);
 assert.ok(offlineJourney.markExpeditionStorySeen(journeyPending.recordIds));
 restored=reload(offlineJourney.state);
 assert.equal(restored.pendingExpeditionStory(),null);
 assert.equal(restored.expeditionJournal().routes[0].journey,'');
 
-console.log('Passed: story data mapping, tier 1-4 hooks/outcomes, Dolbur tier-1 outcomes, legacy Neet four-paragraph journeys, journal rereading, tier 5 event ordering, neutral tier 5 text, save/reload idempotency and offline settlement.');
+console.log('Passed: story data mapping, tier 1-4 hooks/outcomes, unconverted Tirami tier-1 outcomes, legacy Neet four-paragraph journeys, journal rereading, tier 5 event ordering, neutral tier 5 text, save/reload idempotency and offline settlement.');
 
 // Neet tier-1 chapter: reviewed script fidelity, new-game availability, all three routes, timer and legacy records.
 {
@@ -211,7 +211,7 @@ console.log('Passed: story data mapping, tier 1-4 hooks/outcomes, Dolbur tier-1 
   assert.deepEqual(route.confirmBeats,source.confirmBeats);assert.deepEqual(route.departureBeats,source.departureBeats);assert.deepEqual(route.returnBeats,source.returnBeats);
  }
  const fresh=new PotionGame();
- assert.deepEqual(fresh.unlockedExpeditionChapters().map(entry=>entry.id),[chapter.id]);
+ assert.deepEqual(fresh.unlockedExpeditionChapters().filter(entry=>entry.traveler==='neet').map(entry=>entry.id),[chapter.id]);
  assert.deepEqual(fresh.expeditionChapter(0,0).routes.map(route=>route.family),[0,1,2]);
  assert.equal(fresh.expeditionChapter(0,1),null);
  for(const tiers of [[0,0,0],[1,0,0],[1,1,0],[1,1,1]]){
@@ -287,7 +287,7 @@ console.log('Passed: story data mapping, tier 1-4 hooks/outcomes, Dolbur tier-1 
   const again=complete(loaded,0,1,family);assert.equal(again.story.chapterId,chapter.id);assert.equal(loaded.state.expeditionStories.length,1);assert.equal(loaded.state.expeditionStories[0].seen,false);assert.equal(loaded.expeditionChapterReport(0,1).chapterId,chapter.id);assert.equal(loaded.expeditionJournal().routes.length,1);
  }
  const offlineGame=baseGame();offlineGame.state.travelers[0].phase='offer';const offlineInfo=offlineGame.combinedExpeditionInfo(0,1);assert.ok(offlineGame.startExpedition(0,offlineInfo.requestId,'combined',1000,0,{family:2,tier:1},null,0));const offlineReady=offlineGame.state.expedition.readyAt,offline=reload(offlineGame.state);const offlineEvents=offline.tick(offlineReady);const offlineStory=offlineEvents.find(event=>event.kind==='expedition')?.story;assert.ok(offlineStory);assert.equal(offlineStory.chapterId,chapter.id);assert.deepEqual(offlineStory.beats,expectedBeats(2));assert.equal(offline.state.expedition,null);assert.equal(offline.expeditionJournal().routes[0].chapterId,chapter.id);assert.equal(offline.expeditionJournal().routes[0].outcome,lastText(2));assert.equal(offline.pendingExpeditionStory(),null);const offlineReport=offline.expeditionChapterReport(0,1);assert.equal(offlineReport.chapterId,chapter.id);assert.deepEqual(offlineReport.beats,expectedBeats(2));assert.ok(offline.markExpeditionStorySeen(offlineReport.recordIds));assert.equal(offline.expeditionChapterReport(0,1),null);assert.equal(reload(offline.state).expeditionChapterReport(0,1),null);
- const unconverted=baseGame();const oldResult=complete(unconverted,1,0,0),oldEntry=unconverted.expeditionJournal().routes[0];assert.equal(oldResult.story.chapterId,undefined);assert.equal(oldEntry.chapterId,null);assert.equal(oldEntry.chapterBeats,null);assert.equal(oldEntry.journey,'');assert.equal(oldEntry.outcome,stories.travelers.dolbur.routes['1']['0'].outcome);
+ const unconverted=baseGame();const oldResult=complete(unconverted,2,0,0),oldEntry=unconverted.expeditionJournal().routes[0];assert.equal(oldResult.story.chapterId,undefined);assert.equal(oldEntry.chapterId,null);assert.equal(oldEntry.chapterBeats,null);assert.equal(oldEntry.journey,'');assert.equal(oldEntry.outcome,stories.travelers.tirami.routes['1']['0'].outcome);
  console.log('Passed: chapter route beats for all three materials, exact outcomes, deferred chapter-report readiness, repeat-trip reset, journal replay data, save/reload and offline settlement, and unconverted-route fallback.');
 }
 
@@ -315,7 +315,7 @@ for(const[file,id,tier]of[
   assert.deepEqual(tiers(onlyFamily).expeditionChapter(0,jobTier).routes.map(route=>route.family),[family],'single unlocked route '+id+' '+family);
  }
  const allRoutes=tiers([jobTier,jobTier,jobTier]);assert.deepEqual(allRoutes.expeditionChapter(0,jobTier).routes.map(route=>route.family),[0,1,2]);
- assert.deepEqual(allRoutes.unlockedExpeditionChapters().map(entry=>entry.tier),Array.from({length:tier},(_,index)=>index+1));
+ assert.deepEqual(allRoutes.unlockedExpeditionChapters().filter(entry=>entry.traveler==='neet').map(entry=>entry.tier),Array.from({length:tier},(_,index)=>index+1));
  const draft=tiers([jobTier,0,0]);assert.equal(draft.setExpeditionChapterDraft(id,1),false);assert.equal(draft.setExpeditionChapterDraft(id,0),true);assert.deepEqual(draft.state.expeditionChapterDraft,{chapterId:id,family:0});
  const loadedDraft=reload(draft.state);assert.deepEqual(loadedDraft.state.expeditionChapterDraft,{chapterId:id,family:0});assert.equal(loadedDraft.clearExpeditionChapterDraft(id),true);assert.equal(loadedDraft.state.expeditionChapterDraft,null);
  assert.throws(()=>sanitizeSave({...draft.state,expeditionChapterDraft:{chapterId:id,family:3}}));
@@ -349,7 +349,7 @@ console.log('Passed: Neet tier-3 and tier-4 chapters match the reviewed scripts,
  assert.deepEqual(tiers([0,4,0]).expeditionChapter(0,4).routes.map(route=>route.family),[1]);
  assert.deepEqual(tiers([0,0,4]).expeditionChapter(0,4).routes.map(route=>route.family),[2]);
  assert.deepEqual(tiers([4,4,4]).expeditionChapter(0,4).routes.map(route=>route.family),[0,1,2]);
- assert.deepEqual(tiers([4,4,4]).unlockedExpeditionChapters().map(entry=>entry.tier),[1,2,3,4,5]);
+ assert.deepEqual(tiers([4,4,4]).unlockedExpeditionChapters().filter(entry=>entry.traveler==='neet').map(entry=>entry.tier),[1,2,3,4,5]);
  const route=family=>chapter.routes.find(entry=>entry.family===family),fullBeats=family=>[chapter.dispatch.at(-1),...route(family).returnBeats].map(beat=>({...beat})),last=family=>route(family).returnBeats.at(-1),neetViewpoint=family=>stories.travelers.neet.viewpoints[String(family)].text,laterBeats=family=>[chapter.dispatch.at(-1),{id:'viewpoint',phase:'viewpoint',speaker:'narrator',portrait:'none',text:neetViewpoint(family)}].map(beat=>({...beat})),laterSection=family=>({kind:'viewpoint',title:"Neet's viewpoint",text:neetViewpoint(family)});
  const g=tiers([4,4,4]);g.state.coins=1e6,ingredientsBefore=JSON.stringify([g.state.ingredients,g.state.ingredientsByFamily]);
  let result=complete(g,0,4,0),record=g.state.expeditionStories.find(entry=>entry.kind==='route');
@@ -379,4 +379,233 @@ console.log('Passed: Neet tier-3 and tier-4 chapters match the reviewed scripts,
  const otherAll=tiers([4,4,4]);otherAll.state.coins=1e6;
  for(const family of [0,1,2]){for(const entry of otherAll.state.expeditionStories.filter(entry=>entry.kind==='route'&&entry.chapterId===chapter.id))entry.seen=true;complete(otherAll,3,4,family);const later=complete(otherAll,0,4,family);assert.deepEqual(later.story.beats,laterBeats(family),'other-traveler-first viewpoint '+family);assert.deepEqual(later.story.sections,[laterSection(family)]);assert.equal(otherAll.state.expeditionStories.find(entry=>entry.kind==='route'&&entry.family===family).firstCompletion,false);const repeated=reload(otherAll.state),report=repeated.expeditionChapterReport(0,4);assert.deepEqual(report.beats,laterBeats(family),'other-traveler-first viewpoint after reload '+family);assert.deepEqual(report.sections,[laterSection(family)]);assert.equal(repeated.state.expeditionStories.find(entry=>entry.kind==='event'&&entry.family===family).seen,false);}
  console.log('Passed: Neet tier-5 chapter matches the reviewed script, unlocks from any tier-5 egg, exposes only unlocked options, keeps first family completions full, shows exact later viewpoints for Life, Mana and Stamina after same-traveler and other-traveler first completions, preserves unread stories, and survives reload with journal replay.');
+}
+
+// Dolbur tier 1-4 chapters: exact reviewed scripts, all twelve routes, tier/family gating,
+// drafts, absent dispatch, cost/one-trip/timer/sale, reports, reloads, legacy records and offline replay.
+{
+ const chapterData=JSON.parse(fs.readFileSync(path.join(root,'data','expedition-chapters.json'),'utf8'));
+ const gameData=JSON.parse(fs.readFileSync(path.join(root,'data','game-data.json'),'utf8'));
+ const familyIds={Life:0,Mana:1,Stamina:2};
+ const chapterIds={1:'dolbur-t1-trailside-herb-hunt',2:'dolbur-t2-mushrooms-at-base-camp',3:'dolbur-t3-haul-the-orchard-harvest',4:'dolbur-t4-scout-the-feathered-cliffs'};
+ const drafts={};
+ for(const tier of [1,2,3,4])drafts[tier]=JSON.parse(fs.readFileSync(path.join(root,'research','writing','expedition-stories','stories-v2','chapter-pilot-dolbur-t'+tier+'.json'),'utf8'));
+ const chapterFor=tier=>chapterData.chapters.find(chapter=>chapter.id===chapterIds[tier]);
+ const routeFor=(chapter,family)=>chapter.routes.find(route=>route.family===family);
+ const beatsFor=(chapter,family)=>[chapter.dispatch.at(-1),...routeFor(chapter,family).returnBeats].map(beat=>({...beat}));
+ const makeDolbur=(tiers=[0,0,0])=>{const g=new PotionGame();g.state.tiers=tiers;g.state.coins=100000;g.state.travelers[1].phase='away';return g;};
+
+ // Fidelity: every opening, choice, dispatch and route beat stays byte-identical to its reviewed draft.
+ for(const tier of [1,2,3,4]){
+  const chapter=chapterFor(tier),draft=drafts[tier];
+  assert.ok(chapter,'missing Dolbur tier '+tier);assert.equal(chapter.traveler,draft.traveler);assert.equal(chapter.tier,draft.tier);assert.equal(chapter.job,draft.job);
+  assert.equal(chapter.job,jobs.dolbur[tier-1].name,'Dolbur job '+tier);
+  assert.deepEqual(chapter.opening,draft.opening.beats,'Dolbur opening '+tier);assert.deepEqual(chapter.dispatch,draft.sharedDispatch,'Dolbur dispatch '+tier);
+  assert.deepEqual(chapter.routes.map(route=>route.family),draft.routes.map(route=>familyIds[route.family]),'Dolbur route order '+tier);
+  for(const[route,source]of chapter.routes.map((route,index)=>[route,draft.routes[index]])){
+   assert.equal(route.familyLabel,source.family);assert.equal(route.material,source.material);
+   assert.equal(route.material,gameData.families[route.family].materials[tier-1].name,'Dolbur material '+tier+' '+route.family);
+   assert.deepEqual(route.confirmBeats,source.confirmBeats,'Dolbur confirm '+tier+' '+route.family);
+   assert.deepEqual(route.departureBeats,source.departureBeats,'Dolbur departure '+tier+' '+route.family);
+   assert.deepEqual(route.returnBeats,source.returnBeats,'Dolbur return '+tier+' '+route.family);
+   const story=stories.travelers.dolbur.routes[String(tier)][String(route.family)];
+   assert.equal(route.confirmBeats[0].text,story.hook,'Dolbur hook '+tier+' '+route.family);
+   assert.equal(route.returnBeats.at(-1).text,story.outcome,'Dolbur outcome '+tier+' '+route.family);
+  }
+ }
+
+ // Any one family opens the tier; only its unlocked families are offered. The next tier stays closed.
+ for(const tier of [1,2,3,4]){
+  const chapter=chapterFor(tier),jobTier=tier-1;
+  const fresh=makeDolbur([0,0,0]);
+  if(tier===1)assert.deepEqual(fresh.expeditionChapter(1,0).routes.map(route=>route.family),[0,1,2]);
+  else assert.equal(fresh.expeditionChapter(1,jobTier),null,'Dolbur tier '+tier+' opens too early');
+  for(const family of [0,1,2]){
+   const tiers=[jobTier-1,jobTier-1,jobTier-1];tiers[family]=jobTier;
+   const g=makeDolbur(tiers);
+   assert.deepEqual(g.expeditionChapter(1,jobTier).routes.map(route=>route.family),[family],'Dolbur single route '+tier+' '+family);
+   assert.equal(g.setExpeditionChapterDraft(chapter.id,family),true);
+   assert.deepEqual(g.state.expeditionChapterDraft,{chapterId:chapter.id,family});
+  }
+  const all=makeDolbur([jobTier,jobTier,jobTier]);
+  assert.deepEqual(all.expeditionChapter(1,jobTier).routes.map(route=>route.family),[0,1,2]);
+ }
+
+ // Drafts persist across reloads, locked families are refused, and changing route costs nothing.
+ for(const tier of [1,2,3,4]){
+  const chapter=chapterFor(tier),jobTier=tier-1,g=makeDolbur([jobTier,jobTier,jobTier]);
+  assert.equal(g.setExpeditionChapterDraft(chapter.id,3),false);
+  for(const family of [0,1,2]){
+   assert.equal(g.setExpeditionChapterDraft(chapter.id,family),true);
+   assert.deepEqual(g.state.expeditionChapterDraft,{chapterId:chapter.id,family});
+   const loaded=reload(g.state);assert.deepEqual(loaded.state.expeditionChapterDraft,{chapterId:chapter.id,family});
+   assert.equal(loaded.clearExpeditionChapterDraft(chapter.id),true);assert.equal(loaded.state.expeditionChapterDraft,null);
+  }
+  const routeChange=makeDolbur([jobTier,jobTier,jobTier]),coins=routeChange.state.coins;
+  assert.equal(routeChange.setExpeditionChapterDraft(chapter.id,0),true);assert.equal(routeChange.setExpeditionChapterDraft(chapter.id,1),true);
+  assert.deepEqual(routeChange.state.expeditionChapterDraft,{chapterId:chapter.id,family:1});assert.equal(routeChange.state.coins,coins);assert.equal(routeChange.state.expedition,null);
+  if(jobTier>0){const locked=makeDolbur([jobTier,0,0]);assert.equal(locked.setExpeditionChapterDraft(chapter.id,1),false);assert.equal(locked.setExpeditionChapterDraft(chapter.id,0),true);}
+ }
+
+ // Dolbur must be present with an offer/active visit: absent dispatch refuses without charge.
+ for(const tier of [1,2,3,4]){
+  const jobTier=tier-1;
+  for(const family of [0,1,2]){
+   const absent=makeDolbur([jobTier,jobTier,jobTier]);absent.state.travelers[1].phase='away';absent.state.coins=1234;
+   const before=JSON.stringify(absent.state);assert.equal(absent.dispatchCombinedExpedition(1,jobTier,family,1000,()=>0),false,'Dolbur absent '+tier+' '+family);assert.equal(JSON.stringify(absent.state),before,'Dolbur absent charge '+tier+' '+family);
+  }
+ }
+
+ // Every route: charge, one-trip rule, 120s timer, matching sale saving, report, repeat and journal replay.
+ for(const tier of [1,2,3,4]){
+  const chapter=chapterFor(tier),jobTier=tier-1;
+  for(const family of [0,1,2]){
+   const g=makeDolbur([jobTier,jobTier,jobTier]);g.state.travelers[1].phase='offer';const info=g.combinedExpeditionInfo(1,jobTier),beforeCoins=g.state.coins;
+   assert.equal(g.dispatchCombinedExpedition(1,jobTier,family,1000,()=>0),true,'Dolbur dispatch '+tier+' '+family);
+   assert.equal(g.state.coins,beforeCoins-info.cost,'Dolbur cost '+tier+' '+family);assert.equal(g.state.expedition.focus,'combined');assert.equal(g.state.expedition.readyAt-1000,120000,'Dolbur timer '+tier+' '+family);assert.deepEqual(g.state.expedition.material,{family,tier:jobTier});assert.equal(g.state.expedition.chapterId,chapter.id,'Dolbur chapter marker '+tier+' '+family);
+   const activeState=JSON.stringify(g.state);assert.equal(g.dispatchCombinedExpedition(1,jobTier,family,2000,()=>0),false,'Dolbur one-trip '+tier+' '+family);assert.equal(JSON.stringify(g.state),activeState);
+   const readyAt=g.state.expedition.readyAt;assert.ok(g.collect(family,jobTier));assert.ok(g.sell(2000)>0);assert.equal(g.lastSaleExpeditionTimeSaved,5000,'Dolbur sale saving '+tier+' '+family);assert.equal(g.state.expedition.readyAt,readyAt-5000);
+   const result=g.settleExpedition(g.state.expedition.readyAt),route=routeFor(chapter,family),expected=beatsFor(chapter,family);
+   assert.ok(result?.story);assert.equal(result.story.chapterId,chapter.id);assert.equal(result.story.title,'Tier '+tier+' · '+chapter.job);assert.deepEqual(result.story.beats,expected,'Dolbur report beats '+tier+' '+family);assert.equal(result.story.sections[0].text,route.returnBeats.at(-1).text);
+   const record=g.state.expeditionStories[0];assert.equal(record.chapterId,chapter.id);assert.equal(record.seen,false);assert.equal(g.pendingExpeditionStory(),null);
+   const report=g.expeditionChapterReport(1,jobTier);assert.ok(report);assert.equal(report.chapterId,chapter.id);assert.deepEqual(report.beats,expected);assert.deepEqual(report.recordIds,[`route:dolbur:${jobTier}:${family}:chapter:${chapter.id}`]);
+   const entry=g.expeditionJournal().routes[0];assert.equal(entry.chapterId,chapter.id);assert.deepEqual(entry.chapterBeats,route.returnBeats);assert.equal(entry.outcome,route.returnBeats.at(-1).text);assert.equal(entry.journey,'');assert.equal(entry.job,chapter.job);
+   const loaded=reload(g.state);assert.deepEqual(loaded.expeditionChapterReport(1,jobTier).beats,expected);assert.deepEqual(loaded.expeditionJournal().routes[0].chapterBeats,route.returnBeats);
+   assert.ok(loaded.markExpeditionStorySeen(loaded.expeditionChapterReport(1,jobTier).recordIds));assert.equal(loaded.expeditionChapterReport(1,jobTier),null);assert.equal(reload(loaded.state).expeditionChapterReport(1,jobTier),null);
+   loaded.state.coins=1e6;const again=complete(loaded,1,jobTier,family);assert.equal(again.story.chapterId,chapter.id);assert.equal(loaded.state.expeditionStories.length,1);assert.equal(loaded.state.expeditionStories[0].seen,false);assert.equal(loaded.expeditionJournal().routes.length,1);assert.ok(loaded.expeditionChapterReport(1,jobTier));
+  }
+ }
+
+ // A fresh chapter trip reports even beside an older unread legacy Journey/Outcome record for the same route.
+ for(const tier of [1,2,3,4]){
+  const chapter=chapterFor(tier),jobTier=tier-1;
+  for(const family of [0,1,2]){
+   for(const legacySeen of [true,false]){
+    const g=makeDolbur([jobTier,jobTier,jobTier]);g.state.travelers[1].phase='offer';g.state.expeditionStories=[{kind:'route',traveler:'dolbur',tier:jobTier,family,at:500,seen:legacySeen}];
+    const legacy=JSON.parse(JSON.stringify(g.state.expeditionStories[0])),expected=beatsFor(chapter,family);
+    assert.equal(g.dispatchCombinedExpedition(1,jobTier,family,1000,()=>0),true);const settled=g.settleExpedition(121000);assert.ok(settled?.story);assert.equal(settled.story.chapterId,chapter.id);
+    assert.equal(g.state.expeditionStories.length,2);assert.deepEqual(g.state.expeditionStories[0],legacy,'legacy record preserved '+tier+' '+family);assert.equal(g.state.expeditionStories[0].seen,legacySeen);
+    const chapterRecord=g.state.expeditionStories[1];assert.equal(chapterRecord.chapterId,chapter.id);assert.equal(chapterRecord.seen,false);
+    const report=g.expeditionChapterReport(1,jobTier);assert.ok(report);assert.equal(report.chapterId,chapter.id);assert.deepEqual(report.beats,expected);
+    const pending=g.pendingExpeditionStory();
+    if(legacySeen)assert.equal(pending,null);
+    else{assert.ok(pending);assert.equal(pending.chapterId,undefined);assert.deepEqual(pending.recordIds,[`route:dolbur:${jobTier}:${family}`]);assert.equal(pending.sections[0].kind,'outcome');assert.equal(pending.sections[0].text,stories.travelers.dolbur.routes[String(tier)][String(family)].outcome);}
+    const loaded=reload(g.state);assert.deepEqual(loaded.state.expeditionStories,g.state.expeditionStories);assert.equal(loaded.expeditionChapterReport(1,jobTier).chapterId,chapter.id);
+    const journal=loaded.expeditionJournal().routes;assert.equal(journal.length,2);const oldEntry=journal.find(route=>!route.chapterId),chapterEntry=journal.find(route=>route.chapterId===chapter.id);assert.ok(oldEntry&&chapterEntry);assert.equal(oldEntry.outcome,stories.travelers.dolbur.routes[String(tier)][String(family)].outcome);assert.deepEqual(chapterEntry.chapterBeats,routeFor(chapter,family).returnBeats);
+    if(!legacySeen){assert.equal(loaded.state.expeditionStories[0].seen,false);assert.ok(loaded.markExpeditionStorySeen(pending.recordIds));assert.equal(loaded.state.expeditionStories[0].seen,true);assert.equal(loaded.expeditionChapterReport(1,jobTier).chapterId,chapter.id);}
+    assert.ok(loaded.markExpeditionStorySeen(loaded.expeditionChapterReport(1,jobTier).recordIds));assert.equal(loaded.expeditionChapterReport(1,jobTier),null);
+   }
+  }
+ }
+
+ // A tier-4 trip saved before this chapter has no marker: reload and offline settlement keep it legacy.
+ const preChapter=makeDolbur([3,3,3]);preChapter.state.travelers[1].phase='offer';const preInfo=preChapter.combinedExpeditionInfo(1,3),preCoins=preChapter.state.coins;
+ assert.equal(preChapter.dispatchCombinedExpedition(1,3,1,1000,()=>0),true);const preSaved=JSON.parse(JSON.stringify(preChapter.state.expedition)),preChapterId=chapterFor(4).id;
+ assert.equal(preSaved.chapterId,preChapterId);delete preChapter.state.expedition.chapterId;
+ const preLoaded=reload(preChapter.state),preTrip=preLoaded.state.expedition;
+ assert.equal(preTrip.chapterId,undefined);assert.equal(preTrip.readyAt,preSaved.readyAt);assert.deepEqual(preTrip.material,preSaved.material);assert.deepEqual(preTrip.reward,preSaved.reward);assert.equal(preLoaded.state.coins,preCoins-preInfo.cost);
+ const preStory=preLoaded.tick(preTrip.readyAt).find(event=>event.kind==='expedition')?.story,preOutcome=stories.travelers.dolbur.routes['4']['1'].outcome;
+ assert.ok(preStory);assert.equal(preStory.chapterId,undefined);assert.deepEqual(preStory.recordIds,['route:dolbur:3:1']);assert.deepEqual(preStory.sections,[{kind:'outcome',title:'Outcome',text:preOutcome}]);
+ assert.equal(preLoaded.state.expeditionStories[0].chapterId,undefined);assert.equal(preLoaded.expeditionChapterReport(1,3),null);assert.equal(preLoaded.expeditionJournal().routes[0].chapterId,null);assert.equal(preLoaded.expeditionJournal().routes[0].outcome,preOutcome);
+
+ // A newly dispatched tier-4 chapter trip stores its chapter marker and keeps its report after reload/offline settlement.
+ const newChapter=makeDolbur([3,3,3]);newChapter.state.travelers[1].phase='offer';assert.equal(newChapter.dispatchCombinedExpedition(1,3,2,1000,()=>0),true);assert.equal(newChapter.state.expedition.chapterId,preChapterId);
+ const newLoaded=reload(newChapter.state);assert.equal(newLoaded.state.expedition.chapterId,preChapterId);const newReady=newLoaded.state.expedition.readyAt,newStory=newLoaded.tick(newReady).find(event=>event.kind==='expedition')?.story,newExpected=beatsFor(chapterFor(4),2);
+ assert.ok(newStory);assert.equal(newStory.chapterId,preChapterId);assert.deepEqual(newStory.beats,newExpected);assert.equal(newLoaded.expeditionChapterReport(1,3).chapterId,preChapterId);assert.deepEqual(newLoaded.expeditionJournal().routes[0].chapterBeats,routeFor(chapterFor(4),2).returnBeats);
+
+ // A Dolbur trip from a chapter that was already playable stays a chapter trip when its older save has no marker.
+ const historical=makeDolbur([2,2,2]);historical.state.travelers[1].phase='offer';assert.equal(historical.dispatchCombinedExpedition(1,2,0,1000,()=>0),true);delete historical.state.expedition.chapterId;
+ const historicalLoaded=reload(historical.state),historicalStory=historicalLoaded.tick(historicalLoaded.state.expedition.readyAt).find(event=>event.kind==='expedition')?.story;
+ assert.ok(historicalStory);assert.equal(historicalStory.chapterId,chapterFor(3).id);assert.ok(historicalLoaded.expeditionChapterReport(1,2));
+
+ // Offline completion settles once, persists the exact report and journal replay, and cannot settle twice.
+ for(const tier of [1,2,3,4]){
+  const chapter=chapterFor(tier),jobTier=tier-1;
+  for(const family of [0,1,2]){
+   const g=makeDolbur([jobTier,jobTier,jobTier]);g.state.travelers[1].phase='offer';assert.equal(g.dispatchCombinedExpedition(1,jobTier,family,1000,()=>0),true);const ready=g.state.expedition.readyAt,offline=reload(g.state),events=offline.tick(ready),story=events.find(event=>event.kind==='expedition')?.story,expected=beatsFor(chapter,family);
+   assert.ok(story);assert.equal(story.chapterId,chapter.id);assert.deepEqual(story.beats,expected);assert.equal(offline.state.expedition,null);assert.equal(offline.expeditionJournal().routes[0].chapterId,chapter.id);assert.deepEqual(offline.expeditionJournal().routes[0].chapterBeats,routeFor(chapter,family).returnBeats);
+   const report=offline.expeditionChapterReport(1,jobTier);assert.ok(report);assert.deepEqual(report.beats,expected);assert.equal(offline.pendingExpeditionStory(),null);
+   const before=JSON.stringify([offline.state.coins,offline.state.expeditionStories]);assert.equal(offline.settleExpedition(ready),null);assert.equal(JSON.stringify([offline.state.coins,offline.state.expeditionStories]),before);
+   assert.ok(offline.markExpeditionStorySeen(report.recordIds));assert.equal(reload(offline.state).expeditionChapterReport(1,jobTier),null);
+  }
+ }
+ console.log('Passed: Dolbur tier 1-4 chapters match all twelve reviewed routes byte-for-byte, open from any family tier with only unlocked choices, persist and change drafts, refuse absent dispatch without charge, keep cost/one-trip/120s/sale saving, repeat and reload reports, preserve unread legacy records, and settle offline with journal replay.');
+}
+
+// Dolbur tier-5 chapter: exact reviewed script, family-level first/later Cold Roost history,
+// active legacy trips, journal replay and offline settlement.
+{
+ const chapterData=JSON.parse(fs.readFileSync(path.join(root,'data','expedition-chapters.json'),'utf8')),reviewed=JSON.parse(fs.readFileSync(path.join(root,'research','writing','expedition-stories','stories-v2','chapter-pilot-dolbur-t5.json'),'utf8')),familyIds={Life:0,Mana:1,Stamina:2};
+ const chapter=chapterData.chapters.find(entry=>entry.id==='dolbur-t5-guard-the-nesting-ridge');
+ assert.ok(chapter,'missing Dolbur tier-5 chapter');assert.equal(chapterData.chapters.at(-1).id,chapter.id,'Dolbur tier-5 chapter must keep the existing chapter order');assert.equal(chapterData.chapters[4].id,'neet-t5-tend-the-nesting-grounds','Neet tier-5 chapter order changed');
+ assert.equal(chapter.traveler,reviewed.traveler);assert.equal(chapter.tier,reviewed.tier);assert.equal(chapter.job,reviewed.job);assert.equal(chapter.job,jobs.dolbur[4].name);
+ assert.deepEqual(chapter.opening,reviewed.opening.beats,'Dolbur tier-5 opening');assert.deepEqual(chapter.dispatch,reviewed.sharedDispatch,'Dolbur tier-5 dispatch');
+ assert.deepEqual(chapter.routes.map(route=>route.family),reviewed.routes.map(route=>familyIds[route.family]),'Dolbur tier-5 route order');
+ for(const[route,source]of chapter.routes.map((route,index)=>[route,reviewed.routes[index]])){assert.equal(route.familyLabel,source.family);assert.equal(route.material,source.material);assert.equal(route.material,FAMILIES[route.family].materials[4].name,'Dolbur tier-5 material '+route.family);assert.deepEqual(route.confirmBeats,source.confirmBeats,'Dolbur tier-5 confirm '+route.family);assert.deepEqual(route.departureBeats,source.departureBeats,'Dolbur tier-5 departure '+route.family);assert.deepEqual(route.returnBeats,source.returnBeats,'Dolbur tier-5 return '+route.family);}
+ const route=family=>chapter.routes.find(entry=>entry.family===family),viewpoint=family=>stories.travelers.dolbur.viewpoints[String(family)].text,fullBeats=family=>[chapter.dispatch.at(-1),...route(family).returnBeats].map(beat=>({...beat})),laterBeats=family=>[chapter.dispatch.at(-1),{id:'viewpoint',phase:'viewpoint',speaker:'narrator',portrait:'none',text:viewpoint(family)}].map(beat=>({...beat})),laterSection=family=>({kind:'viewpoint',title:"Dolbur's viewpoint",text:viewpoint(family)});
+ const tiers=available=>{const g=new PotionGame();g.state.tiers=available;g.state.coins=1e6;return g;};
+ const makeDolbur=available=>{const g=tiers(available);g.state.travelers[1].phase='away';return g;};
+
+ // Any family opens the tier; only unlocked egg routes are offered and drafts persist.
+ assert.equal(tiers([3,3,3]).unlockedExpeditionChapters().some(entry=>entry.id===chapter.id),false,'Dolbur tier-5 chapter unlocks too early');
+ assert.deepEqual(tiers([4,0,0]).expeditionChapter(1,4).routes.map(route=>route.family),[0]);
+ assert.deepEqual(tiers([0,4,0]).expeditionChapter(1,4).routes.map(route=>route.family),[1]);
+ assert.deepEqual(tiers([0,0,4]).expeditionChapter(1,4).routes.map(route=>route.family),[2]);
+ assert.deepEqual(tiers([4,4,4]).expeditionChapter(1,4).routes.map(route=>route.family),[0,1,2]);
+ assert.deepEqual(tiers([4,4,4]).unlockedExpeditionChapters().filter(entry=>entry.traveler==='dolbur').map(entry=>entry.tier),[1,2,3,4,5]);
+ const draft=makeDolbur([4,4,4]);assert.equal(draft.setExpeditionChapterDraft(chapter.id,2),true);assert.deepEqual(draft.state.expeditionChapterDraft,{chapterId:chapter.id,family:2});assert.deepEqual(reload(draft.state).state.expeditionChapterDraft,{chapterId:chapter.id,family:2});
+ assert.equal(makeDolbur([4,4,0]).setExpeditionChapterDraft(chapter.id,2),false);
+ const absent=makeDolbur([4,4,4]);absent.state.travelers[1].phase='away';absent.state.coins=1234;const absentBefore=JSON.stringify(absent.state);assert.equal(absent.dispatchCombinedExpedition(1,4,0,1000,()=>0),false,'Dolbur tier-5 absent dispatch');assert.equal(JSON.stringify(absent.state),absentBefore,'Dolbur tier-5 absent dispatch charged');
+
+ // Every route: marker, cost, one-trip rule, 120s timer, matching-sale saving, first completion,
+ // exact later viewpoint, journal replay and reload.
+ for(const family of [0,1,2]){
+  const g=makeDolbur([4,4,4]);g.state.travelers[1].phase='offer';const info=g.combinedExpeditionInfo(1,4),beforeCoins=g.state.coins;
+  assert.equal(g.dispatchCombinedExpedition(1,4,family,1000,()=>0),true,'Dolbur tier-5 dispatch '+family);
+  assert.equal(g.state.coins,beforeCoins-info.cost,'Dolbur tier-5 cost '+family);assert.equal(g.state.expedition.readyAt-1000,120000,'Dolbur tier-5 timer '+family);assert.deepEqual(g.state.expedition.material,{family,tier:4});assert.equal(g.state.expedition.chapterId,chapter.id,'Dolbur tier-5 marker '+family);
+  const active=JSON.stringify(g.state);assert.equal(g.dispatchCombinedExpedition(1,4,family,2000,()=>0),false,'Dolbur tier-5 one-trip rule');assert.equal(JSON.stringify(g.state),active);
+  const loadedTrip=reload(g.state);assert.equal(loadedTrip.state.expedition.chapterId,chapter.id);assert.deepEqual(loadedTrip.state.expedition.reward,g.state.expedition.reward);
+  const readyAt=loadedTrip.state.expedition.readyAt;assert.ok(loadedTrip.collect(family,4));assert.ok(loadedTrip.sell(2000)>0);assert.equal(loadedTrip.lastSaleExpeditionTimeSaved,5000,'Dolbur tier-5 sale saving '+family);assert.equal(loadedTrip.state.expedition.readyAt,readyAt-5000);
+  const result=loadedTrip.settleExpedition(loadedTrip.state.expedition.readyAt),record=loadedTrip.state.expeditionStories.find(entry=>entry.kind==='route');
+  assert.ok(result?.story,'Dolbur tier-5 report '+family);assert.equal(result.story.chapterId,chapter.id);assert.deepEqual(result.story.beats,fullBeats(family),'Dolbur tier-5 first report '+family);assert.deepEqual(result.story.sections,[{kind:'outcome',title:'Outcome',text:route(family).returnBeats.at(-1).text}]);assert.equal(record.chapterId,chapter.id);assert.equal(record.firstCompletion,true);assert.equal(record.seen,false);
+  assert.equal(loadedTrip.state.expeditionStories.filter(entry=>entry.kind==='event'&&entry.family===family).length,1);assert.equal(loadedTrip.state.expeditionStories.filter(entry=>entry.kind==='viewpoint'&&entry.traveler==='dolbur'&&entry.family===family).length,1);assert.ok(loadedTrip.state.expeditionStories.filter(entry=>entry.kind==='event'||entry.kind==='viewpoint').every(entry=>entry.seen));assert.equal(loadedTrip.pendingExpeditionStory(),null,'Dolbur tier-5 first completion queued the legacy shared event');
+  const report=loadedTrip.expeditionChapterReport(1,4);assert.ok(report);assert.equal(report.chapterId,chapter.id);assert.deepEqual(report.beats,fullBeats(family));assert.deepEqual(report.recordIds,[`route:dolbur:4:${family}:chapter:${chapter.id}`]);
+  const journal=loadedTrip.expeditionJournal();assert.deepEqual(journal.routes[0].chapterBeats,route(family).returnBeats);assert.deepEqual(journal.events[0].viewpoints.map(entry=>entry.traveler.id),['dolbur']);
+  assert.ok(loadedTrip.markExpeditionStorySeen(report.recordIds));assert.equal(loadedTrip.expeditionChapterReport(1,4),null);
+  const later=complete(loadedTrip,1,4,family);assert.deepEqual(later.story.beats,laterBeats(family),'Dolbur tier-5 later report '+family);assert.deepEqual(later.story.sections,[laterSection(family)]);const laterRecord=loadedTrip.state.expeditionStories.find(entry=>entry.kind==='route');assert.equal(laterRecord.firstCompletion,false);assert.equal(laterRecord.seen,false);assert.equal(loadedTrip.state.expeditionStories.filter(entry=>entry.kind==='route').length,1,'Dolbur tier-5 repeat duplicated the journal route');
+  const repeated=reload(loadedTrip.state),repeatReport=repeated.expeditionChapterReport(1,4);assert.deepEqual(repeatReport.beats,laterBeats(family));assert.deepEqual(repeatReport.sections,[laterSection(family)]);assert.deepEqual(repeated.expeditionJournal().routes[0].chapterBeats,route(family).returnBeats);
+ }
+
+ // A Neet-first family gives Dolbur the short later report and keeps the journal event viewable.
+ for(const family of [0,1,2]){
+  const g=tiers([4,4,4]),neet=complete(g,0,4,family);assert.ok(neet.story);assert.equal(g.pendingExpeditionStory(),null,'Neet chapter first completion queued the legacy shared event');
+  const dolbur=complete(g,1,4,family);assert.deepEqual(dolbur.story.beats,laterBeats(family),'Dolbur tier-5 Neet-first report '+family);assert.deepEqual(dolbur.story.sections,[laterSection(family)]);
+  const eventRecord=g.state.expeditionStories.find(entry=>entry.kind==='event'&&entry.family===family);assert.ok(eventRecord);assert.equal(eventRecord.seen,true);
+  const journal=g.expeditionJournal();assert.equal(journal.routes.length,2);assert.deepEqual(journal.events[0].viewpoints.map(entry=>entry.traveler.id),['neet','dolbur']);assert.deepEqual(journal.routes.find(entry=>entry.traveler.id==='dolbur').chapterBeats,route(family).returnBeats);assert.equal(g.pendingExpeditionStory(),null);
+  const repeat=complete(g,1,4,family);assert.deepEqual(repeat.story.beats,laterBeats(family));assert.equal(g.state.expeditionStories.filter(entry=>entry.kind==='route').length,2);assert.equal(g.expeditionJournal().routes.length,2);
+ }
+
+ // An older unread event/viewpoint from another traveler stays unread; Dolbur gets the later report.
+ {
+  const g=tiers([4,4,4]),claire=complete(g,3,4,0);assert.ok(claire.story);assert.equal(g.pendingExpeditionStory().sections.at(-1).text,stories.travelers.claire.viewpoints['0'].text);
+  const dolbur=complete(g,1,4,0);assert.deepEqual(dolbur.story.beats,laterBeats(0));assert.deepEqual(dolbur.story.sections,[laterSection(0)]);assert.equal(g.state.expeditionStories.find(entry=>entry.kind==='event'&&entry.family===0).seen,false);
+  assert.deepEqual(g.expeditionJournal().events[0].viewpoints.map(entry=>entry.traveler.id).sort(),['claire','dolbur']);
+  const pending=g.pendingExpeditionStory();assert.ok(pending);assert.equal(pending.sections.length,3);assert.equal(pending.sections[2].text,stories.travelers.claire.viewpoints['0'].text);assert.ok(g.markExpeditionStorySeen(pending.recordIds));assert.equal(g.pendingExpeditionStory(),null);assert.equal(g.state.expeditionStories.find(entry=>entry.kind==='event'&&entry.family===0).seen,true);assert.equal(g.state.expeditionStories.find(entry=>entry.kind==='viewpoint'&&entry.traveler==='claire'&&entry.family===0).seen,true);
+ }
+
+ // New chapter trips survive reload/offline settlement and cannot settle twice.
+ const offline=makeDolbur([4,4,4]);offline.state.travelers[1].phase='offer';assert.equal(offline.dispatchCombinedExpedition(1,4,2,1000,()=>0),true);const offlineReady=offline.state.expedition.readyAt,offlineLoaded=reload(offline.state),offlineEvents=offlineLoaded.tick(offlineReady),offlineStory=offlineEvents.find(event=>event.kind==='expedition')?.story;
+ assert.ok(offlineStory);assert.equal(offlineStory.chapterId,chapter.id);assert.deepEqual(offlineStory.beats,fullBeats(2));assert.equal(offlineLoaded.state.expedition,null);assert.ok(offlineLoaded.expeditionChapterReport(1,4));assert.deepEqual(offlineLoaded.expeditionJournal().routes[0].chapterBeats,route(2).returnBeats);
+ const offlineBefore=JSON.stringify([offlineLoaded.state.coins,offlineLoaded.state.expeditionStories,offlineLoaded.state.expeditionStamps,offlineLoaded.state.likeability,offlineLoaded.state.powerups]);assert.equal(offlineLoaded.settleExpedition(offlineReady),null);assert.equal(JSON.stringify([offlineLoaded.state.coins,offlineLoaded.state.expeditionStories,offlineLoaded.state.expeditionStamps,offlineLoaded.state.likeability,offlineLoaded.state.powerups]),offlineBefore);
+
+ // An already-active Dolbur tier-5 trip saved without a marker keeps its legacy settlement,
+ // deadline, material, cost and frozen reward across reload and offline completion.
+ for(const family of [0,1,2]){
+  const legacy=makeDolbur([4,4,4]);legacy.state.travelers[1].phase='offer';const info=legacy.combinedExpeditionInfo(1,4),coins=legacy.state.coins;assert.equal(legacy.dispatchCombinedExpedition(1,4,family,1000,()=>0),true);const saved=JSON.parse(JSON.stringify(legacy.state.expedition));assert.equal(saved.chapterId,chapter.id);delete legacy.state.expedition.chapterId;
+  const loaded=reload(legacy.state),trip=loaded.state.expedition;assert.equal(trip.chapterId,undefined);assert.equal(trip.readyAt,saved.readyAt);assert.deepEqual(trip.material,saved.material);assert.deepEqual(trip.reward,saved.reward);assert.equal(loaded.state.coins,coins-info.cost);
+  const frozen=JSON.stringify({readyAt:trip.readyAt,material:trip.material,reward:trip.reward}),events=loaded.tick(trip.readyAt),story=events.find(event=>event.kind==='expedition')?.story;
+  assert.ok(story);assert.equal(story.chapterId,undefined);assert.equal(story.kind,'event');assert.equal(story.sections.length,3);assert.equal(story.sections[0].text,stories.event.opening);assert.equal(story.sections[1].text,stories.event.routes[String(family)].text);assert.equal(story.sections[2].text,viewpoint(family));assert.equal(loaded.state.expedition,null);assert.equal(loaded.expeditionChapterReport(1,4),null);assert.equal(loaded.expeditionJournal().routes.length,0);assert.ok(loaded.state.expeditionStories.every(record=>record.chapterId===undefined));assert.equal(JSON.stringify({readyAt:saved.readyAt,material:saved.material,reward:saved.reward}),frozen);
+  const before=JSON.stringify([loaded.state.coins,loaded.state.expeditionStories,loaded.state.expeditionStamps,loaded.state.likeability,loaded.state.powerups]);assert.equal(loaded.settleExpedition(trip.readyAt),null);assert.equal(JSON.stringify([loaded.state.coins,loaded.state.expeditionStories,loaded.state.expeditionStamps,loaded.state.likeability,loaded.state.powerups]),before);
+ }
+ console.log('Passed: Dolbur tier-5 chapter matches the reviewed script byte-for-byte, unlocks from any tier-5 egg, exposes only unlocked routes, keeps cost/one-trip/120s/sale saving, shows full first family completions and exact later viewpoints after same-traveler, Neet-first and unmarked legacy trips, preserves unread records and journal replay, and settles offline once.');
 }

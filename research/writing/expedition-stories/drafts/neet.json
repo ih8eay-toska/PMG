@@ -1,0 +1,287 @@
+{
+  "provenance": "Original fan-written expedition stories for review; not official game text. Maps to data/expedition-jobs.json entries.neet by tier index (tiers are 1-based here; array index 0-24 there). Job names are unchanged. All names, materials, and potion references follow data/game-data.json.",
+  "potion_tier_note": "potionTier lists canonical recipe names from families[].recipes[].name in data/game-data.json (not materials[].starting_name); capitalization copied verbatim, including irregular forms.",
+  "sources": [
+    "research/wiki/Neet.json (canon: 19-year-old cleric)",
+    "data/visitor-dialogue.json entries.neet (project-established fan-written voice)",
+    "data/game-data.json (material tiers and potion names)",
+    "data/material-descriptions.json (imagery hooks)"
+  ],
+  "entries": {
+    "tier1-herbs-for-the-shrine": {
+      "tier": 1,
+      "name": "Herbs for the Shrine",
+      "materials": "Red herb · Blue herb · Yellow herb",
+      "potionTier": "Sample Red Potion / Sample Blue potion / Sample Yellow potion",
+      "description": "The shrine beds are due for their seasonal replanting, so Neet gathers red, blue, and yellow herbs in one patient afternoon. She cuts only what the storeroom can use, tucks root slips back into the soil for next year, and labels every bundle in her tidy hand. The drying racks are full by dusk, and the last pinch of each herb goes to the pilgrims' kettle.",
+      "notes": [
+        "Voice: stewardship and provisioning from the established fan-written offers (medicine shelf, pilgrims).",
+        "Materials: game-data tier 1 trio."
+      ]
+    },
+    "tier2-mushroom-foraging": {
+      "tier": 2,
+      "name": "Mushroom Foraging",
+      "materials": "Sturdy mushroom · Clever mushroom · Lively mushroom",
+      "potionTier": "Baby HP Potion / Infant MP potion / Infant SP potion",
+      "description": "Neet goes mushrooming before the dew lifts, combing the ravine for the three families the shrine kitchen asks after: sturdy, clever, and lively. Cleric's rule: never take a cluster that stands alone, so she leaves half of every log behind. By the time her basket creaks she has also blessed the oldest growth in the ravine, and she thanks the forest out loud on the walk home.",
+      "notes": [
+        "Voice: patience, ritual courtesy, gentle humor.",
+        "Materials: game-data tier 2 trio."
+      ]
+    },
+    "tier3-helping-in-the-orchard": {
+      "tier": 3,
+      "name": "Helping in the Orchard",
+      "materials": "Fruit of power · Fruit of wisdom · Fruit of spirit",
+      "potionTier": "Raspberry Potion / Blueberry potion / Orange potion",
+      "description": "The orchard family sends the shrine a share of the fall harvest, so this year Neet joins the pickers: power fruit on one arm, wisdom and spirit fruit on the other. She refuses the day's coin and asks for cuttings instead, which the family adopts as the more superstitious request. The walk home is spent drafting next season's lending-shelf recipes.",
+      "notes": [
+        "Voice: community reciprocity, kitchen practicality, dry humor.",
+        "Materials: game-data tier 3 trio."
+      ]
+    },
+    "tier4-gather-fallen-feathers": {
+      "tier": 4,
+      "name": "Gather Fallen Feathers",
+      "materials": "Rainbow bird feathers · Bluebird feathers · Wyvern feathers",
+      "potionTier": "Small HP Potion / Small MP potion / Small SP potion",
+      "description": "Neet keeps a feather ledger for the shrine's remedies: rainbow bird feathers for healing work, bluebird feathers for clear thinking, wyvern feathers for long marches. She gathers only the molted plumes, leaves a small woven charm at each roost by way of thanks, and logs every bundle before sundown. The wyvern entries take the longest, because she insists on writing them from the ridge, not from memory.",
+      "notes": [
+        "Correct family-material mapping: Life=rainbow bird, Mana=bluebird, Stamina=wyvern.",
+        "Materials: game-data tier 4."
+      ]
+    },
+    "tier5-tend-the-nesting-grounds": {
+      "tier": 5,
+      "name": "Tend the Nesting Grounds",
+      "materials": "Rainbow bird's egg · Bluebird's egg · Wyvern's egg",
+      "potionTier": "Collagen Potion / Mineral potion / Vitamin potion",
+      "description": "Nesting season brings pilgrims asking after eggs, which Neet permits only from the shared grounds and only what each flock can spare. She mends the fence wire, banks sand around the wyvern burrows, and marks every rainbow bird and bluebird clutch with a date. The eggs that are due for town still travel padded in straw, but the last crate gets a blessing first, so it leaves carrying something of the shrine besides the straw.",
+      "notes": [
+        "Voice: caretaking with procedure; revised line replaces the awkward 'the shrine's stamp is watching' after pilot review.",
+        "Materials: game-data tier 5 trio."
+      ]
+    },
+    "tier6-prepare-ritual-powders": {
+      "tier": 6,
+      "name": "Prepare Ritual Powders",
+      "materials": "Strange powder · Suspicious powder · Dangerous powder",
+      "potionTier": "Homemade HP Potion / Home MP potion / Home SP potion",
+      "description": "Powder is the one shrine supply Neet trusts least, and therefore handles most carefully. Strange powder goes into the spring blessing, suspicious powder is quarantined behind the red-labeled cabinet door, and dangerous powder is accepted only in sealed vials with letters of origin. All three are ground fresh for tomorrow's rite, measured twice, and finished with her signature: a paper charm tied over every stopper.",
+      "notes": [
+        "Correct per-family names (Strange/Suspicious/Dangerous).",
+        "Refreshes the existing boilerplate's shrine-rites framing with a real procedure."
+      ]
+    },
+    "tier7-calm-the-restless-mandragoras": {
+      "tier": 7,
+      "name": "Calm the Restless Mandragoras",
+      "materials": "Drunkagora · Whyragora · Whatdragora",
+      "potionTier": "Normal HP Potion / Normal MP potion / Normal SP potion",
+      "description": "The mandragora bed behind the chapel has been quarrelsome since the storm. Neet re-soils the Drunkagoras, answers the Whyragoras—each one hopelessly, literally name-shaped like a question—and helps the Whatdragoras for exactly as long as their unpredictability allows. By noon there is peace, three quiet pots, and one well-earned bandage on her own thumb.",
+      "notes": [
+        "Whyragora 'sounds like a question' hook comes from data/material-descriptions.json (fan-written imagery).",
+        "Voice: unflappable pastoral composure."
+      ]
+    },
+    "tier8-weave-warm-fur-linings": {
+      "tier": 8,
+      "name": "Weave Warm Fur Linings",
+      "materials": "Manticore fur · Werewolf fur · Kobold fur",
+      "potionTier": "Carbonated Cherry Potion / Carbonated soda potion / Carbonated lemon potion",
+      "description": "The guest hall needs warm linings before the first snow, and Neet's contribution is fur with provenance: a manticore that overwinters in the shrine stables gives up its shed tufts without fuss, a werewolf pilgrim volunteers a groomed lock, and a kobold peddler trades a pack's worth for a blessing and a hot meal. Sewn together, the lining is patchy, honest, and exactly the right size for three cold travelers.",
+      "notes": [
+        "Sourcing ethic mirrors her established respect for creatures (only naturally shed, trade over taking).",
+        "Materials: game-data tier 8 trio."
+      ]
+    },
+    "tier9-visit-the-family-remedies-stall": {
+      "tier": 9,
+      "name": "Visit the Family Remedies Stall",
+      "materials": "Mom's Heart · Dad's Youth · Uncle's Mystery",
+      "potionTier": "Large HP Potion / Large MP potion / Large SP potion",
+      "description": "The season's remedy stall opens beneath the shrine steps, its shelves tidy with keepsakes: Mom's Heart, Dad's Youth, and Uncle's Mystery, each said to carry the warmth of the one it honors. Neet buys the heart for an ailing elder, the youth for the relief pantry, and sets the mystery on the lending shelf with a note that it is precisely what its name promises. The stall family's grandchild claims the note made her grandmother laugh, which Neet records as a successful visit.",
+      "notes": [
+        "Keepsake warmth hooks from data/material-descriptions.json (fan-written).",
+        "Materials: game-data tier 9 trio."
+      ]
+    },
+    "tier10-tend-the-singing-garden": {
+      "tier": 10,
+      "name": "Tend the Singing Garden",
+      "materials": "Dancing flower · Dreamy flower · Singing flower",
+      "potionTier": "Blessed HP Potion / Blessing MP potion / Blessing SP potion",
+      "description": "Neet tends the shrine's three flowerbeds before the pilgrims can reach them: the dancing flowers get staked twice, the dreamy flowers get the best shade, and the singing flowers hum so quietly that she has learned to work with her ear close to the stems. Equal armfuls of all three go to the offering table for the evening rite. The garden, in her ledger's opinion, performed well this week.",
+      "notes": [
+        "Materials: game-data tier 10 trio.",
+        "Dry ledger humor continues her established careful-hand voice."
+      ]
+    },
+    "tier11-share-preserves-with-pilgrims": {
+      "tier": 11,
+      "name": "Share Preserves with Pilgrims",
+      "materials": "S Class strawberry jam · S Class grape jam · Jam of mystery",
+      "potionTier": "Strawberry Potion / Grape potion / Potion of Riddle",
+      "description": "Autumn pilgrims arrive footsore, so Neet sets out three jars on the long table: strawberry for the quieter ones, grape for the storytellers, and jam of mystery, which she has labeled, in her tidy hand, 'please try the other two first.' Bread is supplied by the town, grace is said by the children, and the mystery jam finishes second in the informal tally. She writes the result down with visible satisfaction.",
+      "notes": [
+        "Correct preserves trio; safe-content rule holds (food is plain bread; potions stay potions).",
+        "Materials: game-data tier 11."
+      ]
+    },
+    "tier12-collect-watchful-eye-charms": {
+      "tier": 12,
+      "name": "Collect Watchful Eye Charms",
+      "materials": "Eye of giant bat · Eye of gargoyle · Eye of ogre",
+      "potionTier": "Elixir of Strength / Elixir of Wisdom / Elixir of Energy",
+      "description": "The apothecary sets aside the shrine's standing order: the giant bat's wide eye, the gargoyle's stony gaze, and the ogre's broad stare, each jarred and paperworked. Neet inspects every jar against the light, speaks a short blessing over the lids, and hangs the eyes in the shrine's side doors facing inward so that visitors sleep better under a watch that is friendly. The gargoyle's jar goes last, on the grounds that it is used to masonry and needs the encouragement.",
+      "notes": [
+        "Materials: game-data tier 12 trio.",
+        "Protective-charm framing is a cleric-appropriate use, not a new mechanic."
+      ]
+    },
+    "tier13-gather-shed-fairy-wings": {
+      "tier": 13,
+      "name": "Gather Shed Fairy Wings",
+      "materials": "Flower fairy wings · Lake fairy wings · Forest fairy wings",
+      "potionTier": "Shining HP Potion / Shining MP potion / Shining SP potion",
+      "description": "Fairies shed their old wings the way trees drop autumn leaves, and the shrine storeroom needs all three kinds this season. Neet leaves a thimble of honey at the meadow, the spring, and the hollow, then gathers the flower, lake, and forest fairy wings while the three courts pretend not to notice her excellent manners. The jars are labeled with thanks, and one jar goes back twice before the count is right.",
+      "notes": [
+        "Only naturally shed wings, consistent with existing name and fairy-related etiquette in the repo.",
+        "Materials: game-data tier 13 trio."
+      ]
+    },
+    "tier14-recover-dragonfang-relics": {
+      "tier": 14,
+      "name": "Recover Dragonfang Relics",
+      "materials": "Fang of fire dragon · Fang of water dragon · Fang of thunder dragon",
+      "potionTier": "Advanced HP Potion / Advanced MP potion / Advanced SP potion",
+      "description": "The shrine's oldest reliquary is due back on its shelf: three fangs, fire for courage, water for calm, thunder for weathering trials. Neet fetches them from the cliffside vault herself, wraps each in linen in case of residual temperament, and inventories the set at the door. Nothing here was taken, she notes in the register, that did not leave a dragon of its own accord.",
+      "notes": [
+        "Careful distinction vs. Dolbur's trade-based fang story—same materials, different manner.",
+        "Materials: game-data tier 14."
+      ]
+    },
+    "tier15-cleanse-the-crystal-altar": {
+      "tier": 15,
+      "name": "Cleanse the Crystal Altar",
+      "materials": "Red crystal · Blue crystal · Gold crystal",
+      "potionTier": "Fire resistance Potion / Frost resistance potion / Electric resistance potion",
+      "description": "The crystal altar is wiped down and recharged each season with polished stones: red for strength, blue for thought, gold for spirit. Neet cleanses it properly—linen, spring water, and no shortcuts permitted, including the ones she invents herself. The new crystals are set after an hour of silence, and the last one hums until she smiles at it, at which point it settles.",
+      "notes": [
+        "Correct family crystal names.",
+        "Materials: game-data tier 15."
+      ]
+    },
+    "tier16-restore-weathered-spell-scrolls": {
+      "tier": 16,
+      "name": "Restore Weathered Spell Scrolls",
+      "materials": "Meteor scroll · Blizzard scroll · Thunderbolt scroll",
+      "potionTier": "Enriched HP Potion / Enriched MP potion / Enriched SP potion",
+      "description": "The archive chest has surrendered three weather scrolls—meteor, blizzard, and thunderbolt—each older than the shrine roof and one of them older than the church record. Neet flattens them under clean weights, re-does the wax seals, and adds her small marginal notes for future readers. One thunderbolt word stays illegible; she lets it go with the patience of someone who has been startled by weather magic twice.",
+      "notes": [
+        "Correct per-family scroll names.",
+        "Materials: game-data tier 16."
+      ]
+    },
+    "tier17-comfort-the-weeping-spirits": {
+      "tier": 17,
+      "name": "Comfort the Weeping Spirits",
+      "materials": "Succubu`s tear · Siren's Tear · Harpy's tear",
+      "potionTier": "Elixir of Rage / Elixir of Calmness / Elixir of Vigor",
+      "description": "Past the cliffs where weather breaks, a succubus, a siren, and a harpy take turns weeping over the sea. Neet sets her jar down at a respectful distance, tells them three small true stories of pilgrims their own tears have comforted, and leaves with only what falls unmissed into the glass. The season's ledger entry reads: comforted three, collected three, thanked twice, which by her arithmetic is a good year.",
+      "notes": [
+        "Named tear gemstones match game-data exactly (including the wiki's `Succubu`s` spelling).",
+        "Materials: game-data tier 17."
+      ]
+    },
+    "tier18-trace-the-angelic-runes": {
+      "tier": 18,
+      "name": "Trace the Angelic Runes",
+      "materials": "Rune of seraph · Runes of cherub · Rune of thrones",
+      "potionTier": "Celestial HP Potion / Celestial MP potion / Celestial SP potion",
+      "description": "The rune wall above the font is fading, so Neet brings her lamp and her best ink for a careful night's work: the seraph rune traced for the reliquary, the linked cherub runes copied for the schoolroom, and the crowned rune of thrones for her own study upstairs. At the foot of each vellum she writes, in plain hand, the shrine's thanks to whoever cut the originals. Her candle burns to the end of the evening exactly, which she considers a professional standard.",
+      "notes": [
+        "Correct per-family rune names (seraph/cherub/thrones).",
+        "Materials: game-data tier 18."
+      ]
+    },
+    "tier19-bless-the-dragon-scales": {
+      "tier": 19,
+      "name": "Bless the Dragon Scales",
+      "materials": "Fire dragon scale · Water dragon scale · Thunder dragon scale",
+      "potionTier": "Ancient HP Potion / Ancient MP Potion / Ancient SP Potion",
+      "description": "Each year the dragon guild leaves one scale of each kind at the shrine door, and Neet blesses them in turn: the fire scale for travelers with hard roads ahead, the water scale for the coming dry season, the thunder scale for anyone whose nerve has been lately tested. All three are hung near the bell tower, since convincing weather is easier, she has found, when the bell agrees. The guild returns the following week for a signed receipt; blessings, she notes, are not returnable.",
+      "notes": [
+        "Correct per-family scale names (fire/water/thunder).",
+        "Materials: game-data tier 19."
+      ]
+    },
+    "tier20-meditate-over-sage-stones": {
+      "tier": 20,
+      "name": "Meditate over Sage Stones",
+      "materials": "Stone of Sage · Stone of Deep-sea · Stone of Glory",
+      "potionTier": "Elixir of Legends / Elixir of Fantasy / Elixir of Hero",
+      "description": "The three legend stones sit together at the shrine for one season, and the founding families take watch in rotation: the Sage stone for wisdom, the Deep-sea stone for dreams, the Glory stone for resolve. Neet draws the seventh night, trims the candles to an even height out of respect, and sits with all three until dawn writes slowly across the floor. Her morning report is one line: each stone received identical silence.",
+      "notes": [
+        "Correct per-family stone names.",
+        "Materials: game-data tier 20."
+      ]
+    },
+    "tier21-polish-the-twilight-pendants": {
+      "tier": 21,
+      "name": "Polish the Twilight Pendants",
+      "materials": "Pendant of dawn · Pendant of daybreak · Pendant of dusk",
+      "potionTier": "Elixir of Dawn / Elixir of daybreak / Elixir of twilight",
+      "description": "The pendant cabinet must be presentable before the equinox rites, and Neet polishes in the old keeper's strict order—dawn first, daybreak second, dusk last. Soft cloth, spring water, and a fingernail check of every clasp. The dawn pendant carries a new scratch from a courier's satchel, which she records in the ledger with both the courier's name and, two lines beneath, her forgiveness.",
+      "notes": [
+        "Correct per-family pendant names.",
+        "Materials: game-data tier 21."
+      ]
+    },
+    "tier22-lift-the-curse-from-the-rings": {
+      "tier": 22,
+      "name": "Lift the Curse from the Rings",
+      "materials": "Cursed Ruby ring · Cursed Sapphire Ring · Cursed Topaz ring",
+      "potionTier": "Cursed Bloody Reagent / Ashy cursed reagents / Sunset cursed reagents",
+      "description": "A foundling box of rings arrives with no donor, very confident knock, and three distinct tempers: ruby appetite, sapphire certainty, and topaz stubbornness. Neet lifts what her training permits—the worst of each curse, none of the character—then cools the rings in separate lined boxes, labeled and spaced like quarrelsome relatives. They leave for the vault still cursed, because curses of this vintage are part of the recipe, but the headaches are gone, and that is the clinic's promise.",
+      "notes": [
+        "Respects 'partially cleansed, still cursed' semantics so the rings remain brewing materials.",
+        "Materials: game-data tier 22."
+      ]
+    },
+    "tier23-purify-the-demonic-horns": {
+      "tier": 23,
+      "name": "Purify the Demonic Horns",
+      "materials": "Demon`s red horn · Demon's blue horn · Demon's yellow horn",
+      "potionTier": "Demon's Minor HP Potion / Demon's minor MP potion / Demon's Minor SP potion",
+      "description": "A caravan from the underworld fair sells the shrine three horns—red, blue, and yellow—complete with receipt, invoice number, and a delivery demon who waits politely at the gate. Neet purifies them anyway, because a receipt is not the same as a blessing: sandal smoke, clean basins, no shortcuts. The horns, the receipt, and the delivery demon's thanks are all logged on one page for whoever inherits the shelves.",
+      "notes": [
+        "Friendly demon trade consistent with Demian's documented underworld receipts tone.",
+        "Materials: game-data tier 23."
+      ]
+    },
+    "tier24-contain-the-plague-spores": {
+      "tier": 24,
+      "name": "Contain the Plague Spores",
+      "materials": "Red plague of spore · Blue plague of spore · Yellow plague of spore",
+      "potionTier": "Red Plague Serum / Blue plague serum / Yellow Plague Serum",
+      "description": "A sealed field kit of plague spores—red, blue, and yellow—arrives on loan from the county physician, frowning with implied paperwork. Neet stores it to the letter: wax over wax, cloth over cloth, and the deep cellar shelf furthest from the pilgrim kitchen. At the bottom of her written promise not to open anything for any reason, she adds a line of her own: 'especially for good causes.'",
+      "notes": [
+        "Materials: game-data tier 24.",
+        "Containment ethic echoes her established care; humor stays dry and self-directed."
+      ]
+    },
+    "tier25-consecrate-the-fallen-tears": {
+      "tier": 25,
+      "name": "Consecrate the Fallen Tears",
+      "materials": "Lucifer`s red tears · Lucifer's blue tears · Lucifer's golden tears",
+      "potionTier": "Red Essence of Pride / Blue essence of pride / Gold Essence of Pride",
+      "description": "The season's highest rite is Neet's to keep: one night of vigil over Lucifer's three fallen tears—red, blue, and gold—before they are consecrated for the year ahead. She lights a candle beneath each color, keeps the silence, and writes nothing down. At sunrise the tears are exactly as bright as they were, which she enters into the ledger as the correct result.",
+      "notes": [
+        "Closing entry for Neet's tier25 arc; quiet climax rather than spectacle.",
+        "Materials: game-data tier 25."
+      ]
+    }
+  }
+}

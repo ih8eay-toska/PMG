@@ -1,0 +1,130 @@
+{
+  "original_sha256": {
+    "charcoal-lavender-background-v2.png": "27d64eb604492122cf85a364294a88be91c11e35ac17b354a8b5fe3d21b49b7a",
+    "charcoal-lavender-mockup.png": "f0c0e1979a11391b4e9bbee2c98b41c74e8271b5b9e75ba93ff1edd8af1fa98e"
+  },
+  "originals_unchanged": true,
+  "source_crop_exclusive": [
+    22,
+    166,
+    2150,
+    537
+  ],
+  "source_crop_size": [
+    2128,
+    371
+  ],
+  "alpha_export_rule": "source alpha <128 removed; retained source alpha normalized to255; RGB retained inside silhouette; alpha-aware Lanczos reduction; export alpha <=8 zeroed to remove resampling ringing",
+  "natural_2x_size": [
+    528,
+    92
+  ],
+  "canonical_2x_size": [
+    264,
+    92
+  ],
+  "three_slice_source_x": [
+    0,
+    40,
+    224,
+    264
+  ],
+  "three_slice_css_caps_px": 20,
+  "render_left_caps_pixel_identical": true,
+  "render_right_caps_pixel_identical": true,
+  "minimum_label_area_contrast": {
+    "293": {
+      "Normal": 9.59,
+      "Hover": 8.87,
+      "Pressed": 10.35
+    },
+    "132": {
+      "Normal": 9.59,
+      "Hover": 8.87,
+      "Pressed": 10.35
+    }
+  },
+  "files": {
+    "charcoal-lavender-production-v3-2x.png": {
+      "dimensions_px": [
+        264,
+        92
+      ],
+      "bytes": 25266,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "nonzero_alpha_bounds_exclusive": [
+        0,
+        0,
+        264,
+        92
+      ],
+      "transparent_rgb_zero": true
+    },
+    "charcoal-lavender-production-v3-293x46.png": {
+      "dimensions_px": [
+        293,
+        46
+      ],
+      "bytes": 11846,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "nonzero_alpha_bounds_exclusive": [
+        0,
+        0,
+        293,
+        46
+      ],
+      "transparent_rgb_zero": true
+    },
+    "charcoal-lavender-production-v3-132x46.png": {
+      "dimensions_px": [
+        132,
+        46
+      ],
+      "bytes": 6937,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "nonzero_alpha_bounds_exclusive": [
+        0,
+        0,
+        132,
+        46
+      ],
+      "transparent_rgb_zero": true
+    },
+    "production-preview-dark.png": {
+      "dimensions_px": [
+        800,
+        900
+      ],
+      "bytes": 124644,
+      "mode": "RGB"
+    },
+    "production-preview-light.png": {
+      "dimensions_px": [
+        800,
+        900
+      ],
+      "bytes": 125056,
+      "mode": "RGB"
+    },
+    "production-alpha-inspection.png": {
+      "dimensions_px": [
+        960,
+        640
+      ],
+      "bytes": 46536,
+      "mode": "RGB"
+    }
+  }
+}

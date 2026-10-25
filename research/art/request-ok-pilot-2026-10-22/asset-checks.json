@@ -1,0 +1,74 @@
+[
+  {
+    "asset": "parchment-rose-background.png",
+    "dimensions_px": [
+      2073,
+      758
+    ],
+    "bytes": 1155763,
+    "mode": "RGBA",
+    "fully_transparent_pixels_pct": 48.11,
+    "alpha_range": [
+      0,
+      255
+    ],
+    "visible_art_bounds_alpha_over_128": [
+      48,
+      171,
+      2025,
+      579
+    ],
+    "center_alpha_range": [
+      252,
+      254
+    ],
+    "phone_label_contrast_min": 12.18,
+    "preview_sizes_px": [
+      [
+        293,
+        46
+      ],
+      [
+        132,
+        46
+      ]
+    ],
+    "mockup": "parchment-rose-mockup.png"
+  },
+  {
+    "asset": "charcoal-lavender-background-v2.png",
+    "dimensions_px": [
+      2172,
+      724
+    ],
+    "bytes": 765547,
+    "mode": "RGBA",
+    "fully_transparent_pixels_pct": 49.95,
+    "alpha_range": [
+      0,
+      255
+    ],
+    "visible_art_bounds_alpha_over_128": [
+      22,
+      166,
+      2150,
+      537
+    ],
+    "center_alpha_range": [
+      254,
+      254
+    ],
+    "phone_label_contrast_min": 9.69,
+    "preview_sizes_px": [
+      [
+        293,
+        46
+      ],
+      [
+        132,
+        46
+      ]
+    ],
+    "mockup": "charcoal-lavender-mockup.png"
+  }
+]

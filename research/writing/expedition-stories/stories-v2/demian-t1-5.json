@@ -1,0 +1,84 @@
+{
+  "traveler": "demian",
+  "batch": "v2-stories-t1-5",
+  "chapters": [
+    {
+      "kind": "route", "tier": 1, "family": "Life", "material": "Red herb",
+      "job": "Inspect the Herbal Inventory",
+      "hook": "The red-herb inventory is short one jar, and the ledger says it was sold somewhere no herb of that grade is sold. Demian finds the entry interesting rather than alarming.",
+      "outcome": "The trail ends at a clerk's honest slip, not a theft; the correction goes into both books, and the clerk is praised for the paper trail ♡ - not scolded for the jar. He closes the file: 'Hmm. The arithmetic forgave you before I did.'"
+    },
+    {
+      "kind": "route", "tier": 1, "family": "Mana", "material": "Blue herb",
+      "job": "Inspect the Herbal Inventory",
+      "hook": "The blue-herb lots carry numbers that stopped parsing mid-season, and the office default is suspicion. Demian starts with questions instead.",
+      "outcome": "The grower's signet changed mid-season without filing; the questions find an heir's unregistered mark, which is properly registered ♡, and the market's paperwork quietly improves wherever his review has walked once."
+    },
+    {
+      "kind": "route", "tier": 1, "family": "Stamina", "material": "Yellow herb",
+      "job": "Inspect the Herbal Inventory",
+      "hook": "The yellow-herb depot counts its stock by feel, and the depot master calls the feeling experience. Demian counts it as a habit that has never met a second hand.",
+      "outcome": "Two tallies, two hands, one sheet becomes the depot rule. The depot master learns it in an afternoon and teaches it better than the office pamphlet did ♡, which Demian notes with the closest thing he has to a smile."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Life", "material": "Sturdy mushroom",
+      "job": "Check the Mushroom Weight Tickets",
+      "hook": "The mushroom weight tickets are honest, and every scale around them says they are wrong. Both cannot be true, and Demian wants to hear the scale's side too.",
+      "outcome": "The tickets are true and the scale plate is corroded - four grams of rust, exactly. He orders the plate replaced and does not fine the seller whose weights were honest ♡, noting that the scale, like the ledger, is owed maintenance rather than suspicion."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Mana", "material": "Clever mushroom",
+      "job": "Check the Mushroom Weight Tickets",
+      "hook": "The clever-mushroom tickets are arithmetically fine and profitably wrong in the second digits. Demian pulls the whole manifest column to be sure.",
+      "outcome": "Twos for sevens, everywhere it profits; he cross-checks against the manifest column and initials every margin. The cross-check habit stays ♡, and the swap-artist's route quietly closes under fresh per-ticket numbering without one public word."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Stamina", "material": "Lively mushroom",
+      "job": "Check the Mushroom Weight Tickets",
+      "hook": "Lively mushrooms weigh one way before they jump and another after, and the depot's flat fee does not believe there is a difference. Demian is writing the schedule.",
+      "outcome": "The bounce rule lands: weigh in half-full brackets, exact to the fee schedule. The disputes end ♡, and clerks quote the rule back to him years later believing it older than it is."
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Life", "material": "Fruit of power",
+      "job": "Audit the Orchard Receipts",
+      "hook": "The orchard's receipt book pays 'the crew,' which was six names at harvest and is one name by winter. Demian is going to the orchard in person, with his hat.",
+      "outcome": "He verifies payees on site, hat in hand, courteous as arithmetic, and the crew's own tally is honored to the copper ♡. The file closes on a margin he keeps for himself: 'Hmm. Money is not the only thing that was owed here.'"
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Mana", "material": "Fruit of wisdom",
+      "job": "Audit the Orchard Receipts",
+      "hook": "The harvest ledger's second column is in a different hand than the first - and was written a season later. Demian does not raise his voice; he raises a crosswalk page.",
+      "outcome": "He re-links the columns line by line, so the discrepancy can be seen rather than argued. The crosswalk sheet becomes the orchard's standard audit exhibit ♡, quoted at three other farms by autumn."
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Stamina", "material": "Fruit of spirit",
+      "job": "Audit the Orchard Receipts",
+      "hook": "The grand audit is days of receipts with one inkwell, which - unlike almost anything else he does - Demian would do for free. The orchard gate will have a rule on it by Friday.",
+      "outcome": "He posts it himself: receipts read, totals agreed, then fruit moves. The orchard master copies his phrasing verbatim onto the gate ♡ and, after three attempts, cannot improve it."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Life", "material": "Rainbow bird feathers",
+      "job": "Count the Feather Import Bundles",
+      "hook": "The rainbow-bundle import count skips the festival's dusk arrivals, which is legal and - in Demian's opinion - the most expensive kind of clever. He decides to count them himself.",
+      "outcome": "He counts the dusk arrivals at the gate, twice, importer present both times. The loophole closes itself out of embarrassment ♡, which he considers the cheapest regulation ever enforced."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Mana", "material": "Bluebird feathers",
+      "job": "Count the Feather Import Bundles",
+      "hook": "The blue bundles' shade moves both grade and duty, and the tickets are being politely unhelpful about which is which. Demian requests samples with the paperwork.",
+      "outcome": "He samples, initials, and rules the grading fair - then writes the sampling method into the margin for next season. It becomes the office's first margin note ♡, inherited by every auditor since without knowing whose hand it is."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Stamina", "material": "Wyvern feathers",
+      "job": "Count the Feather Import Bundles",
+      "hook": "The wyvern-bundle freight is riding on carts that were hoped at rather than rated, and the load sheets know it. Demian starts at the corners.",
+      "outcome": "He checks every axle rating against its load sheet, corner to corner, and the load-sheet rule follows - one cart, one rating, no folklore ♡. Two wagoners still say 'rated, not hoped' as though they thought of it."
+    },
+    {
+      "kind": "neutral", "tier": 5, "applies_to": "any",
+      "job": "Review the Egg Handling Permits", "surface": "job",
+      "hook": "The frost week's permits are arriving early, complete, and paid - which is, for a permit file, the most suspicious thing Demian has seen all season. He has opened the folder.",
+      "text": "The frost week's permits are filed correctly by everyone - which is, to Demian, the suspicious part - until he reads the roost's: 'nobody owns wild things,' written plainly in the purposes field, in an almanac hand he half recognizes. He stamps it, waives the fee with a margin line - 'weather, not profit' - and says 'Hmm' in the tone that means approval. That week's paperwork remains his favorite file ♡."
+    }
+  ]
+}

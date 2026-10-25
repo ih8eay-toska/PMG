@@ -1,0 +1,387 @@
+:root {
+  --apk-rack-paper: url("__APK_RACK_PAPER__");
+  --apk-board-paper: url("__APK_BOARD_PAPER__");
+  --apk-gears: url("__APK_GEARS__");
+  --apk-quest-label: url("__APK_QUEST_LABEL__");
+  --apk-progress-label: url("__APK_PROGRESS_LABEL__");
+  --apk-coin-frame: url("__APK_COIN_FRAME__");
+  --apk-wood-top: url("__APK_WOOD_TOP__");
+  --apk-wood-bottom: url("__APK_WOOD_BOTTOM__");
+  --apk-menu-icon: url("__APK_MENU_ICON__");
+  --apk-big-button: url("__APK_BIG_BUTTON__");
+  --apk-item-slot: url("__APK_ITEM_SLOT__");
+  --apk-upgrades-icon: url("__APK_UPGRADES_ICON__");
+  --apk-pretty-numbers: url("__APK_PRETTY_NUMBERS__");
+  --apk-max-level: url("__APK_MAX_LEVEL__");
+}
+
+@media (min-width: 651px) {
+  header #game-menu-open { width: 52px; height: 52px; padding: 0; border: 0; border-radius: 0; background: var(--apk-menu-icon) center / contain no-repeat; box-shadow: none; color: transparent; font-size: 0; }
+  main > .room { overflow: hidden; border: 0; border-radius: 0; background-color: #3b281e; background-image: url("__APK_SCENE_BACKGROUND__"); background-position: center; background-size: cover; background-repeat: no-repeat; box-shadow: none; }
+  .room-top { min-height: 64px; padding: 6px 104px 6px 18px; background: var(--apk-coin-frame) center / 100% 100% no-repeat; }
+  .room-top > div:first-child { display: none; }
+  .room-top .currency-balances { justify-content: flex-start; flex-wrap: nowrap; gap: 8px; }
+  .room-top .currency-balance.coins { gap: 8px; color: #603c1e; font: 700 24px/1 Arial, sans-serif; }
+  .room-top .currency-balance.coins img { width: 32px; height: 32px; }
+
+  .room .rack.conveyor-rack { height: 112px; margin: 0; padding: 18px 10px 12px; overflow: hidden; border: 0; border-radius: 0; background-image: var(--apk-wood-top), var(--apk-wood-bottom), linear-gradient(#f0d9a7, #d5b77f); background-position: top, bottom, center; background-size: 100% 21px, 100% 16px, 100% 100%; background-repeat: repeat-x; box-shadow: none; }
+  .room .rack.conveyor-rack::before, .room .rack.conveyor-rack::after { display: none; }
+  .room .rack-note { display: none; }
+  .room .ingredients.conveyor { height: 80px; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 4px; background: transparent; box-shadow: none; }
+  .room .conveyor .ingredient { height: 74px; padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+  .room .conveyor .ingredient img { width: 64px; height: 64px; object-fit: contain; }
+  .room .conveyor .ingredient small { display: none; }
+
+  .room .potion-card { border: 0; border-radius: 0; background: linear-gradient(180deg, #e9d7b6, #c8a878); box-shadow: inset 0 0 0 2px #f7e8c9; }
+  .room .potion-card .potion-heading { border: 0; border-radius: 0; background: var(--apk-item-slot) center / 100% 100% no-repeat; }
+  .room .potion-card .potion-heading #bottle-wrap { background: transparent; }
+  .room .potion-card .potion-heading #bottle-wrap::before { display: none; }
+  .room .potion-card .potion-heading h3 { color: #563719; }
+  .room .potion-card .potion-heading .bottle { width: 70px; height: 90px; }
+  .room .potion-card .actions > button { min-height: 70px; border: 10px solid transparent; border-image-source: var(--apk-big-button); border-image-slice: 14 18 fill; border-image-width: 10px 12px; border-image-repeat: stretch; border-radius: 0; background: transparent; color: #fff5d6; font-weight: 700; text-shadow: 0 2px 2px #3a2518; }
+  .room .potion-card .actions .portrait-upgrades { display: flex; align-items: center; justify-content: center; gap: 6px; padding: 4px; }
+  .room .potion-card .actions .portrait-upgrades::before { content: ""; display: block; width: 58px; height: 46px; background: var(--apk-upgrades-icon) center / contain no-repeat; }
+  .room .potion-card .actions > button:hover:enabled, .room .potion-card .actions > button:active:enabled { background: transparent; filter: brightness(1.08); transform: none; }
+  .room .potion-card .enhance-details { color: #65421f; }
+  .room .potion-card .enhance-details::before { color: #735632; }
+  .room .potion-card .enhance-details strong { color: #79441d; }
+  .room .potion-card .sale-price { color: #603c1e; }
+}
+
+@media (max-width: 650px) {
+  body { background: #38251d; }
+  header { position: absolute; inset: 0 0 auto; z-index: 20; height: 0; padding: 0; pointer-events: none; }
+  header .brand { display: none; }
+  header .header-tools { position: absolute; top: 5px; right: 6px; width: auto; gap: 4px; pointer-events: auto; }
+  header .saved { display: none; }
+  header #save-now { display: none; }
+  header #game-menu-open { width: 52px; height: 52px; padding: 0; border: 0; border-radius: 0; background: var(--apk-menu-icon) center / contain no-repeat; box-shadow: none; color: transparent; font-size: 0; }
+
+  main { gap: 0; padding: 0; }
+  main > .room { width: 100%; margin: 0; border: 0; border-radius: 0; background-color: #3b281e; background-image: url("__APK_SCENE_BACKGROUND__"); background-position: center; background-size: 100% 100%; background-repeat: no-repeat; box-shadow: none; }
+  .room-top { position: relative; height: 54px; padding: 5px 118px 5px 8px; background: var(--apk-coin-frame) center / 100% 100% no-repeat; }
+  .room-top .currency-balances { justify-content: flex-start; flex-wrap: nowrap; gap: 7px; min-width: 0; }
+  .room-top .currency-balance.coins { gap: 7px; color: #603c1e; font: 700 21px/1 Arial, sans-serif; }
+  .room-top .currency-balance.coins img { width: 29px; height: 29px; }
+
+  .room .rack.conveyor-rack { height: 105px; margin: 0; padding: 17px 7px 11px; overflow: hidden; border: 0; border-radius: 0; background-image: var(--apk-wood-top), var(--apk-wood-bottom), linear-gradient(#f0d9a7, #d5b77f); background-position: top, bottom, center; background-size: 100% 20px, 100% 15px, 100% 100%; background-repeat: repeat-x; box-shadow: none; }
+  .room .rack.conveyor-rack::before, .room .rack.conveyor-rack::after { display: none; }
+  .room .rack-note { display: none; }
+  .room .ingredients.conveyor { height: 73px; border-radius: 0; background: transparent; box-shadow: none; }
+  .room .conveyor .ingredient { height: 70px; padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+  .room .conveyor .ingredient img { width: 62px; height: 62px; }
+  .room .conveyor .ingredient small { display: none; }
+
+  .room .brew-scene { height: clamp(245px, calc(100svh - 371px), 520px); }
+  .room .pio-canvas { width: min(96%, 440px); }
+  .room .brew-character { max-width: 98%; }
+  .room .pio-canvas, .room .brew-character { bottom: clamp(58px, 10svh, 95px); }
+  .room .cauldron.original-cauldron { width: min(86vw, 430px); height: min(32vw, 160px); margin: 0 0 12px; }
+  .room .pushcat-controls { top: 43%; right: 10px; width: 76px; }
+  .room .visitor-shortcut { left: 8px; width: 76px; }
+
+  .room .potion-card { margin: 0; padding: 8px 8px 12px; border: 0; border-top: 8px solid #79522d; border-radius: 0; background: linear-gradient(180deg, #e9d7b6, #c8a878); box-shadow: inset 0 0 0 2px #f7e8c9; }
+  .room .potion-card { grid-template-rows: 70px 70px auto auto; row-gap: 4px; }
+  .room .potion-card .potion-heading { border: 0; border-radius: 0; background: var(--apk-item-slot) center / 100% 100% no-repeat; }
+  .room .potion-card .potion-heading #bottle-wrap { background: transparent; }
+  .room .potion-card .potion-heading #bottle-wrap::before { display: none; }
+  .room .potion-card .potion-heading #potion-level { top: 6px; left: 7px; right: auto; width: auto; text-align: left; font-size: 16px; }
+  .room .potion-card .potion-heading h3 { color: #563719; }
+  .room .potion-card .potion-heading .bottle { width: 62px; height: 76px; }
+  .room .potion-card .actions > button { min-height: 64px; border: 10px solid transparent; border-image-source: var(--apk-big-button); border-image-slice: 14 18 fill; border-image-width: 10px 12px; border-image-repeat: stretch; border-radius: 0; background: transparent; color: #fff5d6; font-weight: 700; text-shadow: 0 2px 2px #3a2518; }
+  .room .potion-card .actions .powerup-panel-indicator { top: 2px; left: 4px; z-index: 2; }
+  .room .potion-card .actions .powerup-panel-indicator img { width: 16px; height: 16px; }
+  .room .potion-card .actions .portrait-upgrades { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0; padding: 4px 2px; }
+  .room .potion-card .actions .portrait-upgrades::before { content: ""; display: block; width: 55px; height: 43px; background: var(--apk-upgrades-icon) center / contain no-repeat; }
+  .room .potion-card .potion-heading .bottle { width: 70px; height: 90px; }
+  .room .potion-card .potion-heading #bottle-wrap.has-potion { height: 76px; flex: 0 0 76px; }
+  .room .potion-card .potion-heading #bottle-wrap.has-potion .bottle { width: 62px; height: 76px; }
+  .room .potion-card .actions > button:hover:enabled, .room .potion-card .actions > button:active:enabled { background: transparent; filter: brightness(1.08); transform: none; }
+  .room .potion-card .enhance-details { color: #65421f; }
+  .room .potion-card .enhance-details::before { color: #735632; }
+  .room .potion-card .enhance-details strong { color: #79441d; }
+  .room .potion-card .sale-price { color: #603c1e; }
+}
+
+/* Shared original artwork, anchored to the playable room on both layouts. */
+main > .room { container-type: inline-size; }
+.room .room-top { background-image: var(--apk-coin-frame), var(--apk-wood-top); background-size: calc(100% - 12px) calc(100% - 12px), 100% 100%; background-repeat: no-repeat; background-position: center; }
+.room .rack.conveyor-rack { position:relative; z-index:5; overflow:visible; padding-left:9%; padding-right:9%; background-image:var(--apk-wood-top),var(--apk-wood-bottom),var(--apk-rack-paper); background-size:100% 18px,100% 18px,100% 100%; background-repeat:no-repeat; }
+.room .rack.conveyor-rack::before,.room .rack.conveyor-rack::after { content:""; display:block; position:absolute; top:0; bottom:auto; width:16%; height:auto; aspect-ratio:128/237; border:0; border-radius:0; box-shadow:none; background:var(--apk-gears) top left/100% 100% no-repeat; pointer-events:none; z-index:6; }
+.room .rack.conveyor-rack::before { left:0; right:auto; transform:scaleX(-1); }
+.room .rack.conveyor-rack::after { right:0; left:auto; transform:none; }
+.room .ingredients.conveyor { overflow:hidden; }
+.room .brew-scene { height:clamp(500px,72cqw,620px); }
+.room .brew-scene .window,.room .brew-scene>.table { display:none; }
+.room .pio-canvas { width:min(98%,520px); bottom:130px; }
+.room .brew-character { bottom:130px; }
+.room .cauldron.original-cauldron { width:85%; max-width:510px; height:auto; aspect-ratio:602/224; margin-bottom:0; z-index:3; }
+.room .pushcat-controls { top:43%; right:3%; width:88px; }
+.room .pushcat-controls #pushcat-summon img { width:76px; height:78px; }
+.room #pushcat-label { display:block; font:700 15px/1.05 Arial,sans-serif; color:#fff3b4; text-shadow:-1px -1px 0 #493b18,1px -1px 0 #493b18,-1px 1px 0 #493b18,1px 1px 0 #493b18; }
+.room #pushcat-status { color:#fff3b4; }
+.room .pushcat-controls .currency-balance { background:#1e110ddd; border-radius:18px; color:#fff; font:16px/1.15 Arial,sans-serif; }
+.room #visitor-shortcut { top:45%; left:3%; width:88px; padding:0; }
+.room #visitor-shortcut-portrait { display:block; width:78px; height:78px; margin:auto; padding:5px; border:0; background:url("__APK_QUEST_FRAME__") center/contain no-repeat; object-fit:cover; object-position:50% 15%; border-radius:50%; }
+.room #visitor-shortcut>span:not([class]) { display:block; height:27px; margin-top:-7px; position:relative; background:var(--apk-quest-label) center/contain no-repeat; font-size:0; }
+.room #visitor-shortcut[data-phase="active"]>span:not([class]),.room #visitor-shortcut[data-phase="returning"]>span:not([class]) { background-image:var(--apk-progress-label); }
+.room #visitor-shortcut .visitor-time { height:10px; padding:2px; border-radius:0; background:url("__APK_QUEST_BACK__") center/100% 100% no-repeat; }
+.room #visitor-shortcut .visitor-time i { background:url("__APK_QUEST_FILL__") left/100% 100% no-repeat; }
+.room #visitor-shortcut[data-phase="active"] .visitor-time i,.room #visitor-shortcut[data-phase="returning"] .visitor-time i { background-image:url("__APK_PROGRESS_FILL__"); }
+.room #visitor-shortcut img.quest-mark { top:-4px; left:auto; right:-6px; width:30px; height:30px; padding:0; }
+.room #visitor-shortcut .visitor-quest-complete { top:-4px; left:auto; right:-6px; }
+.room .commission-shortcut { top:calc(45% + 115px); left:3%; }
+.room .potion-card { margin:0; padding:12px 12px 18px; border:0; border-radius:0; background:var(--apk-board-paper) center/100% 100% no-repeat; box-shadow:none; grid-template-columns:minmax(0,1fr) minmax(0,1.1fr) minmax(0,1fr); grid-template-rows:86px 86px; gap:6px; }
+.room .potion-card .potion-heading { padding:8px 4px 0; min-height:0; }
+.room .potion-card .potion-heading #potion-level { font-size:22px; color:#9d6516; right:auto; left:36px; }
+.room .potion-card .potion-heading .bottle { width:80px; height:112px; }
+.room .potion-card .potion-summary { background:url("__APK_ITEM_NAME__") center/100% 100% no-repeat; min-height:32px; padding:7px 5px; }
+.room .potion-card .potion-summary h3 { font:13px/1.15 Arial,sans-serif; }
+.room .potion-card .actions>button { font:22px/1.1 Arial,sans-serif; text-shadow:0 2px 2px #271b12; }
+.room .potion-card .actions .portrait-upgrades { flex-direction:column; gap:0; }
+.room .potion-card .actions .portrait-upgrades::before { width:64px; height:43px; }
+.room .potion-card .enhance-details { align-self:stretch; display:flex; flex-direction:column; justify-content:center; background:url("__APK_RATE_UNDERLINE__") center bottom/90% 4px no-repeat; padding-bottom:6px; }
+.room .potion-card .enhance-details::before { background:url("__APK_RATE_LABEL__") center/100% 100% no-repeat; padding:7px 3px; color:#fff0b9; font:16px/1 Arial,sans-serif; text-transform:none; letter-spacing:0; }
+.room .potion-card .enhance-details strong { color:#de9e27; -webkit-text-stroke:.6px #623a13; font:700 30px/1.1 Arial,sans-serif; margin:3px 0; }
+.room .potion-card .enhance-details span { font:10px/1.2 Arial,sans-serif; }
+.room .potion-card .sale-price { position:absolute; left:12px; bottom:64px; width:calc((100% - 36px)/3.1); z-index:2; pointer-events:none; color:#fff1ba; font:14px/1 Arial,sans-serif; padding:0; }
+.room .potion-card .sale-price .muted { color:inherit; }
+.room .potion-card .actions #sell { padding-top:22px; }
+@media(max-width:650px) {
+  .room .room-top { height:56px; background-size:calc(100% - 68px) 44px,100% 100%; background-position:left center,center; padding-left:15px; }
+  .room .rack.conveyor-rack { height:100px; }
+  .room .brew-scene { height:clamp(330px,calc(100svh - 354px),640px); }
+  .room .pio-canvas,.room .brew-character { bottom:100px; }
+  .room .pio-canvas { width:98%; }
+  .room .potion-card { padding:8px 7px 12px; grid-template-rows:80px 80px; gap:4px; }
+  .room .potion-card .actions>button { font-size:18px; }
+  .room .potion-card .actions .portrait-upgrades::before { width:54px; height:38px; }
+  .room .potion-card .potion-summary h3 { font-size:11px; }
+  .room .potion-card .enhance-details::before { font-size:13px; padding:7px 0; }
+  .room .potion-card .enhance-details strong { font-size:26px; }
+  .room .potion-card .sale-price { left:7px; bottom:55px; width:calc((100% - 22px)/3.1); font-size:12px; }
+  .room .pushcat-controls { width:72px; }
+  .room .pushcat-controls #pushcat-summon img { width:62px; height:65px; }
+  .room #pushcat-label { font-size:13px; }
+  .room #visitor-shortcut { width:72px; }
+  .room #visitor-shortcut-portrait { width:66px; height:66px; }
+  .room #visitor-shortcut>span:not([class]) { height:23px; }
+  .room .commission-shortcut { top:calc(45% + 98px); width:66px; }
+}
+
+
+/* Keep live overlays separate from the bottle and sale label. */
+.room .potion-card .potion-heading { display:grid; grid-template-rows:minmax(0,1fr) 36px; gap:0; padding-top:26px; }
+.room .potion-card .potion-heading #bottle-wrap { height:100%; min-height:0; }
+.room .potion-card .potion-heading .bottle { max-height:100%; width:auto; }
+.room .potion-card .potion-summary { height:36px; min-height:0; padding:5px 3px; }
+.room .potion-card .potion-heading #potion-level { font-size:18px; top:7px; }
+.room .potion-card .sale-price { padding-left:27px; }
+
+.room .potion-card .potion-heading #potion-level { left:42px; }
+.room .potion-card .potion-summary h3 { margin:0; }
+.room .potion-card .potion-heading { grid-template-columns:minmax(0,1fr); justify-content:stretch; }
+
+/* Potion level uses the original number strip; MAX uses its matching label. */
+.room .potion-card .potion-heading #potion-level { --level-h: clamp(22px, 3.2vw, 28px); display: flex; align-items: center; gap: calc(var(--level-h) * .08); width: max-content; height: var(--level-h); line-height: 0; right: auto; filter: drop-shadow(0 1px 1px #4b2f1688); }
+.room .potion-card .potion-heading #potion-level .pn { display: block; flex: none; height: var(--level-h); background: var(--apk-pretty-numbers) no-repeat; background-size: auto var(--level-h); }
+.room .potion-card .potion-heading #potion-level .pn-lv { width: calc(var(--level-h) * 1.2619); background-position: calc(var(--level-h) * -8.4048) 0; }
+.room .potion-card .potion-heading #potion-level .pn-0 { width: calc(var(--level-h) * .7857); background-position: calc(var(--level-h) * -6.2381) 0; }
+.room .potion-card .potion-heading #potion-level .pn-1 { width: calc(var(--level-h) * .4524); background-position: 0 0; }
+.room .potion-card .potion-heading #potion-level .pn-2 { width: calc(var(--level-h) * .6905); background-position: calc(var(--level-h) * -.5476) 0; }
+.room .potion-card .potion-heading #potion-level .pn-3 { width: calc(var(--level-h) * .5952); background-position: calc(var(--level-h) * -1.3333) 0; }
+.room .potion-card .potion-heading #potion-level .pn-4 { width: calc(var(--level-h) * .6905); background-position: calc(var(--level-h) * -2) 0; }
+.room .potion-card .potion-heading #potion-level .pn-5 { width: calc(var(--level-h) * .5714); background-position: calc(var(--level-h) * -2.7857) 0; }
+.room .potion-card .potion-heading #potion-level .pn-6 { width: calc(var(--level-h) * .5952); background-position: calc(var(--level-h) * -3.4524) 0; }
+.room .potion-card .potion-heading #potion-level .pn-7 { width: calc(var(--level-h) * .6429); background-position: calc(var(--level-h) * -4.119) 0; }
+.room .potion-card .potion-heading #potion-level .pn-8 { width: calc(var(--level-h) * .5952); background-position: calc(var(--level-h) * -4.8333) 0; }
+.room .potion-card .potion-heading #potion-level .pn-9 { width: calc(var(--level-h) * .5952); background-position: calc(var(--level-h) * -5.5714) 0; }
+.room .potion-card .potion-heading #potion-level.max { width: calc(var(--level-h) * 2.4318); background: var(--apk-max-level) left center / auto var(--level-h) no-repeat; }
+
+/* Keep success rate and the next multiplier in separate rows above Enhance. */
+.room .potion-card > .enhance-panel { grid-column: 3; grid-row: 1; align-self: stretch; justify-self: stretch; display: grid; grid-template-rows: minmax(0, 1fr) auto; align-items: center; justify-items: stretch; min-height: 0; height: 100%; padding: 0 3px; box-sizing: border-box; }
+.room .potion-card .enhance-panel .enhance-details { position: static; top: auto; right: auto; width: auto; align-self: start; justify-self: stretch; margin: 0; padding: 0 0 3px; text-align: center; font-size: 11px; line-height: 1.2; color: #65421f; background: url("__APK_RATE_UNDERLINE__") center bottom / 90% 4px no-repeat; }
+.room .potion-card .enhance-panel .enhance-details::before { content: "Success rate"; display: block; padding: 4px 2px; background: url("__APK_RATE_LABEL__") center / 100% 100% no-repeat; color: #fff0b9; font: 15px/1 Arial, sans-serif; text-transform: none; letter-spacing: 0; }
+.room .potion-card .enhance-panel .enhance-details strong { display: block; font: 700 clamp(24px, 4vw, 30px)/1.1 Arial, sans-serif; color: #de9e27; -webkit-text-stroke: .6px #623a13; margin: 2px 0 1px; }
+.room .potion-card .enhance-panel .enhance-multiplier { align-self: end; justify-self: stretch; margin: 0 0 2px; text-align: center; color: #65421f; font: 700 11px/1.2 Arial, sans-serif; letter-spacing: .2px; text-shadow: 0 1px 1px #fff4; }
+.room .potion-card .enhance-panel .enhance-multiplier[hidden] { display: none; }
+@media (max-width: 650px) {
+  .room .potion-card .potion-heading #potion-level { --level-h: clamp(15px, 3.6vw, 18px); }
+  .room .potion-card > .enhance-panel { padding: 0 1px; }
+  .room .potion-card .enhance-panel .enhance-details { padding-bottom: 2px; font-size: 10px; background-size: 90% 3px; }
+  .room .potion-card .enhance-panel .enhance-details::before { padding: 3px 1px; font-size: 12px; }
+  .room .potion-card .enhance-panel .enhance-details strong { font-size: clamp(21px, 5vw, 25px); margin: 1px 0; }
+  .room .potion-card .enhance-panel .enhance-multiplier { margin-bottom: 1px; font-size: 10px; }
+}
+
+/* Reference brewing-room pass: top parchment, action stacks, side shortcuts and in-pot liquid. */
+.sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.room .potion-card .powerup-panel-indicator { display: none !important; }
+
+@media (min-width: 651px) {
+  .room .room-top { padding: 6px 70px 6px 18px; background-position: left center, center; background-size: calc(100% - 64px) calc(100% - 8px), 100% 100%; }
+  .room #game-menu-open { position: absolute; right: 3px; top: 50%; width: 56px; height: 56px; }
+}
+.room .room-top { position: relative; }
+.room #game-menu-open { position: absolute; top: 50%; padding: 0; border: 0; border-radius: 0; background: var(--apk-menu-icon) center / contain no-repeat; box-shadow: none; color: transparent; font-size: 0; line-height: 0; transform: translateY(-50%); z-index: 8; }
+.room #game-menu-open:hover:enabled, .room #game-menu-open:active:enabled { background: var(--apk-menu-icon) center / contain no-repeat; filter: brightness(1.08); transform: translateY(-50%); }
+
+.room .pushcat-controls .currency-balance { justify-content: space-between; gap: 5px; padding: 2px 7px; }
+.room .pushcat-controls #ticket-icon { display: block; }
+.room .pushcat-controls #pushcat-status { display: none; }
+.room .pushcat-controls .currency-name { color: #fff3b4; font: 700 9px/1 Arial, sans-serif; letter-spacing: .02em; opacity: .92; text-transform: uppercase; }
+.room .pushcat-controls #tickets-display, .room .pushcat-controls #rubies-display { font-variant-numeric: tabular-nums; }
+
+.room .fairy-shortcut { top: auto; right: 3%; bottom: 2px; width: 84px; height: 84px; padding: 3px; z-index: 7; }
+.room .commission-shortcut { top: auto; left: 3%; bottom: 2px; width: 84px; padding: 2px; z-index: 7; }
+@keyframes fairy-hover { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+.room .fairy-shortcut:not([hidden]) { animation: fairy-hover 2.8s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .room .fairy-shortcut { animation: none !important; } }
+
+.room .ingredients.conveyor { height: 80px; }
+.room .conveyor .ingredient { height: 80px; }
+.room .conveyor .ingredient img { width: 59px; height: 59px; }
+
+.room .potion-card { grid-template-rows: 92px 92px; row-gap: 6px; }
+.room .potion-card .potion-heading { grid-template-rows: minmax(0, 1fr) 34px; padding: 24px 4px 0; }
+.room .potion-card .potion-heading #potion-level { top: 7px; left: 8px; }
+.room .potion-card .potion-heading .bottle { width: 88px; height: 120px; }
+.room .potion-card .potion-summary { height: 34px; min-height: 0; padding: 4px 3px; }
+
+.room .potion-card .actions > button { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px; overflow: visible; padding: 4px 2px; }
+.room .potion-card .actions #sell { padding: 4px 2px; }
+.room .potion-card .actions > button .action-label { display: block; position: relative; z-index: 1; line-height: 1.05; }
+.room .potion-card .actions > button .action-bonus { position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; gap: 4px; min-height: 18px; line-height: 1; }
+.room .potion-card .actions > button .action-bonus[hidden] { display: none !important; }
+.room .potion-card .sale-price { position: static; left: auto; bottom: auto; width: auto; padding: 0; color: #ffe45f; font: 700 18px/1 Arial, sans-serif; text-shadow: 0 1px 2px #3a2518; white-space: nowrap; }
+.room .potion-card .sale-price img { width: 19px; height: 19px; object-fit: contain; filter: drop-shadow(0 1px 1px #3a2518); }
+.room .potion-card .sale-price #value { color: #ffe45f; }
+.room .potion-card .enhance-multiplier { display: flex; align-items: center; justify-content: center; gap: 1px; min-height: 18px; color: #ffe45f; font: 700 11px/1 Arial, sans-serif; text-shadow: 0 1px 2px #3a2518; white-space: nowrap; }
+.room .potion-card .enhance-multiplier .mult-digit { display: block; width: auto; height: 19px; filter: drop-shadow(0 1px 1px #3a2518); }
+.room .potion-card .enhance-multiplier .mult-period { display: block; width: auto; height: 5px; margin: 0 1px; transform: translateY(5px); filter: drop-shadow(0 1px 1px #3a2518); }
+.room .potion-card .enhance-multiplier .mult-times { display: block; margin-left: 3px; color: #fff6dc; font: 700 11px/1 Arial, sans-serif; }
+.room .potion-card .actions > button .key { position: absolute; right: 5px; bottom: 2px; font-size: 9px; opacity: .65; }
+
+.room .potion-card > .enhance-panel { display: flex; align-items: stretch; justify-content: center; grid-template-rows: none; padding: 0 3px; }
+.room .potion-card .enhance-panel .enhance-details { align-self: stretch; justify-content: center; }
+
+.room .cauldron.original-cauldron .liquid { top: 5%; z-index: 1; }
+
+@media (max-width: 650px) {
+  .room .room-top { padding: 5px 64px 5px 15px; background-position: left center, center; background-size: calc(100% - 60px) 44px, 100% 100%; }
+  .room #game-menu-open { right: 2px; width: 50px; height: 50px; }
+  .room .pushcat-controls .currency-balance { padding: 2px 6px; }
+  .room .pushcat-controls .currency-name { font-size: 8px; }
+  .room .fairy-shortcut { right: 8px; width: 76px; height: 76px; }
+  .room .commission-shortcut { left: 8px; width: 76px; }
+  .room .ingredients.conveyor { height: 73px; }
+  .room .conveyor .ingredient { height: 73px; }
+  .room .conveyor .ingredient img { width: 46px; height: 46px; }
+  .room .potion-card { grid-template-rows: 86px 86px; row-gap: 4px; }
+  .room .potion-card .potion-heading { grid-template-rows: minmax(0, 1fr) 30px; padding: 22px 3px 0; }
+  .room .potion-card .potion-heading #bottle-wrap.has-potion { height: auto; flex: 1 1 auto; }
+  .room .potion-card .potion-heading #bottle-wrap.has-potion .bottle { width: 72px; height: 98px; }
+  .room .potion-card .potion-heading .bottle { width: 72px; height: 98px; }
+  .room .potion-card .potion-summary { height: 30px; padding: 4px 2px; }
+  .room .potion-card .sale-price { font-size: 15px; }
+  .room .potion-card .sale-price img { width: 17px; height: 17px; }
+  .room .potion-card .enhance-multiplier { font-size: 10px; }
+  .room .potion-card .enhance-multiplier .mult-digit { height: 17px; }
+  .room .potion-card .enhance-multiplier .mult-period { height: 4px; transform: translateY(4px); }
+  .room .potion-card .enhance-multiplier .mult-times { font-size: 10px; }
+  .room .potion-card .potion-summary h3 { width: 100%; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 10px; line-height: 1.1; }
+}
+
+.room .potion-card .potion-summary h3 { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+
+/* Keep the original number art and aligned action rows at every screen size. */
+.room { --brew-font: PotionMaker, sans-serif; }
+.room .potion-card .actions > button, .room .potion-card .actions > button .action-label { font-family: var(--brew-font); font-weight: 400; }
+.room .potion-card .sale-price { align-self: center; justify-content: center; max-width: 100%; }
+.room .potion-card #value, .room .potion-card .enhance-multiplier, .room .potion-card .enhance-panel .enhance-details strong { display: flex; align-items: center; justify-content: center; gap: 0; }
+.room .potion-card .number-digit { display: block; flex: 0 1 auto; width: auto; height: 20px; min-width: 0; object-fit: contain; }
+.room .potion-card .number-period { width: auto; height: 5px; align-self: flex-end; margin: 0 1px 2px; }
+.room .potion-card .number-comma { align-self: flex-end; font: 20px/1 var(--brew-font); color: #f6c84e; }
+.room .potion-card .enhance-details strong { -webkit-text-stroke: 0; }
+.room .potion-card .enhance-details strong .number-digit { height: clamp(23px, 4vw, 30px); }
+.room .potion-card .enhance-panel .enhance-details::before { font-family: var(--brew-font); padding: 7px 4px; background-size: 100% 100%; }
+.room .potion-card .enhance-multiplier .mult-times { font-family: var(--brew-font); font-weight: 400; color: #ffe45f; }
+.room #visitor-shortcut-portrait { background-color: #f4eddb; }
+.room .commission-shortcut .commission-icon { width: 60px; height: 48px; border: 0; border-radius: 0; background: url("__APK_ORDERS_BOOK__") center / contain no-repeat; }
+.room .room-top .currency-balances { min-width: 0; width: 100%; }
+.room .room-top .currency-balance.coins { width: 100%; min-width: 0; transform: translateY(5px); font-family: var(--brew-font); font-weight: 400; }
+.room .room-top .coins #coins { min-width: 0; overflow-x: auto; overflow-y: hidden; scrollbar-width: none; line-height: 1.4; white-space: nowrap; font-size: clamp(15px, 3vw, 24px); }
+.room .room-top .coins #coin-icon { flex: none; }
+@media (max-width: 650px) {
+  .room .potion-card .number-digit { height: 17px; }
+  .room .potion-card .enhance-details strong .number-digit { height: clamp(20px, 5vw, 25px); }
+  .room .potion-card .enhance-panel .enhance-details::before { padding: 6px 2px; }
+  .room .commission-shortcut .commission-icon { width: 52px; height: 44px; }
+}
+
+.room .potion-card .sale-price #value .number-digit { width: auto; height: 20px; }
+.room .potion-card .sale-price #value .number-period { width: auto; height: 5px; }
+@media (max-width: 650px) { .room .potion-card .sale-price #value .number-digit { height: 17px; } }
+
+.room .potion-card .enhance-panel .enhance-details::before { width: 100%; box-sizing: border-box; }
+
+.room .potion-card .enhance-panel .enhance-details { width: 100%; min-width: 0; }
+
+/* Reference spacing refinements. */
+.room .potion-card .potion-heading #potion-level { --level-h: clamp(24.2px, 3.52vw, 30.8px); left: 14px; }
+.room .potion-card .potion-summary h3 { position: relative; top: 3px; }
+.room .potion-card .actions #sell, .room .potion-card .actions #enhance { gap: 5px; }
+.room .potion-card .enhance-multiplier { gap: 5px; text-shadow: none; -webkit-text-stroke: 0; }
+.room .potion-card .enhance-multiplier .mult-number { font: 400 19px/1 var(--brew-font); color: #ffe45f; }
+.room .potion-card .enhance-multiplier .mult-times { margin-left: 0; font-size: 13px; }
+.room .commission-shortcut > span:not(.commission-icon) { color: #70451d; text-shadow: -1px 0 1px #fff9df, 1px 0 1px #fff9df, 0 -1px 1px #fff9df, 0 1px 1px #fff9df, 0 0 5px #fff3c9; }
+.room .potion-card .enhance-panel .enhance-details::before { font-weight: 400; text-shadow: none; -webkit-text-stroke: 0; }
+.room #pushcat-label { position: relative; margin-top: -14px; padding-bottom: 3px; color: #fff4d4; font-weight: 400; text-shadow: 0 1px 2px #795444, 0 0 3px #795444; -webkit-text-stroke: 0; }
+.room .room-top .currency-balance.coins { width: 95%; transform: translate(5%, calc(7px + 3%)); }
+.room .pushcat-controls #tickets-display, .room .pushcat-controls #rubies-display { font-weight: 400; text-shadow: none; -webkit-text-stroke: 0; }
+@media (max-width: 650px) {
+  .room .potion-card .potion-heading #potion-level { --level-h: clamp(16.5px, 3.96vw, 19.8px); left: 12px; }
+  .room .potion-card .actions #sell, .room .potion-card .actions #enhance { gap: 4px; }
+  .room .potion-card .enhance-multiplier .mult-number { font-size: 16px; }
+  .room .potion-card .enhance-multiplier .mult-times { font-size: 11px; }
+  .room #pushcat-label { margin-top: -11px; }
+}
+
+/* Final alignment uses the marked offsets relative to each element. */
+.room .potion-card .sale-price #value { font: 400 20px/1 var(--brew-font); color: #ffe45f; }
+.room .commission-shortcut > span:not(.commission-icon) { color: #fff8df; text-shadow: 0 1px 2px #352319, 0 0 4px #352319; }
+.room .pushcat-controls #pushcat-summon-icon { position: relative; top: 12px; }
+.room #pushcat-label { z-index: 1; color: #fff3ca; text-shadow: -1px -1px 1px #5e3949, 1px -1px 1px #5e3949, -1px 1px 1px #5e3949, 1px 1px 1px #5e3949; }
+.room .room-top .coins #coins { position: relative; top: 2%; transform: translateY(2%); }
+.room .cauldron.original-cauldron .liquid { transform: translate(-1%, -21%) scale(1.03499); transform-origin: center; }
+.room .potion-card .enhance-panel .enhance-details::before { font-size: 18px; text-indent: -40%; white-space: nowrap; }
+.room .potion-card .potion-heading #potion-level { left: calc(14px + 3%); }
+.room .pio-canvas { object-fit: contain; object-position: center bottom; }
+@media (max-width: 650px) {
+  .room .potion-card .sale-price #value { font-size: 17px; }
+  .room .pushcat-controls #pushcat-summon-icon { top: 10px; }
+  .room .potion-card .enhance-panel .enhance-details::before { font-size: 14.4px; }
+  .room .potion-card .potion-heading #potion-level { left: calc(12px + 3%); }
+}
+
+.room .room-top .coins #coins { transform: translateY(4%); }
+.room .commission-shortcut { scale: 1.05; transform-origin: center; }
+.room .potion-card .potion-heading .potion-summary h3 { font-size: 14.7px; font-weight: 400; -webkit-text-stroke: 0; text-shadow: none; }
+.room .potion-card .enhance-panel .enhance-details[data-status="max"] { align-self: center; height: auto; padding: 9px 4px; background: url("__APK_RATE_LABEL__") center / 100% 100% no-repeat; color: #fff0b9; font: 400 18px/1.2 var(--brew-font); text-shadow: none; }
+.room .potion-card .enhance-panel .enhance-details[data-status="max"]::before { display: none; }
+@media (max-width: 650px) {
+  .room .potion-card .enhance-panel .enhance-details[data-status="max"] { font-size: 14.4px; }
+}
+
+.cauldron-texture { position: absolute; left: 55%; top: 30%; width: 96px; height: auto; transform: translate(-50%, -50%); background-repeat: no-repeat; pointer-events: none; z-index: 13; mix-blend-mode: screen; }
+.texture-fx-plop { width: 76px; }
+.texture-fx-failed { mix-blend-mode: normal; }
+.product-shop { margin-top: 20px; }
+.product-grid { display: grid; gap: 10px; }
+.product-row { display: grid; grid-template-columns: 76px minmax(0,1fr) auto; gap: 10px; align-items: center; padding: 10px; border: 1px solid var(--line); border-radius: 10px; }
+.product-row > img { width: 76px; height: 54px; object-fit: contain; }
+.product-row h4, .product-row p { margin: 0; }
+.product-row button { max-width: 160px; white-space: normal; }
+.product-feedback { min-height: 1.5em; }
+@media (max-width: 520px) { .product-row { grid-template-columns: 52px minmax(0,1fr); } .product-row > img { width: 52px; } .product-row button { grid-column: 2; justify-self: start; } .cauldron-texture { width: 76px; } .texture-fx-plop { width: 60px; } }

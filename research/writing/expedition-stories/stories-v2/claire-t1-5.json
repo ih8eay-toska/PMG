@@ -1,0 +1,93 @@
+{
+  "traveler": "claire",
+  "batch": "v2-stories-t1-5",
+  "chapters": [
+    {
+      "kind": "route", "tier": 1, "family": "Life", "material": "Red herb",
+      "job": "Medicinal Herbs for the Patrol",
+      "hook": "Regulation says every patrol kit carries red-herb dressings in date. Claire is conducting the check as though the regulation had personally asked her.",
+      "outcome": "Two dressings have expired, and that is a fact, not an opinion. She restocks, dates every entry, and logs the fault against herself rather than the quartermaster's clerk. The dated-kit standard follows, and one quartermaster is grateful beyond policy."
+    },
+    {
+      "kind": "route", "tier": 1, "family": "Mana", "material": "Blue herb",
+      "job": "Medicinal Herbs for the Patrol",
+      "hook": "A patch of blue herbs on the patrol route has grown oversized inside a fairy ring and glows, faintly, at dusk. The route report has no field for that.",
+      "outcome": "Claire consults the rulebook, finds nothing literal, and files a margin note. The margin note is annexed: enchanted flora now gets a line in the route report, which she considers the rulebook improving itself."
+    },
+    {
+      "kind": "route", "tier": 1, "family": "Stamina", "material": "Yellow herb",
+      "job": "Medicinal Herbs for the Patrol",
+      "hook": "The infirmary wants yellow herbs kept through winter, which means drying them perfectly, which means slowly. Claire has requisitioned patience accordingly.",
+      "outcome": "She writes the drying roster, watches it to the end, and signs her own shift first. The barracks infirmary has run her roster every winter since, and no jar of yellow has gone moldy under it."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Life", "material": "Sturdy mushroom",
+      "job": "Check the Forest Rations",
+      "hook": "A flooded trail has shortened the forest rations, and the count has to be honest before anything can be fixed. Claire has brought her own pen.",
+      "outcome": "One ranger has been skipping meals to stretch the rations; Claire doubles that ranger's portion by standing order - 'eat first, report after' - and files the shortage herself. The eat-first order holds, and no ranger on her patrol skips a meal again."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Mana", "material": "Clever mushroom",
+      "job": "Check the Forest Rations",
+      "hook": "A traveling trader sells ration seals of very good wax, and the wax is not his. Claire intends to establish whose it is, courteously, in that order.",
+      "outcome": "She checks provenance by asking before accusing and finds the assistant copying the master's waxcut without his knowledge. The seal design is changed, and the grateful trader teaches her workshop the difference himself."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Stamina", "material": "Lively mushroom",
+      "job": "Check the Forest Rations",
+      "hook": "Ration crates of lively mushrooms leap on the forest road, and the count sheets riding with them never arrive legible. Claire is riding along with the tally.",
+      "outcome": "She lays the sheets flat, counts by loading order, and signs each one before the wheels turn. Sheets arrive readable from then on, and her loading-order tally is adopted at the depot gate for everything that hops."
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Life", "material": "Fruit of power",
+      "job": "Escort the Orchard Workers",
+      "hook": "A wasp scare has half the picking crew at the orchard's far edge, and the escort run includes them whether or not they want walking home. Claire is bringing a bell.",
+      "outcome": "She teaches the bell-code - one ring, stand; two rings, walk - and rings it herself all afternoon. The code is still hung by the orchard gate, in her phrasing, shorter than any rulebook."
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Mana", "material": "Fruit of wisdom",
+      "job": "Escort the Orchard Workers",
+      "hook": "The escort route crosses a grove where the wisdom fruit is said to fray direction, and Claire never leads through a rumor. She walks it once alone first.",
+      "outcome": "Walking straight turns out to be rumor rather than fact, so she routes the crew by test-ribbon, tying one at arm's height every ten paces and walking by ribbon rather than certainty. The ribbon-path outlives the season, and grove-walkers still follow it without knowing whose rule it was."
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Stamina", "material": "Fruit of spirit",
+      "job": "Escort the Orchard Workers",
+      "hook": "The spirit row's track has churned to mud under the harvest carts, and the escort walks it twice a day regardless. Claire has requisitioned sticks and rope.",
+      "outcome": "She lays stick-and-rope footing the length of the lane - slow, exact, correct. The dry-track holds under cartload and boot alike to this day, and the orchard stops losing boots to the lane entirely."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Life", "material": "Rainbow bird feathers",
+      "job": "Survey the Feathered Watchtower",
+      "hook": "The watchtower garrison reports rainbow down on its ledges and considers it decorative. Claire has been sent to survey what decoration builds nests.",
+      "outcome": "She surveys, marks the niches, and shelters them in the survey findings themselves. The tower's niche list is attached to its garrison orders - protection by paperwork, which survives every change of garrison after it."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Mana", "material": "Bluebird feathers",
+      "job": "Survey the Feathered Watchtower",
+      "hook": "The tower's blue-dyed banner shifted hue at dusk last week and was read as the wrong signal by three different lookouts. Claire has the signal log open.",
+      "outcome": "She pins all blue-signal hours to fixed light rather than the clock alone and assigns the dusk hours a second lookout. That is the dusk-lock rule, and the wrong-signal scare never repeats under it."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Stamina", "material": "Wyvern feathers",
+      "job": "Survey the Feathered Watchtower",
+      "hook": "The tower stair is missing a step, or has camouflaged one, and the garrison has stopped agreeing on which floor lands where. Claire counts stairs the way she counts anything: twice.",
+      "outcome": "Her season survey renumbers every stair and finds the worn ghost. The stair census joins the season list, and the missing step is rebuilt in black oak so it can hide from nobody ever again."
+    },
+    {
+      "kind": "viewpoint", "tier": 5, "family": "Life", "material": "Rainbow bird's egg",
+      "job": "Protect the Cliffside Nests", "surface": "job",
+      "text": "The schedule on the crag is in her handwriting, filed before anyone asked, because paperwork delayed is patrolling gone. Her route: two boundary walks to the orchard fence - dawn and dusk, three on frost nights - timed to the frost's retreat, which is how the frost got its date. What she does not put on record: she watched Neet carry feathers nose-to-nose like a diplomat presenting credentials, and concluded the shrine's machinery of welcome did more for the roost than her schedule ever would. A regulation exists to hold the door; it does not have to be the reason anyone enters."
+    },
+    {
+      "kind": "viewpoint", "tier": 5, "family": "Mana", "material": "Bluebird's egg",
+      "job": "Protect the Cliffside Nests", "surface": "job",
+      "text": "Claire set the no-voices rule at the tree line and kept three nights of her own silence, standing exactly where the wind crossed, so even her mail's rustle could not carry. What no rule records: she counted her own heartbeats to keep from checking the ledge, and on those nights she signed nothing - because paper whispers, and a signature is still a sound."
+    },
+    {
+      "kind": "viewpoint", "tier": 5, "family": "Stamina", "material": "Wyvern's egg",
+      "job": "Protect the Cliffside Nests", "surface": "job",
+      "text": "Claire drew the cordons along the orchard's existing fence-line - a boundary that already existed, so no new fence was bought and no tree was cut. She opened the watching days to the town bell only, and closed them the same way. Her margin, written for herself and filed under unsent: 'a regulation held generously is kept better than one enforced.'"
+    }
+  ]
+}

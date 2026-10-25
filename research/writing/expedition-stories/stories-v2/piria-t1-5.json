@@ -1,0 +1,84 @@
+{
+  "traveler": "piria",
+  "batch": "v2-stories-t1-5",
+  "chapters": [
+    {
+      "kind": "route", "tier": 1, "family": "Life", "material": "Red herb",
+      "job": "A Quiet Visit to the Herb Market",
+      "hook": "The herb market after dark is technically closed, and the red-herb drawer has been emptying itself anyway. Piria works nights either way.",
+      "outcome": "The real thief is the stall's own cat, so she removes it - gently, by the window, at midnight, as a professional courtesy - and hands it back at dawn with a note: 'your mouser, promoted.' The cat is hired, the drawer is safe, and the note keeps being retold at the market."
+    },
+    {
+      "kind": "route", "tier": 1, "family": "Mana", "material": "Blue herb",
+      "job": "A Quiet Visit to the Herb Market",
+      "hook": "The blue herb she wants sits locked inside a drawer that belongs to someone careful. Piria can tell it is careful, and she likes that too much to spoil it.",
+      "outcome": "She grades the lock silently - 'better than mine' - and buys the herb instead. The owner later finds her note, 'your lock taught me patience,' and hires her weeks on to build it stronger; her best clients are the ones she never robs."
+    },
+    {
+      "kind": "route", "tier": 1, "family": "Stamina", "material": "Yellow herb",
+      "job": "A Quiet Visit to the Herb Market",
+      "hook": "A back-alley stall is selling yellow herb 'for pain,' which would be fine except it is beet-flavored nothing. Piria buys one packet, for evidence.",
+      "outcome": "She tastes it once, pays the asking price, and returns the fake to its maker with a receipt, unsigned. The maker refunds everyone quietly; her invoice line reads 'consolation, not blackmail.'"
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Life", "material": "Sturdy mushroom",
+      "job": "Mushrooms from a Secret Path",
+      "hook": "Sturdy-cap foragers are being sent up a cliff path that has been quietly rotting all season. Piria has climbed every way up that cliff and knows which of them lie.",
+      "outcome": "She ropes the crumbling stretch and chalks a note: 'rotate your grip, not your ankle.' The rope holds one season and is replaced by the town with a proper chain - her kindness noted, her name left out, both to her taste."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Mana", "material": "Clever mushroom",
+      "job": "Mushrooms from a Secret Path",
+      "hook": "The clever-mushroom hollow has been sitting on exactly the wrong kind of secret, because mushrooms have no pockets. Piria goes to see what they are guarding.",
+      "outcome": "It is a lost pocketbook; she reads the name, walks the return trip on her lunch hour, and leaves it on the doorstep - unsigned, unwatched, unboasted. A thank-you pie appears at her own door with no card, and the case closes itself."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Stamina", "material": "Lively mushroom",
+      "job": "Mushrooms from a Secret Path",
+      "hook": "The lively mushrooms have found a way downhill that the maps have not, and Piria does not enjoy being shown up by produce.",
+      "outcome": "She follows their long silent arcs and finds a shortcut the maps missed, then chalks the arrow herself and lets the mushrooms keep the credit. The arrow is still the correct way down, and the mushrooms still get the reviews."
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Life", "material": "Fruit of power",
+      "job": "An Orchard Shortcut",
+      "hook": "Her shortcut through the orchard fence has picked up regular traffic, and today's traffic includes one picker, one turned ankle, and one full basket of heavy fruit. Piria carries the first two without complaint about either.",
+      "outcome": "She asks the gatekeeper, properly, to leave the dawn gate unlocked for the workers. The gate keeps dawn hours from then on, and the shortcut gets its own repaired boards."
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Mana", "material": "Fruit of wisdom",
+      "job": "An Orchard Shortcut",
+      "hook": "The wisdom rows make everyone philosophical, including the crate-stacking, which has developed opinions about gravity. Piria is asked to stack quietly, and does not laugh even once.",
+      "outcome": "She chalks balance marks in perfect silence and ties the wobbliest crates down by hand. The balance chalk becomes the orchard crew's own mark afterward, drawn on crates she will never touch."
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Stamina", "material": "Fruit of spirit",
+      "job": "An Orchard Shortcut",
+      "hook": "The festival needs its spirit-fruit haul moved at night - quietly, legally, and fast. The owner wants it in writing, and so does Piria.",
+      "outcome": "With the owner's blessing in hers, she runs it: three trips, no lanterns, everyone paid. A standing thank-you crate appears at her door each festival after, addressed to 'the shortcut,' which she refuses to correct."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Life", "material": "Rainbow bird feathers",
+      "job": "Find the Hidden Feather Cache",
+      "hook": "A child's rainbow-feather cache sits behind the mill, hoarded honestly, and the mill damp has been eating at it. Piria knows what a collection demands.",
+      "outcome": "She builds the cache a dry shelf and trades fairly for the keeping of it - two polish cloths and a promise to keep the location secret. The promise is kept; the loft has a bright dry corner now, and a secret with a shelf."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Mana", "material": "Bluebird feathers",
+      "job": "Find the Hidden Feather Cache",
+      "hook": "A spell-latched box has been in the hollow longer than the hollow has had a name, and picking is not the answer to it. Piria has an hour and a riddle's worth of patience.",
+      "outcome": "The latch opens for a riddle rather than a pick; she sits with it, answers it, and leaves the bluebird cache exactly as found - taking only the riddle's oldest wrong answer, since nobody needs it. The box re-latches; the latch's owner never knows."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Stamina", "material": "Wyvern feathers",
+      "job": "Find the Hidden Feather Cache",
+      "hook": "A wyvern-shed cache is riding a high rock, and every ladder in the market has already refused the climb. Piria has read the guttering above the rock.",
+      "outcome": "She takes the rain-gutter route - the one she would never offer a client - and delivers the cache to its claimant whole. A flag pole on the rock afterward gives the next gust competition."
+    },
+    {
+      "kind": "neutral", "tier": 5, "applies_to": "any",
+      "job": "Negotiate a Nesting Permit", "surface": "job",
+      "hook": "Nesting permits are the least exciting paperwork in town during the frost week, which is precisely why nobody has beaten the line yet. Piria likes quiet errands.",
+      "text": "The frost week put a permit desk in the town hall's coldest corner, so Piria filed the roost crew's nesting paperwork herself - walking in, no window theatrics, stamps before sunrise. The wild eggs were nobody's inventory; guardianship simply needed a bit of speed. The clerk now stamps her forms first, on principle, and has never once asked what she is filing. That is her favorite kind of license."
+    }
+  ]
+}

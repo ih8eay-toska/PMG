@@ -34,7 +34,7 @@ assert.equal(game.rewardCost('hourly').amount,12345);game.state.tickets=7;assert
 const alternate=new ctx.module.exports.PotionGame();alternate.state.nextVisitorAt=1;alternate.tick(1,()=>.999);assert.equal(alternate.state.travelers[9].rewardBoost.amount,7);assert.equal(ctx.module.exports.sanitizeSave(alternate.state).travelers[9].rewardBoost.amount,7);
 alternate.state.costumes=ctx.module.exports.COSTUMES.entries.map(c=>c.id);alternate.state.rubies=30;assert.equal(alternate.openReward('skin','Pio',1000,()=>.999).amount,500);assert.equal(ctx.module.exports.sanitizeSave(alternate.state).rewardHistory[0].amount,500);
 game.state.nextVisitorAt=1;game.tick(1,()=>0);assert.ok(game.acceptQuest(0,2));assert.equal(game.state.travelers[0].deadline,45002);
-const app=fs.readFileSync(path.join(__dirname,'app.js'),'utf8'),text=app.split(/\r?\n/).find(line=>line.startsWith('function rewardOddsText('));ctx.game=game;ctx.window={brewerCharacter:'Pio'};ctx.ECONOMY=changed;ctx.CURRENCY_UNITS=changed.bank.units;ctx.rewardLabels={tickets:'tickets',rubies:'rubies'};ctx.fmt=n=>String(n);ctx.duration=n=>String(n);vm.runInContext(text,ctx);assert.match(vm.runInContext("rewardOddsText('hourly')",ctx),/3 paid openings/);
+const app=fs.readFileSync(path.join(__dirname,'app.js'),'utf8'),text=app.split(/\r?\n/).find(line=>line.startsWith('function rewardOddsText('));ctx.game=game;ctx.window={brewerCharacter:'Pio'};ctx.ECONOMY=changed;ctx.CURRENCY_UNITS=changed.currencyUnits;ctx.rewardLabels={tickets:'tickets',rubies:'rubies'};ctx.fmt=n=>String(n);ctx.duration=n=>String(n);vm.runInContext(text,ctx);assert.match(vm.runInContext("rewardOddsText('hourly')",ctx),/3 paid openings/);
 assert.deepEqual(ECONOMY,savedConfig,'isolated test must not change live defaults');
 // Check every purchasable tier against the explicit tables and same-family gates.
 for(let family=0;family<3;family++)for(let tier=0;tier<24;tier++){
@@ -44,14 +44,9 @@ for(let family=0;family<3;family++)for(let tier=0;tier<24;tier++){
  assert.ok(g.buy(key));assert.equal(g.state.tiers[family],tier+1);assert.equal(g.state.coins,1e10-u.cost);
  assert.equal(sanitizeSave(g.state).tiers[family],tier+1);
 }
-// Only ticket/ruby bundles are exchangeable; rounding cannot print currency.
-const bank=new PotionGame();bank.state.coins=999;bank.state.tickets=123;bank.state.rubies=7;
-assert.equal(bank.bankMaxLots('tickets','rubies'),12);assert.equal(bank.exchange('tickets','rubies',12),true);assert.equal(bank.state.tickets,3);assert.equal(bank.state.rubies,19);
-assert.ok(bank.exchange('rubies','tickets',19));assert.equal(bank.state.tickets,193);assert.equal(bank.state.rubies,0);
-for(const pair of [['coins','tickets'],['tickets','coins'],['rubies','coins'],['x','rubies'],['tickets','tickets']])assert.equal(bank.exchange(...pair,1),false);
-for(const lots of [-1,0,.5,NaN,Infinity,Number.MAX_SAFE_INTEGER+1,20])assert.equal(bank.exchange('tickets','rubies',lots),false);
-assert.equal(bank.state.coins,999);assert.equal(bank.state.tickets+10*bank.state.rubies,193);
-bank.state.rubies=Number.MAX_SAFE_INTEGER;assert.equal(bank.exchange('tickets','rubies',1),false);
+// Exchange value lives in product pricing; the retired Bank has no API or UI.
+assert.deepEqual(ECONOMY.currencyUnits,{tickets:10,rubies:1});assert.equal(ECONOMY.bank,undefined);assert.equal(PotionGame.prototype.exchange,undefined);assert.equal(PotionGame.prototype.bankMaxLots,undefined);
+const template=fs.readFileSync(path.join(__dirname,'index.template.html'),'utf8');assert.doesNotMatch(template,/bank-dialog|bank-exchange|data-menu-click="bank"/);assert.doesNotMatch(app,/renderBank|updateBankControls/);
 // Enumerate all 100 equally spaced case rolls, including compensation states.
 for(const maxFairies of [false,true])for(const allSkins of [false,true])for(const kind of ['tickets','skin']){
  const outcomes={},totals={tickets:0,rubies:0},base=new PotionGame();
@@ -70,4 +65,24 @@ for(const maxFairies of [false,true])for(const allSkins of [false,true])for(cons
  if(!maxFairies)assert.equal(outcomes.fairy,kind==='tickets'?5:19);
  if(kind==='skin'&&!allSkins)assert.equal(outcomes.skin,1);
 }
-console.log('Passed: schema 2, isolated config wiring, all material prices/gates, Bank conservation and exact case odds/returns in all compensation states.');
+console.log('Passed: schema 2, isolated config wiring, all material prices/gates, bundle exchange parity and exact case odds/returns in all compensation states.');
+
+// Offline shop grants reuse saved currency/charge fields and existing 10:1 exchange rate.
+assert.equal(ECONOMY.shop.products.length,13);assert.equal(new Set(ECONOMY.shop.products.map(p=>p.id)).size,13);
+for(const product of ECONOMY.shop.products){
+ const g=new PotionGame(),cost=g.shopProductCost(product.id),before=JSON.stringify(g.state);assert.ok(Number.isSafeInteger(cost.amount)&&cost.amount>0);assert.equal(g.buyShopProduct(product.id),false);assert.equal(JSON.stringify(g.state),before);
+ g.state[cost.currency]=cost.amount;assert.equal(g.buyShopProduct(product.id),true);assert.equal(g.state[cost.currency],0);
+ for(const[key,amount]of Object.entries(product.grants))assert.equal(['enhancement','protection','selling'].includes(key)?g.state.powerups[key]:g.state[key],amount);
+ const loaded=new PotionGame(sanitizeSave(JSON.parse(JSON.stringify(g.state))));for(const[key,amount]of Object.entries(product.grants))assert.equal(['enhancement','protection','selling'].includes(key)?loaded.state.powerups[key]:loaded.state[key],amount);
+ if(product.grants.rubies)assert.equal(cost.amount,product.grants.rubies*ECONOMY.currencyUnits.tickets/ECONOMY.currencyUnits.rubies);
+ if(product.grants.tickets)assert.equal(cost.amount,product.grants.tickets*ECONOMY.currencyUnits.rubies/ECONOMY.currencyUnits.tickets);
+}
+{
+ const g=new PotionGame();g.state.rubies=1000000000;g.state.powerups.protection=1e9;let before=JSON.stringify(g.state);assert.equal(g.buyShopProduct('small-enhancement-package'),false);assert.equal(JSON.stringify(g.state),before);assert.equal(g.buyShopProduct('unknown'),false);
+ g.state.tickets=Number.MAX_SAFE_INTEGER;assert.equal(g.canBuyShopProduct('micro-ticket-bundle'),false);
+ g.state.coins=1e300;assert.equal(g.canBuyShopProduct('micro-coin-bundle'),false);
+ const fresh=new PotionGame(),early=fresh.shopProductCost('micro-coin-bundle').amount;fresh.state.tiers=[24,24,24];fresh.state.speed=19;fresh.state.price=19;const late=fresh.shopProductCost('micro-coin-bundle').amount;assert.ok(late<early);assert.equal(early,119048);assert.ok(late>0);
+ // Round trips cannot create premium currency or spend gold for it.
+ fresh.state.tickets=1000;const original=fresh.state.tickets+10*fresh.state.rubies;assert.ok(fresh.buyShopProduct('micro-ruby-bundle'));assert.ok(fresh.buyShopProduct('micro-ticket-bundle'));assert.equal(fresh.state.tickets+10*fresh.state.rubies,original);
+}
+console.log('Passed: all 13 shop purchases, refusal without mutation, save/reload, 10:1 parity, overflow guards and progression-priced gold.');

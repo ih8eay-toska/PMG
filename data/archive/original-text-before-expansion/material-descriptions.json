@@ -1,0 +1,5 @@
+{
+  "source": "PotionMaker-REA extracted Materials_304.bin table and English_245.bin localization.",
+  "provenance": "The original data includes material names, prices, unlock levels, and starting potions, but no individual material descriptions. Generated flavor text was removed rather than replaced with invented prose.",
+  "entries": {}
+}

@@ -1,0 +1,468 @@
+{
+  "pilot": "chapter-click-04",
+  "traveler": "neet",
+  "tier": 4,
+  "job": "Gather Fallen Feathers",
+  "purpose": "Owner-review draft: a click-through scene script for the new tier-chapter presentation. The chapter opens as soon as any material family reaches the tier; the player picks one currently unlocked material inside the opening scene; the choice sets the route; the traveler is dispatched; after the two-minute trip the player opens a click-through continuation carrying the investigation, action, and outcome. One pilot only (Neet, tier 4, Gather Fallen Feathers, all three material routes). Tier 4 has no accepted journey draft - data/expedition-stories.json carries hooks and outcomes only - so every return scene here is new fan-written, constrained at each step by the byte-exact hooks and outcomes. Nothing here edits data/, source/, or the playable HTML.",
+  "sourceMaterial": [
+    "research/writing/expedition-stories/stories-v2/neet-t1-5.json - accepted v2 story pack: tier-4 hooks and outcomes (quoted byte-exact)",
+    "research/writing/expedition-stories/stories-v2/chapter-pilot-neet-t2.json - approved click-through format benchmark (chapter-click-01)",
+    "research/writing/expedition-stories/stories-v2/chapter-pilot-neet-t1.json - approved click-through format benchmark (chapter-click-02)",
+    "research/writing/expedition-stories/stories-v2/chapter-pilot-neet-t3.json - approved click-through format benchmark (chapter-click-03, incl. the discriminating-test return patterns)",
+    "data/expedition-jobs.json - job name 'Gather Fallen Feathers' (byte-exact)",
+    "data/game-data.json - material names Rainbow bird feathers / Bluebird feathers / Wyvern feathers (byte-exact)",
+    "data/material-descriptions.json - accepted fan-written feather imagery (shimmer with every color; blue like a patch of clear sky; long and golden with a faint metallic sheen), not original-game fact",
+    "data/expedition-stories.json - world context (heath gatherers carried by Daisy's accepted story rows in its tier-4/5 wyvern entries; hooks and outcomes only, no journey prose for tier 4)",
+    "Presentation feel reference: the game's existing click-through arrival scene (Tia) - short boxes, click to advance"
+  ],
+  "presentationModel": "Player opens a tier chapter when any material family reaches that tier. Inside the opening scene the player chooses one currently unlocked tier material; that choice determines the route. The traveler is dispatched. When the trip finishes, the player opens a click-through continuation showing what happened and the route's outcome. Other unlocked routes can be played on later trips, one active route at a time.",
+  "playerFlow": "op-01 -> op-02 -> choice -> confirm = byte-exact hook box for the chosen family -> one route departure box -> trip-start (dispatch, no result) -> trip timer -> trip-end (click to open the report) -> route return boxes in order, last box = byte-exact outcome. After the chapter, other unlocked choices remain available on later trips.",
+  "implementationNotes": {
+    "chapterOpen": "The chapter becomes available as soon as any feather material family reaches tier 4. Suggested UI copy, outside the story beats: 'New chapter - Gather Fallen Feathers, tier 4.'",
+    "optionGating": "Show only options for material families currently unlocked at this tier; one, two, or three options are all valid states. The opening prose is written to hold when only one option exists.",
+    "routeLock": "The material choice sets the active route for this trip; other unlocked choices remain available on later trips, one active route at a time.",
+    "tripTimer": "The trip runs about two minutes on the game timer. The timer belongs to implementation and UI, not to story text.",
+    "awardHandling": "The script never states or implies that the player receives the gathered feathers as a reward when the trip ends; the trip-end beat only opens Neet's report, and awarding belongs to the game's existing systems, outside story text."
+  },
+  "beatRules": [
+    "Every beat carries id, phase, speaker, portrait, text. The choice beat additionally carries its option moments.",
+    "Narrator beats stay brief and only set place, action, or a visible action. Neet and the route's side characters carry the reasoning and the decisions in exchanges. No line of dialogue exists to meet a count; each exchange performs a scene function (a custom witnessed, a defense given, a rule taught, a refusal made).",
+    "Each box is written to be comfortable in a dialogue box: about 40 words per box. The byte-exact hook quote (confirm) and the byte-exact outcome quote (final return box) repeat already accepted screen text.",
+    "Speaker 'narrator' is unvoiced scene text with no portrait. Speaker 'neet' shows the Neet portrait. Maren, Ansel, Vetch, Dov, and Sarn are new side characters with no existing portrait assets: portrait is 'none-new-side-character' (text-only boxes).",
+    "Tier 4 has no accepted journey draft, so the return scenes are new fan-written under a strict ownership rule: physical acts named in the outcome may be shown on screen only as demonstrations (one feather graded wet and dry, one shortcut refused, one luck custom witnessed), never as systematic completion; institutional facts and legacies (the circle's founding and its washing and sorting-by-warmth, the wet-light catalog with its market copy, every shortcut refused and the marker stone, the wyvern line in the stores) appear only in the outcome beat.",
+    "One deliberate exception to the ownership rule is the Life route's earned decision: Neet forms and speaks the decision to start a quilting circle on screen (this is what the route must earn), while the founding facts stay in the outcome. She never uses the outcome's phrasing (no 'quilting circle', no 'comfort-works', no margin note on screen).",
+    "Neet's record-keeping appears as counting and note-taking only, grown from her accepted tier-1/2/3 habits without naming them; no route borrows another route's props or vocabulary (ledger pages are shared kit; no notebook word appears this tier).",
+    "No outcome fact appears anywhere before the trip ends. Pre-dispatch boxes carry only hook facts and Neet's spoken intentions.",
+    "Route independence: no beat assumes another route was seen, no cross-route character appearances, no tier-1, tier-2, or tier-3 callbacks. Each route is fully understandable on its own and in any play order."
+  ],
+  "opening": {
+    "beats": [
+      {
+        "id": "op-01",
+        "phase": "opening",
+        "speaker": "narrator",
+        "portrait": "none",
+        "text": "The winds have been generous all week, and the feather work is Neet's."
+      },
+      {
+        "id": "op-02",
+        "phase": "opening",
+        "speaker": "neet",
+        "portrait": "neet",
+        "text": "Before the dew lifts, then. I have the basket, the ledger, and a morning that wants walking. Tell me where the wind is leaving things, and I will be ready."
+      },
+      {
+        "id": "choice",
+        "phase": "choice",
+        "speaker": "narrator",
+        "portrait": "none",
+        "text": "Choose what Neet gathers today.",
+        "note": "Only options whose material family is unlocked at this tier are shown. The opening prose above is written to be true whether one option or three are available.",
+        "options": [
+          {
+            "material": "Rainbow bird feathers",
+            "teaser": "Bright feathers drifting along the mill path like scattered festival litter - and Neet walking it with a basket and a plan."
+          },
+          {
+            "material": "Bluebird feathers",
+            "teaser": "Bluebird feathers are being graded wet and sold dry, and the arguments about color have outlasted the colors."
+          },
+          {
+            "material": "Wyvern feathers",
+            "teaser": "Where the heath path climbs, the winter wind has been dropping old wyvern feathers for weeks - and Neet wants them gathered honestly."
+          }
+        ]
+      }
+    ]
+  },
+  "sharedDispatch": [
+    {
+      "id": "trip-start",
+      "phase": "trip",
+      "speaker": "narrator",
+      "portrait": "none",
+      "text": "Neet takes the assignment and goes; whatever happens out there comes home with her."
+    },
+    {
+      "id": "trip-end",
+      "phase": "trip",
+      "speaker": "narrator",
+      "portrait": "none",
+      "text": "The trip is over. Open Neet's report to see what happened, and how it ended."
+    }
+  ],
+  "routes": [
+    {
+      "family": "Life",
+      "material": "Rainbow bird feathers",
+      "confirmBeats": [
+        {
+          "id": "life-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Rainbow bird feathers have been drifting along the mill path all week, bright as scattered festival litter. Neet is walking it with a basket and a plan."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "life-dep",
+          "phase": "departure",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "Rainbow feathers, then. Bright things the wind is handing out for free, and a basket to receive them properly. I will walk the path slowly enough to notice."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "life-r1",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The report starts on the mill path, where the wind has been scattering for days: rainbow feathers lying bright across the ruts, trodden at the wheel's edge, and still coming down."
+        },
+        {
+          "id": "life-r2",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "She walks it as slow as its bends want, picking up what the ruts have not ruined, and listening: pilgrims pass both ways, and more than one of them stoops."
+        },
+        {
+          "id": "life-r3",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "An old pilgrim with a stick, Maren, stops mid-climb to lift one feather out of a puddle and press it flat between her palms, drying something worth drying."
+        },
+        {
+          "id": "life-r4",
+          "phase": "return",
+          "speaker": "maren",
+          "portrait": "none-new-side-character",
+          "text": "One each, that is the custom of the path. Take two and your neighbor's luck goes short. Mine has ridden in my book since the winter of the feast and it still works."
+        },
+        {
+          "id": "life-r5",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The arithmetic of the path is in its ditches: luck goes to whoever stoops first, and the brightest feathers rot in the hedges where nobody will reach."
+        },
+        {
+          "id": "life-r6",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Nearer the top, a young pilgrim named Ansel straggles up against the cold, thin bundle on his back, hands red at the knuckles."
+        },
+        {
+          "id": "life-r7",
+          "phase": "return",
+          "speaker": "ansel",
+          "portrait": "none-new-side-character",
+          "text": "I have come up twice and gone down twice, and the wind has not let me keep one yet. My hands have not let go of the cold either."
+        },
+        {
+          "id": "life-r8",
+          "phase": "return",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "That is luck going into ditches and cold sleeves. A feather carried alone warms one walk and fades. Sewn down among many, it would warm every walk after - and I mean to start the circle that does that sewing."
+        },
+        {
+          "id": "life-r9",
+          "phase": "return",
+          "speaker": "maren",
+          "portrait": "none-new-side-character",
+          "text": "Then the custom sleeps easy. It rations the feathers a person carries for luck, and yours are going into common work, not into any pocket - nobody's luck goes short while your basket fills. Take the muddy ones too; mud cleans off."
+        },
+        {
+          "id": "life-r10",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The walk back down takes longer than the walk up: the wind is generous, the mud is persuasive, and her basket rides heavier every field."
+        },
+        {
+          "id": "life-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "She gathers the feathers for a pilgrims' quilting circle of her own starting, washing and sorting by warmth rather than shade. The circle is founded on one basket of fetched luck - the first of the region's comfort-works, as she writes in the margin - and it is still the warmest."
+        }
+      ]
+    },
+    {
+      "family": "Mana",
+      "material": "Bluebird feathers",
+      "confirmBeats": [
+        {
+          "id": "mana-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Bluebird feathers are being graded wet and sold dry, and the market's arguments about color have outlasted the colors. Neet is asked to look at the evidence."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "mana-dep",
+          "phase": "departure",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "Bluebird feathers, then. Colors that change with their weather need comparing, not arguing. One feather, graded wet, dried, and graded once more - same eyes, and the page will keep both answers."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "mana-r1",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The report starts at the market, where a crate of bluebird feathers has been bought, returned, disputed, and resold until the argument is older than the feathers in it."
+        },
+        {
+          "id": "mana-r2",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The stallkeepers sent for her the way a street sends for its cleric: Vetch, senior among the graders, walks her to the crate himself and lays the whole grievance flat."
+        },
+        {
+          "id": "mana-r3",
+          "phase": "return",
+          "speaker": "vetch",
+          "portrait": "none-new-side-character",
+          "text": "Grade it wet, sell it dry, and every side remembers a different bird. I have argued color until color is all we argue about. You were sent for. Show me what the feathers have been doing while we were talking."
+        },
+        {
+          "id": "mana-r4",
+          "phase": "return",
+          "speaker": "dov",
+          "portrait": "none-new-side-character",
+          "text": "A feather is bluest when it comes off the bird, and that is what I grade. If the blue fades on somebody's windowsill, that is drying, not cheating."
+        },
+        {
+          "id": "mana-r5",
+          "phase": "return",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "Then we will stop arguing about honesty and start arguing about states. One feather, graded wet and graded dry by Dov's own eyes, with the drying in between. If a grade moves with its drying, that much at least is settled."
+        },
+        {
+          "id": "mana-r6",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Dov grades the first feather wet, and it reads blue as a patch of clear sky, as his way goes. Neet writes the grade on her page with the word wet beside it."
+        },
+        {
+          "id": "mana-r7",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The feather dries on the stall's warm slate while the market holds its breath. Read again by Dov, same eyes, same light, it comes back a shade short of clear sky, and the two grades share a line on her page."
+        },
+        {
+          "id": "mana-r8",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "A second feather goes through the same round - wet, dried, read again - and lands a shade short by the same amount. Dov looks at his own hands as if they had been keeping secrets from him."
+        },
+        {
+          "id": "mana-r9",
+          "phase": "return",
+          "speaker": "vetch",
+          "portrait": "none-new-side-character",
+          "text": "A shade short, twice, by the same amount. So there is weather in the argument - a source we can write down, where before we only traded memories."
+        },
+        {
+          "id": "mana-r10",
+          "phase": "return",
+          "speaker": "dov",
+          "portrait": "none-new-side-character",
+          "text": "Grade them wet if it suits you, sell them dry if it suits the day, but write which state a grade is in - and I will put my name to mine."
+        },
+        {
+          "id": "mana-r11",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Neet closes her ledger on the morning: two feathers, four grades, one drying slate, and not one word of argument spent on honesty."
+        },
+        {
+          "id": "mana-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "She catalogs wet-light against dry-light and writes the difference into her ledger. Every later dispute ends before it starts; the market graders ask for a copy, and it sits beside hers."
+        }
+      ]
+    },
+    {
+      "family": "Stamina",
+      "material": "Wyvern feathers",
+      "confirmBeats": [
+        {
+          "id": "stamina-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Where the heath path climbs, the winter wind has been shedding old wyvern feathers for weeks. Neet wants them for the shrine stores, and wants them gathered honestly."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "stamina-dep",
+          "phase": "departure",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "Wyvern feathers, then. I want them honestly come by - what the wind finished with, and nothing newer. A heath like that deserves a local arm beside me, and I will ask for one."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "stamina-r1",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The report starts where the heath path climbs: the winter wind has been laying old feathers along it for weeks, and the gatherers read the drifts the way farmers read weather."
+        },
+        {
+          "id": "stamina-r2",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The gatherers lend her Sarn, a heath gatherer with a hooked stick and no hurry, and the climb begins at the pace the path allows."
+        },
+        {
+          "id": "stamina-r3",
+          "phase": "return",
+          "speaker": "sarn",
+          "portrait": "none-new-side-character",
+          "text": "Three rules on the heath. Walk where the stones can be seen, take what the wind has finished with, and never argue with a wyvern's weather."
+        },
+        {
+          "id": "stamina-r4",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Old-shed shows itself at the quill: papery at the root, light as a year of weather. At the first patch of fresh shed she pauses, then leaves it where it fell - the wyvern is not finished with it, and neither is she."
+        },
+        {
+          "id": "stamina-r5",
+          "phase": "return",
+          "speaker": "sarn",
+          "portrait": "none-new-side-character",
+          "text": "There is a door in the heath, as we say. The goat track. It drops two bends of path, and every winter it drops somebody with them. The wind stacks feathers on it too - pretty ones, fresh ones."
+        },
+        {
+          "id": "stamina-r6",
+          "phase": "return",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "Then the door stays shut. We are not late enough to trade a winter's caution for forty minutes, and the fresh ones are not ours. The kept path ends where the job ends - I will walk it whole."
+        },
+        {
+          "id": "stamina-r7",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The kept path goes the long way and the long way pays: old feathers lie thick along the stones, and once the light opens far above and something long and golden crosses it, and the heath stands still until it is past."
+        },
+        {
+          "id": "stamina-r8",
+          "phase": "return",
+          "speaker": "sarn",
+          "portrait": "none-new-side-character",
+          "text": "That is why the heath has gatherers and not heroes. You walked it properly today, cleric. The feathers under your arm are all the storm's old furniture, and the path will remember you walking it."
+        },
+        {
+          "id": "stamina-r9",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "By the wall at the bottom she makes the morning into a page in her ledger: rules kept, fresh refused, one wing overhead, and a weight of old-shed that will need sorting before it is anything at all."
+        },
+        {
+          "id": "stamina-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "She walks the marked path with an escort and refuses every shortcut, taking old-shed only. The winter stores gain a wyvern line, and the heath path earns its first marker stone."
+        }
+      ]
+    }
+  ],
+  "mapping": {
+    "life": {
+      "hook": "life-hook quotes the tier-4 Life hook byte-exact as the confirm box after the choice.",
+      "scene": "No accepted journey draft exists for this tier; the scene is new fan-written constrained by the hook and outcome. life-r1 opens the account on the mill path (the wind scattering for days, feathers trodden at the wheel's edge). life-r2 stages the hook's walk - she picks and listens, noticing pilgrims stoop. life-r3/r4 introduce Maren, the old pilgrim whose feather-in-a-book custom makes luck a thing people keep, ration one each, and lose words over. life-r5 is her ledger's arithmetic of the path: luck to whoever stoops first, the brightest rotting unclaimed. life-r6/r7 give the need side: Ansel, the cold luckless young pilgrim on his third attempt. life-r8 is the route's earned decision - Neet speaks it: a feather sewn down among many would warm every walk after, and I mean to start the circle that does that sewing. life-r9 is Maren's reconciliation of the custom with the basket - the rule rations the feathers a person carries for luck, and a basket bound for common work shorts nobody - with the muddy-ones blessing attached; life-r10 closes on the gather itself, the basket riding heavier.",
+      "outcome": "life-out quotes the outcome byte-exact as the final box; the circle's founding, the washing, the sorting by warmth rather than shade, the one basket of fetched luck, the comfort-works phrase and its margin note, and the still-warmest legacy stay owned by this beat alone.",
+      "notes": "The decision is deliberately earned on screen (owner directive) while every founding fact stays in the outcome: life-r8 says 'start the circle that does that sewing' and never uses the outcome's vocabulary (no 'quilting', no 'comfort-works', no sorted-by-warmth, no margin note). Maren's one-feather custom is new folk texture that gives luck a measurable logic the ledger can hold; her 'since the winter of the feast' is background flavor, not history load-bearing elsewhere. The r9 reconciliation earns the gather's exception on screen: the custom rations the feathers a person carries for oneself, and Maren - not Neet - rules that a basket bound for common sewing is passage, not possession, so nobody's luck goes short; combined with the r5 waste arithmetic (feathers rotting where nobody will reach), the gather respects the custom's purpose rather than breaking its letter. Ansel is given nothing on screen - the circle's later work is the answer, so the scene earns the decision rather than borrowing the outcome's charity. The walk back down (life-r10) keeps the trip's result at 'basket rides heavier', never at found or given."
+    },
+    "mana": {
+      "hook": "mana-hook quotes the tier-4 Mana hook byte-exact as the confirm box.",
+      "scene": "mana-r1 opens at the market on the disputed crate. mana-r2 performs the hook's ask: Vetch, senior among the graders, walks her to the crate and lays the grievance flat. mana-r3 is Vetch's weariness (every side remembers a different bird) - the dispute shaped as a contest of memories. mana-r4 is Dov's honest defense of grading wet (bluest off the bird; fading is drying, not cheating). mana-r5 is Neet's controlled proposal: one feather, graded wet and dry BY DOV'S OWN EYES, with the drying in between - grader constant, state varied, so no one can blame whose eyes moved. mana-r6/r7 run the first feather: wet reads blue as a patch of clear sky (the accepted fan-written material imagery as the wet-graders' framing), the same eyes read it a shade short of clear sky after drying, and the two grades share one line on her page. mana-r8 repeats on a second feather, landing a shade short by the same amount - demonstrated repeatability. mana-r9/r10 are the settlement, kept no broader than the test shows: Vetch names weather as one writable source inside the argument, and Dov volunteers to record and sign the state of his grades. mana-r11 closes her ledger with the morning's count.",
+      "outcome": "mana-out quotes the outcome byte-exact as the final box; the wet-light-against-dry-light catalog, the ledger entry, the disputes ending before they start, the graders asking for a copy, and the copy sitting beside hers stay owned by this beat alone.",
+      "notes": "Revision-thinking applied from the tier-1/3 test standard: the test ACTUALLY discriminates because the grader is held constant and only the feather's state changes, so a grade move is attributable to the drying, not to anyone's eyes or honesty. Two feathers are the on-screen demonstration; the market-wide cataloging is the outcome's system, so no beat builds past the two lines. Every on-screen conclusion stays no broader than the test shows - a repeatable drift on the feathers tested, which settles that much and no more: r5 says 'that much at least is settled', and r9 says 'there is weather in the argument', naming a source inside the dispute rather than claiming nobody ever lied or that every past dispute came from drying; the old dispute's cause stays open on screen, and the outcome's later peace is what the adopted record does going forward. No beat shows the graders asking for a copy - Vetch's 'a source we can write down' and Dov's 'write which state a grade is in' are their own conversions, and the institutional adoption (copies beside hers) lands in the outcome. 'Blue as a patch of clear sky' reuses the accepted fan-written bluebird imagery from data/material-descriptions.json as the wet-graders' vocabulary, which is what makes the dry downshift legible.",
+      "growth": "Neet's ledger becomes a public instrument this tier: her private habit is carried into the market by witnesses, and the outcome's copy-beside-hers is the market adopting the method rather than her winning the argument."
+    },
+    "stamina": {
+      "hook": "stamina-hook quotes the tier-4 Stamina hook byte-exact as the confirm box.",
+      "scene": "stamina-r1 opens where the heath path climbs, the wind laying old feathers along it for weeks. stamina-r2 brings the escort: the gatherers lend her Sarn (the 'heath gatherers' of Daisy's accepted story rows), who sets the pace the path allows. stamina-r3 is Sarn's three rules (visible stones, wind-finished feathers only, never argue with a wyvern's weather). stamina-r4 is the honest eye at work - old-shed read at the quill - and the first refusal: a patch of fresh shed left where it fell, because the wyvern is not finished with it. stamina-r5 is the temptation laid out by the local: the goat track, 'a door in the heath', shorter and stacked with fresh feathers, and it drops somebody every winter. stamina-r6 is the refusal voiced: the door stays shut, we are not late enough, the fresh ones are not ours, I will walk it whole. stamina-r7 is the payoff of the long way: old feathers thick along the stones, and the heath holding still while something long and golden crosses the light far above. stamina-r8 is Sarn's endorsement (the heath has gatherers, not heroes; the path will remember you walking it). stamina-r9 is her ledger page: rules kept, fresh refused, one wing overhead, and a weight of old-shed needing sorting.",
+      "outcome": "stamina-out quotes the outcome byte-exact as the final box; the systematic walk (every shortcut refused, old-shed only), the wyvern line in the winter stores, and the heath path's first marker stone stay owned by this beat alone.",
+      "notes": "Two refusals are the on-screen demonstrations (one fresh patch left, one shortcut shut) and the walk's whole-ness is the outcome's claim, so the beats show instances and the outcome owns the system - the tier-3 precedent. Sarn's 'the path will remember you walking it' plants the marker stone as a cultural promise without placing it. The escort is the point of the route: the wing crossing in stamina-r7 is what the rules and the long way were FOR, shown after the refusals so the payoff reads as consequence, not spectacle for its own sake. 'The storm's old furniture' keeps the wyvern's presence atmospheric and non-committal; no behavior for wyverns is asserted beyond shedding (carried by the hooks). 'Wyvern line' is never spoken outside the outcome."
+    }
+  },
+  "byteReuse": [],
+  "skillStages": {
+    "planning": "planning.md outputs restated for the new format and the new tier: the chapter is a beat script, not a prose block. The player's material choice is the consequential decision at the chapter's front; the two-minute trip is a hard information gate; investigation, action, and outcome live at or after trip-end. POV limit: pre-dispatch boxes may state hook facts and Neet's spoken intentions only - no result. Because no journey draft exists for tier 4, the return scenes are planned against the hooks and outcomes directly, with the ownership rule (demonstration allowed, completion and legacy outcome-owned) set before drafting, and one planned exception for the Life route's earned decision. Each route also got its assigned growth: community design (Life), record as public instrument (Mana), yielding her route to local rules (Stamina). Route punishments: none; choices dispatch, then deliver.",
+    "drafting": "dialogue-and-behavior.md governs the boxes: each NPC line is a behavior, not exposition - Maren carries a custom and its dryness, Vetch is weariness converting at the evidence, Dov defends a practice before he signs onto the record, Sarn teaches rules and endorses the pace. cognition-layers gates what the player can know before the trip ends. Boxes target about 40 words; the byte-exact quote boxes stay verbatim. Neet's exchanges carry the route decisions (the circle decision, the controlled test, the refusal and the ledger page).",
+    "reviewing": "revision-checklist pass on the full click-through per route: choice causality (option -> hook confirm -> departure -> dispatch -> returns -> outcome), no pre-dispatch disclosure scan, route independence (no cross-route names or props, no tier-1/2/3 callbacks), voice (Neet formal and dry; pilgrims and graders and gatherers each within their scene functions), material names byte-exact, box economy (all new boxes within target; the Life outcome quote box exceeds the comfort target as an accepted screen-text exception), outcome ownership (demonstrations on screen, institutions in the outcome), no player-award claims, and imagery alignment with the accepted material descriptions."
+  },
+  "characterNotes": {
+    "neet": "Formal, dry, ledger-minded; her option teasers and departure lines are spoken decisions, never verdicts. Her tier-4 growth shows per route without needing earlier tiers: care that organizes others (Life), her record becoming a public instrument (Mana), local rules governing her own pace (Stamina). Portrait: Neet_Portrait.",
+    "maren": "Life route: an old pilgrim with a stick. Carries the mill path's luck custom (one feather each) and a feather kept in her book since 'the winter of the feast'. Blesses the circle-idea in folk terms. No portrait asset - text-only box.",
+    "ansel": "Life route: a young pilgrim on his third climb of the day, luckless and cold. The need side of the earn-the-circle problem, given nothing on screen. No portrait asset - text-only box.",
+    "vetch": "Mana route: senior grader, the one who sent for her. Weary of arguing color; converts by watching, and names weather as one writable source inside the argument without claiming the whole history. No portrait asset - text-only box.",
+    "dov": "Mana route: the wet grader. Defends his state as honest, not cheating; converts to recording and signing the state. No portrait asset - text-only box.",
+    "sarn": "Stamina route: heath gatherer escort with a hooked stick and no hurry. Teaches the three heath rules, names the shortcut, endorses her pace. One of the 'heath gatherers' (the group carried by Daisy's accepted story rows). No portrait asset - text-only box."
+  },
+  "factProvenance": {
+    "gameTableFacts": "The three exact material names (Rainbow bird feathers / Bluebird feathers / Wyvern feathers) and the job name 'Gather Fallen Feathers' come from the game tables: data/game-data.json and data/expedition-jobs.json. Neet's voice anchors and the game's mechanics come from the game tables as well (data/visitor-dialogue.json and the tier/unlock tables).",
+    "acceptedProjectStoryContent": "The tier-4 hooks and outcomes are accepted project story content (the accepted v2 story pack in neet-t1-5.json), quoted byte-exact. The tier-1..3 chapters and the click-through format (chapter-click-01/02/03) are accepted project writing. data/material-descriptions.json's feather imagery (shimmer with every color; blue as a patch of clear sky; long and golden with a faint metallic sheen) is the project's accepted fan-written interpretation of the materials, not wiki-documented original-game fact, and is carried here as flavor. The heath setting, old-shed wyvern gathering, and the heath gatherers as a group come from Daisy's accepted story rows in data/expedition-stories.json.",
+    "newFanWritten": "Everything between confirm and outcome: there is no accepted journey draft for tier 4 (the accepted pack carries hooks and outcomes only). All return beats, all side characters (Maren, Ansel, Vetch, Dov, Sarn), the luck custom of the mill path, the wet/dry grading dispute and the controlled test, the heath rules and the shortcut, the circle decision, and the closing buttons are new, constrained at every step by the byte-exact hooks and outcomes. Invented lore is listed separately in the report and confined to scene texture: Maren's custom and her 'winter of the feast', the market's wet-grade vocabulary and the disputed crate's history, Sarn's three rules and the goat track 'door', and the wing crossing; the r9 reconciliation is scene logic over the new custom, not additional lore. No game data was touched."
+  },
+  "continuityFlags": [
+    "No accepted journey draft exists for tier 4. All return scene content (characters, dialogue, procedures) is new fan-written constrained by the byte-exact hooks and outcomes; if a journey draft is written and accepted later, its dialogue will differ from these scenes and the difference should be flagged like the tier-1 revision pass did.",
+    "The Life route deliberately puts the DECISION on screen (life-r8, 'I mean to start the circle that does that sewing') because the route must earn it; every founding fact (founding basket, washing, sorting by warmth rather than shade, comfort-works, margin note, warmest) stays outcome-only. The outcome's 'quilting circle' phrase is never spoken before the outcome.",
+    "The Mana route's two-feather demonstration precedes any market-wide system: the catalog, the ledger entry, the copy beside hers, and the disputes ending before they start are outcome-owned, and no beat shows a grader requesting a copy. Vetch's and Dov's closing lines are personal conversions, deliberately not adoption.",
+    "The Stamina route shows two refusals (one fresh patch left, one shortcut shut) as demonstrations; 'refuses every shortcut', 'taking old-shed only', the wyvern line, and the marker stone are outcome-owned. Sarn's 'the path will remember you walking it' is a cultural promise, not the stone.",
+    "Notebook and ledger: this tier uses only 'page', 'ledger page', and 'ledger'. No notebook word appears, consistent with the ledger as shared kit; the tier-3 hook's notebook-as-field-copy question is unchanged and still flagged at tier 3.",
+    "Route-order independence: each tier-4 route is self-contained (no earlier-chapter knowledge needed); Neet's recording and pacing habits are shown fresh in each route, so habit growth is legible across any play order and required by none.",
+    "Daisy adjacency: Daisy's tier-4/5 story rows carry the heath, old-shed gathering, and the heath gatherers; Sarn is placed in that group with no named overlap. Neither chapter references the other, so both can be staged in any order.",
+    "The wing crossing (stamina-r7) is new atmospheric texture; it asserts no wyvern behavior beyond what the hooks document (the wind shedding old feathers) and is deliberately placed after the refusals so the discipline reads as consequential rather than decorative."
+  ],
+  "flags": [
+    "New side characters have no portrait assets: Maren, Ansel, Vetch, Dov, and Sarn are text-only boxes (portrait 'none-new-side-character'). Owner may commission portraits or keep them text-only.",
+    "Only the choice beat branches, and the route stays locked for that trip. All mechanics (chapter-open trigger, option gating, one-active-route model, two-minute timer) live in implementationNotes and the choice beat's note, never inside story text.",
+    "Implementation caveat (same standing as the earlier pilots' screenFit note): this is a script draft. Multi-beat click-through playback, option buttons, and the two-minute trip timer all need renderer work; nothing here edits game files.",
+    "The confirm box (hook) and the final return box (outcome) intentionally quote accepted screen text byte-exact; the Life outcome quote box runs 51 tokens by the whitespace-token audit (49 words plus its two byte-preserved standalone hyphens) and exceeds the 43-token comfort target as a documented exception (same precedent as tier 2's 46/48-token outcome boxes). If the game later shows the outcome on its own completion screen, the out beat can be swapped for that canned screen without breaking the script.",
+    "Pre-dispatch leak discipline is verified below in coverageChecks: no outcome fact may appear in opening, options, confirm, departure, or trip-start boxes, and no beat anywhere claims the player receives the gathered feathers.",
+    "Tier 4 has no accepted journey draft; if one is written and accepted later, its dialogue will differ from these scenes and the difference should be flagged the way the tier-1 revision pass flagged its journey differences."
+  ],
+  "coverageChecks": {
+    "anchors": "PASS 6/6 byte-exact (-ceq): the three confirm hooks and three final outcomes match neet-t1-5.json tier-4 entries exactly. Material names (Life/Mana/Stamina = Rainbow bird feathers / Bluebird feathers / Wyvern feathers) match in game-data.json; job 'Gather Fallen Feathers' verified in data/expedition-jobs.json. Re-anchored 6/6 after the flags-text fix during verification.",
+    "byteReuse": "0 phrases - no accepted journey draft exists for tier 4; data carries hooks and outcomes only. All return scenes are new fan-written, so this scan is empty by design.",
+    "boxLengths": "44 boxes scanned: opening 2 + choice 1 (+3 teasers) + confirm 3 + departure 3 + return 27 + outcome 3 + trip 2. Longest new box is 42 audit tokens (stamina-r7 and the revised life-r9 tie at 42 after the r9 reconciliation pass); every other new box is at or under the 43-token comfort target. One documented exception: life-out, the byte-exact Life outcome quote, runs 51 audit tokens (49 words plus its two byte-preserved standalone hyphens) - same accepted precedent as tier 2's 46/48-token outcome quote boxes.",
+    "preDispatchLeakScan": "14 distinct pre-dispatch text units (op-01, op-02, choice text, 3 option teasers, trip-start, trip-end, 3 confirm hooks, 3 departures) scanned against outcome-exclusive phrases (quilting, comfort-work, fetched luck, sorting by warmth, by warmth rather, in the margin, still the warmest, catalogs, wet-light, dry-light, beside hers, for a copy, dispute ends, marked path, every shortcut, wyvern line, marker stone, refuses every, escorted, old-shed): 0 hits. Hooks carry only hook facts; departures carry method-only intentions.",
+    "outcomeOwnership": "30 non-outcome return beats scanned per route with outcome-exclusive phrase lists: Life 10 beats (r1-r10) vs quilting / circle of her own / comfort-work / fetched luck / sorting by warmth / writes in the margin / still the warmest / founded on - 0 hits; Mana 11 beats (r1-r11) vs wet-light / dry-light / catalogs / for a copy / beside hers / dispute ends / every later dispute - 0 hits; Stamina 9 beats (r1-r9) vs marked path / every shortcut / refuses every / wyvern line / marker stone / first marker / winter stores gain - 0 hits. Demonstrations on screen stay at one instance each (one feather's two grades and its repeat, one fresh patch left, one shortcut shut); the systematic completions and legacies are spoken only in the outcome beats. Documented, owner-directed exception: life-r8 speaks the earned decision ('I mean to start the circle that does that sewing') without outcome vocabulary - the founding facts stay in life-out.",
+    "routeIndependenceScan": "Cross-route foreign-name scan keyed BY ROUTE on all confirm/departure/non-outcome beats: Life (12 units) vs Vetch|Dov|Sarn - 0 hits; Mana (13 units) vs Maren|Ansel|Sarn - 0 hits; Stamina (11 units) vs Maren|Ansel|Vetch|Dov - 0 hits. No notebook word appears anywhere this tier (ledger/page kit consistent); no tier-1/2/3 callbacks or cross-route props.",
+    "awardClaimScan": "47 text units scanned (the 44 boxes plus the 3 option teasers; the choice beat's text counted once) for player-reward claims (awarded, awards, you receive, your feathers, gives you, feathers to you, reward): 0 hits. The trip-end beat only opens Neet's report; awarding stays with the game's systems (implementationNotes.awardHandling).",
+    "beatInventory": "Shared: op-01, op-02, choice (+3 option teasers), trip-start, trip-end. Life: 1 hook confirm + 1 departure + 10 returns (life-r1..r10) + life-out. Mana: 1 hook confirm + 1 departure + 11 returns (mana-r1..r11) + mana-out. Stamina: 1 hook confirm + 1 departure + 9 returns (stamina-r1..r9) + stamina-out.",
+    "fileCheck": "JSON parses via ConvertFrom-Json (UTF8); whole file is ASCII-only (0 non-ASCII chars); 44 unique beat ids; speaker-portrait pairing verified 0 violations (narrator=none, neet=neet, five side characters=none-new-side-character). One fix during verification: a token-counting notation was mistakenly written into the flags text and produced an invalid JSON escape; it was reworded in plain words and the anchors were re-verified 6/6 after the fix."
+  }
+}

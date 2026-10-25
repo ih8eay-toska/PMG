@@ -1,0 +1,616 @@
+{
+  "pilot": "chapter-click-10",
+  "traveler": "dolbur",
+  "tier": 5,
+  "job": "Guard the Nesting Ridge",
+  "sharedEvent": "The Cold Roost",
+  "purpose": "Owner-review draft: the click-through scene script for the shared tier-5 event (The Cold Roost, accepted M1 pilot), written from Dolbur's side. The chapter opens when any egg family reaches tier 5; the shared opening establishes the frost and the three threatened clutches; the player chooses one currently unlocked egg inside the scene; the choice selects the route telling; Dolbur is dispatched; after the two-minute trip the player opens a click-through continuation that adapts the selected Cold Roost telling and Dolbur's distinct viewpoint - the player sees what he witnessed and did, not only the result. One pilot only (Dolbur, tier 5, Guard the Nesting Ridge, all three egg routes). It is one shared event with a common spine and three different lasting outcomes, not three separate adventures. Tier-5 pack entries are viewpoint texts (kind 'viewpoint', no hook/outcome pair), so - a documented deviation from tiers 1-4 - there are no byte-quote boxes here: confirm and final beats are labeled adaptations, and the mapping layer carries per-beat provenance. The three existing Dolbur viewpoint texts are explicitly identified as the short later-completion reports (see implementationNotes.laterReports). Nothing here edits data/, source/, or the playable HTML.",
+  "sourceMaterial": [
+    "research/writing/expedition-stories/stories-v2/shared-events.json - accepted v2 tier-5 milestone layer: the shared opening (spine S1), the three route tellings (Life/Mana/Stamina), and the premise (display order per completion scene, replay journal, the selected material as story focus never award, source/core.js:269)",
+    "research/writing/expedition-stories/stories-v2/dolbur-t1-5.json - accepted Dolbur tier-5 viewpoint texts (kind viewpoint, field text), byte-identical to data/expedition-stories.json dolbur viewpoints 0/1/2 (verified -ceq) and identified in implementationNotes as the three short later-completion reports",
+    "research/writing/expedition-stories/pilot-M1-cold-roost.md - accepted M1 pilot: spine fact table S1-S7, participant tables, the tellings with each participant's perspective adds, section flags, and the section 0.5 owner question on the selected material as story focus",
+    "research/writing/expedition-stories/stories-v2/HANDOFF.md - batch schema and tier-5 display model: first completion of a family shows shared opening, route telling, and traveler viewpoint; later visits show only that traveler's viewpoint text; the full scene stays available in the replay journal",
+    "data/expedition-jobs.json - job name 'Guard the Nesting Ridge' (byte-exact) with Dolbur's job voice line (checking the route before setting out)",
+    "data/game-data.json - material names Rainbow bird's egg / Bluebird's egg / Wyvern's egg (byte-exact)",
+    "data/expedition-stories.json - Dolbur tier-5 viewpoint rows, byte-compared to the pack 3/3",
+    "research/writing/expedition-stories/stories-v2/chapter-pilot-neet-t5.json - accepted cross-traveler benchmark for the same event: format template and cross-traveler consistency source; its glue prose is treated here as a borrowing ban list while shared spine, telling, and scene facts stay common ground",
+    "research/writing/expedition-stories/stories-v2/chapter-pilot-dolbur-t4.json - most recent format benchmark for this traveler (schema, verification suite)",
+    "source/core.js TRAVELERS block (lines 10-20) and assets/characters/ - verified existing portrait assets for the cast: neet Neet_Portrait.png, claire ClairePortrait.png, daisy DaisyPortrait.png (with Happy and Disappointed variants), dolbur DolburPortrait.png, kyle KylePortrait.png, all files present; the beat renderer (source/app.js:177) resolves a beat's portrait id against TRAVELERS whenever it is not 'none'"
+  ],
+  "presentationModel": "Player opens the tier-5 chapter when any egg family reaches the tier. The shared opening establishes the frost and the three threatened clutches; inside the scene the player chooses one currently unlocked egg, and that choice selects the route telling. Dolbur is dispatched; when the trip finishes, the player opens a click-through continuation that adapts the selected telling and Dolbur's viewpoint into paced beats: the crisis and Dolbur's assignment, the keepers' work on the crag, the rope meeting with Kyle, the hatching, the protected crag and almanac records, and the route's lasting consequence. Other unlocked eggs remain available on later trips - one shared event, three tellings, no canon lock. Per the accepted premise and HANDOFF.md, the completed scene is stored for rereading in the replay journal and does not replay automatically on later visits; a later completion of the same family shows only Dolbur's viewpoint text for that family.",
+  "playerFlow": "op-01 -> op-02 -> op-03 -> op-04 -> choice (one to three unlocked eggs) -> confirm = adapted plight box for the chosen family (no byte-quote pair exists at tier 5) -> one route departure box (intent only) -> trip-start (dispatch, no result) -> trip timer -> trip-end (click to open the report) -> route return beats in order, last box = adapted route outcome. Hatching, the protected crag, the almanac record, and route-specific consequences all arrive after the trip. After the chapter, later completions of the same family show the corresponding Dolbur viewpoint text, and other unlocked eggs remain available on later trips.",
+  "implementationNotes": {
+    "chapterOpen": "The chapter becomes available as soon as any egg material family reaches tier 5. Suggested UI copy, outside the story beats: 'New chapter - Guard the Nesting Ridge, tier 5.'",
+    "optionGating": "Show only options for egg families currently unlocked at this tier; one, two, or three options are all valid states. The opening prose is written to hold when only one option exists, and each chosen telling covers what the week did for all three clutches.",
+    "routeLock": "The egg choice sets the active route for this trip; other unlocked choices remain available on later trips, one active route at a time. No route is canon-locked: later chapters may assume only the spine facts (S1-S7) and choice-independent growth, never that a particular telling was seen or that this chapter was viewed by a player who saw Neet's chapter.",
+    "replayJournal": "Per shared-events.json premise and HANDOFF.md, the completed scene is stored for rereading in the replay journal and does not replay automatically on later visits. The journal keys the full scene by family at first completion (opening -> telling per family, plus viewpoints), and this chapter's three routes are written as complete click-through scripts so each route reads whole in replay, in order, from the discard-the-morning opening to the route's lasting outcome.",
+    "laterReports": "Identification, per HANDOFF.md display model item 4 (later visits: the shared opening and route telling must not replay automatically - completion uses only that traveler's viewpoint text): the three existing Dolbur tier-5 viewpoint texts are the short later reports. Life - the night-watch text ('Dolbur kept the crag's night watch...' as its opening words), pack row at stories-v2/dolbur-t1-5.json kind viewpoint tier 5 family Life, data row expedition-stories.json travelers.dolbur.viewpoints.0. Mana - the perimeter-practice text, pack row family Mana, data row viewpoints.1. Stamina - the climb-report text, pack row family Stamina, data row viewpoints.2. All three are verified byte-identical between pack and game data and are cited below as [VP-Life]/[VP-Mana]/[VP-Stamina]; the full Dolbur scene above is the first-completion and replay-journal view. No new storage or gameplay rules are proposed.",
+    "tripTimer": "The trip runs about two minutes on the game timer. The timer belongs to implementation and UI, not to story text.",
+    "awardHandling": "The script never states or implies that the player receives the chosen egg: the egg names which situation the telling focuses, not freight. source/core.js:269's award region pays stamps, likeability, boosts, and bonuses only - no ingredient, no egg - and the M1 pilot's section 0.5 owner question frames the selected material as story focus. The trip-end beat only opens Dolbur's report; awarding belongs to the game's existing systems, outside story text."
+  },
+  "beatRules": [
+    "Every beat carries id, phase, speaker, portrait, text. The choice beat additionally carries its note and option moments.",
+    "Narrator beats stay brief and set place, action, or a visible action. The route tellings are prose, so the tellings' work is carried in narrator beats with reported speech where the accepted sources narrate a line (the introduction and catch labels, the piton report, the rescue-not-a-rescue label); Dolbur's viewpoint layer becomes his own voiced beats at the points his private report forms. No new dialogue is invented for Claire or Kyle; Daisy speaks only her documented floor line, which has its own speaker beat.",
+    "Each box is written to be comfortable in a dialogue box: about 40 words per box, hard target 43 audit tokens.",
+    "No byte-quote boxes at tier 5 (documented deviation from tiers 1-4): the pack's tier-5 entries have no hook/outcome pair. The confirm adapts the chosen family's standing plight, the final box adapts the route's lasting outcome, and the mapping section cites each beat's source parts. The three byte-exact texts a player encounters after this chapter are the viewpoint texts already in data, identified in implementationNotes.laterReports, not new boxes in this script.",
+    "Adaptation rule: no long event paragraph goes into a single box; every beat re-paces accepted content without changing its facts; the three route tellings keep their own facts and sequence.",
+    "Speaker 'narrator' is unvoiced scene text with no portrait. Speaker 'dolbur' shows Dolbur's portrait ('dolbur', verified in source/core.js TRAVELERS line 12: DolburPortrait.png). Daisy's one direct spoken line, life-r6, carries her portrait id 'daisy'. Claire and Kyle have no spoken beats - their work is narrator-carried with portrait 'none', so their ids are recorded in the character notes rather than on beats. Engine note: the current beat renderer (source/app.js:177) resolves a beat's portrait id against the TRAVELERS roster whenever it is not 'none'; check-ui.cjs tier-5 flows already verify the Daisy portrait display, so 'dolbur' and 'daisy' are correct and complete as beat data.",
+    "No resolution appears anywhere before the trip ends. Pre-dispatch boxes carry spine-level facts (S1), the chosen family's standing plight, and Dolbur's spoken intentions only.",
+    "Shared-event discipline: route-owned lasting outcomes (Life: the mixed roost and its spring trellis feathers; Mana: the hush custom and the working rite; Stamina: the quarry household) appear only in their own routes after the trip and never cross routes; the spine facts S1-S7 are common ground. Within one route the cast acts only per the selected telling's roles. Route independence: no beat assumes another family's route was seen, and no beat assumes the player saw Neet's tier-5 chapter - the shared event's common facts (the S1 opening, the five-keeper watch, and each telling's own events) are the only cross-file common ground with chapter-pilot-neet-t5.json; every connective sentence here is written fresh for Dolbur's chapter."
+  ],
+  "opening": {
+    "beats": [
+      {
+        "id": "op-01",
+        "phase": "opening",
+        "speaker": "narrator",
+        "portrait": "none",
+        "text": "The frost came early and did not send word ahead. By the first hard night, three wild clutches were off the high nests: one bright as a rumor, one singing to itself in the dark, one far too large for anyone's comfort."
+      },
+      {
+        "id": "op-02",
+        "phase": "opening",
+        "speaker": "narrator",
+        "portrait": "none",
+        "text": "The crag by the orchard caught them, on a shelf of stone already leaning toward winter. Nobody owns wild things. That is the law of the region, and also the excuse of anyone who owes a favor - and everyone here owed one."
+      },
+      {
+        "id": "op-03",
+        "phase": "opening",
+        "speaker": "narrator",
+        "portrait": "none",
+        "text": "By the hour before dawn, five keepers held one freezing ledge - shrine keeper, warrior, knight, baker, challenger: giant opinions, empty hands. Every version keeps the same first line: the ledge would not wait, and neither, in the end, did anyone."
+      },
+      {
+        "id": "op-04",
+        "phase": "opening",
+        "speaker": "dolbur",
+        "portrait": "dolbur",
+        "text": "The watch is held and the route check is done - twice. Point me at the egg whose night needs me most: the ridge gets my kind of honesty, loud where it helps and quiet where the eggs are sleeping."
+      },
+      {
+        "id": "choice",
+        "phase": "choice",
+        "speaker": "narrator",
+        "portrait": "none",
+        "text": "Choose the egg Dolbur's night will follow.",
+        "note": "Only options whose egg family is unlocked at this tier are shown; one, two, or three options are all valid states. This is one shared event, The Cold Roost: the opening lines are true whichever egg is chosen, and the chosen telling covers what the week did for all three clutches. No route is canon-locked; the other eggs stay available on later trips. The chosen egg is the story's focus, never a settlement award.",
+        "options": [
+          {
+            "material": "Rainbow bird's egg",
+            "teaser": "Bright as a rumor - in the open, where any frost in the region can find it."
+          },
+          {
+            "material": "Bluebird's egg",
+            "teaser": "Singing to itself in the dark - the smallest spot on the shelf, held by the smallest voice."
+          },
+          {
+            "material": "Wyvern's egg",
+            "teaser": "Far too large for anyone's comfort - and the stone under it is losing its grip on winter."
+          }
+        ]
+      }
+    ]
+  },
+  "sharedDispatch": [
+    {
+      "id": "trip-start",
+      "phase": "trip",
+      "speaker": "narrator",
+      "portrait": "none",
+      "text": "Dolbur takes the assignment and goes; whatever happens out there comes home with him."
+    },
+    {
+      "id": "trip-end",
+      "phase": "trip",
+      "speaker": "narrator",
+      "portrait": "none",
+      "text": "The trip is over. Open Dolbur's report to see what happened, and how it ended."
+    }
+  ],
+  "routes": [
+    {
+      "family": "Life",
+      "material": "Rainbow bird's egg",
+      "confirmBeats": [
+        {
+          "id": "life-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The rainbow clutch's crisis is not cold alone - it is custody. Wild things do not accept strange eggs on the strength of a speech about community."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "life-dep",
+          "phase": "departure",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Route check done: the ledge is sound, the warmth has hands, the introductions will have their nose. The dark shift is mine - I have kept worse watches in better weather, and this one I keep without waking a single bird."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "life-r1",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The week starts where the frost did its one useful thing: it knocked the rainbow clutch free of its high nest before anyone noticed it sat light there. By morning, the strange eggs lay cooling among ordinary ones, bright as sugar."
+        },
+        {
+          "id": "life-r2",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The crisis was not the cold: every nest on the crag belonged to somebody, and no speech talks wild keepers into adopting strangers. The daylight work split itself among four keepers - and the dark shift went unclaimed, until somebody claimed it loudly."
+        },
+        {
+          "id": "life-r3",
+          "phase": "return",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "The dark shift wants no fanfare: I bed downwind so my snoring keeps itself away from the ledge, and at dusk I count every clutch out loud until the number matches. The eggs sleep; the numbers confirm it."
+        },
+        {
+          "id": "life-r4",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Daisy took the warm half of the problem head-on: the ledge got bricked in oven-warmed straw, heat only, and every strange egg took its quarter-twist twice a day, turned the way she steadies dough through its rise."
+        },
+        {
+          "id": "life-r5",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The first blanket went out too thick and insulated worse - a quiet, egg-safe failure worth keeping on the record."
+        },
+        {
+          "id": "life-r6",
+          "phase": "return",
+          "speaker": "daisy",
+          "portrait": "daisy",
+          "text": "That is all right. We can try again another time."
+        },
+        {
+          "id": "life-r7",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "First evening came the weight test: whether the crag's stone would hold the rope work the week would need. Dolbur hauled himself up, then dropped the coil back down for the hands below. Kyle caught it one-handed."
+        },
+        {
+          "id": "life-r8",
+          "phase": "return",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "An introduction - that is all it was, and all it needed. Weight held, rope ran, and the catch waited at the bottom like a handshake with working hands."
+        },
+        {
+          "id": "life-r9",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Kyle's version is shorter and more precise: it was a catch. Between them the week now had its greeting, and both used it - an introduction, a catch - every shift that followed."
+        },
+        {
+          "id": "life-r10",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "While the dark shift counted, Neet ran the introductions: a feather from every host nest carried nose-to-nose, morning by morning, until the crag smelled of tenants instead of trespassers."
+        },
+        {
+          "id": "life-r11",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The dark shift kept itself orderly for the whole week: dusk counts until every number matched, the bed pitched downwind, and - the part nothing records - nothing bent, nothing snapped, nothing needed re-roping."
+        },
+        {
+          "id": "life-r12",
+          "phase": "return",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Twice I fell asleep mid-count, and walked the cold hours after to make it up - per the record, 'watch kept.' I am quietly prouder of one uneventful week of that than of anything I have ever climbed."
+        },
+        {
+          "id": "life-r13",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "By the third morning the crag had stopped noticing which eggs were strange; the ledges rode warm, and the strange eggs now had neighbors who did not bother counting them twice."
+        },
+        {
+          "id": "life-r14",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Hatch week held the promise the frost made them all keep: the rainbow chicks broke shell into borrowed warmth, and the bluebird and wyvern eggs hatched without incident in the same days. Every egg of the frost came out of its shell safe."
+        },
+        {
+          "id": "life-r15",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The rainbow chicks fledged across the whole roost - among bluebirds, along the wyvern family's edges - until the roost considered itself mixed, and nobody could say afterwards which nest had started it."
+        },
+        {
+          "id": "life-r16",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Neet entered the roost's hatch-days in the shrine almanac - the first line of the three-version record - and before the company scattered, Claire named the crag and reclassified it protected, the patrol schedule going up on the spot in her handwriting."
+        },
+        {
+          "id": "life-r17",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The frost, by Claire's log, broke inside the week and left the orchard untouched - trellis, fence, and fruit without a lasting scar."
+        },
+        {
+          "id": "life-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The frost's lasting answer on this crag is a mixed roost: every spring, rainbow feathers turn up catching light along the orchard trellis, the town walks out to count them, and the roost stays famous for colors that got along."
+        }
+      ]
+    },
+    {
+      "family": "Mana",
+      "material": "Bluebird's egg",
+      "confirmBeats": [
+        {
+          "id": "mana-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The bluebird clutch dulled overnight - shells gone from paint-bright to wet chalk, the song inside failing. Not an enemy, not a wind: a song losing its note."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "mana-dep",
+          "phase": "departure",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "So the crag's problem is a song. I cannot beat silence with volume, and I checked the route twice looking for something to carry - the assignment will be patience instead. Whatever the perimeter asks, it gets no humming from me. None."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "mana-r1",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The frost week's trouble was one trouble in three places: the bluebird song failing, the other clutches cooling, and the far ledge already letting its biggest egg work loose."
+        },
+        {
+          "id": "mana-r2",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Dolbur offered, at volume, to captain the anti-frost expedition; the town's answer went to the perimeter instead - the quiet patrol around the ledge, the one post where being Dolbur was the hardest work he could still do right."
+        },
+        {
+          "id": "mana-r3",
+          "phase": "return",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "The perimeter is mine, then, and I took the drill back to base camp: a coin balanced on the boot, stillness, no humming, counted - eleven drops, eleven finds, which the practice counts a success on principle."
+        },
+        {
+          "id": "mana-r4",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "On the crag, the patrol went the way the drill promised: only the long side, only upwind, so his pacing carried sound away from the ledge instead of into it, and the snow got no humming back for its trouble."
+        },
+        {
+          "id": "mana-r5",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Neet's lullabies came out correct and the nest refused every one of them - three correct verses in a row went back duller than they arrived."
+        },
+        {
+          "id": "mana-r6",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "So the rite went wrong on purpose - flat where the song rises - until the note inside the shell matched her error and held."
+        },
+        {
+          "id": "mana-r7",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Within two nights the shells brightened back out of the wet chalk, and the hush around the ledge did the rest: Kyle cloth-wrapped the ladder's metal rungs so nothing rang, then held the stillness hour after hour while the rite ran."
+        },
+        {
+          "id": "mana-r8",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The rounds kept their own record of the hush: the cloth-wrapped ladder silent at the ledge's foot, and one patch the frost favored - the icy rock at the ladder's base, thicker on every pass Dolbur logged."
+        },
+        {
+          "id": "mana-r9",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Daisy ran the far side of the quiet: straw restocked on the ledges that leaned, for the other two clutches, the bakers' quarter muffled, and warm bread down so nobody had to shout a meal."
+        },
+        {
+          "id": "mana-r10",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Claire gave the quiet its law and its keeping: three nights of silence on her own schedule, and the rule written the moment it mattered - no voices past the tree line."
+        },
+        {
+          "id": "mana-r11",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "On the coldest night the ice took Kyle's ladder-foot sideways, and the rope that answered came down from the high path: Dolbur, out on the frost-line rounds, offloading his spare. Kyle caught the coil mid-slip."
+        },
+        {
+          "id": "mana-r12",
+          "phase": "return",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Both of us called it an introduction, and neither of us called it a rescue - the log stands. My frost-line rounds had me up on the high path with a spare rope already on the shoulder when the ice started the argument."
+        },
+        {
+          "id": "mana-r13",
+          "phase": "return",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "That is what the coin on the boot bought: a walker who knows how to be quiet exactly where the quiet is needed. Eleven drops at base camp paid for the one catch that mattered."
+        },
+        {
+          "id": "mana-r14",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "By the week's end every egg of the frost had hatched safe, and the roost's hatch-days went into the shrine almanac in the same tidy hand - red, blue, and gold, side by side."
+        },
+        {
+          "id": "mana-r15",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The frost broke inside the week and left the orchard without lasting damage. When the quiet held, the crag went onto the patrol schedule in Claire's handwriting - named, protected - and the crag got to keep the watch that had answered it."
+        },
+        {
+          "id": "mana-r16",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The bluebird chick hatched healthy and spent the spring singing flat - healthy, then hushed, mornings led by one patient song - and its true voice came back only after winter, which the region keeps on file as the quiet season."
+        },
+        {
+          "id": "mana-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "What stayed from the quiet season is still working: the town walks the orchard path hushed at nesting time, and Neet's wrong-lullaby rite went into the shrine's records as a working rite."
+        }
+      ]
+    },
+    {
+      "family": "Stamina",
+      "material": "Wyvern's egg",
+      "confirmBeats": [
+        {
+          "id": "stamina-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The wyvern egg rolls loose along the failing ledge's lip while the mother circles the crag - wide, patient, and in no mood for committee - and the other two clutches shiver through the frost nearby."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "stamina-dep",
+          "phase": "departure",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Route check says winter first, climb second: frost-hardened rock, rope against it, and a count for everything above. Her decision is not mine to carry; I bring the work and the honest reports, and she keeps the schedule, the sky, and the say-so."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "stamina-r1",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The ridge opened with its own rule: the move, whatever the crew wanted, would be offered and not taken - the ledge's owner was in the air around it, and her circling was the only committee the week would convene."
+        },
+        {
+          "id": "stamina-r2",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Claire answered the spectator problem the practical way: cordons closed the orchard path and every roofline that offered a view, and the region's people, to their lasting credit, stayed behind them."
+        },
+        {
+          "id": "stamina-r3",
+          "phase": "return",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "My climb report starts the way it should: one (1) piton, bent, on the first reach - told Kyle before my boots were down, re-roped, climb finished. Apologies climb well when they go first, and the climb worked half because of it."
+        },
+        {
+          "id": "stamina-r4",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "He had started before the argument finished, because he had heard her first - a sound he still files under 'stone getting annoyed' - and by the time the crew decided who would climb, the route had already been rigged and half-roped."
+        },
+        {
+          "id": "stamina-r5",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The rock below held the plan instead: Kyle anchored Dolbur from the storeroom's spare rope, winter-heavy and shoulder-proof, and counted everything that went up and anything that came down, the way he counts."
+        },
+        {
+          "id": "stamina-r6",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The egg was ready to move; the rock was ready to hold it; the move itself waited on her leave, and she was not nearly done circling."
+        },
+        {
+          "id": "stamina-r7",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The permission did not come from the crew. It came at first light, from the baker who had been up all night anyway: Daisy's dawn loaf went out the far side, to the warm stone at the quarry's foot."
+        },
+        {
+          "id": "stamina-r8",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "She circled once more above the stone, folded herself down beside the loaf, and the landing decided it. The egg, the nest, and the patience all got her answer at once."
+        },
+        {
+          "id": "stamina-r9",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Four carries, Kyle's count from the anchor line, and the brood went whole to the old quarry ledge: dry stone with no blasting in its history, room to turn around, and a mother whose next circle was drawn around them."
+        },
+        {
+          "id": "stamina-r10",
+          "phase": "return",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "And the honest part of the count: I announced two carries, and the plan itself said four. I corrected it at the guild, at the top of my voice, so the town now owns both numbers."
+        },
+        {
+          "id": "stamina-r11",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The carry baskets arrived lined with oven-warmed straw, heat only - the roost trick, on its second career as courier-bedding - and nothing that went up to the ledge or down to the quarry needed a word of complaint about the cold."
+        },
+        {
+          "id": "stamina-r12",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "When the gear came down, the last coil dropped from the ledge straight into Kyle's waiting hands - the week's rope-work ending the way it planned to, with a catch at the right end."
+        },
+        {
+          "id": "stamina-r13",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The hatch-days went into the shrine almanac as they came - one line beside the red and the blue, in the same tidy hand as the rest of the frost week's bookkeeping."
+        },
+        {
+          "id": "stamina-r14",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Claire's cordons came down into something: the crag went onto the patrol schedule in her handwriting, and the quarry ledge went onto the map - a fixed point, marked on purpose."
+        },
+        {
+          "id": "stamina-r15",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The frost broke inside seven days and left the orchard untouched; the moved egg hatched safe at the quarry - the first brood its new household ever raised - and the rainbow and bluebird clutches hatched untroubled on their own ledges."
+        },
+        {
+          "id": "stamina-r16",
+          "phase": "return",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "And my new rank, by the mother's own routing: she circles with me instead of at me, the only one she does that for. I have decided this is a rank, and my official position is that I hold it proudly."
+        },
+        {
+          "id": "stamina-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The crag lost a tenant and gained a neighbor: the wyvern household lives at the old quarry ledge now, fixed on the map and on the adjusted patrol route. And the first sentence of every version stays the same: nobody owns wild things."
+        }
+      ]
+    }
+  ],
+  "mapping": {
+    "legend": "Provenance tokens used throughout this mapping: [S1-spine]..[S7-spine] = the accepted M1 pilot's spine fact table (research/writing/expedition-stories/pilot-M1-cold-roost.md); [LT]/[MT]/[ST] = the three accepted route tellings in stories-v2/shared-events.json (Life/Mana/Stamina); [MD-1]..[MD-4.2] = the accepted pilot's participant material and per-telling perspective sections (MD-2.x = Life perspectives, MD-3.x = Mana perspectives, MD-4.x = Stamina perspectives); [VP-Life]/[VP-Mana]/[VP-Stamina] = Dolbur's three tier-5 viewpoint texts in stories-v2/dolbur-t1-5.json (kind 'viewpoint', byte-identical to data/expedition-stories.json travelers.dolbur.viewpoints 0/1/2), each also identified as its family's short later-completion report in implementationNotes.laterReports; [MAT] = material names verified byte-exact in data/game-data.json; [JOB] = the job name and Dolbur's job voice line in data/expedition-jobs.json. Citations list the accepted sources a beat adapts; connective narration is new fan-written glue, as flagged in factProvenance.",
+    "sharedOpening": "[S1-spine] op-01..op-03 re-pace the accepted shared opening (shared-events.json, kind 'shared', spine S1): the frost arriving without word, the three clutches off the high nests with their three descriptors, the crag shelf leaning toward winter, the ownership law and favor excuse line, the five keepers with empty hands, and the record's invariant first line ('the ledge would not wait, and neither, in the end, did anyone' - the same line chapter-pilot-neet-t5.json carries, by the event's own stated design). [JOB] op-04 is Dolbur's spoken opener built on his job voice anchor (energetic adventure, route checked before setting out): route check reported done and a spoiler-free promise of his register - loud where it helps, quiet where the eggs are sleeping. The choice text, note, and three teasers use spine-level descriptors only, no route facts.",
+    "life": {
+      "hook": "[LT]/[MD-2] life-hook adapts the Life telling's own crisis statement - not cold alone but custody, and the telling's community-speech line - near-verbatim, as the pre-dispatch plight box.",
+      "scene": "[LT]+[MD-1..MD-4.2 relevant]+[S2..S7-spine] life-r1..life-r17 cover the telling's week at Dolbur's angle: r1 the frost knocking the rainbow clutch free and the strange eggs cooling among ordinary ones ('bright as sugar' is the telling's phrase); r2 the custody survey and the daylight split; r3 [VP-Life] his watch plan stated aloud (bedding downwind so the snoring stays clear of the ledge, the dusk count until the number matches); r4-r6 Daisy's oven-warmed straw, heat only, quarter-twist turns like dough through a rise ([LT]/[MD-2]) and her documented blanket failure with the byte-exact floor line (pilot-M1 MD-2.1; the chapter's only direct spoken line, same treatment as chapter-pilot-neet-t5.json); r7-r9 [LT]/[MD-2]/[S5-spine] the first-evening rope test, Kyle's one-handed catch, and both labels - Dolbur's 'an introduction' voiced here (in the telling he is the one who calls it that), Kyle's 'a catch' narrator-carried, matching the pair's established greeting across both travelers' chapters; r10 [LT] Neet's feather introductions, nose-to-nose, until the crag smelled of tenants instead of trespassers; r11-r12 [VP-Life] the watch kept orderly (dusk counts, the downwind bed, nothing bent, snapped, or re-roped as 'the part nothing records') and his confession beat (asleep mid-count twice, walking the cold hours, the 'watch kept' report line, the quiet pride) - the viewpoint's own facts in his voice; r13 [MD-1..] the third morning the crag stopped noticing the strange eggs; r14 [S2-spine] hatch safety for all three clutches ('borrowed warmth' is the telling's phrase); r15 [LT]/[MD-1..] the fledging across the whole roost and the mixed-roost result; r16 [S6-spine]/[LT] Neet's almanac entry as the three-version record's first line and Claire naming and protecting the crag with the patrol schedule; r17 [S7-spine]/[LT]/[MD-1..] the frost breaking with the orchard untouched (trellis, fence, and fruit is the accepted sentence).",
+      "outcome": "[LT]/[MD-1..] life-out states Life's route-owned lasting outcome, freshly worded for this chapter: rainbow feathers catching light along the orchard trellis each spring and the town walking out to count them - the mixed roost as this route's lasting answer.",
+      "notes": "Route-exclusive by design: custody language, tenants/trespassers, the 'watch kept' report phrase, quarter-twists, 'borrowed warmth', 'stopped noticing', the trellis, 'bright as sugar', and 'one-handed' do not appear in the other two routes (battery-verified). Not borrowed: Daisy's warm-center observation and Claire's private registers [MD-2.x adds] stay with their own future chapters, as do Neet's margin note, her kept feather, and her empty-nest record [VP-Neet-Life]; this chapter shows only what the telling itself shows of her work. The floor line is quoted once, byte-exact, as the accepted beat data it already is in the game's tier-5 chapter flows."
+    },
+    "mana": {
+      "hook": "[MT] mana-hook adapts the Mana telling's crisis statement near-verbatim (dulled overnight, paint-bright to wet chalk, a song losing its note), dropping the telling's 'not a tangle' clause so the two confirm boxes read as siblings of one fate, not copies.",
+      "scene": "[MT]+[MD-1..MD-4.2 relevant]+[S2..S7-spine] mana-r1..mana-r16 cover the telling at Dolbur's angle: r1 the one trouble in three places; r2 [MT] Dolbur offered loudly to fight the frost and was politely assigned elsewhere - staged with the perimeter named ([VP-Mana]'s word) as the hardest work being Dolbur could still do right; r3 [VP-Mana] his base-camp practice voiced (a coin balanced on the boot, eleven drops, eleven finds, counted a success on principle); r4 [VP-Mana] the patrol as performed - only the long side, only upwind, steps drifting sound away from the ledge; r5 [MT]/[MD-3.x] the correct lullabies refused and the clutch dulling further; r6 [MT] the rite sung wrong on purpose - flat where the song rises - until the note inside matched her error and held; r7 [MT]/[MD-3.x visible work] the shells brightening out of the wet chalk and Kyle's cloth-wrapped rungs and hours of held stillness; r8 new connective beat - Dolbur's rounds keep their own record of the hush (the wrapped ladder silent at the ledge's foot) and log the icy patch the frost favors at the ladder's base, thickening every pass, the frost-line detail that later positions the high-path save; it deliberately carries none of Kyle's section 3.2 private material (the silences count, the without-him pride, the wind-check habit); r9 [MT]/[MD-3.x] Daisy's straw restocks, the muffled bakers' quarter, and warm bread so nobody shouts; r10 [MD-3.x] Claire's three nights of silence and the no-voices-past-the-tree-line rule; r11-r13 [MT]/[MD-3.x] the coldest-night slip and the spare rope down from the high path, Kyle catching it mid-slip, both calling it an introduction and neither a rescue - Dolbur's label voiced in r12, and r13 closing the loop the owner asked for: the practiced stillness (coin on the boot, the quiet rounds) is what put him where a rope was useful; r14 [S2-spine]/[S6-spine]/[MT] hatch safety and the almanac's red, blue, and gold hatch-day lines in the same tidy hand; r15 [S7-spine]/[S3-spine]/[MT] the frost breaking without lasting damage and the crag named, protected, and scheduled once the quiet could be trusted; r16 [MT]/[MD-3.x] the quiet season - the chick singing flat and healthy until its true voice came back after winter.",
+      "outcome": "[MT] mana-out states Mana's route-owned lasting outcome: the hush custom at nesting time and the wrong-lullaby rite entered into the shrine's records as a working rite, per the accepted telling's own closing facts.",
+      "notes": "Route-exclusive by design: wet chalk, the perimeter, the coin-and-boot practice, rungs/ladder, the frost-line rounds, the tree line, 'wrong on purpose', 'flat where the song rises', 'singing flat', and the quiet season do not appear in the other two routes (battery-verified). Not borrowed: Neet's midnight pantry practice, the bakery's polite deafness, and her margin note are her viewpoint material ([VP-Neet-Mana]/[MD-3.x adds]) and stay in her chapter; Kyle's private perspective material per the accepted pilot's section 3.2 adds - the count of seventeen silences, the pride in the hush holding without him, and the wind-check habit - is reserved for his own chapter and appears in no beat here, so mana-r8 is built only around what Dolbur's rounds can observe of the shared, visible work [MT]. 'An introduction' appears in both Life and Mana by the spine's own design (S5: how Dolbur and Kyle met - a dropped rope, caught - and the telling's rope save reuses the pair's label)."
+    },
+    "stamina": {
+      "hook": "[ST] stamina-hook adapts the Stamina telling's opening crisis sentence: the mother circling wide, patient, in no mood for committee, the egg rolling loose on the failing ledge, and the other two clutches shivering through the frost.",
+      "scene": "[ST]+[MD-1..MD-4.2 relevant]+[S2..S7-spine] stamina-r1..stamina-r16 cover the telling at Dolbur's angle: r1 the move offered, not taken (the accepted telling's own rule), the circling mother as the only committee; r2 [ST] Claire's cordons closing the orchard path and every view roofline; r3 [VP-Stamina]/[MD-4.x] his climb report voiced as his documents open - one (1) piton, bent, reported immediately, told Kyle before his boots were down, re-roped, climb finished; r4 [MD-4.x] he heard her first ('stone getting annoyed') and started early; r5 [ST] Kyle anchoring from the storeroom rope and counting everything; r6-r8 [ST]/[MD-4.x] the move waiting on her leave, Daisy's dawn loaf to the warm stone at the quarry's foot, and 'the landing decided it' kept as the telling's own phrase - the mother's decision stays hers, and no keeper narrates forcing it; r9 [ST]/[MD-4.x] four carries by Kyle's count to the old quarry ledge, dry stone, no blasting in its history, the mother's next circle drawn around them; r10 [VP-Stamina]/[MD-4.x] his count confession voiced - announced two, four turned out right, corrected at the guild at the top of his voice, both numbers now town property; r11 [S4-spine]/[MD-4.x] the straw-lined courier baskets, heat only, the roost trick's second career; r12 [ST]/[S5-spine] the gear down and the last coil into Kyle's waiting hands; r13 [S6-spine]/[ST] the almanac's hatch-day line beside the red and the blue in the same tidy hand; r14 [S3-spine]/[ST] the crag onto the patrol schedule in Claire's handwriting and the quarry ledge onto the map; r15 [S7-spine]/[S2-spine] the frost breaking inside seven days, the orchard untouched, the moved egg hatching safe as the household's first brood; r16 [VP-Stamina]/[MD-4.x] his rank beat voiced - she circles with him instead of at him, a rank he decided to hold proudly.",
+      "outcome": "[ST]/[MD-4.x] stamina-out states Stamina's route-owned lasting outcome: the wyvern household living at the old quarry ledge, fixed on the map and on the adjusted patrol route - closed on the event's own stated first sentence, nobody owns wild things.",
+      "notes": "Route-exclusive by design: pitons, cordons, the storeroom, quarry and household language, the loaf, 'the landing decided it', the guild-volume correction, courier-bedding, the last coil, 'announced two', 'first brood', and 'circles with' do not appear in the other two routes (battery-verified). Not borrowed: Daisy's discovery that the mother was circling the quarry [MD-4.x perspective] and the bakery's back-fires stay with her chapter; Neet's wing-tail reading habits and her one-nod record belong to her own account [VP-Neet-Stamina] and are not staged here; 'the roost trick' is spine (S4), used here only as the baskets' heat-only line."
+    }
+  },
+  "skillStages": {
+    "planning": "Mapped the accepted sources before writing: the shared opening and the three tellings from shared-events.json, the spine table S1-S7 and the participant perspectives from pilot-M1-cold-roost.md, and Dolbur's three tier-5 viewpoint texts from the pack (verified -ceq against data/expedition-stories.json). Planned each route around the assignment's asks - Life: the uneventful night watch earning his quiet pride, plus the rope-catch meeting with Kyle; Mana: the practiced stillness made meaningful, pivoting on the quiet rounds that positioned his spare-rope save; Stamina: the bent piton reported immediately, Kyle's anchor, the corrected carry count, and the mother's decision staying hers - with every participant acting only per the selected telling.",
+    "drafting": "Wrote the 65 boxes at dialogue-box length (hard target 43 audit tokens), voicing Dolbur at the beats where his viewpoint layer forms (op-04, the three departures, life r3/r8/r12, mana r3/r12/r13, stamina r3/r10/r16), keeping Daisy's floor line byte-exact with her portrait id, and carrying all other work through the narrator. Recorded mapping tokens per beat as written so provenance stayed attached, then listed the verification plan and ran the battery.",
+    "reviewing": "Re-read all three routes in order for cause and effect, Dolbur's voice (energetic, plan-forward, owns his mistakes aloud), pacing, and cross-traveler consistency with the accepted Neet tier-5 chapter (same spine facts, same telling events, separate connective glue). Ran the verification battery: structure and ids, token audit, pre-dispatch leak scan, route-ownership scans, cast consistency, award claims, the cross-chapter borrow ban, and the pack-to-data viewpoint and job/material -ceq's; fixed what failed and re-ran to zero."
+  },
+  "characterNotes": {
+    "dolbur": "Viewpoint traveler; portrait id 'dolbur' (DolburPortrait.png, verified in source/core.js TRAVELERS line 12). Voiced beats: op-04 opener, the three route departures, and per route the beats where his viewpoint layer forms - life-r3 (watch plan), life-r8 ('An introduction'), life-r12 (the mid-count confession, 'watch kept', the quiet pride); mana-r3 (coin-on-boot practice), mana-r12 (the introduction-not-a-rescue label), mana-r13 (the stillness made meaningful); stamina-r3 (the piton report), stamina-r10 (the corrected carry count), stamina-r16 (the circling rank). Voice anchors: his documented t1-4 register (energy, forward planning, mistakes owned out loud), the route-check habit from his tier-5 job voice line, and the report-style honesty ('The report says...', 'one (1) piton') carried over from his own accepted viewpoint texts. His narration-level traits and his earlier-decade tools (decoys, splints, distance-stones) stay out of this chapter's borrow range.",
+    "claire": "No spoken beats; portrait id 'claire' exists but is not used on beats. Life: names and protects the crag, the patrol schedule in her handwriting, the frost log [LT]/[MD-2]/[S3]/[S7]. Mana: three nights of silence and the no-voices-past-the-tree-line rule, then the named, protected, scheduled crag [MD-3]/[MT]. Stamina: cordons closing the orchard path and the view rooflines, coming down into the schedule and the map [ST]/[S3]. Her private registers [MD-2.x perspective adds] stay with her own future chapter.",
+    "daisy": "One direct spoken beat - life-r6, the byte-exact floor line 'That is all right. We can try again another time.' with portrait id 'daisy'. Life: oven-warmed straw bricking, quarter-twist turns like dough through a rise, the blanket failure and retry [LT]/[MD-2.1]. Mana: straw restocks on the leaning ledges, the muffled bakers' quarter, warm bread so nobody has to shout [MT]/[MD-3.x]. Stamina: the dawn loaf to the warm stone at the quarry's foot - the permission point [ST]. Her warm-center observation [MD-2.1 add] and her quarry-circling discovery [MD-4.x add] stay with her own chapter.",
+    "kyle": "No spoken beats - his 'a catch' label and counts are narrator-carried; portrait id 'kyle' exists but is not used on beats. Life: the one-handed catch and the precise counter-label [LT]/[MD-2]/[S5]. Mana: cloth-wrapped rungs, hours of held stillness, and the mid-slip catch [MT]/[MD-3.x visible work]; his count of seventeen silences, his pride in the hush holding without him, and the wind-check habit are his section 3.2 private material and stay with his own chapter. Stamina: the storeroom anchor counting everything, the four carries counted, the last coil into his waiting hands [ST].",
+    "neet": "No spoken beats in this chapter; portrait id 'neet' exists but is not used on beats; she is cast here because the event's five-keeper set includes her. Life: the feather introductions and the almanac's first line [LT]/[S6]. Mana: the correct lullabies refused, then the wrong-on-purpose rite recorded as a working rite [MT]/[MD-3.x] - her midnight pantry practice, margin note, and kept feather stay in her chapter. Stamina: present only through the almanac's same tidy hand; her wing-tail reading and one-nod record stay with her own account."
+  },
+  "factProvenance": {
+    "gameTableFacts": "Job name 'Guard the Nesting Ridge' and Dolbur's job voice line (data/expedition-jobs.json, lines 124-125); material names Rainbow bird's egg / Bluebird's egg / Wyvern's egg (data/game-data.json); the TRAVELERS roster and portrait ids (source/core.js lines 10-20, files present in assets/characters/); the award region at source/core.js:269 (stamps, likeability, boosts, and bonuses only - no ingredient, no egg); the three existing Dolbur viewpoint rows in data/expedition-stories.json (travelers.dolbur.viewpoints 0/1/2), byte-identical to the pack rows (verified -ceq in coverageChecks.anchors).",
+    "acceptedProjectStoryContent": "The shared opening S1, the three route tellings [LT]/[MT]/[ST], the spine facts S1-S7, the participant perspectives (MD-1..MD-4.2), the section 0.5 owner question framing the selected material as story focus, the replay-journal premise, and the accepted Neet tier-5 chapter's precedent (shared opening, in-scene choice, adaptation beats, the byte-exact Daisy floor line) - fan-written pilot material accepted by the owner.",
+    "newFanWritten": "Everything in this file beyond those sources is new fan-written adaptation glue: Dolbur's spoken beats, the narrator connective narration, the confirm and outcome wordings, and the implementation documentation (including the implementationNotes.laterReports identification field). Nothing here edits data/, source/, or the playable HTML, and no new storage or gameplay rules are proposed."
+  },
+  "continuityFlags": [
+    "The Cold Roost is one shared event: the same S1 opening runs in all three routes of this chapter and in chapter-pilot-neet-t5.json; the 'the ledge would not wait...' line in op-03 is the event's own invariant first line, shared by the accepted sources' stated design.",
+    "Cross-traveler consistency: participant behavior per route follows the same accepted tellings Neet's chapter used (Daisy's straw work and floor line in Life; the lullaby rite and the hush in Mana; cordons, loaf, and carries in Stamina). The two chapters' differing sentences are new connective glue, not new facts. This chapter never assumes the player saw Neet's chapter or any other family's route.",
+    "The three Dolbur viewpoint texts ([VP-Life]/[VP-Mana]/[VP-Stamina]) are the short later reports for this traveler's Cold Roost families (implementationNotes.laterReports); their facts appear inside the routes here as his voiced beats, so the full scene and the short later reports tell the same story in two paces.",
+    "Route-owned outcomes are exclusive (Life: mixed roost and trellis feathers; Mana: hush custom and working rite; Stamina: quarry household) and battery-verified; the spine facts S1-S7 are common ground across all routes, so no route is canon-locked.",
+    "No tier-1-4 callbacks and no borrowings from other chapters' mechanics: Dolbur's earlier-decade tools (decoy bundles, splints, distance-stones, rulebooks, crates) and other travelers' t1-4 material do not appear. The only near-byte revisits are documented in coverageChecks.anchors: the Daisy floor line (already byte-identical in-game beat data, quoted once), the series-standard trip-start/trip-end lines with the traveler name swapped, and the shared-opening pack sentences that both travelers' chapters carry as the event's own text.",
+    "Timing preserved: pre-dispatch beats carry spine-level facts and spoken intentions only; hatching, protection, almanac entries, and route-owned outcomes arrive in the returns; the trip timer stays implementation-owned, and the scene never replays itself on later visits (the replay-journal model is cited in implementationNotes.replayJournal)."
+  ],
+  "flags": [
+    "Portrait authority: all five cast portraits verified present in assets/characters/ and registered in source/core.js TRAVELERS (lines 10-20); dolbur uses 'dolbur', daisy uses 'daisy' on her one spoken line, narrator beats use 'none'; claire, kyle, and neet portrait ids are recorded in characterNotes rather than on beats because they have no lines here. Engine note (verified against source/app.js:177 and the check-ui.cjs tier-5 flows): the beat renderer resolves any non-'none' portrait id against TRAVELERS, so these displays are data-complete.",
+    "The only branch point is the egg choice; its three option materials are byte-locked to data/game-data.json names [MAT], and the chosen family selects the route telling. See implementationNotes.optionGating for the one-to-three-valid-options rule.",
+    "Implementation caveat, carried from the tier-4 benchmark: this is a script draft - nothing here changes the game's behavior or files; storage, timers, rewards, and route selection all remain in the game's existing systems. DeepSeek's implementation files stay untouched.",
+    "Box budget honored: 65 story beats plus 3 option teasers, all measured in coverageChecks.boxLengths. The choice note is guidance text for the implementer, exempt from the beat-length target.",
+    "No award phrasing exists in any beat or teaser (coverageChecks.awardClaimScan). The egg is the story's focus, never freight: no beat states or implies the player receives it.",
+    "Schema: 22 top-level keys mirroring chapter-pilot-neet-t5.json (sharedEvent included). The one field this chapter contributes beyond the accepted benchmark's shape is implementationNotes.laterReports - the explicit identification of the three viewpoint texts as the short later-completion reports - so the batch lead can fold the field into later chapters' templates."
+  ],
+  "coverageChecks": {
+    "anchors": "Battery-verified -ceq's: the three Dolbur tier-5 viewpoint texts in stories-v2/dolbur-t1-5.json match data/expedition-stories.json travelers.dolbur.viewpoints '0'/'1'/'2' exactly (3/3, byte comparison); the pack's three tier-5 rows are kind 'viewpoint' and carry no hook/outcome keys (the documented tier-5 deviation, confirmed at the source); the job field 'Guard the Nesting Ridge' -ceq's the pack row and is byte-found in data/expedition-jobs.json together with Dolbur's voice anchor ('checking the route before setting out'); all three option and route material fields -ceq the data/game-data.json names (Rainbow bird's egg / Bluebird's egg / Wyvern's egg). byteReuse is an empty array at tier 5; the near-byte reuses this chapter does make - the Daisy floor line (quoted once; already byte-identical beat data in the game's tier-5 flows), the series-standard trip-start/trip-end lines with the traveler name swapped, and the shared-opening pack sentences both travelers' chapters carry as the event's own text - are each documented here rather than left silent.",
+    "boxLengths": "Battery-measured: 65 story boxes (opening 4, choice 1, trip 2, confirm 3, departure 3, return-stage 52 = Life 18, Mana 17, Stamina 17) plus 3 option teasers. All 65 boxes at or under the 43-token target; the seven boxes sitting exactly on the target are op-02, life-r2, life-r14, mana-r12, mana-r15, stamina-dep, and stamina-out (43 tokens each - the measured maximum); teasers measured 17/18/18 tokens; the choice note measures 74 tokens as exempt guidance text.",
+    "preDispatchLeakScan": "Scans op-01..op-04, the choice text and note, the three teasers, trip-start, trip-end, the three confirms, and the three departures (16 units plus the note) against the routes' outcome vocabulary (hatch/fledg/fledge, considered itself, mixed, almanac, patrol schedule, protected, quarry, household, working rite, three-version, trellis, brightened, matched, tenants, trespassers, borrowed warmth, stopped noticing, seventeen, last coil, tolerates, first brood, courier, landing decided, quiet season). Zero hits before dispatch: every prediction is spine-level plight or spoken intent. Scan-list exclusions, stated on purpose: 'circles/circling' is S1-level plight (the mother's circling in stamina-hook), 'custody' is the Life telling's own plight language (life-hook), and 'wet chalk' is Mana's plight description (mana-hook) - all three are checked in the route-ownership scan instead, where they are own-route words.",
+    "resolutionPlacementScan": "Six route-pair scans, zero hits: each route's full beat set was scanned against the other two routes' owned outcome terms. Owned terms used - Life: custody, tenants, trespassers, quarter-twist, borrowed warmth, stopped noticing, trellis, bright as sugar, one-handed, watch kept. Mana: wet chalk, perimeter, coin, eleven, lullab-, flat where the song rises, rungs, ladder, tree line, frost-line, mid-slip, quiet season, singing flat, wrong on purpose. Stamina: piton, cordons, storeroom, quarry, household, loaf, landing decided, blasting, guild, courier, last coil, circles with, announced two, first brood. 'An introduction' and plain rope/coil words are exempt as spine (S5) and shared-fixtures vocabulary, so they may appear in more than one route.",
+    "castConsistencyScan": "Script words for the five foreign travelers (Tirami, Luke, Piria, Charlotte, Demian) return zero hits; the only traveler names present are the accepted five-keeper roster (Dolbur, Neet, Claire, Daisy, Kyle). Per-route role and presence matches each telling: Life names Dolbur, Kyle, Daisy, Neet, and Claire; Mana names Dolbur, Neet, Daisy, Kyle, and Claire; Stamina names Dolbur, Kyle, Daisy, and Claire, with Neet present through the almanac's same tidy hand (her name is not needed there - the telling itself does not use it). No route borrows another route's deeds; the ownership terms in resolutionPlacementScan double as the foreign-deed exclusion list. No beat assumes any other family's route or Neet's chapter was seen.",
+    "awardClaimScan": "All 65 beats plus the three teasers scanned against award, reward, receive, gives you, yours, claim, collect, and gather - zero hits. The choice note states the implementation rule (the chosen egg is the story's focus, never a settlement award) as guidance text and is exempt from beat-length and scan pools; no beat states or implies the player receives an egg, matching the settlement behavior at source/core.js:269.",
+    "crossTravelerConsistency": "Fresh-glue ban verified: 32 phrases distinctive to chapter-pilot-neet-t5.json's connective prose and her viewpoint textures ('So the ledger opens on a cold page', 'you cannot hurry a crag', 'the committee convenes itself', 'the site that asked for hush', 'the correct lullabies', 'wings folded', 'tail set', 'the one the mother tolerates', 'margin note', 'one rainbow feather', 'from the correct distance', 'a settling word', and their listmates in the battery) return zero hits in this chapter's story text (the ban scans beats and teasers; this documentation sentence quotes a few of them for the record), so the two chapters share the event's facts while each writes its own sentences. Shared-material parity holds at fact level: the S1 opening and each telling's event set match the accepted pack, the same participants do the same shared deeds in the same order, and the Daisy floor line is byte-identical in both chapters by design. One privacy boundary, per the accepted pilot's perspective reservations: Kyle's count of seventeen silences and his pride in the hush holding without him are reserved for his own perspective section (pilot 3.2). They appear in neither chapter: Dolbur's beats carry only what his rounds can see, and Neet's Mana route was brought to the same boundary on its own revision pass - her mana-r9 now counts only what her ear permits, and her mana-r8 lost its [MD-3.2] private hearing aside.",
+    "beatInventory": "Shared layer: op-01, op-02, op-03, op-04, choice (+3 option teasers), trip-start, trip-end. Life: life-hook (confirm), life-dep (departure), life-r1..life-r17 (returns), life-out (outcome). Mana: mana-hook, mana-dep, mana-r1..mana-r16, mana-out. Stamina: stamina-hook, stamina-dep, stamina-r1..stamina-r16, stamina-out. 65 unique beat ids, 52 return-stage boxes across the three routes (18/17/17), following the tellings' densities; route box rhythm stays comfortable per the box-length audit.",
+    "fileCheck": "Written fresh in this pass at stories-v2/chapter-pilot-dolbur-t5.json (single file, UTF-8, ASCII-only text); exhaustive battery run afterwards: structure (22 top-level keys including sharedEvent, pilot id chapter-click-10, traveler dolbur, tier 5), unique beat ids, speaker-portrait pairing (narrator/none, dolbur/dolbur, daisy/daisy), the pack-to-data viewpoint -ceq's, job and material -ceq's, the token audit, the pre-dispatch leak scan, six route-ownership pair scans, the cast and award scans, and the 32-phrase cross-chapter borrow ban - then a full ordered re-read of all three routes. Numbers in boxLengths are battery-measured. No game files touched and no build needed (data/, source/, and the playable HTML are unchanged)."
+  },
+  "byteReuse": []
+}

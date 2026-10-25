@@ -1,0 +1,401 @@
+{
+  "pilot": "chapter-click-07",
+  "traveler": "dolbur",
+  "tier": 2,
+  "job": "Mushrooms at Base Camp",
+  "purpose": "Owner-review draft: Dolbur's tier-2 click-through chapter (Sturdy mushroom, Clever mushroom, Lively mushroom), written in the reviewed Dolbur tier-1 chapter format - chapter-pilot-dolbur-t1.json is the same-traveler benchmark (pilot chapter-click-06). The chapter opens as soon as any material family reaches tier 2; the player picks one currently unlocked material inside the opening scene; the choice sets the route; Dolbur is dispatched around base camp; after the trip the player opens a click-through continuation carrying the journey's action, setbacks, decisions, and growth. Each route stands alone and holds the mandate the owner set for it: Life makes him earn both hook promises (the dinner and the dry camp) by bracing the failing awning first, Mana shows him testing whether the mushrooms' changing arrangement means something before the hidden spring is revealed, and Stamina makes the premature salting a real mistake he owns at once and repairs on screen. Dolbur's judgment grows behaviorally (survey first, test before believing, name the mistake by repairing it) without textual callbacks to a particular tier-1 route. Nothing here edits data/, source/, or the playable HTML.",
+  "sourceMaterial": [
+    "research/writing/expedition-stories/stories-v2/dolbur-t1-5.json - tier-2 Life/Mana/Stamina hooks and outcomes, quoted byte-exact (verified -ceq against this pack 3/3 hooks, 3/3 outcomes, and against data/expedition-stories.json travelers.dolbur.routes '2' rows 3/3 and 3/3)",
+    "research/writing/expedition-stories/stories-v2/chapter-pilot-dolbur-t1.json - reviewed same-traveler format benchmark: chapter shape, beat rules, box discipline, ownership split, and the verification suite",
+    "research/writing/expedition-stories/stories-v2/HANDOFF.md - batch schema and tier-2 display model: hook shown before dispatch, outcome shown once after completion, never concatenated",
+    "data/expedition-jobs.json - job name 'Mushrooms at Base Camp' (byte-exact; Dolbur entries index 1 = tier 2, per HANDOFF) and the established job voice: 'This assignment concerns the three varieties of mushroom. Dolbur treats the job as another energetic adventure, checking the route before setting out.'",
+    "data/game-data.json - tier-2 material names Sturdy mushroom / Clever mushroom / Lively mushroom (byte-exact) under the Life / Mana / Stamina family labels",
+    "source/core.js - TRAVELERS roster line 12: dolbur portrait 'DolburPortrait.png'; file assets/characters/DolburPortrait.webp (verified present). Tier-2 flow: pre-dispatch hook preview and post-completion sections (core.js recordExpeditionStory, journal at line 363); chapter gating and unlocked-route filtering (core.js expeditionChapter/unlockedExpeditionChapters); award application (settleExpedition)",
+    "source/app.js line 138 EXPEDITION_PROFILES - established Dolbur voice anchor: 'An energetic warrior who approaches adventures with plenty of enthusiasm.' (profile index 1); the story preview flow updates title and hook before dispatch (app.js updateExpeditionStoryPreview, line 147 shows the hook)",
+    "data/visitor-dialogue.json - Dolbur flavor pool used as established behavior anchors: 'a first-aid kit he cannot find' (line 46), 'a good loss teaches more than an easy win' (line 47), 'quietly checking that everyone else brought rope' (line 48), and his route-leading familiarity (line 49)"
+  ],
+  "presentationModel": "Player opens a tier chapter when any material family reaches that tier. Inside the opening scene the player chooses one currently unlocked tier material; that choice determines the route. Dolbur is dispatched. When the trip finishes, the player opens a click-through continuation showing what happened around base camp and the route's outcome. Other unlocked routes can be played on later trips, one active route at a time.",
+  "playerFlow": "op-01 -> op-02 -> choice -> confirm = byte-exact hook box for the chosen family -> one route departure box -> trip-start (dispatch, no result) -> trip timer -> trip-end (click to open the report) -> route return boxes in order, last box = byte-exact outcome. After the chapter, other unlocked choices remain available on later trips.",
+  "implementationNotes": {
+    "chapterOpen": "The chapter becomes available as soon as any material family reaches tier 2, per the engine's chapter gating (source/core.js expeditionChapter and unlockedExpeditionChapters, which open a chapter when a family's tier meets the chapter and filter routes to unlocked families). Suggested UI copy, outside the story beats: 'New chapter - Mushrooms at Base Camp.'",
+    "optionGating": "Show only options for material families currently unlocked at this tier; one, two, or three options are all valid states. The opening prose is written to hold when only one option exists.",
+    "routeLock": "The material choice sets the active route for this trip; other unlocked choices remain available on later trips, one active route at a time.",
+    "tripTimer": "The trip runs about two minutes on the game timer. The timer belongs to implementation and UI, not to story text.",
+    "awardHandling": "The script never states or implies that the player receives the chosen mushroom: the mushroom names which journey the telling follows, not freight. source/core.js settleExpedition (line 299) awards stamps, likeability, boost bundles, and bonuses only - no ingredient, no mushroom - and the trip-end beat only opens Dolbur's report; awarding belongs to the game's existing systems, outside story text.",
+    "displayModel": "Current in-game flow this script mirrors: the hook for the selected family already shows as the story preview before dispatch (source/app.js updateExpeditionStoryPreview text assignment at line 147, from the route preview in source/core.js), and the outcome shows once after the trip (source/core.js recordExpeditionStory; journal building at line 363). The confirm box repeats the hook, the final click-through beat repeats the outcome, and nothing pre-dispatch states outcome facts."
+  },
+  "beatRules": [
+    "Every beat carries id, phase, speaker, portrait, text. The choice beat additionally carries its note and its three option texts.",
+    "Narrator beats stay brief and set place, action, or a visible action. Dolbur carries the recognition, reasoning, and decisions in his own spoken lines; judgment growth comes through what he surveys, tests, orders, and repairs - never through mood labels. No route side character speaks: no accepted journey draft exists for Dolbur tier 2, so no dialogue is invented for the camp under the awning, the scouts, or the kitchen's background traffic; each side presence stays narrator-carried with one scene function.",
+    "Each return route opens with a 'The report starts...' narrator sentence so the post-trip account runs chronologically from where the trip went.",
+    "Each box is written to be comfortable in a dialogue box: about 40 words (whitespace token audit, hard ceiling 43 for every new beat). The byte-exact hook quote (confirm) and the byte-exact outcome quote (final return box) repeat already accepted screen text and are exempt from the target.",
+    "Portrait availability (verified): speaker 'narrator' is unvoiced scene text with no portrait. Speaker 'dolbur' shows the Dolbur portrait ('dolbur' - source/core.js TRAVELERS line 12 'DolburPortrait.png'; file assets/characters/DolburPortrait.webp). No other speaker beats exist: the camp, the scouts, and the kitchen background stay narrator-carried, so no 'none-new-side-character' beat appears in this chapter.",
+    "No outcome fact appears anywhere before the trip ends. Pre-dispatch boxes carry only hook facts and Dolbur's spoken intentions; the six shared units (op-01, op-02, choice text and note, trip-start, trip-end) carry no route-specific hook facts either, since the choice precedes the confirm.",
+    "Aftermath wording stays owned by the final byte-exact outcome beats (the outcome's 'crate-brace first, cook after' camp law with his name on the margin; the string pegged through the refused line and the spring reveal with the scouts' credit, 'and he lets them'; the premature salting owned at once, the re-rinse, the lid weighted with a stone, the double-surviving dinner, and the pot-lid stone entering the camp rulebook). Scene beats show the same journey facts in scene time in their own words; the ownership scan verifies zero outcome-phrase reuse in non-final beats.",
+    "Route independence: no beat assumes another route was seen, no cross-route characters or props except generic camp fixtures, no Neet-route assumptions, no Dolbur tier-1 references (the shortcut, decoy, splint, ropes, birds, timetable, and three-trip material stay inside their own accepted outcomes), no tier-3 or later references, and no customs recited outside the byte-exact outcome beats. Each of the three routes stands alone and reads cleanly in any play order.",
+    "Award discipline: no beat states or implies the player receives the chosen mushroom; the trip's rewards belong to the game's existing settlement systems outside story text (source/core.js settleExpedition)."
+  ],
+  "opening": {
+    "beats": [
+      {
+        "id": "op-01",
+        "phase": "opening",
+        "speaker": "narrator",
+        "portrait": "none",
+        "text": "The mushroom assignments are stacked on the camp table this morning, and the mushroom work is Dolbur's."
+      },
+      {
+        "id": "op-02",
+        "phase": "opening",
+        "speaker": "dolbur",
+        "portrait": "dolbur",
+        "text": "Pio! Camp day! Belt, boots, and rations, all checked by hand this morning. Point me at the mushrooms, and I will make the assignment worth retelling."
+      },
+      {
+        "id": "choice",
+        "phase": "choice",
+        "speaker": "narrator",
+        "portrait": "none",
+        "text": "Choose which mushroom sends Dolbur out.",
+        "note": "Only options whose material family is unlocked at this tier are shown. The opening prose above is written to hold whether one option or three are available. The chosen mushroom names the journey this telling follows; it is the story's focus, never a settlement award.",
+        "options": [
+          {
+            "material": "Sturdy mushroom",
+            "teaser": "Storm season arrived early, the old awning is crabby, and one promise covers dinner and the evening's weather."
+          },
+          {
+            "material": "Clever mushroom",
+            "teaser": "The camp mushrooms redraw themselves every dawn, and the scouts want to know if the moving means anything."
+          },
+          {
+            "material": "Lively mushroom",
+            "teaser": "A pan of lively mushrooms, one salt cellar, and a dinner where timing beats seasoning."
+          }
+        ]
+      }
+    ]
+  },
+  "sharedDispatch": [
+    {
+      "id": "trip-start",
+      "phase": "trip",
+      "speaker": "narrator",
+      "portrait": "none",
+      "text": "Dolbur takes the assignment and gets to it; whatever happens out there comes home with him."
+    },
+    {
+      "id": "trip-end",
+      "phase": "trip",
+      "speaker": "narrator",
+      "portrait": "none",
+      "text": "The trip is over. Open Dolbur's report to see what happened, and how it ended."
+    }
+  ],
+  "routes": [
+    {
+      "family": "Life",
+      "material": "Sturdy mushroom",
+      "confirmBeats": [
+        {
+          "id": "life-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Storm season is early and the base camp awning is older than everyone standing under it. Dolbur has promised the camp a mushroom dinner and a dry night."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "life-dep",
+          "phase": "departure",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "Sturdy mushrooms, then! Storm's coming early, the awning is older than everyone it shelters, and I promised the camp the evening meal and the weather. Both will behave by suppertime - the storm is invited to watch me keep them."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "life-r1",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The report starts under the old awning: the season's first wet gust ran through camp, the canvas swung, the frame groaned at its joints, and beneath that roof sat the cookfire, the pot, and both of the evening's promises."
+        },
+        {
+          "id": "life-r2",
+          "phase": "return",
+          "speaker": "dolbur",
+          "portrait": "dolbur",
+          "text": "That roof is one shove from a wiped-out supper. Weight speaks before fire does tonight: the cargo crates to me, the lot, and the pot's clock keeps running. Both promises get kept in one piece."
+        },
+        {
+          "id": "life-r3",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The crates piled in two deep: wedged under the long frame at the sagging corner, boxed around the middle pole's feet, and walked along row by row with a shove until the canvas stopped swinging and stood still over the fire."
+        },
+        {
+          "id": "life-r4",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The pot kept its hour: caps checked one basket at a time, then in, exactly on the camp's evening clock. The fix asked the dinner for nothing - that was the point of doing the roof in daylight."
+        },
+        {
+          "id": "life-r5",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The storm arrived after lamps with its better push: gusts leaned on the canvas line, water sheeted off the awning, and the crates answered every shove - flame straight, boots dry, camp dry under its old roof."
+        },
+        {
+          "id": "life-r6",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Dinner ran the tables: bowls emptied, seconds went around, and the camp counted its kept promises on two fingers - fed, and dry, with the cookfire's light still leaning on the crates."
+        },
+        {
+          "id": "life-r7",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "By next morning the working order hung painted over the cookfire arch - weight before fire, crates before pots - with his belt tally signed underneath as the author."
+        },
+        {
+          "id": "life-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "He props the frame on sturdy crates and gets the caps into the pot on schedule. The awning holds, 'crate-brace first, cook after' is camp law with his name on the margin, and dinner is good."
+        }
+      ]
+      },
+      {
+        "family": "Mana",
+        "material": "Clever mushroom",
+        "confirmBeats": [
+          {
+            "id": "mana-hook",
+            "phase": "confirm",
+            "speaker": "narrator",
+            "portrait": "none",
+            "text": "Base camp's clever mushrooms rearrange themselves every dawn, and the scouts want to know whether the arrangement means anything. Dolbur treats the question seriously."
+          }
+        ],
+        "departureBeats": [
+          {
+            "id": "mana-dep",
+            "phase": "departure",
+            "speaker": "dolbur",
+            "portrait": "dolbur",
+            "text": "The clever patch, then! It moves house every dawn and the scouts want the meaning. I take that question personally: dawn to dawn, mark by mark, and their theories stand a test. Two dawns of eyes beat one dawn of guessing."
+          }
+        ],
+        "returnBeats": [
+          {
+            "id": "mana-r1",
+            "phase": "return",
+            "speaker": "narrator",
+            "portrait": "none",
+            "text": "The report starts at the mushroom patch at first light: half the caps stood somewhere new to every eye in camp, and the scouts had theories before the mist burned off - wind, ground, or a good week coming."
+          },
+          {
+            "id": "mana-r2",
+            "phase": "return",
+            "speaker": "dolbur",
+            "portrait": "dolbur",
+            "text": "Fine question, worth a real test: every cap gets marked where it stands tonight and again at tomorrow's dawn, and whatever holds its ground across both dawns gets its own look. Guesses are for card tables. Patches get tested."
+          },
+          {
+            "id": "mana-r3",
+            "phase": "return",
+            "speaker": "narrator",
+            "portrait": "none",
+            "text": "Chalked rings went down around every cap before dark. By next dawn the patch had shifted its majority again, fresh caps upright in the gaps, and one strip of dirt stood exactly as bare as the evening before."
+          },
+          {
+            "id": "mana-r4",
+            "phase": "return",
+            "speaker": "narrator",
+            "portrait": "none",
+            "text": "Dawn two moved everything else and the strip none. Laid side by side, the dawn maps agreed: the bare strip ran straight as a fence rail from the patch's near corner out past the drying racks."
+          },
+          {
+            "id": "mana-r5",
+            "phase": "return",
+            "speaker": "narrator",
+            "portrait": "none",
+            "text": "Wind's theory collapsed first: a shoving gust leaves no ruler-straight, always-bare lane behind. Twice bare and dead straight, the strip read as a decision, and decisions come from somewhere. The patch had started answering back."
+          },
+          {
+            "id": "mana-r6",
+            "phase": "return",
+            "speaker": "narrator",
+            "portrait": "none",
+            "text": "The only instrument the scouts never brought was a straight edge, so he brought the straight: cord over shoulder, stakes in hand, and the whole camp of theories parked at the patch's edge waiting on a walking test."
+          },
+          {
+            "id": "mana-out",
+            "phase": "outcome",
+            "speaker": "narrator",
+            "portrait": "none",
+            "text": "He pegs a string through the line they keep refusing, and the string-line traces to a spring nobody knew was close. The scouts credit the mushrooms, and he lets them."
+          }
+        ]
+      },
+      {
+        "family": "Stamina",
+        "material": "Lively mushroom",
+        "confirmBeats": [
+          {
+            "id": "stamina-hook",
+            "phase": "confirm",
+            "speaker": "narrator",
+            "portrait": "none",
+            "text": "Dinner is lively mushrooms in the pan, which means timing matters and checking matters more. Dolbur has one job and one salt cellar."
+          }
+        ],
+        "departureBeats": [
+          {
+            "id": "stamina-dep",
+            "phase": "departure",
+            "speaker": "dolbur",
+            "portrait": "dolbur",
+            "text": "Lively mushrooms, then! One pan, one salt cellar, and a dinner that will not sit still. The rule tonight: eyes first, salt second, checking before anything touches a hot pan. I have been rehearsing my patient face all week."
+          }
+        ],
+        "returnBeats": [
+          {
+            "id": "stamina-r1",
+            "phase": "return",
+            "speaker": "narrator",
+            "portrait": "none",
+            "text": "The report starts at the kitchen corner: pan singing, one salt cellar riding his belt, the lively caps going in like dice. He knew pans, said the hour, and the salt went in ahead of any checking at all."
+          },
+          {
+            "id": "stamina-r2",
+            "phase": "return",
+            "speaker": "narrator",
+            "portrait": "none",
+            "text": "Salted too young, the caps surrendered their water early and turned tight and shy in a pan ready to glorify them. The sizzle died to a hiss, and the kitchen smelled like an evening backing out of its own promise."
+          },
+          {
+            "id": "stamina-r3",
+            "phase": "return",
+            "speaker": "dolbur",
+            "portrait": "dolbur",
+            "text": "Stop. That was my hand - salt before eyes, confidence before checking. The caps and the pan did nothing wrong; the mistake is mine in full. The batch goes to the wash, and the salt cellar gets exiled to the far counter."
+          },
+          {
+            "id": "stamina-r4a",
+            "phase": "return",
+            "speaker": "narrator",
+            "portrait": "none",
+            "text": "The salted batch went into clean water before the pan had stopped complaining, and came out honest again - not the evening's proudest serving, but a true one, and the camp's long tables took it without complaint."
+          },
+          {
+            "id": "stamina-r4b",
+            "phase": "return",
+            "speaker": "narrator",
+            "portrait": "none",
+            "text": "Batch two ran by the book: caps checked one by one before the salt got anywhere near. Then the pan opened its second act - the liveliest caps leaping the rim, and the loose lid bouncing like it wanted to join them."
+          },
+          {
+            "id": "stamina-r5",
+            "phase": "return",
+            "speaker": "narrator",
+            "portrait": "none",
+            "text": "A hearth stone came down square on the lid and the performance stopped mid-air. The pan kept its cargo, the second batch cooked out clean, and the tables would never know how close it ran."
+          },
+          {
+            "id": "stamina-r6",
+            "phase": "return",
+            "speaker": "narrator",
+            "portrait": "none",
+            "text": "The stone stayed on post after the washing-up, holding the lid out of habit, and Dolbur told its story to anyone parked near the fire until the fire banked itself. A stone cannot blush; he pretended not to notice."
+          },
+          {
+            "id": "stamina-out",
+            "phase": "outcome",
+            "speaker": "narrator",
+            "portrait": "none",
+            "text": "He salts the pan before checking whether they are ready - his documented way to lose dinner. He owns it at once, re-rinses, weights the lid with a stone, and dinner survives twice; the pot-lid stone is glued into the camp rulebook's margin as a lesson."
+          }
+        ]
+      }
+    ],
+  "mapping": {
+    "life": {
+      "hook": "life-hook quotes the tier-2 Life hook byte-exact as the confirm box after the choice.",
+      "inBetween": "No accepted journey draft exists for Dolbur tier 2, so the beats between hook and outcome are new fan-written scene work built to the outcome's own action order: the failing awning discovered under the season's first gust (life-r1), the spoken weight-before-fire decision (life-r2), the crate bracing (life-r3), the pot keeping its scheduled hour (life-r4), the storm held and the camp kept dry (life-r5), the served dinner and the two-promise tally (life-r6), and the painted order of operations with his tally signed under it (life-r7).",
+      "outcome": "life-out quotes the outcome byte-exact as the final box; 'props the frame on sturdy crates', the caps' scheduled potting, 'The awning holds', 'crate-brace first, cook after' as camp law with his name on the margin, and 'dinner is good' stay owned by this beat alone.",
+      "notes": "The user-mandated double promise: the awning fix is staged first (life-r1 through life-r3) so the dinner can run on schedule (life-r4), and the storm test (life-r5) is what earns the dry camp - both hook promises land on screen before the outcome's camp law. The spoken decision (life-r2) deliberately avoids the outcome's wording: 'weight speaks before fire does' instead of 'crate-brace first, cook after', and no beat uses the word 'braced'. life-r7 shows the camp adopting the order in scene time (paint and tally, not law); the outcome's 'camp law with his name on the margin' remains the final word."
+    },
+    "mana": {
+      "hook": "mana-hook quotes the tier-2 Mana hook byte-exact as the confirm box.",
+      "inBetween": "New fan-written between hooks and outcome, per owner directive: the shifting patch and the scouts' theories (mana-r1), the spoken test commitment (mana-r2), dawn one's chalk marks (mana-r3), dawn two's agreement on the one bare straight strip (mana-r4), the wind theory's collapse and the decision reading (mana-r5), and the prepared straight-edge walk that stops short of the reveal (mana-r6).",
+      "outcome": "mana-out quotes the outcome byte-exact as the final box; the string pegged through the refused line, the string-line trace, the spring nobody knew was close, the scouts' credit, and 'he lets them' stay owned by this beat alone.",
+      "notes": "The user-mandated order: the test exists before the spring does. The two dawns of marks (mana-r3 and mana-r4) are the test; mana-r5 kills the camp's wind theory and turns the never-touched strip into a question without naming the answer; mana-r6 prepares to walk the strip and stops. The spring, the string, the pegging, and the scouts' credit belong to the byte-exact outcome alone; the beats never say 'string', 'spring', 'peg', or 'refusing'. The weeks-long theories (wind, ground, a good week) are scene texture for what the test is testing against."
+    },
+    "stamina": {
+      "hook": "stamina-hook quotes the tier-2 Stamina hook byte-exact as the confirm box.",
+      "inBetween": "New fan-written between hooks and outcome, per owner directive: the confident salting before any checking (stamina-r1), the damage at the pan (stamina-r2), the spoken ownership and the repair order (stamina-r3), the washed batch serving honest (stamina-r4a), the checked-first second batch and the lively jump threat (stamina-r4b), the hearth stone that settles the lid (stamina-r5), and the stone kept on post with its story (stamina-r6).",
+      "outcome": "stamina-out quotes the outcome byte-exact as the final box; the early salting as his documented way to lose dinner, the owning at once, the re-rinse, the lid weighted with a stone, the double-surviving dinner, and the pot-lid stone entering the camp rulebook's margin stay owned by this beat alone.",
+      "notes": "The user-mandated shape: the mistake is his and it is real (stamina-r1 and stamina-r2), the ownership is spoken at once (stamina-r3), the first repair is physical (stamina-r4a), and the pot-lid stone is caused by what the pan does on screen (stamina-r4b's leaping caps and bouncing lid) before it appears (stamina-r5). The beats never reuse the outcome's wording: the salted batch 'goes to the wash' rather than 're-rinses', the stone 'came down square' rather than 'weights the lid with a stone', and the lasting custom stays unstated until the outcome's own rulebook line. The double dinner survival is staged as two saves in scene time without the outcome's 'survives twice' phrasing, and the camp bookkeeping stays in the outcome."
+    }
+  },
+  "byteReuse": [
+    "Storm season is early and the base camp awning is older than everyone standing under it. Dolbur has promised the camp a mushroom dinner and a dry night.",
+    "Base camp's clever mushrooms rearrange themselves every dawn, and the scouts want to know whether the arrangement means anything. Dolbur treats the question seriously.",
+    "Dinner is lively mushrooms in the pan, which means timing matters and checking matters more. Dolbur has one job and one salt cellar.",
+    "He props the frame on sturdy crates and gets the caps into the pot on schedule. The awning holds, 'crate-brace first, cook after' is camp law with his name on the margin, and dinner is good.",
+    "He pegs a string through the line they keep refusing, and the string-line traces to a spring nobody knew was close. The scouts credit the mushrooms, and he lets them.",
+    "He salts the pan before checking whether they are ready - his documented way to lose dinner. He owns it at once, re-rinses, weights the lid with a stone, and dinner survives twice; the pot-lid stone is glued into the camp rulebook's margin as a lesson."
+  ],
+  "skillStages": {
+    "planning": "planning.md outputs restated for the Dolbur tier-2 chapter: the reviewed tier-1 chapter shape (opening -> choice -> hook confirm -> departure -> dispatch -> return beats -> outcome), with the same documented deviation - no accepted journey draft exists for Dolbur tier 2, so the continuation between hook and outcome is planned as new fan-written scene work to each outcome's own action order. POV limits: pre-dispatch boxes may state hook facts and Dolbur's spoken intentions only - no result - and the six shared units carry no route-specific facts since the choice precedes the confirm. The owner's three route mandates drive the beat orders: Life earns both hook promises through the failing awning (bracing first, cooking second, storm third), Mana tests the rearranging before revealing, and Stamina stages the premature salting as a real mistake owned and repaired with the stone caused on screen.",
+    "drafting": "dialogue-and-behavior.md governs the boxes: Dolbur's lines are energetic and direct (established anchor: 'An energetic warrior who approaches adventures with plenty of enthusiasm'; the job description's 'another energetic adventure, checking the route before setting out'), and the growth shows as conduct - a survey before the pot, a two-dawn test before a belief, an apology that arrives as a repair order. No side-character dialogue invented: the camp eats and gets rained on in body, the scouts trail and hold theories without speaking, the kitchen background stays background. The end of each route is the accepted outcome beat, so each route ends with the pack's own claim. Dolbur's 'Pio!' salute in op-02 uses the established expedition greeting register (source/app.js profile index 1) with plain ASCII punctuation.",
+    "reviewing": "revision-checklist pass on all three click-throughs: choice causality (the mushroom names the route; no theme confusion), no pre-dispatch outcome disclosure, route independence (no cross-route characters or props beyond generic camp fixtures, no Neet-route assumptions, no tier-1 or later custom recitations outside the byte-exact outcomes), character anchoring (the camp as beneficiaries, the scouts as questioners with one function, the kitchen as background), voice consistency in every spoken box, box economy, and mapping completeness (each outcome's action order shows fully in the scene before the final quote)."
+  },
+  "characterNotes": {
+    "dolbur": "Tier-2 Dolbur is the established warrior two habits deep: energetic, direct, and now treating checks as a matter of course - he surveys the roof before the pot (Life), builds a test before believing a theory (Mana), and converts his own mistake into a repair order within one spoken line (Stamina). The growth is behavioral because the campaign cannot assume the player saw a Dolbur tier-1 route: no outcome or scene references what any earlier telling established. His tier-3..5 material is not referenced. Portrait: 'dolbur' (verified: source/core.js TRAVELERS line 12 'DolburPortrait.png'; file assets/characters/DolburPortrait.webp).",
+    "campCompanions": "Life route only, unnamed: the camp under the awning - the beneficiaries of both hook promises (fed and dry). They count their blessings in body language and wait out the storm under the braced roof. No speaker beats, no portrait; narrator-carried.",
+    "scouts": "Mana route only, unnamed: the camp's scouts who want the rearranging to mean something. They supply the morning theories (wind, ground, a good week) that the test is set against, and stay with the question to the end. No speaker beats, no portrait; narrator-carried.",
+    "kitchenBackground": "Stamina route only, unnamed: the kitchen corner's traffic and the long tables who eat the rescued dinner without ever learning how close it ran. No speaker beats, no portrait; narrator-carried."
+  },
+  "factProvenance": {
+    "documented": "Hooks, outcomes, material names (Sturdy/Clever/Lively mushroom), and the job (Mushrooms at Base Camp) are byte-exact from dolbur-t1-5.json (and data/expedition-stories.json travelers.dolbur.routes '2' rows, byte-identical). Job voice anchor from data/expedition-jobs.json: 'This assignment concerns the three varieties of mushroom. Dolbur treats the job as another energetic adventure, checking the route before setting out.'",
+    "established": "Dolbur's voice and behavior anchors are the game's own: the expedition profile line 'An energetic warrior who approaches adventures with plenty of enthusiasm.' (source/app.js line 138, profile index 1; also the shop greeting register behind op-02's salute, story beats use narrative voice), the warrior task lines in source/core.js EXPEDITION_TASKS, and the visitor-dialogue flavor pool ('a first-aid kit he cannot find', 'a good loss teaches more than an easy win', 'quietly checking that everyone else brought rope', his route-leading familiarity). The display split (hook pre-dispatch, outcome post-trip, never concatenated) is the HANDOFF model with the engine points cited in implementationNotes.displayModel (app.js:147 hook preview; core.js recordExpeditionStory and journal at line 363). Portrait support: source/core.js TRAVELERS line 12 ('DolburPortrait.png') and assets/characters/DolburPortrait.webp.",
+    "newFanWritten": "Everything between hook and outcome: the opening frame (op-01; op-02's checklist and the 'Pio!' salute, which borrows the established greeting register without quoting it), the three option teasers (rephrasing hook facts only), the three departure lines (new Dolbur speech, in voice, no results), the four in-scene spoken boxes (life-r2, mana-r2, stamina-r3, plus op-02), trip-start/trip-end adapted from the series-standard Neet dispatch lines, and the entire post-trip scene layer (the awning survey under the season's first gust, the cargo-crate bracing, the pot's scheduled hour, the storm held off the canvas, the two-promise tally, the painted order of operations; the patch marks across two dawns, the scouts' wind theory and its retirement, the bare straight strip and the decision reading, the prepared straight-edge walk that stops short of the reveal; the premature salting, the surrendered water at the pan, the washed batch, the checked-first second batch, the leaping caps and the bouncing lid, the hearth stone, and the stone kept on post). Camp people, scouts, and kitchen background stay unnamed and unvoiced; no new named characters, no new customs outside the final beats."
+  },
+  "continuityFlags": [
+    "No accepted journey draft exists for Dolbur tier 2 (the journey-pilot files cover Neet t1 and t2 only). All beats between hook and outcome are new fan-written scene work staged to each outcome's own action order; the owner may want a companion journey-pilot-dolbur-t2 before v2 integration. Hooks and outcomes are the only protected texts.",
+    "Shared-unit spoiler discipline: op-01, op-02, the choice text and note, and the two dispatch lines carry no route-specific hook or outcome facts; per-route hook facts appear only in each route's own option teaser, byte-exact hook, and departure line. Per-option teasers restate hook facts in fresh wording, as in the reviewed tier-1 benchmark.",
+    "Scene-versus-outcome wording split: the beats show the outcomes' journey facts in scene time (the crate bracing and the storm held; the two-dawn test and the bare straight strip; the salted-first evening, the wash, the leaping caps, and the stone) but in their own words; each phrase the outcome uses as its standing claim ('props the frame on sturdy crates', 'The awning holds', 'crate-brace first, cook after', camp law with his name on the margin; 'pegs a string', 'the line they keep refusing', the spring nobody knew was close, 'The scouts credit the mushrooms', 'he lets them'; the documented way to lose dinner, owning it at once, re-rinses, 'weights the lid with a stone', 'dinner survives twice', the pot-lid stone entering the camp rulebook) is verified to appear only in the byte-exact outcome beats.",
+    "Route independence verified by scan: no traveler names other than Dolbur; crates, canvas, and the cookfire arch exist only in Life, the scouts, patch marks, and the straight strip only in Mana, the pan, salt cellar, and hearth stone only in Stamina; no Neet-route assumptions; no Dolbur tier-1 vocabulary outside those accepted outcomes (no shortcut, decoy, splint, ropes, birds, timetable, or three-trip material); the judgment growth is behavioral only (survey first, test first, own-and-repair) with no textual callbacks to any earlier route.",
+    "Later-tier and earlier-tier borrow guards: the crate-brace is not the tier-3 orchard gate motto and never says 'unload'; the bearing-walk along the bare strip is generic straight-line tooling, not the tier-4 fork-cord custom, and no cave, feather, or nest material is referenced; the hearth stone is a lid weight caused on screen, not the tier-4 distance-stone custom; the patch, canvas, and cookfire are generic camp fixtures rather than borrowings from the tier-1 patch defense. The tier-5 campaign material is not referenced.",
+    "Pre-dispatch content (opening, teasers, hooks, departures, dispatch lines) is safe for the current display model: hook facts and declared intentions only. Departures announce method, not result ('weight speaks before fire does', 'dawn to dawn, mark by mark', 'eyes first, salt second') - the results happen after the trip, in the return beats.",
+    "Portrait support verified during the pass: source/core.js TRAVELERS line 12 carries 'DolburPortrait.png' and assets/characters/DolburPortrait.webp is present; the unnamed side characters never reach the portrait system because they carry no speaker beats."
+  ],
+  "flags": [
+    "Portrait authority: Dolbur keeps the established 'dolbur' portrait id (verified against source/core.js TRAVELERS line 12 and assets/characters/); the narrator is unvoiced with no portrait; the camp, the scouts, and the kitchen background stay narrator-carried with no speaker beats, so no 'none-new-side-character' id appears in this chapter.",
+    "Only the choice beat branches, and the route stays locked for that trip. All mechanics (chapter-open trigger, option gating, one-active-route model, trip timer) live in implementationNotes and the choice beat's note, never inside story text.",
+    "Implementation caveat (same standing as chapter-click-01 and chapter-click-06): this is a script draft. Multi-beat click-through playback, option buttons, and the trip timer all need renderer work; nothing here edits game files.",
+    "The confirm box (hook) and the final return box (outcome) are intentionally longer boxes because they quote accepted screen text byte-exact; per the current display model the hook already shows pre-dispatch and the outcome once after completion, and if the game later shows the outcome on its own completion screen, the out beat can be swapped for that canned screen without breaking the script.",
+    "Award discipline is verified below in coverageChecks: no beat claims the player receives the chosen mushroom; implementationNotes.awardHandling cites the award application in source/core.js settleExpedition (stamps, likeability, boost bundles, bonuses; no ingredients).",
+    "No new named characters anywhere: the camp (Life), the scouts (Mana), and the kitchen background (Stamina) stay unnamed and unvoiced, each with one scene function; the naming precedent belongs to the Neet tier-1 journeys where accepted named side characters (Mena, Gorram) exist."
+  ],
+  "coverageChecks": {
+    "anchors": "PASS - hooks 3/3 and outcomes 3/3 byte-exact by -ceq against dolbur-t1-5.json tier-2 entries (Life=Sturdy mushroom, Mana=Clever mushroom, Stamina=Lively mushroom), and 3/3 plus 3/3 again against data/expedition-stories.json travelers.dolbur.routes '2' rows (pack and data byte-identical). Job name 'Mushrooms at Base Camp' verified byte-exact (-ceq) in data/expedition-jobs.json and against the pilot field. Material names verified byte-exact (-ceq) in data/game-data.json under Life/Mana/Stamina and against the pack route material fields and the pilot's route fields.",
+    "byteReuse": "6 byte-exact pack quotes registered (3 hooks + 3 outcomes); all 6 verified present in dolbur-t1-5.json, in data/expedition-stories.json, and in exactly their own beats (0 beat misses, 0 orphan entries). 0 other journey fragments: no journey draft exists for Dolbur tier 2, and the scene layer quoting discipline keeps every outcome phrase out of the non-final beats (option teasers rephrase hook facts only).",
+    "boxLengths": "34 boxes total (opening 2 + choice 1 + dispatch 2; per route: hook 1 + departure 1 + 7-8 return-stage boxes - Life 8, Mana 7, Stamina 8, each ending in the byte-exact outcome box). All new beats at or under the 43-token comfort target (whitespace-split token audit); longest new beats: stamina-r3 and stamina-r4b at 42, and at 41: life-r3 and mana-dep. The hook and outcome boxes are byte-exact quotes and exempt from the target (recorded lengths: life-out 36, mana-out 30, stamina-out 46, hooks 28/24/23).",
+    "preDispatchLeakScan": "12 pre-dispatch text units (op-01, op-02, choice text and note, 3 option teasers, trip-start, trip-end, 3 departures) scanned against the outcome-side vocabulary (crate, string, spring, rinse, lid, stone, rulebook, brace, peg, credit): 0 hits. Departures announce method only ('Both will behave by suppertime', 'dawn to dawn, mark by mark', 'eyes first, salt second'). Run a second guard over the six shared units only (op-01, op-02, choice text and note, trip-start, trip-end) against route-specific hook words (storm, awning, rearrange, scouts, salt, pan, chalk, kitchen, patch): 0 hits - hook facts stay in the teasers, hooks, and departure lines where routes are already named.",
+    "outcomeOwnershipScan": "Each route's outcome-end-exclusive phrases (Life: 'props the frame', 'sturdy crates', 'crate-brace first, cook after', 'camp law', 'name on the margin', 'The awning holds', 'gets the caps into the pot', 'dinner is good'; Mana: 'pegs a string', 'the line they keep refusing', 'string-line', 'a spring nobody knew', 'The scouts credit the mushrooms', 'he lets them'; Stamina: 'salts the pan before checking', 'documented way to lose dinner', 'He owns it at once', 're-rinses', 'weights the lid with a stone', 'dinner survives twice', 'pot-lid stone', 'camp rulebook') scanned across all 28 non-quote beats (the 5 shared boxes plus 23 non-quote route boxes) plus the choice note and option teasers: 0 hits. The scene stages the same journey facts in its own words ('weight speaks before fire does', 'went into clean water', 'came down square on the lid').",
+    "routeIndependenceScan": "Traveler-name scan across all 34 beat texts, the choice note, and the 3 option teasers (Neet, Tirami, Claire, Daisy, Kyle, Luke, Piria, Charlotte, Demian) plus Dolbur tier-1..5 borrow vocabulary (shortcut, decoy, splint, herb, rope, mob, timetable, three trips, switchback, orchard, wyvern, unload, distance): 0 hits. Cross-material guard: 0 cross-route hits; each material name appears only inside its own route - once each in the Life ('Sturdy mushrooms, then!') and Stamina ('Lively mushrooms, then!') departure salutes, and nowhere in the Mana texts (the patch, the caps, and the moving are scene words). Cast placement: crates, canvas, and the cookfire arch only in Life; scouts, patch marks, and the straight strip only in Mana; pan, salt cellar, and hearth stone only in Stamina; the shared dispatch lines name none of them. Each route reads standalone in any order.",
+    "awardClaimScan": "34 beat texts plus 3 option teasers scanned against award/claim vocabulary (award, reward, receive, gives you, yours, claim, collect, gather): 0 hits. The choice note states the discipline in guidance language ('the story's focus, never a settlement award'), matching the Neet tier-5 choice-note precedent; implementationNotes.awardHandling cites the award application in source/core.js (settleExpedition: stamps, likeability, boost bundles, bonuses only - no ingredient, no mushroom).",
+    "beatInventory": "Shared layer: op-01, op-02, choice (+3 option teasers), trip-start, trip-end. Life: life-hook confirm, life-dep departure, life-r1..life-r7 returns, life-out outcome. Mana: mana-hook, mana-dep, mana-r1..mana-r6, mana-out. Stamina: stamina-hook, stamina-dep, stamina-r1..stamina-r3, stamina-r4a, stamina-r4b, stamina-r5..stamina-r6, stamina-out. 34 unique beat ids; each route's final box is the byte-exact outcome.",
+    "fileCheck": "JSON parses via ConvertFrom-Json (UTF8); 21 top-level keys; whole file 0 non-ASCII chars; 34 beats, all 34 ids unique; speaker-portrait pairing verified with 0 violations (narrator=none, dolbur=dolbur; no other speaker appears). Anchors verified -ceq 3/3 hooks and 3/3 outcomes against dolbur-t1-5.json AND against data/expedition-stories.json travelers.dolbur.routes '2' rows (pack and data byte-identical); job name and tier-2 material names -ceq against data/expedition-jobs.json and data/game-data.json. All four scans 0 hits (pre-dispatch leak 12 units + shared-unit route guard, outcome ownership, route independence, award claims). The file was assembled with placeholder markers section by section and all markers were replaced and re-verified before this check; data/, source/, and the playable HTML untouched."
+  }
+}

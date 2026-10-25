@@ -1,0 +1,461 @@
+{
+  "pilot": "chapter-click-01",
+  "traveler": "neet",
+  "tier": 2,
+  "job": "Mushroom Foraging",
+  "purpose": "Owner-review draft: a click-through scene script for the new tier-chapter presentation. The chapter opens as soon as any material family reaches the tier; the player picks one currently unlocked material inside the opening scene; the choice sets the route; the traveler is dispatched; after the two-minute trip the player opens a click-through continuation carrying the investigation, action, and outcome. One pilot only (Neet, tier 2, Mushroom Foraging, all three material routes) so the owner can approve the feel before other chapters are scripted. Nothing here edits data/, source/, or the playable HTML.",
+  "sourceMaterial": [
+    "research/writing/expedition-stories/stories-v2/neet-t1-5.json - tier-2 hooks and outcomes (quoted byte-exact)",
+    "research/writing/expedition-stories/stories-v2/journey-pilot-neet-t2.json - accepted journey draft, adapted into the post-return continuations with dialogue reused verbatim",
+    "research/writing/expedition-stories/stories-v2/journey-pilot-neet-t1.json - accepted format/voice benchmark",
+    "Presentation feel reference: the game's existing click-through arrival scene (Tia) - short boxes, click to advance"
+  ],
+  "presentationModel": "Player opens a tier chapter when any material family reaches that tier. Inside the opening scene the player chooses one currently unlocked tier material; that choice determines the route. The traveler is dispatched. When the trip finishes, the player opens a click-through continuation showing what happened and the route's outcome. Other unlocked routes can be played on later trips, one active route at a time.",
+  "playerFlow": "op-01 -> op-02 -> choice -> confirm = byte-exact hook box for the chosen family -> one route departure box -> trip-start (dispatch, no result) -> trip timer -> trip-end (click to open the report) -> route return boxes in order, last box = byte-exact outcome. After the chapter, other unlocked choices remain available on later trips.",
+  "implementationNotes": {
+    "chapterOpen": "The chapter becomes available as soon as any mushroom material family reaches tier 2. Suggested UI copy, outside the story beats: 'New chapter - Mushroom Foraging, tier 2.'",
+    "optionGating": "Show only options for material families currently unlocked at this tier; one, two, or three options are all valid states. The opening prose is written to hold when only one option exists.",
+    "routeLock": "The material choice sets the active route for this trip; other unlocked choices remain available on later trips, one active route at a time.",
+    "tripTimer": "The trip runs about two minutes on the game timer. The timer belongs to implementation and UI, not to story text."
+  },
+  "beatRules": [
+    "Every beat carries id, phase, speaker, portrait, text. The choice beat additionally carries its three option moments.",
+    "Narrator beats stay brief and only set place, action, or a visible action (a consent given, a basket left, lids handed back). Neet and the route's side character carry the reasoning and the decisions in exchanges. No line of dialogue exists to meet a count; each exchange performs a scene function (a consent, an attempt, an explanation, a witness).",
+    "Each box is written to be comfortable in a dialogue box: about 40 words per box (spaced-hyphen token audit tolerates a few over; byte-reused sentences stay verbatim). The two intentionally longer boxes per route are the byte-exact hook quote (confirm) and the byte-exact outcome quote (final return box), which repeat already accepted screen text.",
+    "Speaker 'narrator' is unvoiced scene text with no portrait. Speaker 'neet' shows the Neet portrait. Harl, Sedge, and the cooper are new side characters with no existing portrait assets: portrait is 'none-new-side-character' (text-only boxes).",
+    "No outcome fact appears anywhere before the trip ends. Pre-dispatch boxes carry only hook facts and Neet's spoken intentions.",
+    "Dialogue reused from the accepted journey draft is reused verbatim (byte-reuse registry below); attribution moves from inner quote marks to the speaker field.",
+    "Route independence: no beat assumes another route was seen, no cross-route character appearances, no tier-1 callbacks, no later-tier references."
+  ],
+  "opening": {
+    "beats": [
+      {
+        "id": "op-01",
+        "phase": "opening",
+        "speaker": "narrator",
+        "portrait": "none",
+        "text": "The shrine kitchen has orders waiting, and this morning the gathering is Neet's."
+      },
+      {
+        "id": "op-02",
+        "phase": "opening",
+        "speaker": "neet",
+        "portrait": "neet",
+        "text": "Before the dew lifts, then. I have the knives, the baskets, and a ledger with empty pages. Tell me what we gather, and I will be ready."
+      },
+      {
+        "id": "choice",
+        "phase": "choice",
+        "speaker": "narrator",
+        "portrait": "none",
+        "text": "Choose what Neet gathers today.",
+        "note": "Only options whose material family is unlocked at this tier are shown. The opening prose above is written to be true whether one option or three are available.",
+        "options": [
+          {
+            "material": "Sturdy mushroom",
+            "teaser": "Dense caps the soup pot has been asking for - the kind that survive a tumble in the basket."
+          },
+          {
+            "material": "Clever mushroom",
+            "teaser": "The beds have been acting suspicious all week, and the mushrooms present themselves far too neatly."
+          },
+          {
+            "material": "Lively mushroom",
+            "teaser": "Springy beneath their spotted caps, and already climbing out of the crates this morning."
+          }
+        ]
+      }
+    ]
+  },
+  "sharedDispatch": [
+    {
+      "id": "trip-start",
+      "phase": "trip",
+      "speaker": "narrator",
+      "portrait": "none",
+      "text": "Neet takes the assignment and goes; whatever happens out there comes home with her."
+    },
+    {
+      "id": "trip-end",
+      "phase": "trip",
+      "speaker": "narrator",
+      "portrait": "none",
+      "text": "The trip is over. Open Neet's report to see what happened, and how it ended."
+    }
+  ],
+  "routes": [
+    {
+      "family": "Life",
+      "material": "Sturdy mushroom",
+      "confirmBeats": [
+        {
+          "id": "life-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The shrine soup pot wants sturdy caps, and the porter's basket always seems lighter on the way back up. Neet decides to weigh the basket once, out of politeness."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "life-dep",
+          "phase": "departure",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "Sturdy caps, then. The pot feeds the pilgrims, and I would rather check a scale than guess at supper. We leave before the dew lifts."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "life-r1",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The ravine gave its usual account: dense caps off the fallen oaks, wide clusters culled, half of every log left standing. One dropped cap took its gravel tumble on the way home and was no worse than a scuff."
+        },
+        {
+          "id": "life-r2",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "At the gate Harl the porter comes up the switchback, one basket, the pickers' tally slip riding the rim. She asks to carry it the last few yards, out of politeness, and the weight reads wrong in her grip."
+        },
+        {
+          "id": "life-r3",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "She weighs it once at the kitchen scale, thanking him for the loan, then sets today's beside the delivery weights her ledger has kept for weeks."
+        },
+        {
+          "id": "life-r4",
+          "phase": "return",
+          "speaker": "harl",
+          "portrait": "none-new-side-character",
+          "text": "Full at the ravine, lighter by the gate. I have been telling my arms they are getting old."
+        },
+        {
+          "id": "life-r5",
+          "phase": "return",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "The ledger has agreed with you for weeks. A shortfall that keeps its size could come from habit, cargo, or the basket itself, and nothing yet tells me which. I would like to weigh your basket again - may I?"
+        },
+        {
+          "id": "life-r5b",
+          "phase": "return",
+          "speaker": "harl",
+          "portrait": "none-new-side-character",
+          "text": "Weigh it, then. It came up the same switchback as always."
+        },
+        {
+          "id": "life-r6",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The apology is drafted for the asking, not for any finding: questioning a guest's basket costs something, and she will pay it."
+        },
+        {
+          "id": "life-r7",
+          "phase": "return",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "The page takes two columns - what the tally slips promise, what the scale confirms. This side stays blank for morning."
+        },
+        {
+          "id": "life-r8",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Harl leaves the basket beside the kitchen scale for the night."
+        },
+        {
+          "id": "life-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "A false bottom has been shorting the count for weeks; she double-counts by weight, catches it kindly, and cooks nothing until every cap is accounted. Jars of sturdy-cap soup go out to the pilgrims, and the twice-counted rule becomes the children's first lesson in counting anything."
+        }
+      ]
+    },
+    {
+      "family": "Mana",
+      "material": "Clever mushroom",
+      "confirmBeats": [
+        {
+          "id": "mana-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The clever mushrooms present themselves for labeling, which is exactly how Neet knows they are lying. The beds have been acting suspicious all week."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "mana-dep",
+          "phase": "departure",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "Clever mushrooms, then. If they mean to be counted, they can be counted properly. I will bring stakes and a straight hand."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "mana-r1",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The beds have been presenting themselves all week: caps curled generously outward, white stems standing to be counted, everything turned toward the path by hands nobody can name."
+        },
+        {
+          "id": "mana-r2",
+          "phase": "return",
+          "speaker": "sedge",
+          "portrait": "none-new-side-character",
+          "text": "I have watched them all week. Too neat to trust."
+        },
+        {
+          "id": "mana-r3",
+          "phase": "return",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "The obvious, orderly thing first, then: stakes and a straight line of soil."
+        },
+        {
+          "id": "mana-r4",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The first never touches soil: the nearest cap folds into the leaf litter flat and final, between one blink and the next, without a sound. She tries the second bed and gets the same shallow theater."
+        },
+        {
+          "id": "mana-r5",
+          "phase": "return",
+          "speaker": "sedge",
+          "portrait": "none-new-side-character",
+          "text": "They only do it when the stakes come out. It is not the watching they mind. I stood over them all Tuesday."
+        },
+        {
+          "id": "mana-r6",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "So she rolls the label into its leather and stands at the path with her hands folded, and the beds remember themselves - up, curled, guilty."
+        },
+        {
+          "id": "mana-r7",
+          "phase": "return",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "A label nobody will hold still for keeps nothing. A mushroom that lies about itself still tells the truth about where it will not stand."
+        },
+        {
+          "id": "mana-r8",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The week's refusals are the better record: the patch by the warm stone keeps its distance, and the patch under the drip-line grows nowhere wet."
+        },
+        {
+          "id": "mana-r9",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "She maps the refusals in the day's margin and pencils one line of a rhyme beside them, to hear whether rhythm can keep what stakes cannot: it will not stand where the drip-line lands. The third stake stays in the drawer, on purpose."
+        },
+        {
+          "id": "mana-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "They keep flattening into leaf litter at the first touch of a label, so she stops labeling and starts rhyming, sorting by where they refuse to grow. A basket is collected in order, and the sorting rhyme enters the children's lesson, where it is credited to the mushrooms."
+        }
+      ]
+    },
+    {
+      "family": "Stamina",
+      "material": "Lively mushroom",
+      "confirmBeats": [
+        {
+          "id": "stamina-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The lively mushrooms have been escaping crates since dawn, and the downhill trip to the village is today. Neet checks the rope twice."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "stamina-dep",
+          "phase": "departure",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "Lively mushrooms, then. The pantry's pickling day does not move for anyone, and the crates have been making their own arrangements since dawn. I will check the rope twice."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "stamina-r1",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The report starts at the loading, before the cart left. The cooper stood there with four lids he had already named a favor."
+        },
+        {
+          "id": "stamina-r2",
+          "phase": "return",
+          "speaker": "cooper",
+          "portrait": "none-new-side-character",
+          "text": "Nothing gets out of my crates."
+        },
+        {
+          "id": "stamina-r3",
+          "phase": "return",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "Which is true and not the point: a lid settles every argument in the dark, and a shortfall keeps its own counsel until the far end. If one gets out today, it gets out in daylight, where the getting-out has witnesses."
+        },
+        {
+          "id": "stamina-r3b",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "She hands the lids back."
+        },
+        {
+          "id": "stamina-r4",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "So the crates ride out open, under rope - spans anchored to the cooper's hoop-nails, woven wide enough to see through."
+        },
+        {
+          "id": "stamina-r5",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "She checks it once at the gate and once at the hairpin, half for the knots, half for the mushrooms, who are owed a fair fence."
+        },
+        {
+          "id": "stamina-r6",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "On the bend one cap takes the bounce as a dare, clears the first span, and is caught by the second."
+        },
+        {
+          "id": "stamina-r7",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Past the village's first roofs the crates keep their drumroll, ropes humming at every spring. At the pantry step she sets them down still arguing, and the lids stay home in the shed. She does not trust what she cannot watch."
+        },
+        {
+          "id": "stamina-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "She lattices the crates with rope - not lids: rope, so the jumping is visible and the failure honest. Not one loss goes on the record, and the village pantry copies her lattice by month's end."
+        }
+      ]
+    }
+  ],
+  "mapping": {
+    "life": {
+      "hook": "life-hook quotes the tier-2 Life hook byte-exact as the confirm box after the choice.",
+      "journey": "Journey P1 (ravine picking) becomes life-r1, retold as her report at the gate because the picking now happens off-screen during the trip; the cleric's-rule texture is carried by the kept 'half of every log' practice. P2 splits into life-r2 (Harl's arrival, the carry, the wrong-weight grip) and life-r3 (the one weighing, the ledger's weeks of delivery weights). P3 splits into life-r4 (Harl's two lines, quoted without outer quote marks because the speaker field attributes them) and life-r5 (Neet's causes-and-request speech). P4 splits into life-r6 (the apology, narrated as a drafted page) and life-r7 (the two columns, now spoken by Neet to Harl - the page description adapted for speech). The exchange continues: Harl consents to the weighing (life-r5b) and leaves the basket by the scale for the night (life-r8), so the closing beats are decisions, not summary.",
+      "outcome": "life-out quotes the outcome byte-exact as the final box; the discovery, the kind catch, the soup jars, and the twice-counted rule stay owned by this beat alone.",
+      "notes": "Journey P4's closing soup-waits line is dropped for box economy; the outcome's 'cooks nothing until every cap is accounted' carries the same patience. The weigh-once decision in the hook is made pre-dispatch; the weighing act happens only in the return beats. The columns clause 'the second left blank for morning' is adapted into Neet's spoken promise ('This side stays blank for morning.'); Harl's consent and the basket left by the scale are new scene glue introducing no new facts."
+    },
+    "mana": {
+      "hook": "mana-hook quotes the tier-2 Mana hook byte-exact as the confirm box.",
+      "journey": "P1 becomes mana-r1 (the beds) plus mana-r2: the narrated 'too neat to trust' report is given to Sedge as speech, flat voice kept. P2 becomes mana-r3 (Neet announces the stake attempt aloud, adapting the narrated stakes line), mana-r4 (the first refusal and the second bed's theater), and mana-r5 (Sedge's behavior lines). P3 becomes mana-r6 (label rolled away, hands folded, beds remembered), mana-r7 (Neet's principle lines), and mana-r8 (the two refusal observations as the better record). P4 becomes mana-r9 (margin map, the one rhyme line, the stake left in the drawer).",
+      "outcome": "mana-out quotes the outcome byte-exact as the final box; the lesson entry and the credit to the mushrooms stay owned by this beat alone.",
+      "notes": "The refusal evidence (warm stone, drip-line) is kept as its own evidence box so the rhyme's 'where it will not stand' has a visible basis on screen. The narrated stakes line ('Neet cuts a set of stakes...') is adapted into Neet's spoken attempt announcement (mana-r3) and retired from the reuse registry; the behavior ('the obvious, orderly thing') stays in her line."
+    },
+    "stamina": {
+      "hook": "stamina-hook quotes the tier-2 Stamina hook byte-exact as the confirm box.",
+      "journey": "P1 (morning escapes, pickling day) is already hook material; it is echoed in the Lively option teaser and the departure line, with no extra beat. P2 becomes stamina-r1 (the loading scene, now the opening of the account so the sequence runs forward in time with no backward jump - the cooper there with four lids, already named a favor), stamina-r2 (the cooper's line), stamina-r3 (Neet's reply, taking the narrator's reasoning with her as spoken explanation), and stamina-r3b (the lids handed back on screen - a reused journey sentence kept as a visible decision). P3 becomes stamina-r4 (open crates under rope), stamina-r5 (the twice checks - gate and hairpin - which Performs the hook's 'checks the rope twice'), and stamina-r6 (the caught cap). P4 becomes stamina-r7 (drumroll, pantry step, lids stay home, closing stance).",
+      "outcome": "stamina-out quotes the outcome byte-exact as the final box; the named lattice, the zero-loss record, and the pantry imitation stay owned by this beat alone.",
+      "notes": "Journey P4's 'a quiet delivery would have been easier on everybody' is dropped for box economy; 'She does not trust what she cannot watch.' carries the stance. No lattice-building is shown before dispatch - the rope work appears only in the return beats; the departure line promises the check, not the result. The return runs strictly in time (loading, cooper, handback, rope, checks, catch, pantry); the lids handback is staged on screen."
+    }
+  },
+  "byteReuse": [
+    "Full at the ravine, lighter by the gate",
+    "I have been telling my arms they are getting old",
+    "The ledger has agreed with you for weeks",
+    "A shortfall that keeps its size could come from habit, cargo, or the basket itself, and nothing yet tells me which",
+    "I would like to weigh your basket again - may I?",
+    "The apology is drafted for the asking, not for any finding: questioning a guest's basket costs something, and she will pay it",
+    "The page takes two columns - what the tally slips promise, what the scale confirms",
+    "the pickers' tally slip riding the rim",
+    "the weight reads wrong in her grip",
+    "She weighs it once at the kitchen scale, thanking him for the loan",
+    "half of every log",
+    "no worse than a scuff",
+    "caps curled generously outward, white stems standing to be counted",
+    "turned toward the path by hands nobody can name",
+    "Too neat to trust",
+    "The first never touches soil: the nearest cap folds into the leaf litter flat and final, between one blink and the next, without a sound",
+    "gets the same shallow theater",
+    "They only do it when the stakes come out",
+    "It is not the watching they mind",
+    "I stood over them all Tuesday",
+    "rolls the label into its leather",
+    "stands at the path with her hands folded",
+    "up, curled, guilty",
+    "A label nobody will hold still for keeps nothing",
+    "A mushroom that lies about itself still tells the truth about where it will not stand",
+    "The patch by the warm stone keeps its distance",
+    "the patch under the drip-line grows nowhere wet",
+    "maps the refusals in the day's margin",
+    "it will not stand where the drip-line lands",
+    "The third stake stays in the drawer, on purpose",
+    "Nothing gets out of my crates",
+    "already named a favor",
+    "She hands the lids back",
+    "Which is true and not the point",
+    "a lid settles every argument in the dark",
+    "a shortfall keeps its own counsel until the far end",
+    "If one gets out today, it gets out in daylight, where the getting-out has witnesses",
+    "spans anchored to the cooper's hoop-nails, woven wide enough to see through",
+    "She checks it once at the gate and once at the hairpin, half for the knots, half for the mushrooms, who are owed a fair fence",
+    "On the bend one cap takes the bounce as a dare, clears the first span, and is caught by the second",
+    "the crates keep their drumroll",
+    "she sets them down still arguing",
+    "the lids stay home in the shed",
+    "She does not trust what she cannot watch"
+  ],
+  "skillStages": {
+    "planning": "planning.md outputs restated for the new format: the chapter is a beat script, not a prose block. The player's material choice is the consequential decision at the chapter's front; the two-minute trip is a hard information gate; investigation, action, and outcome live at or after trip-end. POV limit: pre-dispatch boxes may state hook facts and Neet's spoken intentions only - no result. Required information per route is unchanged from the accepted journey draft. Route punishments: none; choices dispatch, then deliver.",
+    "drafting": "dialogue-and-behavior.md governs the boxes: each NPC line is a behavior, not exposition - Harl reports like weather, Sedge reports flat from watching, the cooper names a favor before it is earned. cognition-layers gates what the player can know before the trip ends. Boxes target ~40 words except the two byte-exact quote boxes per route.",
+    "reviewing": "revision-checklist pass on the full click-through per route: choice causality (option -> hook confirm -> departure -> dispatch -> returns -> outcome), no pre-dispatch disclosure scan, route independence (no cross-route names, no tier-1 or later-tier callbacks), voice (Neet formal and dry; NPCs within their accepted characterizations), material names byte-exact, box economy (longest boxes are the intentional quote boxes), and mapping completeness (every journey paragraph lands in a beat or is explicitly dropped in mapping.notes). A later revision pass (owner directive) stripped implementation explanations from op-01/choice/trip-start into implementationNotes, rebalanced each return toward brief narrator set-up plus character-carried exchanges, and restaged Stamina's loading scene as the start of its account."
+  },
+  "characterNotes": {
+    "neet": "Formal, dry, ledger-minded; her option teasers and departure lines are spoken decisions, never verdicts. Portrait: Neet_Portrait.",
+    "harl": "Life route porter (invented in the accepted journey draft, carried over). Reports weight like weather; the apology lands on him. No portrait asset - text-only box.",
+    "sedge": "Mana route gardener (invented in the accepted journey draft, carried over). Flat-voiced watcher. No portrait asset - text-only box.",
+    "cooper": "Stamina route cooper (unnamed in the accepted journey draft; kept unnamed here) who names favors early and argues by trade. No portrait asset - text-only box."
+  },
+  "factProvenance": {
+    "documented": "Hooks, outcomes, material names (Sturdy/Clever/Lively mushroom), and the job name are byte-exact from neet-t1-5.json and data anchors verified in the journey pilot.",
+    "established": "Journey-draft content (Harl, Sedge, the cooper, the weighing procedure, the stakes-and-refusals method, the open-crates rope work) is accepted source material per the owner brief and is reused or adapted, never contradicted. 'Half of every log' is carried v1 texture already accepted into the journey draft. The click-through pacing references the game's existing arrival scene (Tia) as a feel benchmark only.",
+    "newFanWritten": "Scene glue only: the opening frame (op-01), the option teasers (rephrasing hook facts only), the three departure lines (new Neet dialogue, in voice, no results), Sedge's narrated report given as speech, Neet's spoken stake-attempt line (mana-r3), Harl's consent and the basket left by the scale (life-r5b, life-r8), the lids handed back on screen (stamina-r3b), the loading-first report framing (stamina-r1), and the click-gate beat trip-end. No new facts are introduced; the additions stage decisions already implied by the journey draft."
+  },
+  "flags": [
+    "New side characters have no portrait assets: Harl, Sedge, and the cooper are text-only boxes (portrait 'none-new-side-character'). Owner may commission portraits or keep them text-only.",
+    "Only the choice beat branches, and the route stays locked for that trip. All mechanics (chapter-open trigger, option gating, one-active-route model, two-minute timer) live in implementationNotes and the choice beat's note, never inside story text.",
+    "Implementation caveat (same standing as the journey pilots' screenFit note): this is a script draft. Multi-beat click-through playback, option buttons, and the two-minute trip timer all need renderer work; nothing here edits game files.",
+    "The confirm box (hook) and the final return box (outcome) are intentional long boxes because they quote accepted screen text byte-exact; if the game later shows the outcome on its own completion screen, the out beat can be swapped for that canned screen without breaking the script.",
+    "Pre-dispatch leak discipline is verified below in coverageChecks: no outcome fact may appear in opening, options, confirm, departure, or trip-start boxes."
+  ],
+  "coverageChecks": {
+    "anchors": "Hooks 3/3 and outcomes 3/3 -ceq byte-exact against neet-t1-5.json tier-2 entries (Life/Mana/Stamina). Re-verified after the click-through revision pass.",
+    "byteReuse": "44 journey-draft reuse phrases; each verified present in its own route's journey field AND in the pilot's beat texts (0 beat misses). Revision-pass adaptations noted in mapping: the narrated stakes line adapted into Neet's spoken attempt (Mana), the columns clause adapted into her spoken promise (Life); the retired/adapted forms are replaced in the registry.",
+    "boxLengths": "40 boxes total; 38 at or under 43 spaced-hyphen tokens. Only the two byte-exact outcome quote boxes exceed 43 (life-out 46, mana-out 48) - documented exceptions, repeated accepted screen text. Longest non-quote box: life-r5 = 40.",
+    "preDispatchLeakScan": "10 pre-dispatch boxes (opening 3, trip-start, confirm 3, departure 3) scanned for outcome-fact words (false bottom, twice-counted, lattice, rhyme, credited, lesson, not one loss, copies her, jars): 0 hits.",
+    "routeIndependenceScan": "0 cross-route character appearances (Harl only in Life beats, Sedge only in Mana, cooper only in Stamina); no tier-1 or later-tier references in any beat.",
+    "beatInventory": "Shared: 3 opening beats (incl. the choice moment with its three option texts) + 2 dispatch beats. Life: hook 1 + departure 1 + return 10 (incl. exchange beats r5b/r8 and the adapted spoken columns r7). Mana: hook 1 + departure 1 + return 10 (r3 now Neet's spoken attempt). Stamina: hook 1 + departure 1 + return 9 (r1 opens the account at the loading; r3b stages the lids handback). Final return box of each route = byte-exact outcome.",
+    "fileCheck": "JSON parses clean; ASCII-clean (0 non-ASCII characters)."
+  }
+}

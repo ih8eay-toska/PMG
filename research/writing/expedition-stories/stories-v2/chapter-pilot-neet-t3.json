@@ -1,0 +1,448 @@
+{
+  "pilot": "chapter-click-03",
+  "traveler": "neet",
+  "tier": 3,
+  "job": "Helping in the Orchard",
+  "purpose": "Owner-review draft: a click-through scene script for the new tier-chapter presentation. The chapter opens as soon as any material family reaches the tier; the player picks one currently unlocked material inside the opening scene; the choice sets the route; the traveler is dispatched; after the two-minute trip the player opens a click-through continuation carrying the investigation, action, and outcome. One pilot only (Neet, tier 3, Helping in the Orchard, all three material routes). Tier 3 has no accepted journey draft - data/expedition-stories.json carries hooks and outcomes only - so every return scene here is new fan-written, constrained at each step by the byte-exact hooks and outcomes. Nothing here edits data/, source/, or the playable HTML.",
+  "sourceMaterial": [
+    "research/writing/expedition-stories/stories-v2/neet-t1-5.json - tier-3 hooks and outcomes (quoted byte-exact)",
+    "research/writing/expedition-stories/stories-v2/chapter-pilot-neet-t2.json - approved click-through format benchmark (chapter-click-01)",
+    "research/writing/expedition-stories/stories-v2/chapter-pilot-neet-t1.json - approved click-through format benchmark (chapter-click-02, incl. the revised return patterns)",
+    "data/expedition-jobs.json - job name 'Helping in the Orchard' (byte-exact)",
+    "data/game-data.json - material names Fruit of power / Fruit of wisdom / Fruit of spirit (byte-exact)",
+    "data/material-descriptions.json - fruit imagery (strength-lending, clean scent, fragrant lightness)",
+    "data/expedition-stories.json - orchard world context (hired crews work the orchard at harvest; wisdom rows exist); hooks and outcomes only, no journey prose",
+    "Presentation feel reference: the game's existing click-through arrival scene (Tia) - short boxes, click to advance"
+  ],
+  "presentationModel": "Player opens a tier chapter when any material family reaches that tier. Inside the opening scene the player chooses one currently unlocked tier material; that choice determines the route. The traveler is dispatched. When the trip finishes, the player opens a click-through continuation showing what happened and the route's outcome. Other unlocked routes can be played on later trips, one active route at a time.",
+  "playerFlow": "op-01 -> op-02 -> choice -> confirm = byte-exact hook box for the chosen family -> one route departure box -> trip-start (dispatch, no result) -> trip timer -> trip-end (click to open the report) -> route return boxes in order, last box = byte-exact outcome. After the chapter, other unlocked choices remain available on later trips.",
+  "implementationNotes": {
+    "chapterOpen": "The chapter becomes available as soon as any fruit material family reaches tier 3. Suggested UI copy, outside the story beats: 'New chapter - Helping in the Orchard, tier 3.'",
+    "optionGating": "Show only options for material families currently unlocked at this tier; one, two, or three options are all valid states. The opening prose is written to hold when only one option exists.",
+    "routeLock": "The material choice sets the active route for this trip; other unlocked choices remain available on later trips, one active route at a time.",
+    "tripTimer": "The trip runs about two minutes on the game timer. The timer belongs to implementation and UI, not to story text."
+  },
+  "beatRules": [
+    "Every beat carries id, phase, speaker, portrait, text. The choice beat additionally carries its option moments.",
+    "Narrator beats stay brief and only set place, action, or a visible action. Neet and the route's side characters carry the reasoning and the decisions in exchanges. No line of dialogue exists to meet a count; each exchange performs a scene function (a denial, an invitation, a proposal, a conversion).",
+    "Each box is written to be comfortable in a dialogue box: about 40 words per box. The byte-exact hook quote (confirm) and the byte-exact outcome quote (final return box) repeat already accepted screen text.",
+    "Speaker 'narrator' is unvoiced scene text with no portrait. Speaker 'neet' shows the Neet portrait. Tansy, Pell, Wray, the unnamed third picker, and Tam are new side characters with no existing portrait assets: portrait is 'none-new-side-character' (text-only boxes).",
+    "Tier 3 has no accepted journey draft, so the return scenes are new fan-written under a strict ownership rule: physical acts named in the outcome may be shown on screen only as a demonstration (one ladder braced, one round of weighs), never as systematic completion; discoveries, records, legacies, and completion counts (the rota, the cold-compress barrel, the pick-weight records, the east-shade finding, the rebuilt picking order, every leg and top rung, nobody falls, the barn pattern) appear only in the outcome beat.",
+    "Neet's record-keeping appears as counting and note-taking only, grown from her accepted tier-1/2 habits without naming them; no route borrows another route's props or record dimensions (the notebook is the Mana route's; the ledger is shared kit).",
+    "No outcome fact appears anywhere before the trip ends. Pre-dispatch boxes carry only hook facts and Neet's spoken intentions.",
+    "Route independence: no beat assumes another route was seen, no cross-route character appearances, no tier-1 or tier-2 callbacks, no later-tier references. Each route is fully understandable on its own and in any play order."
+  ],
+  "opening": {
+    "beats": [
+      {
+        "id": "op-01",
+        "phase": "opening",
+        "speaker": "narrator",
+        "portrait": "none",
+        "text": "The orchard has harvest rows to pick, and this morning the helping is Neet's."
+      },
+      {
+        "id": "op-02",
+        "phase": "opening",
+        "speaker": "neet",
+        "portrait": "neet",
+        "text": "Before the dew lifts, then. I have the ledger, the sacks, and the day for it. Tell me where the orchard wants me, and I will be ready."
+      },
+      {
+        "id": "choice",
+        "phase": "choice",
+        "speaker": "narrator",
+        "portrait": "none",
+        "text": "Choose what Neet helps with today.",
+        "note": "Only options whose material family is unlocked at this tier are shown. The opening prose above is written to be true whether one option or three are available.",
+        "options": [
+          {
+            "material": "Fruit of power",
+            "teaser": "Bright fruit that pays its pickers in bruises, and a hired crew that will not admit their arms ache."
+          },
+          {
+            "material": "Fruit of wisdom",
+            "teaser": "Three scales that have been disagreeing since harvest began, and three pickers each certain of a different one."
+          },
+          {
+            "material": "Fruit of spirit",
+            "teaser": "A fragrant fruit hanging farthest out, on ladders old enough to wobble worst beneath it."
+          }
+        ]
+      }
+    ]
+  },
+  "sharedDispatch": [
+    {
+      "id": "trip-start",
+      "phase": "trip",
+      "speaker": "narrator",
+      "portrait": "none",
+      "text": "Neet takes the assignment and goes; whatever happens out there comes home with her."
+    },
+    {
+      "id": "trip-end",
+      "phase": "trip",
+      "speaker": "narrator",
+      "portrait": "none",
+      "text": "The trip is over. Open Neet's report to see what happened, and how it ended."
+    }
+  ],
+  "routes": [
+    {
+      "family": "Life",
+      "material": "Fruit of power",
+      "confirmBeats": [
+        {
+          "id": "life-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The power rows pay pickers in bruises, and the hired crew will not admit their arms ache. Neet is working the row and watching arms instead of fruit."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "life-dep",
+          "phase": "departure",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "Fruit of power, then. I will work the row I am given and watch the arms around me. The fruit lends its strength; the pickers should keep some of their own."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "life-r1",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The report starts at the power rows, where the hired crew has been at it since before light: bright fruit, heavy sacks, and a pace that does not slacken because nobody has told it to."
+        },
+        {
+          "id": "life-r2",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Neet takes the row she is given and picks with them, watching arms: shoulders rolled mid-lift, one picker carrying with the left arm only, a wrist flexed behind a sack while Tansy, the crew's fastest, is looking elsewhere."
+        },
+        {
+          "id": "life-r3",
+          "phase": "return",
+          "speaker": "tansy",
+          "portrait": "none-new-side-character",
+          "text": "Nobody here is sore, cleric. Arms that complain do not get rehired, and we intend to be here next autumn."
+        },
+        {
+          "id": "life-r4",
+          "phase": "return",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "Then the orchard is luckier than most. The arms I watched rolled their shoulders eleven times between one tree and the next - I counted, because counting is what I was doing instead of complaining."
+        },
+        {
+          "id": "life-r5",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The crew's arithmetic runs on the rehiring: a sore arm is a short sack, a short sack is a season's end, so the aching gets folded away and picked through."
+        },
+        {
+          "id": "life-r6",
+          "phase": "return",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "My arms are new to this row and would like a minute at the row's end. Any arm wanting the same minute is welcome to share it. The sacks will wait - they always do."
+        },
+        {
+          "id": "life-r7",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The minute starts as hers alone. Then another picker sets down his sack, then two more, and Tansy stands holding her own wrist at the row's end, not admitting to anything and resting all the same."
+        },
+        {
+          "id": "life-r8",
+          "phase": "return",
+          "speaker": "tansy",
+          "portrait": "none-new-side-character",
+          "text": "One minute, then. But the sacks will hear none of it from me."
+        },
+        {
+          "id": "life-r9",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Neet keeps her ledger open against a sack through the afternoon: which arms gave out first, and which minute brought them back."
+        },
+        {
+          "id": "life-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "She sets a rest rota nobody asked for and stocks a cold-compress barrel at the row's end. The rows finish before dark, and the rota quietly becomes the orchard's autumn custom - signed, as everything of hers is, with a small tidy hand."
+        }
+      ]
+    },
+    {
+      "family": "Mana",
+      "material": "Fruit of wisdom",
+      "confirmBeats": [
+        {
+          "id": "mana-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The wisdom grove's scales have been disagreeing since harvest began, and three pickers are arguing over which one to believe. Neet brings a notebook instead of an opinion."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "mana-dep",
+          "phase": "departure",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "Fruit of wisdom, then. Three scales arguing is three chances to count well. I will bring the notebook and ask each scale the same question - more than once, if they mean it."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "mana-r1",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The report starts at the wisdom grove: three scales within shouting distance, and three pickers camped one to a scale, each sure the other two are being robbed."
+        },
+        {
+          "id": "mana-r2",
+          "phase": "return",
+          "speaker": "pell",
+          "portrait": "none-new-side-character",
+          "text": "The gate scale is honest. It weighed my mule true for the farrier, and it has weighed my sacks since the rows were young."
+        },
+        {
+          "id": "mana-r3",
+          "phase": "return",
+          "speaker": "wray",
+          "portrait": "none-new-side-character",
+          "text": "The grove scale is honest. The gate one reads proud - it has been saying half again what my sacks carry since harvest began."
+        },
+        {
+          "id": "mana-r4",
+          "phase": "return",
+          "speaker": "thirdpicker",
+          "portrait": "none-new-side-character",
+          "text": "The yard scale has outlived four owners. It is the honest one."
+        },
+        {
+          "id": "mana-r5",
+          "phase": "return",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "Then we will ask each scale the same question more than once, and then ask it again with a different load. A notebook weighs nothing, and it does not take sides."
+        },
+        {
+          "id": "mana-r6",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The same fruit from her basket crosses to all three scales and back, three rounds each, while the pickers watch like judges. Every scale repeats itself to the ounce - and repeats its disagreement, the same way every round."
+        },
+        {
+          "id": "mana-r7",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Then a different load crosses the same three scales - a sack of Pell's, surrendered growling - and the three answers come back in the same pattern again. Whatever the scales are doing, they do it steadily."
+        },
+        {
+          "id": "mana-r8",
+          "phase": "return",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "None of them is random, so none of them has to lose. A scale that answers steadily can be corrected for - keep your scales, and we will write down each one's manner until the numbers can be trusted across the grove."
+        },
+        {
+          "id": "mana-r9",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "So the notebook takes a page of manners, one line per scale, and the argument becomes arithmetic instead of war. Pell keeps his gate scale, Wray keeps his grudge with a number attached, and the pickers go back to their ladders."
+        },
+        {
+          "id": "mana-r10",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "From then on, every reading that reaches her book can be made to speak with the others, and the pickers start bringing their numbers to be read unasked. The notebook went home heavier than it came."
+        },
+        {
+          "id": "mana-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "She records pick-weight by row and hour, and finds the east rows sweeten early in shade. The picking order is rebuilt around her notes - the ledger doing the diplomacy she never learned."
+        }
+      ]
+    },
+    {
+      "family": "Stamina",
+      "material": "Fruit of spirit",
+      "confirmBeats": [
+        {
+          "id": "stamina-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The spirit fruit hangs farthest out, and the old ladders beneath it wobble worst. Neet looks at the ladder feet first and the fruit second."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "stamina-dep",
+          "phase": "departure",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "Fruit of spirit, then. The fruit can hang; the ladders cannot wait. I will look at the feet first and let the fruit take its turn."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "stamina-r1",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The report starts at the far rows: the spirit trees are the oldest in the orchard, the fruit hangs farthest out, and the ladders leaning under them are older than the pickers."
+        },
+        {
+          "id": "stamina-r2",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "She looks at the feet first, as she said she would: half the feet are worn round, one leg stands shorter where rot has been at work, and the grass beneath is stamped with years of the same small sway."
+        },
+        {
+          "id": "stamina-r3",
+          "phase": "return",
+          "speaker": "tam",
+          "portrait": "none-new-side-character",
+          "text": "The fruit is not coming down to meet us, cleric. Are we picking, or are we carpentering?"
+        },
+        {
+          "id": "stamina-r4",
+          "phase": "return",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "Both, while the ladders keep their opinions. A wobble at the feet is a picker on the ground by noon. Hold the fruit in your head; I will have this one honest in a minute."
+        },
+        {
+          "id": "stamina-r5",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The first ladder gets the full attention: wedges under the worn feet, a rope collar at the top rung, and her whole weight testing each leg before it earns her basket."
+        },
+        {
+          "id": "stamina-r6",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "She climbs it herself with the first basket, and the ladder takes her weight without comment. Tam watches the rungs the whole way up and forgets to be unimpressed."
+        },
+        {
+          "id": "stamina-r7",
+          "phase": "return",
+          "speaker": "tam",
+          "portrait": "none-new-side-character",
+          "text": "All right. Do mine next - the tall one by the wall has danced with me twice this week."
+        },
+        {
+          "id": "stamina-r8",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The crew groans at the speed of it, and the grumbling keeps time with the work all afternoon. The far fruit comes down fragrant and unhurried."
+        },
+        {
+          "id": "stamina-r9",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The last baskets come down at the pace the ladders allow, and Tam loses a race to one of them, which the crew rules the correct order of things."
+        },
+        {
+          "id": "stamina-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "She braces every leg and ropes every top rung, no shortcuts taken even while the crew groans at the pace. Nobody falls; the brace pattern is saved under the barn for next season."
+        }
+      ]
+    }
+  ],
+  "mapping": {
+    "life": {
+      "hook": "life-hook quotes the tier-3 Life hook byte-exact as the confirm box after the choice.",
+      "scene": "No accepted journey draft exists for this tier; the scene is new fan-written constrained by the hook and outcome. life-r1 opens the account at the power rows (report-start framing; crew at it since before light). life-r2 stages the hook's watching act - Neet picking in the row, the fatigue signs, Tansy introduced as the crew's fastest. life-r3/r4 are the denial exchange (Tansy's rehiring logic, Neet's counted shoulders). life-r5 explains why the crew cannot admit anything. life-r6 is the visible decision: Neet calls a minute for her own arms and invites any arm to share it - inviting, not ordering, so the rota stays unasked-for. life-r7/r8 show the minute spreading and Tansy conceding the time without conceding the ache. life-r9 closes on her ledger noting which arms gave out first.",
+      "outcome": "life-out quotes the outcome byte-exact as the final box; the rota, the cold-compress barrel, the finish before dark, the autumn custom, and the tidy-hand signature stay owned by this beat alone.",
+      "notes": "The hook's stated act ('Neet is working the row and watching arms instead of fruit') is quoted at the confirm and performed in the return (life-r1/r2), matching the accepted handling of habit hooks. The outcome's physical acts (setting the rota, stocking the barrel) are never staged on screen; the invited minute (life-r6) is the visible behavior that makes the rota believable without reciting it. Tansy never admits soreness, preserving the hook to the end. 'The fruit lends its strength' in the departure adapts the material description ('said to lend a little strength to whatever it joins')."
+    },
+    "mana": {
+      "hook": "mana-hook quotes the tier-3 Mana hook byte-exact as the confirm box.",
+      "scene": "mana-r1 opens at the wisdom grove with three scales and three camps. mana-r2/r3/r4 give each camp its champion (Pell the gate scale, Wray the grove scale, the unnamed third picker the yard scale). mana-r5 is Neet's two-stage proposal - repeat the question, then change the load - with the notebook line ('it does not take sides') paid off by the earned settlement at mana-r8. mana-r6 runs stage one: the same fruit, three scales, three rounds; every scale repeats itself to the ounce AND repeats its disagreement the same way every round. mana-r7 runs stage two: a different load (Pell's sack, surrendered growling) comes back in the same pattern - the disagreement is steady whatever is weighed. mana-r8 is her supported conclusion and settlement: none of the scales is random, so none has to lose; a steady scale can be corrected for once its manner is written down. mana-r9 stages the manner page (one line per scale, the measure of how far each sits from its neighbors) and the argument becoming arithmetic; each picker keeps scale and position. mana-r10 is the bridge to the outcome: every reading that reaches her book can now be made to speak with the others, and the pickers bring their numbers unasked.",
+      "outcome": "mana-out quotes the outcome byte-exact as the final box; the row-and-hour records, the east-shade discovery, the rebuilt picking order, and the ledger diplomacy stay owned by this beat alone.",
+      "notes": "Revision pass (owner directive) replaced the single repeatability test: consistent readings alone prove neither accuracy nor that the fruit caused the dispute, so the earlier 'the fruit has been telling the pickers something' leap and the 'no scale is lying' verdict are retired. The two-stage test supports only what it observes - each scale is steady, the pattern is steady across different loads - so each scale's manner is learnable and correctable, which is why nobody loses a scale and the resolution is arithmetic, not a declaration that all three are accurate. The scene never states why readings differ across the grove; the east-shade finding owns that (mana-out). mana-r10's comparability bridge ('every reading can be made to speak with the others') is the visible mechanism by which her notebook LATER becomes the outcome's grove-wide records, without reciting the row-and-hour dimensions or the discovery. 'The notebook went home heavier than it came' is retained. The departure line ('ask each scale the same question - more than once, if they mean it') remains true of the two-stage test."
+    },
+    "stamina": {
+      "hook": "stamina-hook quotes the tier-3 Stamina hook byte-exact as the confirm box.",
+      "scene": "stamina-r1 opens at the far rows (oldest trees, farthest fruit, ladders older than the pickers). stamina-r2 performs the hook's feet-first inspection: worn round feet, a rot-shortened leg, years stamped in the grass. stamina-r3/r4 are the pace conflict (Tam's carpentering jab, Neet's feet-before-fruit answer and the one-ladder promise). stamina-r5 shows the demonstration brace on the first ladder (wedges, rope collar, weight-tested legs). stamina-r6/r7 convert Tam from heckler to requester. stamina-r8 carries the crew's groaning as texture while the fruit comes down. stamina-r9 is the light button (Tam loses a race to a basket).",
+      "outcome": "stamina-out quotes the outcome byte-exact as the final box; the systematic completion (every leg, every top rung), the no-shortcuts stance, nobody falls, and the brace pattern saved under the barn stay owned by this beat alone.",
+      "notes": "The demonstration brace (stamina-r5) shows wedges and a rope collar on ONE ladder; the systematic completion stays outcome-owned per the established ownership rule (same precedent as the tier-2 rope spans shown before the lattice was claimed by the outcome). The crew's groaning appears as texture (stamina-r8) phrased differently from the outcome clause. 'Nobody falls' is never stated before the outcome - the scene ends on Tam losing a race to a basket instead. Tam's ladder 'by the wall' is new scene glue introducing no new facts."
+    }
+  },
+  "byteReuse": [],
+  "skillStages": {
+    "planning": "planning.md outputs restated for the new format and the new tier: the chapter is a beat script, not a prose block. The player's material choice is the consequential decision at the chapter's front; the two-minute trip is a hard information gate; investigation, action, and outcome live at or after trip-end. POV limit: pre-dispatch boxes may state hook facts and Neet's spoken intentions only - no result. Because no journey draft exists for tier 3, the return scenes are planned against the hooks and outcomes directly, with the ownership rule (demonstration allowed, completion and legacy outcome-owned) set before drafting. Route punishments: none; choices dispatch, then deliver.",
+    "drafting": "dialogue-and-behavior.md governs the boxes: each NPC line is a behavior, not exposition - Tansy denies as a hiring rule, the three pickers champion their scales out of loyalty and grudge, Tam heckles before he converts. cognition-layers gates what the player can know before the trip ends. Boxes target about 40 words; the byte-exact quote boxes stay verbatim. Neet's exchanges carry the decisions (the invitation, the notebook proposal, the feet-first answer).",
+    "reviewing": "revision-checklist pass on the full click-through per route: choice causality (option -> hook confirm -> departure -> dispatch -> returns -> outcome), no pre-dispatch disclosure scan, route independence (no cross-route names or props, no tier-1/tier-2 callbacks), voice (Neet formal and dry; NPCs within their scene functions), material names byte-exact, box economy (all boxes within the comfort target this tier), outcome ownership (demonstrations on screen, completions in the outcome), and material imagery alignment (strength-lending, clean scent, fragrant lightness)."
+  },
+  "characterNotes": {
+    "neet": "Formal, dry, ledger-minded; her option teasers and departure lines are spoken decisions, never verdicts. Her tier-3 care shows as counting and note-taking, grown from the accepted tier-1/2 habits without naming them. Portrait: Neet_Portrait.",
+    "tansy": "Life route: the hired crew's fastest picker and its de facto lead. Denies soreness as a hiring survival rule, not a lie; concedes a minute without conceding the ache. No portrait asset - text-only box.",
+    "pell": "Mana route: champions the gate scale on years of loyal service (it weighed his mule true). No portrait asset - text-only box.",
+    "wray": "Mana route: champions the grove scale and accuses the gate scale of reading proud. No portrait asset - text-only box.",
+    "thirdpicker": "Mana route: the unnamed third picker, loyal to the yard scale because it has outlived four owners. No portrait asset - text-only box.",
+    "tam": "Stamina route: quickest climber in the crew, impatient with carpentering, converted by a ladder that holds. No portrait asset - text-only box."
+  },
+  "factProvenance": {
+    "documented": "Hooks and outcomes are byte-exact from neet-t1-5.json tier-3 entries; the job name 'Helping in the Orchard' is byte-exact from data/expedition-jobs.json; the material names are byte-exact from data/game-data.json; the fruit imagery (strength-lending, clean scent, fragrant lightness) comes from data/material-descriptions.json; the orchard's hired-crew context is documented in data/expedition-stories.json.",
+    "established": "Neet's voice (data/visitor-dialogue.json anchors), her record-keeping and care habits as developed through the accepted tier-1 and tier-2 chapters (ledger, counting, checking before promising), the click-through format and pacing model (chapter-click-01/02), and the feel benchmark (the Tia arrival scene).",
+    "newFanWritten": "Everything between confirm and outcome: there is no accepted journey draft for tier 3 (data carries hooks and outcomes only). All return beats, all side characters (Tansy, Pell, Wray, the unnamed third picker, Tam), the shoulder-count, the invited rest minute, the two-stage scale test (repeat, then change the load), the demonstration brace, and the closing buttons are new, constrained at every step by the byte-exact hooks and outcomes. No game data was touched."
+  },
+  "continuityFlags": [
+    "No accepted journey draft exists for tier 3. All return scene content (characters, dialogue, procedures) is new fan-written constrained by the byte-exact hooks and outcomes; if a journey draft is written and accepted later, its dialogue will differ from these scenes and the difference should be flagged like the tier-1 revision pass did.",
+    "The notebook (Mana hook) and the ledger (op-02 kit, accepted tier-2 habit) are never explicitly reconciled on screen: the reading player may take the notebook as the ledger's field copy or as a second book. The hook's phrasing is kept untouched; op-02 says 'the ledger' because that is her declared kit. Flagged, not changed.",
+    "'Signed, as everything of hers is, with a small tidy hand' (Life outcome) is the first documentation of Neet's tidy-signature habit. Nothing in tier-1 or tier-2 contradicts it; no beat recites it; the habit reads as emerging naturally in a later tier. Documented here so later chapters keep it consistent.",
+    "The invited minute (life-r6) is not the rota: the outcome owns the rota, the cold-compress barrel, and the finish before dark. Neet invites instead of orders on screen, which is what makes 'a rest rota nobody asked for' believable without reciting it. Ownership rule stated in beatRules and verified in coverageChecks.",
+    "The orchard is shared world-texture: Daisy's tier-3 orchard entries in data/expedition-stories.json show hired crews, an orchard-gate bin, and wisdom rows. No named character overlaps (Daisy's pickers are unnamed; Neet's are Tansy/Pell/Wray/Tam) and neither chapter references the other, so both can be staged in any order.",
+    "Route-order independence: each tier-3 route is self-contained (no earlier-chapter knowledge needed); Neet's counting and note-taking are shown fresh in each route, so the habit growth is legible across any play order and required by none.",
+    "The Mana scale test (mana-r5-r7) is two-stage: repeated weighs establish each scale is steady, and a different load establishes the pattern is steady too - so the supported conclusion is only that each scale's manner is consistent and correctable, not that all three scales are accurate and not that the fruit caused the dispute. The scene never states why readings differ across the grove; the east-shade finding stays the outcome's discovery (mana-out), and mana-r10 bridges to it only as comparability."
+  ],
+  "flags": [
+    "New side characters have no portrait assets: Tansy, Pell, Wray, the third picker, and Tam are text-only boxes (portrait 'none-new-side-character'). Owner may commission portraits or keep them text-only.",
+    "Only the choice beat branches, and the route stays locked for that trip. All mechanics (chapter-open trigger, option gating, one-active-route model, two-minute timer) live in implementationNotes and the choice beat's note, never inside story text.",
+    "Implementation caveat (same standing as the earlier pilots' screenFit note): this is a script draft. Multi-beat click-through playback, option buttons, and the two-minute trip timer all need renderer work; nothing here edits game files.",
+    "The confirm box (hook) and the final return box (outcome) intentionally quote accepted screen text byte-exact; if the game later shows the outcome on its own completion screen, the out beat can be swapped for that canned screen without breaking the script.",
+    "Pre-dispatch leak discipline is verified below in coverageChecks: no outcome fact may appear in opening, options, confirm, departure, or trip-start boxes.",
+    "Tier 3 has no accepted journey draft; if one is written and accepted later, its dialogue will differ from these scenes and the difference should be flagged the way the tier-1 revision pass flagged its journey differences."
+  ],
+  "coverageChecks": {
+    "anchors": "Hooks 3/3 and outcomes 3/3 -ceq byte-exact against neet-t1-5.json tier-3 entries (Life/Mana/Stamina). Job name 'Helping in the Orchard' verified present in data/expedition-jobs.json; material descriptions consulted from data/material-descriptions.json.",
+    "byteReuse": "0 phrases - there is no accepted journey draft for tier 3, so there is nothing to reuse; all scene text is new fan-written per factProvenance and the registry is intentionally empty.",
+    "boxLengths": "42 boxes total; all at or under 43 spaced-hyphen tokens - no box exceeds the comfort target this tier. Longest: life-out 43, mana-r8 42, mana-r9 41, stamina-r2 40, mana-r6 39.",
+    "preDispatchLeakScan": "10 pre-dispatch boxes (opening 3, trip-start, confirm 3, departure 3) scanned for outcome-fact words (rota, compress, barrel, finish, custom, tidy, pick-weight, row and hour, east rows, sweeten, shade, picking order, rebuilt, diplomacy, brace, every leg, nobody falls, pattern, barn, next season): 0 hits.",
+    "outcomeOwnership": "0 violations across non-outcome return beats: Life (rota/compress/barrel/before dark/custom/tidy), Mana (pick-weight/row and hour/east rows/sweeten/shade/picking order/rebuilt/diplomacy), Stamina (brace/every leg/every top rung/nobody falls/pattern/barn/next season/shortcut). On-screen acts are demonstration-level only: one invited minute (Life), weigh rounds on three scales (Mana), one ladder wedged and collared (Stamina).",
+    "routeIndependenceScan": "0 cross-route hits (Tansy only in Life; Pell/Wray/thirdpicker/notebook only in Mana; Tam only in Stamina); no tier-1 or tier-2 callbacks in any beat; each route reads standalone in any play order.",
+    "beatInventory": "Shared: 3 opening beats (incl. the choice moment with three option teasers) + 2 dispatch beats. Life: hook 1 + departure 1 + return 10. Mana: hook 1 + departure 1 + return 11 (two-stage scale test mana-r6/r7, earned settlement r8, comparability bridge r10). Stamina: hook 1 + departure 1 + return 10. Final return box of each route = byte-exact outcome.",
+    "fileCheck": "JSON parses clean; ASCII-clean (0 non-ASCII characters)."
+  }
+}

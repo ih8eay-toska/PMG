@@ -41,15 +41,17 @@ g=new PotionGame();g.state.tiers=[4,8,24];const req=g.randomRequirement(()=>.999
 // Rewards already in transit in older saves are granted on the next settle.
 let v2={...INITIAL(),version:2,travelers:[{quests:2,readyAt:61000},{quests:0,readyAt:0},{quests:0,readyAt:0}]};
 g=new PotionGame(sanitizeSave(v2));assert.equal(g.state.travelers[0].phase,'returning');assert.equal(g.settle(60999).length,0);assert.equal(g.settle(61000).length,1);assert.equal(g.state.travelers[0].quests,3);assert.equal(g.settle(62000).length,0);
-// Unbiased material pool, identical empty-cauldron speed at every emission level,
-// and spatially even emission when speed changes or an ingredient is collected.
+// APK conveyor rules: constant movement with upgrade-controlled emission, fairy bonuses and an empty-belt cap.
 assert.equal(materialPool([0,1,2]).length,6);assert.deepEqual(materialPool([0,0,0]).map(x=>x.family),[0,1,2]);
-let belt=new MaterialConveyor(456,[0,0,0],()=>0),base=belt.speed(false,0);assert.equal(base,40);assert.equal(belt.speed(false,19),base);assert.equal(belt.speed(true,19),80);assert.equal(belt.speed(true,0),80);
-const seen=new Set();const pool=materialPool([1,2,3]);let sequence=[];for(const m of pool){const start=[0,2,5][m.family];sequence.push(0,(start+.5)/9,(m.tier+.5)/([1,2,3][m.family]+1));}let sample=0;belt=new MaterialConveyor(760,[1,2,3],()=>sequence[sample++%sequence.length]);belt.items.forEach(m=>seen.add(m.family+'-'+m.tier));assert.equal(seen.size,pool.length);
-let slow=new MaterialConveyor(456,[0,0,0],()=>0),fast=new MaterialConveyor(456,[0,0,0],()=>0);slow.advance(100,false,0);fast.advance(100,true,0);assert.ok(slow.items[0].x>fast.items[0].x);
-belt=new MaterialConveyor(456,[0,0,0],()=>0);const before=belt.items[1].x;const taken=belt.take(belt.items[0].id);assert.ok(taken);assert.equal(belt.items[0].x,before);
-for(const level of [0,9,19]){const dense=new MaterialConveyor(456,[0,0,0],()=>0);dense.advance(10000,true,level);const gap=76/(1+level*.12);assert.ok(Math.abs(dense.spacing-gap)<1e-8);for(let j=1;j<dense.items.length;j++)assert.ok(Math.abs(dense.items[j].x-dense.items[j-1].x-gap)<1e-8);const item=dense.items.find(m=>m.x>=0),id=item.id,x=item.x;dense.advance(100,true,level);assert.ok(Math.abs(dense.items.find(m=>m.id===id).x-(x-8))<1e-8);}
-// Collecting after enhancement retains the observed additive behavior.
+let belt=new MaterialConveyor(456,[0,0,0],()=>0);assert.ok(Math.abs(belt.speed(false,0)-136.8)<1e-10);assert.equal(belt.speed(false,19),belt.speed(false,0));assert.equal(belt.speed(true,19),belt.speed(false,0));
+assert.deepEqual(ECONOMY.upgrades.speed.materialsPerSecond,[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]);
+g=new PotionGame();assert.equal(g.emissionRate(),1);g.state.speed=9;assert.equal(g.emissionRate(),10);g.state.speed=19;assert.equal(g.emissionRate(),20);
+const fairies={cardsPerSecond:.5},dense=new MaterialConveyor(456,[0,0,0],()=>0,()=>fairies);
+assert.equal(dense.emissionRate(true,0),1.5);assert.equal(dense.emissionRate(false,19),3);
+for(let i=0;i<160;i++)dense.advance(50,true,0);const gap=dense.speed()/dense.emissionRate(true,0);assert.ok(Math.abs(dense.spacing-gap)<1e-8);
+const empty=new MaterialConveyor(456,[0,0,0],()=>0);assert.equal(empty.emissionRate(false,0),1);assert.equal(empty.emissionRate(false,19),3);
+for(let i=0;i<160;i++)empty.advance(50,false,19);assert.ok(Math.abs(empty.spacing-empty.speed()/3)<1e-8);
+const maxPotionGame=new PotionGame();maxPotionGame.collect(0,0);maxPotionGame.state.potion.level=FAMILIES[0].recipes[0].max_level-1;maxPotionGame.state.helpers=[{remainingMs:10000,cooldownMs:0,intervalMs:1000,slot:0}];const pausedHelper={...maxPotionGame.state.helpers[0]};assert.equal(maxPotionGame.advanceHelper(100,new MaterialConveyor(456,[0,0,0],()=>0)),0);assert.deepEqual(maxPotionGame.state.helpers[0],pausedHelper,'Pushcats pause when no further potion enhancement is available');// Collecting after enhancement retains the observed additive behavior.
 g=new PotionGame();g.collect(1,0);g.enhance(0);const enhanced=g.state.potion.value;g.collect(0,0);assert.equal(g.state.potion.value,enhanced+FAMILIES[0].materials[0].value);
 let old={version:1,coins:123,tiers:[2,1,0],luck:3,price:3,speed:3,potion:{family:1,tier:1,level:1,value:25},sold:7,failed:1,best:50,ingredients:20};let migrated=sanitizeSave(old);assert.equal(migrated.version,INITIAL().version);assert.equal(migrated.coins,123);assert.deepEqual(migrated.tiers,[2,1,0]);assert.equal(migrated.potion.value,25);assert.deepEqual(sanitizeSave(migrated),migrated);
 assert.throws(()=>sanitizeSave({...INITIAL(),coins:-1}));assert.throws(()=>sanitizeSave({...INITIAL(),powerups:{protection:-1,enhancement:0,selling:0}}));assert.throws(()=>sanitizeSave({...INITIAL(),travelers:[{}, {}, {}]}));assert.throws(()=>sanitizeSave({...INITIAL(),potion:{family:0,tier:0,level:20,value:10}}));
@@ -80,6 +82,7 @@ g=new PotionGame();g.collect(0,0);g.collect(1,0);g.state.powerups={protection:1,
 assert.equal(g.enhance(0),'success');assert.equal(g.enhance(.999),'protected');const price=g.sell();
 assert.equal(g.state.metrics.brewsStarted,1);assert.deepEqual(g.state.metrics.ingredientsByFamily,[1,1,0]);assert.equal(g.state.metrics.enhancementAttempts,2);assert.equal(g.state.metrics.enhancementsSucceeded,1);assert.equal(g.state.metrics.enhancementsFailed,1);assert.equal(g.state.metrics.protectedFailures,1);assert.equal(g.state.metrics.potionsLost,0);assert.equal(g.state.metrics.coinsEarned,price);assert.deepEqual(g.state.metrics.powerupsUsed,{protection:1,enhancement:1,selling:1});assert.equal(g.state.metrics.recipes['0-0'].highestLevel,2);
 g.collect(1,0);g.sell();assert.equal(g.state.metrics.soldLevelOne,1);g.state.coins=1000;assert.equal(g.buy('speed'),true);assert.equal(g.state.metrics.coinsSpent,137);assert.equal(g.state.metrics.upgradesBought,1);g.recordPlayTime(1000);assert.equal(g.state.metrics.activePlayMs,1000);assert.deepEqual(sanitizeSave(g.state),g.state);
+g=new PotionGame();for(const [index,cost] of ECONOMY.upgrades.speed.costs.entries()){g.state.coins=cost;assert.equal(g.upgradeInfo('speed').cost,cost);assert.equal(g.buy('speed'),true);assert.equal(g.state.speed,index+1);}assert.equal(g.buy('speed'),false);assert.equal(g.emissionRate(),20);const speedReload=new PotionGame(sanitizeSave(JSON.parse(JSON.stringify(g.state))));assert.equal(speedReload.state.speed,19);assert.equal(speedReload.emissionRate(),20);
 g=new PotionGame();g.tick(1,()=>0);g.tick(20001,()=>0);g.acceptQuest(0,21000,()=>0);g.tick(81000,()=>0);assert.equal(g.state.metrics.questsOffered,1);assert.equal(g.state.metrics.questsAccepted,1);assert.equal(g.state.metrics.questsFailed,1);assert.equal(g.state.metrics.visitors.neet.failed,1);
 let oldStats={...INITIAL(),version:4};delete oldStats.metrics;oldStats.sold=99;oldStats.ingredients=300;oldStats.failed=21;let statsMigrated=sanitizeSave(oldStats);assert.equal(statsMigrated.sold,99);assert.equal(statsMigrated.ingredients,300);assert.equal(statsMigrated.failed,21);assert.equal(statsMigrated.metrics.historyPartial,true);assert.equal(statsMigrated.metrics.coinsEarned,0);assert.deepEqual(sanitizeSave(statsMigrated),statsMigrated);
 assert.throws(()=>sanitizeSave({...INITIAL(),metrics:{...INITIAL().metrics,coinsEarned:-1}}));assert.throws(()=>sanitizeSave({...INITIAL(),metrics:{...INITIAL().metrics,recipes:{'9-9':{}}}}));
@@ -134,14 +137,15 @@ console.log('Passed: all 75 selected recipe tables, preserved in-progress values
 
 // One ticket slot per 100 ingredient slots in a deterministic 101-spawn sample.
 const draws=[];for(let i=0;i<101;i++){draws.push(i/101);if(i<100)draws.push(0,0);}
-let draw=0;const mixed=new MaterialConveyor(7600,[0,0,0],()=>draws[draw++]);
+let draw=0;const mixed=new MaterialConveyor(8000,[0,0,0],()=>draws[draw++]);
+while(mixed.items.length<101)mixed.spawn(mixed.items.length*mixed.spacing);
 assert.equal(mixed.items.filter(m=>m.kind==='ticket').length,1);
 assert.equal(mixed.items.filter(m=>m.kind!=='ticket').length,100);
-for(let i=1;i<mixed.items.length;i++)assert.equal(mixed.items[i].x-mixed.items[i-1].x,76);
+for(let i=1;i<mixed.items.length;i++)assert.ok(Math.abs(mixed.items[i].x-mixed.items[i-1].x-mixed.spacing)<1e-8);
 const ticketsOnly=new MaterialConveyor(152,[24,24,24],()=>1,()=>({materialProbability:[100,0,0]}));
 assert.ok(ticketsOnly.items.every(m=>m.kind==='ticket'));
 const ticketId=ticketsOnly.items[1].id;
-ticketsOnly.advance(1000,true,2);assert.equal(ticketsOnly.items.find(m=>m.id===ticketId).x,76-80);
+ticketsOnly.advance(1000,true,2);assert.equal(ticketsOnly.items.find(m=>m.id===ticketId).x,0);
 g=new PotionGame();const freshBefore=JSON.parse(JSON.stringify(g.state));assert.equal(g.collectTicket(),true);
 assert.equal(g.state.tickets,1);assert.equal(g.state.potion,null);assert.equal(g.state.ingredients,freshBefore.ingredients);
 g.collect(2,0);const potionBefore=JSON.parse(JSON.stringify(g.state));const ticket=ticketsOnly.take(ticketId);
@@ -158,3 +162,15 @@ for(const [brewing,level]of [[false,0],[true,0],[true,19]]){
  const visible=belt=>belt.items.filter(m=>m.x<456-20);const a=visible(coarse),b=visible(fine);assert.equal(a.length,b.length);for(let i=0;i<a.length;i++)assert.ok(Math.abs(a[i].x-b[i].x)<1e-8);
 }
 console.log('Passed: long-frame visible emission matches fine-grained updates.');
+
+// APK conveyor rules: 300 units/s over the 1,000-unit track; emission upgrades set cadence, with a 3/s empty-cauldron cap.
+const apkBelt=new MaterialConveyor(1000,[0,0,0],()=>0);
+assert.equal(apkBelt.speed(false,0),300);assert.equal(apkBelt.speed(true,19),300);
+assert.equal(apkBelt.emissionRate(true,0),1);assert.equal(apkBelt.emissionRate(true,19),20);
+assert.equal(apkBelt.emissionRate(false,0),1);assert.equal(apkBelt.emissionRate(false,19),3);
+const fairyBelt=new MaterialConveyor(1000,[0,0,0],()=>0,()=>({cardsPerSecond:.5}));
+assert.equal(fairyBelt.emissionRate(true,0),1.5);assert.equal(fairyBelt.emissionRate(false,19),3);
+apkBelt.advance(1000,true,0);assert.ok(apkBelt.items.some(item=>item.x===600),'300 units of movement per second');
+apkBelt.advance(0,true,0,500);assert.ok(apkBelt.items.every(item=>item.x<=500),'responsive rack resize preserves normalized position');
+const cappedFrame=new MaterialConveyor(1000,[0,0,0],()=>0),serialBefore=cappedFrame.serial;cappedFrame.advance(1500,true,0);assert.equal(cappedFrame.serial-serialBefore,1,'large frames add at most one second to emission time');
+console.log('Passed: APK constant conveyor speed, upgrade cadence, empty-belt cap, fairy rate bonus and responsive coordinate scaling.');

@@ -1,0 +1,558 @@
+{
+  "pilot": "chapter-click-02",
+  "traveler": "neet",
+  "tier": 1,
+  "job": "Herbs for the Shrine",
+  "purpose": "Owner-review draft: Neet's tier-1 click-through chapter (Red herb, Blue herb, Yellow herb), written in the same format as the approved tier-2 pilot chapter-click-01. The chapter opens as soon as any material family reaches tier 1; the player picks one currently unlocked material inside the opening scene; the choice sets the route; the traveler is dispatched; after the trip the player opens a click-through continuation carrying the investigation, action, and outcome. This chapter plays before tier-2 chronologically and shows the same Neet at the start of her habits. Nothing here edits data/, source/, or the playable HTML.",
+  "sourceMaterial": [
+    "research/writing/expedition-stories/stories-v2/neet-t1-5.json - tier-1 hooks and outcomes (quoted byte-exact)",
+    "research/writing/expedition-stories/stories-v2/journey-pilot-neet-t1.json - accepted tier-1 journey draft, adapted into the post-return continuations with dialogue reused verbatim",
+    "research/writing/expedition-stories/stories-v2/chapter-pilot-neet-t2.json - approved click-through format benchmark"
+  ],
+  "presentationModel": "Player opens a tier chapter when any material family reaches that tier. Inside the opening scene the player chooses one currently unlocked tier material; that choice determines the route. The traveler is dispatched. When the trip finishes, the player opens a click-through continuation showing what happened and the route's outcome. Other unlocked routes can be played on later trips, one active route at a time.",
+  "playerFlow": "op-01 -> op-02 -> choice -> confirm = byte-exact hook box for the chosen family -> one route departure box -> trip-start (dispatch, no result) -> trip timer -> trip-end (click to open the report) -> route return boxes in order, last box = byte-exact outcome. After the chapter, other unlocked choices remain available on later trips.",
+  "implementationNotes": {
+    "chapterOpen": "The chapter becomes available as soon as any herb material family reaches tier 1. Suggested UI copy, outside the story beats: 'New chapter - Herbs for the Shrine.'",
+    "optionGating": "Show only options for material families currently unlocked at this tier; one, two, or three options are all valid states. The opening prose is written to hold when only one option exists.",
+    "routeLock": "The material choice sets the active route for this trip; other unlocked choices remain available on later trips, one active route at a time.",
+    "tripTimer": "The trip runs on the same about-two-minute game timer as tier 2. The timer belongs to implementation and UI, not to story text."
+  },
+  "beatRules": [
+    "Every beat carries id, phase, speaker, portrait, text. The choice beat additionally carries its three option texts.",
+    "Narrator beats stay brief and set place, action, or a visible action. Neet and the route's side character carry the reasoning and decisions in exchanges. No line of dialogue exists to meet a count; each exchange performs a scene function.",
+    "Each return route opens with a 'The report starts...' narrator sentence so the post-trip account runs chronologically from where the trip went.",
+    "Each box is written to be comfortable in a dialogue box: about 40 words per box (spaced-hyphen token audit tolerates a few over; byte-reused sentences stay verbatim). The byte-exact hook quote (confirm) and the byte-exact outcome quote (final return box) repeat already accepted screen text.",
+    "Speaker 'narrator' is unvoiced scene text with no portrait. Speaker 'neet' shows the Neet portrait. The fever-cart driver, the grandmother, Mena, the grower, and Gorram have no existing portrait assets: portrait is 'none-new-side-character' (text-only boxes). Mena and Gorram are named in the accepted journey draft; the driver, grandmother, and grower remain unnamed there and stay unnamed here.",
+    "No outcome fact appears anywhere before the trip ends. Pre-dispatch boxes carry only hook facts and Neet's spoken intentions.",
+    "Dialogue reused from the accepted journey draft is reused verbatim (byte-reuse registry below); attribution moves from inner quote marks to the speaker field.",
+    "Route independence: no beat assumes another route was seen, no cross-route character appearances, no tier-2 references, no later-tier references. Neet never recites her own outcomes or customs outside the byte-exact outcome beat."
+  ],
+  "opening": {
+    "beats": [
+      {
+        "id": "op-01",
+        "phase": "opening",
+        "speaker": "narrator",
+        "portrait": "none",
+        "text": "The shrine has herb orders waiting, and this morning the herb work is Neet's."
+      },
+      {
+        "id": "op-02",
+        "phase": "opening",
+        "speaker": "neet",
+        "portrait": "neet",
+        "text": "Before the dew lifts, then. I have the shears, the baskets, and the shelf list. Tell me where we start, and I will be ready."
+      },
+      {
+        "id": "choice",
+        "phase": "choice",
+        "speaker": "narrator",
+        "portrait": "none",
+        "text": "Choose what Neet tends today.",
+        "note": "Only options whose material family is unlocked at this tier are shown. The opening prose above is written to be true whether one option or three are available.",
+        "options": [
+          {
+            "material": "Red herb",
+            "teaser": "The fever cart is coughing at the gate, and the red shelf has been leaned on hard this week."
+          },
+          {
+            "material": "Blue herb",
+            "teaser": "Two of the blue-herb beds carry labels nobody can read anymore."
+          },
+          {
+            "material": "Yellow herb",
+            "teaser": "A heavy yellow-herb season is coming, and the drying loft groans when the wind does."
+          }
+        ]
+      }
+    ]
+  },
+  "sharedDispatch": [
+    {
+      "id": "trip-start",
+      "phase": "trip",
+      "speaker": "narrator",
+      "portrait": "none",
+      "text": "Neet takes the assignment and goes; whatever happens out there comes home with her."
+    },
+    {
+      "id": "trip-end",
+      "phase": "trip",
+      "speaker": "narrator",
+      "portrait": "none",
+      "text": "The trip is over. Open Neet's report to see what happened, and how it ended."
+    }
+  ],
+  "routes": [
+    {
+      "family": "Life",
+      "material": "Red herb",
+      "confirmBeats": [
+        {
+          "id": "life-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The fever cart coughs at the gate, and the shrine's red shelf has been leaned on hard this week. Neet walks the whole shelf before promising anyone anything."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "life-dep",
+          "phase": "departure",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "Red herbs, then. The whole road is coughing, and this week has leaned hard on the red shelf. I will promise nothing until the shelf and the road have both had their say."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "life-r1",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The report starts past the gate, where the fever cart rolled just ahead, its driver shaking his head over a wrapper-stripped shelf."
+        },
+        {
+          "id": "life-r2",
+          "phase": "return",
+          "speaker": "driver",
+          "portrait": "none-new-side-character",
+          "text": "Whole road's coughing. Two stops behind yours."
+        },
+        {
+          "id": "life-r3",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "He has nothing to sell her. The strong batch's last measured share rides in her basket, weighed out on the shelf walk this morning."
+        },
+        {
+          "id": "life-r4",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Next on his round, the settlement: its strong beds stripped bare weeks ago - every root that promised speed bought the minute the coughing began."
+        },
+        {
+          "id": "life-r5",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "What remains is the settlement's own kitchen-row patch of mild red leaf, planted for household coughs: same root, slower in the cup, unwanted all season because the fever has everyone buying fast."
+        },
+        {
+          "id": "life-r6",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "A grandmother has held the queue since dawn, three grandchildren coughing in turns."
+        },
+        {
+          "id": "life-r7",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Neet counts her basket against it and sees the arithmetic nobody says aloud: not enough."
+        },
+        {
+          "id": "life-r8",
+          "phase": "return",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "One bargain, plainly, then: the strong share in my basket, weighed to two jars, for the whole spare cutting of the mild row."
+        },
+        {
+          "id": "life-r9",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The grandmother looks at the strong bundle, then at Neet."
+        },
+        {
+          "id": "life-r10",
+          "phase": "return",
+          "speaker": "grandmother",
+          "portrait": "none-new-side-character",
+          "text": "It's the same root, girl. Just slower."
+        },
+        {
+          "id": "life-r11",
+          "phase": "return",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "And the fever does not wait."
+        },
+        {
+          "id": "life-r12",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "They shake hands on it - two jars for the row - and Neet pays the two, adding nothing beyond the price they named."
+        },
+        {
+          "id": "life-r13",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "By her count on the walk home, the mild cutting is four times the leaf she left with: slower by half, but the same root."
+        },
+        {
+          "id": "life-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "She reorders the red shelf by urgency instead of alphabet - fever jars nearest the door - and quietly refills the first kit before anyone asks. 'Urgent first' becomes the shelf rule, and the first kit has never been short since."
+        }
+      ]
+    },
+    {
+      "family": "Mana",
+      "material": "Blue herb",
+      "confirmBeats": [
+        {
+          "id": "mana-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Two of the blue-herb beds carry labels nobody can read anymore. Neet agrees to straighten the beds without agreeing to trust them."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "mana-dep",
+          "phase": "departure",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "Blue herbs, then. Two beds, two unreadable labels, and no reason yet to trust either. I will straighten what is crooked and promise to trust nothing."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "mana-r1",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The report starts at the beds: the real trouble is the ledger, and it kept the bad ink's story, reading the sunward bed as mild and the shaded bed as strong."
+        },
+        {
+          "id": "mana-r2",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Dosed by the ledger's story, the strong crop plays mild and the mild plays strong - half a remedy or a double one - and the seed saved from its 'best' bed would plant the error again."
+        },
+        {
+          "id": "mana-r3",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Neet tastes a leaf from each - one bitter first, then cold, the other answering differently - but the hot dry week slurs the harvests; a tongue can say the crops differ, not whose story is true."
+        },
+        {
+          "id": "mana-r4",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The two wait in separate cups. Mena, the youngest volunteer, finally comes off the wall."
+        },
+        {
+          "id": "mana-r5",
+          "phase": "return",
+          "speaker": "mena",
+          "portrait": "none-new-side-character",
+          "text": "I watered both beds the year before the labels went. The mean, bitter leaf always came off the sunward bed - the one the ledger reads as mild."
+        },
+        {
+          "id": "mana-r6",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Scolded, she says, for overwatering the shaded one - and she kept the two straight ever since. She gives it up like a small crime confessed."
+        },
+        {
+          "id": "mana-r7",
+          "phase": "return",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "I will not taste again - the tongue said its all. Your account is testable another way: an overwatered bed keeps its drenching."
+        },
+        {
+          "id": "mana-r8",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "So Neet walks where Mena says she stood with the can - and then walks the rest. The short haul from the water barrel to the shaded bed is worn bare by a year of full cans, the ground there still draining late."
+        },
+        {
+          "id": "mana-r9",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The sunward bed has no such road - no worn haul, no water path, no late drain. Ground sides with memory: shaded bed pampered, sunward bed mean and bitter - the ledger backward all along."
+        },
+        {
+          "id": "mana-r10",
+          "phase": "return",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "So the sun remembers even when the ink did not. Then we will not correct you. We will write you down."
+        },
+        {
+          "id": "mana-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "She re-inks every label, then does the unfashionable thing: corrects the bed-ledger to match the truth of the beds, not the habit of the ledger. The bed-ledger tells the truth again, and the label ink she mixed is the one still in use."
+        }
+      ]
+    },
+    {
+      "family": "Stamina",
+      "material": "Yellow herb",
+      "confirmBeats": [
+        {
+          "id": "stamina-hook",
+          "phase": "confirm",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "A heavy yellow-herb season is coming, and the drying loft groans when the wind does. Neet inspects the loft before the first load goes up."
+        }
+      ],
+      "departureBeats": [
+        {
+          "id": "stamina-dep",
+          "phase": "departure",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "Yellow herbs, then. A heavy season is coming, and the loft already complains about the wind. I will walk it before the first load goes up."
+        }
+      ],
+      "returnBeats": [
+        {
+          "id": "stamina-r1",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The report starts at the loading yard, where the first yellow-herb load comes off the cart wrong: this year's cut is sap-heavy, taken young and wet because the fields came late and the shrine ordered early."
+        },
+        {
+          "id": "stamina-r2",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The same trays that went up light as chaff last year now take both hands, and Neet weighs one against her hip before she says anything at all."
+        },
+        {
+          "id": "stamina-r3",
+          "phase": "return",
+          "speaker": "grower",
+          "portrait": "none-new-side-character",
+          "text": "They will dry lighter than they travel."
+        },
+        {
+          "id": "stamina-r4",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Which is exactly the trouble - the loft has to carry them at their heaviest."
+        },
+        {
+          "id": "stamina-r4b",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Before the first load went up, she walked the empty loft end to end and found nothing the eye could fault - the wind's groan unexplained."
+        },
+        {
+          "id": "stamina-r4c",
+          "phase": "return",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "Level, unloaded, and quiet about it. I will walk it again when it is carrying."
+        },
+        {
+          "id": "stamina-r5",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Inside, volunteers are loading at a speed that means nobody has counted the load."
+        },
+        {
+          "id": "stamina-r6",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Neet watches one tray go up and hears the beam take it with a sound she does not like - a long wooden note, the kind furniture makes before it stops being furniture."
+        },
+        {
+          "id": "stamina-r7",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "She stops the next tray at the bottom of the stair."
+        },
+        {
+          "id": "stamina-r8",
+          "phase": "return",
+          "speaker": "neet",
+          "portrait": "neet",
+          "text": "We will count what goes up, before the loft decides we did not."
+        },
+        {
+          "id": "stamina-r9",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "The volunteers look caught rather than annoyed. Gorram, the oldest, has hauled yellow bundles all morning and does not stop to argue."
+        },
+        {
+          "id": "stamina-r10",
+          "phase": "return",
+          "speaker": "gorram",
+          "portrait": "none-new-side-character",
+          "text": "Nothing ever fell in thirty years."
+        },
+        {
+          "id": "stamina-r11",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "Which is what everyone always says about beams. Neet climbs anyway, walks the loft heel to heel with a measuring string, and finds the middle beam carrying more than its share, a thumb's width below its brothers."
+        },
+        {
+          "id": "stamina-r12",
+          "phase": "return",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "She marks it in chalk, sorts the wettest yellow bundles onto the side beams, and puts the string back where the next hand will find it and wonder."
+        },
+        {
+          "id": "stamina-out",
+          "phase": "outcome",
+          "speaker": "narrator",
+          "portrait": "none",
+          "text": "She doubles the braces, ropes the racks, and - because a loft that holds more invites people - leaves a bench in the warm corner. The loft holds double, and rain-guests still sleep there by custom."
+        }
+      ]
+    }
+  ],
+  "mapping": {
+    "life": {
+      "hook": "life-hook quotes the tier-1 Life hook byte-exact as the confirm box after the choice.",
+      "journey": "P1 becomes life-r1 to life-r3: the report opens past the gate (the shelf walk itself is hook and pre-dispatch habit), the cart driver speaks his two lines quoted without outer quote marks, and the strong share rides in her basket. P2 becomes life-r4 (the stripped settlement), life-r5 (the mild kitchen-row patch), and life-r6/r7 (the grandmother and the unspoken arithmetic, kept as two boxes for length). P3 becomes life-r8 (the bargain, converted from narrated offer to Neet's spoken offer),.life-r9 (the glance), life-r10 (the grandmother's line byte-reused, 'girl' kept as her dialect), life-r11 (Neet's reply), and life-r12 (the handshake and payment). P4 becomes life-r13 (the walk-home count).",
+      "outcome": "life-out quotes the outcome byte-exact as the final box; the urgency reorder, the first kit's refill, and the 'Urgent first' rule stay owned by this beat alone.",
+      "notes": "Journey P4's closing clause ('enough to keep the shrine's shelf and first kit stocked') is trimmed in life-r13 because the outcome owns the first kit's refill; no other fact is lost. The narrator's 'The grandmother shakes hands on it' was adapted to 'They shake hands on it' to fit the click-through beat after her glance; the payment sentence stays verbatim."
+    },
+    "mana": {
+      "hook": "mana-hook quotes the tier-1 Mana hook byte-exact as the confirm box.",
+      "journey": "P1 becomes mana-r1 (the real trouble and the bad-ink story, adapted with the report-start framing). P2 becomes mana-r2 (the dosing error) and mana-r3 (the failed tongue test). P3 becomes mana-r4 (Mena comes off the wall), mana-r5 (her account converted to speech, byte fragments kept), and mana-r6 (the narrator carries the overwatering detail and the small-crime line). P4 becomes mana-r7 (Neet speaks the taste refusal and names the testable ground - the narrator sentence converted to her address to Mena), mana-r8 (the walk: first to the can's standing spot, byte-reused, then along the year-worn haul path to the shaded bed - drainage kept as corroboration), mana-r9 (the sunward bed's lack of any watering sign, then the ground's verdict, byte-reused), and mana-r10 (Neet's two-line verdict to Mena, byte-reused).",
+      "outcome": "mana-out quotes the outcome byte-exact as the final box; the re-inking, the bed-ledger correction, and the mixed ink still in use stay owned by this beat alone.",
+      "notes": "Mena's account in the journey is narrated third-person; converting it to her speech kept the byte fragments ('watered both beds the year before the labels went', 'the mean, bitter leaf always came off the sunward bed', 'the one the ledger reads as mild') and moved the scolding detail to the narrator so her line stays box-length. The journey's taste-refusal narration becomes Neet's spoken line (mana-r7): 'I will not taste again - the tongue said its all' keeps the byte fragment; 'Mena's account' became 'Your account'. The r1 framing sentence was corrected to the journey's own phrasing ('the real trouble is the ledger; it kept the bad ink's story...'). Difference from the journey draft (flagged in continuityFlags): the draft's test is the present drainage alone ('finds the ground there still draining late'); the scene keeps drainage as corroboration and adds the discriminating observation - the year-worn haul path to the shaded bed and the sunward bed's complete lack of watering signs, which is what actually separates Mena's account from the ledger's. The verdict line ('Ground sides with memory...') and the outcome are unchanged. 'We will write you down' is understood as addressed to Mena's account, matching the journey's own ambiguity; flagged in continuityFlags."
+    },
+    "stamina": {
+      "hook": "stamina-hook quotes the tier-1 Stamina hook byte-exact as the confirm box.",
+      "journey": "P1 becomes stamina-r1 (the sap-heavy load, report-start framing) and stamina-r2 (the tray against her hip, byte-reused). P2 becomes stamina-r3 (the grower's admission), stamina-r4 (the trouble clause), stamina-r4b (the hook's promised pre-load inspection of the empty loft - new scene glue; she finds nothing the eye can fault, the groan unexplained), and stamina-r4c (her spoken verdict: level, unloaded, quiet about it - she will walk it again when it is carrying). P3 becomes stamina-r5 (nobody has counted), stamina-r6 (the long wooden note, byte-reused - now the reveal the empty inspection could not give), stamina-r7 (she stops the tray), stamina-r8 (her count line, byte-reused), stamina-r9 (caught volunteers; Gorram introduced), stamina-r10 (his thirty-years line, byte-reused), and stamina-r11 (the beams line plus her climb and the middle-beam finding, byte-reused fragments merged into one box). P4 becomes stamina-r12 (chalk mark, wettest bundles onto side beams, the string left for the next hand).",
+      "outcome": "stamina-out quotes the outcome byte-exact as the final box; the braces, the racks, the bench, the doubled loft, and the rain-guests stay owned by this beat alone.",
+      "notes": "The beams aphorism ('which is what everyone always says about beams.') opens stamina-r11 so the climb follows in the same box; the journey's paragraph break is compressed without losing a phrase. The grower stays unnamed as in the journey draft. Difference from the journey draft (flagged in continuityFlags): the draft stages no pre-load inspection - the beam note was the first sign; the scene adds the hook's promised empty-loft pass (r4b/r4c), which finds nothing conclusive, so the loaded beam still makes the discovery. No journey phrase was lost."
+    }
+  },
+  "byteReuse": [
+    "its driver shaking his head over a wrapper-stripped shelf",
+    "Whole road's coughing",
+    "Two stops behind yours",
+    "He has nothing to sell her",
+    "The strong batch's last measured share",
+    "every root that promised speed bought the minute the coughing began",
+    "same root, slower in the cup",
+    "A grandmother has held the queue since dawn, three grandchildren coughing in turns",
+    "counts her basket against it and sees the arithmetic nobody says aloud: not enough",
+    "the whole spare cutting of the mild row",
+    "The grandmother looks at the strong bundle, then at Neet",
+    "It's the same root, girl. Just slower",
+    "And the fever does not wait",
+    "and Neet pays the two, adding nothing beyond the price they named",
+    "By her count on the walk home, the mild cutting is four times the leaf she left with: slower by half, but the same root",
+    "real trouble is the ledger",
+    "it kept the bad ink's story, reading the sunward bed as mild and the shaded bed as strong",
+    "Dosed by the ledger's story, the strong crop plays mild and the mild plays strong - half a remedy or a double one",
+    "the seed saved from its 'best' bed would plant the error again",
+    "Neet tastes a leaf from each",
+    "one bitter first, then cold, the other answering differently",
+    "the hot dry week slurs the harvests",
+    "a tongue can say the crops differ, not whose story is true",
+    "The two wait in separate cups",
+    "Mena, the youngest volunteer, finally comes off the wall",
+    "watered both beds the year before the labels went",
+    "the mean, bitter leaf always came off the sunward bed",
+    "the one the ledger reads as mild",
+    "overwatering the shaded one",
+    "She gives it up like a small crime confessed",
+    "the tongue said its all",
+    "an overwatered bed keeps its drenching",
+    "walks where Mena says she stood with the can",
+    "the ground there still draining late",
+    "Ground sides with memory: shaded bed pampered, sunward bed mean and bitter - the ledger backward all along",
+    "So the sun remembers even when the ink did not",
+    "Then we will not correct you. We will write you down.",
+    "the first yellow-herb load comes off the cart wrong: this year's cut is sap-heavy, taken young and wet because the fields came late and the shrine ordered early",
+    "The same trays that went up light as chaff last year now take both hands, and Neet weighs one against her hip before she says anything at all",
+    "the loft has to carry them at their heaviest",
+    "Inside, volunteers are loading at a speed that means nobody has counted the load",
+    "hears the beam take it with a sound she does not like - a long wooden note, the kind furniture makes before it stops being furniture",
+    "She stops the next tray at the bottom of the stair",
+    "We will count what goes up",
+    "before the loft decides we did not",
+    "The volunteers look caught rather than annoyed",
+    "Gorram, the oldest, has hauled yellow bundles all morning and does not stop to argue",
+    "Nothing ever fell in thirty years",
+    "which is what everyone always says about beams",
+    "Neet climbs anyway, walks the loft heel to heel with a measuring string, and finds the middle beam carrying more than its share, a thumb's width below its brothers",
+    "She marks it in chalk, sorts the wettest yellow bundles onto the side beams, and puts the string back where the next hand will find it and wonder"
+  ],
+  "skillStages": {
+    "planning": "planning.md outputs restated for the tier-1 chapter: same chapter shape as the approved tier-2 pilot (opening -> choice -> hook confirm -> departure -> dispatch -> returns -> outcome). POV limits: pre-dispatch boxes may state hook facts and Neet's spoken intentions only - no result. Each route's return is a chronological report ('The report starts...'), so the account runs forward from the trip's first scene. The investigation of the trip (the round, the beds, the loft) is disclosed only after trip-end.",
+    "drafting": "dialogue-and-behavior.md governs the exchanges: the driver reports road weather in one breath; the grandmother's dialect ('girl') contrasts Neet's formality; Mena gives up what she knows like a small crime; the grower admits a fact as trouble; Gorram answers authority with a proverb and keeps hauling. Neet's lines are her habit beginnings: promise nothing until things have had their say, weigh first and speak after, trust only what agrees with something besides itself.",
+    "reviewing": "revision-checklist pass on all three click-throughs: choice causality, no pre-dispatch disclosure, route independence (no cross-route characters, no tier-2 references, no outcome recitation outside the byte-exact outcome), character introductions (driver, grandmother, Mena, grower, Gorram each anchored with role and behavior), voice (Neet formal-dry in both directions: to a grandmother and to a volunteer), box economy, and mapping completeness (every journey paragraph lands in a beat or its trim is noted). A revision pass (owner directive) stripped implementation explanations from op-01/choice/trip-start into implementationNotes and rebalanced returns toward character exchanges. A second revision pass staged the Stamina hook's promised pre-load inspection (r4b/r4c, findings post-trip, discovery still under load) and upgraded Mana's test to a discriminating observation (year-worn haul path plus the sunward bed's lack of watering signs); both differences from the older journey draft are flagged in continuityFlags, and no game data was touched."
+  },
+  "characterNotes": {
+    "neet": "Tier-1 Neet is the same person earlier: formal, dry, unwilling to promise what she has not walked, weighed, or tested. Her pre-dispatch lines announce method, never results. Portrait: Neet_Portrait.",
+    "driver": "Life route, unnamed in the journey draft; a round-man reporting road weather. No portrait asset - text-only box.",
+    "grandmother": "Life route, unnamed in the journey draft; held the queue since dawn, dialect ('girl'), renegotiates nothing. No portrait asset - text-only box.",
+    "mena": "Mana route, named in the accepted journey draft: the youngest volunteer, poster knowledge confessed like a small crime. No portrait asset - text-only box.",
+    "grower": "Stamina route, unnamed in the journey draft; admits a fact as trouble, no argument. No portrait asset - text-only box.",
+    "gorram": "Stamina route, named in the accepted journey draft: the oldest volunteer, answers 'we will count' with a thirty-years proverb and does not stop hauling. No portrait asset - text-only box."
+  },
+  "factProvenance": {
+    "documented": "Hooks, outcomes, material names (Red/Blue/Yellow herb), and the job (Herbs for the Shrine) are byte-exact from neet-t1-5.json.",
+    "established": "Journey-draft content (the fever-cart round, the mild-row bargain, Mena's watering history and ground test, Gorram and the middle beam) is accepted source material, reused or adapted and never contradicted. Mena and Gorram were checked across the repo: they exist only in the accepted tier-1 journey sources (data/expedition-stories.json carries the same journeys). The click-through pacing follows the approved tier-2 pilot (chapter-click-01).",
+    "newFanWritten": "Scene glue only: the opening frame (op-01, op-02 incl. the shelf-list prop), the option teasers (rephrasing hook facts only), the three departure lines (new Neet dialogue, in voice, no results), the report-start framing sentences, Neet's spoken bargain offer (life-r8) and her spoken taste refusal (mana-r7), the revision-pass additions (the empty-loft inspection beats stamina-r4b/r4c, and the comparative watering-sign test in mana-r8/r9 incl. the water-barrel prop), minor tense/subject adaptations where the speaker field takes over attribution, and the click-gate beat trip-end. No new facts are introduced; additions stage decisions already implied by the journey draft."
+  },
+  "continuityFlags": [
+    "Mana tier-1 speech keeps the journey's phrase 'the year before the labels went'. The hook says 'labels nobody can read anymore' and the outcome re-inks labels, so 'went' reads as 'went unreadable', but a player could hear it as labels removed. Kept byte for now; the owner may prefer 'went pale' in a later pass.",
+    "Mana test upgrade (revision-pass difference from the journey draft): the draft treats the ground's present drainage as the test of Mena's account; the scene now keeps drainage only as corroboration and adds the discriminating evidence - the year-worn haul path from the water barrel to the shaded bed (mana-r8) and the sunward bed's complete lack of watering signs (mana-r9), which is what separates Mena's account from the ledger's story. Mena's contribution, Neet's verdict line, and the outcome are unchanged. No game data touched.",
+    "Stamina pre-load inspection (revision-pass difference from the journey draft): the draft stages no inspection before loading - the beam note was the first sign. The scene now shows the hook's promised empty-loft pass (stamina-r4b/r4c), which finds nothing conclusive ('nothing the eye could fault'), so the loaded beam's note remains the reveal and the middle-beam discovery stays in r11 byte-reused. The hook's promise is honored without contradicting any journey fact. No game data touched.",
+    "Tier-2 op-02 ('a ledger with empty pages') is left untouched here. Tier-1 does not establish a personal ledger for Neet - the bed-ledger is the shrine's book - so no direct conflict, but if openings are ever made progress-aware, the tier-2 opener may want an adapted variant. Flagged, not changed.",
+    "Tier-1 hooks state pre-dispatch acts by habit ('Neet walks the whole shelf...', 'Neet inspects the loft before the first load goes up'). The hooks are quoted byte-exact at the confirm beat; with this revision, the Stamina hook's inspection is now actually shown on screen after the trip. Findings stay post-trip, matching the accepted handling of the tier-2 hooks ('Neet checks the rope twice.').",
+    "Habit development reads forward without contradiction: tier-1 shows proto-habits (walk the shelf before promising; weigh a tray against the hip before speaking; leave a measuring string where the next hand will find it), while tier-2's scale-and-ledger weighing, the leather label roll, and the rope checks develop on. No tier-1 line claims a tier-2 habit and vice versa.",
+    "Neet never recites a customs line outside the byte-exact outcome beats ('Urgent first', the re-inked ink still in use, the rain-guests' bench), and no route references another route, so either play order reads cleanly.",
+    "The shared trip-start line ('whatever happens out there comes home with her') is location-neutral: the Red route's trip legitimately leaves shrine grounds on the settlement round, while Mana and Stamina stay on shrine grounds."
+  ],
+  "flags": [
+    "All five tier-1 side characters (driver, grandmother, Mena, grower, Gorram) have no portrait assets: text-only boxes (portrait 'none-new-side-character'). Owner may commission portraits or keep them text-only.",
+    "Only the choice beat branches, and the route stays locked for that trip. All mechanics (chapter-open trigger, option gating, one-active-route model, trip timer) live in implementationNotes and the choice beat's note, never inside story text.",
+    "Implementation caveat (same standing as chapter-click-01): this is a script draft. Multi-beat click-through playback, option buttons, and the trip timer all need renderer work; nothing here edits game files.",
+    "The confirm box (hook) and the final return box (outcome) are intentionally longer boxes because they quote accepted screen text byte-exact; if the game later shows the outcome on its own completion screen, the out beat can be swapped for that canned screen without breaking the script.",
+    "Pre-dispatch leak discipline is verified below in coverageChecks: no outcome fact may appear in opening, options, confirm, departure, or trip-start boxes."
+  ],
+  "coverageChecks": {
+    "anchors": "Hooks 3/3 and outcomes 3/3 -ceq byte-exact against neet-t1-5.json tier-1 entries (Life/Mana/Stamina).",
+    "byteReuse": "51 journey-draft reuse phrases; all 51 verified present in their own route's journey field AND in the pilot's beat texts (0 beat misses, 0 orphan phrases). Speech conversions (Neet's spoken bargain offer, her spoken taste refusal, Mena's spoken account) keep their byte fragments and are logged in mapping.notes.",
+    "boxLengths": "51 boxes total; all at or under 43 spaced-hyphen tokens - no box exceeds the comfort target. Longest: mana-r8 43, mana-out 43, life-out 41, mana-r2 37.",
+    "preDispatchLeakScan": "10 pre-dispatch boxes (opening 3, trip-start, confirm 3, departure 3) scanned for investigation-result and outcome-owned words: 0 hits. Departures announce method only ('promise nothing until...', 'straighten what is crooked without promising to trust', 'I will walk the loft before the first load goes up').",
+    "outcomeOwnershipScan": "Outcome-exclusive facts (reorder/first kit/'Urgent first'; re-ink/bed-ledger correction; braces/racks/bench/doubled loft/rain-guests) appear only in the byte-exact out beats. Mid-trip journey facts (the unspoken arithmetic, the handshake, the crime confessed, the draining ground, the middle beam) legitimately appear in return beats as journey-owned material, distinct from outcome facts.",
+    "routeIndependenceScan": "0 cross-route character appearances (driver/grandmother only in Life, Mena only in Mana, grower/Gorram only in Stamina); no tier-2 references, no custom recitations outside the out beats.",
+    "beatInventory": "Shared: 3 opening beats (incl. the choice moment with three option texts) + 2 dispatch beats. Life: hook 1 + departure 1 + return 14. Mana: hook 1 + departure 1 + return 12. Stamina: hook 1 + departure 1 + return 15 (incl. the new r4b/r4c pre-load inspection). Final return box of each route = byte-exact outcome.",
+    "fileCheck": "JSON parses clean; ASCII-clean (0 non-ASCII characters)."
+  }
+}

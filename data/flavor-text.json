@@ -1,371 +1,907 @@
 {
-  "source": "https://potionmaker.fandom.com/wiki/Potion/descriptions_and_reviews",
-  "credit": "First 13 Life entries are adaptations of wiki-documented notes. Remaining 62 entries are original fan-written additions, not official game text.",
+  "source": "PotionMaker-REA extracted English_245.bin localization (English.json); potion descriptions keyed by native family and tier.",
+  "credit": "Original descriptions and customer review text are from the APK’s extracted English localization. Expanded lore, supplier notes, and Pio/Tia mastery commentary are new fan-written additions.",
   "entries": {
     "0-0": {
-      "description": "A beginner’s brew with mild healing and no aroma.",
-      "bottle_note": "Keep chilled; use within a day."
+      "description": "Basic red potion. Even beginners can create it. Little efficiency. Odourless.",
+      "bottle_note": "Expiration date: 1 day since the date of purchase. Store in a cool place!",
+      "original_bottle_note": "Expiration date: 1 day since the date of purchase. Store in a cool place!",
+      "customer_review": "",
+      "expanded_lore": "Sample Red Potion takes its color from herbs that sun themselves on warm stone walls; a brief steep leaves their faint pigment in the water and little else. The old label promises a beginner’s brew, and the cool-storage note suits a mixture whose modest strength is best kept fresh.",
+      "supplier_note": "Packed at the Red Herb Cooperative, this lot is sorted for small-batch work. Its first pairing in the ledger is Sample Red Potion. The paired potion’s original label reads: \"Basic red potion. Even beginners can create it. Little efficiency. Odourless.\"",
+      "mastery_commentary": {
+        "Pio": "A beginner's Red Herb steep is modest enough for a first try; the cooperative's “mild” label clearly never met my apron.",
+        "Tia": "Sample Red Potion's plain promise suits sun-warmed Red Herb, though the courier's stain warning now outranks the recipe card."
+      }
     },
     "0-1": {
-      "description": "A sticky little remedy for childhood colds.",
-      "bottle_note": "Ask a physician first."
+      "description": "Small potion for children. Good against colds. Feels slightly sticky.",
+      "bottle_note": "Note: Please consult a doctor before drinking.",
+      "original_bottle_note": "Note: Please consult a doctor before drinking.",
+      "customer_review": "",
+      "expanded_lore": "Sturdy mushrooms gather the cool damp of orchard roots, then soften into Infant HP Potion’s slightly sticky body. The children’s-cold note belongs to a recipe kept small and mild, with the bottle’s cool shelf preserving its gentle texture.",
+      "supplier_note": "Packed at the Red Herb Cooperative, this lot is sorted for small-batch work. Its first pairing in the ledger is Baby HP Potion. The paired potion’s original label reads: \"Small potion for children. Good against colds. Feels slightly sticky.\"",
+      "mastery_commentary": {
+        "Pio": "Sturdy mushroom makes a child-sized, sticky brew; I believed the FRAGILE basket until it objected in writing.",
+        "Tia": "The orchard-root mushrooms give Baby HP Potion its gentle body. I logged the basket complaint under supplier feedback, not potion effects."
+      }
     },
     "0-2": {
-      "description": "A fruity dessert drink with an enthusiastic following.",
-      "bottle_note": "The cap says: better luck next time."
+      "description": "Serve with desserts or snacks. Specifically popular with young women.",
+      "bottle_note": "Result of the last taste-test:\n Yay! More, please!",
+      "original_bottle_note": "Result of the last taste-test:\n Yay! More, please!",
+      "customer_review": "",
+      "expanded_lore": "Fruit of power brings a tart orchard sweetness to Raspberry Potion, which the original label places beside desserts and snacks. Its popularity among young women became a bit of shop folklore: the taste testers always asked for another spoonful before the batch was bottled.",
+      "supplier_note": "Packed at the Red Herb Cooperative, this lot is sorted for small-batch work. Its first pairing in the ledger is Raspberry Potion. The paired potion’s original label reads: \"Serve with desserts or snacks. Specifically popular with young women.\"",
+      "mastery_commentary": {
+        "Pio": "Power fruit makes Raspberry Potion dessert-friendly; I now count berries before tasting, thanks to the invoice.",
+        "Tia": "The terrace fruit has real tartness, unlike my bookkeeping: apparently eating while weighing still counts as inventory loss."
+      }
     },
     "0-3": {
-      "description": "Pocket-sized healing, with a bitter finish.",
-      "bottle_note": "Alex awards three stars for speedy delivery."
+      "description": "Small potion, easy to carry. Minor effect. Tastes a little bitter.",
+      "bottle_note": "",
+      "original_bottle_note": "Customer: Alex \nReview: ★★★\nDrink it quickly, but cautiously!",
+      "customer_review": "Customer: Alex \nReview: ★★★\nDrink it quickly, but cautiously!",
+      "expanded_lore": "Rainbow bird feathers are so light that the smallest HP Potion was made to travel with them; their fine shafts leave a trace of bitterness in the quick steep. Alex’s three-star warning to drink quickly but cautiously has stayed on the label longer than the feathers stay in the cauldron.",
+      "supplier_note": "Packed at the Red Herb Cooperative, this lot is sorted for small-batch work. Its first pairing in the ledger is Small HP Potion. The paired potion’s original label reads: \"Small potion, easy to carry. Minor effect. Tastes a little bitter.\"",
+      "mastery_commentary": {
+        "Pio": "Rainbow feathers keep Small HP Potion pocketable; tickling my nose with one cost me a spoonful and a very undignified sneeze.",
+        "Tia": "I like a portable brew, but the feather supplier's no-tickling policy exists because Pio volunteered for quality control."
+      }
     },
     "0-4": {
-      "description": "A nourishing refreshment with a vegetable-like taste.",
-      "bottle_note": "Avoid bottles with damaged seals or changed contents."
+      "description": "Very nutritious. Very refreshing. Tastes kind of like vegetable juice.",
+      "bottle_note": "If the bottle is deformed or the color of the contents has changed then do not drink!",
+      "original_bottle_note": "If the bottle is deformed or the color of the contents has changed then do not drink!",
+      "customer_review": "",
+      "expanded_lore": "A mineral-flecked rainbow bird’s egg gives Collagen Potion its nourishing, vegetable-juice character, smoothing the brew without hiding its freshness. The original warning about a deformed bottle or changed color became the kitchen’s rule for checking every batch before serving.",
+      "supplier_note": "Packed at the Red Herb Cooperative, this lot is sorted for small-batch work. Its first pairing in the ledger is Collagen Potion. The paired potion’s original label reads: \"Very nutritious. Very refreshing. Tastes kind of like vegetable juice.\"",
+      "mastery_commentary": {
+        "Pio": "Mineral-flecked bird egg gives Collagen Potion its tea-like nourishment; cracked-shell discounts are not an invitation to make soup.",
+        "Tia": "The cliff-nest egg smooths the tonic beautifully. I check every bottle's color now, after the shell fragments tried to join a batch."
+      }
     },
     "0-5": {
-      "description": "A household staple for weary afternoons.",
-      "bottle_note": "Jake gives one star: unpleasant flavor."
+      "description": "Always keep in an upright position. Good against fatigue.",
+      "bottle_note": "",
+      "original_bottle_note": "Customer: Jake\nReview: ★\nThis tastes bad...",
+      "customer_review": "Customer: Jake\nReview: ★\nThis tastes bad...",
+      "expanded_lore": "Strange powder settles into Home HP Potion with the steady weight of a pantry ingredient, while its upright-storage instruction keeps the concentrated mixture from creeping into the stopper. The old promise of help against fatigue is why travelers pack it beside their maps instead of laying it flat.",
+      "supplier_note": "The village carrier wrapped each Strange powder parcel separately and marked Homemade HP Potion as its starting brew. Keep the paper label dry. The paired potion’s original label reads: \"Always keep in an upright position. Good against fatigue.\"",
+      "mastery_commentary": {
+        "Pio": "Strange powder settles into an upright fatigue remedy; the word is a product name, though the dust still makes me cough theatrically.",
+        "Tia": "Home HP Potion behaves best standing up. I added the supplier's “not a grade” reminder after Pio tried to return it as strange."
+      }
     },
     "0-6": {
-      "description": "The traveler’s dependable, unremarkable everyday tonic.",
-      "bottle_note": "Report suspicious potions at the village office."
+      "description": "Potion generally used by travellers. Decent effect, decent taste.",
+      "bottle_note": "Knock-off potions will be reported to the village administration without hesitation.",
+      "original_bottle_note": "Knock-off potions will be reported to the village administration without hesitation.",
+      "customer_review": "",
+      "expanded_lore": "Drunkagora grows by woodland springs, and its mellow root gives Normal HP Potion the balanced taste travelers expect from an everyday flask. “Decent effect, decent taste” is modest praise, but the road ledger shows more of these bottles returned empty than any other.",
+      "supplier_note": "The village carrier wrapped each Drunkagora parcel separately and marked Normal HP Potion as its starting brew. Keep the paper label dry. The paired potion’s original label reads: \"Potion generally used by travellers. Decent effect, decent taste.\"",
+      "mastery_commentary": {
+        "Pio": "Drunkagora's spring-grown root makes Normal HP Potion a travel staple; the shop's drinking-contest rule is not part of the recipe.",
+        "Tia": "Decent taste, dependable flask, and a root with a better reputation than its name suggests—please stop challenging the courier to taste tests."
+      }
     },
     "0-7": {
-      "description": "A surprisingly potent, fizzy favorite.",
-      "bottle_note": "The nutrition panel promises strength without trans fats."
+      "description": "Strongly carbonated. Popular among young people. Surprisingly good effect.",
+      "bottle_note": "Nutrition Data: One potion of 250ml provides +250 stamina, +20 Strength, 0g fat.",
+      "original_bottle_note": "Nutrition Data: One potion of 250ml provides +250 stamina, +20 Strength, 0g fat.",
+      "customer_review": "",
+      "expanded_lore": "Static-prone manticore fur lends Carbonated Cherry Potion its stubborn fizz, while the cherry base keeps the sharp bubbles friendly. The label calls it surprisingly effective; the shop learned to open it over the sink after the first celebratory cork hit the ceiling.",
+      "supplier_note": "The village carrier wrapped each Manticore fur parcel separately and marked Carbonated Cherry Potion as its starting brew. Keep the paper label dry. The paired potion’s original label reads: \"Strongly carbonated. Popular among young people. Surprisingly good effect.\"",
+      "mastery_commentary": {
+        "Pio": "Static-charged manticore fur gives the cherry brew its fizz; we now open it over the sink and aim the cork away from the ceiling.",
+        "Tia": "Carbonated Cherry Potion's bubbles are excellent. The fur is naturally shed, and the manticore is not our barber, Pio."
+      }
     },
     "0-8": {
-      "description": "A handsome oversized bottle for lengthy journeys.",
-      "bottle_note": "A month-long special on the large-bottle range."
+      "description": "Large potion for a long trip. Has a large and beautiful bottle.",
+      "bottle_note": "Produced in large quantities! \n20% off for the next month!",
+      "original_bottle_note": "Produced in large quantities! \n20% off for the next month!",
+      "customer_review": "",
+      "expanded_lore": "The Life ledger keeps Mom’s Heart as a red-sealed letter, whose warm ink is steeped rather than eaten. That infusion gives Large HP Potion the generous, lasting character travelers want; its beautiful bottle was made to go the distance and come home as a keepsake.",
+      "supplier_note": "The village carrier wrapped each Mom's Heart parcel separately and marked Large HP Potion as its starting brew. Keep the paper label dry. The paired potion’s original label reads: \"Large potion for a long trip. Has a large and beautiful bottle.\"",
+      "mastery_commentary": {
+        "Pio": "Mom's Heart is a sealed letter, not a fruit; its generous travel potion tastes warmer when I remember not to read other people's mail.",
+        "Tia": "Large HP Potion can travel far in its keepsake bottle. The supplier ships the letter flat, so please resist searching it for seeds."
+      }
     },
     "0-9": {
-      "description": "A sacred blessing, with fairly ordinary healing.",
-      "bottle_note": "A paladin’s sword-blessing review trails off…"
+      "description": "Holy potion that has received a blessing. Similar effect to normal potion.",
+      "bottle_note": "\"My old sword is as good as new!\"\n●Brother Akai (Paladin)\nJust pour a blessed potion onto a sword to bless it.",
+      "original_bottle_note": "\"My old sword is as good as new!\"\n●Brother Akai (Paladin)\nJust pour a blessed potion onto a sword to bless it.",
+      "customer_review": "",
+      "expanded_lore": "Dancing flower petals turn toward distant music, and their dew gives Blessing HP Potion its clean, bright finish. The recipe borrows the familiar strength of Normal Potion, then adds a ceremonial clarity that made villagers call it holy before the apothecaries did.",
+      "supplier_note": "The village carrier wrapped each Dancing flower parcel separately and marked Blessing HP Potion as its starting brew. Keep the paper label dry. The paired potion’s original label reads: \"Holy potion that has received a blessing. Similar effect to normal potion.\"",
+      "mastery_commentary": {
+        "Pio": "Dancing flowers turn toward music, and Blessing HP Potion catches their dew; the petals are not actually dancing on our invoice.",
+        "Tia": "I brewed this one after the valley song ended. The supplier's paperwork was silent, which is how we know the flowers were off duty."
+      }
     },
     "0-10": {
-      "description": "Sweet fruit suspended in a jelly-like potion.",
-      "bottle_note": "Dungeon monsters may follow its scent."
+      "description": "Fruity Potion that looks like jelly. Very sweet.",
+      "bottle_note": "Note: When opened in a dungeon the smell is likely to gather monsters.",
+      "original_bottle_note": "Note: When opened in a dungeon the smell is likely to gather monsters.",
+      "customer_review": "",
+      "expanded_lore": "S-class strawberry jam is reduced until it sets like soft jelly, giving Strawberry Potion its glossy appearance and unmistakably sweet taste. The discount note on the original label came from the orchard’s oversized harvest; the shop still marks down a jar whenever the berries ripen together.",
+      "supplier_note": "This S Class strawberry jam shipment was weighed by the apothecary before dispatch. The ledger pairs it with Strawberry Potion; the supplier recommends a clean, dry shelf. The paired potion’s original label reads: \"Fruity Potion that looks like jelly. Very sweet.\"",
+      "mastery_commentary": {
+        "Pio": "Slow-cooked S-class jam makes Strawberry Potion glossy; I bought a stubborn lid opener after the tasting panel lost another argument.",
+        "Tia": "The discount came from an oversized harvest, not an inferior brew. I still let Pio open the jar, because apparently he enjoys the challenge."
+      }
     },
     "0-11": {
-      "description": "Briefly borrowed strength, followed by lingering side effects.",
-      "bottle_note": "Repeated doses may blur friend and foe."
+      "description": "This potion to increases power temporarily. Side effects last for 1-2days.",
+      "bottle_note": "Warning: Do not consume multiple potions of this kind per day or it may decrease your intelligence.",
+      "original_bottle_note": "Warning: Do not consume multiple potions of this kind per day or it may decrease your intelligence.",
+      "customer_review": "",
+      "expanded_lore": "The giant bat’s sealed eyeshine lens focuses the short-lived surge in Elixir of Strength, turning a cave-roost curiosity into a measured boost. Its warning about side effects lasting one or two days is printed in larger type than the promise of temporary power, for good reason.",
+      "supplier_note": "This Eye of giant bat shipment was weighed by the apothecary before dispatch. The ledger pairs it with Elixir of Strength; the supplier recommends a clean, dry shelf. The paired potion’s original label reads: \"This potion to increases power temporarily. Side effects last for 1-2days.\"",
+      "mastery_commentary": {
+        "Pio": "A sealed bat eyeshine lens gives Elixir of Strength its brief surge; the double vial and eye-contact warning are both worth respecting.",
+        "Tia": "The cave lens focuses a temporary boost. We follow the supplier's no-touch rule carefully; Pio's side-effect diary is already long enough."
+      }
     },
     "0-12": {
-      "description": "A luminous gift that doubles as decoration.",
-      "bottle_note": "Apparently, this one needs a power socket."
+      "description": "Emits a beautiful red light. Well suited as gift and as interior decoration.",
+      "bottle_note": "Voltage: 220V\nPower Consumption: 300W",
+      "original_bottle_note": "Voltage: 220V\nPower Consumption: 300W",
+      "customer_review": "",
+      "expanded_lore": "Flower fairy wings scatter red light through Shining HP Potion, so the brew glows like a small gift even before it is poured. The original label recommends decoration as much as use; the flower sellers keep one bottle in their window and never let the afternoon sun hit it directly.",
+      "supplier_note": "This Flower fairy wings shipment was weighed by the apothecary before dispatch. The ledger pairs it with Shining HP Potion; the supplier recommends a clean, dry shelf. The paired potion’s original label reads: \"Emits a beautiful red light. Well suited as gift and as interior decoration.\"",
+      "mastery_commentary": {
+        "Pio": "Dawn-caught fairy wings scatter red light through Shining HP Potion; fold them once and the supplier's “fragile” stops sounding poetic.",
+        "Tia": "This glowing bottle belongs in the window, not in a damp pocket. I learned that after one glittering sleeve took all afternoon to brush clean."
+      }
     },
     "0-13": {
-      "description": "Distilled through silver petals, this deep crimson tonic closes scrapes and restores a weary traveler's color.",
-      "bottle_note": "The cork squeaks whenever someone calls it ordinary."
+      "description": "Advanced Potion for veteran travellers. Very effective.",
+      "bottle_note": "Official potion of the Romorie kingdom! This potion has been used in the assault against the undead!",
+      "original_bottle_note": "Official potion of the Romorie kingdom! This potion has been used in the assault against the undead!",
+      "customer_review": "",
+      "expanded_lore": "A cooled fire-dragon fang lends Advanced HP Potion the firm backbone needed for a veteran traveler’s stronger dose. Collectors remove old enamel before shipment, but the old travel label still insists that only experienced hands should carry the finished bottle.",
+      "supplier_note": "This Fang of fire dragon shipment was weighed by the apothecary before dispatch. The ledger pairs it with Advanced HP Potion; the supplier recommends a clean, dry shelf. The paired potion’s original label reads: \"Advanced Potion for veteran travellers. Very effective.\"",
+      "mastery_commentary": {
+        "Pio": "Licensed collectors cool the fire-dragon fang for Advanced HP Potion; its point remains sharp, whatever the veteran label implies.",
+        "Tia": "A veteran recipe still needs wooden tongs. Pio tried to measure the fang by hand; we have retired that experiment from the tasting notes."
+      }
     },
     "0-14": {
-      "description": "A peppery orange-red draught that cools the skin beneath an oven's fiercest breath.",
-      "bottle_note": "Bakers insist it works; their bread remains unimpressed."
+      "description": "Enhances fire resistance. It's also very useful when cooking.",
+      "bottle_note": "A hot pot is no problem any more!",
+      "original_bottle_note": "A hot pot is no problem any more!",
+      "customer_review": "",
+      "expanded_lore": "Red crystal forms where lava meets iron-rich ground, holding warmth without burning away the brew. It gives Fire Resistance Potion its heat-ready character, which is why cooks keep it near the kitchen and mountain guides keep it in a separate pouch.",
+      "supplier_note": "This Red crystal shipment was weighed by the apothecary before dispatch. The ledger pairs it with Fire resistance Potion; the supplier recommends a clean, dry shelf. The paired potion’s original label reads: \"Enhances fire resistance. It's also very useful when cooking.\"",
+      "mastery_commentary": {
+        "Pio": "Lava-cooled red crystal anchors Fire Resistance Potion; keep the heat-proof reagent away from its very ordinary, very flammable packing straw.",
+        "Tia": "The crystal holds warmth without burning the brew. The kitchen crew likes it; the shipping crate did not enjoy our first stove-side test."
+      }
     },
     "0-15": {
-      "description": "Thick with golden roots, this ruby syrup returns warmth to limbs chilled by long expeditions.",
-      "bottle_note": "Shake gently; the sediment dislikes being hurried."
+      "description": "This potion has been concentrated until reaching very high density. Tastes very bitter, but has an enormous effect.",
+      "bottle_note": "When cooking mix with water in a ratio of 10:1 and add sugar.",
+      "original_bottle_note": "When cooking mix with water in a ratio of 10:1 and add sugar.",
+      "customer_review": "",
+      "expanded_lore": "An observatory’s meteor scroll compresses star-map ink into Enriched HP Potion, making a small bottle feel almost too dense for its size. The original note admits the taste is bitter, but the astronomers who first brewed it cared more about the enormous effect than a pleasant sip.",
+      "supplier_note": "The cooperative sends Meteor scroll in sealed paper packets for the Enriched HP Potion recipe. Check the label before opening; the handwriting is famously tiny. The paired potion’s original label reads: \"This potion has been concentrated until reaching very high density. Tastes very bitter, but has an enormous effect.\"",
+      "mastery_commentary": {
+        "Pio": "Meteor ink makes Enriched HP Potion dense and bitter; I keep the scroll away from candles and the navigation desk.",
+        "Tia": "The observatory's scorched star map belongs in a cauldron, not unfolded over a flame. Its flavor is still less dramatic than its density."
+      }
     },
     "0-16": {
-      "description": "A fierce scarlet cordial that lends bruised fighters renewed force and very loud opinions.",
-      "bottle_note": "Not recommended during delicate negotiations or family dinners."
+      "description": "Greatly increases attack power but causes a state of intense anger. Has almost no other side effects.",
+      "bottle_note": "Please be sure to always consult a doctor before drinking.",
+      "original_bottle_note": "Please be sure to always consult a doctor before drinking.",
+      "customer_review": "",
+      "expanded_lore": "A succubus’s tear carries a fierce pulse into Elixir of Rage, raising attack power while leaving the rest of the recipe deliberately spare. Its label’s claim of few side effects is paired with the shop’s old advice to let the drinker cool down before discussing the results.",
+      "supplier_note": "The cooperative sends Succubu`s tear in sealed paper packets for the Elixir of Rage recipe. Check the label before opening; the handwriting is famously tiny. The paired potion’s original label reads: \"Greatly increases attack power but causes a state of intense anger. Has almost no other side effects.\"",
+      "mastery_commentary": {
+        "Pio": "A vow-breaker's tear powers Elixir of Rage; the ampoule is sealed, and so is my opinion that we should not shake it to check its mood.",
+        "Tia": "The sharp pulse suits the attack boost. I let the collector handle the silver vial and let Pio handle the calming conversation afterward."
+      }
     },
     "0-17": {
-      "description": "Stars drift through its rose-colored depths, lending fragile bodies the comfort of morning sunlight.",
-      "bottle_note": "Store away from windows; it tries to greet the moon."
+      "description": "The potion that the gods drink . Exquisite taste and effect. Tastes like heaven.",
+      "bottle_note": "",
+      "original_bottle_note": "Customer: Edward\nReview: ★★★★\nI feel like I am in heaven.",
+      "customer_review": "Customer: Edward\nReview: ★★★★\nI feel like I am in heaven.",
+      "expanded_lore": "Seraph runes copied at sunrise bring a measured harmony to Celestial HP Potion, turning its ingredients into a smooth, almost heavenly drink. The note about exquisite taste was first written by a skeptical baker, who asked for a second cup before admitting the gods might have good taste.",
+      "supplier_note": "The cooperative sends Rune of seraph in sealed paper packets for the Celestial HP Potion recipe. Check the label before opening; the handwriting is famously tiny. The paired potion’s original label reads: \"The potion that the gods drink . Exquisite taste and effect. Tastes like heaven.\"",
+      "mastery_commentary": {
+        "Pio": "Sunrise seraph runes give Celestial HP Potion its polished harmony; singing at the reagent only earns us a damp label.",
+        "Tia": "The choir stone rings at dawn, but the ink is not karaoke paper. I have written “no solos near the brew” beside the exquisite-taste note."
+      }
     },
     "0-18": {
-      "description": "Steeped in forgotten herbs, this dusky brew mends weariness with patient, old-fashioned magic.",
-      "bottle_note": "The recipe predates labels, but the bottle insists on one."
+      "description": "Potion made using an ancient recipe. It's taste is bad beyond imagination, but it can heal every decease.",
+      "bottle_note": "Attention: Can explode when it comes in contact with electricity. Please be careful.",
+      "original_bottle_note": "Attention: Can explode when it comes in contact with electricity. Please be careful.",
+      "customer_review": "",
+      "expanded_lore": "Ancient fire-dragon scales stabilize this old restorative, though they do nothing to soften its famously dreadful flavor. The recipe’s promise to heal every disease is copied from an age when the brewer trusted the scale more than the tongue; modern labels keep both claims and warnings in view.",
+      "supplier_note": "The cooperative sends Fire dragon scale in sealed paper packets for the Ancient HP Potion recipe. Check the label before opening; the handwriting is famously tiny. The paired potion’s original label reads: \"Potion made using an ancient recipe. It's taste is bad beyond imagination, but it can heal every decease.\"",
+      "mastery_commentary": {
+        "Pio": "Ancient scales steady this old restorative, whose flavor is legendary for the wrong reason; gloves beat the tasting panel's clothespin.",
+        "Tia": "The recipe promises an ancient cure, not a pleasant sip. I keep the scale gloves on and let Pio review the flavor from a safe distance."
+      }
     },
     "0-19": {
-      "description": "A regal crimson elixir that steadies failing knees and makes old battle scars shimmer.",
-      "bottle_note": "Heroes praise it; their squires complain about the storytelling afterward."
+      "description": "Legendary potion makes immortal. Almost noone has ever found a bottle of it",
+      "bottle_note": "",
+      "original_bottle_note": "Customer: Red\nReview: ★★★★★\nMy dog loves it!",
+      "customer_review": "Customer: Red\nReview: ★★★★★\nMy dog loves it!",
+      "expanded_lore": "Sage stone gathers a patient mineral pulse around an abandoned hourglass, and the Elixir of Legends is said to turn that stillness into immortality. Almost no one has found a bottle, so the shop’s ledger contains more careful descriptions of the rumor than of the drink itself.",
+      "supplier_note": "The cooperative sends Stone of Sage in sealed paper packets for the Elixir of Legends recipe. Check the label before opening; the handwriting is famously tiny. The paired potion’s original label reads: \"Legendary potion makes immortal. Almost noone has ever found a bottle of it\"",
+      "mastery_commentary": {
+        "Pio": "Sage stone offers immortality by way of a very patient hourglass; the supplier sells minerals, not insurance, and I kept the receipt anyway.",
+        "Tia": "Elixir of Legends has more rumors than customers. If the stone grants eternal life, the returns desk can wait another century."
+      }
     },
     "0-20": {
-      "description": "First light caught in amber glass wakes warmth in even the most exhausted traveler.",
-      "bottle_note": "Uncork at sunrise for best results, or whenever the shop opens."
+      "description": "One of the potions of the Underworld.",
+      "bottle_note": "Effects end at Dawn. Wakes up the true red light of doom within you.",
+      "original_bottle_note": "Effects end at Dawn. Wakes up the true red light of doom within you.",
+      "customer_review": "",
+      "expanded_lore": "A pendant stone from the Underworld’s first-lit cavern lends Elixir of Dawn its strange meeting of shadow and morning. The old note calls it an Underworld potion, though the pale glow on the bottle looks more like daybreak leaking through a crack in the world.",
+      "supplier_note": "The final parcel in this family is tagged for Elixir of Dawn. The supplier asks that Pendant of dawn be stored carefully and the delivery note returned with the next order. The paired potion’s original label reads: \"One of the potions of the Underworld.\"",
+      "mastery_commentary": {
+        "Pio": "Dawn first reaches this Underworld pendant, making the potion a meeting of shadow and morning; it is still not a cave compass.",
+        "Tia": "I followed the pale glow to the upper cavern once. Next time I am bringing a map, a sensible friend, and no assumption that a charm tells time."
+      }
     },
     "0-21": {
-      "description": "Dark ribbons coil inside this forbidden restorative, knitting strength with an unsettling chill.",
-      "bottle_note": "Returns accepted only if the bottle stops whispering your name."
+      "description": "This reagent is used in some experiments.",
+      "bottle_note": "It is packaged beautifully. There seems to be screaming coming from inside the bottle...",
+      "original_bottle_note": "It is packaged beautifully. There seems to be screaming coming from inside the bottle...",
+      "customer_review": "",
+      "expanded_lore": "A trace from a sealed cursed ruby ring gives Bloody Cursed Reagents their red mark for experiments. The original label only says that the reagent is used in some studies; the shop keeps the ring’s unfinished lab notes beside the bottle so no one mistakes it for a finished potion.",
+      "supplier_note": "The final parcel in this family is tagged for Cursed Bloody Reagent. The supplier asks that Cursed Ruby ring be stored carefully and the delivery note returned with the next order. The paired potion’s original label reads: \"This reagent is used in some experiments.\"",
+      "mastery_commentary": {
+        "Pio": "The red glass in this cursed ring carries unfinished lab notes; I file the reagent under experiments and the ring under definitely-not-jewelry.",
+        "Tia": "Bloody Cursed Reagents are for controlled trials. Wearing the sample to the shop got me a replacement invoice and an awkward proposal."
+      }
     },
     "0-22": {
-      "description": "A smoky red tonic grants infernal resilience, though its aftertaste resembles burnt plum jam.",
-      "bottle_note": "Infernal supplier demands praise; customers mostly request smaller spoons."
+      "description": "A potion adventurers use in Underworld.",
+      "bottle_note": "It is much cheaper when purchased in the Underworld. When humans drink it however...",
+      "original_bottle_note": "It is much cheaper when purchased in the Underworld. When humans drink it however...",
+      "customer_review": "",
+      "expanded_lore": "A shaving of warm, ridged demon horn gives Demon’s Minor HP Potion the compact restorative kick adventurers want below ground. Its label is plain about its Underworld use; the horn’s capped ends are a reminder that even a minor dose deserves careful measuring.",
+      "supplier_note": "The final parcel in this family is tagged for Demon's Minor HP Potion. The supplier asks that Demon`s red horn be stored carefully and the delivery note returned with the next order. The paired potion’s original label reads: \"A potion adventurers use in Underworld.\"",
+      "mastery_commentary": {
+        "Pio": "Warm demon-horn shavings make a compact Underworld restorative; keep the caps on unless you want curls of horn in your sleeve.",
+        "Tia": "The red horn needs careful measuring even for a minor dose. Our storeroom no longer accepts “I found it in my cuff” as an inventory method."
+      }
     },
     "0-23": {
-      "description": "A potent garnet serum restores warmth to those touched by an invented crimson blight.",
-      "bottle_note": "The quarantine stamp is decorative; village clerks remain suspicious."
+      "description": "A serum which can cause a wide range of plagues.",
+      "bottle_note": "Who created it and for what purpose is unknown. Has no effect on demons.",
+      "original_bottle_note": "Who created it and for what purpose is unknown. Has no effect on demons.",
+      "customer_review": "",
+      "expanded_lore": "Inactive red plague spores lend Red Plague Serum its wide-ranging experimental profile, but the sealed recipe is kept separate from the ordinary healing shelf. The original note says it can cause many plagues; the guild’s quarantine mark makes clear that this is a study sample, not a remedy.",
+      "supplier_note": "The final parcel in this family is tagged for Red Plague Serum. The supplier asks that Red plague of spore be stored carefully and the delivery note returned with the next order. The paired potion’s original label reads: \"A serum which can cause a wide range of plagues.\"",
+      "mastery_commentary": {
+        "Pio": "Quarantined red spores stay sealed in this plague study; the crimson fungus explains the color, not a reason to open the jar.",
+        "Tia": "This serum is an experiment, not a remedy. Guild containment is comforting; Pio promising “just one look” is not."
+      }
     },
     "0-24": {
-      "description": "A royal scarlet essence renews battered strength while polishing its drinker's posture to perfection.",
-      "bottle_note": "Complaints must be addressed to the reflection in the cap."
+      "description": "The essence of the devil's pride.",
+      "bottle_note": "Looking at the bottle for a long time can be dangerous.",
+      "original_bottle_note": "Looking at the bottle for a long time can be dangerous.",
+      "customer_review": "",
+      "expanded_lore": "Lucifer’s red tears crystallize at a pride shrine and give Red Essence of Pride its concentrated, gleaming finish. The label names the devil’s pride as its essence, while the tiny ampoule reminds every ambitious brewer that a dramatic name still depends on careful glasswork.",
+      "supplier_note": "The final parcel in this family is tagged for Red Essence of Pride. The supplier asks that Lucifer`s red tears be stored carefully and the delivery note returned with the next order. The paired potion’s original label reads: \"The essence of the devil's pride.\"",
+      "mastery_commentary": {
+        "Pio": "Lucifer's red tears give this pride essence its gleam; poetic origins do not make the ampoule any less breakable.",
+        "Tia": "The label claims devilish pride, but the glassmaker deserves credit for keeping it off the ceiling. I store the vial upright and admire it briefly."
+      }
     },
     "1-0": {
-      "description": "A pale blue trial brew that briefly sharpens the mind for beginner spells.",
-      "bottle_note": "Complimentary samples exclude the tiny measuring spoon."
+      "description": "Basic blue potion. Even beginners can create it. Little efficiency. Odourless.",
+      "bottle_note": "Please drink as soon as possible after opening.",
+      "original_bottle_note": "Please drink as soon as possible after opening.",
+      "customer_review": "",
+      "expanded_lore": "Mist-grown blue herbs tint Sample Blue Potion with a cool, quiet color and almost no flavor. The old beginner’s label calls its effect modest, so the shop keeps it as the first lesson in how a simple infusion can still be made cleanly.",
+      "supplier_note": "The Blue Archive Exchange packed this Blue herb lot for careful handling. The dispatch ledger lists Sample Blue Potion as its starting recipe. The paired potion’s original label reads: \"Basic blue potion. Even beginners can create it. Little efficiency. Odourless.\"",
+      "mastery_commentary": {
+        "Pio": "Mist-ravine herbs make the first blue brew quiet and simple; I chilled the lunch after reading the supplier note, not the leaves.",
+        "Tia": "Sample Blue Potion is a clean beginner's infusion. The blue comes from the herb; the icebox is reserved for actual food now."
+      }
     },
     "1-1": {
-      "description": "A soft lavender sip encourages harmless sparks and picture-book daydreams in young apprentices.",
-      "bottle_note": "Please keep away from curtains and excitable grandmothers."
+      "description": "Small potion for children. Good against headaches. Tastes slightly bitter.",
+      "bottle_note": "Note: Please stop fighting and rest after drinking this potion.",
+      "original_bottle_note": "Note: Please stop fighting and rest after drinking this potion.",
+      "customer_review": "",
+      "expanded_lore": "Clever mushrooms hold a mild bitterness from the beechwood rings where they grow, shaping Infant MP Potion into a small, focused dose. The note about children’s headaches inspired the rounded bottle: easy to identify, easy to hold, and difficult to confuse with the stronger blue brews.",
+      "supplier_note": "The Blue Archive Exchange packed this Clever mushroom lot for careful handling. The dispatch ledger lists Baby MP Potion as its starting recipe. The paired potion’s original label reads: \"Small potion for children. Good against headaches. Tastes slightly bitter.\"",
+      "mastery_commentary": {
+        "Pio": "Clever mushroom's beechwood bitterness keeps Infant MP Potion focused; I check under the straw before charging anyone for missing caps.",
+        "Tia": "The little headache potion is mild, and the mushrooms are clever enough to hide. Pio now weighs the basket twice and the straw once."
+      }
     },
     "1-2": {
-      "description": "Sweet forest berries lend this blue cordial a pleasant taste and a flicker of insight.",
-      "bottle_note": "One customer mistook the ink stain for a signature."
+      "description": "Serve with desserts or snacks. Specifically popular with students.",
+      "bottle_note": "Buy now and get one free.\nGreat Deal!",
+      "original_bottle_note": "Buy now and get one free.\nGreat Deal!",
+      "customer_review": "",
+      "expanded_lore": "Wisdom fruit from the university garden gives Blueberry Potion a tart sweetness favored by students. Its snack-time reputation began during exam weeks, when the orchard’s delivery cart would arrive at noon and leave with every basket empty by supper.",
+      "supplier_note": "The Blue Archive Exchange packed this Fruit of wisdom lot for careful handling. The dispatch ledger lists Blueberry Potion as its starting recipe. The paired potion’s original label reads: \"Serve with desserts or snacks. Specifically popular with students.\"",
+      "mastery_commentary": {
+        "Pio": "University-garden wisdom fruit brightens Blueberry Potion; it will not finish homework, though the students have eaten every study guide nearby.",
+        "Tia": "The exam-season orchard makes a tart snack potion. I ordered extra fruit and fewer textbooks after last summer's delivery disappeared."
+      }
     },
     "1-3": {
-      "description": "A thimbleful of clear azure liquid keeps minor charms from slipping out of memory.",
-      "bottle_note": "The bottle is easier to lose than the spell."
+      "description": "Small potion, easy to carry. Minor effect. Tastes a little weird.",
+      "bottle_note": "",
+      "original_bottle_note": "Customer: Maria\nReview: ★★\nI want a refund!",
+      "customer_review": "Customer: Maria\nReview: ★★\nI want a refund!",
+      "expanded_lore": "Bluebird feathers lend Small MP Potion its feather-light body and slightly strange taste. The original label calls it easy to carry and minor in effect; travelers used to tie a blue thread around the stopper so it would not vanish among their notebooks.",
+      "supplier_note": "The Blue Archive Exchange packed this Bluebird feathers lot for careful handling. The dispatch ledger lists Small MP Potion as its starting recipe. The paired potion’s original label reads: \"Small potion, easy to carry. Minor effect. Tastes a little weird.\"",
+      "mastery_commentary": {
+        "Pio": "Bluebird feathers make Small MP Potion feather-light; they also float away during counting, so the invoice includes a quill clause.",
+        "Tia": "This pocket brew travels well, despite its odd taste. I stopped calling escaped feathers free stationery after the supplier corrected me."
+      }
     },
     "1-4": {
-      "description": "Sparkling with powdered quartz, this bracing mineral tonic steadies concentration without much flavor.",
-      "bottle_note": "Do not confuse the decorative pebbles with sweets."
+      "description": "Very nutritious. Very refreshing. Tastes kind of like herbal tea.",
+      "bottle_note": "If the bottle has been shaken the lid may be blown of.",
+      "original_bottle_note": "If the bottle has been shaken the lid may be blown of.",
+      "customer_review": "",
+      "expanded_lore": "A mineral bloom on bluebird eggs smooths Mineral Potion into a refreshing drink that tastes like herbal tea. Its nutritious label came from mountain kitchens, where a warm cup was considered more useful than a lecture about minerals.",
+      "supplier_note": "The Blue Archive Exchange packed this Bluebird's egg lot for careful handling. The dispatch ledger lists Mineral Potion as its starting recipe. The paired potion’s original label reads: \"Very nutritious. Very refreshing. Tastes kind of like herbal tea.\"",
+      "mastery_commentary": {
+        "Pio": "Limestone-fed bluebird eggs lend Mineral Potion its herbal-tea nourishment; we pad them individually and forbid egg towers.",
+        "Tia": "The mineral bloom gives the tonic a gentle finish. Our packaging test proved the tower stable right up until Pio added one more egg."
+      }
     },
     "1-5": {
-      "description": "A kitchen-brewed blue infusion clears sleepy thoughts before letters, ledgers, and simple enchantments.",
-      "bottle_note": "Grandmother says the secret ingredient is proper stirring."
+      "description": "Always keep in an upright position. Good against fever.",
+      "bottle_note": "",
+      "original_bottle_note": "Customer: Ina\nReview: ★★★\nThe potion is difficult to drink.\nHehehe... I totally like it.",
+      "customer_review": "Customer: Ina\nReview: ★★★\nThe potion is difficult to drink.\nHehehe... I totally like it.",
+      "expanded_lore": "Dust from abandoned observatory cupboards gives Home MP Potion a cooling, fever-soothing profile, though the source earned the word “suspicious” before anyone knew its proper name. The upright-bottle note protects the settled powder from gathering at the cork and changing the first pour.",
+      "supplier_note": "A library courier delivered Suspicious powder with the Homemade MP Potion page tucked inside the parcel. Keep both records together until brewing. The paired potion’s original label reads: \"Always keep in an upright position. Good against fever.\"",
+      "mastery_commentary": {
+        "Pio": "Observatory dust keeps Home MP Potion cooling and upright; “suspicious” is in the name, not a substitute for closing the packet.",
+        "Tia": "Abandoned charms made the powder, not a crime scene. I still use the gloves, and the courier still refuses to carry it beside lunch."
+      }
     },
     "1-6": {
-      "description": "A familiar indigo draught restores focus after an afternoon of routine wand practice.",
-      "bottle_note": "The academy buys it in bulk, reluctantly."
+      "description": "Potion generally used by travellers. High effect in comparison to the price.",
+      "bottle_note": "This potion has been brewed according to the Potion and Health Laws. Probably.",
+      "original_bottle_note": "This potion has been brewed according to the Potion and Health Laws. Probably.",
+      "customer_review": "",
+      "expanded_lore": "Whyragora roots follow shaded creeks, lending Normal MP Potion a strong effect without the high price of rare ingredients. Its traveler’s label reads like a bargain notice because the root growers insisted that useful magic should be affordable on ordinary roads.",
+      "supplier_note": "A library courier delivered Whyragora with the Normal MP Potion page tucked inside the parcel. Keep both records together until brewing. The paired potion’s original label reads: \"Potion generally used by travellers. High effect in comparison to the price.\"",
+      "mastery_commentary": {
+        "Pio": "Whyragora roots borrow the creek's rhythm; the whistle when sliced is charming until the whole workshop answers back.",
+        "Tia": "Normal MP Potion tastes like a steady stream, which is fitting. I have asked Pio to stop conducting the roots during inventory."
+      }
     },
     "1-7": {
-      "description": "Bright bubbles tickle the tongue and scatter fresh ideas across the mind.",
-      "bottle_note": "Open slowly unless you want the ceiling to learn spells."
+      "description": "Strongly carbonated. Popular among young people. Barely any effect.",
+      "bottle_note": "Nutrition Data: One potion of 250ml provides +250 mana, +20 intelligence, 0g cholesterol.",
+      "original_bottle_note": "Nutrition Data: One potion of 250ml provides +250 mana, +20 intelligence, 0g cholesterol.",
+      "customer_review": "",
+      "expanded_lore": "Werewolf underfur springs back into shape and helps Carbonated Soda Potion keep a lively foam. The label warns that the effect is slight despite the lively bubbles; the wolf-fur merchants say the best part is the fizz, and the potion makers politely agree.",
+      "supplier_note": "A library courier delivered Werewolf fur with the Carbonated Soda Potion page tucked inside the parcel. Keep both records together until brewing. The paired potion’s original label reads: \"Strongly carbonated. Popular among young people. Barely any effect.\"",
+      "mastery_commentary": {
+        "Pio": "Winter-shed werewolf fur leaves Carbonated Soda Potion with a silver fizz; ethical shedding is nice, but opening it indoors is nicer.",
+        "Tia": "The fur is collected after the molt and the bubbles are fierce. We now point every bottle away from the ceiling fan."
+      }
     },
     "1-8": {
-      "description": "A tall blue flask offers steady magical clarity through drawn-out rituals and tedious meetings.",
-      "bottle_note": "No shelf in the shop is quite tall enough."
+      "description": "Large potion for a long trip. Has a large and beautiful bottle.",
+      "bottle_note": "The potion for the smart adventurer! \n20% off for the next month!",
+      "original_bottle_note": "The potion for the smart adventurer! \n20% off for the next month!",
+      "customer_review": "",
+      "expanded_lore": "In the Mana archive, Dad’s Youth is a blue letter whose careful lines dissolve into a cool, measured brew. Large MP Potion carries that message in a bottle sized for long routes, with a smooth finish that makes the original beautiful-glass label feel deserved.",
+      "supplier_note": "A library courier delivered Dad's Youth with the Large MP Potion page tucked inside the parcel. Keep both records together until brewing. The paired potion’s original label reads: \"Large potion for a long trip. Has a large and beautiful bottle.\"",
+      "mastery_commentary": {
+        "Pio": "Dad's Youth arrives as a blue heart-sealed letter, not an age-reversal guarantee; I keep its corners flat and my expectations sensible.",
+        "Tia": "Large MP Potion travels in a sentimental envelope's story. The supplier boards the parcel carefully because even letters dislike bent corners."
+      }
     },
     "1-9": {
-      "description": "A drop of temple light turns this blue draught serene and surprisingly useful for prayer.",
-      "bottle_note": "Blessed by a priest who forgot where he put the invoice."
+      "description": "Holy potion that has received a blessing. Good effect.",
+      "bottle_note": "\"The monster has been revived!\"\n●Ellen (Bishop)\nJust throw a blessed potion onto a dead monster to revive it.",
+      "original_bottle_note": "\"The monster has been revived!\"\n●Ellen (Bishop)\nJust throw a blessed potion onto a dead monster to revive it.",
+      "customer_review": "",
+      "expanded_lore": "Dreamy flowers collect reflections from pools that mirror the night sky, and their calm scent clarifies Blessing MP Potion. The label praises its holy blessing and good effect, while the night-garden keepers say the clearest batches are picked before dawn.",
+      "supplier_note": "A library courier delivered Dreamy flower with the Blessed MP Potion page tucked inside the parcel. Keep both records together until brewing. The paired potion’s original label reads: \"Holy potion that has received a blessing. Good effect.\"",
+      "mastery_commentary": {
+        "Pio": "Dreamy flowers bloom beside noon-lit night pools; their bedtime scent in Blessing MP Potion makes the storeroom dangerously cozy.",
+        "Tia": "I like the peaceful finish, but not the afternoon nap it inspires. The supplier's blossom crate now gets delivered before lunch."
+      }
     },
     "1-10": {
-      "description": "Purple grape skins give this spell tonic a rich sweetness and unusually vivid mental pictures.",
-      "bottle_note": "A vintner called it excellent, then asked for a refund."
+      "description": "Fruity Potion that looks like jelly. Has an addictive flavour.",
+      "bottle_note": "Note: There are cases where minors became fat by becoming addicted to the potion.",
+      "original_bottle_note": "Note: There are cases where minors became fat by becoming addicted to the potion.",
+      "customer_review": "",
+      "expanded_lore": "S-class grape jam gives Grape Potion its violet gloss and sweet, lingering flavor. The note that it is addictive became a running joke among the tasters, who started logging “one more spoon” as a formal part of quality control.",
+      "supplier_note": "This S Class grape jam was weighed against the archive ledger before it left the storehouse. Its first listed pairing is Grape Potion. The paired potion’s original label reads: \"Fruity Potion that looks like jelly. Has an addictive flavour.\"",
+      "mastery_commentary": {
+        "Pio": "Slow-pressed grape jam gives Grape Potion its violet gloss; the jar stays sealed because wandering fingers are a recurring shop expense.",
+        "Tia": "The batch tastes like a harvest, and the jar lock tastes like a lesson. Pio has been placed on lid duty with supervision."
+      }
     },
     "1-11": {
-      "description": "Velvety sapphire liquid settles scattered thoughts and makes difficult questions feel almost politely answerable.",
-      "bottle_note": "Does not prevent the drinker from asking foolish questions."
+      "description": "Greatly increases intelligence temporarily. It is the favourite of many students.",
+      "bottle_note": "Warning: Consumption may cause you to forget to sleep and to attend exams after learning.",
+      "original_bottle_note": "Warning: Consumption may cause you to forget to sleep and to attend exams after learning.",
+      "customer_review": "",
+      "expanded_lore": "Polished gargoyle stones focus the brief clarity in Elixir of Wisdom, a favorite among students who need to think quickly. The original label says the effect is temporary; exam tutors therefore recommend studying before drinking, advice the students ignore with impressive consistency.",
+      "supplier_note": "This Eye of gargoyle was weighed against the archive ledger before it left the storehouse. Its first listed pairing is Elixir of Wisdom. The paired potion’s original label reads: \"Greatly increases intelligence temporarily. It is the favourite of many students.\"",
+      "mastery_commentary": {
+        "Pio": "Storm-loosened gargoyle lenses focus Elixir of Wisdom; they're polished stone, not eyes, so please stop asking whether they blink.",
+        "Tia": "A rooftop statue's old lens makes a clever temporary boost. I corrected the label after three customers tried to wave at it."
+      }
     },
     "1-12": {
-      "description": "A glow like bottled starlight guides wandering ideas back into a spellcaster's grasp.",
-      "bottle_note": "Cover after bedtime; neighboring owls have filed complaints."
+      "description": "Emits a beautiful blue light. Well suited as gift and as interior decoration.",
+      "bottle_note": "Voltage: 220V\nPower Consumption: 300W",
+      "original_bottle_note": "Voltage: 220V\nPower Consumption: 300W",
+      "customer_review": "",
+      "expanded_lore": "Lake fairy wings refract blue light through Shining MP Potion, creating a cool glow without clouding the liquid. The old gift-and-decoration label made the bottle popular at lakeside festivals, where lantern makers would borrow one for a night and return it at sunrise.",
+      "supplier_note": "This Lake fairy wings was weighed against the archive ledger before it left the storehouse. Its first listed pairing is Shining MP Potion. The paired potion’s original label reads: \"Emits a beautiful blue light. Well suited as gift and as interior decoration.\"",
+      "mastery_commentary": {
+        "Pio": "Lake-fairy wings tint Shining MP Potion blue; I store them away from heavy books, including my increasingly large recipe journal.",
+        "Tia": "The moonlit-reed harvest glows beautifully until a book lands on it. My new storage rule has a weight limit and a Pio exception."
+      }
     },
     "1-13": {
-      "description": "Refined beneath a glass moon, this deep blue potion lends precision to ambitious incantations.",
-      "bottle_note": "The etched instructions require excellent eyesight or a magnifying charm."
+      "description": "Advanced Potion for veteran travellers. Very effective.",
+      "bottle_note": "Official potion of the Romorie kingdom! This potion has been used in the great drake hunt!",
+      "original_bottle_note": "Official potion of the Romorie kingdom! This potion has been used in the great drake hunt!",
+      "customer_review": "",
+      "expanded_lore": "A water-dragon fang, worn smooth by river currents, gives Advanced MP Potion its seasoned strength. Veteran travelers prize the high effect, but the sealed tin is a quiet reminder that a fine ingredient can still arrive with a sharp edge.",
+      "supplier_note": "This Fang of water dragon was weighed against the archive ledger before it left the storehouse. Its first listed pairing is Advanced MP Potion. The paired potion’s original label reads: \"Advanced Potion for veteran travellers. Very effective.\"",
+      "mastery_commentary": {
+        "Pio": "River-worn water-dragon fang gives Advanced MP Potion a veteran's edge; paper sacks lose every argument with its tip.",
+        "Tia": "The current polished the enamel, not the point. I replaced the paper wrapping with a case and called it a modest upgrade."
+      }
     },
     "1-14": {
-      "description": "An oddly warming sapphire brew keeps fingers nimble while frost spells whisper through the air.",
-      "bottle_note": "Leave beside the hearth; it prefers the irony."
+      "description": "Enhances frost resistance. It's also useful for climbing mountains.",
+      "bottle_note": "Finally it is possible to eat the ice cream in one bite!",
+      "original_bottle_note": "Finally it is possible to eat the ice cream in one bite!",
+      "customer_review": "",
+      "expanded_lore": "Glacier-grown blue crystal anchors Frost Resistance Potion in a cold, crisp finish. Mountain climbers found it useful not only for frost but for long ascents, where the clear bottle made it easy to spot in a snow-packed kit.",
+      "supplier_note": "This Blue crystal was weighed against the archive ledger before it left the storehouse. Its first listed pairing is Frost resistance Potion. The paired potion’s original label reads: \"Enhances frost resistance. It's also useful for climbing mountains.\"",
+      "mastery_commentary": {
+        "Pio": "Glacier melt seals the blue crystal into Frost Resistance Potion; it is cold mineral, not candy, despite its very convincing color.",
+        "Tia": "I keep the frosty reagent in its padded tin and away from the snack shelf. Pio's first taste-test request was denied on sight."
+      }
     },
     "1-15": {
-      "description": "Concentrated blue petals dissolve into a silken draught that sustains careful, intricate spellwork.",
-      "bottle_note": "Sediment forms tiny runes nobody has managed to translate."
+      "description": "This potion has been concentrated until reaching very high density. Tastes very bitter, but has an enormous effect.",
+      "bottle_note": "When cooking mix with water in a ratio of 10:1 and add sugar.",
+      "original_bottle_note": "When cooking mix with water in a ratio of 10:1 and add sugar.",
+      "customer_review": "",
+      "expanded_lore": "Blizzard scroll runes compress into Enriched MP Potion with remarkable density, though the result is bitter enough to make the first sip memorable. The scribes who wrote the scrolls called that bitterness a fair trade for an enormous effect; the brewers still offer water on the side.",
+      "supplier_note": "The supplier sealed Blizzard scroll in a dry wrapper and marked the parcel for Enriched MP Potion. The note says to keep the ink away from the cauldron. The paired potion’s original label reads: \"This potion has been concentrated until reaching very high density. Tastes very bitter, but has an enormous effect.\"",
+      "mastery_commentary": {
+        "Pio": "Blizzard scroll dissolves into a dense, bitter MP brew; the supplier's warmth warning is why this recipe has its own cool cupboard.",
+        "Tia": "Frost-silk ink is lovely until thaw season. I wrote the storage instructions twice because Pio keeps checking the scroll by candlelight."
+      }
     },
     "1-16": {
-      "description": "A cloudless blue elixir quiets racing thoughts without dulling a mage's curiosity.",
-      "bottle_note": "Customer returned it because the silence felt suspicious."
+      "description": "This potion calms the user and greatly enhances his concentration and ability to judge. Has almost no side effects.",
+      "bottle_note": "Please be sure to always consult a doctor before drinking.",
+      "original_bottle_note": "Please be sure to always consult a doctor before drinking.",
+      "customer_review": "",
+      "expanded_lore": "A siren’s tear steadies Elixir of Calmness at the point where a song fades into silence. The note promises better judgment and concentration with few side effects, so the shop tells customers to take a quiet moment before making any important decision.",
+      "supplier_note": "The supplier sealed Siren's Tear in a dry wrapper and marked the parcel for Elixir of Calmness. The note says to keep the ink away from the cauldron. The paired potion’s original label reads: \"This potion calms the user and greatly enhances his concentration and ability to judge. Has almost no side effects.\"",
+      "mastery_commentary": {
+        "Pio": "A siren's tear caught at the song's silence steadies Elixir of Calmness; the ampoule is sound-stoppered, so we whisper around it.",
+        "Tia": "The concentration tonic's quiet origin suits the result. I only wish the shop could bottle the silence after Pio hears the supplier note."
+      }
     },
     "1-17": {
-      "description": "Silver constellations swim in liquid midnight, arranging stray thoughts into graceful patterns of magic.",
-      "bottle_note": "Do not shake; astronomers dislike having their maps rearranged."
+      "description": "The potion that the gods drink . Exquisite taste and effect. Tastes like heaven.",
+      "bottle_note": "",
+      "original_bottle_note": "Customer: Leah\nReview: ★★★\nDelivery takes pretty long.",
+      "customer_review": "Customer: Leah\nReview: ★★★\nDelivery takes pretty long.",
+      "expanded_lore": "Cherub runes lend Celestial MP Potion its polished harmony and exquisite taste. The label says gods drink it; the marble-carving apprentices who copied the recipe say its real miracle is getting everyone at the table to agree on a second serving.",
+      "supplier_note": "The supplier sealed Runes of cherub in a dry wrapper and marked the parcel for Celestial MP Potion. The note says to keep the ink away from the cauldron. The paired potion’s original label reads: \"The potion that the gods drink . Exquisite taste and effect. Tastes like heaven.\"",
+      "mastery_commentary": {
+        "Pio": "Cherub runes copied from a warm marble cradle make a divine brew; the parcel contains vellum, not a miniature nursery.",
+        "Tia": "The gods may drink it, but the supplier shipped only the ink. I logged Pio's request for a cradle-shaped crate as nonessential."
+      }
     },
     "1-18": {
-      "description": "Made from a scholar's lost formula, this murky blue brew recalls forgotten magical principles.",
-      "bottle_note": "The instructions are written in a language the bottle claims to know."
+      "description": "Potion made using an ancient recipe. It's taste is bad beyond imagination, but it gives eternal magical power.",
+      "bottle_note": "Attention: May summon monsters when being shaken.",
+      "original_bottle_note": "Attention: May summon monsters when being shaken.",
+      "customer_review": "",
+      "expanded_lore": "Water-dragon scales polished by underground streams stabilize Ancient MP Potion and its promise of lasting magical power. The ancient recipe offers a wonder the modern labels cannot verify, while the blue scales leave a clear trail back to its deep-cave origins.",
+      "supplier_note": "The supplier sealed Water dragon scale in a dry wrapper and marked the parcel for Ancient MP Potion. The note says to keep the ink away from the cauldron. The paired potion’s original label reads: \"Potion made using an ancient recipe. It's taste is bad beyond imagination, but it gives eternal magical power.\"",
+      "mastery_commentary": {
+        "Pio": "Underground streams polish the ancient water-dragon scales; dry gloves are sensible, since wet scales have no interest in staying put.",
+        "Tia": "This old recipe slips through careless hands. I placed the scale beside a towel and the apprentice beside a reminder."
+      }
     },
     "1-19": {
-      "description": "A pearlescent potion opens doorways in the imagination, where impossible spells first take shape.",
-      "bottle_note": "Dream creatures are not eligible for the loyalty card."
+      "description": "This potion will give the user all knowledge in the world when drunk. Almost noone has ever found a bottle of it.",
+      "bottle_note": "",
+      "original_bottle_note": "Customer: Gray\nReview: ★★★★★\nThat's a really good deal!",
+      "customer_review": "Customer: Gray\nReview: ★★★★★\nThat's a really good deal!",
+      "expanded_lore": "Deep-sea stone is said to hold a compressed memory of the ocean floor, and Elixir of Fantasy turns that legend into a promise of all knowledge. Almost no bottle has been found, which leaves more room for scholars to argue about what the first sip would reveal.",
+      "supplier_note": "The supplier sealed Stone of Deep-sea in a dry wrapper and marked the parcel for Elixir of Fantasy. The note says to keep the ink away from the cauldron. The paired potion’s original label reads: \"This potion will give the user all knowledge in the world when drunk. Almost noone has ever found a bottle of it.\"",
+      "mastery_commentary": {
+        "Pio": "Deep-sea stone promises all knowledge, but the supplier cannot find the receipt; the ocean keeps better records than our storeroom.",
+        "Tia": "Elixir of Fantasy has a very ambitious label. The stone declined to reveal its tracking number, so I filed a missing parcel report."
+      }
     },
     "1-20": {
-      "description": "A pale horizon glimmers within this elixir, granting fresh focus after long nights of study.",
-      "bottle_note": "Morning birds gather nearby, hoping to borrow its brightness."
+      "description": "One of the potions of the Underworld.",
+      "bottle_note": "The potion will make you unable to communicate with anyone causing a deep feeling of loneliness until the blue light rises.",
+      "original_bottle_note": "The potion will make you unable to communicate with anyone causing a deep feeling of loneliness until the blue light rises.",
+      "customer_review": "",
+      "expanded_lore": "A daybreak pendant found beneath an Underworld cavern roof lends Elixir of Daybreak its blue seam of morning light. Its label calls it an Underworld potion, a contradiction the miners explain by saying dawn can reach even the deepest road.",
+      "supplier_note": "This late-tier Pendant of daybreak arrives with a ledger copy for Elixir of Daybreak. The archive asks that the label remain attached until the parcel is used. The paired potion’s original label reads: \"One of the potions of the Underworld.\"",
+      "mastery_commentary": {
+        "Pio": "Daybreak forms beneath an Underworld roof; this pendant glows at odd hours, which is not permission to wake the neighbors.",
+        "Tia": "I like the blue dawn seam in this potion. The miners use a map; Pio tried following the pendant and met the same wall twice."
+      }
     },
     "1-21": {
-      "description": "Ash flecks whirl through haunted blue fluid, revealing secrets best handled with cautious curiosity.",
-      "bottle_note": "Never pour near open books; the margins begin arguing."
+      "description": "This reagent is used in some experiments.",
+      "bottle_note": "It is packaged beautifully. There seems to be screaming coming from inside the bottle...",
+      "original_bottle_note": "It is packaged beautifully. There seems to be screaming coming from inside the bottle...",
+      "customer_review": "",
+      "expanded_lore": "A shaving from a cursed sapphire ring marks Ashy Cursed Reagents for controlled experiments. The original label is sparse because no one agreed what the studies were for; the blue glass and ash-gray residue became the only reliable clues.",
+      "supplier_note": "This late-tier Cursed Sapphire Ring arrives with a ledger copy for Cursed Ashen Reagents. The archive asks that the label remain attached until the parcel is used. The paired potion’s original label reads: \"This reagent is used in some experiments.\"",
+      "mastery_commentary": {
+        "Pio": "The sapphire ring is glued to the experimental tag; I stopped Pio from prying it off after reading the supplier's paperwork curse.",
+        "Tia": "Ashy Cursed Reagents have unfinished lab history and no jewelry bonus. The ring stays with the sample, and the proposal forms stay elsewhere."
+      }
     },
     "1-22": {
-      "description": "Cold cobalt fire sharpens infernal spellcraft while leaving the tongue tasting faintly of soot.",
-      "bottle_note": "A tiny contract appears beneath the label when warmed."
+      "description": "A potion adventurers use in Underworld.",
+      "bottle_note": "It is much cheaper when purchased in the Underworld. When humans drink it however...",
+      "original_bottle_note": "It is much cheaper when purchased in the Underworld. When humans drink it however...",
+      "customer_review": "",
+      "expanded_lore": "Blue demon horn dust gives Demon’s Minor MP Potion a measured lift for adventurers below ground. The compact recipe avoids grand promises, and the double-bagged powder tells a more practical story: the smallest dose is still worth keeping where it belongs.",
+      "supplier_note": "This late-tier Demon's blue horn arrives with a ledger copy for Demon's Minor MP Potion. The archive asks that the label remain attached until the parcel is used. The paired potion’s original label reads: \"A potion adventurers use in Underworld.\"",
+      "mastery_commentary": {
+        "Pio": "Cool blue horn dust gives the minor MP brew a measured lift; the double bag keeps the whole shop from sneezing cobalt.",
+        "Tia": "Underworld adventurers get a tidy boost. I wear the mask, while Pio has been banned from naming the sneeze after himself."
+      }
     },
     "1-23": {
-      "description": "This spectral blue serum restores coherence to thoughts muddled by a mythical dreaming sickness.",
-      "bottle_note": "Keep separate from lullabies; the contents grow unusually drowsy."
+      "description": "A serum which can cause a wide range of plagues.",
+      "bottle_note": "Who created it and for what purpose is unknown. Has no effect on demons.",
+      "original_bottle_note": "Who created it and for what purpose is unknown. Has no effect on demons.",
+      "customer_review": "",
+      "expanded_lore": "Cobalt plague spores are neutralized before they enter Blue Plague Serum, whose purpose remains experimental rather than medicinal. The old label warns of a wide range of plagues; the moonlit cave garden explains the color, not the danger, so the sealed sample stays under guild supervision.",
+      "supplier_note": "This late-tier Blue plague of spore arrives with a ledger copy for Blue Plague Serum. The archive asks that the label remain attached until the parcel is used. The paired potion’s original label reads: \"A serum which can cause a wide range of plagues.\"",
+      "mastery_commentary": {
+        "Pio": "Cobalt plague spores remain sealed and experimental; “inactive” is a containment status, not an invitation to peek.",
+        "Tia": "The moonlit cave explains the blue lace, not the serum's purpose. I posted the guild's warning at eye level for curious Pio."
+      }
     },
     "1-24": {
-      "description": "A majestic blue essence lends command over elusive spells and an unfortunate fondness for speeches.",
-      "bottle_note": "The mirror seal approves every incantation, even the dreadful ones."
+      "description": "The essence of the devil's pride.",
+      "bottle_note": "Looking at the bottle for a long time can be dangerous.",
+      "original_bottle_note": "Looking at the bottle for a long time can be dangerous.",
+      "customer_review": "",
+      "expanded_lore": "Lucifer’s blue tears crystallize beside a cold spring and lend Blue Essence of Pride its sharp, mirror-like finish. The devil’s-pride note sounds grand, but the bottle’s reflection is humble enough to show every fingerprint left by the brewer.",
+      "supplier_note": "This late-tier Lucifer's blue tears arrives with a ledger copy for Blue Essence of Pride. The archive asks that the label remain attached until the parcel is used. The paired potion’s original label reads: \"The essence of the devil's pride.\"",
+      "mastery_commentary": {
+        "Pio": "Blue tears mirror the spring beside the pride shrine; fingerprints show up instantly, so I have made Pio admire the bottle hands-free.",
+        "Tia": "The devil's-pride label is dramatic, the glass is ordinary, and the reflection is unforgiving. I keep a cloth beside the display."
+      }
     },
     "2-0": {
-      "description": "A sunny beginner's tonic lends enough spring to finish ordinary chores with a smile.",
-      "bottle_note": "Sample bottles are not intended for marathon sweeping."
+      "description": "Basic yellow potion. Even beginners can create it. Little efficiency. Odourless.",
+      "bottle_note": "Date of expiry: see bottleneck\nManufacturer: Pio",
+      "original_bottle_note": "Date of expiry: see bottleneck\nManufacturer: Pio",
+      "customer_review": "",
+      "expanded_lore": "Yellow herbs face the sun across windy hills, giving Sample Yellow Potion a bright tint and plain beginner’s character. The original label promises little efficiency, and the shop treats that as a useful first lesson: a clear recipe does not need a grand claim.",
+      "supplier_note": "The Golden Road Supply cart packed Yellow herb for the Sample Yellow Potion recipe. The driver’s note says the parcel traveled better than the cart. The paired potion’s original label reads: \"Basic yellow potion. Even beginners can create it. Little efficiency. Odourless.\"",
+      "mastery_commentary": {
+        "Pio": "Wind-facing yellow herbs make a plain starter brew; I straighten the crooked stalks only because the supplier says the pile is satisfying.",
+        "Tia": "Sample Yellow Potion asks for little, and so do the herbs. I leave their crooked stems alone unless the courier needs a morale boost."
+      }
     },
     "2-1": {
-      "description": "This mild golden syrup makes small feet eager for another lap around the garden.",
-      "bottle_note": "Keep the lid tight; the nursery already has enough excitement."
+      "description": "Small potion for children. Good against stomach pain. Tastes slightly sweet.",
+      "bottle_note": "Note: May cause some stomach pain. It's temporary and harmless.",
+      "original_bottle_note": "Note: May cause some stomach pain. It's temporary and harmless.",
+      "customer_review": "",
+      "expanded_lore": "Lively mushrooms rise after summer rain, bringing a sweet, buoyant softness to Infant SP Potion. Its note about stomach pain and mild sweetness came from village kitchens, where the smallest cup was served after the storm passed.",
+      "supplier_note": "The Golden Road Supply cart packed Lively mushroom for the Infant SP Potion recipe. The driver’s note says the parcel traveled better than the cart. The paired potion’s original label reads: \"Small potion for children. Good against stomach pain. Tastes slightly sweet.\"",
+      "mastery_commentary": {
+        "Pio": "Rain-buoyant mushrooms soften Infant SP Potion; the lid stays shut because the aroma is lively enough without a basket chase.",
+        "Tia": "A gentle stomach-friendly cup follows the storm. I believe the mushrooms only smell lively, though the basket has filed a different account."
+      }
     },
     "2-2": {
-      "description": "Sweet orange peel brightens a cheerful draught for messengers with errands left to run.",
-      "bottle_note": "Best served cool, according to three overheated couriers."
+      "description": "Serve with desserts or snacks. Specifically popular with young men.",
+      "bottle_note": "Free shipping if you purchase the 6-pack!",
+      "original_bottle_note": "Free shipping if you purchase the 6-pack!",
+      "customer_review": "",
+      "expanded_lore": "Spirit fruit from an old festival orchard lends Orange Potion its lively citrus sweetness. The label says young men favor it with snacks, a tradition the orchard insists began when festival guests kept taking the orange slices home.",
+      "supplier_note": "The Golden Road Supply cart packed Fruit of spirit for the Orange Potion recipe. The driver’s note says the parcel traveled better than the cart. The paired potion’s original label reads: \"Serve with desserts or snacks. Specifically popular with young men.\"",
+      "mastery_commentary": {
+        "Pio": "Festival-orchard spirit fruit gives Orange Potion its citrus cheer; I label the invoice before the perfume starts billing as a customer.",
+        "Tia": "Young snackers like this bright potion. The fruit's scent is stronger than our clerk's filing system, so every receipt gets sealed first."
+      }
     },
     "2-3": {
-      "description": "A thumb-sized yellow dose loosens stiff legs after climbing too many village stairs.",
-      "bottle_note": "The label recommends resting anyway, which customers find unhelpful."
+      "description": "Small potion, easy to carry. Minor effect. Tastes a little sour.",
+      "bottle_note": "",
+      "original_bottle_note": "Customer: Kane\nReview: ★★\nCan I get a discount if I write a review?",
+      "customer_review": "Customer: Kane\nReview: ★★\nCan I get a discount if I write a review?",
+      "expanded_lore": "Wyvern feathers leave Small SP Potion light enough for a pocket and add a clean sour edge to the compact brew. The original label promises only a minor effect, so couriers like it for the journey rather than for dramatic rescues.",
+      "supplier_note": "The Golden Road Supply cart packed Wyvern feathers for the Small SP Potion recipe. The driver’s note says the parcel traveled better than the cart. The paired potion’s original label reads: \"Small potion, easy to carry. Minor effect. Tastes a little sour.\"",
+      "mastery_commentary": {
+        "Pio": "Cliff-updraft wyvern feathers keep Small SP Potion portable; they are packed spine-first, and definitely not a fan for customers.",
+        "Tia": "A sour little travel boost is useful; a feather fan is not. I have charged Pio by weight after he waved half the shipment away."
+      }
     },
     "2-4": {
-      "description": "Golden herbs and orchard greens make a lively tonic for dull, dragging mornings.",
-      "bottle_note": "The herbalist insists the grassy smell means quality."
+      "description": "Very nutritious. Very refreshing. Tastes kind of like vitamin tea.",
+      "bottle_note": "Warning: Be careful when handling the bottle. Do not shake!",
+      "original_bottle_note": "Warning: Be careful when handling the bottle. Do not shake!",
+      "customer_review": "",
+      "expanded_lore": "A golden bloom on wyvern eggs gives Vitamin Potion its nourishing, refreshing taste of vitamin tea. The mountain keepers used to brew it for dawn watches, when a warm cup was easier to pass around than a basket of whole eggs.",
+      "supplier_note": "The Golden Road Supply cart packed Wyvern's egg for the Vitamin Potion recipe. The driver’s note says the parcel traveled better than the cart. The paired potion’s original label reads: \"Very nutritious. Very refreshing. Tastes kind of like vitamin tea.\"",
+      "mastery_commentary": {
+        "Pio": "Sunlit wyvern eggs make Vitamin Potion taste like nourishing tea; the crate has survived, though the courier still holds it with both hands.",
+        "Tia": "I served the golden brew at dawn watch. The shells are sturdy until gravity gets involved, a distinction now printed on our packing sheet."
+      }
     },
     "2-5": {
-      "description": "A honey-colored kitchen brew lends tired hands the resolve to finish the washing.",
-      "bottle_note": "Uncle Finn claims it also improves his singing; nobody agrees."
+      "description": "Always keep in an upright position. Good against sleeping problems.",
+      "bottle_note": "",
+      "original_bottle_note": "Customer: Olive\nReview: ★★★★ \nGood when you're tired!",
+      "customer_review": "Customer: Olive\nReview: ★★★★ \nGood when you're tired!",
+      "expanded_lore": "Guild-stabilized Dangerous powder gives Home SP Potion a wakeful warmth suited to sleepless nights. The upright-storage instruction protects its concentrated base, while its source name preserves the warning that made the first collectors handle the seedpods with care.",
+      "supplier_note": "A route clerk recorded Dangerous powder beside Homemade SP Potion before the wagon left town. Store the delivery slip with the batch record. The paired potion’s original label reads: \"Always keep in an upright position. Good against sleeping problems.\"",
+      "mastery_commentary": {
+        "Pio": "Guild-stabilized storm-seed powder keeps Home SP Potion wakeful; its old name is a warning, not permission to test it near sparks.",
+        "Tia": "The upright packet belongs nowhere near a flame. I told Pio the guild made it safe for brewing, not for dramatic lantern tricks."
+      }
     },
     "2-6": {
-      "description": "This plain yellow pick-me-up keeps weary travelers walking comfortably until the next inn.",
-      "bottle_note": "Popular with caravan guards, unpopular with sore boots."
+      "description": "Potion generally used by travellers. Slightly too expensive compared to its effect.",
+      "bottle_note": "Do not drink if you suspect that the bottle has been tempered with. In that case demand a refund!",
+      "original_bottle_note": "Do not drink if you suspect that the bottle has been tempered with. In that case demand a refund!",
+      "customer_review": "",
+      "expanded_lore": "Whatdragora roots grow where trails cross, absorbing a different scent from each road. Their versatile broth gives Normal SP Potion a modest lift, though the original label’s price complaint suggests the root growers charged more for the story than the effect.",
+      "supplier_note": "A route clerk recorded Whatdragora beside Normal SP Potion before the wagon left town. Store the delivery slip with the batch record. The paired potion’s original label reads: \"Potion generally used by travellers. Slightly too expensive compared to its effect.\"",
+      "mastery_commentary": {
+        "Pio": "Whatdragora grows where three trails cross and lends Normal SP Potion a road-worn lift; the root has no map, despite the name.",
+        "Tia": "I asked this root for directions and got a very good travel potion instead. The supplier still charges nothing for the story, thankfully."
+      }
     },
     "2-7": {
-      "description": "Tart lemon fizz puts a bounce in sluggish steps and a sparkle on the tongue.",
-      "bottle_note": "Unscrew over the sink; the bubbles are eager to escape."
+      "description": "Strongly carbonated. Popular among young people. Major effect.",
+      "bottle_note": "Nutrition Data: One potion of 250ml provides +250 energy, +20 endurance, 0g saturated fat.",
+      "original_bottle_note": "Nutrition Data: One potion of 250ml provides +250 energy, +20 endurance, 0g saturated fat.",
+      "customer_review": "",
+      "expanded_lore": "Kobold winter fur gathered from empty basalt dens lends Carbonated Lemon Potion a crisp fizz and a stronger kick than its cheerful bubbles suggest. The shop’s first tasting notes called it “a surprise in a yellow bottle,” then quietly reordered the whole crate.",
+      "supplier_note": "A route clerk recorded Kobold fur beside Carbonated Lemon Potion before the wagon left town. Store the delivery slip with the batch record. The paired potion’s original label reads: \"Strongly carbonated. Popular among young people. Major effect.\"",
+      "mastery_commentary": {
+        "Pio": "Basalt-dwelling kobold fur adds lemony fizz to Carbonated Lemon Potion; the dens are empty, but I still use the sample tongs.",
+        "Tia": "The fur's crisp mineral note hides a strong kick. I check dark crevices with a tool, because surprise kobolds are not on the invoice."
+      }
     },
     "2-8": {
-      "description": "A generous flask of liquid sunshine sustains long hikes across hills and muddy roads.",
-      "bottle_note": "The carrying strap costs extra and occasionally carries itself."
+      "description": "Large potion for a long trip. Has a large and beautiful bottle.",
+      "bottle_note": "The Dungeon Explorer Special! Buy it now! \n20% off for the next month!",
+      "original_bottle_note": "The Dungeon Explorer Special! Buy it now! \n20% off for the next month!",
+      "customer_review": "",
+      "expanded_lore": "Uncle’s Mystery is a yellow, heart-sealed letter with no clear explanation of who sent it or why. The ink lends Large SP Potion a bright, steady lift for long trips, and the elegant bottle looks rather more certain than the story behind its contents.",
+      "supplier_note": "A route clerk recorded Uncle's Mystery beside Large SP Potion before the wagon left town. Store the delivery slip with the batch record. The paired potion’s original label reads: \"Large potion for a long trip. Has a large and beautiful bottle.\"",
+      "mastery_commentary": {
+        "Pio": "Uncle's Mystery is a golden heart-sealed letter, and Large SP Potion keeps its ink's identity secret; the postage stamp knows too much.",
+        "Tia": "I checked that envelope for fruit twice; it's paper, ink, and one nosy stamp. The long-trip bottle somehow tells a clearer story."
+      }
     },
     "2-9": {
-      "description": "A warm temple-made tonic gives pilgrims the endurance to reach one more roadside shrine.",
-      "bottle_note": "Clerics recommend sensible footwear alongside the blessing."
+      "description": "Holy potion that has received a blessing. Surprisingly effective.",
+      "bottle_note": "\"My hair grew back!\"\n ●Saitama (village resident) \n Just pour a blessed potion onto where you want hair to grow.",
+      "original_bottle_note": "\"My hair grew back!\"\n ●Saitama (village resident) \n Just pour a blessed potion onto where you want hair to grow.",
+      "customer_review": "",
+      "expanded_lore": "Singing flowers vibrate in the wind beside an old stone stage, and their nectar brightens Blessing SP Potion. The note calls it surprisingly effective; the stage keeper says the best harvest comes after the last song, when the petals are still humming.",
+      "supplier_note": "A route clerk recorded Singing flower beside Blessed SP Potion before the wagon left town. Store the delivery slip with the batch record. The paired potion’s original label reads: \"Holy potion that has received a blessing. Surprisingly effective.\"",
+      "mastery_commentary": {
+        "Pio": "Singing flowers leave a bright resonance in Blessing SP Potion; I vent the crate, then close the window before the petals escape.",
+        "Tia": "The old stage supplies nectar and the breeze supplies the song. I collect after the show, not during Pio's enthusiastic encore."
+      }
     },
     "2-10": {
-      "description": "This puzzling yellow potion lends restless wanderers stamina whenever they solve its shifting label.",
-      "bottle_note": "Most customers simply ask the shopkeeper for the answer."
+      "description": "Fruity Potion that looks like jelly. Tastes very refreshing.",
+      "bottle_note": "Note: You might feel overwhelmingly refreshed when opening the bottle.",
+      "original_bottle_note": "Note: You might feel overwhelmingly refreshed when opening the bottle.",
+      "customer_review": "",
+      "expanded_lore": "Fruit from the riddle grove becomes a glossy, refreshing jam for Potion of Riddle. The original label refuses to reveal what it tastes like, which is either excellent mystery branding or the jam maker’s way of avoiding questions.",
+      "supplier_note": "This Jam of mystery shipment was counted at the waystation and assigned to Mysterious SP Potion. The supplier asks for a quick receipt when it reaches the shop. The paired potion’s original label reads: \"Fruity Potion that looks like jelly. Tastes very refreshing.\"",
+      "mastery_commentary": {
+        "Pio": "Riddle-grove jam changes scent from basket to basket; Potion of Riddle tastes glossy, and its maker has wisely banned guesses.",
+        "Tia": "I asked what fruit went in; the supplier cited the contract. Mystery is an excellent flavor and a terrible inventory category."
+      }
     },
     "2-11": {
-      "description": "Golden sparks race through this lively elixir, lifting the heaviness from overworked limbs.",
-      "bottle_note": "Advised against opening indoors; the cork likes to sprint."
+      "description": "This potion increases the user's energy temporarily. Popular in large cities.",
+      "bottle_note": "Warning: Excessive doses can cause sleepiness and repeated rest room usage",
+      "original_bottle_note": "Warning: Excessive doses can cause sleepiness and repeated rest room usage",
+      "customer_review": "",
+      "expanded_lore": "Polished ogre-eye stones focus the brief energy lift in Elixir of Energy, a city favorite for long shifts. The original note says it is popular in large towns; the watchtower collectors say that is because city streets keep asking people to stay awake.",
+      "supplier_note": "This Eye of ogre shipment was counted at the waystation and assigned to Elixir of Energy. The supplier asks for a quick receipt when it reaches the shop. The paired potion’s original label reads: \"This potion increases the user's energy temporarily. Popular in large cities.\"",
+      "mastery_commentary": {
+        "Pio": "Amber ogre lenses give Elixir of Energy a short city-shift lift; I stopped staring when the stone began showing my own tired face.",
+        "Tia": "The watchtower stones focus a temporary boost. I polish the lens only from the back now; the reflection was becoming personal."
+      }
     },
     "2-12": {
-      "description": "Sunlit motes drift through honey-yellow glass, cheering exhausted feet across twilight paths.",
-      "bottle_note": "The glow attracts moths who expect free refreshments."
+      "description": "Emits a beautiful yellow light. Well suited as gift and as interior decoration.",
+      "bottle_note": "Voltage: 220V\nPower Consumption: 300W",
+      "original_bottle_note": "Voltage: 220V\nPower Consumption: 300W",
+      "customer_review": "",
+      "expanded_lore": "Forest fairy wings scatter gold light through Shining SP Potion, making it look like a sunbeam caught in glass. The gift label brought it into shop windows, where passersby often admired the glow before learning it was meant to be brewed.",
+      "supplier_note": "This Forest fairy wings shipment was counted at the waystation and assigned to Shining SP Potion. The supplier asks for a quick receipt when it reaches the shop. The paired potion’s original label reads: \"Emits a beautiful yellow light. Well suited as gift and as interior decoration.\"",
+      "mastery_commentary": {
+        "Pio": "Autumn fairy wings turn Shining SP Potion into bottled sunshine; I keep them dry, after one damp sleeve acquired a cleaning fee.",
+        "Tia": "This golden glow belongs in the window. I moved it from my coat pocket after the glitter followed me through two meetings."
+      }
     },
     "2-13": {
-      "description": "A golden distillate restores steady movement during punishing marches and overly ambitious expeditions.",
-      "bottle_note": "Measured doses are marked by tiny marching boots."
+      "description": "Advanced Potion for veteran travellers. Very effective.",
+      "bottle_note": "Official potion of the Romorie kingdom! This potion has been used in the griffin capture expedition.",
+      "original_bottle_note": "Official potion of the Romorie kingdom! This potion has been used in the griffin capture expedition.",
+      "customer_review": "",
+      "expanded_lore": "A thunder-dragon fang glazed by lightning gives Advanced SP Potion its high-impact foundation. The veteran-traveler label makes the dose sound practical, but the storm collectors still mark every parcel with the peak where the fang was found.",
+      "supplier_note": "This Fang of thunder dragon shipment was counted at the waystation and assigned to Advanced SP Potion. The supplier asks for a quick receipt when it reaches the shop. The paired potion’s original label reads: \"Advanced Potion for veteran travellers. Very effective.\"",
+      "mastery_commentary": {
+        "Pio": "Lightning-glazed thunder fang gives Advanced SP Potion its seasoned punch; the wooden scoop is cheaper than a brave thumb.",
+        "Tia": "The storm peak left its mark on the enamel. I let licensed collectors handle the fang and let Pio tell the lightning story from indoors."
+      }
     },
     "2-14": {
-      "description": "Amber threads flicker inside this tangy brew, helping travelers weather crackling storm magic.",
-      "bottle_note": "Please avoid rubbing the bottle on woolen cloaks."
+      "description": "Enhances shock resistance. It's also very handy for engineering.",
+      "bottle_note": "Now you don't have to be afraid of electric shocks when taking off your sweaters.",
+      "original_bottle_note": "Now you don't have to be afraid of electric shocks when taking off your sweaters.",
+      "customer_review": "",
+      "expanded_lore": "Gold crystal’s conductive lattice steadies Electric Resistance Potion and helps it hold a bright finish. Engineers keep it beside their tools, not because it attracts lightning, but because the original note says it is useful wherever sparks are expected.",
+      "supplier_note": "This Gold crystal shipment was counted at the waystation and assigned to Electrical resistance Potion. The supplier asks for a quick receipt when it reaches the shop. The paired potion’s original label reads: \"Enhances shock resistance. It's also very handy for engineering.\"",
+      "mastery_commentary": {
+        "Pio": "Summer storms build the conductive gold crystal; Fire Resistance Potion borrows its bright protection, but the crystal is no lightning rod.",
+        "Tia": "I store the gold shard in its padded tin, far from exposed wires and anyone whose plan begins with “watch this.”"
+      }
     },
     "2-15": {
-      "description": "Pressed from sunroot and hardy mountain thyme, this dense tonic carries tired legs farther.",
-      "bottle_note": "Leaves a yellow ring on every respectable tablecloth."
+      "description": "This potion has been concentrated until reaching very high density. Tastes very bitter, but has an enormous effect.",
+      "bottle_note": "When cooking mix with water in a ratio of 10:1 and add sugar.",
+      "original_bottle_note": "When cooking mix with water in a ratio of 10:1 and add sugar.",
+      "customer_review": "",
+      "expanded_lore": "A discharged Thunderbolt scroll concentrates into Enriched SP Potion, dense with the marks of a storm that has already passed. Its bitter flavor was accepted as the price of enormous effect; the scribes say the ink tastes like weather refusing to leave.",
+      "supplier_note": "The courier wrapped Thunderbolt scroll for a long trip and labeled it for Enriched SP Potion. The ink is smudged, but the item name is still readable. The paired potion’s original label reads: \"This potion has been concentrated until reaching very high density. Tastes very bitter, but has an enormous effect.\"",
+      "mastery_commentary": {
+        "Pio": "Thunderbolt scroll packs storm symbols into an intensely dense brew; it arrived discharged, yet I still keep the parchment dry.",
+        "Tia": "The potion tastes bitter because its ink has a weather report's worth of attitude. I never unfold the scroll near a candle now."
+      }
     },
     "2-16": {
-      "description": "A bold citrus elixir revives aching muscles and an adventurer's willingness to climb again.",
-      "bottle_note": "One customer requested stairs to test it; we declined."
+      "description": "Energizes the body and spirit causing it to never become tired. Has almost no side effects.",
+      "bottle_note": "Please be sure to always consult a doctor before drinking.",
+      "original_bottle_note": "Please be sure to always consult a doctor before drinking.",
+      "customer_review": "",
+      "expanded_lore": "A harpy’s tear caught in a highland flower gives Elixir of Vigor its steady, tireless pulse. The label promises energy for body and spirit with few side effects, and the flight wardens keep it for the long watch after a storm.",
+      "supplier_note": "The courier wrapped Harpy's tear for a long trip and labeled it for Elixir of Vigor. The ink is smudged, but the item name is still readable. The paired potion’s original label reads: \"Energizes the body and spirit causing it to never become tired. Has almost no side effects.\"",
+      "mastery_commentary": {
+        "Pio": "Harpy's tear caught in highland anemones gives Elixir of Vigor a steady pulse; rooftops are no place to open a bottled gust.",
+        "Tia": "The label promises tireless energy; the supplier promises responsibility for neither hats nor paperwork. I drink it indoors and keep my hat."
+      }
     },
     "2-17": {
-      "description": "A miniature sunrise spins inside this golden potion, keeping footsteps lively under distant stars.",
-      "bottle_note": "Close the shutters; it confuses the household rooster."
+      "description": "The potion that the gods drink . Exquisite taste and effect. Tastes like heaven.",
+      "bottle_note": "",
+      "original_bottle_note": "Customer: Eden\nReview: ★★★★★\nIt is delicious. It is so incredibly delicious.",
+      "customer_review": "Customer: Eden\nReview: ★★★★★\nIt is delicious. It is so incredibly delicious.",
+      "expanded_lore": "Runes copied from a buried throne give Celestial SP Potion a regal balance and exquisite finish. The old label calls it a drink of gods; the observatory archivist notes that even kings had to wait their turn for a bottle.",
+      "supplier_note": "The courier wrapped Rune of thrones for a long trip and labeled it for Celestial SP Potion. The ink is smudged, but the item name is still readable. The paired potion’s original label reads: \"The potion that the gods drink . Exquisite taste and effect. Tastes like heaven.\"",
+      "mastery_commentary": {
+        "Pio": "Throne runes bring Celestial SP Potion regal balance; the actual seat remains buried, which is fortunate for the parcel dimensions.",
+        "Tia": "The royal observatory copied the pattern, not the furniture. I rejected Pio's claim for a missing armrest before it reached accounting."
+      }
     },
     "2-18": {
-      "description": "An aged amber recipe restores the patient endurance of travelers from forgotten kingdoms.",
-      "bottle_note": "The stopper bears a map to an inn no longer standing."
+      "description": "Potion made using an ancient recipe. It's taste is bad beyond imagination, but it could give you eternal youth.",
+      "bottle_note": "Attention: If your body temperature is increased the effects may differ. You have been warned.",
+      "original_bottle_note": "Attention: If your body temperature is increased the effects may differ. You have been warned.",
+      "customer_review": "",
+      "expanded_lore": "Storm-season thunder scales stabilize Ancient SP Potion, whose old recipe promises eternal youth. The flavor, by contrast, is legendary for all the wrong reasons; apprentices are advised to read the label before the first sip, not after.",
+      "supplier_note": "The courier wrapped Thunder dragon scale for a long trip and labeled it for Ancient SP Potion. The ink is smudged, but the item name is still readable. The paired potion’s original label reads: \"Potion made using an ancient recipe. It's taste is bad beyond imagination, but it could give you eternal youth.\"",
+      "mastery_commentary": {
+        "Pio": "Mountain rain tempers thunder scales for Ancient SP Potion; they are dry, not magically de-electrified, so the gloves stay on.",
+        "Tia": "This ancient recipe promises youth, but its flavor suggests a very old warning label. I taste only after checking the dry gloves."
+      }
     },
     "2-19": {
-      "description": "A blazing yellow draught lends heroic stamina to those carrying burdens both noble and mundane.",
-      "bottle_note": "Heroes may claim discounted saddlebags, subject to availability."
+      "description": "A fabled potion that contains the power of heroes. Almost noone has ever found a bottle of it.",
+      "bottle_note": "",
+      "original_bottle_note": "Customer: Dazy\nReview: ★★★★★\nVery fast delivery!",
+      "customer_review": "Customer: Dazy\nReview: ★★★★★\nVery fast delivery!",
+      "expanded_lore": "Glory stones gather in tales around the footprints of heroes, and Elixir of Hero carries that legend into a rare, powerful bottle. Almost no one has found one, so the potion’s story is built from songs, old maps, and a suspicious number of empty display cases.",
+      "supplier_note": "The courier wrapped Stone of Glory for a long trip and labeled it for Elixir of Hero. The ink is smudged, but the item name is still readable. The paired potion’s original label reads: \"A fabled potion that contains the power of heroes. Almost noone has ever found a bottle of it.\"",
+      "mastery_commentary": {
+        "Pio": "Glory stone carries a hero's legend into Elixir of Hero; the supplier's receipt proves purchase, not heroic deeds.",
+        "Tia": "I asked for bard certification; the supplier quoted a winter waiting list. The potion can keep its mythic strength until then."
+      }
     },
     "2-20": {
-      "description": "Violet shadows blend with gold, easing the final weary steps before evening shelter.",
-      "bottle_note": "Perfect for homeward journeys; not an excuse to miss supper."
+      "description": "One of the potions of the Underworld.",
+      "bottle_note": "Brings you to the glittering golden sunset, the boundary between reality and illusion. The ethereal horizon where the soul finds peace.",
+      "original_bottle_note": "Brings you to the glittering golden sunset, the boundary between reality and illusion. The ethereal horizon where the soul finds peace.",
+      "customer_review": "",
+      "expanded_lore": "A dusk pendant crystallized in the Underworld’s last-lit passage gives Elixir of Twilight its amber border between day and night. Its label calls it an Underworld brew, while the miners remember it as the first warm light they saw on the way back up.",
+      "supplier_note": "The road office logged this Pendant of dusk parcel against Elixir of Twilight. Keep it sealed until the workbench is clear and the receipt is signed. The paired potion’s original label reads: \"One of the potions of the Underworld.\"",
+      "mastery_commentary": {
+        "Pio": "The dusk pendant marks the Underworld's last light; Elixir of Twilight glows warmly, though the night porter still prefers a pouch.",
+        "Tia": "I trust the evening-star crystal, not its directions. The porter stopped asking who was at the door once I covered the glow."
+      }
     },
     "2-21": {
-      "description": "An amber curse burns softly inside this reagent, urging exhausted travelers onward past reason.",
-      "bottle_note": "Its shadow always points toward the nearest empty chair."
+      "description": "This reagent is used in some experiments.",
+      "bottle_note": "It is packaged beautifully. There seems to be screaming coming from inside the bottle...",
+      "original_bottle_note": "It is packaged beautifully. There seems to be screaming coming from inside the bottle...",
+      "customer_review": "",
+      "expanded_lore": "A yellow-glass cursed topaz ring left behind by an abandoned experiment lends Sunset Cursed Reagents their golden mark. The source note merely calls it a reagent; the color is what made the lab assistants nickname the unfinished study “the sunset file.”",
+      "supplier_note": "The road office logged this Cursed Topaz ring parcel against Cursed Sunset Reagent. Keep it sealed until the workbench is clear and the receipt is signed. The paired potion’s original label reads: \"This reagent is used in some experiments.\"",
+      "mastery_commentary": {
+        "Pio": "A yellow-glass topaz ring outlived its inventor's experiment; Sunset Cursed Reagents stays lab stock, not an engagement offer.",
+        "Tia": "The sunset file's ring is tagged and measured. I removed the jewelry box from the counter after Pio nearly staged a proposal."
+      }
     },
     "2-22": {
-      "description": "A brimstone-yellow cordial grants relentless footwork, though the soles of boots grow uncomfortably warm.",
-      "bottle_note": "Infernal warranty excludes melted shoelaces and complaints about dancing."
+      "description": "A potion adventurers use in Underworld.",
+      "bottle_note": "It is much cheaper when purchased in the Underworld. When humans drink it however...",
+      "original_bottle_note": "It is much cheaper when purchased in the Underworld. When humans drink it however...",
+      "customer_review": "",
+      "expanded_lore": "Fine powder from a yellow demon horn gives Demon’s Minor SP Potion a compact restorative edge for Underworld adventurers. The potion makes no claim to greatness; its horn is already dramatic enough for the whole bottle.",
+      "supplier_note": "The road office logged this Demon's yellow horn parcel against Demon's Minor SP Potion. Keep it sealed until the workbench is clear and the receipt is signed. The paired potion’s original label reads: \"A potion adventurers use in Underworld.\"",
+      "mastery_commentary": {
+        "Pio": "Ember-tinted yellow horn dust gives the minor SP potion a compact lift; licensed trimming keeps the shop from tracking a powder trail.",
+        "Tia": "The sealed horn dust is easy to measure and even easier to spill. I clean the scoop before Pio can call the yellow trail a map."
+      }
     },
     "2-23": {
-      "description": "This uncanny gold serum steadies limbs weakened by the legendary sleepwalking blight.",
-      "bottle_note": "Town watchmen demand a signed note before night walks."
+      "description": "A serum which can cause a wide range of plagues.",
+      "bottle_note": "Who created it and for what purpose is unknown. Has no effect on demons.",
+      "original_bottle_note": "Who created it and for what purpose is unknown. Has no effect on demons.",
+      "customer_review": "",
+      "expanded_lore": "Neutralized yellow plague spores give Yellow Plague Serum its broad experimental profile, but the guild keeps the batch sealed and away from healing stock. The original note names the possible harm plainly; the golden lace beneath the fungus explains its appearance, not its use.",
+      "supplier_note": "The road office logged this Yellow plague of spore parcel against Yellow Plague Serum. Keep it sealed until the workbench is clear and the receipt is signed. The paired potion’s original label reads: \"A serum which can cause a wide range of plagues.\"",
+      "mastery_commentary": {
+        "Pio": "Neutralized yellow plague spores stay quarantined; the lace beneath the fungus is lovely, and the guild's seal stays closed.",
+        "Tia": "Yellow Plague Serum is for controlled study, not healing. I color-matched the label from outside the jar and left it there."
+      }
     },
     "2-24": {
-      "description": "Liquid gold rolls like sunlight, granting magnificent endurance and a rather theatrical stride.",
-      "bottle_note": "The cap doubles as a crown for particularly self-important purchasers."
+      "description": "The essence of the devil's pride.",
+      "bottle_note": "Looking at the bottle for a long time can be dangerous.",
+      "original_bottle_note": "Looking at the bottle for a long time can be dangerous.",
+      "customer_review": "",
+      "expanded_lore": "Lucifer’s golden tears crystallize beside a pride shrine and melt into Gold Essence of Pride’s almost molten finish. The old label calls it the devil’s essence; the glassmaker’s notes suggest the real trick was keeping the brilliant contents from looking like sunlight in a bottle.",
+      "supplier_note": "The road office logged this Lucifer's golden tears parcel against Golden Essence of Pride. Keep it sealed until the workbench is clear and the receipt is signed. The paired potion’s original label reads: \"The essence of the devil's pride.\"",
+      "mastery_commentary": {
+        "Pio": "Lucifer's golden tears make Gold Essence of Pride shine like molten light; the seal is gold-colored, not a coin to test it with.",
+        "Tia": "The shrine's warm gleam is bottled in ordinary glass. I keep the ampoule upright, and Pio keeps his coins away from the seal."
+      }
     }
   },
-  "generated_provenance": "Original fan-written flavor text inspired by documented Potion Maker descriptions; not official game text.",
-  "generated_entry_ids": [
-    "0-13",
-    "0-14",
-    "0-15",
-    "0-16",
-    "0-17",
-    "0-18",
-    "0-19",
-    "0-20",
-    "0-21",
-    "0-22",
-    "0-23",
-    "0-24",
-    "1-0",
-    "1-1",
-    "1-2",
-    "1-3",
-    "1-4",
-    "1-5",
-    "1-6",
-    "1-7",
-    "1-8",
-    "1-9",
-    "1-10",
-    "1-11",
-    "1-12",
-    "1-13",
-    "1-14",
-    "1-15",
-    "1-16",
-    "1-17",
-    "1-18",
-    "1-19",
-    "1-20",
-    "1-21",
-    "1-22",
-    "1-23",
-    "1-24",
-    "2-0",
-    "2-1",
-    "2-2",
-    "2-3",
-    "2-4",
-    "2-5",
-    "2-6",
-    "2-7",
-    "2-8",
-    "2-9",
-    "2-10",
-    "2-11",
-    "2-12",
-    "2-13",
-    "2-14",
-    "2-15",
-    "2-16",
-    "2-17",
-    "2-18",
-    "2-19",
-    "2-20",
-    "2-21",
-    "2-22",
-    "2-23",
-    "2-24"
-  ]
+  "fan_written_additions": "expanded_lore, supplier_note, and mastery_commentary"
 }

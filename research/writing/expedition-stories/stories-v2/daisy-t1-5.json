@@ -1,0 +1,93 @@
+{
+  "traveler": "daisy",
+  "batch": "v2-stories-t1-5",
+  "chapters": [
+    {
+      "kind": "route", "tier": 1, "family": "Life", "material": "Red herb",
+      "job": "Herbs for Savoury Bread",
+      "hook": "A neighbor is getting by on plain bread and a bad cough, and priced suggestions have failed twice already. Daisy ties her apron differently - the good crust is coming.",
+      "outcome": "She sets red-herb oil in a separate brush - sealed and apart, always - and bakes the good crusty savory. The no-complaints loaf appears on three doorsteps, unlabeled, on time, and the coughs do not outlast the batch."
+    },
+    {
+      "kind": "route", "tier": 1, "family": "Mana", "material": "Blue herb",
+      "job": "Herbs for Savoury Bread",
+      "hook": "The blue herb tea has been selling slowly beside bread that sells fast, and Daisy suspects the bread is not the problem. The counter wants cards.",
+      "outcome": "She writes pairing cards to go beside the loaves: this tea with this crust, nothing exotic, nothing wasted. The cards become the shop's first written menu, and the regulars collect them out of loyalty and hunger in equal parts."
+    },
+    {
+      "kind": "route", "tier": 1, "family": "Stamina", "material": "Yellow herb",
+      "job": "Herbs for Savoury Bread",
+      "hook": "Festival week doubles every order the morning it is announced, and the yellow-herb buns lead the queue. Daisy has flipped the counter slate to a promise list.",
+      "outcome": "She bakes in two shifts and keeps the promise list open where customers can watch it shrink. Every order goes out on time, and the promise list becomes permanent furniture."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Life", "material": "Sturdy mushroom",
+      "job": "Mushrooms for the Morning Loaves",
+      "hook": "The shop's earliest customers count coins before calories, and Daisy does not intend either of them to lose. The mushroom crate has drawn her eye.",
+      "outcome": "Sturdy caps go into a new savory base - oven-sealed, separate from the sweet work, as everything stays. The copper loaf, quarter price and full smell, becomes the morning regular and never once costs the shop its name."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Mana", "material": "Clever mushroom",
+      "job": "Mushrooms for the Morning Loaves",
+      "hook": "The evening test batch keeps out-tasting the morning one, and the mushrooms are identical. Daisy suspects the sky is an ingredient.",
+      "outcome": "Clever mushrooms change their flavor after sunset; she times the bake by the sky from then on instead of the clock. The sunset-timing note sits in her recipe book's margin, followed by bakers two streets over who do not know it is hers."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Stamina", "material": "Lively mushroom",
+      "job": "Mushrooms for the Morning Loaves",
+      "hook": "The lively mushrooms are already jumping on the cutting board - to everyone's amusement and nobody's supper. It is Daisy's turn to deal with them.",
+      "outcome": "The first batch leaps free; she thanks them politely, 'That is all right. We can try again another time,' and tries again with a weighted cloth. The second bakes without a single escapee, the board-weight becomes habit, and no grudge survives the day."
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Life", "material": "Fruit of power",
+      "job": "Help Pick the Orchard Fruit",
+      "hook": "Daisy has a wedding-cake order and an orchard-gate bin full of exactly the right fruit that is not hers. She is standing in front of the bin working out the polite approach.",
+      "outcome": "She asks before borrowing, which almost nobody thinks to do. The bin comes back full of three loaves as thanks, and the orchard and the bakery have traded ever since without a single invoice."
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Mana", "material": "Fruit of wisdom",
+      "job": "Help Pick the Orchard Fruit",
+      "hook": "Daisy is picking with a proof-sheet propped on her basket, because the reading will not wait and the fruit will not either. The wisdom rows look interested in both.",
+      "outcome": "Fruit of wisdom tastes faintly of whatever was being read while it ripened - the wedding cake seems well-read and none of the guests can say why. The reading-pairing experiment enters her notebook: one careful paragraph, never repeated aloud."
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Stamina", "material": "Fruit of spirit",
+      "job": "Help Pick the Orchard Fruit",
+      "hook": "The spirit rows are high, the ladders are tall, and two hired pickers are working with hands too cold to cooperate. Daisy checks her apron knot.",
+      "outcome": "She brings her apron-front carry and teaches it to both pickers on the spot. They keep their fruit and their warmth; the orchard's children copy the carry for blackberry season and rename nothing."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Life", "material": "Rainbow bird feathers",
+      "job": "Feathers for a Pastry Brush",
+      "hook": "The old pastry brush is down to its last honest bristles, and a neighbor has been waving something soft and bright at the shop window since morning. Daisy waves back.",
+      "outcome": "The neighbor trades her washed rainbow feathers for two morning loaves, and the brush is bound that same day. The retired one goes into her keepsake tin - its first resident, which every tin must someday have."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Mana", "material": "Bluebird feathers",
+      "job": "Feathers for a Pastry Brush",
+      "hook": "The frost mornings have been dyeing feathers blue by night and un-dyeing them by noon, and the shop window shows both stories at once. Daisy is choosing sides.",
+      "outcome": "Frost-blue brushes exactly right for celebration icing and wrong for every plain day, so she keeps two. One is reserved for festival days and labeled in ribbon, so nobody borrows it by accident."
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Stamina", "material": "Wyvern feathers",
+      "job": "Feathers for a Pastry Brush",
+      "hook": "Heavy glaze has destroyed three pastry brushes this season, and the scrubbing sink has become a war memorial. Daisy knows who trades for old wyvern feathers.",
+      "outcome": "One worn wyvern feather - old-shed, traded off the heath gatherers for a bag of day-old buns - is bound to an honest handle, permission asked first. The big-glaze brush outlasts three wooden handles and is expected to outlast the fourth."
+    },
+    {
+      "kind": "viewpoint", "tier": 5, "family": "Life", "material": "Rainbow bird's egg",
+      "job": "Eggs for a Fresh Cake Batch", "surface": "job",
+      "text": "Daisy never got upset, not even the morning her first straw blanket went out too thick and insulated worse. 'That is all right. We can try again another time' - and she meant it. What she told no one at the ledge: the strange eggs were warm at the center when found, like dough with one more proof than anyone knew, so the rainbow mother had left recently. Her two quarter-turns a day ran on written labels so Neet would not worry whose egg was turned; the eggs stayed sealed and apart from the oven's business, and the cake batch used farm-market eggs from the kitchen side. The straw is a heat trick, and the heat is for the eggs."
+    },
+    {
+      "kind": "viewpoint", "tier": 5, "family": "Mana", "material": "Bluebird's egg",
+      "job": "Eggs for a Fresh Cake Batch", "surface": "job",
+      "text": "Daisy kept the bakers' quarter muffled and restocked the leaning ledges with warmed straw so the other two clutches rode warm through the rite. Her private ear knew first: the bluebird's song had slowed the way a proof slows when the room turns cold. She kept working, and moved her morning bell to noon for three days. The town never learned why the silence had a volunteer."
+    },
+    {
+      "kind": "viewpoint", "tier": 5, "family": "Stamina", "material": "Wyvern's egg",
+      "job": "Eggs for a Fresh Cake Batch", "surface": "job",
+      "text": "The story people tell is that the mother accepted the move because Daisy, absurdly, baked. True, and also not: she baked because a long watch with no meal service is, in her opinion, a form of cold. The oven was fired at the bakery's back so no heat or noise reached the eggs, and the loaf never crossed toward the nests - it went the other way entirely, to the quarry. Her unsaid observation: the mother was not circling the egg, she was circling the quarry - measured the way she measures proof, rise by how much shape changes. When the loaf landed at dawn, the mother landed after it."
+    }
+  ]
+}

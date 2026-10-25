@@ -1,0 +1,84 @@
+{
+  "traveler": "luke",
+  "batch": "v2-stories-t1-5",
+  "chapters": [
+    {
+      "kind": "route", "tier": 1, "family": "Life", "material": "Red herb",
+      "job": "Herbs for the Familiars",
+      "hook": "A familiar limps in off the north road, and the stall's herbs are not what the paw wants. Luke is already taking off his hat.",
+      "outcome": "The hat carries the patient home; the red bed gives what the paw asks for, and it heals. The hat keeps its dent. His ledger line for the week: '...the dent stays. On purpose.'"
+    },
+    {
+      "kind": "route", "tier": 1, "family": "Mana", "material": "Blue herb",
+      "job": "Herbs for the Familiars",
+      "hook": "The familiars refuse the blue herb twice, and Luke is asked what they do want. He says nothing, which everyone present takes for an agreement to find out.",
+      "outcome": "He waits; then the familiar leads him past the stall beds, past the good labels, to a far patch the tastings missed, and the tea is made from that. He does not label any of it. Ledger line: '...no labels needed, apparently.'"
+    },
+    {
+      "kind": "route", "tier": 1, "family": "Stamina", "material": "Yellow herb",
+      "job": "Herbs for the Familiars",
+      "hook": "The old dog's winter is a long one this year, and yellow herb can help - weakly, steadily, the way an old dog prefers its help. Luke starts the kettle.",
+      "outcome": "He mixes the tea the weak way, because strong and sudden is for emergencies and this is neither. One line goes on the stall door: 'Every evening. Even when it rains.' The dog agrees by sleeping closer, and the line is never taken down."
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Life", "material": "Sturdy mushroom",
+      "job": "Find Familiar-Safe Mushrooms",
+      "hook": "Someone small wants the high shelf, and the only ladder in the shop has rules attached to it. Luke goes to look at the sturdy caps instead.",
+      "outcome": "Sturdy caps, wide as saucers, make fine stairs; he counts them twice and leaves the third alone, because a nest is holding its shadow there now. The mushroom-stairs last all spring, and one kitten approves - loudly, per his note: '...loudly.'"
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Mana", "material": "Clever mushroom",
+      "job": "Find Familiar-Safe Mushrooms",
+      "hook": "Familiars have been answering voices that are not attached to anything, and the clever-mushroom patch is the prime suspect. Luke takes the case quietly.",
+      "outcome": "The mushrooms copy familiar calls, but the copied voice is off; he finds the true cluster by sitting still until a call comes honestly. The imitation patch gets one small chalk line - nothing scary - and the familiars stop being fooled. Notebook entry: '...the chalk holds.'"
+    },
+    {
+      "kind": "route", "tier": 2, "family": "Stamina", "material": "Lively mushroom",
+      "job": "Find Familiar-Safe Mushrooms",
+      "hook": "The young one is racing the roofline at dusk again, and the neighbors have begun learning its name by heart. Luke is considering one drop of tea.",
+      "outcome": "One drop of lively-mushroom tea goes into the supper dish, and the quiet hour arrives on its own, surprised to be wanted. He writes the hour into every day after that; the young one forgives him by Tuesday, which he noted in advance: '...Tuesday.'"
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Life", "material": "Fruit of power",
+      "job": "Fruit Treats for the Pets",
+      "hook": "Stall signs promise that fruit of power is good for every age, and one of the pets is young enough to believe a stall sign. Luke is not.",
+      "outcome": "He keeps the fruit on the windowsill anyway and feeds soft mash instead, twice a day, saying nothing out loud about later. The promise holds; so does the note underneath the pot: '...patient fruit, he decides.'"
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Mana", "material": "Fruit of wisdom",
+      "job": "Fruit Treats for the Pets",
+      "hook": "The talking-bird has been asking a single word since the wisdom fruit went near it, and the word is 'why.' The word is aimed directly at Luke.",
+      "outcome": "It asked for three days straight; he trades riddles until the bird trades better, and the truce holds - mostly. The perch stays with the question, and the closing tally reads: '...a good word to have won.'"
+    },
+    {
+      "kind": "route", "tier": 3, "family": "Stamina", "material": "Fruit of spirit",
+      "job": "Fruit Treats for the Pets",
+      "hook": "The old dog's evening walks have been getting shorter by the week, and spirit fruit promises nothing it cannot keep. Luke cuts the slivers thin.",
+      "outcome": "Thin slivers go into the evening bowl, and the slow walks get longer, street by street. Not healed - kinder. The ledger entries that week run three ellipses deep: '...good.'"
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Life", "material": "Rainbow bird feathers",
+      "job": "Soft Feathers for New Bedding",
+      "hook": "A fledgling is too light for wool bedding, and the autumn cold does not care about dignity. Luke goes gathering with a clean jar.",
+      "outcome": "Rainbow down, washed soft, makes a nesting jar - shallow on purpose, so small birds can leave when they choose. One does, and comes back; that gets a second line in the ledger, the most the ledger has ever said: '...it came back.'"
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Mana", "material": "Bluebird feathers",
+      "job": "Soft Feathers for New Bedding",
+      "hook": "The winter boxes keep losing heat at night, and Luke has heard of a bedding that sings about weather before the weather arrives. He is willing to listen.",
+      "outcome": "Bluebird down sings when the cold comes - a thin note under the door, a chaperone for the frost - so he lines the winter boxes with it. The small ones sleep through their own warnings now, which is what bedding is for. Ledger note: '...hears the weather first.'"
+    },
+    {
+      "kind": "route", "tier": 4, "family": "Stamina", "material": "Wyvern feathers",
+      "job": "Soft Feathers for New Bedding",
+      "hook": "The winter litter needs a den, and the wind has spent the month redesigning the garden. One old-shed feather is wider than the whole doorway.",
+      "outcome": "Wyvern feather, taken with a permission that asked everyone including the wind; the winter litter sleeps under it, one piece. It keeps the frost out and - somehow - the fear out too. His note is the longest of the month: '...fear is smaller under big roofs.'"
+    },
+    {
+      "kind": "neutral", "tier": 5, "applies_to": "any",
+      "job": "Watch over Familiar Eggs", "surface": "job",
+      "hook": "Familiar eggs are due across the frost week, and Luke's own nesting corner has gone quiet in the wrong way. He has a hat, a stool, and the patience to sit through either.",
+      "text": "The frost week: Luke watched the crag from the mill path with two familiars pretending to be rocks. He did not cross the tree line; the wild eggs were not his to keep, and his own familiar's eggs nested warm at home without coaxing. The roost stayed safe - that much the town knows - and the small cold birds on the mill roof voted to keep their opinions private. His only remark went home with him: '...some weeks, watching is the job.'"
+    }
+  ]
+}
