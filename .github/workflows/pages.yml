@@ -26,6 +26,22 @@ jobs:
       - name: Check out the committed build
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
+      - name: Prepare lossless texture verification on a clean runner
+        run: |
+          python -m pip install -r source/requirements-build.txt
+          python - <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+          sys.path.insert(0, 'source')
+          from build_textures import texture_data_url, write_texture_report
+          for costume in json.loads(Path('data/costumes.json').read_text())['entries']:
+              texture = costume.get('texture', '')
+              if texture.endswith('.png'):
+                  texture_data_url(Path('assets/live2d') / costume['character'] / 'textures' / texture)
+          write_texture_report()
+          PY
+
       - name: Verify the offline build matches its sources
         run: node source/check-build.cjs
 
