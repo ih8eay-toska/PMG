@@ -2,7 +2,7 @@
 
 Menu implementation standard: [UI design system and complete screen inventory](UI_DESIGN_SYSTEM.md).
 
-Latest accumulated update: [changes since f67f158](research/releases/2026-10-25/CHANGES.md), [current verification](research/releases/2026-10-25/CHECKS.md), and [prepared player mail](research/releases/2026-10-25/IN-GAME-MAIL.md). Older narrative sections below include historical behavior; the release audit identifies superseded settings/rates and remaining APK fidelity gaps.
+Latest accumulated update: [changes since f67f158](research/releases/2026-10-25/CHANGES.md), [current verification](research/releases/2026-10-25/CHECKS.md), and [published player mail](data/updates.json). Older narrative sections below include historical behavior; the release audit identifies superseded settings/rates and remaining APK fidelity gaps.
 
 Open **Potion-Maker.html** in Edge, Chrome, or Firefox. The playable game embeds its code, data, original icons, character portraits, and optional theme music. It needs no installation, server, account, or internet connection.
 
@@ -26,7 +26,7 @@ The website is built from source on each push, including source-only updates. Co
 - Personal balance adjustments cover 47 potions across tiers 1–25: the existing 17 early/middle tables plus 30 late-game tables. Late changes buff multipliers and some success chances, connecting every unlock without reducing earlier values. See **research/balance/APPLIED_LATE_GAME.md** for scope, exact arrays, checks and limitations; **APPLIED_EARLY_MIDDLE.md** records the preserved earlier pass.
 - All 75 potion entries can be brewed and enhanced to their recorded maximum level. The formerly missing values are supplied by https://potion-maker.fandom.com/wiki/Potions. Home MP and Small MP use that page’s internally consistent multipliers.
 - Material progression now extends to 25 tiers in each family, with recorded values and family-specific enhancement tables. Unlocked materials appear randomly on the conveyor, including before brewing starts.
-- Ingredients pass at evenly spaced intervals. Movement is calibrated to rack width. Level 1 runs at half speed with one arrival every two seconds, naturally fitting at most three items. Level 20 empty runs at half speed and half its former spatial density (2.5 arrivals/s); filled remains 20/s. Levels 2–19 retain their prior behavior. Ingredient selection has no highest-tier bias.
+- Conveyor movement is independent of upgrades and cauldron contents. Base emission upgrades run from 1 to 20 cards per second; supported fairy bonuses apply before the empty-cauldron cap of 3 cards per second. The former slowdown preference and three-card target are retired. Ingredient selection has no highest-tier bias.
 - Enhancement failure protection, +10 percentage-point enhancement charges, and double-sale charges activate automatically.
 - All ten travelers arrive randomly with potion orders. Accept starts a randomized 45–90-second preparation deadline. Delivery grants the reward immediately. Expiration grants no reward and keeps the potion. Completed and failed visits end automatically without a goodbye prompt. Original portraits and explicitly fan-written normal-quest responses accompany the phases; each visitor has five fan-written request-and-flavor pairs. Character-neutral documented request lines remain in the offer pool; Tirami's Pio/Tia-addressed challenge lines are preserved separately so the offer never changes with the equipped outfit.
 - Local theme music, potion and material books, potion-specific achievements with original titles and peak lore, persistent quest timers, and save migration.
@@ -45,7 +45,7 @@ The **Save & backup** screen separates **On this device**, **Backup & transfer**
 
 **Menu → Save** now offers three named manual slots. Each shows a timestamp, currency balances, Mastery Stars and character preview. Saving over an occupied slot or loading a slot asks for confirmation. Loading uses the existing validated import path and keeps the previous shop in the pre-import backup. Autosave still writes only the current shop; slots change only when you explicitly save to them. Names can be changed when saving a slot. These slots are local to this browser/origin and are not bundled into a single exported file: export each loaded shop separately to keep copies outside browser storage.
 
-The same browser storage key is retained. Save schemas 1–9 migrate to schema 10; the original JSON is retained under a schema-specific backup key before migration. Accepted quest deadlines, requests in progress, equipped fairies, and in-transit rewards survive reloads. Coins, tiers, statistics, current potion, and existing fairy progress are preserved. The intermediate luck bonus has changed because this update uses a provisional progression toward the documented maximum.
+The same browser storage key is retained. Older save schemas migrate to schema 18; the original JSON is retained under a schema-specific backup key before migration. Accepted quest deadlines, requests in progress, equipped fairies, and in-transit rewards survive reloads. Coins, tiers, statistics, current potion, and existing fairy progress are preserved. The intermediate luck bonus has changed because this update uses a provisional progression toward the documented maximum.
 
 Use **Save tools → Export backup** before changing browsers, moving the HTML file, or clearing browser data. File URL storage behavior varies by browser. Imports validate data and ask before replacing progress. The asset folder is not the save-data location.
 
@@ -53,7 +53,7 @@ Historical source files remain under **backups/**. Obsolete generated HTML, prev
 
 ## Original asset library
 
-The game now uses the owner's original extracted media instead of wiki downloads. **420 non-banner wiki media files and derived crops were removed** from the asset folders (13,249,489 bytes), along with nine obsolete embedded builds, previews and scrape caches elsewhere in the repository. The rebuilt **Asset-Library.html** catalogs 1,022 local media files with their size and SHA-256 in **asset-manifest.json**.
+The game now uses the owner's original extracted media instead of wiki downloads. **420 non-banner wiki media files and derived crops were removed** from the asset folders (13,249,489 bytes), along with nine obsolete embedded builds, previews and scrape caches elsewhere in the repository. The rebuilt **Asset-Library.html** catalogs 1,034 local media files with their size and SHA-256 in **asset-manifest.json**.
 
 - **assets/extracted/** and **assets/extracted/organized/** contain original portraits, costume thumbnails, fairies, interface artwork and effects.
 - **assets/original-apk/** contains original material/potion icons and brewing-scene artwork.
@@ -61,7 +61,7 @@ The game now uses the owner's original extracted media instead of wiki downloads
 - **assets/live2d/** retains the existing repository-sourced rigs, motions and textures; these were not scraped from the wiki.
 - **data/original-assets.json** maps existing game keys to original files, preserving saved costume/fairy IDs. Duplicate names for Pio/Tia costume thumbnails were matched visually against the prior previews.
 
-All 12 historical event/promotion banners are retained from the wiki archive as an explicit user-approved exception. They remain visible in the event gallery and event dialogs; other artwork continues to use the original extraction.
+All 12 historical event/promotion banners are retained from the wiki archive as an explicit user-approved exception. They remain available through Events → Historical events (including the Season 2 promotion); other artwork continues to use the original extraction.
 
 Non-wiki project-generated button artwork and existing third-party audio remain, with their provenance. The removal inventory in **research/art/wiki-media-removal.json** retains metadata, not the removed media. Wiki gameplay research and citations remain as data sources; this change removes media, not gameplay records or writing.
 
@@ -125,3 +125,13 @@ Exact-ingredient mode offers materials only. Switching modes preserves the conve
 
 Browser regression: run `python source/conveyor-qa.py`, open `Conveyor-QA.html`, click **Prepare ticket test**, collect the ticket with the mouse or key 1, then click **Verify ticket test**. The fixture uses a separate save key and checks one-time rewards, unchanged potion/counters, manual mode isolation, mode-switch preservation and saved tickets.
 
+
+## Current presentation ownership
+
+The shared menu shell and speaker composition belong to `source/ui-design-system.css`; the main screen’s measured coordinates belong to `source/apk-layout.css`. The illustrated book belongs to `source/potion-book.css`; gameplay effects remain in the general template. Static dialog headers use canonical markup, while the shared adapter handles dynamically created character/event screens.
+
+The event page separates Current run, Results, Rewards and Story. The gameplay sidebar is the compact brewing control. Original historical events remain read-only: balances, banners, ownership and save migrations are retained. Free themed outfits are previews, never paid event reward choices.
+
+Commissions, timed traveler orders and expeditions are distinct activities. Delivery shortcuts retain event → traveler → commission → sale priority and name the traveler when applicable. Mastery details live in Achievements; potion records link there. Saves retain independent local snapshots, portable backups and recovery copies.
+
+GitHub Pages deploys the rebuilt Actions artifact. The `gh-pages` mirror is deliberately retained for the previously requested publishing workflow; it is not a second deployed game implementation. Source archives, provenance, original assets and historical trip/save handling remain intentional records, not cleanup targets.

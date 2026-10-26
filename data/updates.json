@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "id": "2026-10-26-workshop-cleanup",
+      "date": "2026-10-26",
+      "title": "A tidier workshop, clearer orders",
+      "rubies": 10,
+      "notes": [
+        "Welcome back! We have tidied the workshop’s menus and event pages so it is easier to find what you need. Claim 10 rubies below as a thank-you. Earlier mail and unclaimed gifts are still available.",
+        "Events now have four sections: Current run, Results, Rewards and Story. Check your live delivery progress, revisit the previous rush, browse rewards or replay conversations without scrolling through everything at once. The right-hand Events panel keeps your compact supply pouch and Brew controls.",
+        "Free outfits stay free. The two free themed outfits remain visible among the overnight event previews, but can no longer consume an earned costume choice. Spend a choice on an eligible unowned reward outfit or take a permanent Costume Voucher instead. Existing outfits, vouchers and pending choices are preserved.",
+        "Event supplies now use the purple tutorial herb on the conveyor and in the pouch. The brewed event potion keeps its bottle artwork. Catching supplies, brewing and delivering still work as separate actions; ordinary brewing remains available between event bottles.",
+        "The potion book’s illustrated spread is now a quick brewing reference. Read full lore opens the complete entry, with original notes, expanded lore, reviews, supplier notes and enhancement tables intact. Pio and Tia’s extra comments still unlock at MAX. The reader now prepares only the entry you selected rather than the whole family.",
+        "Potion records now link directly to their mastery achievement instead of repeating another achievement progress card. Original achievement details show their requirement once, with prerequisites and claim rewards still available. Tiered achievement replacement is unchanged.",
+        "Commission cards focus on the customer, their reason for ordering, the exact potion and the reward. Shared rules appear once at the top: one active commission, no acceptance fee and no deadline. Potion requirements, delivery quantities and payouts are unchanged.",
+        "Navigation is clearer: the tavern menu entry is labeled Expeditions, and Visitor Expeditions uses the tavern icon on its title card too. When a traveler’s potion is ready, the main delivery action names the recipient. Existing event, traveler, commission and sale priorities are unchanged.",
+        "Costume origins are small labels rather than extra disabled buttons. The unavailable Contest tile is hidden until it offers a playable activity. The sidebar points to Help instead of repeating its tutorial, and shared headers keep Back, titles and Close in one place.",
+        "Historical events remain in the read-only archive, including the Season 2 promotion. Their banners, saved Miracle Solution and previously earned outfits are retained while migration waits. The unused old event gallery no longer sits behind the new event interface.",
+        "Behind the counter, chest displays share the same availability information, event updates use one scheduled loop, and arrival/event dialogue shares its presentation. Desktop, phone, keyboard and large-text checks were run. Saves, recovery tools, currencies, normal conveyor rules and helper behavior are preserved.",
+        "Thank you for helping us make the shop easier to run. Enjoy your 10 rubies—and please keep the supplier’s herb pouch away from the finished bottles."
+      ]
+    },
+    {
       "id": "2026-10-26-night-order-workshop-update",
       "date": "2026-10-26",
       "title": "An overnight order and a refreshed workshop",

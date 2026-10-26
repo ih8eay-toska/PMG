@@ -29,7 +29,7 @@ Implementation: `source/app.js` (`MENU_SCREENS`, `addMenuReturn`, `pinDialogHead
 
 ### Implemented shell variants
 
-- `menu`: root game menu and Shop/Mail/Settings routes, one shared live title/back/X. The subpages' old duplicate headers are hidden, their content and routing remain.
+- `menu`: root game menu and Shop/Mail/Settings routes, one shared live title/back/X. Subpages supply their title through data-menu-title; the root header owns Back, title and Close.
 - `scroll`: ordinary lists, information screens, commissions, events and character dialogs. Header sticks inside the scrolling dialog.
 - `bounded`: existing fixed-height achievement, expedition and save layouts retain their bounded content areas and action/navigation regions.
 - `upgrades`: original upgrade panel is moved into its dialog and restored to its gameplay anchor on close. Its duplicate interior title is hidden only while inside the dialog. Category, level, price, separator and upgrade-button artwork remain.
@@ -46,7 +46,7 @@ Reuse the verified mappings: Help→Help, Statistics→Stats, Upgrades→Upgrade
 
 The Image components use Simple mode and preserveAspect=false, so icon dimensions follow their recorded RectTransforms, not a guessed natural PNG aspect ratio. `research/title-icons/native-title-layouts.json` records references/rectangles; `verified-assets.json` records exact decoded pixel matches to the APK. All original PNGs are unchanged.
 
-Remake-only full-lore/detail/source/chest/balance readers reuse the corresponding parent section icon; this is a documented adaptation, not an original APK counterpart. Root Menu and the original quest/exploration title prefabs have no verified section-title icon. At the user’s request, Traveler order reuses `OriginalMenuExpeditions.png` from the expedition menu, at 100 logical units wide with its original aspect ratio and shared title placement; this is a remake adaptation. At the user’s request the remake event dialog uses the existing `NewEventIcon.png` as an adaptation: 104×86.125 logical units preserves the original 128×106 aspect ratio, with the shared banner placement. Its longer name wraps in an auto-height banner, with a separate navigation row on phones and reserved space beside the icon. This is not claimed as a recovered event-prefab rectangle. The illustrated fairy book and new-item reveal retain their specialized compositions.
+Remake-only full-lore/detail/source/chest/balance readers reuse the corresponding parent section icon; this is a documented adaptation, not an original APK counterpart. Root Menu and the original quest/exploration title prefabs have no verified section-title icon. At the user’s request, Visitor Expeditions and Traveler order reuse `OriginalMenuExpeditions.png` from the expedition menu, at 100 logical units wide with its original aspect ratio and shared title placement; this is a remake adaptation. At the user’s request the remake event dialog uses the existing `NewEventIcon.png` as an adaptation: 104×86.125 logical units preserves the original 128×106 aspect ratio, with the shared banner placement. Its longer name wraps in an auto-height banner, with a separate navigation row on phones and reserved space beside the icon. This is not claimed as a recovered event-prefab rectangle. The illustrated fairy book and new-item reveal retain their specialized compositions.
 
 When adding or changing a title icon, update `MENU_TITLE_ICONS`, document its evidence and run `node source/check-title-icons.cjs` plus relevant menu/layout regressions. Do not replace the decorative image with an inline icon that shifts the title text.
 
@@ -132,7 +132,7 @@ The source-level dialog inventory is **25 stable dialog IDs**, including four cr
 | Potion commissions / `request-dialog` | `#commission-shortcut` → `renderRequestBoard` | Plain heading/cards → shared title/frame/X/back | scroll; real acceptance and potion deliveries | Entry/close/acceptance/geometry; commission checks |
 | Saves / `save-dialog` | `#save-tools` → `renderSaveSlots` | Original title/plain border → shared shell | bounded; device/transfer/recovery pages | Entry/close/geometry + storage/migration checks |
 | Shop upgrades / `portrait-upgrade-dialog` | `.portrait-upgrades` moves `upgradePanel` | Separate original panel → shared shell/header/X/back | upgrades; original category, price and action artwork | Buy price/level, panel restoration, geometry; upgrade checks |
-| Event rewards / `event-dialog` | Event/gallery → `openEvent` | Original title/plain dialog → shared shell | scroll; banner/history/redemptions | Entry/close/geometry + event checks |
+| Event rewards / `event-dialog` | Right Events panel → `openRushEvent`; archive → `openEvent` | Original title/plain dialog → shared shell | scroll; Current run/Results/Rewards/Story sections and read-only historical archive | Entry/close/geometry + event checks |
 | Chest contents/reveal / `reward-dialog` | `rewardButtons[kind].button`, chest action | Plain dynamic dialog → shared shell | scroll; chest frames/reel/odds/reward saved before reveal | Entry/close/geometry + shop/reward checks |
 | Exact balances / `shop-balances-dialog` | `[data-shop-currency]` | Small plain dialog → shared reader | reader; exact full numeric balances | Entry/close/geometry + shop checks |
 | Character selection / `character-picker` | `#menu-character` → picker trigger in `source/pio.js` | Previously ID-less dynamic dialog → registered shell | scroll; portraits, affinity details, character/unlock/replay actions | Entry/close/geometry + character/UI checks |
@@ -192,3 +192,12 @@ Tia’s arrival shows exactly one `.tia-scene-portrait` above the full-width `.t
 ### Commission request cards
 
 `#commission-board .commission-request` reuses `.commission-card.pm-card`, the scroll shell, shared primary buttons and tokens. Each card separates the posted customer/role/purpose, exact recipe/family/tier, bottle count/minimum level, and named guaranteed rewards. Existing Neet, Luke and Daisy portraits identify written requests, independent of their timed visits. Likeability is explicitly shop-wide, not a new personal relationship balance. Active cards add labeled native progress and a visible cauldron eligibility explanation associated with the delivery button. Keep these rules scoped to the board: Stamp Exchange also uses commission-card. No new reward calculations, save fields or delivery handlers live in the presentation.
+
+### Consolidation rules
+
+- Keep shared commission rules in the introduction, and each achievement requirement in one place. Costume origin is a badge, not a disabled action. Contest stays hidden until playable.
+- The potion-book spread is a brewing reference; its reader preserves full original/expanded text and links to mastery achievements. The reader builds only the selected entry.
+- Event tabs are local presentation state; they never pause time, settle rewards or alter saved progress. Free featured outfits stay visible as previews, but only eligible non-free outfits consume a pending choice.
+- The existing 250-ms game loop owns scheduled event updates. Action-time settlement guards remain in core so expiry cannot be bypassed by a click between ticks.
+- Tia and event scenes share renderSpeakerLine and the pm-speaker classes. Expedition narrative retains paragraph/route composition and historical saved cursors. Do not merge independent story state machines merely to share markup.
+- Menu icon aliases belong in data/original-assets.json. The manifest remains the provenance browser; aliases reuse byte-verified catalogued originals.

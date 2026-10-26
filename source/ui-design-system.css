@@ -109,8 +109,8 @@ dialog.pm-menu .pm-header-icon>.pm-menu-title{align-self:center}
 .conveyor-event-supply{outline:3px solid #e7c45b;outline-offset:-3px;background:#695092!important;border-radius:50%}
 .conveyor-event-supply:after{content:'E';position:absolute;right:0;top:0;background:#f5d674;color:#372a31;border-radius:50%;font:bold 12px Georgia;padding:2px}
 
-#rush-panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--ui-space-2);margin:var(--ui-space-2) 0;padding:var(--ui-space-3);min-width:0}
-#rush-panel h3,#rush-clock,#rush-progress,#rush-brew-reason{grid-column:1/-1}
+#rush-panel{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--ui-space-2);margin:var(--ui-space-2) 0;padding:var(--ui-space-3);min-width:0}
+
 #rush-panel>button{font:inherit;font-size:13px}
 #rush-panel .solution-balance{flex-wrap:wrap}
 #rush-panel .solution-balance img{width:22px;height:28px}
@@ -125,15 +125,12 @@ dialog.pm-menu .pm-header-icon>.pm-menu-title{align-self:center}
 
 #costume-shop-dialog .costume-card .reward-chip img,#rush-event-content .reward-chip img,.costume-voucher-balance .reward-chip img{width:24px;height:22px;object-fit:contain}
 
-#events-panel #rush-panel{grid-template-columns:minmax(0,1fr);padding:0;border:0;background:transparent}
+#events-panel #rush-panel{padding:0;border:0;background:transparent}
 
 /* Arrival dialogue shows one current speaker above the text, without side portraits. */
-#tia-unlock-scene.pm-menu .tia-chat{display:flex;flex-direction:column;align-items:stretch;gap:0;min-height:0}
-#tia-unlock-scene.pm-menu .tia-scene-portrait{position:relative;z-index:1;align-self:flex-start;width:112px;height:112px;object-fit:contain;margin:0 0 -4px var(--ui-space-4)}
-#tia-unlock-scene.pm-menu .tia-chat-message{display:block;min-width:0;padding:var(--ui-space-4);border:var(--ui-border);border-radius:var(--ui-radius);background:var(--ui-paper)}
 #tia-unlock-scene.pm-menu .tia-scene-speaker{font-weight:bold;color:var(--ui-ink)}
 #tia-unlock-scene.pm-menu .tia-scene-line{font:18px/1.5 var(--ui-font);min-height:4.5em;margin:var(--ui-space-2) 0 0}
-@media(max-width:650px){#tia-unlock-scene.pm-menu .tia-scene-portrait{width:96px;height:96px}#tia-unlock-scene.pm-menu .tia-scene-line{font-size:16px}}
+@media(max-width:650px){#tia-unlock-scene.pm-menu .tia-scene-line{font-size:16px}}
 
 /* Event dashboard and story are two views of the same shared dialog. */
 #rush-story-view[hidden],#rush-dashboard[hidden],#rush-resume-opening[hidden]{display:none!important}
@@ -161,9 +158,9 @@ dialog.pm-menu .pm-header-icon>.pm-menu-title{align-self:center}
 .rush-costume-card>img{width:100%;height:110px;object-fit:contain}
 .rush-costume-card h4{margin:var(--ui-space-2) 0;font-size:14px}
 .rush-costume-card p{font-size:13px;margin:0}
-.pm-speaker-scene{display:flex;flex-direction:column;align-items:stretch;gap:0;min-width:0}
+.pm-speaker-scene{display:flex;flex-direction:column;align-items:stretch;gap:0;min-width:0;min-height:0}
 .pm-speaker-portrait{position:relative;align-self:flex-start;z-index:1;width:112px;height:112px;object-fit:contain;margin:0 0 -4px var(--ui-space-4)}
-.pm-speaker-message{padding:var(--ui-space-4);border:var(--ui-border);border-radius:var(--ui-radius);background:var(--ui-paper)}
+.pm-speaker-message{display:block;min-width:0;padding:var(--ui-space-4);border:var(--ui-border);border-radius:var(--ui-radius);background:var(--ui-paper)}
 .pm-speaker-message p{font:18px/1.5 var(--ui-font);min-height:4.5em;margin:var(--ui-space-2) 0 0}
 .rush-scene-actions{display:flex;flex-wrap:wrap;gap:var(--ui-space-2);margin-block:var(--ui-space-3)}
 .rush-development-note{font-size:13px;color:var(--ui-muted)}
@@ -203,3 +200,12 @@ dialog.pm-menu .pm-header-icon>.pm-menu-title{align-self:center}
 #commission-board .commission-delivery-status{margin:var(--ui-space-3) 0 var(--ui-space-2)}
 #commission-board .commission-request button{min-height:var(--ui-control-height);white-space:normal}
 @media(max-width:360px){#commission-board .commission-requirement{grid-template-columns:minmax(0,1fr) 48px}#commission-board .commission-potion{width:48px;height:64px}#commission-board .commission-request{padding:var(--ui-space-3)}}
+
+.costume-origin{display:inline-block;font-size:12px;color:var(--ui-muted)}
+.menu-label-live{font:700 20px/1.2 var(--ui-font);color:var(--ui-ink);text-align:center}
+#game-menu .game-menu-tile[hidden]{display:none}
+#rush-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--ui-space-2);margin-bottom:var(--ui-space-4)}
+#rush-tabs [aria-pressed=true]{background:var(--ui-purple);color:#fff}
+#rush-dashboard [data-rush-view][hidden]{display:none}
+
+@media(max-width:650px){#rush-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}}

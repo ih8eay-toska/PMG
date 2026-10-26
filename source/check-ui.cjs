@@ -20,7 +20,7 @@ let modal=false,now=Date.now(),reduced=false,saves=0,scenePlays=0;
 const timeouts=[],ctx=vm.createContext({...core,QUEST_OFFER_MS:core.ECONOMY.visitors.offerMs,QUEST_REWARD_DELAY_MS:core.ECONOMY.visitors.rewardDelayMs,$,window:{},document:{hidden:false,createElement:()=>new Element(),addEventListener:(type,fn)=>handlers[type]=fn,querySelector:()=>modal?{}:null},Date:class extends Date{static now(){return now;}},Math:Object.assign(Object.create(Math),{random:()=>0}),game:new core.PotionGame(),art:x=>x,setText:(el,v)=>el.textContent=String(v),fmt:String,duration:String,notice(){},animateIngredient(){},playOriginalSfx(){},save(){saves++;},render(){},flash(){},masteredPotionCount(){return ctx.game.state.masteryStars.length;},requestAnimationFrame(){},matchMedia:()=>({matches:reduced}),setTimeout:fn=>{timeouts.push(fn);return timeouts.length;},playTiaScene(){scenePlays++;ctx.game.state.tiaIntroSeen=true;},tiaSceneTimer:null});
 const run=s=>vm.runInContext(s,ctx);
 function line(prefix){const s=app.split(/\r?\n/).find(s=>s.startsWith(prefix));assert.ok(s,prefix);run(s);}
-for(const name of ['updateVisitorShortcut','readyQuestIndex','updateSellAction','renderNumberArt','renderEnhanceMultiplier','renderPowerups','updateBeltLabels','materialValue','imgButton','ticketButton','solutionButton','startBelt','drawSelectedIngredients','collectMaterial','catchMaterial','animate','rewardOddsText','updateRewardShop'])line('function '+name+'(');
+for(const name of ['updateVisitorShortcut','readyQuestIndex','updateSellAction','renderNumberArt','renderSpeakerLine','renderEnhanceMultiplier','renderPowerups','updateBeltLabels','materialValue','imgButton','ticketButton','solutionButton','startBelt','drawSelectedIngredients','collectMaterial','catchMaterial','animate','rewardOddsText','chestAvailability','updateRewardShop'])line('function '+name+'(');
 ctx.renderPowerups();for(const id of ['protection-indicator','enhancement-indicator','selling-indicator'])assert.equal($(id).hidden,true);ctx.game.state.powerups={protection:2,enhancement:3,selling:4};ctx.renderPowerups();for(const[id,count]of [['protection-indicator',2],['enhancement-indicator',3],['selling-indicator',4]]){assert.equal($(id).hidden,false);assert.equal($(id+'-count').textContent,String(count));}
 run(app.slice(app.indexOf('function syncBelt('),app.indexOf('function startBelt(')));
 Object.assign(ctx,{ingredientMode:'manual',conveyor:new core.MaterialConveyor(456,[0,0,0],()=>0,()=>({eventActive:true}),true),belt:[],beltSlots:'',beltElements:new Map(),beltWidth:456,gameSettings:{},reducedMotion:false,specialRack:new Element(),lastFrame:0});
@@ -34,7 +34,7 @@ const originalButton=$('ingredients').children[0],originalSelector=$('starter-se
 line("document.addEventListener('keydown'");
 const key=(key,extra={})=>handlers.keydown({key,target:{tagName:'BODY'},...extra});
 key('1');assert.ok(ctx.game.state.potion);assert.equal(ctx.belt.length,2,'manual redraw must retain special keyboard targets');
-key('4');assert.equal(ctx.game.state.tickets,1);assert.equal(ctx.conveyor.items.some(x=>x.id===11),false);key('4');assert.equal(ctx.game.state.eventRotation.solution,1);
+key('4');assert.equal(ctx.game.state.tickets,1);assert.equal(ctx.conveyor.items.some(x=>x.id===11),false);key('4');assert.equal(ctx.game.state.eventRotation.solution,0);assert.equal(ctx.conveyor.items.some(x=>x.id===12),true,'on-hold Solution cannot be consumed');
 const count=ctx.game.state.ingredients;key('2',{target:{tagName:'SELECT'}});modal=true;key('2');modal=false;assert.equal(ctx.game.state.ingredients,count);
 ctx.ingredientMode='conveyor';ctx.startBelt(false);assert.equal(ctx.specialRack.hidden,true);assert.equal(ctx.conveyor.manual,false);
 ctx.ingredientMode='manual';ctx.startBelt(false);assert.equal(ctx.conveyor.manual,true);
@@ -47,14 +47,9 @@ ctx.reducedMotion=false;ctx.syncBelt();let styleWrites=0;for(const el of ctx.bel
 for(const mode of ['manual','conveyor']){
  ctx.ingredientMode=mode;ctx.game=new core.PotionGame();ctx.game.state.eventRotation.elapsedMs=core.EVENT_ACTIVE_MS;
  ctx.conveyor.items=[{kind:'solution',id:30,x:76},{kind:'ticket',id:31,x:152}];ctx.syncBelt();
- Object.assign(ctx,{eventClock:new Element(),solutionCount:new Element(),eventFigures:[],promotion:new Element(),eventOpen:new Element(),eventDialog:new Element(),eventStatusText:()=>'',refreshEventPage(){}});
- line('function updateEventGallery(');line('window.refreshEvents=');ctx.window.refreshEvents();assert.equal(ctx.conveyor.items.some(x=>x.kind==='solution'),false);assert.equal(ctx.beltElements.has(30),false,'expired Solution must leave the DOM immediately');
+ assert.equal(ctx.game.eventInfo().active,false);assert.equal(ctx.game.collectSolution(),false);assert.equal(ctx.game.redeemEvent(0,'boosts'),false);
 }
-// Sidebar shows exactly the current/next pair, and archive/next during breaks, including wraparound.
-ctx.promotion=new Element();ctx.eventOpen=new Element();ctx.eventFigures=core.EVENTS.map(()=>new Element());
-for(let index=0;index<core.EVENTS.length;index++)for(const active of [true,false]){ctx.updateEventGallery({index,active});const next=(index+1)%core.EVENTS.length;assert.equal(ctx.promotion.hidden,active);ctx.eventFigures.forEach((figure,i)=>{assert.equal(figure.hidden,i!==next&&(!active||i!==index));assert.equal(figure.style.order,i===next?'1':'0');});assert.match(ctx.eventOpen.textContent,active?/View current/:/Redeem ending/);}
-// Unchanged rotation does not revisit banner elements; phase/index loops above cover invalidation.
-let bannerLookups=0;for(const figure of ctx.eventFigures){const query=figure.querySelector.bind(figure);figure.querySelector=k=>{bannerLookups++;return query(k);};}ctx.updateEventGallery({index:core.EVENTS.length-1,active:false});assert.equal(bannerLookups,0);
+
 ctx.renderNumberArt($('value'),'3,987');assert.equal($('value').children[0].src,'PrettyDigit3.png');assert.equal($('value').children[1].textContent,',');assert.equal($('value').children.at(-1).textContent,'3,987');const priceGlyph=$('value').children[0];ctx.renderNumberArt($('value'),'3,987');assert.equal($('value').children[0],priceGlyph);ctx.renderNumberArt($('value'),'');assert.equal($('value').children.length,1);
 // Enhancement text reuses nodes until its displayed values change, including leaving maximum level.
 const enhancementCode=app.slice(app.indexOf('if(n){const details='),app.indexOf('\n }else{',app.indexOf('if(n){const details=')));
@@ -71,7 +66,7 @@ Object.assign(ctx,{progress:new Element(),replayScene:new Element(),buttons:['Pi
 assert.doesNotMatch(app,/button\('Not now'/);assert.doesNotMatch(app,/traveler-dismiss/);assert.doesNotMatch(template,/id="commission-progress">Choose order</);line('function updateRequestIndicator(');ctx.game=new core.PotionGame();ctx.updateRequestIndicator();assert.equal($('commission-progress').textContent,'');assert.equal(ctx.game.acceptCommission(0),true);ctx.updateRequestIndicator();assert.match($('commission-progress').textContent,/^0 \/ \d+$/);ctx.game.state.commission=null;ctx.updateRequestIndicator();assert.equal($('commission-progress').textContent,'');
 // Real sell handler delivers matching orders without awarding a sale or selling boost.
 ctx.game=new core.PotionGame();ctx.game.state.nextVisitorAt=1;ctx.game.tick(now,()=>0);ctx.game.acceptQuest(0,now);ctx.game.collect(0,0);ctx.game.state.powerups.selling=1;
-ctx.updateVisitorShortcut();assert.ok($('visitor-shortcut').classes.has('quest-complete'));ctx.updateSellAction();assert.match($('sell-label').textContent,/Advance quest/);assert.ok($('sell').classes.has('quest-ready'));
+ctx.updateVisitorShortcut();assert.ok($('visitor-shortcut').classes.has('quest-complete'));ctx.updateSellAction();assert.match($('sell-label').textContent,/Deliver to Neet/);assert.ok($('sell').classes.has('quest-ready'));
 line("$('sell').onclick=");$('sell').click();assert.equal(ctx.game.state.travelers[0].phase,'returning');assert.equal(ctx.game.state.coins,0);assert.equal(ctx.game.state.powerups.selling,1);assert.equal(ctx.game.state.potion,null);ctx.updateSellAction();assert.equal($('sell').classes.has('quest-ready'),false);assert.equal($('sell-label').textContent,'Sell');
 ctx.updateVisitorShortcut();assert.equal($('visitor-shortcut').classes.has('quest-complete'),false);now=ctx.game.state.travelers[0].readyAt;ctx.game.settle(now);assert.equal(ctx.game.state.travelers[0].phase,'away');ctx.updateVisitorShortcut();assert.ok($('visitor-shortcut').hidden);
 // A locked/migrated Tia intro waits for dialogs/visibility, retries and runs once.
@@ -281,7 +276,7 @@ run(app.slice(app.indexOf('function renderExpeditionJournal('),app.indexOf("$('e
  console.log('Passed: Dolbur tier-1 chapter card, absent dispatch, saved draft across reload, route change, 120s dispatch, early-close report reload, repeat-trip card and journal replay.');
 }
 // Use the actual reveal handler: rewards/save/quota commit before animation resolves.
-Object.assign(ctx,{animateRewardChest(){},rewardKind:'hourly',rewardBusy:false,rewardAnimation:null,rewardDialog:new Element(),rewardButtons:Object.fromEntries(['hourly','tickets','skin'].map(k=>[k,{detail:new Element()}])),rewardLabels:{tickets:'tickets',rubies:'rubies',protection:'protection',enhancement:'enhancement',selling:'selling',fairy:'fairy',skin:'skin'},CURRENCY_UNITS:core.ECONOMY.currencyUnits,rewardArt:x=>x,rewardDescription:r=>r.amount+' '+r.currency});
+Object.assign(ctx,{animateRewardChest(){},rewardKind:'hourly',rewardBusy:false,rewardAnimation:null,rewardDialog:Object.assign(new Element(),{open:true}),shopCurrency:x=>x,shopExact:String,rewardButtons:Object.fromEntries(['hourly','tickets','skin'].map(k=>[k,{detail:new Element()}])),rewardLabels:{tickets:'tickets',rubies:'rubies',protection:'protection',enhancement:'enhancement',selling:'selling',fairy:'fairy',skin:'skin'},CURRENCY_UNITS:core.ECONOMY.currencyUnits,rewardArt:x=>x,rewardDescription:r=>r.amount+' '+r.currency});
 run(app.slice(app.indexOf('async function openChest('),app.indexOf("rewardDialog.querySelector('.reward-open').onclick")));
 (async()=>{
  for(const reduce of [false,true]){

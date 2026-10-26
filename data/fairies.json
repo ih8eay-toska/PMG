@@ -1,6 +1,6 @@
 {
   "source": "https://potionmaker.fandom.com/wiki/Fairy",
-  "provenance": "Fairy artwork uses the owner-supplied original extraction via data/original-assets.json. Names and ability reference data remain sourced from the archived wiki. Forest, Fire, and Water Fairy abilities are shown at level 1; the current prototype has instant Pushcat draws and no Blackcat summon. Helper fairy endpoints checked against the wiki. Halloprin has only base values published; Behe additional abilities activate at documented level 10.",
+  "provenance": "Fairy artwork uses the owner-supplied original extraction via data/original-assets.json. Names and ability reference data remain sourced from the archived wiki. Forest, Fire, and Water Fairy abilities are shown at level 1; the remake supports timed Pushcat and Blackcat helpers. Helper fairy endpoints checked against the wiki. Halloprin has only base values published; Behe additional abilities activate at documented level 10.",
   "entries": [
     {
       "id": "fairy-1",

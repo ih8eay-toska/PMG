@@ -60,38 +60,3 @@
 
 #catalog-dialog .catalog-family-rail .ui-family,#catalog-pair-label .ui-family,#catalog-reader-context .ui-family{color:inherit!important}
 #catalog-dialog .catalog-family-rail button:before{content:'';display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--book-family-color);margin-right:5px;vertical-align:middle}
-
-/* Sprite particles attach directly to the cauldron, never a zero-size wrapper. */
-.cauldron-effect { position: absolute; inset: 0; z-index: 13; pointer-events: none; }
-.cauldron-effect .cauldron-texture { position: absolute; width: 5%; height: auto; transform: translate(-50%,-50%); background-repeat: no-repeat; mix-blend-mode: screen; opacity: 0; }
-.texture-fx-enhanced .cauldron-texture { width: 70%; filter: sepia(1) saturate(3); }
-.texture-fx-failed .cauldron-texture { width: 27%; mix-blend-mode: normal; filter: saturate(.35) brightness(.65); }
-.texture-fx-plop .cauldron-texture { width: 22%; }
-/* Charges remain visible at the APK's button-relative positions. */
-.room .potion-card > .original-boost-indicator:not([hidden]) { display: block; }
-
-/* APK RectTransform: gauge 400×10, Y +149.1 from Enhancement's center. */
-#enhancement-progress { position: absolute; left: 50%; top: -12px; width: 56%; height: 8px; transform: translateX(-50%); margin: 0; padding: 0; border: 0; border-radius: 0; box-shadow: none; background-size: 100% 100%; overflow: visible; z-index: 15; }
-#enhancement-progress[hidden] { display: none; }
-.room[data-apk-layout] #enhancement-progress { top: calc(-17.1 * var(--apk-u)); width: calc(400 * var(--apk-u)); height: calc(10 * var(--apk-u)); }
-.room[data-apk-layout] #enhancement-progress .apk-enhance-fill { left: calc(-2 * var(--apk-u)); right: auto; width: calc(404 * var(--apk-u)); }
-#enhancement-progress .apk-enhance-fill { position: absolute; inset: 0; background-color: #0ff; background-blend-mode: multiply; background-size: 100% 100%; clip-path: inset(0 calc((1 - var(--enhance-progress,0)) * 100%) 0 0); }
-#enhancement-progress .apk-gauge-cap { position: absolute; top: 50%; width: calc(18 * var(--apk-u, .7px)); height: calc(24 * var(--apk-u, .7px)); object-fit: fill; transform: translate(-50%,-50%); }
-#enhancement-progress .apk-gauge-cap.left { left: calc(-5 * var(--apk-u, .7px)); }
-#enhancement-progress .apk-gauge-cap.right { left: calc(100% + 5 * var(--apk-u, .7px)); transform: translate(-50%,-50%) scaleX(-1); }
-.texture-fx-enhancing .cauldron-texture { width: calc(10 * var(--apk-u, .7px)); }
-.texture-fx-enhanced .cauldron-texture { filter: none; }
-.reward-chest { width: 112px; height: 112px; margin: 12px auto 18px; background-position: center; background-size: contain; background-repeat: no-repeat; image-rendering: pixelated; filter: drop-shadow(0 5px 4px #0004); }
-.achievement-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
-.achievement-tabs [aria-pressed="true"] { background: #d6b3ce; border-color: #ac76aa; }
-#achievement-filters { display: flex; flex-wrap: wrap; gap: 6px; }
-#achievement-grid .achievement-card > button { display: block; margin-top: 12px; }
-#achievement-grid .achievement-card > small { display: block; margin-top: 8px; line-height: 1.5; color: var(--muted); }
-#achievements-dialog[open] { display: flex; flex-direction: column; height: min(90svh,850px); overflow: hidden; }
-#achievements-dialog > .achievement-tabs,#achievement-summary,#achievement-filters,#achievement-mastery-note { flex: none; }
-#achievements-dialog #achievement-grid { flex: 1; min-height: 0; max-height: none; overflow: auto; overscroll-behavior: contain; }
-@media(max-width:650px) {
-  .achievement-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
-  .achievement-tabs button { padding: 8px 4px; font-size: 12px; }
-  #achievement-summary { font-size: 11px; }
-}

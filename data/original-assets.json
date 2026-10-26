@@ -50,6 +50,7 @@
     "Game_icon.png": "assets/extracted/characters.png",
     "App_icon.png": "assets/extracted/characters.png",
     "OriginalMiracleSolution.png": "assets/extracted/tutorial-potion.png",
+    "OriginalEventSupply.png": "assets/extracted/tutorial-material.png",
     "Default_Costume.png": "assets/extracted/default-costume-sprite-resources-assets-1040.png",
     "Kids_Costume.png": "assets/extracted/kids-costume.png",
     "Kids_Costume_Navy.png": "assets/extracted/kids-costume-navy.png",
@@ -458,6 +459,20 @@
     "pio-sailor-costume-black.png": "assets/extracted/sailor-costume-black.png",
     "pio-marine-costume-navy.png": "assets/extracted/marine-costume-navy-sprite-resources-assets-1159.png",
     "pio-tirami1-costume.png": "assets/extracted/tirami1-costume-sprite-resources-assets-1121.png",
-    "pio-sakura-fairy-costume-real.png": "assets/extracted/costume-thumbnails/pio-sakura-fairy-costume-real.png"
+    "pio-sakura-fairy-costume-real.png": "assets/extracted/costume-thumbnails/pio-sakura-fairy-costume-real.png",
+    "CostumeVoucher.png": "assets/extracted/coupon.png",
+    "OriginalTitleUpgrades.png": "assets/extracted/upgrades.png",
+    "OriginalMenuCostume.png": "assets/extracted/costumes.png",
+    "OriginalMenuShop.png": "assets/extracted/in-app-products.png",
+    "OriginalMenuExpeditions.png": "assets/extracted/explorations.png",
+    "OriginalMenuFairy.png": "assets/extracted/fairies.png",
+    "OriginalMenuItems.png": "assets/extracted/items.png",
+    "OriginalMenuStats.png": "assets/extracted/stats.png",
+    "OriginalMenuAchievements.png": "assets/extracted/achievements.png",
+    "OriginalMenuSave.png": "assets/extracted/archive.png",
+    "OriginalMenuMail.png": "assets/extracted/mailbox.png",
+    "OriginalMenuSettings.png": "assets/extracted/settings.png",
+    "OriginalMenuHelp.png": "assets/extracted/help.png",
+    "OriginalMenuContest.png": "assets/extracted/contest.png"
   }
 }

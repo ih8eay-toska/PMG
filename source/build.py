@@ -20,23 +20,7 @@ for costume in costumes['entries']:
 for record in manifest['assets']:
     if record.get('retained_event_banner'):
         assets[record['key']]=f'data:{record["mime"]};base64,'+base64.b64encode((ROOT/record['path']).read_bytes()).decode()
-for key,path in {
-    'CostumeVoucher.png':'assets/extracted/coupon.png',
-    'OriginalTitleUpgrades.png':'assets/extracted/upgrades.png',
-    'OriginalMenuCostume.png':'assets/original-apk/ui/costumes.png',
-    'OriginalMenuShop.png':'assets/original-apk/ui/in-app-products.png',
-    'OriginalMenuExpeditions.png':'assets/original-apk/ui/explorations.png',
-    'OriginalMenuFairy.png':'assets/original-apk/ui/fairies.png',
-    'OriginalMenuItems.png':'assets/original-apk/ui/items.png',
-    'OriginalMenuStats.png':'assets/original-apk/ui/stats.png',
-    'OriginalMenuAchievements.png':'assets/original-apk/ui/achievements.png',
-    'OriginalMenuSave.png':'assets/original-apk/ui/archive.png',
-    'OriginalMenuMail.png':'assets/original-apk/ui/mailbox.png',
-    'OriginalMenuSettings.png':'assets/original-apk/ui/settings.png',
-    'OriginalMenuHelp.png':'assets/original-apk/ui/help.png',
-    'OriginalMenuContest.png':'assets/original-apk/ui/contest.png',
-}.items():
-    assets[key]='data:image/png;base64,'+base64.b64encode((ROOT/path).read_bytes()).decode()
+
 for name in ['Congratulation.wav','Enhance Failed.wav','Enhanced.wav','Plop.wav','Pushcat Hit.wav','Quest Complete.wav','Quest.wav','Sell.wav','Summon Pushcat.wav','UI Click.wav']:
     assets[name]='data:audio/wav;base64,'+base64.b64encode((ROOT/'assets/audio/original-apk'/name).read_bytes()).decode()
 assets['PushcatHand.png']='data:image/png;base64,'+base64.b64encode((ROOT/'assets/extracted/organized/helpers/pushcat-hand.png').read_bytes()).decode()
