@@ -38,7 +38,7 @@ jobs:
           for costume in json.loads(Path('data/costumes.json').read_text())['entries']:
               texture = costume.get('texture', '')
               if texture.endswith('.png'):
-                  texture_data_url(Path('assets/live2d') / costume['character'] / 'textures' / texture)
+                  texture_data_url((Path('assets/live2d') / costume['character'] / 'textures' / texture).resolve())
           write_texture_report()
           PY
 
