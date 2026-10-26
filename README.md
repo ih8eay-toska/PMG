@@ -135,3 +135,16 @@ The event page separates Current run, Results, Rewards and Story. The gameplay s
 Commissions, timed traveler orders and expeditions are distinct activities. Delivery shortcuts retain event → traveler → commission → sale priority and name the traveler when applicable. Mastery details live in Achievements; potion records link there. Saves retain independent local snapshots, portable backups and recovery copies.
 
 GitHub Pages deploys the rebuilt Actions artifact. The `gh-pages` mirror is deliberately retained for the previously requested publishing workflow; it is not a second deployed game implementation. Source archives, provenance, original assets and historical trip/save handling remain intentional records, not cleanup targets.
+
+
+## Installable app (PWA)
+
+Open https://ih8eay-toska.github.io/PMG/ in Edge or Chrome and choose **Menu → Save → On this device → Install app**, or use the browser’s install option. On iPhone/iPad use **Share → Add to Home Screen**. Installation availability depends on the browser. Keep the first online session open until this section says **Ready to play offline**; the complete game takes about 100 MB of offline storage. Installation itself does not mean the offline download finished.
+
+The installed app uses the same HTTPS origin and save keys as the hosted game. Existing progress, named snapshots and recovery copies stay in the same browser profile. A downloaded local HTML file or a different browser has separate storage: use the existing export/import tools to transfer progress. Browser storage can be cleared or evicted, so exported backups remain useful.
+
+New releases download into a separate versioned cache. **Save & update app** saves the shop before reloading; enhancement/chest activity and failed saves block that action. A failed or mismatched download leaves the previous offline release intact. **Check for updates / retry offline download** checks for a new release and repairs an incomplete current cache. Updates require a connection; gameplay continues offline from the cached release.
+
+`python source/build.py` still produces the self-contained `Potion-Maker.html` and Asset Library, and now also packages `dist/pwa/`. The hosted edition alone adds `source/pwa.js`, a relative-path manifest, icons derived from original `characters.png`, and `source/service-worker.js`. The Pages workflow publishes this complete directory and maintains the gh-pages mirror. Commit source, not the ignored build directory. This pass does not split or recompress the original game assets.
+
+Checks: `node source/check-pwa.cjs` validates packaging and service-worker lifecycle/failure behavior. On Windows with Edge, `node source/check-pwa-browser.cjs` starts a local server and disposable profile to test existing saves, offline navigation, failed updates, explicit activation, save/busy guards, cache repair and large-text layouts at 1366/390/320 px. Results/screenshots go to the temporary `pmg-pwa-qa` directory (override with `PMG_QA_OUTPUT`). It checks browser installability and simulates the in-game prompt control; it does not install an app into the operating system or test physical phones.

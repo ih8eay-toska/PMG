@@ -3,6 +3,7 @@ from pathlib import Path
 import json,base64,html
 from build_textures import texture_data_url,write_texture_report
 from build_styles import share_style_images
+from build_pwa import build_pwa
 ROOT=Path(__file__).resolve().parent.parent
 manifest=json.loads((ROOT/'asset-manifest.json').read_text(encoding='utf-8'))
 assets={}
@@ -135,6 +136,7 @@ template=template.replace('</body>',pio_scripts+'<script data-apk-layout>'+(ROOT
 template=share_style_images(template)
 write_texture_report()
 (ROOT/'Potion-Maker.html').write_text(template,encoding='utf-8')
+build_pwa(template)
 cards=[]
 for r in manifest['assets']:
     if r['status']!='downloaded':continue

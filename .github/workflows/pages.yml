@@ -32,7 +32,9 @@ jobs:
           python source/build.py
 
       - name: Verify the generated offline build
-        run: node source/check-build.cjs
+        run: |
+          node source/check-build.cjs
+          node source/check-pwa.cjs
 
       - name: Prepare the site and update gh-pages
         shell: bash
@@ -41,14 +43,14 @@ jobs:
           site="$RUNNER_TEMP/pmg-site"
           mirror="$RUNNER_TEMP/pmg-pages"
           mkdir -p "$site"
-          cp Potion-Maker.html "$site/index.html"
+          cp -R dist/pwa/. "$site/"
           touch "$site/.nojekyll"
           git fetch origin gh-pages --depth=1
           git worktree add --detach "$mirror" FETCH_HEAD
-          cp "$site/index.html" "$site/.nojekyll" "$mirror/"
+          cp -R "$site/." "$mirror/"
           git -C "$mirror" config user.name 'github-actions[bot]'
           git -C "$mirror" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git -C "$mirror" add -- index.html .nojekyll
+          git -C "$mirror" add -- index.html .nojekyll manifest.webmanifest service-worker.js icons
           if ! git -C "$mirror" diff --cached --quiet; then
             git -C "$mirror" commit -m "Publish Potion Maker from $GITHUB_SHA"
             git -C "$mirror" push origin HEAD:gh-pages

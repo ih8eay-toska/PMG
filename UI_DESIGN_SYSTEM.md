@@ -201,3 +201,8 @@ Tia’s arrival shows exactly one `.tia-scene-portrait` above the full-width `.t
 - The existing 250-ms game loop owns scheduled event updates. Action-time settlement guards remain in core so expiry cannot be bypassed by a click between ticks.
 - Tia and event scenes share renderSpeakerLine and the pm-speaker classes. Expedition narrative retains paragraph/route composition and historical saved cursors. Do not merge independent story state machines merely to share markup.
 - Menu icon aliases belong in data/original-assets.json. The manifest remains the provenance browser; aliases reuse byte-verified catalogued originals.
+
+
+### Hosted app installation
+
+The hosted edition inserts `#pwa-tools.save-tool-card` after `#save-device-note` in Save & backup → On this device. It reuses shared tokens, primary/secondary save buttons and the existing dialog shell; it adds no modal or gameplay panel. Controls wrap for narrow screens and large text. Offline readiness and update messages use live status text. The save navigation button shows a small Update ready badge only while a new worker is waiting. Installation and cached-file state stay separate from player save data. The downloadable standalone HTML intentionally omits these hosted-only controls.
