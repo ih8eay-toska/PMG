@@ -8,6 +8,16 @@
       "character": "Pio"
     },
     {
+      "id": "pio-shinobu-sundress.png",
+      "name": "Shinobu Oshino Sundress",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "shinobu-sundress-costume.png",
+      "preview": "assets/custom-costumes/shinobu-sundress-preview.png",
+      "fanMade": true
+    },
+    {
       "id": "Kids_Costume.png",
       "name": "Kids",
       "live2d": true,
@@ -450,7 +460,8 @@
       "id": "Cami_Dress_Costume_Blue.png",
       "name": "Cami Dress Blue",
       "live2d": false,
-      "character": "Tia"
+      "character": "Tia",
+      "free": true
     },
     {
       "id": "Frill_Bikini_Costume_Purple.png",
@@ -489,26 +500,33 @@
     {
       "id": "Summer_Uniform_Costume_Blue.png",
       "name": "Summer Uniform Blue",
-      "live2d": false,
-      "character": "Pio"
+      "live2d": true,
+      "character": "Pio",
+      "free": true,
+      "texture": "summer-uniform-costume-blue.png"
     },
     {
       "id": "Summer_Uniform_Costume_Red.png",
       "name": "Summer Uniform Red",
-      "live2d": false,
-      "character": "Pio"
+      "live2d": true,
+      "character": "Pio",
+      "free": true,
+      "texture": "summer-uniform-costume-red.png"
     },
     {
       "id": "Voice_Story_Costume.png",
       "name": "Voice Story",
       "live2d": false,
-      "character": "Tia"
+      "character": "Tia",
+      "free": true
     },
     {
       "id": "Voice_Story_Costume1.png",
       "name": "Voice Story1",
-      "live2d": false,
-      "character": "Pio"
+      "live2d": true,
+      "character": "Pio",
+      "free": true,
+      "texture": "voice-story-costume.png"
     },
     {
       "id": "Tia.png",
@@ -517,6 +535,1054 @@
       "live2d": true,
       "free": true,
       "texture": "default-costume.webp"
+    },
+    {
+      "id": "akiba-idol-costume.png",
+      "name": "Akiba Idol",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "akiba-idol-costume.png"
+    },
+    {
+      "id": "blackcat-costume.png",
+      "name": "Blackcat",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "blackcat-costume.png"
+    },
+    {
+      "id": "blueround-costume.png",
+      "name": "Blueround",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "blueround-costume.png"
+    },
+    {
+      "id": "chef-costume-normal.png",
+      "name": "Chef Costume Normal",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "chef-costume-sweet.png",
+      "name": "Chef Costume Sweet",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "china-dress-costume-black.png",
+      "name": "China Dress Costume Black",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "china-dress-costume-white.png",
+      "name": "China Dress Costume White",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "concert-costume-navy.png",
+      "name": "Concert Costume Navy",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "concert-costume-red.png",
+      "name": "Concert Costume Red",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "cute-pajamas-costume-purple.png",
+      "name": "Cute Pajamas Costume Purple",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "cute-pajamas-costume-purple.png"
+    },
+    {
+      "id": "cute-pajamas-costume-skyblue.png",
+      "name": "Cute Pajamas Costume Skyblue",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "cute-pajamas-costume-skyblue.png"
+    },
+    {
+      "id": "darklord-costume-fallen-sprite-resources-assets-982.png",
+      "name": "Darklord Costume Fallen",
+      "character": "Pio",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "darklord-costume-normal.png",
+      "name": "Darklord Costume Normal",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "fall-dress-costume-beige.png",
+      "name": "Fall Dress Costume Beige",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "fall-dress-costume-beige.png"
+    },
+    {
+      "id": "fall-dress-costume-brown.png",
+      "name": "Fall Dress Costume Brown",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "fall-dress-costume-brown.png"
+    },
+    {
+      "id": "forest-witch-costume-brown.png",
+      "name": "Forest Witch Costume Brown",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "forest-witch-costume-brown.png"
+    },
+    {
+      "id": "forest-witch-costume-green.png",
+      "name": "Forest Witch Costume Green",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "forest-witch-costume-green.png"
+    },
+    {
+      "id": "frill-blouse-costume-green-sprite-resources-assets-1151.png",
+      "name": "Frill Blouse Costume Green",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "frill-blouse-costume-green.png"
+    },
+    {
+      "id": "frill-blouse-costume-green.png",
+      "name": "Frill Blouse Costume Green",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "frill-blouse-costume-green.png"
+    },
+    {
+      "id": "frill-blouse-costume-red-sprite-resources-assets-1174.png",
+      "name": "Frill Blouse Costume Red",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "frill-blouse-costume-red.png"
+    },
+    {
+      "id": "frill-blouse-costume-red.png",
+      "name": "Frill Blouse Costume Red",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "frill-blouse-costume-red.png"
+    },
+    {
+      "id": "goddess-costume-pink.png",
+      "name": "Goddess Costume Pink",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "goddess-costume-pink.png"
+    },
+    {
+      "id": "goddess-costume-white.png",
+      "name": "Goddess Costume White",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "goddess-costume-white.png"
+    },
+    {
+      "id": "halloween-2019-costume-orange.png",
+      "name": "Halloween 2019 Costume Orange",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "halloween-2019-costume-purple.png",
+      "name": "Halloween 2019 Costume Purple",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "hanbok-costume-gorgeous.png",
+      "name": "Hanbok Costume Gorgeous",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "hanbok-costume-gorgeous.png"
+    },
+    {
+      "id": "hanbok-costume-pink.png",
+      "name": "Hanbok Costume Pink",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "hanbok-costume-pink.png"
+    },
+    {
+      "id": "hanbok-costume-red.png",
+      "name": "Hanbok Costume Red",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "hanbok-costume-red.png"
+    },
+    {
+      "id": "hanbok-costume-skyblue.png",
+      "name": "Hanbok Costume Skyblue",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "hanbok-costume-skyblue.png"
+    },
+    {
+      "id": "hanbok-costume-yellow.png",
+      "name": "Hanbok Costume Yellow",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "hanbok-costume-yellow.png"
+    },
+    {
+      "id": "healer-costume.png",
+      "name": "Healer",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "healer-costume.png"
+    },
+    {
+      "id": "hoodie-uniform-costume-black.png",
+      "name": "Hoodie Uniform Costume Black",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "hoodie-uniform-costume-teal.png",
+      "name": "Hoodie Uniform Costume Teal",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "knight-costume.png",
+      "name": "Knight",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "knight-costume.png"
+    },
+    {
+      "id": "lemonade-costume.png",
+      "name": "Lemonade",
+      "character": "Pio",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "limeade-costume.png",
+      "name": "Limeade",
+      "character": "Pio",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "literature-girl-costume-brown.png",
+      "name": "Literature Girl Costume Brown",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "literature-girl-costume-brown.png"
+    },
+    {
+      "id": "literature-girl-costume-navy.png",
+      "name": "Literature Girl Costume Navy",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "literature-girl-costume-navy.png"
+    },
+    {
+      "id": "lolita-costume-red.png",
+      "name": "Lolita Costume Red",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "lolita-costume-red.png"
+    },
+    {
+      "id": "lolita-costume-skyblue.png",
+      "name": "Lolita Costume Skyblue",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "lolita-costume-skyblue.png"
+    },
+    {
+      "id": "magical-girl-costume-pink.png",
+      "name": "Magical Girl Costume Pink",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "magical-girl-costume-pink.png"
+    },
+    {
+      "id": "magical-girl-costume-purple.png",
+      "name": "Magical Girl Costume Purple",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "magical-girl-costume-purple.png"
+    },
+    {
+      "id": "magical-girl-costume.png",
+      "name": "Magical Girl",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "magical-girl-costume.png"
+    },
+    {
+      "id": "maid-bikini-costume-black.png",
+      "name": "Maid Bikini Costume Black",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "maid-bikini-costume-skyblue.png",
+      "name": "Maid Bikini Costume Skyblue",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "marine-costume-white.png",
+      "name": "Marine Costume White",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "marine-costume-white.png"
+    },
+    {
+      "id": "night-witch-costume-black.png",
+      "name": "Night Witch Costume Black",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "night-witch-costume-black.png"
+    },
+    {
+      "id": "night-witch-costume-gray.png",
+      "name": "Night Witch Costume Gray",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "night-witch-costume-gray.png"
+    },
+    {
+      "id": "nightsky-costume.png",
+      "name": "Nightsky",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "nightsky-costume.png"
+    },
+    {
+      "id": "overalls-costume-white.png",
+      "name": "Overalls Costume White",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "overalls-costume-white.png"
+    },
+    {
+      "id": "overalls-costume.png",
+      "name": "Overalls",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "overalls-costume.png"
+    },
+    {
+      "id": "party-dress-costume-brown.png",
+      "name": "Party Dress Costume Brown",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "party-dress-costume-brown.png"
+    },
+    {
+      "id": "party-dress-costume-purple.png",
+      "name": "Party Dress Costume Purple",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "party-dress-costume-purple.png"
+    },
+    {
+      "id": "priest-costume-junior.png",
+      "name": "Priest Costume Junior",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "priest-costume-junior.png"
+    },
+    {
+      "id": "priest-costume-senior.png",
+      "name": "Priest Costume Senior",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "priest-costume-senior.png"
+    },
+    {
+      "id": "pushcat-costume.png",
+      "name": "Pushcat",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "pushcat-costume.png"
+    },
+    {
+      "id": "raincoat-costume-chick.png",
+      "name": "Raincoat Costume Chick",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "raincoat-costume-frog.png",
+      "name": "Raincoat Costume Frog",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "ribbon-dress-costume-red.png",
+      "name": "Ribbon Dress Costume Red",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "ribbon-dress-costume-red.png"
+    },
+    {
+      "id": "ribbon-dress-costume-yellow.png",
+      "name": "Ribbon Dress Costume Yellow",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "ribbon-dress-costume-yellow.png"
+    },
+    {
+      "id": "rider-suit-costume-beginner.png",
+      "name": "Rider Suit Costume Beginner",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "rider-suit-costume-pro.png",
+      "name": "Rider Suit Costume Pro",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "rose-dress-costume-orange.png",
+      "name": "Rose Dress Costume Orange",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "rose-dress-costume-red.png",
+      "name": "Rose Dress Costume Red",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "sabori-costume.png",
+      "name": "Sabori",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "sabori-costume.png"
+    },
+    {
+      "id": "sailor-bikini-costume-black.png",
+      "name": "Sailor Bikini Costume Black",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "sailor-bikini-costume-black.png"
+    },
+    {
+      "id": "sailor-bikini-costume-white.png",
+      "name": "Sailor Bikini Costume White",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "sailor-bikini-costume-white.png"
+    },
+    {
+      "id": "sakura-fairy-costume.png",
+      "name": "Sakura Fairy",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "sakura-fairy-costume.png"
+    },
+    {
+      "id": "santa-2017-costume-red.png",
+      "name": "Santa 2017 Costume Red",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "santa-2017-costume-white.png",
+      "name": "Santa 2017 Costume White",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "santa-2018-costume-green.png",
+      "name": "Santa 2018 Costume Green",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "santa-2018-costume-green.png"
+    },
+    {
+      "id": "santa-2018-costume-red.png",
+      "name": "Santa 2018 Costume Red",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "santa-2018-costume-red.png"
+    },
+    {
+      "id": "santa2016-costume.png",
+      "name": "Santa2016",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "santa2016-costume.png"
+    },
+    {
+      "id": "sarori-costume.png",
+      "name": "Sarori",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "sarori-costume.png"
+    },
+    {
+      "id": "school-2017-costume-gray.png",
+      "name": "School 2017 Costume Gray",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "school-2017-costume-gray.png"
+    },
+    {
+      "id": "school-2017-costume-navy.png",
+      "name": "School 2017 Costume Navy",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "school-2017-costume-red.png",
+      "name": "School 2017 Costume Red",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "school-2017-costume-yellow.png",
+      "name": "School 2017 Costume Yellow",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "school-2017-costume-yellow.png"
+    },
+    {
+      "id": "school-2018-costume-brown.png",
+      "name": "School 2018 Costume Brown",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "school-2018-costume-white.png",
+      "name": "School 2018 Costume White",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "school-2019-costume-black.png",
+      "name": "School 2019 Costume Black",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "school-2019-costume-black.png"
+    },
+    {
+      "id": "school-2019-costume-pink.png",
+      "name": "School 2019 Costume Pink",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "school-2019-costume-pink.png"
+    },
+    {
+      "id": "sfc-uniform-costume-red.png",
+      "name": "Sfc Uniform Costume Red",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "sfc-uniform-costume-red.png"
+    },
+    {
+      "id": "sfc-uniform-costume-yellow.png",
+      "name": "Sfc Uniform Costume Yellow",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "sfc-uniform-costume-yellow.png"
+    },
+    {
+      "id": "shaman-costume-black.png",
+      "name": "Shaman Costume Black",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "shaman-costume-black.png"
+    },
+    {
+      "id": "shaman-costume-blue.png",
+      "name": "Shaman Costume Blue",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "shaman-costume-blue.png"
+    },
+    {
+      "id": "sinsiroad-costume.png",
+      "name": "Sinsiroad",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "sinsiroad-costume.png"
+    },
+    {
+      "id": "sinsiroad-shop-costume-junior.png",
+      "name": "Sinsiroad Shop Costume Junior",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "sinsiroad-shop-costume-junior.png"
+    },
+    {
+      "id": "sinsiroad-shop-costume-senior.png",
+      "name": "Sinsiroad Shop Costume Senior",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "sinsiroad-shop-costume-senior.png"
+    },
+    {
+      "id": "sorceress-costume.png",
+      "name": "Sorceress",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "sorceress-costume.png"
+    },
+    {
+      "id": "sportia-costume-navy.png",
+      "name": "Sportia Costume Navy",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "sportia-costume-white.png",
+      "name": "Sportia Costume White",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "sporty-hood-costume-black.png",
+      "name": "Sporty Hood Costume Black",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "sporty-hood-costume-black.png"
+    },
+    {
+      "id": "sporty-hood-costume-blue.png",
+      "name": "Sporty Hood Costume Blue",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "sporty-hood-costume-blue.png"
+    },
+    {
+      "id": "spring-dress-costume-brown.png",
+      "name": "Spring Dress Costume Brown",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "spring-dress-costume-brown.png"
+    },
+    {
+      "id": "spring-dress-costume-navy.png",
+      "name": "Spring Dress Costume Navy",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "spring-dress-costume-navy.png"
+    },
+    {
+      "id": "sulbim-costume-rainbow.png",
+      "name": "Sulbim Costume Rainbow",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "sulbim-costume-rainbow.png"
+    },
+    {
+      "id": "sulbim-costume-snowflake.png",
+      "name": "Sulbim Costume Snowflake",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "sulbim-costume-snowflake.png"
+    },
+    {
+      "id": "summer-uniform-costume-blue-sprite-resources-assets-946.png",
+      "name": "Summer Uniform Costume Blue",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "summer-uniform-costume-blue.png"
+    },
+    {
+      "id": "summer-uniform-costume-green.png",
+      "name": "Summer Uniform Costume Green",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "summer-uniform-costume-green.png"
+    },
+    {
+      "id": "swimsuit-2017-costume-navy.png",
+      "name": "Swimsuit 2017 Costume Navy",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "swimsuit-2017-costume-navy.png"
+    },
+    {
+      "id": "swimsuit-2017-costume-red.png",
+      "name": "Swimsuit 2017 Costume Red",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "swimsuit-2017-costume-red.png"
+    },
+    {
+      "id": "thief-costume.png",
+      "name": "Thief",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "thief-costume.png"
+    },
+    {
+      "id": "traveler-costume-brown.png",
+      "name": "Traveler Costume Brown",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "traveler-costume-brown.png"
+    },
+    {
+      "id": "traveler-costume-white.png",
+      "name": "Traveler Costume White",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "traveler-costume-white.png"
+    },
+    {
+      "id": "valentine-costume-brown.png",
+      "name": "Valentine Costume Brown",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "valentine-costume-brown.png"
+    },
+    {
+      "id": "valentine-costume-pink.png",
+      "name": "Valentine Costume Pink",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "valentine-costume-pink.png"
+    },
+    {
+      "id": "vampire-costume-real-sprite-resources-assets-671.png",
+      "name": "Vampire Costume Real",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "vampire-costume-real.png"
+    },
+    {
+      "id": "vampire-costume-sprite-resources-assets-873.png",
+      "name": "Vampire",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "vampire-costume.png"
+    },
+    {
+      "id": "vampire-costume.png",
+      "name": "Vampire",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "vampire-costume.png"
+    },
+    {
+      "id": "warrior-costume.png",
+      "name": "Warrior",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "warrior-costume.png"
+    },
+    {
+      "id": "whiteday-costume-purple-sprite-resources-assets-1165.png",
+      "name": "Whiteday Costume Purple",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "whiteday-costume-purple.png"
+    },
+    {
+      "id": "whiteday-costume-purple.png",
+      "name": "Whiteday Costume Purple",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "whiteday-costume-purple.png"
+    },
+    {
+      "id": "whiteday-costume-red-sprite-resources-assets-732.png",
+      "name": "Whiteday Costume Red",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "whiteday-costume-red.png"
+    },
+    {
+      "id": "whiteday-costume-red.png",
+      "name": "Whiteday Costume Red",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "whiteday-costume-red.png"
+    },
+    {
+      "id": "winter-coat-2017-costume-brown.png",
+      "name": "Winter Coat 2017 Costume Brown",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "winter-coat-2017-costume-brown.png"
+    },
+    {
+      "id": "winter-coat-2017-costume-white.png",
+      "name": "Winter Coat 2017 Costume White",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "winter-coat-2017-costume-white.png"
+    },
+    {
+      "id": "winter-coat-costume-pink.png",
+      "name": "Winter Coat Costume Pink",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "winter-coat-costume-pink.png"
+    },
+    {
+      "id": "winter-coat-costume-white.png",
+      "name": "Winter Coat Costume White",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "winter-coat-costume-white.png"
+    },
+    {
+      "id": "winter-date-costume-beige.png",
+      "name": "Winter Date Costume Beige",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "winter-date-costume-black.png",
+      "name": "Winter Date Costume Black",
+      "character": "Tia",
+      "live2d": false,
+      "free": true
+    },
+    {
+      "id": "winter-fairy-costume-black.png",
+      "name": "Winter Fairy Costume Black",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "winter-fairy-costume-black.png"
+    },
+    {
+      "id": "winter-fairy-costume-pink.png",
+      "name": "Winter Fairy Costume Pink",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "winter-fairy-costume-pink.png"
+    },
+    {
+      "id": "witch-costume-special.png",
+      "name": "Witch Costume Special",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "witch-costume-special.png"
+    },
+    {
+      "id": "tia-halloween-costume.png",
+      "name": "Halloween",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "halloween-costume.png"
+    },
+    {
+      "id": "tia-hanbok-costume.png",
+      "name": "Hanbok",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "hanbok-costume.png"
+    },
+    {
+      "id": "tia-sakura-costume.png",
+      "name": "Sakura",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "sakura-costume.png"
+    },
+    {
+      "id": "tia-sakura-costume-navy.png",
+      "name": "Sakura Navy",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "sakura-costume-navy.png"
+    },
+    {
+      "id": "tia-santa-costume.png",
+      "name": "Santa",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "santa-costume.png"
+    },
+    {
+      "id": "tia-vampire-costume-real.png",
+      "name": "Vampire Real",
+      "character": "Tia",
+      "live2d": true,
+      "free": true,
+      "texture": "vampire-costume-real.png"
+    },
+    {
+      "id": "pio-sailor-costume.png",
+      "name": "Sailor",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "sailor-costume.png"
+    },
+    {
+      "id": "pio-sailor-costume-black.png",
+      "name": "Sailor Black",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "sailor-costume-black.png"
+    },
+    {
+      "id": "pio-marine-costume-navy.png",
+      "name": "Marine Navy",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "marine-costume-navy.png"
+    },
+    {
+      "id": "pio-tirami1-costume.png",
+      "name": "Tirami Costume",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "tirami1-costume.png"
+    },
+    {
+      "id": "pio-sakura-fairy-costume-real.png",
+      "name": "Sakura Fairy Real",
+      "character": "Pio",
+      "live2d": true,
+      "free": true,
+      "texture": "sakura-fairy-costume-real.png"
     }
   ]
 }

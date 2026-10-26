@@ -1,0 +1,150 @@
+
+source/check-core.cjs
+Passed: randomized evenly spaced conveyor, emission speeds, random visitors, acceptance deadlines, failure/reload, reward idempotency, v1/v2 migration, 75 complete recipes, six restored enhancement paths, selected Mana tables, unknown-data guard, powerup consumption, delayed quest rewards, v1 migration, invalid-save rejection.
+Passed: all 10 visitor arrivals, random boost rewards, 42 collectible fairies, duplicate prevention, delayed delivery and v3 migration.
+Passed: action counters, family/potion details, powerup use, play time, quest statistics, partial-history migration and malformed-stat rejection.
+Passed: all fairy timer/level round trips, fractional-save recovery, both version-6 formats, all 35 request rewards, EXP progression and all 75 mastery paths.
+Passed: 99% ceiling across all families, stacked fairy bonuses, failure boundary, boost consumption, and current lower chances.
+Passed: all 75 selected recipe tables, preserved in-progress values, and current enhancement multipliers.
+Passed: 100:1 ingredient/ticket spawning, shared spacing/speed, one-time removal, isolated ticket rewards and save round trip.
+Passed: long-frame visible emission matches fine-grained updates.
+Passed: APK constant conveyor speed, upgrade cadence, empty-belt cap, fairy rate bonus and responsive coordinate scaling.
+
+source/check-commissions.cjs
+Passed: three choices, single acceptance, no fee, matching and level requirements, three consumed deliveries, saved progress, one-time rewards, guaranteed third fairy and old-save defaults.
+Passed: independent unlocked tiers for all three families, stable board choices, save persistence and locked-tier refusal.
+
+source/check-expeditions.cjs
+Passed: exact expedition charges, single dispatch, other visitor arrivals, concurrent commission, saved/offline rewards, idempotency, targeted fairy pity and maxed-fairy refusal.
+Passed: higher tier-scaled prices, ten distinct character tasks, three-charge bundles and preserved in-flight legacy supplies.
+Passed: potion-themed expedition context persists and locked material jobs refuse payment.
+Passed: in-shop visitor-order gate, per-family material-tier gate, replaced order and 250 character-specific jobs.
+Passed: tier and visitor fairy pools, selected targets, frozen scaled rewards, stamp persistence, exact exchange deductions and tier locks.
+Passed: combined randomized fairy and bonus rolls, guaranteed supplies/stamps, combined save round trip and exhausted fairy pools.
+Passed: Life/Mana/Stamina expedition materials, per-family tier locks, invalid choices, save/reload stability and legacy material handling.
+Passed: tier-1 to tier-5 chapter availability/order, new-game tier-1 routes, exact-tier routes, pre-dispatch draft validation/persistence, locked/absent no-charge dispatch, 120s combined timing, route persistence and revisit, matching sale reductions (5s/linear/20s cap/remaining), nonmatching/visitor/commission non-reduction, save/reload and legacy deadlines.
+
+source/check-expedition-stories.cjs
+Passed: story data mapping, tier 1-4 hooks/outcomes, unconverted Tirami tier-1 outcomes, legacy Neet four-paragraph journeys, journal rereading, tier 5 event ordering, neutral tier 5 text, save/reload idempotency and offline settlement.
+Passed: Neet tier-1 chapter matches the reviewed script, opens on new-game materials with all three routes, uses the 120s timer, persists chapter records/reports and preserves seen and unread legacy tier-1 records/stories when the same route is replayed as a chapter.
+Passed: chapter route beats for all three materials, exact outcomes, deferred chapter-report readiness, repeat-trip reset, journal replay data, save/reload and offline settlement, and unconverted-route fallback.
+Passed: Neet tier-3 and tier-4 chapters match the reviewed scripts, unlock only from their tier, expose only unlocked routes, persist drafts, refuse absent dispatch without charging, and preserve timer, reports, repeat trips and journal replay.
+Passed: Neet tier-5 chapter matches the reviewed script, unlocks from any tier-5 egg, exposes only unlocked options, keeps first family completions full, shows exact later viewpoints for Life, Mana and Stamina after same-traveler and other-traveler first completions, preserves unread stories, and survives reload with journal replay.
+Passed: Dolbur tier 1-4 chapters match all twelve reviewed routes byte-for-byte, open from any family tier with only unlocked choices, persist and change drafts, refuse absent dispatch without charge, keep cost/one-trip/120s/sale saving, repeat and reload reports, preserve unread legacy records, and settle offline with journal replay.
+Passed: Dolbur tier-5 chapter matches the reviewed script byte-for-byte, unlocks from any tier-5 egg, exposes only unlocked routes, keeps cost/one-trip/120s/sale saving, shows full first family completions and exact later viewpoints after same-traveler, Neet-first and unmarked legacy trips, preserves unread records and journal replay, and settles offline once.
+
+source/check-enhancement.cjs
+Timed enhancements: wait, repeat prevention, sale guard, blocked collection, failure, fairy durations, reload and replaced state passed.
+
+source/check-success-upgrades.cjs
+Passed: all 19 bonus steps/prices, exact deductions/max refusal, legacy progress, extended save round trip and all 75 recipes across 20 ranks with capped boosts.
+
+source/check-helpers.cjs
+Passed: summon cost/idempotency, empty pause, overhead ingredient collection, saved timers, expiry, 15 upgrade levels, full-belt Blackcat, helper fairy effects and malformed-save guards.
+Passed: real summon handler failure refund and independent ticket charges.
+Passed: eight cats, independent expiry, paused timers, unique catches and legacy single-helper migration.
+Passed: fixed slots, overhead-only collection, ready waiting, cooldown after catches and unique saved slots.
+Verified collection at max emission: level 1 60 versus level 15 200 ingredients per working minute.
+Passed: live upgrade effects, event/break multipliers and cap, four added fairy effects, documented summon milestones, ticket and quest-material bonuses.
+Passed: ticket/solution catches, no duplicate payout, inactive-event refusal, balance caps, separate statistics and special-drop animation artwork.
+Passed: randomized available slots, occupied-slot exclusion, stable existing positions and invalid spawn-roll refusal.
+Passed: ingredient flight, 100 ms stand/crouch switch, recovered body and left paw, element reuse/cleanup and reduced motion.
+
+source/check-storage.cjs
+Passed: backup quota failure preserves a loaded shop; invalid/unavailable storage never overwrites its original.
+Passed: validated recovery rotation, corrupt-primary recovery, quota protection, fixed five-second batching and retained dirty state on failure.
+Passed: three independent named slots, names/timestamps, legacy validation, quota preservation, corrupt-slot isolation and invalid-slot refusal.
+
+source/check-save-files.cjs
+Passed: named slot save/load handlers, overwrite/load cancellation, preview, unchanged autosave snapshots, backup-before-load, quota rollback, reload and blocked/busy refusal.
+Passed: portable compressed save round trip, preview/cancel, backup restoration, quota failure, malformed and oversized file refusal.
+
+source/check-migration.cjs
+Passed: v1–14 backups/migration, legacy promises and request results, unchanged balances, chest quota/cooldown boundaries, safe refusals and all three beginner masteries.
+
+source/check-ui.cjs
+node:assert:152
+  throw new AssertionError(obj);
+  ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+0 !== 1
+
+    at Object.<anonymous> (C:\Users\Toska\Documents\GitHub\PMG\source\check-ui.cjs:37:123)
+    at Module._compile (node:internal/modules/cjs/loader:1929:14)
+    at Object..js (node:internal/modules/cjs/loader:2060:10)
+    at Module.load (node:internal/modules/cjs/loader:1651:32)
+    at Module._load (node:internal/modules/cjs/loader:1443:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 0,
+  expected: 1,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.22.1
+
+source/check-presentation.cjs
+Passed: family colors, reward icons/amounts, accessible labels, plural bonuses and excluded text boundaries.
+
+source/check-settings.cjs
+Passed: saved preference validation/defaults, reduced motion, audio volume, text size, disabled idle chatter and dialogue duration.
+Passed: visitor bell resets playback, respects effects volume and stays silent when muted or hidden.
+Passed: save actions/status belong to the menu Save screen, not Settings.
+Passed: Pio/Tia idle, tap and stroke dialogue on canvas and static portraits, including modal/visibility/settings suppression.
+
+source/check-audio.cjs
+Passed: original ingredient Plop decodes once, reuses the shared context, starts at impact, respects mute/hidden/reduced-motion/effects-volume, caps overlap at three voices, cleans up nodes, and excludes tickets/solutions/failed catches. Measured isolated peak 0.281738 and rapid peak 0.281738 at maximum volume; 0.084521 at normal volume.
+
+source/check-mail.cjs
+Passed: one-time update claims, reload/export state, legacy saves, invalid IDs, balance limits and save-failure rollback.
+Passed: Claim all skips previous claims, saves exactly once, refuses overflow atomically and restores all gifts on save failure.
+
+source/check-events.cjs
+Passed: all 11 historical events on hold, exact legacy position/currency and owned skins retained, no old drops/redemption/rotation, old saves migrate safely.
+
+source/check-visitors.cjs
+Passed: 60-second offer expiry, five unique authored request/flavor pairs with placeholders per visitor, aligned documented pools, exact reward-neutral returning lines, complete-only reward-assumption tags, 25 paired material notes per visitor, all boost types and amounts, 30-second payout, immediate post-reward departure, reload idempotency, legacy completion dismissal without double pay, and preserved legacy fairy reward.
+
+source/check-economy.cjs
+Passed: schema 2, isolated config wiring, all material prices/gates, bundle exchange parity and exact case odds/returns in all compensation states.
+Passed: all 13 shop purchases, refusal without mutation, save/reload, 10:1 parity, overflow guards and progression-priced gold.
+
+source/check-late-balance.cjs
+node:internal/assert/utils:77
+    throw err;
+    ^
+
+AssertionError [ERR_ASSERTION]: conveyor, luck 3, price 0, tier 21: spread 1.2504049974132487
+    at Object.<anonymous> (C:\Users\Toska\Documents\GitHub\PMG\source\check-late-balance.cjs:16:10)
+    at Module._compile (node:internal/modules/cjs/loader:1929:14)
+    at Object..js (node:internal/modules/cjs/loader:2060:10)
+    at Module.load (node:internal/modules/cjs/loader:1651:32)
+    at Module._load (node:internal/modules/cjs/loader:1443:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.22.1
+
+source/check-build.cjs
+Passed: current sources/data embedded, unique UI IDs, 565 local media files and no network dependency.
+Passed: offline Pio model, 122 wardrobe textures, motions, runtime syntax and current controller embedded.
+Passed: Tia rig, default outfit, animations, fallback and character selector artwork embedded offline.
+Passed: original media mapping, separate fan-made costume previews, and approved event-banner exception.
+Passed: all 12 historical event/promotion banners restored and embedded.
+Passed: recovered APK UI module syntax and exact current UI source embedding.
+Passed: generated game stays below GitHub regular Git file limit.
+Passed: scalable book artwork and complete-lore reader embedded offline.

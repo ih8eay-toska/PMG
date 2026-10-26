@@ -1,13 +1,22 @@
 # Potion Maker — local recreation, version 0.6
 
+Menu implementation standard: [UI design system and complete screen inventory](UI_DESIGN_SYSTEM.md).
+
 Latest accumulated update: [changes since f67f158](research/releases/2026-10-25/CHANGES.md), [current verification](research/releases/2026-10-25/CHECKS.md), and [prepared player mail](research/releases/2026-10-25/IN-GAME-MAIL.md). Older narrative sections below include historical behavior; the release audit identifies superseded settings/rates and remaining APK fidelity gaps.
 
 Open **Potion-Maker.html** in Edge, Chrome, or Firefox. The playable game embeds its code, data, original icons, character portraits, and optional theme music. It needs no installation, server, account, or internet connection.
 
 Open **Asset-Library.html** to browse the local asset archive. Keep it beside the **assets/** folder. Its source links visit Fandom only when clicked.
 
+## Build size and GitHub uploads
+
+The offline HTML now uses verified lossless wardrobe compression and shared embedded style artwork. See [build-size measurements and rebuilding instructions](research/BUILD-SIZE-OPTIMIZATION.md). Rebuilding requires `py -m pip install -r source/requirements-build.txt`, then `py -B source/build.py`. The first build creates an ignored cache in `dist/texture-cache/`.
+
+Use GitHub Desktop or Git for the playable HTML: it is below the 100 MiB Git file limit, but above the website upload interface's 25 MiB limit.
+
 ## Gameplay additions
 
+- Pio's free **Shinobu Oshino Sundress** fan costume appears beside Default in the wardrobe. It uses a new white-and-pink dress texture, retaining Pio's face and purple hair. The straw hat was removed on request. [Artwork prompts, references, rig limits and verification](research/custom-costumes/shinobu-sundress.json).
 - Personal balance adjustments cover 47 potions across tiers 1–25: the existing 17 early/middle tables plus 30 late-game tables. Late changes buff multipliers and some success chances, connecting every unlock without reducing earlier values. See **research/balance/APPLIED_LATE_GAME.md** for scope, exact arrays, checks and limitations; **APPLIED_EARLY_MIDDLE.md** records the preserved earlier pass.
 - All 75 potion entries can be brewed and enhanced to their recorded maximum level. The formerly missing values are supplied by https://potion-maker.fandom.com/wiki/Potions. Home MP and Small MP use that page’s internally consistent multipliers.
 - Material progression now extends to 25 tiers in each family, with recorded values and family-specific enhancement tables. Unlocked materials appear randomly on the conveyor, including before brewing starts.
@@ -25,6 +34,8 @@ The offline Shop offers 13 locally implemented products (APK server-provided con
 Original `enhancing.png` (5×5), `enhanced.png` (5×3), `enhance-failed.png` (4×4), and `plop.png` (4×2) sheets now accompany the corresponding cauldron events. Playback follows the current enhancement duration and brief result/drop effects; the original APK timing is not confirmed. Reduced motion uses static frames, and rapid drop effects are capped at three overlapping sprites.
 
 ## Saving
+
+The **Save & backup** screen separates **On this device**, **Backup & transfer**, and **Recovery**. The default page shows autosave status and three compact manual snapshots. Snapshot names can be changed when updating a snapshot. File backups are the main transfer option; save codes are available under “Use a save code instead.” Recovery contains the previous shop and the separate start-over action. Storage keys and save formats are unchanged.
 
 **Menu → Save** now offers three named manual slots. Each shows a timestamp, currency balances, Mastery Stars and character preview. Saving over an occupied slot or loading a slot asks for confirmation. Loading uses the existing validated import path and keeps the previous shop in the pre-import backup. Autosave still writes only the current shop; slots change only when you explicitly save to them. Names can be changed when saving a slot. These slots are local to this browser/origin and are not bundled into a single exported file: export each loaded shop separately to keep copies outside browser storage.
 

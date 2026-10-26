@@ -1,0 +1,68 @@
+--- before/source/app.js
++++ after/source/app.js
+@@ -485,6 +485,9 @@
+ function renderRequestBoard(){
+  const c=game.state.commission;let offers;
+  if(!c&&!game.state.commissionTiers){offers=game.commissionOffers();save(true);}
++ const s=game.state,key=JSON.stringify([s.commission,s.commissionTiers,s.commissionsCompleted,s.fairies,s.request,s.potion?.family,s.potion?.tier,s.potion?.level,!!game.enhancementPending,!!s.eventRush.eventPotion,game.canDeliverCommission()]);
++ if(renderRequestBoard.state===s&&renderRequestBoard.key===key)return;
++ renderRequestBoard.state=s;renderRequestBoard.key=key;
+  const box=$('commission-board');box.replaceChildren();
+  $('request-status').textContent=(c?'Your active commission':'Choose one written request')+' · '+fmt(game.state.commissionsCompleted)+' completed'+(game.state.request?' · '+requestStatusText():'');
+  for(const offer of c?[c]:offers||game.commissionOffers()){
+@@ -853,7 +856,7 @@
+ function rewardOddsText(kind){const cost=game.rewardCost(kind),rules=ECONOMY.chests;if(kind==='hourly')return ` One free opening every ${duration(rules.freeBoostCooldownMs)}. Gold price follows your highest unlocked material tier. Up to ${rules.hourly.paidLimit} paid openings per ${rules.hourly.paidWindowMs/60000} active minutes; paid openings keep the free timer. Each opening awards one boost type.`;const expected=game.rewardExpectations(kind,window.brewerCharacter||'Pio'),parts=['tickets','rubies'].filter(key=>expected[key]>0).map(key=>Number(expected[key].toFixed(2))+' '+rewardLabels[key]),returned=Object.entries(expected).reduce((sum,[key,amount])=>sum+(CURRENCY_UNITS[key]?amount/CURRENCY_UNITS[key]:0),0),paid=cost.amount/CURRENCY_UNITS[cost.currency];return ` Average currency return: ${parts.join(' + ')} (${Number((returned/paid*100).toFixed(2))}% at the 10-ticket-per-ruby rate). Fairy and new-skin value excluded. Fairies below level 10 are equally likely; all maxed converts a fairy roll to ${rules.maxFairyTickets} tickets.`+(kind==='skin'?` Eligible current-character skins are equally likely; event skins are excluded. Duplicates convert to ${rules.duplicateTickets} tickets. Each opening has its own odds; no guaranteed skin after a fixed number of openings.`:'');}
+ function chestFrame(frame){const material={hourly:'wood',tickets:'iron',skin:'gold'}[rewardKind];return `url("${art('Original-'+material+'-chest-'+frame+'.png')}")`;}
+ function resetRewardChest(){rewardChestAnimation?.cancel();const chest=rewardDialog.querySelector('.reward-chest');chest.style.backgroundImage=chestFrame(0);chest.setAttribute('aria-label','Closed treasure chest');}
+-function updateRewardChestFrame(){if(!rewardChestAnimation||rewardChestAnimation.playState==='idle')return;const fraction=Number(rewardChestAnimation.currentTime||0)/ECONOMY.chests.revealMs,chest=rewardDialog.querySelector('.reward-chest'),image=chestFrame(fraction<.9?0:fraction<.97?1:2);if(chest.style.backgroundImage!==image)chest.style.backgroundImage=image;}
++function updateRewardChestFrame(){if(!rewardChestAnimation||rewardChestAnimation.playState==='idle'||rewardChestAnimation.playState==='finished')return;const fraction=Number(rewardChestAnimation.currentTime||0)/ECONOMY.chests.revealMs,chest=rewardDialog.querySelector('.reward-chest'),image=chestFrame(fraction<.9?0:fraction<.97?1:2);if(chest.style.backgroundImage!==image)chest.style.backgroundImage=image;}
+ function animateRewardChest(){resetRewardChest();const chest=rewardDialog.querySelector('.reward-chest');if(reducedMotion){chest.style.backgroundImage=chestFrame(2);chest.setAttribute('aria-label','Open treasure chest');return;}rewardChestAnimation=chest.animate([{opacity:1},{opacity:1}],{duration:ECONOMY.chests.revealMs,fill:'forwards'});rewardChestAnimation.finished.then(()=>{chest.style.backgroundImage=chestFrame(2);chest.setAttribute('aria-label','Open treasure chest');}).catch(()=>{});}
+ 
+ function rewardArt(currency,name=''){if(currency==='skin')return game.state.activeCostumeId;if(currency==='fairy')return FAIRIES.find(f=>f.name===name)?.image||FAIRIES[0].image;return currency==='tickets'?'Nyan-Ticket.png':currency==='rubies'?'Gem.png':DATA.powerups[currency].image;}
+--- before/source/pio.js
++++ after/source/pio.js
+@@ -59,7 +59,7 @@
+   // Match the backing buffer to the displayed model without changing its logical coordinates.
+   const resizeCanvas=()=>{const bounds=canvas.getBoundingClientRect();if(!bounds.width||!bounds.height)return;const resolution=Math.min(3,Math.max(1,Math.max(bounds.width/380,bounds.height/380)*(window.devicePixelRatio||1)));if(Math.abs(app.renderer.resolution-resolution)<.01)return;app.renderer.resolution=resolution;app.renderer.resize(380,380);};
+   new ResizeObserver(resizeCanvas).observe(canvas);window.addEventListener('resize',resizeCanvas);
+-  window.applyCharacterSettings=()=>{app.ticker.maxFPS=gameSettings.lightMode?30:60;if(gameSettings.character)app.start();else{app.stop();window.clearIdleDialogue?.();}};window.applyCharacterSettings();
++  window.applyCharacterSettings=()=>{app.ticker.maxFPS=gameSettings.lightMode?30:60;if(gameSettings.character&&!document.hidden)app.start();else{app.stop();window.clearIdleDialogue?.();}};window.applyCharacterSettings();
+   app.ticker.add(()=>{if(model&&!canvas.hidden)model.update(app.ticker.deltaMS);});
+   async function wear(){
+    const character=window.brewerCharacter,costume=character+':'+game.state.activeCostumeId;if(costume===lastCostume)return;lastCostume=costume;
+@@ -79,7 +79,7 @@
+    }catch(error){console.warn('Pio costume could not load; using portrait.',error);}
+   }
+   new MutationObserver(()=>{void wear();}).observe(portrait,{attributes:true,attributeFilter:['src']});
+-  const visibility=()=>document.hidden?app.stop():app.start();document.addEventListener('visibilitychange',visibility);visibility();
++  const visibility=()=>window.applyCharacterSettings();document.addEventListener('visibilitychange',visibility);visibility();
+   window.pioReact=result=>{if(model&&!canvas.hidden)model.motion(result==='success'?'success':'failure',0,3);};
+   await wear();
+  }catch(error){canvas.hidden=true;portrait.hidden=false;if(app)app.destroy(false);console.warn('Live2D unavailable; using portrait.',error);}
+--- before/source/event-rush-ui.js
++++ after/source/event-rush-ui.js
+@@ -126,4 +126,5 @@
+  const story=EVENT_STORIES[eventPageIndex];eventDialog.querySelector('.event-story h3').textContent=story.title;eventDialog.querySelector('.event-story p').textContent=story.text;const banner=eventDialog.querySelector('.event-page-banner');banner.src=art(event.banner);banner.alt=event.name+' historical banner';
+  const rewards=eventDialog.querySelector('.event-rewards');rewards.replaceChildren();for(const id of event.skins){const c=COSTUMES.entries.find(c=>c.id===id),row=document.createElement('section'),image=document.createElement('img'),copy=document.createElement('p');row.className='event-reward';image.src=art(id);image.alt=c.name;copy.textContent=c.character+' · '+c.name+' · '+(game.state.costumes.includes(id)?'Owned':'On hold');row.append(image,copy);rewards.append(row);}
+ }
+-window.refreshEvents=()=>{if(eventDialog.open){if(eventDialog.dataset.rush==='true')refreshRushPage();else refreshLegacyEventPage();}};
++// refreshRush already updates the active page on renders and its 250-ms timer.
++window.refreshEvents=()=>{if(eventDialog.open&&eventDialog.dataset.rush!=='true')refreshLegacyEventPage();};
+--- before/source/build.py
++++ after/source/build.py
+@@ -110,7 +110,14 @@
+ template=template.replace('__POTION_BOOK_CSS__',book_css)
+ for token,name in [('__APK_MENU_PANEL__','background-big.png'),('__APK_MENU_CLOSE__','close.png')]:
+     template=template.replace(token,'data:image/png;base64,'+base64.b64encode((ROOT/'assets/extracted/organized/ui'/name).read_bytes()).decode())
+-for token,value in [('__ORIGINAL_ACHIEVEMENTS__',(ROOT/'data/original-achievements.json').read_text(encoding='utf-8')),('__ASSETS__',json.dumps(assets)),('__UPDATE_DATA__',(ROOT/'data/updates.json').read_text(encoding='utf-8')),('__EVENT_STORIES__',(ROOT/'data/event-stories.json').read_text(encoding='utf-8')),('__EVENT_RUSH_DIALOGUE__',(ROOT/'data/event-rush-dialogue.json').read_text(encoding='utf-8')),('__EXPEDITION_JOBS__',(ROOT/'data/expedition-jobs.json').read_text(encoding='utf-8')),('__EXPEDITION_STORY_DATA__',(ROOT/'data/expedition-stories.json').read_text(encoding='utf-8')),('__EXPEDITION_CHAPTER_DATA__',(ROOT/'data/expedition-chapters.json').read_text(encoding='utf-8')),('__GAME_DATA__',(ROOT/'data/game-data.json').read_text(encoding='utf-8')),('__ECONOMY_DATA__',(ROOT/'data/economy.json').read_text(encoding='utf-8')),('__COSTUME_DATA__',(ROOT/'data/costumes.json').read_text(encoding='utf-8')),('__FLAVOR_DATA__',(ROOT/'data/flavor-text.json').read_text(encoding='utf-8')),('__MATERIAL_TEXT__',(ROOT/'data/material-descriptions.json').read_text(encoding='utf-8')),('__VISITOR_DIALOGUE__',(ROOT/'data/visitor-dialogue.json').read_text(encoding='utf-8')),('__FAIRY_DATA__',(ROOT/'data/fairies.json').read_text(encoding='utf-8')),('__ACHIEVEMENT_LORE__',(ROOT/'data/achievement-lore.json').read_text(encoding='utf-8')),('__STORAGE__',(ROOT/'source/storage.js').read_text(encoding='utf-8')),('__CORE__',(ROOT/'source/event-rush.js').read_text(encoding='utf-8')+'\n'+(ROOT/'source/core.js').read_text(encoding='utf-8')),('__APP__',(ROOT/'source/app.js').read_text(encoding='utf-8')+'\n'+(ROOT/'source/event-rush-ui.js').read_text(encoding='utf-8'))]:template=template.replace(token,value)
++# Keep every registry key in order while storing identical payloads only once.
++asset_counts={}
++for payload in assets.values():
++    asset_counts[payload]=asset_counts.get(payload,0)+1
++shared_assets=[payload for payload,count in asset_counts.items() if count>1]
++shared_indices={payload:index for index,payload in enumerate(shared_assets)}
++asset_code='(()=>{const shared='+json.dumps(shared_assets)+';return {'+','.join(json.dumps(key)+':'+('shared['+str(shared_indices[value])+']' if value in shared_indices else json.dumps(value)) for key,value in assets.items())+'};})()'
++for token,value in [('__ORIGINAL_ACHIEVEMENTS__',(ROOT/'data/original-achievements.json').read_text(encoding='utf-8')),('__ASSETS__',asset_code),('__UPDATE_DATA__',(ROOT/'data/updates.json').read_text(encoding='utf-8')),('__EVENT_STORIES__',(ROOT/'data/event-stories.json').read_text(encoding='utf-8')),('__EVENT_RUSH_DIALOGUE__',(ROOT/'data/event-rush-dialogue.json').read_text(encoding='utf-8')),('__EXPEDITION_JOBS__',(ROOT/'data/expedition-jobs.json').read_text(encoding='utf-8')),('__EXPEDITION_STORY_DATA__',(ROOT/'data/expedition-stories.json').read_text(encoding='utf-8')),('__EXPEDITION_CHAPTER_DATA__',(ROOT/'data/expedition-chapters.json').read_text(encoding='utf-8')),('__GAME_DATA__',(ROOT/'data/game-data.json').read_text(encoding='utf-8')),('__ECONOMY_DATA__',(ROOT/'data/economy.json').read_text(encoding='utf-8')),('__COSTUME_DATA__',(ROOT/'data/costumes.json').read_text(encoding='utf-8')),('__FLAVOR_DATA__',(ROOT/'data/flavor-text.json').read_text(encoding='utf-8')),('__MATERIAL_TEXT__',(ROOT/'data/material-descriptions.json').read_text(encoding='utf-8')),('__VISITOR_DIALOGUE__',(ROOT/'data/visitor-dialogue.json').read_text(encoding='utf-8')),('__FAIRY_DATA__',(ROOT/'data/fairies.json').read_text(encoding='utf-8')),('__ACHIEVEMENT_LORE__',(ROOT/'data/achievement-lore.json').read_text(encoding='utf-8')),('__STORAGE__',(ROOT/'source/storage.js').read_text(encoding='utf-8')),('__CORE__',(ROOT/'source/event-rush.js').read_text(encoding='utf-8')+'\n'+(ROOT/'source/core.js').read_text(encoding='utf-8')),('__APP__',(ROOT/'source/app.js').read_text(encoding='utf-8')+'\n'+(ROOT/'source/event-rush-ui.js').read_text(encoding='utf-8'))]:template=template.replace(token,value)
+ pio_root=ROOT/'assets/live2d/Pio'
+ data_url=lambda path,mime:'data:'+mime+';base64,'+base64.b64encode(path.read_bytes()).decode()
+ pio_settings=json.loads((pio_root/'index.json').read_text(encoding='utf-8'))

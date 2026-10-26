@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-26",
+  "cause": "The original hair artwork included a straight cast-shadow band from the removed hat.",
+  "tool": "Built-in image_gen",
+  "prompt": "Use case: precise-object-edit. Edit the attached 1024x1024 Live2D texture atlas, preserving the EXACT atlas layout and silhouette placement. Primary request: REMOVE THE OLD HAT'S SHADOW FROM PIO'S PURPLE HAIR. The back-hair island is upper right, x595..885 y0..465. It currently has an unnatural straight horizontal dark purple band ending around y132, with an abrupt step into light hair below. Remove that entire artificial horizontal hat shadow. Paint clean, continuous lavender-violet anime hair with smooth strand-following transitions, one coherent natural lighting scheme, pale violet highlights, and no straight horizontal shading boundary. Preserve the softly rounded scalp, individual long strands and tips. Also correct the matching foreground bangs island at x0..350 y630..825 (it is rotated sideways): remove its abrupt straight dark-light divide around x245 and give it the SAME lavender-violet palette and natural continuous strand shading as the back hair. Do not add a hat, hair bows, decorations or extra strands. Keep all existing hair shapes, positions, proportions and orientations exactly the same. All non-hair atlas pixels (the sideways white sundress, skin, face, eyes, mouths, blush) must remain unchanged. This is a production UV texture, NOT a portrait. DO NOT rearrange islands, convert to a character illustration, add text, crop or zoom. Output square atlas, truly transparent background. Crisp original Potion Maker anime linework, clean professional texture cleanup. The key correction is completely eliminating the flat horizontal shadow band on the scalp and its continuation on the bangs.",
+  "texture": "assets/live2d/Pio/textures/shinobu-sundress-costume.png",
+  "preview": "assets/custom-costumes/shinobu-sundress-preview.png",
+  "packing": "Transferred generated RGB into the two existing hair UV sections only, retaining the original alpha channel. Every pixel outside those hair sections remains byte-identical after RGBA decoding.",
+  "verification": {
+    "changedHairPixels": 93020,
+    "alphaUnchanged": true,
+    "nonHairPixelsUnchanged": true,
+    "motionsRendered": 24,
+    "browserErrors": 0,
+    "desktop": true,
+    "mobile": true,
+    "saveReload": true
+  }
+}

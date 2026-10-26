@@ -7,6 +7,8 @@
   const scale=Math.min(bounds.width/layout.referenceWidth,height/layout.referenceHeight);
   if(!scale)return;
   room.style.setProperty('--apk-u',scale+'px');
+  // The world camera keeps its 12.8-unit vertical span; UI uses Expand scaling.
+  room.style.setProperty('--apk-world-u',height/layout.referenceHeight+'px');
   room.style.setProperty('--apk-render-height',height+'px');
   room.dataset.apkLayout='true';
  }

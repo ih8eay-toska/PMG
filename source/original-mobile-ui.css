@@ -216,7 +216,7 @@ main > .room { container-type: inline-size; }
 
 /* Reference brewing-room pass: top parchment, action stacks, side shortcuts and in-pot liquid. */
 .sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
-.room .potion-card .powerup-panel-indicator { display: none !important; }
+.room .potion-card .powerup-panel-indicator[hidden] { display: none !important; }
 
 @media (min-width: 651px) {
   .room .room-top { padding: 6px 70px 6px 18px; background-position: left center, center; background-size: calc(100% - 64px) calc(100% - 8px), 100% 100%; }

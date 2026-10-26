@@ -1,0 +1,226 @@
+[
+  {
+    "file": "source/index.template.html",
+    "selector": "dialog .close"
+  },
+  {
+    "file": "source/index.template.html",
+    "selector": "dialog .close"
+  },
+  {
+    "file": "source/index.template.html",
+    "selector": "dialog .close:hover:enabled"
+  },
+  {
+    "file": "source/index.template.html",
+    "selector": "dialog .back-to-menu"
+  },
+  {
+    "file": "source/index.template.html",
+    "selector": ":root[data-theme=\"dark\"] dialog .back-to-menu"
+  },
+  {
+    "file": "source/index.template.html",
+    "selector": "dialog .back-to-menu:hover:enabled"
+  },
+  {
+    "file": "source/index.template.html",
+    "selector": ":root[data-theme=\"dark\"] dialog .back-to-menu:hover:enabled"
+  },
+  {
+    "file": "source/index.template.html",
+    "selector": "#catalog-dialog>.back-to-menu"
+  },
+  {
+    "file": "source/index.template.html",
+    "selector": "#expedition-dialog>.back-to-menu"
+  },
+  {
+    "file": "source/index.template.html",
+    "selector": "dialog>.dialog-header"
+  },
+  {
+    "file": "source/index.template.html",
+    "selector": "dialog>.dialog-header h2"
+  },
+  {
+    "file": "source/index.template.html",
+    "selector": "dialog>.dialog-header h3"
+  },
+  {
+    "file": "source/index.template.html",
+    "selector": "dialog .dialog-header .close"
+  },
+  {
+    "file": "source/index.template.html",
+    "selector": "dialog .dialog-header .back-to-menu"
+  },
+  {
+    "file": "source/index.template.html",
+    "selector": "dialog .dialog-subheader .back-to-menu"
+  },
+  {
+    "file": "source/index.template.html",
+    "selector": ":root[data-theme=\"dark\"] dialog>.dialog-header"
+  },
+  {
+    "file": "source/index.template.html",
+    "selector": "#game-menu>.dialog-header"
+  },
+  {
+    "file": "source/index.template.html",
+    "selector": "#game-menu>.dialog-header>.eyebrow"
+  },
+  {
+    "file": "source/index.template.html",
+    "selector": "#game-menu>.dialog-header>h2"
+  },
+  {
+    "file": "source/index.template.html",
+    "selector": "#game-menu .dialog-header .close"
+  },
+  {
+    "file": "source/index.template.html",
+    "selector": "#game-menu>.dialog-header"
+  },
+  {
+    "file": "source/index.template.html",
+    "selector": "#game-menu .dialog-header .close"
+  },
+  {
+    "file": "source/index.template.html",
+    "selector": "#catalog-dialog>.dialog-header"
+  },
+  {
+    "file": "source/index.template.html",
+    "selector": "#save-dialog>.dialog-header"
+  },
+  {
+    "file": "source/original-researched-ui.css",
+    "selector": "dialog>.original-dialog-header"
+  },
+  {
+    "file": "source/original-researched-ui.css",
+    "selector": "dialog>.original-dialog-header .eyebrow"
+  },
+  {
+    "file": "source/original-researched-ui.css",
+    "selector": "dialog>.original-dialog-header .original-title"
+  },
+  {
+    "file": "source/original-researched-ui.css",
+    "selector": "dialog>.original-dialog-header .close"
+  },
+  {
+    "file": "source/original-researched-ui.css",
+    "selector": "#fairy-dialog>.dialog-header"
+  },
+  {
+    "file": "source/original-researched-ui.css",
+    "selector": "#equipped-fairy-dialog>.close"
+  },
+  {
+    "file": "source/original-researched-ui.css",
+    "selector": "#game-menu .dialog-header .close"
+  },
+  {
+    "file": "source/original-researched-ui.css",
+    "selector": "#expedition-dialog>.dialog-header"
+  },
+  {
+    "file": "source/original-researched-ui.css",
+    "selector": "#expedition-dialog>.dialog-header .eyebrow"
+  },
+  {
+    "file": "source/original-researched-ui.css",
+    "selector": "#expedition-dialog>.dialog-header h2"
+  },
+  {
+    "file": "source/original-researched-ui.css",
+    "selector": "#expedition-dialog .dialog-header .close"
+  },
+  {
+    "file": "source/original-researched-ui.css",
+    "selector": "#expedition-dialog>.dialog-header h2"
+  },
+  {
+    "file": "source/original-researched-ui.css",
+    "selector": "#game-menu[data-shop-view=true]>.dialog-header"
+  },
+  {
+    "file": "source/original-researched-ui.css",
+    "selector": "#game-menu[data-shop-view=true]>.dialog-header .close"
+  },
+  {
+    "file": "source/original-researched-ui.css",
+    "selector": "#game-menu-shops>.dialog-subheader .back-to-menu"
+  },
+  {
+    "file": "source/original-researched-ui.css",
+    "selector": "#shop-balances-dialog>.close"
+  },
+  {
+    "file": "source/original-researched-ui.css",
+    "selector": "#achievements-dialog .dialog-header"
+  },
+  {
+    "file": "source/original-researched-ui.css",
+    "selector": "#achievements-dialog .dialog-header h2"
+  },
+  {
+    "file": "source/original-researched-ui.css",
+    "selector": "#achievements-dialog .close"
+  },
+  {
+    "file": "source/original-researched-ui.css",
+    "selector": "#achievement-detail-dialog .close"
+  },
+  {
+    "file": "source/original-researched-ui.css",
+    "selector": "#achievements-dialog .dialog-header h2"
+  },
+  {
+    "file": "source/potion-book.css",
+    "selector": "#catalog-dialog .dialog-header"
+  },
+  {
+    "file": "source/potion-book.css",
+    "selector": "#catalog-dialog .dialog-header>.eyebrow"
+  },
+  {
+    "file": "source/potion-book.css",
+    "selector": "#catalog-dialog .dialog-header h2"
+  },
+  {
+    "file": "source/potion-book.css",
+    "selector": "#catalog-dialog .dialog-header .close"
+  },
+  {
+    "file": "source/potion-book.css",
+    "selector": "#catalog-dialog .dialog-header .back-to-menu"
+  },
+  {
+    "file": "source/potion-book.css",
+    "selector": ".book-reader-header>.close"
+  },
+  {
+    "file": "source/potion-book.css",
+    "selector": "#catalog-dialog .dialog-header h2"
+  },
+  {
+    "file": "source/potion-book.css",
+    "selector": "#catalog-dialog .dialog-header"
+  },
+  {
+    "file": "source/potion-book.css",
+    "selector": "#catalog-dialog .dialog-header .back-to-menu"
+  },
+  {
+    "file": "source/potion-book.css",
+    "selector": "#achievements-dialog > .dialog-header"
+  },
+  {
+    "file": "source/potion-book.css",
+    "selector": "#achievements-dialog .dialog-header .close"
+  }
+]

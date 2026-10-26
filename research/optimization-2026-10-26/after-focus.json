@@ -1,0 +1,89 @@
+{
+  "label": "after-focus",
+  "html": "C:/Users/Toska/Documents/GitHub/PMG/Potion-Maker.html",
+  "bytes": 102052242,
+  "startup": {
+    "readyMs": 2019.199999999255,
+    "dom": 1499,
+    "nav": [
+      {
+        "domContentLoaded": 1654.2999999970198,
+        "load": 1727.199999999255
+      }
+    ],
+    "assets": 565
+  },
+  "rows": [
+    {
+      "name": "commission",
+      "counts": {
+        "updateRewardChestFrame": 1277,
+        "render": 110,
+        "syncHelperCats": 120,
+        "renderRequestBoard": 110,
+        "syncBelt": 1277,
+        "decorateGameText": 1592
+      },
+      "times": {
+        "updateRewardChestFrame": 1.9000000022351742,
+        "syncHelperCats": 19.5,
+        "renderRequestBoard": 0.7999999970197678,
+        "render": 76.09999998658895,
+        "syncBelt": 338.30000004917383,
+        "decorateGameText": 17.900000005960464
+      },
+      "mutations": {},
+      "frames": 1276,
+      "p50": 7,
+      "p95": 13.900000000000091,
+      "over33": 0,
+      "longTasks": [],
+      "dom": 1641,
+      "life": {
+        "intervals": 5,
+        "timeouts": 3,
+        "listeners": 43,
+        "observers": 54
+      },
+      "metrics": {
+        "TaskDuration": 7.872229000000001,
+        "ScriptDuration": 0.960763,
+        "LayoutDuration": 0.119206,
+        "RecalcStyleDuration": 3.067694,
+        "LayoutCount": 814
+      }
+    }
+  ],
+  "life": {
+    "dom": 1529,
+    "listeners": 43,
+    "observers": 54,
+    "intervals": 5
+  },
+  "lifeAfter": {
+    "dom": 1616,
+    "listeners": 43,
+    "observers": 54,
+    "intervals": 5
+  },
+  "micro": {
+    "commission200Ms": 0.19999999925494194,
+    "buttonRetained": true
+  },
+  "visibility": {
+    "offTickerRunning": false,
+    "hiddenTickerRunning": false
+  },
+  "stableBefore": {
+    "documents": 1,
+    "nodes": 2824,
+    "jsEventListeners": 257
+  },
+  "stableAfter": {
+    "documents": 1,
+    "nodes": 2824,
+    "jsEventListeners": 257
+  },
+  "network": [],
+  "errors": []
+}

@@ -1,0 +1,26 @@
+{
+  ".opencode": {
+    "files": 16,
+    "bytes": 88741
+  },
+  "assets": {
+    "files": 2722,
+    "bytes": 147358389
+  },
+  "backups": {
+    "files": 25,
+    "bytes": 258938
+  },
+  "data": {
+    "files": 28,
+    "bytes": 951013
+  },
+  "research": {
+    "files": 399,
+    "bytes": 75646387
+  },
+  "source": {
+    "files": 62,
+    "bytes": 1134250
+  }
+}

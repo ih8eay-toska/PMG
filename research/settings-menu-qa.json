@@ -1,0 +1,43 @@
+{
+  "initial": {
+    "music": true,
+    "character": true,
+    "light": false,
+    "confirm": false
+  },
+  "toggles": {
+    "character": false,
+    "hidden": "hidden",
+    "light": "true",
+    "boil": "none",
+    "confirm": true,
+    "music": false,
+    "sound": 0.5,
+    "stored": {
+      "musicVolume": 0.25,
+      "effectsVolume": 0.5,
+      "musicEnabled": false,
+      "character": false,
+      "lightMode": true,
+      "confirmSell": true,
+      "shortcuts": false,
+      "reducedMotion": false,
+      "idleDialogue": true,
+      "dialogueDuration": 1,
+      "textSize": "normal"
+    }
+  },
+  "sale": {
+    "calls": 2,
+    "unchanged": true,
+    "sold": true
+  },
+  "mobile": {
+    "left": 10,
+    "right": 380,
+    "width": 324,
+    "client": 324,
+    "scroll": true
+  },
+  "errors": []
+}

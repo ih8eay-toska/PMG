@@ -1,0 +1,870 @@
+{
+  "results": [
+    {
+      "key": "visitor-order-dialog",
+      "width": 1366,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 465.1875,
+        "top": 58.9921875,
+        "width": 100,
+        "height": 75.921875
+      }
+    },
+    {
+      "key": "event-dialog",
+      "width": 1366,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 453.390625,
+        "top": 59,
+        "width": 104,
+        "height": 86.125
+      }
+    },
+    {
+      "key": "help-dialog",
+      "width": 1366,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 464.6875,
+        "top": 59,
+        "width": 91,
+        "height": 73
+      }
+    },
+    {
+      "key": "statistics-dialog",
+      "width": 1366,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 474.1875,
+        "top": 59,
+        "width": 72,
+        "height": 62
+      }
+    },
+    {
+      "key": "portrait-upgrade-dialog",
+      "width": 1366,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 533.03125,
+        "top": 67.984375,
+        "width": 68.5,
+        "height": 47.65625
+      }
+    },
+    {
+      "key": "save-dialog",
+      "width": 1366,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 462.1875,
+        "top": 77,
+        "width": 106,
+        "height": 99
+      }
+    },
+    {
+      "key": "fairy-dialog",
+      "width": 1366,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 471.6875,
+        "top": 77,
+        "width": 87,
+        "height": 78
+      }
+    },
+    {
+      "key": "catalog-dialog",
+      "width": 1366,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 469.1875,
+        "top": 43,
+        "width": 92,
+        "height": 64
+      }
+    },
+    {
+      "key": "catalog-reader-dialog",
+      "width": 1366,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 413,
+        "top": 56,
+        "width": 92,
+        "height": 64
+      }
+    },
+    {
+      "key": "achievements-dialog",
+      "width": 1366,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 446.6875,
+        "top": 61.5,
+        "width": 101,
+        "height": 76
+      }
+    },
+    {
+      "key": "achievement-detail-dialog",
+      "width": 1366,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 390.5,
+        "top": 141.765625,
+        "width": 101,
+        "height": 76
+      }
+    },
+    {
+      "key": "costume-shop-dialog",
+      "width": 1366,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 460.1875,
+        "top": 40.5,
+        "width": 100,
+        "height": 81
+      }
+    },
+    {
+      "key": "character-picker",
+      "width": 1366,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 463.1875,
+        "top": 135,
+        "width": 104,
+        "height": 83
+      }
+    },
+    {
+      "key": "game-menu-shops",
+      "width": 1366,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 469.1875,
+        "top": 59,
+        "width": 92,
+        "height": 64
+      }
+    },
+    {
+      "key": "game-menu-mail",
+      "width": 1366,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 601.03125,
+        "top": 41.984375,
+        "width": 47.34375,
+        "height": 47.34375
+      }
+    },
+    {
+      "key": "game-menu-settings",
+      "width": 1366,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 584.1328125,
+        "top": 43.15625,
+        "width": 52.828125,
+        "height": 42.15625
+      }
+    },
+    {
+      "key": "visitor-order-dialog",
+      "width": 390,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 52.9765625,
+        "top": 93.296875,
+        "width": 63.390625,
+        "height": 48.125
+      }
+    },
+    {
+      "key": "event-dialog",
+      "width": 390,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 53.8515625,
+        "top": 85.0390625,
+        "width": 65.453125,
+        "height": 54.203125
+      }
+    },
+    {
+      "key": "help-dialog",
+      "width": 390,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 51.078125,
+        "top": 84.859375,
+        "width": 58.59375,
+        "height": 47
+      }
+    },
+    {
+      "key": "statistics-dialog",
+      "width": 390,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 47.3515625,
+        "top": 86.4140625,
+        "width": 47.890625,
+        "height": 41.234375
+      }
+    },
+    {
+      "key": "portrait-upgrade-dialog",
+      "width": 390,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 51.2734375,
+        "top": 103.3671875,
+        "width": 59.140625,
+        "height": 41.140625
+      }
+    },
+    {
+      "key": "save-dialog",
+      "width": 390,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 54.2890625,
+        "top": 101.75,
+        "width": 66.484375,
+        "height": 62.09375
+      }
+    },
+    {
+      "key": "fairy-dialog",
+      "width": 390,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 50.265625,
+        "top": 110.1953125,
+        "width": 56.40625,
+        "height": 50.578125
+      }
+    },
+    {
+      "key": "catalog-dialog",
+      "width": 390,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 37.890625,
+        "top": 72.859375,
+        "width": 64.0625,
+        "height": 44.5625
+      }
+    },
+    {
+      "key": "catalog-reader-dialog",
+      "width": 390,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 32.625,
+        "top": 57.234375,
+        "width": 57.90625,
+        "height": 40.28125
+      }
+    },
+    {
+      "key": "achievements-dialog",
+      "width": 390,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 61.75,
+        "top": 110.203125,
+        "width": 59.84375,
+        "height": 45.03125
+      }
+    },
+    {
+      "key": "achievement-detail-dialog",
+      "width": 390,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 43.40625,
+        "top": 64.5859375,
+        "width": 58.5,
+        "height": 44.015625
+      }
+    },
+    {
+      "key": "costume-shop-dialog",
+      "width": 390,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 52.9765625,
+        "top": 84.859375,
+        "width": 63.390625,
+        "height": 51.34375
+      }
+    },
+    {
+      "key": "character-picker",
+      "width": 390,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 33.8515625,
+        "top": 144.5546875,
+        "width": 65.453125,
+        "height": 52.234375
+      }
+    },
+    {
+      "key": "game-menu-shops",
+      "width": 390,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 51.2734375,
+        "top": 94.9140625,
+        "width": 59.140625,
+        "height": 41.140625
+      }
+    },
+    {
+      "key": "game-menu-mail",
+      "width": 390,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 59.8671875,
+        "top": 77.9921875,
+        "width": 71.171875,
+        "height": 71.171875
+      }
+    },
+    {
+      "key": "game-menu-settings",
+      "width": 390,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 53.8515625,
+        "top": 77.9921875,
+        "width": 65.453125,
+        "height": 52.234375
+      }
+    },
+    {
+      "key": "visitor-order-dialog",
+      "width": 320,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 117.1640625,
+        "top": 56.9375,
+        "width": 22.765625,
+        "height": 17.28125
+      }
+    },
+    {
+      "key": "event-dialog",
+      "width": 320,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 58.8515625,
+        "top": 85.765625,
+        "width": 49.203125,
+        "height": 40.75
+      }
+    },
+    {
+      "key": "help-dialog",
+      "width": 320,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 118.1875,
+        "top": 50.8671875,
+        "width": 20.71875,
+        "height": 16.609375
+      }
+    },
+    {
+      "key": "statistics-dialog",
+      "width": 320,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 120.3515625,
+        "top": 52.1171875,
+        "width": 16.390625,
+        "height": 14.109375
+      }
+    },
+    {
+      "key": "portrait-upgrade-dialog",
+      "width": 320,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 118.078125,
+        "top": 64.6875,
+        "width": 20.9375,
+        "height": 14.5625
+      }
+    },
+    {
+      "key": "save-dialog",
+      "width": 320,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 116.484375,
+        "top": 60.703125,
+        "width": 24.125,
+        "height": 22.53125
+      }
+    },
+    {
+      "key": "fairy-dialog",
+      "width": 320,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 118.6484375,
+        "top": 69.5,
+        "width": 19.796875,
+        "height": 17.75
+      }
+    },
+    {
+      "key": "catalog-dialog",
+      "width": 320,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 104.6875,
+        "top": 38.15625,
+        "width": 25.875,
+        "height": 18
+      }
+    },
+    {
+      "key": "catalog-reader-dialog",
+      "width": 320,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 37.625,
+        "top": 53.28125,
+        "width": 40.25,
+        "height": 28
+      }
+    },
+    {
+      "key": "achievements-dialog",
+      "width": 320,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 112.9609375,
+        "top": 69.8515625,
+        "width": 22.984375,
+        "height": 17.296875
+      }
+    },
+    {
+      "key": "achievement-detail-dialog",
+      "width": 320,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 52.7109375,
+        "top": 52.7890625,
+        "width": 39.109375,
+        "height": 29.421875
+      }
+    },
+    {
+      "key": "costume-shop-dialog",
+      "width": 320,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 117.1640625,
+        "top": 49.953125,
+        "width": 22.765625,
+        "height": 18.4375
+      }
+    },
+    {
+      "key": "character-picker",
+      "width": 320,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 116.7109375,
+        "top": 60.3828125,
+        "width": 23.671875,
+        "height": 18.890625
+      }
+    },
+    {
+      "key": "game-menu-shops",
+      "width": 320,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 118.078125,
+        "top": 58.296875,
+        "width": 20.9375,
+        "height": 14.5625
+      }
+    },
+    {
+      "key": "game-menu-mail",
+      "width": 320,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 106.125,
+        "top": 40.359375,
+        "width": 28.8125,
+        "height": 28.8125
+      }
+    },
+    {
+      "key": "game-menu-settings",
+      "width": 320,
+      "shown": true,
+      "native": true,
+      "decoded": true,
+      "bounds": true,
+      "safe": true,
+      "banner": true,
+      "scroll": true,
+      "ratio": true,
+      "position": {
+        "left": 116.7109375,
+        "top": 46.9296875,
+        "width": 23.671875,
+        "height": 18.890625
+      }
+    }
+  ],
+  "failures": [],
+  "errors": []
+}

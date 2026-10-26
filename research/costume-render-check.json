@@ -1,0 +1,672 @@
+{
+  "total": 95,
+  "passed": 95,
+  "animated": 95,
+  "results": [
+    {
+      "id": "akiba-idol-costume.png",
+      "character": "Pio",
+      "opaque": 8052,
+      "changed": 7837,
+      "ok": true
+    },
+    {
+      "id": "blackcat-costume.png",
+      "character": "Tia",
+      "opaque": 10224,
+      "changed": 7879,
+      "ok": true
+    },
+    {
+      "id": "blueround-costume.png",
+      "character": "Tia",
+      "opaque": 10187,
+      "changed": 7458,
+      "ok": true
+    },
+    {
+      "id": "cute-pajamas-costume-purple.png",
+      "character": "Tia",
+      "opaque": 9593,
+      "changed": 6563,
+      "ok": true
+    },
+    {
+      "id": "cute-pajamas-costume-skyblue.png",
+      "character": "Tia",
+      "opaque": 9595,
+      "changed": 6484,
+      "ok": true
+    },
+    {
+      "id": "fall-dress-costume-beige.png",
+      "character": "Pio",
+      "opaque": 7423,
+      "changed": 6565,
+      "ok": true
+    },
+    {
+      "id": "fall-dress-costume-brown.png",
+      "character": "Pio",
+      "opaque": 7423,
+      "changed": 6487,
+      "ok": true
+    },
+    {
+      "id": "forest-witch-costume-brown.png",
+      "character": "Pio",
+      "opaque": 10067,
+      "changed": 9242,
+      "ok": true
+    },
+    {
+      "id": "forest-witch-costume-green.png",
+      "character": "Pio",
+      "opaque": 10073,
+      "changed": 9518,
+      "ok": true
+    },
+    {
+      "id": "frill-blouse-costume-green-sprite-resources-assets-1151.png",
+      "character": "Tia",
+      "opaque": 10613,
+      "changed": 7515,
+      "ok": true
+    },
+    {
+      "id": "frill-blouse-costume-green.png",
+      "character": "Pio",
+      "opaque": 7688,
+      "changed": 6562,
+      "ok": true
+    },
+    {
+      "id": "frill-blouse-costume-red-sprite-resources-assets-1174.png",
+      "character": "Tia",
+      "opaque": 10618,
+      "changed": 8113,
+      "ok": true
+    },
+    {
+      "id": "frill-blouse-costume-red.png",
+      "character": "Pio",
+      "opaque": 7688,
+      "changed": 6727,
+      "ok": true
+    },
+    {
+      "id": "goddess-costume-pink.png",
+      "character": "Pio",
+      "opaque": 7645,
+      "changed": 6968,
+      "ok": true
+    },
+    {
+      "id": "goddess-costume-white.png",
+      "character": "Pio",
+      "opaque": 7646,
+      "changed": 6999,
+      "ok": true
+    },
+    {
+      "id": "hanbok-costume-gorgeous.png",
+      "character": "Tia",
+      "opaque": 9580,
+      "changed": 8406,
+      "ok": true
+    },
+    {
+      "id": "hanbok-costume-pink.png",
+      "character": "Pio",
+      "opaque": 7355,
+      "changed": 6863,
+      "ok": true
+    },
+    {
+      "id": "hanbok-costume-red.png",
+      "character": "Pio",
+      "opaque": 7351,
+      "changed": 6964,
+      "ok": true
+    },
+    {
+      "id": "hanbok-costume-skyblue.png",
+      "character": "Pio",
+      "opaque": 7350,
+      "changed": 6925,
+      "ok": true
+    },
+    {
+      "id": "hanbok-costume-yellow.png",
+      "character": "Pio",
+      "opaque": 7349,
+      "changed": 6909,
+      "ok": true
+    },
+    {
+      "id": "healer-costume.png",
+      "character": "Pio",
+      "opaque": 7140,
+      "changed": 6707,
+      "ok": true
+    },
+    {
+      "id": "knight-costume.png",
+      "character": "Tia",
+      "opaque": 10638,
+      "changed": 9641,
+      "ok": true
+    },
+    {
+      "id": "literature-girl-costume-brown.png",
+      "character": "Pio",
+      "opaque": 6827,
+      "changed": 6495,
+      "ok": true
+    },
+    {
+      "id": "literature-girl-costume-navy.png",
+      "character": "Pio",
+      "opaque": 6827,
+      "changed": 6508,
+      "ok": true
+    },
+    {
+      "id": "lolita-costume-red.png",
+      "character": "Pio",
+      "opaque": 7249,
+      "changed": 7038,
+      "ok": true
+    },
+    {
+      "id": "lolita-costume-skyblue.png",
+      "character": "Pio",
+      "opaque": 7250,
+      "changed": 6982,
+      "ok": true
+    },
+    {
+      "id": "magical-girl-costume-pink.png",
+      "character": "Pio",
+      "opaque": 7308,
+      "changed": 7043,
+      "ok": true
+    },
+    {
+      "id": "magical-girl-costume-purple.png",
+      "character": "Pio",
+      "opaque": 7311,
+      "changed": 7011,
+      "ok": true
+    },
+    {
+      "id": "magical-girl-costume.png",
+      "character": "Tia",
+      "opaque": 10171,
+      "changed": 9621,
+      "ok": true
+    },
+    {
+      "id": "marine-costume-white.png",
+      "character": "Pio",
+      "opaque": 7307,
+      "changed": 7036,
+      "ok": true
+    },
+    {
+      "id": "night-witch-costume-black.png",
+      "character": "Pio",
+      "opaque": 9775,
+      "changed": 9488,
+      "ok": true
+    },
+    {
+      "id": "night-witch-costume-gray.png",
+      "character": "Pio",
+      "opaque": 9777,
+      "changed": 9874,
+      "ok": true
+    },
+    {
+      "id": "nightsky-costume.png",
+      "character": "Pio",
+      "opaque": 7294,
+      "changed": 7198,
+      "ok": true
+    },
+    {
+      "id": "overalls-costume-white.png",
+      "character": "Pio",
+      "opaque": 7327,
+      "changed": 7173,
+      "ok": true
+    },
+    {
+      "id": "overalls-costume.png",
+      "character": "Pio",
+      "opaque": 7031,
+      "changed": 6951,
+      "ok": true
+    },
+    {
+      "id": "party-dress-costume-brown.png",
+      "character": "Pio",
+      "opaque": 7315,
+      "changed": 7192,
+      "ok": true
+    },
+    {
+      "id": "party-dress-costume-purple.png",
+      "character": "Pio",
+      "opaque": 7371,
+      "changed": 7298,
+      "ok": true
+    },
+    {
+      "id": "priest-costume-junior.png",
+      "character": "Pio",
+      "opaque": 7340,
+      "changed": 7230,
+      "ok": true
+    },
+    {
+      "id": "priest-costume-senior.png",
+      "character": "Pio",
+      "opaque": 7530,
+      "changed": 7410,
+      "ok": true
+    },
+    {
+      "id": "pushcat-costume.png",
+      "character": "Tia",
+      "opaque": 10216,
+      "changed": 9731,
+      "ok": true
+    },
+    {
+      "id": "ribbon-dress-costume-red.png",
+      "character": "Pio",
+      "opaque": 7316,
+      "changed": 7209,
+      "ok": true
+    },
+    {
+      "id": "ribbon-dress-costume-yellow.png",
+      "character": "Pio",
+      "opaque": 7316,
+      "changed": 7246,
+      "ok": true
+    },
+    {
+      "id": "sabori-costume.png",
+      "character": "Tia",
+      "opaque": 9900,
+      "changed": 9412,
+      "ok": true
+    },
+    {
+      "id": "sailor-bikini-costume-black.png",
+      "character": "Tia",
+      "opaque": 10246,
+      "changed": 9548,
+      "ok": true
+    },
+    {
+      "id": "sailor-bikini-costume-white.png",
+      "character": "Tia",
+      "opaque": 10245,
+      "changed": 9453,
+      "ok": true
+    },
+    {
+      "id": "sakura-fairy-costume.png",
+      "character": "Pio",
+      "opaque": 7428,
+      "changed": 7361,
+      "ok": true
+    },
+    {
+      "id": "santa-2018-costume-green.png",
+      "character": "Pio",
+      "opaque": 8541,
+      "changed": 8535,
+      "ok": true
+    },
+    {
+      "id": "santa-2018-costume-red.png",
+      "character": "Pio",
+      "opaque": 8548,
+      "changed": 8397,
+      "ok": true
+    },
+    {
+      "id": "santa2016-costume.png",
+      "character": "Tia",
+      "opaque": 10550,
+      "changed": 10349,
+      "ok": true
+    },
+    {
+      "id": "sarori-costume.png",
+      "character": "Pio",
+      "opaque": 7343,
+      "changed": 7183,
+      "ok": true
+    },
+    {
+      "id": "school-2017-costume-gray.png",
+      "character": "Pio",
+      "opaque": 7399,
+      "changed": 7185,
+      "ok": true
+    },
+    {
+      "id": "school-2017-costume-yellow.png",
+      "character": "Pio",
+      "opaque": 7396,
+      "changed": 7227,
+      "ok": true
+    },
+    {
+      "id": "school-2019-costume-black.png",
+      "character": "Pio",
+      "opaque": 7256,
+      "changed": 6981,
+      "ok": true
+    },
+    {
+      "id": "school-2019-costume-pink.png",
+      "character": "Pio",
+      "opaque": 7255,
+      "changed": 6990,
+      "ok": true
+    },
+    {
+      "id": "sfc-uniform-costume-red.png",
+      "character": "Pio",
+      "opaque": 6788,
+      "changed": 6706,
+      "ok": true
+    },
+    {
+      "id": "sfc-uniform-costume-yellow.png",
+      "character": "Pio",
+      "opaque": 6791,
+      "changed": 6803,
+      "ok": true
+    },
+    {
+      "id": "shaman-costume-black.png",
+      "character": "Pio",
+      "opaque": 9232,
+      "changed": 9413,
+      "ok": true
+    },
+    {
+      "id": "shaman-costume-blue.png",
+      "character": "Pio",
+      "opaque": 9231,
+      "changed": 9363,
+      "ok": true
+    },
+    {
+      "id": "sinsiroad-costume.png",
+      "character": "Pio",
+      "opaque": 10181,
+      "changed": 9748,
+      "ok": true
+    },
+    {
+      "id": "sinsiroad-shop-costume-junior.png",
+      "character": "Pio",
+      "opaque": 7312,
+      "changed": 7013,
+      "ok": true
+    },
+    {
+      "id": "sinsiroad-shop-costume-senior.png",
+      "character": "Pio",
+      "opaque": 7316,
+      "changed": 7122,
+      "ok": true
+    },
+    {
+      "id": "sorceress-costume.png",
+      "character": "Pio",
+      "opaque": 9908,
+      "changed": 9503,
+      "ok": true
+    },
+    {
+      "id": "sporty-hood-costume-black.png",
+      "character": "Pio",
+      "opaque": 7299,
+      "changed": 7145,
+      "ok": true
+    },
+    {
+      "id": "sporty-hood-costume-blue.png",
+      "character": "Pio",
+      "opaque": 7299,
+      "changed": 7172,
+      "ok": true
+    },
+    {
+      "id": "spring-dress-costume-brown.png",
+      "character": "Tia",
+      "opaque": 10034,
+      "changed": 9302,
+      "ok": true
+    },
+    {
+      "id": "spring-dress-costume-navy.png",
+      "character": "Tia",
+      "opaque": 10034,
+      "changed": 9315,
+      "ok": true
+    },
+    {
+      "id": "sulbim-costume-rainbow.png",
+      "character": "Tia",
+      "opaque": 8732,
+      "changed": 7960,
+      "ok": true
+    },
+    {
+      "id": "sulbim-costume-snowflake.png",
+      "character": "Tia",
+      "opaque": 8734,
+      "changed": 8234,
+      "ok": true
+    },
+    {
+      "id": "Summer_Uniform_Costume_Blue.png",
+      "character": "Pio",
+      "opaque": 7306,
+      "changed": 7114,
+      "ok": true
+    },
+    {
+      "id": "Summer_Uniform_Costume_Red.png",
+      "character": "Pio",
+      "opaque": 7305,
+      "changed": 7136,
+      "ok": true
+    },
+    {
+      "id": "summer-uniform-costume-blue-sprite-resources-assets-946.png",
+      "character": "Tia",
+      "opaque": 10164,
+      "changed": 9053,
+      "ok": true
+    },
+    {
+      "id": "summer-uniform-costume-green.png",
+      "character": "Tia",
+      "opaque": 10162,
+      "changed": 9247,
+      "ok": true
+    },
+    {
+      "id": "swimsuit-2017-costume-navy.png",
+      "character": "Pio",
+      "opaque": 7216,
+      "changed": 7030,
+      "ok": true
+    },
+    {
+      "id": "swimsuit-2017-costume-red.png",
+      "character": "Pio",
+      "opaque": 7215,
+      "changed": 7037,
+      "ok": true
+    },
+    {
+      "id": "thief-costume.png",
+      "character": "Tia",
+      "opaque": 9101,
+      "changed": 7961,
+      "ok": true
+    },
+    {
+      "id": "traveler-costume-brown.png",
+      "character": "Tia",
+      "opaque": 10445,
+      "changed": 9487,
+      "ok": true
+    },
+    {
+      "id": "traveler-costume-white.png",
+      "character": "Tia",
+      "opaque": 10448,
+      "changed": 9422,
+      "ok": true
+    },
+    {
+      "id": "valentine-costume-brown.png",
+      "character": "Pio",
+      "opaque": 8062,
+      "changed": 7841,
+      "ok": true
+    },
+    {
+      "id": "valentine-costume-pink.png",
+      "character": "Pio",
+      "opaque": 8065,
+      "changed": 7780,
+      "ok": true
+    },
+    {
+      "id": "vampire-costume-real-sprite-resources-assets-671.png",
+      "character": "Pio",
+      "opaque": 7262,
+      "changed": 6880,
+      "ok": true
+    },
+    {
+      "id": "vampire-costume-sprite-resources-assets-873.png",
+      "character": "Pio",
+      "opaque": 7253,
+      "changed": 6903,
+      "ok": true
+    },
+    {
+      "id": "vampire-costume.png",
+      "character": "Tia",
+      "opaque": 10071,
+      "changed": 9094,
+      "ok": true
+    },
+    {
+      "id": "Voice_Story_Costume1.png",
+      "character": "Pio",
+      "opaque": 7366,
+      "changed": 6957,
+      "ok": true
+    },
+    {
+      "id": "warrior-costume.png",
+      "character": "Tia",
+      "opaque": 10233,
+      "changed": 8878,
+      "ok": true
+    },
+    {
+      "id": "whiteday-costume-purple-sprite-resources-assets-1165.png",
+      "character": "Tia",
+      "opaque": 10086,
+      "changed": 8998,
+      "ok": true
+    },
+    {
+      "id": "whiteday-costume-purple.png",
+      "character": "Pio",
+      "opaque": 7303,
+      "changed": 6896,
+      "ok": true
+    },
+    {
+      "id": "whiteday-costume-red-sprite-resources-assets-732.png",
+      "character": "Tia",
+      "opaque": 10085,
+      "changed": 9050,
+      "ok": true
+    },
+    {
+      "id": "whiteday-costume-red.png",
+      "character": "Pio",
+      "opaque": 7298,
+      "changed": 6904,
+      "ok": true
+    },
+    {
+      "id": "winter-coat-2017-costume-brown.png",
+      "character": "Pio",
+      "opaque": 7683,
+      "changed": 6575,
+      "ok": true
+    },
+    {
+      "id": "winter-coat-2017-costume-white.png",
+      "character": "Pio",
+      "opaque": 7669,
+      "changed": 6372,
+      "ok": true
+    },
+    {
+      "id": "winter-coat-costume-pink.png",
+      "character": "Pio",
+      "opaque": 7350,
+      "changed": 6581,
+      "ok": true
+    },
+    {
+      "id": "winter-coat-costume-white.png",
+      "character": "Pio",
+      "opaque": 7350,
+      "changed": 6444,
+      "ok": true
+    },
+    {
+      "id": "winter-fairy-costume-black.png",
+      "character": "Pio",
+      "opaque": 7227,
+      "changed": 6370,
+      "ok": true
+    },
+    {
+      "id": "winter-fairy-costume-pink.png",
+      "character": "Pio",
+      "opaque": 7224,
+      "changed": 6037,
+      "ok": true
+    },
+    {
+      "id": "witch-costume-special.png",
+      "character": "Pio",
+      "opaque": 9816,
+      "changed": 8058,
+      "ok": true
+    }
+  ]
+}

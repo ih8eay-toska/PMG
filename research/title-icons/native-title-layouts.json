@@ -1,0 +1,2048 @@
+[
+  {
+    "chain": [
+      "Title Frame",
+      "Help"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": -70.0
+      },
+      "m_SizeDelta": {
+        "x": 448.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 1512,
+    "source": "sharedassets0.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Icon",
+      "Help"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -204.0,
+        "y": 420.0
+      },
+      "m_SizeDelta": {
+        "x": 91.0,
+        "y": 73.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "sprites": [
+      {
+        "name": "Help",
+        "pathID": 433,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 91.0,
+          "height": 73.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 1558,
+    "source": "sharedassets0.assets",
+    "imageType": 0,
+    "preserveAspect": false
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Stats"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": -70.0
+      },
+      "m_SizeDelta": {
+        "x": 448.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 1622,
+    "source": "sharedassets0.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Icon",
+      "Stats"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -204.0,
+        "y": 420.0
+      },
+      "m_SizeDelta": {
+        "x": 72.0,
+        "y": 62.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "sprites": [
+      {
+        "name": "Stats",
+        "pathID": 439,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 77.0,
+          "height": 65.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 1628,
+    "source": "sharedassets0.assets",
+    "imageType": 0,
+    "preserveAspect": false
+  },
+  {
+    "chain": [
+      "Icon",
+      "Upgrades"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -204.0,
+        "y": 420.0
+      },
+      "m_SizeDelta": {
+        "x": 92.0,
+        "y": 64.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "sprites": [
+      {
+        "name": "Upgrades",
+        "pathID": 534,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 120.0,
+          "height": 67.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 1731,
+    "source": "sharedassets0.assets",
+    "imageType": 0,
+    "preserveAspect": false
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Upgrades"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": -70.0
+      },
+      "m_SizeDelta": {
+        "x": 448.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 1777,
+    "source": "sharedassets0.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Event Information (Notice V2)"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -32.0,
+        "y": -65.0
+      },
+      "m_SizeDelta": {
+        "x": 382.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 5496,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Event Information (Notice)"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -32.0,
+        "y": -65.0
+      },
+      "m_SizeDelta": {
+        "x": 382.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 5497,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Event Information (Third Party Coupon)"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -32.0,
+        "y": -65.0
+      },
+      "m_SizeDelta": {
+        "x": 382.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 5498,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Event Information (Remote)"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -32.0,
+        "y": -65.0
+      },
+      "m_SizeDelta": {
+        "x": 382.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 5499,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Event Information (Mini Game)"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -32.0,
+        "y": -65.0
+      },
+      "m_SizeDelta": {
+        "x": 382.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 5500,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Frame",
+      "Archive"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": -70.0
+      },
+      "m_SizeDelta": {
+        "x": 448.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 5573,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Frame",
+      "Coupon"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": -70.0
+      },
+      "m_SizeDelta": {
+        "x": 448.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 5574,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Icon",
+      "Frame",
+      "Archive"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -204.0,
+        "y": -92.0
+      },
+      "m_SizeDelta": {
+        "x": 106.0,
+        "y": 99.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "sprites": [
+      {
+        "name": "Archive",
+        "pathID": 418,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 106.0,
+          "height": 99.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 5575,
+    "source": "resources.assets",
+    "imageType": 0,
+    "preserveAspect": false
+  },
+  {
+    "chain": [
+      "Icon",
+      "Frame",
+      "Coupon"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -204.0,
+        "y": -92.0
+      },
+      "m_SizeDelta": {
+        "x": 106.0,
+        "y": 99.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "sprites": [
+      {
+        "name": "Archive",
+        "pathID": 418,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 106.0,
+          "height": 99.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 5576,
+    "source": "resources.assets",
+    "imageType": 0,
+    "preserveAspect": false
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Contest"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -23.0,
+        "y": -51.0
+      },
+      "m_SizeDelta": {
+        "x": 382.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 5723,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Quest Information (One Potion)"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -23.0,
+        "y": -40.0
+      },
+      "m_SizeDelta": {
+        "x": 382.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 5724,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Quest Information (Coin)"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -23.0,
+        "y": -40.0
+      },
+      "m_SizeDelta": {
+        "x": 382.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 5725,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Quest Information (Max Level Potion)"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -23.0,
+        "y": -40.0
+      },
+      "m_SizeDelta": {
+        "x": 382.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 5726,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Quest Information (Multiple Potions)"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -23.0,
+        "y": -40.0
+      },
+      "m_SizeDelta": {
+        "x": 382.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 5727,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Icon",
+      "Fairies"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -204.0,
+        "y": 420.0
+      },
+      "m_SizeDelta": {
+        "x": 87.0,
+        "y": 78.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "sprites": [
+      {
+        "name": "Fairies",
+        "pathID": 512,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 87.0,
+          "height": 78.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 5816,
+    "source": "resources.assets",
+    "imageType": 0,
+    "preserveAspect": false
+  },
+  {
+    "chain": [
+      "Icon",
+      "Items"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -204.0,
+        "y": 420.0
+      },
+      "m_SizeDelta": {
+        "x": 92.0,
+        "y": 64.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "sprites": [
+      {
+        "name": "Items",
+        "pathID": 386,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 95.0,
+          "height": 67.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 5817,
+    "source": "resources.assets",
+    "imageType": 0,
+    "preserveAspect": false
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Fairies"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": -70.0
+      },
+      "m_SizeDelta": {
+        "x": 448.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 5820,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Items"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": -70.0
+      },
+      "m_SizeDelta": {
+        "x": 448.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 5821,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "In-app Products"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": -70.0
+      },
+      "m_SizeDelta": {
+        "x": 448.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 5867,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Icon",
+      "In-app Products"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -204.0,
+        "y": 420.0
+      },
+      "m_SizeDelta": {
+        "x": 92.0,
+        "y": 64.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "sprites": [
+      {
+        "name": "Upgrades",
+        "pathID": 534,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 120.0,
+          "height": 67.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 5868,
+    "source": "resources.assets",
+    "imageType": 0,
+    "preserveAspect": false
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Costumes"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": -70.0
+      },
+      "m_SizeDelta": {
+        "x": 448.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 6191,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Icon",
+      "Costumes"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -204.0,
+        "y": 420.0
+      },
+      "m_SizeDelta": {
+        "x": 100.0,
+        "y": 81.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "sprites": [
+      {
+        "name": "Costumes",
+        "pathID": 508,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 100.0,
+          "height": 81.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 6199,
+    "source": "resources.assets",
+    "imageType": 0,
+    "preserveAspect": false
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Achievements"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": -70.0
+      },
+      "m_SizeDelta": {
+        "x": 448.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 6282,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Quest Progressing"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -23.0,
+        "y": -40.0
+      },
+      "m_SizeDelta": {
+        "x": 382.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 6388,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Explorable Zones"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -23.0,
+        "y": -40.0
+      },
+      "m_SizeDelta": {
+        "x": 382.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 6423,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Mailbox"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -9.0,
+        "y": -70.0
+      },
+      "m_SizeDelta": {
+        "x": 354.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 6424,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Icon",
+      "Characters"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -204.0,
+        "y": -92.0
+      },
+      "m_SizeDelta": {
+        "x": 104.0,
+        "y": 83.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "sprites": [
+      {
+        "name": "Characters",
+        "pathID": 383,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 104.0,
+          "height": 83.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 6554,
+    "source": "resources.assets",
+    "imageType": 0,
+    "preserveAspect": false
+  },
+  {
+    "chain": [
+      "Icon",
+      "Settings"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -204.0,
+        "y": -92.0
+      },
+      "m_SizeDelta": {
+        "x": 104.0,
+        "y": 83.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "sprites": [
+      {
+        "name": "Settings",
+        "pathID": 373,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 107.0,
+          "height": 86.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 6555,
+    "source": "resources.assets",
+    "imageType": 0,
+    "preserveAspect": false
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Characters"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": -70.0
+      },
+      "m_SizeDelta": {
+        "x": 448.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 6571,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Settings"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": -70.0
+      },
+      "m_SizeDelta": {
+        "x": 448.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 6572,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Frame",
+      "Agreement"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -19.5,
+        "y": -41.0
+      },
+      "m_SizeDelta": {
+        "x": 448.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 6675,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Frame",
+      "Sell Box"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -19.5,
+        "y": -41.0
+      },
+      "m_SizeDelta": {
+        "x": 448.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 6676,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Frame",
+      "Message Box"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -19.5,
+        "y": -41.0
+      },
+      "m_SizeDelta": {
+        "x": 448.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 6677,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Frame",
+      "Voices"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -19.5,
+        "y": -41.0
+      },
+      "m_SizeDelta": {
+        "x": 448.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 6678,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Icon",
+      "Title Frame",
+      "Achievements"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 2.0,
+        "y": -22.5
+      },
+      "m_SizeDelta": {
+        "x": 101.0,
+        "y": 76.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "sprites": [
+      {
+        "name": "Achievements",
+        "pathID": 464,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 101.0,
+          "height": 76.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 6709,
+    "source": "resources.assets",
+    "imageType": 0,
+    "preserveAspect": false
+  },
+  {
+    "chain": [
+      "Icon",
+      "Title Frame",
+      "Mailbox"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -189.0,
+        "y": 6.0
+      },
+      "m_SizeDelta": {
+        "x": 100.0,
+        "y": 100.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "sprites": [
+      {
+        "name": "Mailbox",
+        "pathID": 543,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 94.0,
+          "height": 88.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 6792,
+    "source": "resources.assets",
+    "imageType": 0,
+    "preserveAspect": false
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Quest Complete for Explorer"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -23.0,
+        "y": -40.0
+      },
+      "m_SizeDelta": {
+        "x": 382.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 6845,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Explorations"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -30.0,
+        "y": -54.0
+      },
+      "m_SizeDelta": {
+        "x": 382.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 6846,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Frame",
+      "Exploration Ready"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -23.0,
+        "y": -40.0
+      },
+      "m_SizeDelta": {
+        "x": 382.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 6847,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Quest Complete"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -23.0,
+        "y": -40.0
+      },
+      "m_SizeDelta": {
+        "x": 382.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 6848,
+    "source": "resources.assets",
+    "imageType": 0
+  },
+  {
+    "chain": [
+      "Title Frame",
+      "Frame",
+      "Exploration Start"
+    ],
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -23.0,
+        "y": -40.0
+      },
+      "m_SizeDelta": {
+        "x": 382.0,
+        "y": 45.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "sprites": [
+      {
+        "name": "Title Frame",
+        "pathID": 446,
+        "source": "sharedassets0.assets",
+        "size": {
+          "width": 448.0,
+          "height": 45.0
+        },
+        "offset": 88
+      }
+    ],
+    "pathID": 6849,
+    "source": "resources.assets",
+    "imageType": 0
+  }
+]

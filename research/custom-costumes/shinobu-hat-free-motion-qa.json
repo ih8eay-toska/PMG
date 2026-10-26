@@ -1,0 +1,149 @@
+{
+  "motions": [
+    {
+      "group": "idle",
+      "index": 0,
+      "opaque": 136496,
+      "hatAbsent": true
+    },
+    {
+      "group": "idle",
+      "index": 1,
+      "opaque": 136867,
+      "hatAbsent": true
+    },
+    {
+      "group": "idle",
+      "index": 2,
+      "opaque": 137019,
+      "hatAbsent": true
+    },
+    {
+      "group": "idle",
+      "index": 3,
+      "opaque": 136713,
+      "hatAbsent": true
+    },
+    {
+      "group": "idle",
+      "index": 4,
+      "opaque": 137348,
+      "hatAbsent": true
+    },
+    {
+      "group": "idle",
+      "index": 5,
+      "opaque": 136451,
+      "hatAbsent": true
+    },
+    {
+      "group": "sleepy",
+      "index": 0,
+      "opaque": 136627,
+      "hatAbsent": true
+    },
+    {
+      "group": "flick_head",
+      "index": 0,
+      "opaque": 137730,
+      "hatAbsent": true
+    },
+    {
+      "group": "flick_head",
+      "index": 1,
+      "opaque": 136348,
+      "hatAbsent": true
+    },
+    {
+      "group": "flick_head",
+      "index": 2,
+      "opaque": 136902,
+      "hatAbsent": true
+    },
+    {
+      "group": "flick_head",
+      "index": 3,
+      "opaque": 137577,
+      "hatAbsent": true
+    },
+    {
+      "group": "flick_head",
+      "index": 4,
+      "opaque": 136166,
+      "hatAbsent": true
+    },
+    {
+      "group": "flick_head",
+      "index": 5,
+      "opaque": 137406,
+      "hatAbsent": true
+    },
+    {
+      "group": "tap_body",
+      "index": 0,
+      "opaque": 136843,
+      "hatAbsent": true
+    },
+    {
+      "group": "tap_body",
+      "index": 1,
+      "opaque": 136444,
+      "hatAbsent": true
+    },
+    {
+      "group": "tap_body",
+      "index": 2,
+      "opaque": 137681,
+      "hatAbsent": true
+    },
+    {
+      "group": "tap_body",
+      "index": 3,
+      "opaque": 136355,
+      "hatAbsent": true
+    },
+    {
+      "group": "tap_body",
+      "index": 4,
+      "opaque": 136618,
+      "hatAbsent": true
+    },
+    {
+      "group": "tap_body",
+      "index": 5,
+      "opaque": 137618,
+      "hatAbsent": true
+    },
+    {
+      "group": "tap_body",
+      "index": 6,
+      "opaque": 136664,
+      "hatAbsent": true
+    },
+    {
+      "group": "tap_body",
+      "index": 7,
+      "opaque": 136950,
+      "hatAbsent": true
+    },
+    {
+      "group": "tap_body",
+      "index": 8,
+      "opaque": 137184,
+      "hatAbsent": true
+    },
+    {
+      "group": "success",
+      "index": 0,
+      "opaque": 136455,
+      "hatAbsent": true
+    },
+    {
+      "group": "failure",
+      "index": 0,
+      "opaque": 137470,
+      "hatAbsent": true
+    }
+  ],
+  "errors": []
+}

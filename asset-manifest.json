@@ -11296,6 +11296,138 @@
       "status": "downloaded",
       "retained_event_banner": true,
       "source": "Historical event banner retained from the wiki archive at user request"
+    },
+    {
+      "key": "Live2D/Tia/halloween-costume.png",
+      "path": "assets/live2d/Tia/textures/halloween-costume.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "bytes": 515034,
+      "sha256": "a42f540414b9a350c83c291a7b6dbb0f733e76cca5f730d50bc2978c2816da47",
+      "source": "Archived original game costume texture: https://raw.githubusercontent.com/fghrsh/live2d_api/02dc5b3aaf5cee35455c816596820055c5363205/model/Potion-Maker/Tia/textures/halloween-costume.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "key": "Live2D/Tia/hanbok-costume.png",
+      "path": "assets/live2d/Tia/textures/hanbok-costume.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "bytes": 420112,
+      "sha256": "650f06f57fd9d4b0abc120d5899c68d81024ab14eb7191febe8c29238f5ba2c3",
+      "source": "Archived original game costume texture: https://raw.githubusercontent.com/fghrsh/live2d_api/02dc5b3aaf5cee35455c816596820055c5363205/model/Potion-Maker/Tia/textures/hanbok-costume.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "key": "Live2D/Tia/sakura-costume.png",
+      "path": "assets/live2d/Tia/textures/sakura-costume.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "bytes": 451974,
+      "sha256": "dcc296377aa5b462016482870045bcc58dea831250a638e5c1d7e4ebce33550d",
+      "source": "Archived original game costume texture: https://raw.githubusercontent.com/fghrsh/live2d_api/02dc5b3aaf5cee35455c816596820055c5363205/model/Potion-Maker/Tia/textures/sakura-costume.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "key": "Live2D/Tia/sakura-costume-navy.png",
+      "path": "assets/live2d/Tia/textures/sakura-costume-navy.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "bytes": 451189,
+      "sha256": "4c8e066abc6112d35d58bd3c9f359b9e1d3d9b361b0236d47ecea3141d2c22b0",
+      "source": "Archived original game costume texture: https://raw.githubusercontent.com/fghrsh/live2d_api/02dc5b3aaf5cee35455c816596820055c5363205/model/Potion-Maker/Tia/textures/sakura-costume-navy.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "key": "Live2D/Tia/santa-costume.png",
+      "path": "assets/live2d/Tia/textures/santa-costume.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "bytes": 475789,
+      "sha256": "1e5c1cc8b40c461cd741818d9d528ee57fd2dbd58f99a42adf82bcb9ed318367",
+      "source": "Archived original game costume texture: https://raw.githubusercontent.com/fghrsh/live2d_api/02dc5b3aaf5cee35455c816596820055c5363205/model/Potion-Maker/Tia/textures/santa-costume.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "key": "Live2D/Tia/vampire-costume-real.png",
+      "path": "assets/live2d/Tia/textures/vampire-costume-real.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "bytes": 431167,
+      "sha256": "cb4d3e4d71f090c2e1c9c000419d131294ee1ee1f4538429a71397e07421eb24",
+      "source": "Archived original game costume texture: https://raw.githubusercontent.com/fghrsh/live2d_api/02dc5b3aaf5cee35455c816596820055c5363205/model/Potion-Maker/Tia/textures/vampire-costume-real.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "key": "Live2D/Pio/sailor-costume.png",
+      "path": "assets/live2d/Pio/textures/sailor-costume.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "bytes": 441093,
+      "sha256": "1780d4faec0940f620d59e1083006759eb7157e8c1d70b24041cf34cc0968009",
+      "source": "Archived original game costume texture: https://raw.githubusercontent.com/fghrsh/live2d_api/02dc5b3aaf5cee35455c816596820055c5363205/model/Potion-Maker/Pio/textures/sailor-costume.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "key": "Live2D/Pio/sailor-costume-black.png",
+      "path": "assets/live2d/Pio/textures/sailor-costume-black.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "bytes": 431200,
+      "sha256": "7ab7845753d64e73904ab491ed017d1083fff995febe6b5c17e1403c44bed313",
+      "source": "Archived original game costume texture: https://raw.githubusercontent.com/fghrsh/live2d_api/02dc5b3aaf5cee35455c816596820055c5363205/model/Potion-Maker/Pio/textures/sailor-costume-black.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "key": "Live2D/Pio/marine-costume-navy.png",
+      "path": "assets/live2d/Pio/textures/marine-costume-navy.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "bytes": 462530,
+      "sha256": "294db5d0d68ff60c564b69035322589c4de9b616be872c4b19f6dd3de99d1618",
+      "source": "Archived original game costume texture: https://raw.githubusercontent.com/imuncle/live2d/b5caf5390c8c226f19c817ea37d5bc4452d85209/model/Pio/textures/Marine%20Costume%20Navy.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "key": "Live2D/Pio/tirami1-costume.png",
+      "path": "assets/live2d/Pio/textures/tirami1-costume.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "bytes": 462881,
+      "sha256": "967e43c856ad18ddf97bc2796f755be453527299d897df0afaafba63ed921ea0",
+      "source": "Archived original game costume texture: https://raw.githubusercontent.com/fghrsh/live2d_api/02dc5b3aaf5cee35455c816596820055c5363205/model/Potion-Maker/Pio/textures/tirami1-costume.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "key": "Live2D/Pio/sakura-fairy-costume-real.png",
+      "path": "assets/live2d/Pio/textures/sakura-fairy-costume-real.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "bytes": 498734,
+      "sha256": "a12feb7f29a5fe7c326867fdc7eb80e979e09539ed777085ad23531bfeebcccb",
+      "source": "Archived original game costume texture: https://raw.githubusercontent.com/imuncle/live2d/b5caf5390c8c226f19c817ea37d5bc4452d85209/model/Pio/textures/Sakura%20Fairy%20Costume%20Real.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "key": "pio-sakura-fairy-costume-real.png",
+      "path": "assets/extracted/costume-thumbnails/pio-sakura-fairy-costume-real.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "bytes": 30910,
+      "sha256": "bcc3a6658c8700c419f813b0527fe84cb227f6ba8d401a6e8baf9d9609444473",
+      "source": "Lossless render of approved original costume texture using the existing original rig",
+      "width": 180,
+      "height": 180
     }
   ],
   "summary": {

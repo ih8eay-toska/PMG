@@ -1,0 +1,142 @@
+{
+  "behavior": {
+    "customers": [
+      "Neet",
+      "Luke",
+      "Daisy"
+    ],
+    "distinct": true,
+    "exact": true,
+    "accepted": true,
+    "empty": true,
+    "wrong": true,
+    "low": true,
+    "pending": true,
+    "ready": true,
+    "paidOnce": true,
+    "refreshed": true
+  },
+  "layouts": [
+    {
+      "width": 1366,
+      "textSize": "normal",
+      "active": false,
+      "count": 3,
+      "fit": true,
+      "requirements": true,
+      "button": true,
+      "progress": true
+    },
+    {
+      "width": 1366,
+      "textSize": "normal",
+      "active": true,
+      "count": 1,
+      "fit": true,
+      "requirements": true,
+      "button": true,
+      "progress": true
+    },
+    {
+      "width": 1366,
+      "textSize": "large",
+      "active": false,
+      "count": 3,
+      "fit": true,
+      "requirements": true,
+      "button": true,
+      "progress": true
+    },
+    {
+      "width": 1366,
+      "textSize": "large",
+      "active": true,
+      "count": 1,
+      "fit": true,
+      "requirements": true,
+      "button": true,
+      "progress": true
+    },
+    {
+      "width": 390,
+      "textSize": "normal",
+      "active": false,
+      "count": 3,
+      "fit": true,
+      "requirements": true,
+      "button": true,
+      "progress": true
+    },
+    {
+      "width": 390,
+      "textSize": "normal",
+      "active": true,
+      "count": 1,
+      "fit": true,
+      "requirements": true,
+      "button": true,
+      "progress": true
+    },
+    {
+      "width": 390,
+      "textSize": "large",
+      "active": false,
+      "count": 3,
+      "fit": true,
+      "requirements": true,
+      "button": true,
+      "progress": true
+    },
+    {
+      "width": 390,
+      "textSize": "large",
+      "active": true,
+      "count": 1,
+      "fit": true,
+      "requirements": true,
+      "button": true,
+      "progress": true
+    },
+    {
+      "width": 320,
+      "textSize": "normal",
+      "active": false,
+      "count": 3,
+      "fit": true,
+      "requirements": true,
+      "button": true,
+      "progress": true
+    },
+    {
+      "width": 320,
+      "textSize": "normal",
+      "active": true,
+      "count": 1,
+      "fit": true,
+      "requirements": true,
+      "button": true,
+      "progress": true
+    },
+    {
+      "width": 320,
+      "textSize": "large",
+      "active": false,
+      "count": 3,
+      "fit": true,
+      "requirements": true,
+      "button": true,
+      "progress": true
+    },
+    {
+      "width": 320,
+      "textSize": "large",
+      "active": true,
+      "count": 1,
+      "fit": true,
+      "requirements": true,
+      "button": true,
+      "progress": true
+    }
+  ],
+  "errors": []
+}

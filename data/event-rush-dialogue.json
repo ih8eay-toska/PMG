@@ -1,0 +1,622 @@
+{
+  "eventId": "night-order",
+  "eventName": "The Shop That Would Not Sleep",
+  "status": "revised-for-review",
+  "provenance": "New fan-written event dialogue, informed by existing character dialogue. Not recovered original-game text.",
+  "recommendedNPC": {
+    "name": "Tirami",
+    "role": "Brings a caravan order that exceeds her stall's overnight capacity; contributes expert brewing and packing work, keeps the commercial records, and delivers the finished shipment.",
+    "basis": "Tirami is an accomplished brewer and proud commercial rival. The event puts her competence and accountability into tension with the need to collaborate, without portraying her as incapable."
+  },
+  "portraits": {
+    "Pio": "PiaDialogue.png",
+    "Tia": "TiaDialogue.png",
+    "Tirami": "TiramiMain.png"
+  },
+  "scenes": {
+    "opening": {
+      "title": "One More Page",
+      "lines": [
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "If I wash one more bottle, I'm naming it and sending it home."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "That makes five children you've sent away tonight."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "Then I hope there's room for a sixth."
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "Tirami? We're closing."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "The caravan leaves at dawn. Their quartermaster added an amendment to my order."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "How large an amendment?"
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "This page. And this little page folded inside it."
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "You can brew the potions. You just can't fit that many batches through one cauldron."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "Exactly. I've brought the ingredients and my brewing schedule. I need your spare cauldron."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "And the contract?"
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "My seal. If a bottle fails, the caravan comes to me."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "Then every batch needs its maker in the ledger. We should be able to trace a fault."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "I wasn't planning to lose track."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "Neither was I."
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "You can argue while we carry the crates. The room won't grow larger on its own."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "This is bench-sharing. Not a rescue."
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "Good. Then take the heavy end."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "Keep the sealed supplies by the conveyor until the cauldron's clear. We need the scales."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "Where do I put the ledger?"
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "Not on my blanket. I brought that for inventory night, not as a packing cloth."
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "Tea after the first batch. We're going to need it."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "I can make my own tea."
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "You can. But mine's already hot."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "Fine. Just leave 'sleepover' off the invoice."
+        }
+      ]
+    },
+    "milestone-b": {
+      "title": "The Maker's Mark",
+      "unlockGrade": "B",
+      "lines": [
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "Hold the label still. The ink hasn't dried."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "That's my merchant's seal you're about to smudge."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "It's covering the batch initials."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "My name goes on the front. I answer for the order."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "Then let the maker's name sit somewhere a clerk can actually find it."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "You think I don't understand how to trace a bad batch?"
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "I think this bottle has been between you for a minute and is still unlabeled."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "The outer tag can take my seal. Put your initials inside the packing ledger."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "Fine. I'll rewrite the column headings."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "And, Tia? Your last tray passed my seal check. Every bottle."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "I expected it to. ...Thank you for checking."
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "Lovely. Now may I have my bottle back?"
+        }
+      ]
+    },
+    "milestone-a": {
+      "title": "Six Missing Bottles",
+      "unlockGrade": "A",
+      "lines": [
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "Wait. My count is six short."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "Check the rack beside the window."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "That's supposed to hold bottles awaiting their seals."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "It does. Six of them. I moved the rack so the corks could finish setting."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "You could have told me."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "You asked me not to interrupt your count."
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "I could hear that count from the storeroom. Shall I bring the rack over?"
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "No. Leave it until the seals are ready. The six are accounted for."
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "Then both of you, sit for five minutes. The cauldron won't run away."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "I can sit and supervise."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "I'll watch the rack. You can close your eyes until the next batch."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "Wake me before the ledger needs signing."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "I wouldn't dare forge handwriting that difficult."
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "I'll bring the biscuits. There were some left when we started."
+        }
+      ]
+    },
+    "ending-none": {
+      "title": "An Empty Crate",
+      "grade": "No deliveries",
+      "lines": [
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "The caravan's gone. I stood at the gate with an empty crate."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "Did the quartermaster ask for an explanation?"
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "He didn't need to. I'll send one anyway. I accepted an amendment I couldn't fulfill."
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "Come in before you freeze. The kettle's still warm."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "Tea won't put bottles on that cart."
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "No. But you can write to them with warm hands."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "Make the letter precise. What was ordered, what we finished, and what couldn't be shipped."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "Zero is a remarkably easy quantity to record."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "The quantity, yes. The wording may take longer."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "...Will you read it before I send it?"
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "We'll set another cup out. Write first; breakfast can wait a few minutes."
+        }
+      ]
+    },
+    "ending-c": {
+      "title": "Room on the Cart",
+      "grade": "C",
+      "lines": [
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "There's room on the cart for everything I couldn't finish. Too much room."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "And the receipt states exactly what we delivered. No guessing later."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "I tied a ribbon around the smallest shipment of my career."
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "You tied it carefully."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "I was trying to make it look less lonely."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "It secures the label. Its feelings are irrelevant."
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "The label is staying put, at least."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "I'll tell the caravan master what we couldn't finish. He may be less polite than this crate."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "Take the ledger copy. It will save you arguing over the count."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "Thank you. Don't clear my cup yet."
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "I wasn't going to."
+        }
+      ]
+    },
+    "ending-b": {
+      "title": "Three Names in the Ledger",
+      "grade": "B",
+      "lines": [
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "A respectable shipment. Not the full order, but the numbers agree."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "The quartermaster signed for it without complaining. He did ask who brewed which batches."
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "And did you tell him?"
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "I gave him the ledger. It's what a ledger is for."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "You rewrote the heading."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "The old one was too small. Three names hardly fit."
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "You managed to make yours fit before."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "Pio, please. I've been awake all night."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "You also corrected the batch numbers beside my initials. Thank you."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "They deserved to be correct. Now, is there anything left of the tea?"
+        }
+      ]
+    },
+    "ending-a": {
+      "title": "For a Quotation",
+      "grade": "A",
+      "lines": [
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "The caravan asked where to send its next large order."
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "Please tell me you didn't promise them tomorrow."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "I told them to ask both shops for a quotation. A quotation, Pio. Not a promise."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "You actually wrote 'both shops'?"
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "Twice. The quartermaster was half asleep, and I wanted him to remember."
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "You didn't have to do that."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "I wasn't going to volunteer your labor a second time. You can decide what it's worth."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "Good. And this time we'll calculate the hours before accepting."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "I had hoped you would forget that part."
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "Sit down. We can argue about rates after breakfast."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "I wasn't arguing. I was negotiating."
+        }
+      ]
+    },
+    "ending-s": {
+      "title": "An Official Pillow",
+      "grade": "S",
+      "lines": [
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "Every crate boarded. The quartermaster checked the amended order twice."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "And the count?"
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "Exact. He asked how we managed it before dawn."
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "You had your schedule ready to show him, I suppose."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "I did. He asked whose changes were written in the margins."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "Oh."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "I told him to ask you. He wrote your name down, along with Pio's."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "You gave him all three names?"
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "He was going to order again. I thought he'd better know who could actually do the work."
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "You mean who could stay awake long enough."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "If I let go of this packing list, I may fall over."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "You're already sitting. You've been holding it upside down."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "Then I'm making sure nobody alters the figures."
+        },
+        {
+          "speaker": "Pio",
+          "portrait": "PiaDialogue.png",
+          "text": "There's a clean blanket on the chair. The figures can sleep alone."
+        },
+        {
+          "speaker": "Tirami",
+          "portrait": "TiramiMain.png",
+          "text": "I should really get back to my stall."
+        },
+        {
+          "speaker": "Tia",
+          "portrait": "TiaDialogue.png",
+          "text": "After breakfast. We saved you a cup, and I'm not entering a missing teacup in that ledger."
+        }
+      ]
+    }
+  },
+  "implementationNotes": [
+    "Do not start gathering until the opening finishes or is skipped.",
+    "The revised opening contains 24 dialogue lines (zero-based indices 0–23); update any validated opening-line bounds and saved-progress migrations accordingly.",
+    "Milestone B contains 12 lines and milestone A contains 14 lines. Both remain optional, independently understandable, and replayable without pausing event time.",
+    "The No-deliveries, C, B, A, and S endings contain 11, 11, 10, 11, and 16 lines respectively. Select exactly one using the settled grade.",
+    "Do not replay earned rewards or introduce new item and currency rewards via the story.",
+    "The script does not require equipping nightclothes or changing the active costume.",
+    "Crates, blankets, tea, paperwork, labels, and caravan interactions are conveyed through dialogue; no new visual assets are required.",
+    "The opening references sealed supplies beside the conveyor. Verify the in-game instruction remains mechanically accurate; otherwise place that direction in the gameplay tutorial UI.",
+    "The maker-initials and merchant-seal discussion is fictional story bookkeeping only; it does not require a new inventory, labeling, or recipe mechanic.",
+    "Map ending-none/C/B/A/S explicitly and retain a safe migration for unfinished development openings. Do not treat previously completed runs as unfinished because the opening length changed."
+  ]
+}

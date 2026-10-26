@@ -5,212 +5,423 @@
     {
       "id": "fairy-1",
       "name": "Squishy",
-      "image": "Fairy1.png"
+      "image": "Fairy1.png",
+      "nativeId": 1,
+      "originalName": "Squishy",
+      "rarity": 1,
+      "rarityLabel": "N",
+      "rarityColor": "#ffffff"
     },
     {
       "id": "fairy-2",
       "name": "Squashy",
-      "image": "Fairy2.png"
+      "image": "Fairy2.png",
+      "nativeId": 2,
+      "originalName": "Squashy",
+      "rarity": 1,
+      "rarityLabel": "N",
+      "rarityColor": "#ffffff"
     },
     {
       "id": "fairy-3",
       "name": "Mushy",
-      "image": "Fairy3.png"
+      "image": "Fairy3.png",
+      "nativeId": 3,
+      "originalName": "Mushy",
+      "rarity": 1,
+      "rarityLabel": "N",
+      "rarityColor": "#ffffff"
     },
     {
       "id": "fairy-4",
       "name": "Beany-Kong",
-      "image": "Fairy4.png"
+      "image": "Fairy4.png",
+      "nativeId": 4,
+      "originalName": "Beany-Kong",
+      "rarity": 2,
+      "rarityLabel": "R",
+      "rarityColor": "#1eff00"
     },
     {
       "id": "fairy-5",
       "name": "Surprise-Pong",
-      "image": "Fairy5.png"
+      "image": "Fairy5.png",
+      "nativeId": 5,
+      "originalName": "Surprise-Pong",
+      "rarity": 2,
+      "rarityLabel": "R",
+      "rarityColor": "#1eff00"
     },
     {
       "id": "fairy-6",
       "name": "Happy-Pong",
-      "image": "Fairy6.png"
+      "image": "Fairy6.png",
+      "nativeId": 6,
+      "originalName": "Happy-Pong",
+      "rarity": 2,
+      "rarityLabel": "R",
+      "rarityColor": "#1eff00"
     },
     {
       "id": "fairy-7",
       "name": "Amaze-Pong",
-      "image": "Fairy7.png"
+      "image": "Fairy7.png",
+      "nativeId": 7,
+      "originalName": "Amaze-Pong",
+      "rarity": 2,
+      "rarityLabel": "R",
+      "rarityColor": "#1eff00"
     },
     {
       "id": "fairy-8",
       "name": "Angry-Pong",
-      "image": "Fairy8.png"
+      "image": "Fairy8.png",
+      "nativeId": 8,
+      "originalName": "Angry-Pong",
+      "rarity": 2,
+      "rarityLabel": "R",
+      "rarityColor": "#1eff00"
     },
     {
       "id": "fairy-9",
       "name": "Sunnyside-Chick",
-      "image": "Fairy9.png"
+      "image": "Fairy9.png",
+      "nativeId": 9,
+      "originalName": "Sunnyside-Chick",
+      "rarity": 2,
+      "rarityLabel": "R",
+      "rarityColor": "#1eff00"
     },
     {
       "id": "fairy-10",
       "name": "Ice-Chick",
-      "image": "Fairy10.png"
+      "image": "Fairy10.png",
+      "nativeId": 10,
+      "originalName": "Ice-Chick",
+      "rarity": 2,
+      "rarityLabel": "R",
+      "rarityColor": "#1eff00"
     },
     {
       "id": "fairy-11",
       "name": "Hot-Chick",
-      "image": "Fairy11.png"
+      "image": "Fairy11.png",
+      "nativeId": 11,
+      "originalName": "Hot-Chick",
+      "rarity": 2,
+      "rarityLabel": "R",
+      "rarityColor": "#1eff00"
     },
     {
       "id": "fairy-12",
       "name": "Clover-Puru",
-      "image": "Fairy12.png"
+      "image": "Fairy12.png",
+      "nativeId": 12,
+      "originalName": "Clover-Puru",
+      "rarity": 2,
+      "rarityLabel": "R",
+      "rarityColor": "#1eff00"
     },
     {
       "id": "fairy-13",
       "name": "Dande-Puru",
-      "image": "Fairy13.png"
+      "image": "Fairy13.png",
+      "nativeId": 13,
+      "originalName": "Dande-Puru",
+      "rarity": 2,
+      "rarityLabel": "R",
+      "rarityColor": "#1eff00"
     },
     {
       "id": "fairy-14",
       "name": "Bell-Puru",
-      "image": "Fairy14.png"
+      "image": "Fairy14.png",
+      "nativeId": 14,
+      "originalName": "Bell-Puru",
+      "rarity": 2,
+      "rarityLabel": "R",
+      "rarityColor": "#1eff00"
     },
     {
       "id": "fairy-15",
       "name": "Red-Cho",
-      "image": "Fairy15.png"
+      "image": "Fairy15.png",
+      "nativeId": 15,
+      "originalName": "Red-Cho",
+      "rarity": 2,
+      "rarityLabel": "R",
+      "rarityColor": "#1eff00"
     },
     {
       "id": "fairy-16",
       "name": "Blue-Cho",
-      "image": "Fairy16.png"
+      "image": "Fairy16.png",
+      "nativeId": 16,
+      "originalName": "Blue-Cho",
+      "rarity": 2,
+      "rarityLabel": "R",
+      "rarityColor": "#1eff00"
     },
     {
       "id": "fairy-17",
       "name": "Yellow-Cho",
-      "image": "Fairy17.png"
+      "image": "Fairy17.png",
+      "nativeId": 17,
+      "originalName": "Yellow-Cho",
+      "rarity": 2,
+      "rarityLabel": "R",
+      "rarityColor": "#1eff00"
     },
     {
       "id": "fairy-18",
       "name": "Purplish-Kun",
-      "image": "Fairy18.png"
+      "image": "Fairy18.png",
+      "nativeId": 18,
+      "originalName": "Purplish-Kun",
+      "rarity": 3,
+      "rarityLabel": "S",
+      "rarityColor": "#0000ff"
     },
     {
       "id": "fairy-19",
       "name": "Orangish-Kun",
-      "image": "Fairy19.png"
+      "image": "Fairy19.png",
+      "nativeId": 19,
+      "originalName": "Orangish-Kun",
+      "rarity": 3,
+      "rarityLabel": "S",
+      "rarityColor": "#0000ff"
     },
     {
       "id": "fairy-20",
       "name": "Greenish-Kun",
-      "image": "Fairy20.png"
+      "image": "Fairy20.png",
+      "nativeId": 20,
+      "originalName": "Greenish-Kun",
+      "rarity": 3,
+      "rarityLabel": "S",
+      "rarityColor": "#0000ff"
     },
     {
       "id": "fairy-21",
       "name": "Magi-Run",
-      "image": "Fairy21.png"
+      "image": "Fairy21.png",
+      "nativeId": 21,
+      "originalName": "Magi-Run",
+      "rarity": 3,
+      "rarityLabel": "S",
+      "rarityColor": "#0000ff"
     },
     {
       "id": "fairy-22",
       "name": "Thief-Run",
-      "image": "Fairy22.png"
+      "image": "Fairy22.png",
+      "nativeId": 22,
+      "originalName": "Thief-Run",
+      "rarity": 3,
+      "rarityLabel": "S",
+      "rarityColor": "#0000ff"
     },
     {
       "id": "fairy-23",
       "name": "Cleri-Run",
-      "image": "Fairy23.png"
+      "image": "Fairy23.png",
+      "nativeId": 23,
+      "originalName": "Cleri-Run",
+      "rarity": 3,
+      "rarityLabel": "S",
+      "rarityColor": "#0000ff"
     },
     {
       "id": "fairy-24",
       "name": "Arch-Run",
-      "image": "Fairy24.png"
+      "image": "Fairy24.png",
+      "nativeId": 24,
+      "originalName": "Arch-Run",
+      "rarity": 3,
+      "rarityLabel": "S",
+      "rarityColor": "#0000ff"
     },
     {
       "id": "fairy-25",
       "name": "Warri-Run",
-      "image": "Fairy25.png"
+      "image": "Fairy25.png",
+      "nativeId": 25,
+      "originalName": "Warri-Run",
+      "rarity": 3,
+      "rarityLabel": "S",
+      "rarityColor": "#0000ff"
     },
     {
       "id": "fairy-26",
       "name": "Blue-Me",
-      "image": "Fairy26.png"
+      "image": "Fairy26.png",
+      "nativeId": 26,
+      "originalName": "Blue-Me",
+      "rarity": 3,
+      "rarityLabel": "S",
+      "rarityColor": "#0000ff"
     },
     {
       "id": "fairy-27",
       "name": "Purp-Me",
-      "image": "Fairy27.png"
+      "image": "Fairy27.png",
+      "nativeId": 27,
+      "originalName": "Purp-Me",
+      "rarity": 3,
+      "rarityLabel": "S",
+      "rarityColor": "#0000ff"
     },
     {
       "id": "fairy-28",
       "name": "Yell-Me",
-      "image": "Fairy28.png"
+      "image": "Fairy28.png",
+      "nativeId": 28,
+      "originalName": "Yell-Me",
+      "rarity": 3,
+      "rarityLabel": "S",
+      "rarityColor": "#0000ff"
     },
     {
       "id": "fairy-29",
       "name": "Red-me",
-      "image": "Fairy29.png"
+      "image": "Fairy29.png",
+      "nativeId": 29,
+      "originalName": "Red-Me",
+      "rarity": 3,
+      "rarityLabel": "S",
+      "rarityColor": "#0000ff"
     },
     {
       "id": "fairy-30",
       "name": "Green-Me",
-      "image": "Fairy30.png"
+      "image": "Fairy30.png",
+      "nativeId": 30,
+      "originalName": "Green-Me",
+      "rarity": 3,
+      "rarityLabel": "S",
+      "rarityColor": "#0000ff"
     },
     {
       "id": "fairy-31",
       "name": "Poong-Poong",
-      "image": "Fairy31.png"
+      "image": "Fairy31.png",
+      "nativeId": 31,
+      "originalName": "Poong-Poong",
+      "rarity": 3,
+      "rarityLabel": "S",
+      "rarityColor": "#0000ff"
     },
     {
       "id": "fairy-32",
       "name": "Gentle-Poong",
-      "image": "Fairy32.png"
+      "image": "Fairy32.png",
+      "nativeId": 32,
+      "originalName": "Gentle-Poong",
+      "rarity": 3,
+      "rarityLabel": "S",
+      "rarityColor": "#0000ff"
     },
     {
       "id": "fairy-33",
       "name": "King-Poong",
-      "image": "Fairy33.png"
+      "image": "Fairy33.png",
+      "nativeId": 33,
+      "originalName": "King-Poong",
+      "rarity": 3,
+      "rarityLabel": "S",
+      "rarityColor": "#0000ff"
     },
     {
       "id": "fairy-34",
       "name": "Hero-Poong",
-      "image": "Fairy34.png"
+      "image": "Fairy34.png",
+      "nativeId": 34,
+      "originalName": "Hero-Poong",
+      "rarity": 3,
+      "rarityLabel": "S",
+      "rarityColor": "#0000ff"
     },
     {
       "id": "fairy-35",
       "name": "Wiz-Poong",
-      "image": "Fairy35.png"
+      "image": "Fairy35.png",
+      "nativeId": 35,
+      "originalName": "Wiz-Poong",
+      "rarity": 3,
+      "rarityLabel": "S",
+      "rarityColor": "#0000ff"
     },
     {
       "id": "fairy-40",
       "name": "Forest Fairy",
-      "image": "Fairy40.png"
+      "image": "Fairy40.png",
+      "nativeId": 40,
+      "originalName": "Pisia",
+      "rarity": 4,
+      "rarityLabel": "U",
+      "rarityColor": "#a335ee"
     },
     {
       "id": "fairy-41",
       "name": "Fire Fairy",
-      "image": "Fairy41.png"
+      "image": "Fairy41.png",
+      "nativeId": 41,
+      "originalName": "Fosia",
+      "rarity": 4,
+      "rarityLabel": "U",
+      "rarityColor": "#a335ee"
     },
     {
       "id": "fairy-42",
       "name": "Water Fairy",
-      "image": "Fairy42.png"
+      "image": "Fairy42.png",
+      "nativeId": 42,
+      "originalName": "Nesia",
+      "rarity": 4,
+      "rarityLabel": "U",
+      "rarityColor": "#a335ee"
     },
     {
       "id": "fairy-36",
       "name": "Pushcat Fairy",
-      "image": "Fairy36.png"
+      "image": "Fairy36.png",
+      "nativeId": 36,
+      "originalName": "Pushcat Fairy",
+      "rarity": 4,
+      "rarityLabel": "U",
+      "rarityColor": "#a335ee"
     },
     {
       "id": "fairy-37",
       "name": "Blackcat Fairy",
-      "image": "Fairy37.png"
+      "image": "Fairy37.png",
+      "nativeId": 37,
+      "originalName": "BlackCat Fairy",
+      "rarity": 4,
+      "rarityLabel": "U",
+      "rarityColor": "#a335ee"
     },
     {
       "id": "fairy-43",
       "name": "Halloprin",
-      "image": "Fairy43.png"
+      "image": "Fairy43.png",
+      "nativeId": 43,
+      "originalName": "Halloprin",
+      "rarity": 4,
+      "rarityLabel": "U",
+      "rarityColor": "#a335ee"
     },
     {
       "id": "fairy-behe",
       "name": "Behe",
-      "image": "PeheFairy.png"
+      "image": "PeheFairy.png",
+      "nativeId": 51,
+      "originalName": "Behe",
+      "rarity": 5,
+      "rarityLabel": "G",
+      "rarityColor": "#ff8000"
     }
-  ]
+  ],
+  "presentationSource": "Original APK Fairies_271.bin, English_245.bin and FairySlotGUI rarity lookup; fairy-behe maps to native fairy51 (Behe)."
 }

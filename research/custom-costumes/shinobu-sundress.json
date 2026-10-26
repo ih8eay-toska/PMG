@@ -1,0 +1,77 @@
+{
+  "costume": "Shinobu Oshino Sundress",
+  "id": "pio-shinobu-sundress.png",
+  "tool": "Built-in image_gen, two image edits/generations; final atlas packing and thumbnail rendered with Canvas/PIXI",
+  "references": [
+    {
+      "url": "https://www.kotobukiya.co.jp/en/product/detail/p4934054783038/",
+      "details": "Official design description: white sundress, pink bows, broad straw hat with pink ribbon."
+    },
+    {
+      "url": "https://www.aniplex.co.jp/lineup/monogatari-series/news/detail/?id=30698",
+      "details": "Official white-dress and straw-hat product reference."
+    }
+  ],
+  "prompts": {
+    "dress": "Use case: precise-object-edit. Asset: 1024x1024 Live2D texture atlas for Pio wearing Shinobu Oshino's Nisemonogatari white sundress. The input image is the edit target, NOT a character illustration. Keep the EXACT atlas layout and positions, orientations, sizes and transparent background. Edit ONLY the sideways torso/dress region x304..626 y100..389: replace its ornate summer dress with Shinobu's simple white cotton sundress: thin white shoulder straps, modest gently gathered straight neckline, small dusty pink bows at neckline and down the front, white fabric with cool pale lavender fold shadows. Remove the heart necklace and large chest bow, put a small pink bow at the top center instead. The torso is rotated 90 degrees clockwise relative to upright (head/neck is to the RIGHT, skirt hem to LEFT); bows and fold directions must follow that rotation. Preserve Pio's skin shape and exact existing silhouette, and ALL other pixels outside this torso region including purple hair, eyes, mouths, face, arms, hair ribbon unchanged. Do NOT rearrange, relabel, resize, redraw the atlas into a portrait, add a hat, add props, add text, or add a background. Transparent output. Wholesome sundress matching Shinobu's iconic white-and-pink outfit; match existing crisp anime linework.",
+    "hat": "Use case: stylized-concept. Production game sprite, single isolated straw sunhat for Pio's Shinobu Oshino sundress cosplay, Nisemonogatari design. Draw ONLY the hat, NO person, NO hair, NO face, NO mannequin, NO stand. Front view at a very slight downward angle: wide round elliptical brim, softly domed low crown, warm pale golden woven straw concentric rings, dusty rose pink ribbon wrapped around base of crown with a large tied pink bow on viewer's RIGHT. The brim is wide and softly wavy but nearly symmetrical, crown width about half brim width, crown rises above the brim. Clean hand-drawn anime cel shaded linework matching Potion Maker game, thin muted warm brown outline, delicate cream highlights and soft warm brown underside shadows. Wholesome summer styling faithful to Shinobu's iconic straw hat, no witch point, no ornate charms or flowers. Hat fills 90 percent of square horizontally, centered, generous transparent margin above and below, complete edges visible, actual alpha transparency. No text, no watermark. Intended as a separate head-following sprite; bottom curved edge of brim must be clean and continuous."
+  },
+  "implementation": {
+    "atlas": "assets/live2d/Pio/textures/shinobu-sundress-costume.png",
+    "preview": "assets/custom-costumes/shinobu-sundress-preview.png",
+    "packing": [
+      "Start with original summer-dress-costume-white.webp, 1024x1024.",
+      "Scale generated atlas to 1024x1024 and copy only x304,y100,w324,h289 into torso UV slot.",
+      "Clear wing slot x840,y478,w184,h298.",
+      "Copy original default-costume.webp unadorned bangs at x0,y630,w350,h195 and the COMPLETE back-hair UV section with padding at x595,y0,w290,h465. The previous narrower copy left stray summer-hair pixels at its edge."
+    ],
+    "rig": "Original model.moc and all motions unchanged. No hat layer or accessory code is loaded.",
+    "cost": "Free; no progression or balance changes."
+  },
+  "limitations": [
+    "Pio retains her own face, purple hair, proportions and animation rig. This is Pio cosplaying the outfit, not a Shinobu character replacement.",
+    "The original waist-up Pio rig does not include Shinobu's shoes or full skirt. No donut prop was added."
+  ],
+  "verification": {
+    "motionCount": 24,
+    "renderedAndAnimated": 24,
+    "browserErrors": 0,
+    "gameChecks": [
+      "desktop and mobile render",
+      "wardrobe preview",
+      "free equip and save sanitation",
+      "switch to original Pio outfit",
+      "switch to Tia",
+      "reequip",
+      "reload save"
+    ],
+    "originalRestoredTexturesVerified": 106,
+    "buildBytes": 102483489,
+    "uiWearButton": true,
+    "hatAbsent": true
+  },
+  "files": {
+    "assets/live2d/Pio/textures/shinobu-sundress-costume.png": {
+      "bytes": 422337,
+      "sha256": "263abc7e366f5a15d4547dae23b039751a9ebd0907b18225f46da5ccdf761544"
+    },
+    "assets/custom-costumes/shinobu-sundress-preview.png": {
+      "bytes": 273410,
+      "sha256": "7dc68c3547ecc2e80be7e5c70d75fc902701d985df4806a71e01eb64c087e569"
+    }
+  },
+  "revision": {
+    "date": "2026-10-26",
+    "requested": [
+      "Remove straw hat",
+      "Fix hair-tip artifact"
+    ],
+    "changes": [
+      "Removed costume headwear mapping and now-unused headwear runtime code.",
+      "Repacked full original back-hair UV section including edge padding.",
+      "Regenerated hat-free wardrobe preview.",
+      "Repainted the old hat-shadow band out of both hair UV pieces. Preserved original alpha and all non-hair pixels. See shinobu-hair-shadow-fix.json for prompt and checks."
+    ],
+    "archivedArtwork": "assets/custom-costumes/shinobu-straw-hat.png remains an unused artwork file; it is not embedded in the game."
+  }
+}

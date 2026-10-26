@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" preserveAspectRatio="none">
+<defs>
+ <linearGradient id="leather" x2="0" y2="1"><stop stop-color="#744122"/><stop offset=".5" stop-color="#422a19"/><stop offset="1" stop-color="#633116"/></linearGradient>
+ <linearGradient id="edge" x2="0" y2="1"><stop stop-color="#c6a56a"/><stop offset=".8" stop-color="#e2ca8c"/><stop offset="1" stop-color="#ac8348"/></linearGradient>
+ <linearGradient id="paper"><stop stop-color="#e4cc94"/><stop offset=".08" stop-color="#f4e6c0"/><stop offset=".65" stop-color="#fcf1d5"/><stop offset=".94" stop-color="#eddbac"/><stop offset="1" stop-color="#bca06d"/></linearGradient>
+ <linearGradient id="fold"><stop stop-color="#a9854a" stop-opacity="0"/><stop offset=".43" stop-color="#ad8b51" stop-opacity=".2"/><stop offset=".5" stop-color="#7c5b30" stop-opacity=".65"/><stop offset=".57" stop-color="#fff6d5" stop-opacity=".55"/><stop offset="1" stop-color="#a9854a" stop-opacity="0"/></linearGradient>
+ <linearGradient id="gold" x2=".8" y2="1"><stop stop-color="#ffefaf"/><stop offset=".23" stop-color="#e4b44c"/><stop offset=".48" stop-color="#a36a15"/><stop offset=".7" stop-color="#f6d578"/><stop offset="1" stop-color="#a27525"/></linearGradient>
+ <radialGradient id="wash"><stop stop-color="#fff8e6" stop-opacity=".6"/><stop offset="1" stop-color="#c7a15c" stop-opacity=".12"/></radialGradient>
+ <filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="3" seed="23"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".055"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+ <path id="page" d="M42 30Q300 7 600 39L600 782Q370 749 55 786Q30 440 42 30Z"/>
+ <path id="corner" d="M9 65V16Q9 9 18 9H79L70 25H31L25 57Z"/>
+ <path id="flourish" d="M31 65Q44 42 66 43M43 31Q42 48 29 57M33 40Q56 31 68 39Q52 49 46 39"/>
+</defs>
+<path d="M19 17Q304 0 600 24Q904 0 1181 17L1190 796Q904 776 600 806Q300 776 10 796Z" fill="url(#leather)" stroke="#442b19" stroke-width="4"/>
+<path d="M31 25Q300 9 600 36Q900 9 1169 25L1176 786Q900 762 600 799Q300 763 24 786Z" fill="url(#edge)" stroke="#9d7638" stroke-width="2"/>
+<g fill="none" stroke="#9e7a3f" stroke-opacity=".65" stroke-width="2"><path d="M35 766Q305 747 589 784M34 773Q305 752 590 790M1165 766Q895 747 611 784M1166 773Q895 752 610 790"/></g>
+<use href="#page" fill="url(#paper)" filter="url(#grain)"/>
+<use href="#page" fill="url(#paper)" filter="url(#grain)" transform="translate(1200) scale(-1 1)"/>
+<path d="M54 45Q303 24 586 51V764Q340 737 65 767Q48 400 54 45Z" fill="url(#wash)"/>
+<path d="M1146 45Q897 24 614 51V764Q860 737 1135 767Q1152 400 1146 45Z" fill="url(#wash)"/>
+<path d="M568 37Q600 33 632 37V783Q600 778 568 783Z" fill="url(#fold)"/>
+<path d="M600 39V781" stroke="#927345" stroke-opacity=".38" stroke-width="2"/>
+<g fill="none" stroke="#c2a66a" stroke-opacity=".4" stroke-width="1.5"><path d="M91 106H518M682 106H1109M95 727H518M682 727H1105"/></g>
+<g fill="url(#gold)" stroke="#9d701f" stroke-width="2"><use href="#corner"/><use href="#corner" transform="translate(1200) scale(-1 1)"/><use href="#corner" transform="translate(0 820) scale(1 -1)"/><use href="#corner" transform="translate(1200 820) scale(-1 -1)"/></g>
+<g fill="none" stroke="url(#gold)" stroke-width="3" stroke-linecap="round"><use href="#flourish"/><use href="#flourish" transform="translate(1200) scale(-1 1)"/><use href="#flourish" transform="translate(0 820) scale(1 -1)"/><use href="#flourish" transform="translate(1200 820) scale(-1 -1)"/></g>
+</svg>

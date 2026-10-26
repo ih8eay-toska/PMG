@@ -20,7 +20,8 @@ let modal=false,now=Date.now(),reduced=false,saves=0,scenePlays=0;
 const timeouts=[],ctx=vm.createContext({...core,QUEST_OFFER_MS:core.ECONOMY.visitors.offerMs,QUEST_REWARD_DELAY_MS:core.ECONOMY.visitors.rewardDelayMs,$,window:{},document:{hidden:false,createElement:()=>new Element(),addEventListener:(type,fn)=>handlers[type]=fn,querySelector:()=>modal?{}:null},Date:class extends Date{static now(){return now;}},Math:Object.assign(Object.create(Math),{random:()=>0}),game:new core.PotionGame(),art:x=>x,setText:(el,v)=>el.textContent=String(v),fmt:String,duration:String,notice(){},animateIngredient(){},playOriginalSfx(){},save(){saves++;},render(){},flash(){},masteredPotionCount(){return ctx.game.state.masteryStars.length;},requestAnimationFrame(){},matchMedia:()=>({matches:reduced}),setTimeout:fn=>{timeouts.push(fn);return timeouts.length;},playTiaScene(){scenePlays++;ctx.game.state.tiaIntroSeen=true;},tiaSceneTimer:null});
 const run=s=>vm.runInContext(s,ctx);
 function line(prefix){const s=app.split(/\r?\n/).find(s=>s.startsWith(prefix));assert.ok(s,prefix);run(s);}
-for(const name of ['updateVisitorShortcut','readyQuestIndex','updateSellAction','renderNumberArt','renderEnhanceMultiplier','updateBeltLabels','materialValue','imgButton','ticketButton','solutionButton','startBelt','drawSelectedIngredients','collectMaterial','catchMaterial','animate','rewardOddsText','updateRewardShop'])line('function '+name+'(');
+for(const name of ['updateVisitorShortcut','readyQuestIndex','updateSellAction','renderNumberArt','renderEnhanceMultiplier','renderPowerups','updateBeltLabels','materialValue','imgButton','ticketButton','solutionButton','startBelt','drawSelectedIngredients','collectMaterial','catchMaterial','animate','rewardOddsText','updateRewardShop'])line('function '+name+'(');
+ctx.renderPowerups();for(const id of ['protection-indicator','enhancement-indicator','selling-indicator'])assert.equal($(id).hidden,true);ctx.game.state.powerups={protection:2,enhancement:3,selling:4};ctx.renderPowerups();for(const[id,count]of [['protection-indicator',2],['enhancement-indicator',3],['selling-indicator',4]]){assert.equal($(id).hidden,false);assert.equal($(id+'-count').textContent,String(count));}
 run(app.slice(app.indexOf('function syncBelt('),app.indexOf('function startBelt(')));
 Object.assign(ctx,{ingredientMode:'manual',conveyor:new core.MaterialConveyor(456,[0,0,0],()=>0,()=>({eventActive:true}),true),belt:[],beltSlots:'',beltElements:new Map(),beltWidth:456,gameSettings:{},reducedMotion:false,specialRack:new Element(),lastFrame:0});
 assert.equal(ctx.materialValue(.7),'0.7');
@@ -59,7 +60,9 @@ ctx.renderNumberArt($('value'),'3,987');assert.equal($('value').children[0].src,
 const enhancementCode=app.slice(app.indexOf('if(n){const details='),app.indexOf('\n }else{',app.indexOf('if(n){const details=')));
 ctx.n={chance:.8,multiplier:2};run(enhancementCode);const rateNode=$('enhance-details').children[0];assert.equal($('enhance-multiplier').children[0].textContent,'2');assert.equal($('enhance-multiplier').children[0].className,'mult-number');assert.equal($('enhance-multiplier').hidden,false);run(enhancementCode);assert.equal($('enhance-details').children[0],rateNode);ctx.n={chance:.9,multiplier:2};run(enhancementCode);assert.notEqual($('enhance-details').children[0],rateNode);ctx.n=null;ctx.game.enhancementStatus=()=> 'max';run(enhancementCode);assert.equal($('enhance-details').dataset.enhancement,undefined);assert.equal($('enhance-details').dataset.status,'max');assert.equal($('enhance-details').textContent,'Maximum enhancement reached');assert.equal($('enhance-multiplier').hidden,true);ctx.n={chance:.9,multiplier:2};run(enhancementCode);assert.equal($('enhance-details').dataset.status,undefined);assert.equal($('enhance-details').dataset.enhancement,'0.9|2');assert.equal($('enhance-multiplier').hidden,false);
 // Fairy details update when equipped fairy or level changes, and hide when unequipped.
-line('function renderFairyShortcut(');ctx.fairyEffectText=id=>id;ctx.game=new core.PotionGame();const fairy=core.FAIRIES[0];ctx.game.state.activeFairyId=fairy.id;ctx.game.state.fairies[fairy.id]=1;ctx.renderFairyShortcut();assert.equal($('equipped-fairy-level').textContent,'Level 1 / 10');ctx.game.state.fairies[fairy.id]=2;ctx.renderFairyShortcut();assert.equal($('equipped-fairy-level').textContent,'Level 2 / 10');ctx.game.state.activeFairyId=null;ctx.renderFairyShortcut();assert.equal($('fairy-shortcut').hidden,true);
+for(const f of core.FAIRIES){assert(Number.isInteger(f.nativeId)&&f.nativeId>=1&&f.nativeId<=51);assert(f.originalName&&!/[{}]/.test(f.originalName));assert.equal(f.rarityLabel,['N','R','S','U','G'][f.rarity-1]);}assert.equal(core.FAIRIES.find(f=>f.id==='fairy-behe').nativeId,51);
+
+line('function fairyDisplayName(');line('function renderFairyShortcut(');ctx.fairyEffectText=id=>id;ctx.game=new core.PotionGame();const fairy=core.FAIRIES[0];ctx.game.state.activeFairyId=fairy.id;ctx.game.state.fairies[fairy.id]=1;ctx.renderFairyShortcut();assert.match($('fairy-shortcut').attributes['aria-label'],/level 1 of 10/);ctx.game.state.fairies[fairy.id]=2;ctx.renderFairyShortcut();assert.match($('fairy-shortcut').attributes['aria-label'],/level 2 of 10/);ctx.game.state.activeFairyId=null;ctx.renderFairyShortcut();assert.equal($('fairy-shortcut').hidden,true);
 // Upgrade rendering skips ordinary pickups but invalidates currency, mastery, metrics and save replacement.
 ctx.game=new core.PotionGame();ctx.upgradeNodes=new Map();ctx.renderUpgradeSummary=()=>{};line('const upgradeRows=');run(app.slice(app.indexOf('function renderUpgrades('),app.indexOf('function renderUpgradeSummary(')));ctx.renderUpgrades();const originalInfo=ctx.game.upgradeInfo.bind(ctx.game);let upgradeReads=0;ctx.game.upgradeInfo=key=>{upgradeReads++;return originalInfo(key);};ctx.game.collect(0,0);ctx.renderUpgrades();upgradeReads=0;ctx.game.collect(0,0);ctx.renderUpgrades();assert.equal(upgradeReads,0);ctx.game.state.coins=1000;ctx.renderUpgrades();assert.ok(upgradeReads>0);upgradeReads=0;ctx.game.state.masteryStars.push('0-0');ctx.renderUpgrades();assert.ok(upgradeReads>0);const previousState=ctx.renderUpgrades.state;ctx.game=new core.PotionGame();ctx.renderUpgrades();assert.notEqual(ctx.renderUpgrades.state,previousState);
 // Character selection invalidates when Tia unlocks or the selected brewer changes.
@@ -278,7 +281,7 @@ run(app.slice(app.indexOf('function renderExpeditionJournal('),app.indexOf("$('e
  console.log('Passed: Dolbur tier-1 chapter card, absent dispatch, saved draft across reload, route change, 120s dispatch, early-close report reload, repeat-trip card and journal replay.');
 }
 // Use the actual reveal handler: rewards/save/quota commit before animation resolves.
-Object.assign(ctx,{rewardKind:'hourly',rewardBusy:false,rewardAnimation:null,rewardDialog:new Element(),rewardButtons:Object.fromEntries(['hourly','tickets','skin'].map(k=>[k,{detail:new Element()}])),rewardLabels:{tickets:'tickets',rubies:'rubies',protection:'protection',enhancement:'enhancement',selling:'selling',fairy:'fairy',skin:'skin'},CURRENCY_UNITS:core.ECONOMY.currencyUnits,rewardArt:x=>x,rewardDescription:r=>r.amount+' '+r.currency});
+Object.assign(ctx,{animateRewardChest(){},rewardKind:'hourly',rewardBusy:false,rewardAnimation:null,rewardDialog:new Element(),rewardButtons:Object.fromEntries(['hourly','tickets','skin'].map(k=>[k,{detail:new Element()}])),rewardLabels:{tickets:'tickets',rubies:'rubies',protection:'protection',enhancement:'enhancement',selling:'selling',fairy:'fairy',skin:'skin'},CURRENCY_UNITS:core.ECONOMY.currencyUnits,rewardArt:x=>x,rewardDescription:r=>r.amount+' '+r.currency});
 run(app.slice(app.indexOf('async function openChest('),app.indexOf("rewardDialog.querySelector('.reward-open').onclick")));
 (async()=>{
  for(const reduce of [false,true]){
@@ -297,8 +300,18 @@ run(app.slice(app.indexOf('async function openChest('),app.indexOf("rewardDialog
  let bounds={width:520,height:500},resizes=[];
  const renderer={resolution:1,resize:(w,h)=>resizes.push([w,h])};
  const context=vm.createContext({canvas:{getBoundingClientRect:()=>bounds},app:{renderer},window:{devicePixelRatio:1},Math});
- vm.runInContext(resizeCode+';resizeCanvas();',context);assert.equal(renderer.resolution,520/380);assert.deepEqual(resizes,[[380,420]]);
+ vm.runInContext(resizeCode+';resizeCanvas();',context);assert.equal(renderer.resolution,520/380);assert.deepEqual(resizes,[[380,380]]);
  vm.runInContext('resizeCanvas()',context);assert.equal(resizes.length,1);
  bounds={width:760,height:840};context.window.devicePixelRatio=2;vm.runInContext('resizeCanvas()',context);assert.equal(renderer.resolution,3);
  bounds={width:0,height:0};vm.runInContext('resizeCanvas()',context);assert.equal(resizes.length,2);
+}
+
+// Pio's 720 x 621 moc must retain its native origin instead of fitting to the bottom.
+{
+ let scale;
+ const next={internalModel:{originalWidth:720},width:720,height:621,scale:{set(value){scale=value;}}};
+ const context=vm.createContext({next,app:{stage:{addChild(){}}}});
+ const start=pio.indexOf('    model=next;model.scale.set');
+ vm.runInContext('let model;'+pio.slice(start,pio.indexOf('app.stage.addChild(model);',start)+'app.stage.addChild(model);'.length)+';globalThis.position=[model.x,model.y];',context);
+ assert.equal(scale,380/720);assert.deepEqual(Array.from(context.position),[0,0]);
 }

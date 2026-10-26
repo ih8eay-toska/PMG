@@ -1,0 +1,388 @@
+{
+  "roster": {
+    "all": 10,
+    "available": [
+      "neet"
+    ]
+  },
+  "visitors": [
+    {
+      "name": "Neet",
+      "count": 5,
+      "status": "Available for dispatch"
+    },
+    {
+      "name": "Dolbur",
+      "count": 5,
+      "status": "Not in shop"
+    },
+    {
+      "name": "Tirami",
+      "count": 5,
+      "status": "Not in shop"
+    },
+    {
+      "name": "Claire",
+      "count": 5,
+      "status": "Not in shop"
+    },
+    {
+      "name": "Luke",
+      "count": 5,
+      "status": "Not in shop"
+    },
+    {
+      "name": "Piria",
+      "count": 5,
+      "status": "Not in shop"
+    },
+    {
+      "name": "Charlotte",
+      "count": 5,
+      "status": "Not in shop"
+    },
+    {
+      "name": "Demian",
+      "count": 5,
+      "status": "Not in shop"
+    },
+    {
+      "name": "Daisy",
+      "count": 5,
+      "status": "Not in shop"
+    },
+    {
+      "name": "Kyle",
+      "count": 5,
+      "status": "Not in shop"
+    }
+  ],
+  "switching": {
+    "other": 0,
+    "restored": 2
+  },
+  "locked": {
+    "tier": 7,
+    "blocked": true,
+    "reason": "Locked · reach material tier 8 in any family.",
+    "visible": true
+  },
+  "preparation": {
+    "checks": [
+      {
+        "family": 0,
+        "saved": 0,
+        "enabled": true,
+        "charged": false,
+        "dispatched": false
+      },
+      {
+        "family": 1,
+        "saved": 1,
+        "enabled": true,
+        "charged": false,
+        "dispatched": false
+      },
+      {
+        "family": 2,
+        "saved": 2,
+        "enabled": true,
+        "charged": false,
+        "dispatched": false
+      }
+    ],
+    "blocked": true,
+    "reason": "Dispatch unavailable · Neet is not in the shop with a live potion order."
+  },
+  "blockers": {
+    "absent": true,
+    "gold": true,
+    "request": true,
+    "ready": true
+  },
+  "dispatch": {
+    "cost": 1500,
+    "spent": 1500,
+    "active": 0,
+    "family": 2,
+    "blocked": true,
+    "draft": null
+  },
+  "navigation": {
+    "journal": true,
+    "stamp": true,
+    "label": "← Visitor Expeditions",
+    "parent": true,
+    "step": 3
+  },
+  "completion": {
+    "story": true,
+    "report": true,
+    "stamps": 2,
+    "expected": 2,
+    "journal": 1
+  },
+  "snapshots": {
+    "compatible": true,
+    "stories": 1,
+    "draft": {
+      "chapterId": "dolbur-t5-guard-the-nesting-ridge",
+      "family": 2
+    }
+  },
+  "chapterRoutes": [
+    {
+      "chapter": "neet-t1-herbs-for-the-shrine",
+      "family": 0,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "neet-t1-herbs-for-the-shrine",
+      "family": 1,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "neet-t1-herbs-for-the-shrine",
+      "family": 2,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "neet-t2-mushroom-foraging",
+      "family": 0,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "neet-t2-mushroom-foraging",
+      "family": 1,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "neet-t2-mushroom-foraging",
+      "family": 2,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "neet-t3-helping-in-the-orchard",
+      "family": 0,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "neet-t3-helping-in-the-orchard",
+      "family": 1,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "neet-t3-helping-in-the-orchard",
+      "family": 2,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "neet-t4-gather-fallen-feathers",
+      "family": 0,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "neet-t4-gather-fallen-feathers",
+      "family": 1,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "neet-t4-gather-fallen-feathers",
+      "family": 2,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "neet-t5-tend-the-nesting-grounds",
+      "family": 0,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "neet-t5-tend-the-nesting-grounds",
+      "family": 1,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "neet-t5-tend-the-nesting-grounds",
+      "family": 2,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "dolbur-t1-trailside-herb-hunt",
+      "family": 0,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "dolbur-t1-trailside-herb-hunt",
+      "family": 1,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "dolbur-t1-trailside-herb-hunt",
+      "family": 2,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "dolbur-t2-mushrooms-at-base-camp",
+      "family": 0,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "dolbur-t2-mushrooms-at-base-camp",
+      "family": 1,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "dolbur-t2-mushrooms-at-base-camp",
+      "family": 2,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "dolbur-t3-haul-the-orchard-harvest",
+      "family": 0,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "dolbur-t3-haul-the-orchard-harvest",
+      "family": 1,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "dolbur-t3-haul-the-orchard-harvest",
+      "family": 2,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "dolbur-t4-scout-the-feathered-cliffs",
+      "family": 0,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "dolbur-t4-scout-the-feathered-cliffs",
+      "family": 1,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "dolbur-t4-scout-the-feathered-cliffs",
+      "family": 2,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "dolbur-t5-guard-the-nesting-ridge",
+      "family": 0,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "dolbur-t5-guard-the-nesting-ridge",
+      "family": 1,
+      "ready": true,
+      "unchanged": true
+    },
+    {
+      "chapter": "dolbur-t5-guard-the-nesting-ridge",
+      "family": 2,
+      "ready": true,
+      "unchanged": true
+    }
+  ],
+  "nonChapter": [
+    {
+      "family": 0,
+      "focused": "0",
+      "ready": "Route ready · Red herb (Life)"
+    },
+    {
+      "family": 1,
+      "focused": "1",
+      "ready": "Route ready · Blue herb (Mana)"
+    },
+    {
+      "family": 2,
+      "focused": "2",
+      "ready": "Route ready · Yellow herb (Stamina)"
+    }
+  ],
+  "routeMemory": true,
+  "reopen": {
+    "tier": 4,
+    "preserved": true,
+    "draft": {
+      "chapterId": "dolbur-t5-guard-the-nesting-ridge",
+      "family": 2
+    }
+  },
+  "layouts": [
+    {
+      "viewport": 1200,
+      "left": 40,
+      "right": 1160,
+      "bottom": 744.953125,
+      "width": 1064,
+      "client": 1064,
+      "actionTop": 655.9375,
+      "actionBottom": 701.9375,
+      "scroll": 2204,
+      "count": 25
+    },
+    {
+      "viewport": 1024,
+      "left": 10,
+      "right": 1014,
+      "bottom": 744.953125,
+      "width": 948,
+      "client": 948,
+      "actionTop": 655.9375,
+      "actionBottom": 701.9375,
+      "scroll": 2204,
+      "count": 25
+    },
+    {
+      "viewport": 390,
+      "left": 6,
+      "right": 384,
+      "bottom": 827.109375,
+      "width": 338,
+      "client": 338,
+      "actionTop": 753.109375,
+      "actionBottom": 799.109375,
+      "scroll": 1268,
+      "count": 25
+    }
+  ],
+  "reload": {
+    "stories": 1,
+    "stamps": 2
+  },
+  "offline": {
+    "stamps": 4,
+    "settled": true
+  },
+  "errors": []
+}

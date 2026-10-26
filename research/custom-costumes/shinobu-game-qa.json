@@ -1,0 +1,36 @@
+{
+  "costume": {
+    "id": "pio-shinobu-sundress.png",
+    "canvasHidden": false,
+    "portraitHidden": true,
+    "canvas": {
+      "x": 395.125,
+      "y": 241.296875,
+      "width": 409.75,
+      "height": 409.75,
+      "top": 241.296875,
+      "right": 804.875,
+      "bottom": 651.046875,
+      "left": 395.125
+    }
+  },
+  "mobile": {
+    "canvas": {
+      "x": -16,
+      "y": 182.078125,
+      "width": 422,
+      "height": 422,
+      "top": 182.078125,
+      "right": 406,
+      "bottom": 604.078125,
+      "left": -16
+    },
+    "hidden": false
+  },
+  "oldCostumeSwitch": true,
+  "tiaSwitch": true,
+  "reequip": true,
+  "reload": true,
+  "wardrobe": true,
+  "errors": []
+}

@@ -1,0 +1,1661 @@
+{
+  "artwork": {
+    "vector": true,
+    "valid": true,
+    "viewBox": "0 0 1200 820",
+    "imageRendering": "auto"
+  },
+  "entries": [
+    {
+      "family": 0,
+      "tier": 0,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 0,
+      "tier": 1,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 0,
+      "tier": 2,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 0,
+      "tier": 3,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 0,
+      "tier": 4,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 0,
+      "tier": 5,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 0,
+      "tier": 6,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 0,
+      "tier": 7,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 0,
+      "tier": 8,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 0,
+      "tier": 9,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 0,
+      "tier": 10,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 0,
+      "tier": 11,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 0,
+      "tier": 12,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 0,
+      "tier": 13,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 0,
+      "tier": 14,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 0,
+      "tier": 15,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 0,
+      "tier": 16,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 0,
+      "tier": 17,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 0,
+      "tier": 18,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 0,
+      "tier": 19,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 0,
+      "tier": 20,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 0,
+      "tier": 21,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 0,
+      "tier": 22,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 0,
+      "tier": 23,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 0,
+      "tier": 24,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 0,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 1,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 2,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 3,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 4,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 5,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 6,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 7,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 8,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 9,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 10,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 11,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 12,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 13,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 14,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 15,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 16,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 17,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 18,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 19,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 20,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 21,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 22,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 23,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 1,
+      "tier": 24,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 0,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 1,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 2,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 3,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 4,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 5,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 6,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 7,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 8,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 9,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 10,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 11,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 12,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 13,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 14,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 15,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 16,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 17,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 18,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 19,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 20,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 21,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 22,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 23,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    },
+    {
+      "family": 2,
+      "tier": 24,
+      "stats": true,
+      "material": true,
+      "potion": true,
+      "sprites": true,
+      "status": true,
+      "scrollbars": true,
+      "selector": true
+    }
+  ],
+  "lore": [
+    {
+      "family": 0,
+      "tier": 0,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 0,
+      "tier": 1,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 0,
+      "tier": 2,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 0,
+      "tier": 3,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 0,
+      "tier": 4,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 0,
+      "tier": 5,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 0,
+      "tier": 6,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 0,
+      "tier": 7,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 0,
+      "tier": 8,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 0,
+      "tier": 9,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 0,
+      "tier": 10,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 0,
+      "tier": 11,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 0,
+      "tier": 12,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 0,
+      "tier": 13,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 0,
+      "tier": 14,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 0,
+      "tier": 15,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 0,
+      "tier": 16,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 0,
+      "tier": 17,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 0,
+      "tier": 18,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 0,
+      "tier": 19,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 0,
+      "tier": 20,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 0,
+      "tier": 21,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 0,
+      "tier": 22,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 0,
+      "tier": 23,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 0,
+      "tier": 24,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 0,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 1,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 2,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 3,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 4,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 5,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 6,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 7,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 8,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 9,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 10,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 11,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 12,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 13,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 14,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 15,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 16,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 17,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 18,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 19,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 20,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 21,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 22,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 23,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 1,
+      "tier": 24,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 0,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 1,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 2,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 3,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 4,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 5,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 6,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 7,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 8,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 9,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 10,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 11,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 12,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 13,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 14,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 15,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 16,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 17,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 18,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 19,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 20,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 21,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 22,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 23,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    },
+    {
+      "family": 2,
+      "tier": 24,
+      "materialComplete": true,
+      "potionComplete": true,
+      "gate": true,
+      "table": true,
+      "notes": true
+    }
+  ],
+  "commentary": [
+    {
+      "speaker": "Pio",
+      "visible": true
+    },
+    {
+      "speaker": "Tia",
+      "visible": true
+    }
+  ],
+  "navigation": {
+    "first": true,
+    "next": true,
+    "previous": true,
+    "last": true,
+    "family": true,
+    "pair": "Stamina · Recipe 1 of 25"
+  },
+  "keyboard": true,
+  "layouts": [
+    {
+      "width": 2560,
+      "height": 1440,
+      "large": false,
+      "checks": 6
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "large": true,
+      "checks": 6
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "large": false,
+      "checks": 6
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "large": true,
+      "checks": 6
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "large": false,
+      "checks": 6
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "large": true,
+      "checks": 6
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "large": false,
+      "checks": 6
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "large": true,
+      "checks": 6
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "large": false,
+      "checks": 6
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "large": true,
+      "checks": 6
+    },
+    {
+      "width": 320,
+      "height": 640,
+      "large": false,
+      "checks": 6
+    },
+    {
+      "width": 320,
+      "height": 640,
+      "large": true,
+      "checks": 6
+    }
+  ],
+  "allPageBounds": [
+    {
+      "width": 1024,
+      "size": "normal",
+      "entries": 75
+    },
+    {
+      "width": 1024,
+      "size": "large",
+      "entries": 75
+    },
+    {
+      "width": 390,
+      "size": "normal",
+      "entries": 75
+    },
+    {
+      "width": 390,
+      "size": "large",
+      "entries": 75
+    }
+  ],
+  "reader": {
+    "left": 154.5,
+    "right": 854.5,
+    "bottom": 729.59375,
+    "width": 698,
+    "client": 698,
+    "scroll": 590,
+    "nextDisabled": true,
+    "previousEnabled": true,
+    "hasBackToMenu": false
+  },
+  "saved": {
+    "coins": 0,
+    "tiers": [
+      4,
+      2,
+      0
+    ],
+    "stories": 0,
+    "discovered": [],
+    "recipes": {}
+  },
+  "reloaded": {
+    "coins": 0,
+    "tiers": [
+      4,
+      2,
+      0
+    ],
+    "stories": 0,
+    "discovered": [],
+    "recipes": {}
+  },
+  "errors": []
+}

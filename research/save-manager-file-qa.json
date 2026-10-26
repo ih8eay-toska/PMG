@@ -1,0 +1,14 @@
+{
+  "downloadBytes": 1192,
+  "fileImport": true,
+  "importCancellation": true,
+  "backupBeforeImport": true,
+  "warning": {
+    "state": "warning",
+    "saveDisabled": true,
+    "note": "Automatic saving is unavailable. Download a backup in Backup & transfer to keep this shop.",
+    "snapshotsDisabled": true
+  },
+  "resetCancellation": true,
+  "errors": []
+}

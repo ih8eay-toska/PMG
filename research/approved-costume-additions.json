@@ -1,0 +1,421 @@
+{
+  "restored": [
+    {
+      "id": "tia-halloween-costume.png",
+      "character": "Tia",
+      "repository": "fghrsh/live2d_api",
+      "commit": "02dc5b3aaf5cee35455c816596820055c5363205",
+      "sourcePath": "model/Potion-Maker/Tia/textures/halloween-costume.png",
+      "gitBlob": "52e3cb78c1e4ed0a70aee3b06100818492b06198",
+      "bytes": 515034,
+      "rigGitBlob": "78ea2af466442e97a49052f441d5606304942046",
+      "localPath": "assets/live2d/Tia/textures/halloween-costume.png",
+      "texture": "halloween-costume.png",
+      "url": "https://raw.githubusercontent.com/fghrsh/live2d_api/02dc5b3aaf5cee35455c816596820055c5363205/model/Potion-Maker/Tia/textures/halloween-costume.png",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "a42f540414b9a350c83c291a7b6dbb0f733e76cca5f730d50bc2978c2816da47",
+      "originalCostumeId": 103035,
+      "previewPath": "assets/extracted/halloween-costume.png",
+      "previewSha256": "f99fe3db22137ffc9debaee41ae31e1d471ee372df24c0c4b7277bea3a2d3e5f",
+      "previewSource": {
+        "path": "references/tia.halloween-costume.png",
+        "source": "resources.assets",
+        "pathID": 343,
+        "name": "Halloween Costume",
+        "sha256": "f99fe3db22137ffc9debaee41ae31e1d471ee372df24c0c4b7277bea3a2d3e5f"
+      }
+    },
+    {
+      "id": "tia-hanbok-costume.png",
+      "character": "Tia",
+      "repository": "fghrsh/live2d_api",
+      "commit": "02dc5b3aaf5cee35455c816596820055c5363205",
+      "sourcePath": "model/Potion-Maker/Tia/textures/hanbok-costume.png",
+      "gitBlob": "b6dba1197689a98b641b7c20c78fc54b640972c0",
+      "bytes": 420112,
+      "rigGitBlob": "78ea2af466442e97a49052f441d5606304942046",
+      "localPath": "assets/live2d/Tia/textures/hanbok-costume.png",
+      "texture": "hanbok-costume.png",
+      "url": "https://raw.githubusercontent.com/fghrsh/live2d_api/02dc5b3aaf5cee35455c816596820055c5363205/model/Potion-Maker/Tia/textures/hanbok-costume.png",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "650f06f57fd9d4b0abc120d5899c68d81024ab14eb7191febe8c29238f5ba2c3",
+      "originalCostumeId": 103025,
+      "previewPath": "assets/extracted/hanbok-costume-sprite-resources-assets-848.png",
+      "previewSha256": "99ea9c18433704f45a5f051767693f54ee0e556ff591e10a370fba284013c343",
+      "previewSource": {
+        "path": "references/tia.hanbok-costume.png",
+        "source": "resources.assets",
+        "pathID": 256,
+        "name": "Hanbok Costume",
+        "sha256": "99ea9c18433704f45a5f051767693f54ee0e556ff591e10a370fba284013c343"
+      }
+    },
+    {
+      "id": "tia-sakura-costume.png",
+      "character": "Tia",
+      "repository": "fghrsh/live2d_api",
+      "commit": "02dc5b3aaf5cee35455c816596820055c5363205",
+      "sourcePath": "model/Potion-Maker/Tia/textures/sakura-costume.png",
+      "gitBlob": "97465ab2129b32f0956827f93f6be035326112c0",
+      "bytes": 451974,
+      "rigGitBlob": "78ea2af466442e97a49052f441d5606304942046",
+      "localPath": "assets/live2d/Tia/textures/sakura-costume.png",
+      "texture": "sakura-costume.png",
+      "url": "https://raw.githubusercontent.com/fghrsh/live2d_api/02dc5b3aaf5cee35455c816596820055c5363205/model/Potion-Maker/Tia/textures/sakura-costume.png",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "dcc296377aa5b462016482870045bcc58dea831250a638e5c1d7e4ebce33550d",
+      "originalCostumeId": 103029,
+      "previewPath": "assets/extracted/sakura-costume-sprite-resources-assets-899.png",
+      "previewSha256": "3ad62f0a80d046746fc3db95a060caa3518c2a41eaf0ee2945ca34c616528b22",
+      "previewSource": {
+        "path": "references/tia.sakura-costume.png",
+        "source": "resources.assets",
+        "pathID": 307,
+        "name": "Sakura Costume",
+        "sha256": "3ad62f0a80d046746fc3db95a060caa3518c2a41eaf0ee2945ca34c616528b22"
+      }
+    },
+    {
+      "id": "tia-sakura-costume-navy.png",
+      "character": "Tia",
+      "repository": "fghrsh/live2d_api",
+      "commit": "02dc5b3aaf5cee35455c816596820055c5363205",
+      "sourcePath": "model/Potion-Maker/Tia/textures/sakura-costume-navy.png",
+      "gitBlob": "1d9b89900cc9356d91de1216b568fe9fbb547995",
+      "bytes": 451189,
+      "rigGitBlob": "78ea2af466442e97a49052f441d5606304942046",
+      "localPath": "assets/live2d/Tia/textures/sakura-costume-navy.png",
+      "texture": "sakura-costume-navy.png",
+      "url": "https://raw.githubusercontent.com/fghrsh/live2d_api/02dc5b3aaf5cee35455c816596820055c5363205/model/Potion-Maker/Tia/textures/sakura-costume-navy.png",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "4c8e066abc6112d35d58bd3c9f359b9e1d3d9b361b0236d47ecea3141d2c22b0",
+      "originalCostumeId": 103030,
+      "previewPath": "assets/extracted/sakura-costume-navy.png",
+      "previewSha256": "e6e8cbababef1c3da97c2364e3f6c53afefbb7cf1f0721a44e1c26d12ea3c0f7",
+      "previewSource": {
+        "path": "references/tia.sakura-costume-navy.png",
+        "source": "resources.assets",
+        "pathID": 111,
+        "name": "Sakura Costume Navy",
+        "sha256": "e6e8cbababef1c3da97c2364e3f6c53afefbb7cf1f0721a44e1c26d12ea3c0f7"
+      }
+    },
+    {
+      "id": "tia-santa-costume.png",
+      "character": "Tia",
+      "repository": "fghrsh/live2d_api",
+      "commit": "02dc5b3aaf5cee35455c816596820055c5363205",
+      "sourcePath": "model/Potion-Maker/Tia/textures/santa-costume.png",
+      "gitBlob": "35bafa6aaa7c3bee861a8034411ab342dad15ecc",
+      "bytes": 475789,
+      "rigGitBlob": "78ea2af466442e97a49052f441d5606304942046",
+      "localPath": "assets/live2d/Tia/textures/santa-costume.png",
+      "texture": "santa-costume.png",
+      "url": "https://raw.githubusercontent.com/fghrsh/live2d_api/02dc5b3aaf5cee35455c816596820055c5363205/model/Potion-Maker/Tia/textures/santa-costume.png",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "1e5c1cc8b40c461cd741818d9d528ee57fd2dbd58f99a42adf82bcb9ed318367",
+      "originalCostumeId": 103023,
+      "previewPath": "assets/extracted/santa-costume.png",
+      "previewSha256": "a6f70a310b3b911eb4016bd9a5f2118683dac089f540c2bb95681781c281850e",
+      "previewSource": {
+        "path": "references/tia.santa-costume.png",
+        "source": "resources.assets",
+        "pathID": 222,
+        "name": "Santa Costume",
+        "sha256": "a6f70a310b3b911eb4016bd9a5f2118683dac089f540c2bb95681781c281850e"
+      }
+    },
+    {
+      "id": "tia-vampire-costume-real.png",
+      "character": "Tia",
+      "repository": "fghrsh/live2d_api",
+      "commit": "02dc5b3aaf5cee35455c816596820055c5363205",
+      "sourcePath": "model/Potion-Maker/Tia/textures/vampire-costume-real.png",
+      "gitBlob": "e64c8878da7a6b8704aeec7294b633f1d38ead11",
+      "bytes": 431167,
+      "rigGitBlob": "78ea2af466442e97a49052f441d5606304942046",
+      "localPath": "assets/live2d/Tia/textures/vampire-costume-real.png",
+      "texture": "vampire-costume-real.png",
+      "url": "https://raw.githubusercontent.com/fghrsh/live2d_api/02dc5b3aaf5cee35455c816596820055c5363205/model/Potion-Maker/Tia/textures/vampire-costume-real.png",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "cb4d3e4d71f090c2e1c9c000419d131294ee1ee1f4538429a71397e07421eb24",
+      "originalCostumeId": 103055,
+      "previewPath": "assets/extracted/vampire-costume-real.png",
+      "previewSha256": "e092e620761fcabe3cf282a42b2a277406cae9a7a818478811e7bcae80323899",
+      "previewSource": {
+        "path": "references/tia.vampire-costume-real.png",
+        "source": "resources.assets",
+        "pathID": 7,
+        "name": "Vampire Costume Real",
+        "sha256": "e092e620761fcabe3cf282a42b2a277406cae9a7a818478811e7bcae80323899"
+      }
+    },
+    {
+      "id": "pio-sailor-costume.png",
+      "character": "Pio",
+      "repository": "fghrsh/live2d_api",
+      "commit": "02dc5b3aaf5cee35455c816596820055c5363205",
+      "sourcePath": "model/Potion-Maker/Pio/textures/sailor-costume.png",
+      "gitBlob": "6089a0a505c5c85219c29c87017b2b6802f1680b",
+      "bytes": 441093,
+      "rigGitBlob": "4c7909d8161b5a6cf31e89b34f8138861013e10d",
+      "localPath": "assets/live2d/Pio/textures/sailor-costume.png",
+      "texture": "sailor-costume.png",
+      "url": "https://raw.githubusercontent.com/fghrsh/live2d_api/02dc5b3aaf5cee35455c816596820055c5363205/model/Potion-Maker/Pio/textures/sailor-costume.png",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "1780d4faec0940f620d59e1083006759eb7157e8c1d70b24041cf34cc0968009",
+      "originalCostumeId": 3033,
+      "previewPath": "assets/extracted/sailor-costume-sprite-resources-assets-658.png",
+      "previewSha256": "47bfdd06c5a03a0e55bc2f2866108aa9581cf9e50aac9f066bb6f4e9e6bdd112",
+      "previewSource": {
+        "path": "references/pio.sailor-costume.png",
+        "source": "resources.assets",
+        "pathID": 64,
+        "name": "Sailor Costume",
+        "sha256": "47bfdd06c5a03a0e55bc2f2866108aa9581cf9e50aac9f066bb6f4e9e6bdd112"
+      }
+    },
+    {
+      "id": "pio-sailor-costume-black.png",
+      "character": "Pio",
+      "repository": "fghrsh/live2d_api",
+      "commit": "02dc5b3aaf5cee35455c816596820055c5363205",
+      "sourcePath": "model/Potion-Maker/Pio/textures/sailor-costume-black.png",
+      "gitBlob": "ee9abc2d26961bcc8479657c2acabf6021cee694",
+      "bytes": 431200,
+      "rigGitBlob": "4c7909d8161b5a6cf31e89b34f8138861013e10d",
+      "localPath": "assets/live2d/Pio/textures/sailor-costume-black.png",
+      "texture": "sailor-costume-black.png",
+      "url": "https://raw.githubusercontent.com/fghrsh/live2d_api/02dc5b3aaf5cee35455c816596820055c5363205/model/Potion-Maker/Pio/textures/sailor-costume-black.png",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "7ab7845753d64e73904ab491ed017d1083fff995febe6b5c17e1403c44bed313",
+      "originalCostumeId": 3034,
+      "previewPath": "assets/extracted/sailor-costume-black.png",
+      "previewSha256": "1205a2d3efc91f745722de2382fc93f7c7c7e8690d14ff9643d034c1b13c99d3",
+      "previewSource": {
+        "path": "references/pio.sailor-costume-black.png",
+        "source": "resources.assets",
+        "pathID": 221,
+        "name": "Sailor Costume Black",
+        "sha256": "1205a2d3efc91f745722de2382fc93f7c7c7e8690d14ff9643d034c1b13c99d3"
+      }
+    },
+    {
+      "id": "pio-marine-costume-navy.png",
+      "character": "Pio",
+      "repository": "imuncle/live2d",
+      "commit": "b5caf5390c8c226f19c817ea37d5bc4452d85209",
+      "sourcePath": "model/Pio/textures/Marine Costume Navy.png",
+      "gitBlob": "8fa9612794c5c9f281cce64e9b4fd58caa564ee5",
+      "bytes": 462530,
+      "rigGitBlob": "4c7909d8161b5a6cf31e89b34f8138861013e10d",
+      "localPath": "assets/live2d/Pio/textures/marine-costume-navy.png",
+      "texture": "marine-costume-navy.png",
+      "url": "https://raw.githubusercontent.com/imuncle/live2d/b5caf5390c8c226f19c817ea37d5bc4452d85209/model/Pio/textures/Marine%20Costume%20Navy.png",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "294db5d0d68ff60c564b69035322589c4de9b616be872c4b19f6dd3de99d1618",
+      "originalCostumeId": 3086,
+      "previewPath": "assets/extracted/marine-costume-navy-sprite-resources-assets-1159.png",
+      "previewSha256": "b17d18f8bb793aecfa3ca1a47c4f065481b14bd82907f7168cd6c5f76582ec4a",
+      "previewSource": {
+        "path": "references/pio.marine-costume-navy.png",
+        "source": "resources.assets",
+        "pathID": 569,
+        "name": "Marine Costume Navy",
+        "sha256": "b17d18f8bb793aecfa3ca1a47c4f065481b14bd82907f7168cd6c5f76582ec4a"
+      }
+    },
+    {
+      "id": "pio-tirami1-costume.png",
+      "character": "Pio",
+      "repository": "fghrsh/live2d_api",
+      "commit": "02dc5b3aaf5cee35455c816596820055c5363205",
+      "sourcePath": "model/Potion-Maker/Pio/textures/tirami1-costume.png",
+      "gitBlob": "2ae3ef3ccfeafde281dcae2c1d4c4941ad99c09f",
+      "bytes": 462881,
+      "rigGitBlob": "4c7909d8161b5a6cf31e89b34f8138861013e10d",
+      "localPath": "assets/live2d/Pio/textures/tirami1-costume.png",
+      "texture": "tirami1-costume.png",
+      "url": "https://raw.githubusercontent.com/fghrsh/live2d_api/02dc5b3aaf5cee35455c816596820055c5363205/model/Potion-Maker/Pio/textures/tirami1-costume.png",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "967e43c856ad18ddf97bc2796f755be453527299d897df0afaafba63ed921ea0",
+      "originalCostumeId": 3035,
+      "previewPath": "assets/extracted/tirami1-costume-sprite-resources-assets-1121.png",
+      "previewSha256": "f897ee0bed883dbaca5834e4e3e67e4ebb34461768025230212dbf94cd2df982",
+      "previewSource": {
+        "path": "references/pio.tirami1-costume.png",
+        "source": "resources.assets",
+        "pathID": 531,
+        "name": "Tirami1 Costume",
+        "sha256": "f897ee0bed883dbaca5834e4e3e67e4ebb34461768025230212dbf94cd2df982"
+      }
+    },
+    {
+      "id": "pio-sakura-fairy-costume-real.png",
+      "character": "Pio",
+      "repository": "imuncle/live2d",
+      "commit": "b5caf5390c8c226f19c817ea37d5bc4452d85209",
+      "sourcePath": "model/Pio/textures/Sakura Fairy Costume Real.png",
+      "gitBlob": "75a5a242a5018458313bda06693a185620405a1b",
+      "bytes": 498734,
+      "rigGitBlob": "4c7909d8161b5a6cf31e89b34f8138861013e10d",
+      "localPath": "assets/live2d/Pio/textures/sakura-fairy-costume-real.png",
+      "texture": "sakura-fairy-costume-real.png",
+      "url": "https://raw.githubusercontent.com/imuncle/live2d/b5caf5390c8c226f19c817ea37d5bc4452d85209/model/Pio/textures/Sakura%20Fairy%20Costume%20Real.png",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "a12feb7f29a5fe7c326867fdc7eb80e979e09539ed777085ad23531bfeebcccb",
+      "originalCostumeId": 3079,
+      "previewPath": "assets/extracted/costume-thumbnails/pio-sakura-fairy-costume-real.png",
+      "previewSha256": "bcc3a6658c8700c419f813b0527fe84cb227f6ba8d401a6e8baf9d9609444473",
+      "previewSource": "approved isolated model render"
+    }
+  ],
+  "previewCorrections": [
+    {
+      "id": "Halloween_costume.png",
+      "character": "Pio",
+      "slug": "halloween-costume",
+      "reference": {
+        "path": "references/pio.halloween-costume.png",
+        "source": "resources.assets",
+        "pathID": 547,
+        "name": "Halloween Costume",
+        "sha256": "f27e2de8a5593dfe206b9c1309aef32497e6bbbe17a7d9792a811fc1603d4eea"
+      },
+      "previousPreview": "assets/extracted/halloween-costume-sprite-resources-assets-1137.png",
+      "previewPath": "assets/extracted/halloween-costume-sprite-resources-assets-1137.png",
+      "previewSha256": "f27e2de8a5593dfe206b9c1309aef32497e6bbbe17a7d9792a811fc1603d4eea"
+    },
+    {
+      "id": "Hanbok_Costume.png",
+      "character": "Pio",
+      "slug": "hanbok-costume",
+      "reference": {
+        "path": "references/pio.hanbok-costume.png",
+        "source": "resources.assets",
+        "pathID": 59,
+        "name": "Hanbok Costume",
+        "sha256": "651c3f74282e00eea525d770de997cba490b9c573b82d86bd6e95403ed2fdf0d"
+      },
+      "previousPreview": "assets/extracted/hanbok-costume.png",
+      "previewPath": "assets/extracted/hanbok-costume.png",
+      "previewSha256": "651c3f74282e00eea525d770de997cba490b9c573b82d86bd6e95403ed2fdf0d"
+    },
+    {
+      "id": "Sakura_Costume.png",
+      "character": "Pio",
+      "slug": "sakura-costume",
+      "reference": {
+        "path": "references/pio.sakura-costume.png",
+        "source": "resources.assets",
+        "pathID": 228,
+        "name": "Sakura Costume",
+        "sha256": "ee11748ff591a814fc2de65d5a6de24180d3a2aa099ebbf7c594bad8309111c2"
+      },
+      "previousPreview": "assets/extracted/sakura-costume.png",
+      "previewPath": "assets/extracted/sakura-costume.png",
+      "previewSha256": "ee11748ff591a814fc2de65d5a6de24180d3a2aa099ebbf7c594bad8309111c2"
+    },
+    {
+      "id": "Sakura_Costume_Navy.png",
+      "character": "Pio",
+      "slug": "sakura-costume-navy",
+      "reference": {
+        "path": "references/pio.sakura-costume-navy.png",
+        "source": "resources.assets",
+        "pathID": 538,
+        "name": "Sakura Costume Navy",
+        "sha256": "3aaf0c29b7e19fde2dbd4495d0aee51a04e2269645756459e7c93be9ebbaf1e0"
+      },
+      "previousPreview": "assets/extracted/sakura-costume-navy-sprite-resources-assets-1128.png",
+      "previewPath": "assets/extracted/sakura-costume-navy-sprite-resources-assets-1128.png",
+      "previewSha256": "3aaf0c29b7e19fde2dbd4495d0aee51a04e2269645756459e7c93be9ebbaf1e0"
+    },
+    {
+      "id": "Santa_Costume.png",
+      "character": "Pio",
+      "slug": "santa-costume",
+      "reference": {
+        "path": "references/pio.santa-costume.png",
+        "source": "resources.assets",
+        "pathID": 503,
+        "name": "Santa Costume",
+        "sha256": "2be05106067a18c3f95aae1ee84d53b47c2601c68ec625e2ff45a8a4999f6d34"
+      },
+      "previousPreview": "assets/extracted/santa-costume-sprite-resources-assets-1093.png",
+      "previewPath": "assets/extracted/santa-costume-sprite-resources-assets-1093.png",
+      "previewSha256": "2be05106067a18c3f95aae1ee84d53b47c2601c68ec625e2ff45a8a4999f6d34"
+    },
+    {
+      "id": "vampire-costume-real-sprite-resources-assets-671.png",
+      "character": "Pio",
+      "slug": "vampire-costume-real",
+      "reference": {
+        "path": "references/pio.vampire-costume-real.png",
+        "source": "resources.assets",
+        "pathID": 77,
+        "name": "Vampire Costume Real",
+        "sha256": "a7a1080cadfac5e89d297cc83f1de68e3324d511009e5d1b5227ef861db8a0af"
+      },
+      "previousPreview": "assets/extracted/vampire-costume-real-sprite-resources-assets-671.png",
+      "previewPath": "assets/extracted/vampire-costume-real-sprite-resources-assets-671.png",
+      "previewSha256": "a7a1080cadfac5e89d297cc83f1de68e3324d511009e5d1b5227ef861db8a0af"
+    },
+    {
+      "id": "Sailor_Costume.png",
+      "character": "Tia",
+      "slug": "sailor-costume",
+      "reference": {
+        "path": "references/tia.sailor-costume.png",
+        "source": "resources.assets",
+        "pathID": 27,
+        "name": "Sailor Costume",
+        "sha256": "7f48569d75e2d36fc2b9bef8fe11402d01848a5dfea80f5342c4263f9394ab00"
+      },
+      "previousPreview": "assets/extracted/sailor-costume.png",
+      "previewPath": "assets/extracted/sailor-costume.png",
+      "previewSha256": "7f48569d75e2d36fc2b9bef8fe11402d01848a5dfea80f5342c4263f9394ab00"
+    },
+    {
+      "id": "Sailor_Costume_Black.png",
+      "character": "Tia",
+      "slug": "sailor-costume-black",
+      "reference": {
+        "path": "references/tia.sailor-costume-black.png",
+        "source": "resources.assets",
+        "pathID": 522,
+        "name": "Sailor Costume Black",
+        "sha256": "b489bb4f38736578932ec9309554fe9cea7c9b75066bcad6442dd1748d051b4e"
+      },
+      "previousPreview": "assets/extracted/sailor-costume-black-sprite-resources-assets-1112.png",
+      "previewPath": "assets/extracted/sailor-costume-black-sprite-resources-assets-1112.png",
+      "previewSha256": "b489bb4f38736578932ec9309554fe9cea7c9b75066bcad6442dd1748d051b4e"
+    },
+    {
+      "id": "Marine_Costume_Navy.png",
+      "character": "Tia",
+      "slug": "marine-costume-navy",
+      "reference": {
+        "path": "references/tia.marine-costume-navy.png",
+        "source": "resources.assets",
+        "pathID": 406,
+        "name": "Marine Costume Navy",
+        "sha256": "0bddb4e4a30815e5cabd13fe2e677612b1449d1efca9b29ab37f1513bce0ac6c"
+      },
+      "previousPreview": "assets/extracted/marine-costume-navy.png",
+      "previewPath": "assets/extracted/marine-costume-navy.png",
+      "previewSha256": "0bddb4e4a30815e5cabd13fe2e677612b1449d1efca9b29ab37f1513bce0ac6c"
+    }
+  ]
+}

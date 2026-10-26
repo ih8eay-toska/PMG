@@ -1,0 +1,205 @@
+/* Canonical menu tokens. Original assets are embedded by build.py. */
+:root{--ui-frame:url('__ART_background-big__');--ui-close:url('__ART_close__');--ui-title:var(--original-title-frame);--ui-paper:#edece8;--ui-frame-slice:72;--ui-card:#eee0c9;--ui-ink:#4b302b;--ui-muted:#715443;--ui-gold:#9b742b;--ui-purple:#735582;--ui-line:#b99a87;--ui-pink:#ba8da3;--ui-focus:#7e4a91;--ui-font:PotionMaker,Georgia,serif;--ui-space-1:4px;--ui-space-2:8px;--ui-space-3:12px;--ui-space-4:16px;--ui-space-5:24px;--ui-radius:8px;--ui-border:1px solid var(--ui-line);--ui-control-height:40px;--ui-frame-width:28px;--ui-shell-width:780px;--ui-shell-wide:1120px;--ui-shell-compact:550px;--ui-shell-height:94svh}
+/* One frame per menu. Readers reuse the parchment controls without a second ornate frame. */
+dialog.pm-menu:where(:not(.pm-menu--reveal):not(.pm-menu--illustrated)){--ink:var(--ui-ink);--muted:var(--ui-muted);--line:var(--ui-line);--gold:var(--ui-gold);--panel:var(--ui-paper);--accent:var(--ui-purple);width:var(--ui-shell-width);max-width:calc(100vw - 20px);max-height:var(--ui-shell-height);margin:auto;padding:0 var(--ui-space-3) var(--ui-space-3);border:var(--ui-frame-width) solid transparent;border-image:var(--ui-frame) var(--ui-frame-slice) / var(--ui-frame-width) stretch;border-radius:0;background:var(--ui-paper);background-clip:padding-box;color:var(--ui-ink);box-shadow:0 14px 40px #100b184d;font-family:var(--ui-font);overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;scrollbar-color:var(--ui-pink) var(--ui-paper);scrollbar-width:thin}
+dialog.pm-menu[open]:is(.pm-menu--bounded,.pm-menu--upgrades,.pm-menu--book,.pm-menu--reader){display:flex;flex-direction:column;overflow:hidden;gap:var(--ui-space-2)}
+dialog.pm-menu.pm-menu--reader{width:700px;max-height:90svh;padding:var(--ui-space-4);border:var(--ui-border);border-radius:var(--ui-radius);background:var(--ui-paper)}
+dialog.pm-menu.pm-menu--book{width:var(--ui-shell-wide);border:0;padding:var(--ui-space-3) var(--ui-space-4);background:var(--ui-paper);border-radius:var(--ui-radius)}
+dialog.pm-menu.pm-menu--menu{width:var(--ui-shell-compact)}
+dialog.pm-menu:is(#achievements-dialog,#statistics-dialog,#expedition-dialog){width:var(--ui-shell-wide)}
+dialog.pm-menu#game-menu[data-shop-view=true]{width:860px;height:min(94svh,900px);padding:0 var(--ui-space-3) var(--ui-space-3);border-width:var(--ui-frame-width);border-image-width:var(--ui-frame-width)}
+/* Reset legacy sticky headers and the mobile gameplay header rules inside menus. */
+dialog.pm-menu>.pm-menu-header{position:sticky;inset:auto;top:0;z-index:10;display:grid;grid-template-columns:auto minmax(0,1fr) var(--ui-control-height);align-items:center;gap:var(--ui-space-2);width:100%;max-width:none;min-height:52px;height:auto;flex:none;margin:0 0 var(--ui-space-2);padding:var(--ui-space-1) 0 var(--ui-space-2);border:0;background:var(--ui-paper);box-shadow:none;pointer-events:auto;overflow:visible}
+dialog.pm-menu>.pm-menu-header>.eyebrow,dialog.pm-menu>.pm-menu-header>[hidden]{display:none!important}
+dialog.pm-menu .pm-menu-header>.pm-menu-title{position:relative;grid-column:2;grid-row:1;display:flex;align-items:center;justify-content:center;width:100%;max-width:448px;min-height:45px;height:auto;margin:0 auto;padding:6px 16px;border:0;background:var(--ui-title) center / 100% 100% no-repeat;color:var(--ui-ink);font:20px/1.2 var(--ui-font);text-align:center;overflow-wrap:anywhere;box-shadow:none}
+dialog.pm-menu .pm-menu-header>.pm-back{position:static;grid-column:1;grid-row:1;align-self:center;min-height:var(--ui-control-height);max-width:145px;margin:0;padding:6px 9px;border:var(--ui-border);border-radius:var(--ui-radius);background:#f5ebdc;color:var(--ui-ink);font-size:12px;line-height:1.3;box-shadow:none;white-space:normal}
+dialog.pm-menu .pm-close{position:relative;grid-column:3;grid-row:1;align-self:center;justify-self:end;inset:auto;width:var(--ui-control-height);height:var(--ui-control-height);min-width:var(--ui-control-height);min-height:var(--ui-control-height);margin:0;padding:0;border:0;border-radius:0;background:var(--ui-close) center / 35px 35px no-repeat;color:transparent;font-size:0;text-shadow:none;box-shadow:none;z-index:12;pointer-events:auto}
+dialog.pm-menu .pm-close:hover:enabled{background:var(--ui-close) center / 35px 35px no-repeat;filter:brightness(1.08);transform:none}
+dialog.pm-menu:is(.pm-menu--reveal,.pm-menu--illustrated) .pm-close{position:absolute;top:12px;right:12px}
+dialog.pm-menu .pm-menu-header:has(>.pm-back[hidden]),dialog.pm-menu.pm-menu--reader>.pm-menu-header{grid-template-columns:0 minmax(0,1fr) var(--ui-control-height)}
+dialog.pm-menu button:not(.pm-close):not(.upgrade-action):not(.achievement-open):not(.character-choice):not(.fairy-card):not(.book-entry-action):not(.settings-switch){min-height:var(--ui-control-height)}
+dialog.pm-menu button:focus-visible,dialog.pm-menu a:focus-visible,dialog.pm-menu input:focus-visible,dialog.pm-menu select:focus-visible,dialog.pm-menu [tabindex="0"]:focus-visible{outline:3px solid var(--ui-focus);outline-offset:2px}
+dialog.pm-menu button:disabled{cursor:not-allowed}
+dialog.pm-menu input:not([type=range]):not([type=checkbox]),dialog.pm-menu select,dialog.pm-menu textarea{max-width:100%;min-width:0;border:var(--ui-border);border-radius:var(--ui-radius);background:var(--ui-paper);color:var(--ui-ink)}
+/* Existing layouts retain their own content structure, actions and scroll regions. */
+#game-menu.pm-menu>.dialog-header .pm-menu-title{display:flex!important}
+#game-menu.pm-menu .game-menu-subpage>.dialog-subheader{display:none}
+#game-menu.pm-menu[data-shop-view=true]>.pm-menu-header{height:auto;min-height:52px;flex:none;position:relative}
+#game-menu.pm-menu[data-shop-view=true] .shop-scroll{min-height:0}
+#portrait-upgrade-dialog.pm-menu{height:min(94svh,850px)}
+#portrait-upgrade-dialog.pm-menu>aside.original-upgrades{flex:1;min-height:0;max-height:none;margin:0;padding:0;border:0}
+#portrait-upgrade-dialog.pm-menu .original-upgrades>.original-title{display:none}
+
+#portrait-upgrade-dialog.pm-menu .upgrade-list-scroll{flex:1;min-height:0}
+#visitor-order-dialog.pm-menu .traveler{border:0;margin:0;padding:var(--ui-space-2);background:transparent}
+#visitor-order-dialog.pm-menu .traveler-offer-actions{position:sticky;bottom:0;z-index:2;background:var(--ui-paper);padding-top:var(--ui-space-2)}
+#request-dialog.pm-menu #commission-board{padding-bottom:var(--ui-space-2)}
+#catalog-reader-dialog.pm-menu>.pm-menu-header,#achievement-detail-dialog.pm-menu>.pm-menu-header{padding-right:0}
+#catalog-reader-dialog.pm-menu #catalog-reader-context,#achievement-detail-dialog.pm-menu #achievement-detail-context{grid-column:1/4;grid-row:2;margin:0;font-size:12px}
+#catalog-reader-dialog.pm-menu .pm-menu-title,#achievement-detail-dialog.pm-menu .pm-menu-title{font-size:20px}
+#tia-unlock-scene.pm-menu{width:700px!important;max-width:calc(100vw - 20px)!important}
+#character-picker.pm-menu .character-choice img{height:min(44svh,350px)}
+#character-picker.pm-menu .pm-menu-title{margin:0 auto}
+@media(max-width:650px){:root{--ui-frame-width:20px;--ui-control-height:40px;--ui-space-3:8px}dialog.pm-menu:where(:not(.pm-menu--reveal):not(.pm-menu--illustrated)){max-width:calc(100vw - 12px);max-height:96svh}dialog.pm-menu>.pm-menu-header{grid-template-columns:minmax(0,1fr) var(--ui-control-height);min-height:0;gap:4px;margin-bottom:6px}dialog.pm-menu .pm-menu-header>.pm-back{grid-column:1;grid-row:1;justify-self:start;font-size:11px}dialog.pm-menu .pm-close{grid-column:2;grid-row:1}dialog.pm-menu .pm-menu-header>.pm-menu-title{grid-column:1/3;grid-row:2;font-size:18px;min-height:40px}dialog.pm-menu.pm-menu--reader>.pm-menu-header,dialog.pm-menu .pm-menu-header:has(>.pm-back[hidden]){grid-template-columns:minmax(0,1fr) var(--ui-control-height)}dialog.pm-menu.pm-menu--reader .pm-menu-header>.pm-menu-title{grid-row:1;grid-column:1;padding:6px 10px}#catalog-reader-dialog.pm-menu #catalog-reader-context,#achievement-detail-dialog.pm-menu #achievement-detail-context{grid-column:1/3;grid-row:2}dialog.pm-menu.pm-menu--reader{padding:var(--ui-space-3)}#game-menu.pm-menu[data-shop-view=true]{height:96svh}#game-menu.pm-menu[data-shop-view=true]>.pm-menu-header{min-height:0}#portrait-upgrade-dialog.pm-menu #upgrades .upgrade{grid-template-columns:minmax(0,1fr) 86px}#portrait-upgrade-dialog.pm-menu #upgrades .upgrade-action{width:86px}#tia-unlock-scene.pm-menu .tia-chat{grid-template-columns:38px minmax(0,1fr) 38px;gap:5px}#tia-unlock-scene.pm-menu .tia-chat-pets img,#tia-unlock-scene.pm-menu .tia-chat-cast img{width:36px;height:42px}#tia-unlock-scene.pm-menu .tia-chat-message{grid-template-columns:34px minmax(0,1fr);padding:7px}#tia-unlock-scene.pm-menu .tia-scene-portrait{width:34px;height:42px}#tia-unlock-scene.pm-menu .tia-scene-line{font-size:15px}}
+
+#portrait-upgrade-dialog.pm-menu{width:634px;padding:0 var(--ui-space-3) var(--ui-space-3)}
+
+:root{--ui-primary:#604766;--ui-primary-ink:#fff5df;--ui-secondary:#f5ebdc;--ui-control-hover:#e8d7bd}
+dialog.pm-menu .pm-card{border:var(--ui-border);border-radius:var(--ui-radius);background:var(--ui-paper);padding:var(--ui-space-4);color:var(--ui-ink)}
+dialog.pm-menu button.primary:not(.upgrade-action){border-color:var(--ui-gold);background-color:var(--ui-primary);color:var(--ui-primary-ink)}
+dialog.pm-menu button.primary:not(.upgrade-action):hover:enabled{filter:brightness(1.08)}
+dialog.pm-menu .pm-tabs{display:flex;gap:var(--ui-space-2);flex-wrap:wrap}
+dialog.pm-menu .pm-tabs>button{border:var(--ui-border);border-radius:var(--ui-radius);color:var(--ui-ink);background:var(--ui-secondary)}
+dialog.pm-menu .pm-tabs>button:is([aria-pressed=true],[aria-selected=true]){background:var(--ui-primary);color:var(--ui-primary-ink)}
+
+#statistics-dialog.pm-menu .statistics-grid>div{min-width:0}
+#statistics-dialog.pm-menu .statistics-grid dd{display:flex;flex-wrap:wrap;gap:4px;min-width:0;white-space:normal;overflow-wrap:anywhere}
+
+/* Original illustrated menus retain parchment contrast when the gameplay theme is dark. */
+:root[data-theme=dark] dialog.pm-menu:where(:not(.pm-menu--reveal):not(.pm-menu--illustrated)){background:var(--ui-paper);color:var(--ui-ink)}
+
+#visitor-order-dialog.pm-menu[open]{height:min(94svh,900px)}
+#visitor-order-dialog.pm-menu #visitor-order-content{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain}
+#visitor-order-dialog.pm-menu .visitor-order-footer{flex:none;padding:8px 0 0;border-top:var(--ui-border);background:var(--ui-paper)}
+#visitor-order-dialog.pm-menu .visitor-order-footer>.timer{margin:0 0 6px;font-size:12px}
+#visitor-order-dialog.pm-menu .traveler-offer-actions{position:static;padding:0}
+@media(max-width:650px){#achievements-dialog .achievement-search-sort{flex-wrap:nowrap}#achievements-dialog .achievement-search-sort>*{flex:1 1 0;width:0;min-width:0}}
+@media(max-width:650px) and (max-height:700px){dialog.pm-menu>.pm-menu-header{grid-template-columns:70px minmax(0,1fr) var(--ui-control-height)}dialog.pm-menu .pm-menu-header>.pm-back{font-size:10px;max-width:70px;padding:4px}dialog.pm-menu .pm-menu-header>.pm-menu-title{grid-column:2;grid-row:1;font-size:15px;padding:4px 6px}dialog.pm-menu .pm-close{grid-column:3;grid-row:1}dialog.pm-menu .pm-menu-header:has(>.pm-back[hidden])>.pm-menu-title,dialog.pm-menu.pm-menu--reader .pm-menu-header>.pm-menu-title{grid-column:1}dialog.pm-menu .pm-menu-header:has(>.pm-back[hidden])>.pm-close,dialog.pm-menu.pm-menu--reader .pm-close{grid-column:2}}
+
+@media(max-width:360px) and (max-height:700px){#achievements-dialog .achievement-filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}#achievements-dialog .achievement-filters button{min-width:0;padding:5px 2px;min-height:30px;font-size:10.5px}#achievements-dialog .achievement-tabs button{font-size:11px;line-height:1.2;min-height:36px;padding:6px 4px}#achievements-dialog .achievement-status-filters button{min-height:30px;padding:5px 7px}}
+
+:root[data-theme=dark] dialog.pm-menu :is(.card,.fairy-card,.catalog-item,.fairy-draw-result,.statistics-grid>div){background:var(--ui-paper);color:var(--ui-ink)}
+:root[data-theme=dark] dialog.pm-menu .table-scroll tbody tr:nth-child(even){background:var(--ui-card)}
+
+/* Original title icons overlap the left end of the 45-unit Simple Image banner. */
+dialog.pm-menu .pm-title-icon{position:absolute;display:block;object-fit:fill;transform:translate(-50%,-50%);pointer-events:none;z-index:2;max-width:none;max-height:none}
+dialog.pm-menu .pm-title-icon[hidden]{display:none}
+dialog.pm-menu>.pm-menu-header.pm-header-icon{column-gap:var(--pm-icon-gap);min-height:calc(var(--pm-icon-block,45px) + 12px)}
+dialog.pm-menu .pm-header-icon>.pm-menu-title{height:45px;min-height:45px;padding-left:40px;padding-right:40px;background-size:100% 45px;background-position:center}
+@media(max-width:650px){dialog.pm-menu>.pm-menu-header.pm-header-icon{column-gap:4px;grid-template-rows:40px var(--pm-icon-block,45px);min-height:0}dialog.pm-menu .pm-header-icon>.pm-menu-title{align-self:center;width:calc(100% - var(--pm-icon-gap));margin-left:var(--pm-icon-gap);margin-right:0;padding-left:24px;padding-right:24px}dialog.pm-menu.pm-menu--reader>.pm-menu-header.pm-header-icon{grid-template-rows:var(--pm-icon-block,45px) auto}}
+@media(max-width:650px) and (max-height:700px){dialog.pm-menu>.pm-menu-header.pm-header-icon{grid-template-rows:minmax(45px,var(--pm-icon-block,45px));column-gap:8px;min-height:calc(var(--pm-icon-block,45px) + 8px)}dialog.pm-menu .pm-header-icon>.pm-menu-title{width:100%;margin:0;padding-left:12px;padding-right:12px}dialog.pm-menu.pm-menu--reader>.pm-menu-header.pm-header-icon{grid-template-rows:var(--pm-icon-block,45px) auto}}
+
+dialog.pm-menu.pm-menu--reader .pm-header-icon>.pm-menu-title{font-size:16px;line-height:1.15}
+@media(max-width:650px) and (max-height:700px){dialog.pm-menu>.pm-menu-header.pm-header-icon{column-gap:20px}dialog.pm-menu.pm-menu--reader .pm-header-icon>.pm-menu-title{width:calc(100% - var(--pm-icon-gap));margin-left:var(--pm-icon-gap)}}
+
+dialog.pm-menu>.pm-menu-header.pm-header-icon{grid-template-rows:var(--pm-icon-block,45px)}
+dialog.pm-menu.pm-menu--reader>.pm-menu-header.pm-header-icon{grid-template-rows:var(--pm-icon-block,45px) auto}
+dialog.pm-menu .pm-header-icon>.pm-menu-title{align-self:center}
+@media(max-width:650px) and (min-height:701px){dialog.pm-menu>.pm-menu-header.pm-header-icon{grid-template-rows:40px var(--pm-icon-block,45px)}dialog.pm-menu.pm-menu--reader>.pm-menu-header.pm-header-icon{grid-template-rows:var(--pm-icon-block,45px) auto}}
+
+/* Wardrobe keeps the shared scroll shell and its existing purchase/equip cards. */
+#costume-shop-dialog .costume-family-filter{display:grid;gap:var(--ui-space-2);margin-block:var(--ui-space-3);color:var(--ui-ink)}
+#costume-family{width:100%;min-width:0;max-width:100%;min-height:var(--ui-control-height);padding:var(--ui-space-2);font:inherit}
+#costume-shop-dialog .costume-grid{grid-template-columns:repeat(auto-fill,minmax(min(145px,100%),1fr))}
+
+/* Event rush reuses the event scroll shell; no additional dialog or ornamental frame. */
+#event-dialog[data-rush=true]>:not(.pm-menu-header):not(#rush-event-content){display:none}
+#event-dialog:not([data-rush=true])>#rush-event-content{display:none}
+#rush-panel h3{font-size:16px;margin:0}
+#rush-panel p{margin:0;overflow-wrap:anywhere}
+#rush-panel button{min-height:var(--ui-control-height);white-space:normal}
+#rush-event-content{min-width:0;overflow-wrap:anywhere}
+#rush-event-content button{white-space:normal;max-width:100%}
+#rush-event-content select{width:100%;min-height:var(--ui-control-height);font:inherit}
+.rush-cast{display:flex;justify-content:center;gap:var(--ui-space-3)}
+.rush-cast img{width:min(40%,140px);height:140px;object-fit:contain}
+.rush-choice{display:grid;gap:var(--ui-space-2);padding:var(--ui-space-3);margin-block:var(--ui-space-3);border:var(--ui-border);border-radius:var(--ui-radius)}
+.rush-choice h4{margin:0}
+.costume-voucher-balance{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:var(--ui-space-2);text-align:center}
+.conveyor-event-supply{outline:3px solid #e7c45b;outline-offset:-3px;background:#695092!important;border-radius:50%}
+.conveyor-event-supply:after{content:'E';position:absolute;right:0;top:0;background:#f5d674;color:#372a31;border-radius:50%;font:bold 12px Georgia;padding:2px}
+
+#rush-panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--ui-space-2);margin:var(--ui-space-2) 0;padding:var(--ui-space-3);min-width:0}
+#rush-panel h3,#rush-clock,#rush-progress,#rush-brew-reason{grid-column:1/-1}
+#rush-panel>button{font:inherit;font-size:13px}
+#rush-panel .solution-balance{flex-wrap:wrap}
+#rush-panel .solution-balance img{width:22px;height:28px}
+#rush-panel #rush-counts{align-self:center;font-size:13px}
+#rush-panel #rush-progress,#rush-panel #rush-brew-reason{font-size:12px}
+
+#event-dialog[data-rush=true]>.legacy-event-selector{display:none}
+.legacy-event-selector{display:grid;gap:var(--ui-space-2);margin-block:var(--ui-space-3)}
+.legacy-event-selector select{width:100%;min-height:var(--ui-control-height);font:inherit}
+
+.conveyor-event-supply{z-index:2}
+
+#costume-shop-dialog .costume-card .reward-chip img,#rush-event-content .reward-chip img,.costume-voucher-balance .reward-chip img{width:24px;height:22px;object-fit:contain}
+
+#events-panel #rush-panel{grid-template-columns:minmax(0,1fr);padding:0;border:0;background:transparent}
+
+/* Arrival dialogue shows one current speaker above the text, without side portraits. */
+#tia-unlock-scene.pm-menu .tia-chat{display:flex;flex-direction:column;align-items:stretch;gap:0;min-height:0}
+#tia-unlock-scene.pm-menu .tia-scene-portrait{position:relative;z-index:1;align-self:flex-start;width:112px;height:112px;object-fit:contain;margin:0 0 -4px var(--ui-space-4)}
+#tia-unlock-scene.pm-menu .tia-chat-message{display:block;min-width:0;padding:var(--ui-space-4);border:var(--ui-border);border-radius:var(--ui-radius);background:var(--ui-paper)}
+#tia-unlock-scene.pm-menu .tia-scene-speaker{font-weight:bold;color:var(--ui-ink)}
+#tia-unlock-scene.pm-menu .tia-scene-line{font:18px/1.5 var(--ui-font);min-height:4.5em;margin:var(--ui-space-2) 0 0}
+@media(max-width:650px){#tia-unlock-scene.pm-menu .tia-scene-portrait{width:96px;height:96px}#tia-unlock-scene.pm-menu .tia-scene-line{font-size:16px}}
+
+/* Event dashboard and story are two views of the same shared dialog. */
+#rush-story-view[hidden],#rush-dashboard[hidden],#rush-resume-opening[hidden]{display:none!important}
+#rush-dashboard>section{margin-block:var(--ui-space-5)}
+#rush-page-clock,#rush-story-mode{font-weight:bold;color:var(--ui-ink)}
+.rush-stat-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--ui-space-3);margin:var(--ui-space-3) 0}
+.rush-stat-grid>div{min-width:0;padding:var(--ui-space-3);background:var(--ui-card);border-radius:var(--ui-radius)}
+.rush-stat-grid dt{font-size:13px;color:var(--ui-muted)}
+.rush-stat-grid dd{margin:var(--ui-space-1) 0 0;font-size:20px;color:var(--ui-ink);overflow-wrap:anywhere}
+#rush-grade-progress,.rush-checkpoints progress{display:block;width:100%;accent-color:var(--ui-purple)}
+.rush-checkpoints{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--ui-space-3);font-size:13px}
+.rush-checkpoints label{display:grid;gap:var(--ui-space-2);min-width:0}
+#rush-how{margin-block:var(--ui-space-4);padding:var(--ui-space-3);border:var(--ui-border);border-radius:var(--ui-radius)}
+#rush-how summary{cursor:pointer;font-weight:bold}
+#rush-how-copy{margin-top:var(--ui-space-2);line-height:1.6}
+#rush-grade-ladder{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--ui-space-3);list-style:none;padding:0}
+#rush-grade-ladder li{min-width:0;padding:var(--ui-space-3);border:var(--ui-border);border-radius:var(--ui-radius);background:var(--ui-paper)}
+#rush-grade-ladder h4,#rush-grade-ladder p{margin:0 0 var(--ui-space-2)}
+#rush-grade-ladder [data-state="Next target"]{outline:2px solid var(--ui-focus);outline-offset:-2px}
+#rush-grade-ladder [data-state="Current grade"]{background:var(--ui-card)}
+.rush-grade-state{font-size:13px;color:var(--ui-muted)}
+.rush-grade-rewards{display:flex;flex-wrap:wrap;gap:var(--ui-space-2);align-items:center}
+.rush-costume-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(145px,100%),1fr));gap:var(--ui-space-3)}
+.rush-costume-card{min-width:0;padding:var(--ui-space-3);border:var(--ui-border);border-radius:var(--ui-radius);text-align:center}
+.rush-costume-card>img{width:100%;height:110px;object-fit:contain}
+.rush-costume-card h4{margin:var(--ui-space-2) 0;font-size:14px}
+.rush-costume-card p{font-size:13px;margin:0}
+.pm-speaker-scene{display:flex;flex-direction:column;align-items:stretch;gap:0;min-width:0}
+.pm-speaker-portrait{position:relative;align-self:flex-start;z-index:1;width:112px;height:112px;object-fit:contain;margin:0 0 -4px var(--ui-space-4)}
+.pm-speaker-message{padding:var(--ui-space-4);border:var(--ui-border);border-radius:var(--ui-radius);background:var(--ui-paper)}
+.pm-speaker-message p{font:18px/1.5 var(--ui-font);min-height:4.5em;margin:var(--ui-space-2) 0 0}
+.rush-scene-actions{display:flex;flex-wrap:wrap;gap:var(--ui-space-2);margin-block:var(--ui-space-3)}
+.rush-development-note{font-size:13px;color:var(--ui-muted)}
+#rush-panel #rush-live-grade{font-size:13px}
+@media(max-width:650px){.pm-speaker-portrait{width:96px;height:96px}.pm-speaker-message p{font-size:16px}}
+@media(max-width:360px){#rush-grade-ladder,.rush-stat-grid,.rush-checkpoints{grid-template-columns:minmax(0,1fr)}}
+
+#rush-dashboard:focus{outline:none}
+
+:root[data-text-size=large] #rush-dashboard{font-size:18px}
+:root[data-text-size=large] #rush-story-view .pm-speaker-message p{font-size:20px}
+:root[data-text-size=large] #rush-dashboard dt,:root[data-text-size=large] #rush-dashboard .small{font-size:15px}
+
+/* The event name wraps beside its requested title icon on narrow screens. */
+#event-dialog.pm-menu .pm-header-icon>.pm-menu-title{height:auto;padding-left:56px;padding-right:12px}
+#event-dialog.pm-menu>.pm-menu-header.pm-header-icon{grid-template-rows:minmax(var(--pm-icon-block,45px),auto)}
+@media(max-width:650px){#event-dialog.pm-menu>.pm-menu-header.pm-header-icon{grid-template-columns:minmax(0,1fr) var(--ui-control-height);grid-template-rows:40px minmax(var(--pm-icon-block,45px),auto);column-gap:4px}#event-dialog.pm-menu .pm-header-icon>.pm-menu-title{grid-column:1/3;grid-row:2;width:calc(100% - var(--pm-icon-gap));margin-left:var(--pm-icon-gap);margin-right:0;font-size:18px}#event-dialog.pm-menu .pm-close{grid-column:2;grid-row:1}}
+
+/* Commission requests use shared cards, controls and tokens; other commission-card users stay unchanged. */
+#commission-board .commission-request{padding:var(--ui-space-4);border-radius:var(--ui-radius)}
+#commission-board .commission-customer{display:flex;align-items:center;gap:var(--ui-space-3);min-width:0}
+#commission-board .commission-request img{float:none;margin:0;object-fit:contain}
+#commission-board .commission-portrait{width:56px;height:64px;flex:none}
+#commission-board .commission-customer h3{margin:0;color:var(--ui-ink);font-size:18px}
+#commission-board .commission-customer p{margin:var(--ui-space-1) 0 0}
+#commission-board .commission-purpose{margin:var(--ui-space-3) 0;color:var(--ui-muted)}
+#commission-board .commission-requirement{display:grid;grid-template-columns:minmax(0,1fr) 64px;align-items:center;gap:var(--ui-space-3);padding:var(--ui-space-3);border:var(--ui-border);border-radius:var(--ui-radius);background:var(--ui-card)}
+#commission-board .commission-requirement p{margin:var(--ui-space-1) 0}
+#commission-board .commission-requirement h4{margin:var(--ui-space-1) 0;font-size:18px;color:var(--ui-ink);overflow-wrap:anywhere}
+#commission-board .commission-potion{width:64px;height:80px}
+#commission-board .commission-rewards{margin:var(--ui-space-3) 0;display:flex;flex-wrap:wrap;column-gap:var(--ui-space-4);row-gap:var(--ui-space-2)}
+#commission-board .commission-rewards>p{margin:0;display:flex;align-items:center;gap:var(--ui-space-1);min-width:0;overflow-wrap:anywhere}
+#commission-board .commission-rewards>p:first-child{width:100%}
+#commission-board .commission-rewards .reward-chip img{width:24px;height:24px}
+#commission-board .commission-progress-label{margin:var(--ui-space-3) 0 var(--ui-space-1)}
+#commission-board progress{width:100%;accent-color:var(--ui-purple)}
+#commission-board .commission-delivery-status{margin:var(--ui-space-3) 0 var(--ui-space-2)}
+#commission-board .commission-request button{min-height:var(--ui-control-height);white-space:normal}
+@media(max-width:360px){#commission-board .commission-requirement{grid-template-columns:minmax(0,1fr) 48px}#commission-board .commission-potion{width:48px;height:64px}#commission-board .commission-request{padding:var(--ui-space-3)}}

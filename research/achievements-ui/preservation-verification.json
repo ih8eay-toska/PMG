@@ -1,0 +1,32 @@
+{
+  "source/core.js": {
+    "before": "83b38815564c5895b931eca2d1adfd04668bb723502d619f2791d73de4e6d020",
+    "after": "83b38815564c5895b931eca2d1adfd04668bb723502d619f2791d73de4e6d020",
+    "unchanged": true
+  },
+  "source/storage.js": {
+    "before": "9a246d4e15c0a0572cf149d47d6aada2994df754ec0c19212d15efdc3c6523e5",
+    "after": "9a246d4e15c0a0572cf149d47d6aada2994df754ec0c19212d15efdc3c6523e5",
+    "unchanged": true
+  },
+  "data/original-achievements.json": {
+    "before": "fd28edbf5ae6284ecb96f341edc92c3cdb5a34f88f62f51551be93f250e8c3ca",
+    "after": "fd28edbf5ae6284ecb96f341edc92c3cdb5a34f88f62f51551be93f250e8c3ca",
+    "unchanged": true
+  },
+  "data/achievement-lore.json": {
+    "before": "e511bf0e6936619cee1516a7bf545538a883cdfcebf2c5e77309f3528f45d036",
+    "after": "e511bf0e6936619cee1516a7bf545538a883cdfcebf2c5e77309f3528f45d036",
+    "unchanged": true
+  },
+  "data/game-data.json": {
+    "before": "31bc701978295619bbfcea3d4e7458577ab21c03be51cc95be9f480150d59ea8",
+    "after": "31bc701978295619bbfcea3d4e7458577ab21c03be51cc95be9f480150d59ea8",
+    "unchanged": true
+  },
+  "data/economy.json": {
+    "before": "763c2d879c94eab70205a341f3a31dc6051ff220bbf3b760b36d59803c1a9f73",
+    "after": "763c2d879c94eab70205a341f3a31dc6051ff220bbf3b760b36d59803c1a9f73",
+    "unchanged": true
+  }
+}

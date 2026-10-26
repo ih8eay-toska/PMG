@@ -1,0 +1,49 @@
+{
+  "initial": {
+    "slots": 3,
+    "emptyLoadButtons": 2,
+    "visiblePages": [
+      "device"
+    ],
+    "advancedVisible": false,
+    "dialog": {
+      "x": 212.5,
+      "y": 45,
+      "width": 760,
+      "height": 810,
+      "top": 45,
+      "right": 972.5,
+      "bottom": 855,
+      "left": 212.5
+    },
+    "scroll": {
+      "client": 575,
+      "total": 614
+    },
+    "saveNowStyle": {
+      "usesOldButtonArt": false,
+      "background": "rgb(255, 250, 242)"
+    }
+  },
+  "slot": {
+    "savedName": "Moonlit shop",
+    "cancelled": true,
+    "loaded": true,
+    "backedUp": true
+  },
+  "code": {
+    "prefix": "PMG2-",
+    "coins": 12345,
+    "error": "Could not import: That does not look like a Potion Maker save code."
+  },
+  "mobile": {
+    "left": 12,
+    "right": 378,
+    "bottom": 810.234375,
+    "scrollWidth": 334,
+    "clientWidth": 334,
+    "scrollHeight": 855,
+    "clientHeight": 555
+  },
+  "errors": []
+}

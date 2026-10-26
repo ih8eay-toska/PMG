@@ -1,0 +1,344 @@
+{
+  "catalog": {
+    "count": 42,
+    "first": [
+      "fairy-1",
+      "fairy-35",
+      "fairy-behe"
+    ],
+    "rate": "7",
+    "unknownLabels": false
+  },
+  "owned": {
+    "open": true,
+    "name": "Squishy",
+    "level": "Lv: 3 · Max Lv: 10",
+    "stars": 1,
+    "action": "Summon"
+  },
+  "unowned": {
+    "name": "Pisia",
+    "disabled": true,
+    "stars": 4,
+    "preview": "Not collected · Lv.1 preview"
+  },
+  "details": {
+    "checks": [
+      {
+        "id": "fairy-1",
+        "stars": 1,
+        "name": "Squishy",
+        "effects": 1,
+        "valid": true
+      },
+      {
+        "id": "fairy-2",
+        "stars": 1,
+        "name": "Squashy",
+        "effects": 1,
+        "valid": true
+      },
+      {
+        "id": "fairy-3",
+        "stars": 1,
+        "name": "Mushy",
+        "effects": 1,
+        "valid": true
+      },
+      {
+        "id": "fairy-4",
+        "stars": 2,
+        "name": "Beany-Kong",
+        "effects": 3,
+        "valid": true
+      },
+      {
+        "id": "fairy-5",
+        "stars": 2,
+        "name": "Surprise-Pong",
+        "effects": 1,
+        "valid": true
+      },
+      {
+        "id": "fairy-6",
+        "stars": 2,
+        "name": "Happy-Pong",
+        "effects": 1,
+        "valid": true
+      },
+      {
+        "id": "fairy-7",
+        "stars": 2,
+        "name": "Amaze-Pong",
+        "effects": 2,
+        "valid": true
+      },
+      {
+        "id": "fairy-8",
+        "stars": 2,
+        "name": "Angry-Pong",
+        "effects": 2,
+        "valid": true
+      },
+      {
+        "id": "fairy-9",
+        "stars": 2,
+        "name": "Sunnyside-Chick",
+        "effects": 2,
+        "valid": true
+      },
+      {
+        "id": "fairy-10",
+        "stars": 2,
+        "name": "Ice-Chick",
+        "effects": 2,
+        "valid": true
+      },
+      {
+        "id": "fairy-11",
+        "stars": 2,
+        "name": "Hot-Chick",
+        "effects": 2,
+        "valid": true
+      },
+      {
+        "id": "fairy-12",
+        "stars": 2,
+        "name": "Clover-Puru",
+        "effects": 2,
+        "valid": true
+      },
+      {
+        "id": "fairy-13",
+        "stars": 2,
+        "name": "Dande-Puru",
+        "effects": 2,
+        "valid": true
+      },
+      {
+        "id": "fairy-14",
+        "stars": 2,
+        "name": "Bell-Puru",
+        "effects": 2,
+        "valid": true
+      },
+      {
+        "id": "fairy-15",
+        "stars": 2,
+        "name": "Red-Cho",
+        "effects": 2,
+        "valid": true
+      },
+      {
+        "id": "fairy-16",
+        "stars": 2,
+        "name": "Blue-Cho",
+        "effects": 2,
+        "valid": true
+      },
+      {
+        "id": "fairy-17",
+        "stars": 2,
+        "name": "Yellow-Cho",
+        "effects": 2,
+        "valid": true
+      },
+      {
+        "id": "fairy-18",
+        "stars": 3,
+        "name": "Purplish-Kun",
+        "effects": 2,
+        "valid": true
+      },
+      {
+        "id": "fairy-19",
+        "stars": 3,
+        "name": "Orangish-Kun",
+        "effects": 2,
+        "valid": true
+      },
+      {
+        "id": "fairy-20",
+        "stars": 3,
+        "name": "Greenish-Kun",
+        "effects": 2,
+        "valid": true
+      },
+      {
+        "id": "fairy-21",
+        "stars": 3,
+        "name": "Magi-Run",
+        "effects": 3,
+        "valid": true
+      },
+      {
+        "id": "fairy-22",
+        "stars": 3,
+        "name": "Thief-Run",
+        "effects": 3,
+        "valid": true
+      },
+      {
+        "id": "fairy-23",
+        "stars": 3,
+        "name": "Cleri-Run",
+        "effects": 6,
+        "valid": true
+      },
+      {
+        "id": "fairy-24",
+        "stars": 3,
+        "name": "Arch-Run",
+        "effects": 3,
+        "valid": true
+      },
+      {
+        "id": "fairy-25",
+        "stars": 3,
+        "name": "Warri-Run",
+        "effects": 3,
+        "valid": true
+      },
+      {
+        "id": "fairy-26",
+        "stars": 3,
+        "name": "Blue-Me",
+        "effects": 3,
+        "valid": true
+      },
+      {
+        "id": "fairy-27",
+        "stars": 3,
+        "name": "Purp-Me",
+        "effects": 6,
+        "valid": true
+      },
+      {
+        "id": "fairy-28",
+        "stars": 3,
+        "name": "Yell-Me",
+        "effects": 3,
+        "valid": true
+      },
+      {
+        "id": "fairy-29",
+        "stars": 3,
+        "name": "Red-Me",
+        "effects": 3,
+        "valid": true
+      },
+      {
+        "id": "fairy-30",
+        "stars": 3,
+        "name": "Green-Me",
+        "effects": 6,
+        "valid": true
+      },
+      {
+        "id": "fairy-31",
+        "stars": 3,
+        "name": "Poong-Poong",
+        "effects": 6,
+        "valid": true
+      },
+      {
+        "id": "fairy-32",
+        "stars": 3,
+        "name": "Gentle-Poong",
+        "effects": 2,
+        "valid": true
+      },
+      {
+        "id": "fairy-33",
+        "stars": 3,
+        "name": "King-Poong",
+        "effects": 2,
+        "valid": true
+      },
+      {
+        "id": "fairy-34",
+        "stars": 3,
+        "name": "Hero-Poong",
+        "effects": 3,
+        "valid": true
+      },
+      {
+        "id": "fairy-35",
+        "stars": 3,
+        "name": "Wiz-Poong",
+        "effects": 2,
+        "valid": true
+      },
+      {
+        "id": "fairy-40",
+        "stars": 4,
+        "name": "Pisia",
+        "effects": 2,
+        "valid": true
+      },
+      {
+        "id": "fairy-41",
+        "stars": 4,
+        "name": "Fosia",
+        "effects": 2,
+        "valid": true
+      },
+      {
+        "id": "fairy-42",
+        "stars": 4,
+        "name": "Nesia",
+        "effects": 2,
+        "valid": true
+      },
+      {
+        "id": "fairy-36",
+        "stars": 4,
+        "name": "Pushcat Fairy",
+        "effects": 2,
+        "valid": true
+      },
+      {
+        "id": "fairy-37",
+        "stars": 4,
+        "name": "BlackCat Fairy",
+        "effects": 2,
+        "valid": true
+      },
+      {
+        "id": "fairy-43",
+        "stars": 4,
+        "name": "Halloprin",
+        "effects": 4,
+        "valid": true
+      },
+      {
+        "id": "fairy-behe",
+        "stars": 5,
+        "name": "Behe",
+        "effects": 10,
+        "valid": true
+      }
+    ],
+    "maxHidden": true,
+    "maxLevel": "Lv: 10 · Max Lv: 10"
+  },
+  "catalogMobile": {
+    "left": 12,
+    "right": 378,
+    "scroll": true,
+    "width": 332,
+    "client": 332
+  },
+  "bookMobile": {
+    "left": 10,
+    "right": 380,
+    "bottom": 678.59375,
+    "width": 370,
+    "client": 370,
+    "abilityScroll": 100
+  },
+  "summon": true,
+  "unsummon": true,
+  "shortcut": true,
+  "errors": []
+}

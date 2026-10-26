@@ -1,6 +1,8 @@
 """Build one offline HTML game and a local, categorized asset browser."""
 from pathlib import Path
 import json,base64,html
+from build_textures import texture_data_url,write_texture_report
+from build_styles import share_style_images
 ROOT=Path(__file__).resolve().parent.parent
 manifest=json.loads((ROOT/'asset-manifest.json').read_text(encoding='utf-8'))
 assets={}
@@ -10,11 +12,17 @@ original_assets=json.loads((ROOT/'data/original-assets.json').read_text(encoding
 for key,path in original_assets.items():
     record=next(r for r in manifest['assets'] if r['path']==path)
     assets[key]=f'data:{record["mime"]};base64,'+base64.b64encode((ROOT/path).read_bytes()).decode()
+# Fan-made costumes keep their previews and accessories outside the original-art map.
+for costume in costumes['entries']:
+    if costume.get('preview'):
+        assets[costume['id']]='data:image/png;base64,'+base64.b64encode((ROOT/costume['preview']).read_bytes()).decode()
 # Historical event banners are the sole approved wiki-media exception.
 for record in manifest['assets']:
     if record.get('retained_event_banner'):
         assets[record['key']]=f'data:{record["mime"]};base64,'+base64.b64encode((ROOT/record['path']).read_bytes()).decode()
 for key,path in {
+    'CostumeVoucher.png':'assets/extracted/coupon.png',
+    'OriginalTitleUpgrades.png':'assets/extracted/upgrades.png',
     'OriginalMenuCostume.png':'assets/original-apk/ui/costumes.png',
     'OriginalMenuShop.png':'assets/original-apk/ui/in-app-products.png',
     'OriginalMenuExpeditions.png':'assets/original-apk/ui/explorations.png',
@@ -33,6 +41,8 @@ for name in ['Congratulation.wav','Enhance Failed.wav','Enhanced.wav','Plop.wav'
     assets[name]='data:audio/wav;base64,'+base64.b64encode((ROOT/'assets/audio/original-apk'/name).read_bytes()).decode()
 assets['PushcatHand.png']='data:image/png;base64,'+base64.b64encode((ROOT/'assets/extracted/organized/helpers/pushcat-hand.png').read_bytes()).decode()
 assets['BlackcatHand.png']='data:image/png;base64,'+base64.b64encode((ROOT/'assets/extracted/organized/helpers/blackcat-hand.png').read_bytes()).decode()
+for key,name in {'OriginalPushcat.png':'pushcat','OriginalBlackcat.png':'blackcat',**{f'OriginalFace-{person}-{expression}.png':f'{person}-{expression}' for person in ['charlotte','daisy','demian','kyle','tirami'] for expression in ['success','failure']}}.items():
+    assets[key]='data:image/png;base64,'+base64.b64encode((ROOT/f'assets/extracted/{name}.png').read_bytes()).decode()
 for key,path in {'OriginalPushcatSummon.png':'helpers/summon-pushcat.png','OriginalQuestMark.png':'ui/quest-exclamation.png',**{f'OriginalTraveler-{key}.png':f'characters/{name}.png' for key,name in {'neet':'healer','dolbur':'warrior','tirami':'tirami','claire':'knight','luke':'sorceress','piria':'thief','charlotte':'charlotte','demian':'demian','daisy':'daisy','kyle':'kyle'}.items()}}.items():
     assets[key]='data:image/png;base64,'+base64.b64encode((ROOT/'assets/extracted/organized'/path).read_bytes()).decode()
 for key,name in {
@@ -50,6 +60,8 @@ assets['PrettyPercent.png']='data:image/png;base64,'+base64.b64encode((ROOT/'ass
 assets['PrettyPeriod.png']='data:image/png;base64,'+base64.b64encode((ROOT/'assets/extracted/organized/ui/period.png').read_bytes()).decode()
 for key,name in {'OriginalEnhancing.png':'enhancing','OriginalEnhanced.png':'enhanced','OriginalEnhanceFailed.png':'enhance-failed','OriginalPlop.png':'plop','OriginalEnhancementPack.png':'enhancement-package'}.items():
     assets[key]='data:image/png;base64,'+base64.b64encode((ROOT/f'assets/extracted/{name}.png').read_bytes()).decode()
+for name in ['gauge-background','gauge-fill','gauge-frame']+[f'{kind}-chest-{frame}' for kind in ['wood','iron','gold'] for frame in range(3)]:
+    assets['Original-'+name+'.png']='data:image/png;base64,'+base64.b64encode((ROOT/f'assets/extracted/{name}.png').read_bytes()).decode()
 for family in ['Life','Mana','Stamina']:
     for tier in range(1,26):
         assets[f'{family}_Material{tier}.png']='data:image/png;base64,'+base64.b64encode((ROOT/f'assets/original-apk/materials/{family.lower()}-material{tier}.png').read_bytes()).decode()
@@ -94,9 +106,18 @@ for token,path in {
 }.items():
     mobile_ui=mobile_ui.replace(token,'data:image/png;base64,'+base64.b64encode((ROOT/path).read_bytes()).decode())
 template=template.replace('__ORIGINAL_MOBILE_UI__',mobile_ui)
+book_css=(ROOT/'source/potion-book.css').read_text(encoding='utf-8').replace('__POTION_BOOK_ART__','data:image/svg+xml;base64,'+base64.b64encode((ROOT/'source/potion-book-frame.svg').read_bytes()).decode())
+template=template.replace('__POTION_BOOK_CSS__',book_css)
 for token,name in [('__APK_MENU_PANEL__','background-big.png'),('__APK_MENU_CLOSE__','close.png')]:
     template=template.replace(token,'data:image/png;base64,'+base64.b64encode((ROOT/'assets/extracted/organized/ui'/name).read_bytes()).decode())
-for token,value in [('__ASSETS__',json.dumps(assets)),('__UPDATE_DATA__',(ROOT/'data/updates.json').read_text(encoding='utf-8')),('__EVENT_STORIES__',(ROOT/'data/event-stories.json').read_text(encoding='utf-8')),('__EXPEDITION_JOBS__',(ROOT/'data/expedition-jobs.json').read_text(encoding='utf-8')),('__EXPEDITION_STORY_DATA__',(ROOT/'data/expedition-stories.json').read_text(encoding='utf-8')),('__EXPEDITION_CHAPTER_DATA__',(ROOT/'data/expedition-chapters.json').read_text(encoding='utf-8')),('__GAME_DATA__',(ROOT/'data/game-data.json').read_text(encoding='utf-8')),('__ECONOMY_DATA__',(ROOT/'data/economy.json').read_text(encoding='utf-8')),('__COSTUME_DATA__',(ROOT/'data/costumes.json').read_text(encoding='utf-8')),('__FLAVOR_DATA__',(ROOT/'data/flavor-text.json').read_text(encoding='utf-8')),('__MATERIAL_TEXT__',(ROOT/'data/material-descriptions.json').read_text(encoding='utf-8')),('__VISITOR_DIALOGUE__',(ROOT/'data/visitor-dialogue.json').read_text(encoding='utf-8')),('__FAIRY_DATA__',(ROOT/'data/fairies.json').read_text(encoding='utf-8')),('__ACHIEVEMENT_LORE__',(ROOT/'data/achievement-lore.json').read_text(encoding='utf-8')),('__STORAGE__',(ROOT/'source/storage.js').read_text(encoding='utf-8')),('__CORE__',(ROOT/'source/core.js').read_text(encoding='utf-8')),('__APP__',(ROOT/'source/app.js').read_text(encoding='utf-8'))]:template=template.replace(token,value)
+# Keep every registry key in order while storing identical payloads only once.
+asset_counts={}
+for payload in assets.values():
+    asset_counts[payload]=asset_counts.get(payload,0)+1
+shared_assets=[payload for payload,count in asset_counts.items() if count>1]
+shared_indices={payload:index for index,payload in enumerate(shared_assets)}
+asset_code='(()=>{const shared='+json.dumps(shared_assets)+';return {'+','.join(json.dumps(key)+':'+('shared['+str(shared_indices[value])+']' if value in shared_indices else json.dumps(value)) for key,value in assets.items())+'};})()'
+for token,value in [('__ORIGINAL_ACHIEVEMENTS__',(ROOT/'data/original-achievements.json').read_text(encoding='utf-8')),('__ASSETS__',asset_code),('__UPDATE_DATA__',(ROOT/'data/updates.json').read_text(encoding='utf-8')),('__EVENT_STORIES__',(ROOT/'data/event-stories.json').read_text(encoding='utf-8')),('__EVENT_RUSH_DIALOGUE__',(ROOT/'data/event-rush-dialogue.json').read_text(encoding='utf-8')),('__EXPEDITION_JOBS__',(ROOT/'data/expedition-jobs.json').read_text(encoding='utf-8')),('__EXPEDITION_STORY_DATA__',(ROOT/'data/expedition-stories.json').read_text(encoding='utf-8')),('__EXPEDITION_CHAPTER_DATA__',(ROOT/'data/expedition-chapters.json').read_text(encoding='utf-8')),('__GAME_DATA__',(ROOT/'data/game-data.json').read_text(encoding='utf-8')),('__ECONOMY_DATA__',(ROOT/'data/economy.json').read_text(encoding='utf-8')),('__COSTUME_DATA__',(ROOT/'data/costumes.json').read_text(encoding='utf-8')),('__FLAVOR_DATA__',(ROOT/'data/flavor-text.json').read_text(encoding='utf-8')),('__MATERIAL_TEXT__',(ROOT/'data/material-descriptions.json').read_text(encoding='utf-8')),('__VISITOR_DIALOGUE__',(ROOT/'data/visitor-dialogue.json').read_text(encoding='utf-8')),('__FAIRY_DATA__',(ROOT/'data/fairies.json').read_text(encoding='utf-8')),('__ACHIEVEMENT_LORE__',(ROOT/'data/achievement-lore.json').read_text(encoding='utf-8')),('__STORAGE__',(ROOT/'source/storage.js').read_text(encoding='utf-8')),('__CORE__',(ROOT/'source/event-rush.js').read_text(encoding='utf-8')+'\n'+(ROOT/'source/core.js').read_text(encoding='utf-8')),('__APP__',(ROOT/'source/app.js').read_text(encoding='utf-8')+'\n'+(ROOT/'source/event-rush-ui.js').read_text(encoding='utf-8'))]:template=template.replace(token,value)
 pio_root=ROOT/'assets/live2d/Pio'
 data_url=lambda path,mime:'data:'+mime+';base64,'+base64.b64encode(path.read_bytes()).decode()
 pio_settings=json.loads((pio_root/'index.json').read_text(encoding='utf-8'))
@@ -106,6 +127,10 @@ for group in pio_settings['motions'].values():
 for group,filename in [('success','Success.mtn'),('failure','Fail.mtn')]:
     pio_settings['motions'][group]=[{'file':data_url(pio_root/'motions'/filename,'application/octet-stream')}]
 pio_textures={normalized(p.stem+'.png'):data_url(p,'image/webp') for p in (pio_root/'textures').glob('*.webp')}
+for costume in costumes['entries']:
+    if costume.get('character')=='Pio' and costume.get('texture'):
+        texture=pio_root/'textures'/costume['texture']
+        pio_textures[normalized(costume['id'])]=texture_data_url(texture)
 pio_scripts=''.join('<script data-pio-runtime>'+ (ROOT/'assets/live2d/vendor'/name).read_text(encoding='utf-8').replace('</script','<\\/script')+'</script>' for name in ['pixi.min.js','live2d.min.js','cubism2.min.js'])
 tia_root=ROOT/'assets/live2d/Tia'
 tia_settings=json.loads((tia_root/'index.json').read_text(encoding='utf-8'))
@@ -115,11 +140,16 @@ for group in tia_settings['motions'].values():
 for group,filename in [('success','Success.mtn'),('failure','Fail.mtn')]:
     tia_settings['motions'][group]=[{'file':data_url(tia_root/'motions'/filename,'application/octet-stream')}]
 tia_settings['textures']=[data_url(tia_root/'textures/default-costume.webp','image/webp')]
-tia_settings['costumeTextures']={normalized(c['id']):data_url(tia_root/'textures'/c['texture'],'image/webp') for c in costumes['entries'] if c.get('character')=='Tia' and c.get('texture')}
+tia_settings['costumeTextures']={normalized(c['id']):texture_data_url(tia_root/'textures'/c['texture']) for c in costumes['entries'] if c.get('character')=='Tia' and c.get('texture')}
 pio_scripts+='<script data-pio-runtime>const PIO_DATA='+json.dumps({'settings':pio_settings,'textures':pio_textures})+';const TIA_DATA='+json.dumps(tia_settings)+';const BREWER_DIALOGUE='+(ROOT/'data/brewer-dialogue.json').read_text(encoding='utf-8')+';</script>'
 pio_scripts+='<script data-pio-runtime>'+(ROOT/'source/pio.js').read_text(encoding='utf-8')+'</script>'
-template=template.replace('</style>',(ROOT/'source/apk-layout.css').read_text(encoding='utf-8')+'</style>',1)
+researched_css=(ROOT/'source/original-researched-ui.css').read_text(encoding='utf-8')+'\n'+(ROOT/'source/ui-design-system.css').read_text(encoding='utf-8')
+for name in ['background-big','close','book','sunlight','congratulation','pin','item-slot','title-frame','upgrade-name-frame','upgrade-grade-frame','upgrade-button','upgrade-button-disabled','upgrade-separator','item-name-frame','upgrades','fairy-slot-back','fairy-slot-border','fairy-name-frame','rarity','progress-back','progress-fill','settings-on','settings-off','circle']:
+    researched_css=researched_css.replace('__ART_'+name+'__','data:image/png;base64,'+base64.b64encode((ROOT/f'assets/extracted/{name}.png').read_bytes()).decode())
+template=template.replace('</style>',(ROOT/'source/apk-layout.css').read_text(encoding='utf-8')+researched_css+'</style>',1)
 template=template.replace('</body>',pio_scripts+'<script data-apk-layout>'+(ROOT/'source/apk-layout.js').read_text(encoding='utf-8')+'</script></body>')
+template=share_style_images(template)
+write_texture_report()
 (ROOT/'Potion-Maker.html').write_text(template,encoding='utf-8')
 cards=[]
 for r in manifest['assets']:

@@ -17,7 +17,7 @@ for(let version=1;version<=14;version++){
  if(version>=5)raw.metrics.activePlayMs=3456789;
  const encoded=JSON.stringify(raw),items=new Map([['shop',encoded]]),storage={getItem:k=>items.get(k)||null,setItem:(k,v)=>items.set(k,v)},loaded=loadStoredGame(storage,'shop'),g=loaded.game;
  assert.equal(loaded.blocked,false,`v${version}`);assert.equal(items.get(`shop-v${version}-backup`),encoded);assert.equal(items.get('shop'),encoded);
- assert.equal(g.state.version,16);assert.equal(g.state.coins,raw.coins);assert.equal(g.state.potion.value,raw.potion.value);assert.deepEqual(g.state.tiers,raw.tiers);
+ assert.equal(g.state.version,INITIAL().version);assert.equal(g.state.coins,raw.coins);assert.equal(g.state.potion.value,raw.potion.value);assert.deepEqual(g.state.tiers,raw.tiers);
  if(version>=6)assert.equal(g.state.tickets,raw.tickets);if(version>=8)assert.equal(g.state.rubies,raw.rubies);
  if(version>=10){assert.deepEqual(g.state.costumes,raw.costumes);assert.equal(g.state.activeCostumeId,raw.activeCostumeId);}
  if(version>=12){assert.ok(g.state.tiaUnlocked);assert.ok(g.state.tiaIntroSeen);assert.deepEqual(g.state.masteryStars,raw.masteryStars);}
@@ -62,7 +62,8 @@ for(const invalid of [{window:2,count:0},{window:1,count:4},{window:1,count:.5}]
 for(const kind of ['hourly','tickets','skin']){const g=new PotionGame(),before=clone(g.state);assert.equal(g.openReward(kind,'Pio',1000,()=>0),null);assert.deepEqual(g.state,before);}
 for(const free of [false,true]){const g=new PotionGame();g.state.coins=999;g.state.powerups.protection=1e9;const before=clone(g.state);assert.equal(g.openReward('hourly','Pio',1000,()=>0,free),null);assert.deepEqual(g.state,before);}
 for(const character of ['Tia','Missing']){const g=new PotionGame();g.state.rubies=300;const before=clone(g.state);assert.equal(g.openReward('skin',character,1000,()=>0),null);assert.deepEqual(g.state,before);}
-// The twentieth unique mastery unlocks Tia once; no star repeats after selling.
-const master=new PotionGame();master.state.tiers[0]=19;master.state.masteryStars=Array.from({length:19},(_,t)=>'0-'+t);master.collect(0,19);while(master.next())master.enhance(0,1);
-assert.equal(master.state.masteryStars.length,20);assert.ok(master.state.tiaUnlocked);assert.equal(master.state.tiaIntroSeen,false);master.sell();master.collect(0,19);while(master.next())master.enhance(0,1);assert.equal(master.state.masteryStars.length,20);assert.equal(reload(master).state.tiaIntroSeen,false);
-console.log('Passed: v1–14 backups/migration, legacy promises and request results, unchanged balances, chest quota/cooldown boundaries, safe refusals and the twentieth unique star.');
+// All three specific beginner masteries unlock Tia; unrelated stars do not substitute.
+const unrelated=new PotionGame();unrelated.state.masteryStars=['0-0','0-1','0-2'];assert.equal(reload(unrelated).state.tiaUnlocked,false);
+for(const order of [[0,1,2],[0,2,1],[1,0,2],[1,2,0],[2,0,1],[2,1,0]]){let master=new PotionGame();for(const [index,family]of order.entries()){assert(master.collect(family,0));while(master.next())master.enhance(0,1);assert.equal(master.state.tiaUnlocked,index===2);assert.equal(master.state.tiaIntroSeen,false);master.sell();master=reload(master);}assert.equal(master.state.masteryStars.length,3);assert.equal(master.state.eventRush.phase,'locked');assert.equal(master.settleRush().phase,'locked');master.state.tiaIntroSeen=true;assert.equal(master.settleRush().phase,'opening');}
+const grandfathered=new PotionGame().state;grandfathered.tiaUnlocked=true;assert.equal(reload(new PotionGame(grandfathered)).state.tiaUnlocked,true);
+console.log('Passed: v1–14 backups/migration, legacy promises and request results, unchanged balances, chest quota/cooldown boundaries, safe refusals and all three beginner masteries.');

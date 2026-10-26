@@ -1,66 +1,9 @@
 const assert=require('node:assert/strict');
-const {PotionGame,MaterialConveyor,EVENTS,EVENT_ACTIVE_MS,EVENT_CYCLE_MS,sanitizeSave}=require('./core.js');
-const {loadStoredGame}=require('./storage.js');
-function advance(game,ms){while(ms>0){const step=Math.min(ms,2000);game.recordPlayTime(step);ms-=step;}}
-const game=new PotionGame();
-assert.equal(game.eventInfo().name,'Christmas 2014');
-assert.equal(game.eventInfo().remainingMs,EVENT_ACTIVE_MS);
-assert.ok(game.collectSolution());
-advance(game,EVENT_ACTIVE_MS-1);
-assert.ok(game.eventInfo().active);
-advance(game,1);
-assert.equal(game.eventInfo().active,false);
-assert.equal(game.eventInfo().remainingMs,300000);
-assert.equal(game.collectSolution(),false);
-assert.ok(game.redeemEvent(0,'boosts'),'break allows redemption');
-assert.deepEqual(game.state.powerups,{protection:1,enhancement:1,selling:1});
-assert.equal(game.redeemEvent(0,'boosts'),false,'no overdraft');
-game.state.eventRotation.solution=100;
-const skin=EVENTS[0].skins[0],activeCostume=game.state.activeCostumeId;
-assert.ok(game.redeemEvent(0,skin));
-assert.equal(game.state.eventRotation.solution,50);
-assert.equal(game.state.activeCostumeId,activeCostume,'redeeming does not change the brewer');
-assert.ok(game.equipCostume(skin),'owned event skins remain wearable');
-const wardrobe=new PotionGame();wardrobe.state.tiaUnlocked=true;wardrobe.state.tickets=100000;
-for(const event of EVENTS)for(const id of event.skins)assert.equal(wardrobe.buyCostume(id),false,'event skins cannot be bought with tickets');
-assert.equal(wardrobe.state.tickets,100000);
-assert.ok(wardrobe.buyCostume('Kids_Costume.png'),'regular costumes remain purchasable');
-assert.ok(wardrobe.buyCostume('Summer_Uniform_Costume_Blue.png'),'static costumes remain free');
-for(const character of ['Pio','Tia'])for(let pick=0;pick<100;pick++){
- const chest=new PotionGame();chest.state.tiaUnlocked=true;chest.state.rubies=30;
- const rolls=[.999,pick/100],result=chest.openReward('skin',character,1000,()=>rolls.shift());
- assert.equal(result.currency,'skin');
- assert.ok(!EVENTS.some(event=>event.skins.includes(chest.state.activeCostumeId)),'case cannot award event skins');
- assert.equal(chest.state.rubies,0);
-}
-assert.equal(game.redeemEvent(0,skin),false,'duplicate skin cannot spend tokens');
-assert.equal(game.state.eventRotation.solution,50);
-assert.equal(game.redeemEvent(1,EVENTS[1].skins[0]),false,'other event is unavailable');
-assert.equal(game.redeemEvent(0,'not-a-skin'),false);
-assert.deepEqual(sanitizeSave(JSON.parse(JSON.stringify(game.state))).eventRotation,game.state.eventRotation);
-advance(game,300000);
-assert.equal(game.eventInfo().index,1);
-assert.ok(game.eventInfo().active);
-assert.equal(game.state.eventRotation.solution,50,'balance carries between events');
-advance(game,EVENT_CYCLE_MS*(EVENTS.length-1));
-assert.equal(game.eventInfo().index,0,'rotation loops');
-game.recordPlayTime(60000);
-assert.equal(game.state.eventRotation.elapsedMs,0,'suspended frames do not advance events');
-game.state.eventRotation.index=4;
-assert.equal(game.redeemEvent(4,EVENTS[4].skins[0]),false,'Tia must be unlocked');
-game.state.tiaUnlocked=true;
-assert.ok(game.redeemEvent(4,EVENTS[4].skins[0]));
-game.state.eventRotation.solution=1;
-game.state.powerups.protection=1e9;
-assert.equal(game.redeemEvent(4,'boosts'),false,'full boost storage does not spend tokens');
-assert.equal(game.state.eventRotation.solution,1);
-const legacy=JSON.parse(JSON.stringify(new PotionGame().state));legacy.version=12;delete legacy.eventRotation;
-assert.deepEqual(sanitizeSave(legacy).eventRotation,{index:0,elapsedMs:0,solution:0});
-const memory=new Map([['shop',JSON.stringify(legacy)]]),storage={getItem:key=>memory.get(key)||null,setItem:(key,value)=>memory.set(key,value)};
-assert.equal(loadStoredGame(storage,'shop').blocked,false);
-assert.ok(memory.has('shop-v12-backup'));
-for(const invalid of [{index:11,elapsedMs:0,solution:0},{index:0,elapsedMs:EVENT_CYCLE_MS,solution:0},{index:0,elapsedMs:-1,solution:0},{index:0,elapsedMs:0,solution:1.5}])assert.throws(()=>sanitizeSave({...legacy,version:13,eventRotation:invalid}),/event progress/);
-function drops(active){const counts={ticket:0,solution:0};for(let n=0;n<101;n++){const belt=new MaterialConveyor(0,[0,0,0],()=>(n+.5)/101,()=>({eventActive:active}));const kind=belt.items[0].kind;if(kind)counts[kind]++;}return counts;}
-assert.deepEqual(drops(true),{ticket:1,solution:1});
-assert.deepEqual(drops(false),{ticket:1,solution:0});
-console.log('Passed: 15/5 timing, full rotation, save migration, redemption, ownership, caps, and matching ticket/token drop rates.');
+const {PotionGame,MaterialConveyor,EVENTS,EVENT_CYCLE_MS,INITIAL,sanitizeSave}=require('./core.js');
+const game=new PotionGame();game.state.eventRotation={index:4,elapsedMs:123456,solution:77};game.state.costumes.push(EVENTS[0].skins[0]);const held=JSON.parse(JSON.stringify(game.state.eventRotation));for(let n=0;n<1000;n++)game.recordPlayTime(2000);assert.deepEqual(game.state.eventRotation,held);assert.equal(game.eventInfo().active,false);assert.equal(game.eventInfo().onHold,true);assert.equal(game.collectSolution(),false);assert.equal(game.redeemEvent(4,'boosts'),false);assert.equal(game.redeemEvent(4,EVENTS[4].skins[0]),false);assert.deepEqual(game.state.eventRotation,held);assert(game.equipCostume(EVENTS[0].skins[0]));
+const restored=new PotionGame(sanitizeSave(JSON.parse(JSON.stringify(game.state))));assert.deepEqual(restored.state.eventRotation,held);assert(restored.state.costumes.includes(EVENTS[0].skins[0]));
+for(const version of [12,13,17]){const old=INITIAL();old.version=version;delete old.eventRush;if(version<13)delete old.eventRotation;else old.eventRotation=held;const s=sanitizeSave(old);assert.equal(s.version,18);assert.deepEqual(s.eventRotation,version<13?{index:0,elapsedMs:0,solution:0}:held);}
+for(const invalid of [{index:11,elapsedMs:0,solution:0},{index:0,elapsedMs:EVENT_CYCLE_MS,solution:0},{index:0,elapsedMs:-1,solution:0},{index:0,elapsedMs:0,solution:1.5}])assert.throws(()=>sanitizeSave({...INITIAL(),eventRotation:invalid}),/event progress/);
+for(const event of EVENTS)for(const id of event.skins){assert.equal(game.buyCostume(id),false);assert.equal(game.voucherEligible(id),false,'historical pools wait for migration');}
+const belt=new MaterialConveyor(1000,[0,0,0],()=>.985,()=>({eventActive:game.eventInfo().active}));assert(belt.items.every(item=>item.kind!=='solution'));
+console.log('Passed: all 11 historical events on hold, exact legacy position/currency and owned skins retained, no old drops/redemption/rotation, old saves migrate safely.');

@@ -1,0 +1,82 @@
+[
+  {
+    "file": "source/check-core.cjs",
+    "exit": 0
+  },
+  {
+    "file": "source/check-commissions.cjs",
+    "exit": 0
+  },
+  {
+    "file": "source/check-expeditions.cjs",
+    "exit": 0
+  },
+  {
+    "file": "source/check-expedition-stories.cjs",
+    "exit": 0
+  },
+  {
+    "file": "source/check-enhancement.cjs",
+    "exit": 0
+  },
+  {
+    "file": "source/check-success-upgrades.cjs",
+    "exit": 0
+  },
+  {
+    "file": "source/check-helpers.cjs",
+    "exit": 0
+  },
+  {
+    "file": "source/check-storage.cjs",
+    "exit": 0
+  },
+  {
+    "file": "source/check-save-files.cjs",
+    "exit": 0
+  },
+  {
+    "file": "source/check-migration.cjs",
+    "exit": 0
+  },
+  {
+    "file": "source/check-ui.cjs",
+    "exit": 1
+  },
+  {
+    "file": "source/check-presentation.cjs",
+    "exit": 0
+  },
+  {
+    "file": "source/check-settings.cjs",
+    "exit": 0
+  },
+  {
+    "file": "source/check-audio.cjs",
+    "exit": 0
+  },
+  {
+    "file": "source/check-mail.cjs",
+    "exit": 0
+  },
+  {
+    "file": "source/check-events.cjs",
+    "exit": 0
+  },
+  {
+    "file": "source/check-visitors.cjs",
+    "exit": 0
+  },
+  {
+    "file": "source/check-economy.cjs",
+    "exit": 0
+  },
+  {
+    "file": "source/check-late-balance.cjs",
+    "exit": 1
+  },
+  {
+    "file": "source/check-build.cjs",
+    "exit": 0
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "openingReload": true,
+  "activeReload": true,
+  "collection": true,
+  "deliveryIsolation": true,
+  "voucherUI": true,
+  "replay": true,
+  "legacyHold": true,
+  "keyboard": true,
+  "quotaRollback": true,
+  "packing": true,
+  "transfer": true,
+  "layouts": [
+    {
+      "width": 1366,
+      "dialog": 780,
+      "overflow": false,
+      "sceneControls": true,
+      "inEventSection": true,
+      "desktopToRight": true,
+      "panelOverflow": false
+    },
+    {
+      "width": 390,
+      "dialog": 378,
+      "overflow": false,
+      "sceneControls": true,
+      "inEventSection": true,
+      "desktopToRight": true,
+      "panelOverflow": false
+    },
+    {
+      "width": 320,
+      "dialog": 308,
+      "overflow": false,
+      "sceneControls": true,
+      "inEventSection": true,
+      "desktopToRight": true,
+      "panelOverflow": false
+    }
+  ],
+  "errors": []
+}

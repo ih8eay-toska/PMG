@@ -1,0 +1,53 @@
+{
+  "results": [
+    {
+      "width": 1366,
+      "id": "event-dialog",
+      "slice": "72",
+      "paper": "rgb(237, 236, 232)",
+      "icon": "NewEventIcon.png",
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "id": "game-menu",
+      "slice": "72",
+      "paper": "rgb(237, 236, 232)",
+      "icon": "OriginalMenuSettings.png",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "id": "event-dialog",
+      "slice": "72",
+      "paper": "rgb(237, 236, 232)",
+      "icon": "NewEventIcon.png",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "id": "game-menu",
+      "slice": "72",
+      "paper": "rgb(237, 236, 232)",
+      "icon": "OriginalMenuSettings.png",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "id": "event-dialog",
+      "slice": "72",
+      "paper": "rgb(237, 236, 232)",
+      "icon": "NewEventIcon.png",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "id": "game-menu",
+      "slice": "72",
+      "paper": "rgb(237, 236, 232)",
+      "icon": "OriginalMenuSettings.png",
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

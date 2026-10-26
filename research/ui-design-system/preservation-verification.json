@@ -1,0 +1,112 @@
+{
+  "source/core.js": {
+    "before": "83b38815564c5895b931eca2d1adfd04668bb723502d619f2791d73de4e6d020",
+    "after": "83b38815564c5895b931eca2d1adfd04668bb723502d619f2791d73de4e6d020",
+    "unchanged": true
+  },
+  "source/storage.js": {
+    "before": "9a246d4e15c0a0572cf149d47d6aada2994df754ec0c19212d15efdc3c6523e5",
+    "after": "9a246d4e15c0a0572cf149d47d6aada2994df754ec0c19212d15efdc3c6523e5",
+    "unchanged": true
+  },
+  "data/achievement-lore.json": {
+    "before": "e511bf0e6936619cee1516a7bf545538a883cdfcebf2c5e77309f3528f45d036",
+    "after": "e511bf0e6936619cee1516a7bf545538a883cdfcebf2c5e77309f3528f45d036",
+    "unchanged": true
+  },
+  "data/brewer-dialogue.json": {
+    "before": "510a491da4758cd61e424bba3440141f25b4e7d19a8cfdc318a7f1086f20fb3b",
+    "after": "510a491da4758cd61e424bba3440141f25b4e7d19a8cfdc318a7f1086f20fb3b",
+    "unchanged": true
+  },
+  "data/costumes.json": {
+    "before": "b7022d64d4cb21cba223acc4a7c2c91098820f360268e677f43456615e9b602f",
+    "after": "b7022d64d4cb21cba223acc4a7c2c91098820f360268e677f43456615e9b602f",
+    "unchanged": true
+  },
+  "data/economy.json": {
+    "before": "763c2d879c94eab70205a341f3a31dc6051ff220bbf3b760b36d59803c1a9f73",
+    "after": "763c2d879c94eab70205a341f3a31dc6051ff220bbf3b760b36d59803c1a9f73",
+    "unchanged": true
+  },
+  "data/event-stories.json": {
+    "before": "8a40da01e4752df439b84918e2644fcac9a047e433eb94c31996973b28b5d780",
+    "after": "8a40da01e4752df439b84918e2644fcac9a047e433eb94c31996973b28b5d780",
+    "unchanged": true
+  },
+  "data/expedition-chapters.json": {
+    "before": "c23f3a231f799bb918f095780b61fcc79cbc1bb93894370213ff3c260dd8588b",
+    "after": "c23f3a231f799bb918f095780b61fcc79cbc1bb93894370213ff3c260dd8588b",
+    "unchanged": true
+  },
+  "data/expedition-jobs.json": {
+    "before": "5cd5c28586920012d2ae4be9cff8868dd2a7691a3d931eb42d09ec2ce1b98cf8",
+    "after": "5cd5c28586920012d2ae4be9cff8868dd2a7691a3d931eb42d09ec2ce1b98cf8",
+    "unchanged": true
+  },
+  "data/expedition-stories.json": {
+    "before": "23856892de11043c5d2e1044eea3a68f649b5cd4054b19a495427872b47b56b8",
+    "after": "23856892de11043c5d2e1044eea3a68f649b5cd4054b19a495427872b47b56b8",
+    "unchanged": true
+  },
+  "data/fairies.json": {
+    "before": "c0a05ecb81b1a9c4a4ba5728f882e766aa3f99c95dec0387619f656247c62572",
+    "after": "c0a05ecb81b1a9c4a4ba5728f882e766aa3f99c95dec0387619f656247c62572",
+    "unchanged": true
+  },
+  "data/flavor-text.json": {
+    "before": "cbd31e7f3af2c0eb889e43aceaef8c7cafd660ac2dc5d060a297a29c6d30b2e3",
+    "after": "cbd31e7f3af2c0eb889e43aceaef8c7cafd660ac2dc5d060a297a29c6d30b2e3",
+    "unchanged": true
+  },
+  "data/game-data.json": {
+    "before": "31bc701978295619bbfcea3d4e7458577ab21c03be51cc95be9f480150d59ea8",
+    "after": "31bc701978295619bbfcea3d4e7458577ab21c03be51cc95be9f480150d59ea8",
+    "unchanged": true
+  },
+  "data/material-descriptions.json": {
+    "before": "0e6ec27a93e47f7f3175411b01bbb9436564e3fbce0925dffb169d08994ac31a",
+    "after": "0e6ec27a93e47f7f3175411b01bbb9436564e3fbce0925dffb169d08994ac31a",
+    "unchanged": true
+  },
+  "data/original-achievements.json": {
+    "before": "fd28edbf5ae6284ecb96f341edc92c3cdb5a34f88f62f51551be93f250e8c3ca",
+    "after": "fd28edbf5ae6284ecb96f341edc92c3cdb5a34f88f62f51551be93f250e8c3ca",
+    "unchanged": true
+  },
+  "data/original-assets.json": {
+    "before": "a5627f00a98f08d25bb07912230d2c0bf4ab590a24cb4543b0aedae734cba01c",
+    "after": "a5627f00a98f08d25bb07912230d2c0bf4ab590a24cb4543b0aedae734cba01c",
+    "unchanged": true
+  },
+  "data/potion-supplements.json": {
+    "before": "a30235ae4af6f45476c8780272f7fc060aa988beed111af29596f4ba60d5bc7d",
+    "after": "a30235ae4af6f45476c8780272f7fc060aa988beed111af29596f4ba60d5bc7d",
+    "unchanged": true
+  },
+  "data/updates.json": {
+    "before": "81eec37b7a64b448717b02179f5d3fa2c375a90dad8c50ae4ee7fe6a8019d433",
+    "after": "81eec37b7a64b448717b02179f5d3fa2c375a90dad8c50ae4ee7fe6a8019d433",
+    "unchanged": true
+  },
+  "data/visitor-dialogue.json": {
+    "before": "fa2a16cff7cd0b795dc0fbaeefac7136ef1f4e5d48431fd7a31a15d7c57bd78b",
+    "after": "fa2a16cff7cd0b795dc0fbaeefac7136ef1f4e5d48431fd7a31a15d7c57bd78b",
+    "unchanged": true
+  },
+  "assets/extracted/background-big.png": {
+    "before": "7f63e4b9acc0690c3e132c8403f60884fdb76116e7962f7a410fc271ec62a77d",
+    "after": "7f63e4b9acc0690c3e132c8403f60884fdb76116e7962f7a410fc271ec62a77d",
+    "unchanged": true
+  },
+  "assets/extracted/title-frame.png": {
+    "before": "56a16e888ff668be2d9c26db6176fee4b255575c2a1aabb2b7d1e7a6ea3bc586",
+    "after": "56a16e888ff668be2d9c26db6176fee4b255575c2a1aabb2b7d1e7a6ea3bc586",
+    "unchanged": true
+  },
+  "assets/extracted/close.png": {
+    "before": "3e035e52cf619898e57dadfb6b634d43b4d3d6d110fa8ffacb54841dcd796b15",
+    "after": "3e035e52cf619898e57dadfb6b634d43b4d3d6d110fa8ffacb54841dcd796b15",
+    "unchanged": true
+  }
+}

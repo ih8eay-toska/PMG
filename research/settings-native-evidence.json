@@ -1,0 +1,1029 @@
+[
+  {
+    "name": "Sinsi.PotionMaker.GameSystem$$OnLightModeChanged",
+    "rva": "0x4a179c",
+    "calls": [
+      "UnityEngine.Application$$set_targetFrameRate"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Live2DCharacterBehaviour$$OnCharacterSettingsChanged",
+    "rva": "0x4b3360",
+    "calls": [
+      "UnityEngine.GameObject$$SetActive"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$get_Music",
+    "rva": "0x4049b0",
+    "calls": [],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$set_Music",
+    "rva": "0x404a14",
+    "calls": [
+      "UnityEngine.PlayerPrefs$$SetInt",
+      "UnityEngine.PlayerPrefs$$Save",
+      "Sinsi.PotionMaker.Settings.ChangeEventHandler$$Invoke"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$get_Sound",
+    "rva": "0x404b0c",
+    "calls": [],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$set_Sound",
+    "rva": "0x404b70",
+    "calls": [
+      "UnityEngine.PlayerPrefs$$SetInt",
+      "UnityEngine.PlayerPrefs$$Save",
+      "Sinsi.PotionMaker.Settings.ChangeEventHandler$$Invoke"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$get_Voice",
+    "rva": "0x404c68",
+    "calls": [],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$set_Voice",
+    "rva": "0x404ccc",
+    "calls": [
+      "UnityEngine.PlayerPrefs$$SetInt",
+      "UnityEngine.PlayerPrefs$$Save",
+      "Sinsi.PotionMaker.Settings.ChangeEventHandler$$Invoke"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$get_Character",
+    "rva": "0x404dc4",
+    "calls": [],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$set_Character",
+    "rva": "0x404e28",
+    "calls": [
+      "UnityEngine.PlayerPrefs$$SetInt",
+      "UnityEngine.PlayerPrefs$$Save",
+      "Sinsi.PotionMaker.Settings.ChangeEventHandler$$Invoke"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$get_LightMode",
+    "rva": "0x404f20",
+    "calls": [],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$set_LightMode",
+    "rva": "0x404f84",
+    "calls": [
+      "UnityEngine.PlayerPrefs$$SetInt",
+      "UnityEngine.PlayerPrefs$$Save",
+      "Sinsi.PotionMaker.Settings.ChangeEventHandler$$Invoke"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$get_ConfirmSell",
+    "rva": "0x40507c",
+    "calls": [],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$set_ConfirmSell",
+    "rva": "0x4050e0",
+    "calls": [
+      "UnityEngine.PlayerPrefs$$SetInt",
+      "UnityEngine.PlayerPrefs$$Save",
+      "Sinsi.PotionMaker.Settings.ChangeEventHandler$$Invoke"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$get_PushNotification",
+    "rva": "0x4051d8",
+    "calls": [],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$set_PushNotification",
+    "rva": "0x40523c",
+    "calls": [
+      "UnityEngine.PlayerPrefs$$SetInt",
+      "UnityEngine.PlayerPrefs$$Save",
+      "Sinsi.PotionMaker.Settings.ChangeEventHandler$$Invoke"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$get_ImmersiveMode",
+    "rva": "0x405334",
+    "calls": [],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$set_ImmersiveMode",
+    "rva": "0x405398",
+    "calls": [
+      "UnityEngine.PlayerPrefs$$SetInt",
+      "UnityEngine.PlayerPrefs$$Save",
+      "Sinsi.PotionMaker.Settings.ChangeEventHandler$$Invoke"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$get_Language",
+    "rva": "0x405490",
+    "calls": [],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$set_Language",
+    "rva": "0x4054f4",
+    "calls": [
+      "UnityEngine.PlayerPrefs$$SetInt",
+      "UnityEngine.PlayerPrefs$$Save",
+      "Sinsi.PotionMaker.Settings.ChangeEventHandler$$Invoke"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$add_MusicChanged",
+    "rva": "0x4055c8",
+    "calls": [
+      "System.Delegate$$Combine"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$remove_MusicChanged",
+    "rva": "0x4056c0",
+    "calls": [
+      "System.Delegate$$Remove"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$add_SoundChanged",
+    "rva": "0x4057b8",
+    "calls": [
+      "System.Delegate$$Combine"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$remove_SoundChanged",
+    "rva": "0x4058b0",
+    "calls": [
+      "System.Delegate$$Remove"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$add_VoiceChanged",
+    "rva": "0x4059a8",
+    "calls": [
+      "System.Delegate$$Combine"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$remove_VoiceChanged",
+    "rva": "0x405aa0",
+    "calls": [
+      "System.Delegate$$Remove"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$add_CharacterChanged",
+    "rva": "0x405b98",
+    "calls": [
+      "System.Delegate$$Combine"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$remove_CharacterChanged",
+    "rva": "0x405c90",
+    "calls": [
+      "System.Delegate$$Remove"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$add_LightModeChanged",
+    "rva": "0x405d88",
+    "calls": [
+      "System.Delegate$$Combine"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$remove_LightModeChanged",
+    "rva": "0x405e80",
+    "calls": [
+      "System.Delegate$$Remove"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$add_ConfirmSellChanged",
+    "rva": "0x405f78",
+    "calls": [
+      "System.Delegate$$Combine"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$remove_ConfirmSellChanged",
+    "rva": "0x406070",
+    "calls": [
+      "System.Delegate$$Remove"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$add_PushNotificationChanged",
+    "rva": "0x406168",
+    "calls": [
+      "System.Delegate$$Combine"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$remove_PushNotificationChanged",
+    "rva": "0x406260",
+    "calls": [
+      "System.Delegate$$Remove"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$add_ImmersiveModeChanged",
+    "rva": "0x406358",
+    "calls": [
+      "System.Delegate$$Combine"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$remove_ImmersiveModeChanged",
+    "rva": "0x406450",
+    "calls": [
+      "System.Delegate$$Remove"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$add_LanguageChanged",
+    "rva": "0x406548",
+    "calls": [
+      "System.Delegate$$Combine"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$remove_LanguageChanged",
+    "rva": "0x406640",
+    "calls": [
+      "System.Delegate$$Remove"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$.cctor",
+    "rva": "0x406738",
+    "calls": [
+      "Halak.Core.EasySecurity$$Xor",
+      "Halak.Core.EasySecurity$$Xor",
+      "Halak.Core.EasySecurity$$Xor",
+      "Halak.Core.EasySecurity$$Xor",
+      "Halak.Core.EasySecurity$$Xor",
+      "Halak.Core.EasySecurity$$Xor",
+      "Halak.Core.EasySecurity$$Xor",
+      "Halak.Core.EasySecurity$$Xor",
+      "Halak.Core.EasySecurity$$Xor",
+      "Sinsi.PotionMaker.Settings$$Load"
+    ],
+    "literalCandidates": [
+      "'pm-immersive-mode'",
+      "'pm-light'",
+      "'pm-sell'",
+      "'pm-character'",
+      "'pm-voice'",
+      "'pm-music'",
+      "'pm-push-notification'",
+      "'pm-sound'",
+      "'pm-language-4'",
+      "'x-cp20261'",
+      "'F1'",
+      "'true'",
+      "' Clipping:'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$Load",
+    "rva": "0x406904",
+    "calls": [
+      "UnityEngine.PlayerPrefs$$GetInt",
+      "UnityEngine.PlayerPrefs$$GetInt",
+      "UnityEngine.PlayerPrefs$$GetInt",
+      "UnityEngine.PlayerPrefs$$GetInt",
+      "UnityEngine.PlayerPrefs$$GetInt",
+      "UnityEngine.PlayerPrefs$$GetInt",
+      "UnityEngine.PlayerPrefs$$GetInt",
+      "UnityEngine.PlayerPrefs$$GetInt",
+      "Sinsi.PotionMaker.Settings$$GetDefaultLanguage",
+      "UnityEngine.PlayerPrefs$$GetInt"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$GetDefaultLanguage",
+    "rva": "0x406ac8",
+    "calls": [
+      "UnityEngine.Application$$get_systemLanguage"
+    ],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.Settings$$Reset",
+    "rva": "0x406b54",
+    "calls": [
+      "UnityEngine.PlayerPrefs$$DeleteKey",
+      "UnityEngine.PlayerPrefs$$DeleteKey",
+      "UnityEngine.PlayerPrefs$$DeleteKey",
+      "UnityEngine.PlayerPrefs$$DeleteKey",
+      "UnityEngine.PlayerPrefs$$DeleteKey",
+      "UnityEngine.PlayerPrefs$$DeleteKey",
+      "UnityEngine.PlayerPrefs$$DeleteKey",
+      "UnityEngine.PlayerPrefs$$DeleteKey",
+      "UnityEngine.PlayerPrefs$$DeleteKey",
+      "Sinsi.PotionMaker.Settings$$Load"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.CauldronGUI$$RefreshBoiling",
+    "rva": "0x448d6c",
+    "calls": [
+      "UnityEngine.Object$$op_Inequality",
+      "Sinsi.PotionMaker.GUI.Dialogs$$get_IsActive",
+      "UnityEngine.GameObject$$SetActive"
+    ],
+    "literalCandidates": [
+      "'()Ljava/lang/Class;'",
+      "'F1'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.CauldronGUI$$RefreshBoiling",
+    "rva": "0x448fac",
+    "calls": [
+      "Sinsi.PotionMaker.GUI.CauldronGUI$$RefreshBoiling"
+    ],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.CauldronGUI$$OnLightModeChanged",
+    "rva": "0x448fb0",
+    "calls": [
+      "Sinsi.PotionMaker.GUI.CauldronGUI$$RefreshBoiling"
+    ],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.EnhancementGUI$$OnSellButtonClicked",
+    "rva": "0x457ee8",
+    "calls": [
+      "Halak.Sound2D$$Play",
+      "Sinsi.PotionMaker.GUI.Dialogs$$ShowSellBox",
+      "Sinsi.PotionMaker.Core.Cauldron$$Sell",
+      "Sinsi.PotionMaker.GameSystem$$SaveAutomatically"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'Era value was not valid.'",
+      "'()Ljava/lang/Class;'",
+      "'valueCount'",
+      "'&&='"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$get_IsToggled",
+    "rva": "0x473ff8",
+    "calls": [],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$set_IsToggled",
+    "rva": "0x474000",
+    "calls": [
+      "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$Refresh",
+      "UnityEngine.Events.UnityEvent$$Invoke"
+    ],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$get_ToggleChanged",
+    "rva": "0x474098",
+    "calls": [
+      "UnityEngine.UI.Button.ButtonClickedEvent$$.ctor"
+    ],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$set_ToggleChanged",
+    "rva": "0x474100",
+    "calls": [],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$Awake",
+    "rva": "0x474108",
+    "calls": [
+      "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$Refresh"
+    ],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$UnityEngine.EventSystems.IPointerClickHandler.OnPointerClick",
+    "rva": "0x47410c",
+    "calls": [
+      "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$set_IsToggled"
+    ],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$Refresh",
+    "rva": "0x47404c",
+    "calls": [
+      "UnityEngine.GameObject$$SetActive",
+      "UnityEngine.GameObject$$SetActive"
+    ],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$.ctor",
+    "rva": "0x47411c",
+    "calls": [
+      "UnityEngine.MonoBehaviour$$.ctor"
+    ],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SellBoxGUI$$OnSellButtonClicked",
+    "rva": "0x404374",
+    "calls": [
+      "Sinsi.PotionMaker.Core.Cauldron$$Sell",
+      "Sinsi.PotionMaker.GameSystem$$SaveAutomatically"
+    ],
+    "literalCandidates": [
+      "'&&='"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI.<>c$$.cctor",
+    "rva": "0x57fac0",
+    "calls": [
+      "System.Object$$.ctor"
+    ],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI.<>c$$.ctor",
+    "rva": "0x57fb20",
+    "calls": [
+      "System.Object$$.ctor"
+    ],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI.<>c$$<OnRefreshAchievementsButtonClicked>b__36_0",
+    "rva": "0x57fb28",
+    "calls": [],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI.<SetupCredits>d__43$$.ctor",
+    "rva": "0x57fb2c",
+    "calls": [
+      "System.Object$$.ctor"
+    ],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI.<SetupCredits>d__43$$System.IDisposable.Dispose",
+    "rva": "0x57fb58",
+    "calls": [],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI.<SetupCredits>d__43$$MoveNext",
+    "rva": "0x57fb5c",
+    "calls": [
+      "UnityEngine.WaitForSeconds$$.ctor",
+      "Sinsi.PotionMaker.GUI.SettingsGUI$$GetCredits"
+    ],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI.<SetupCredits>d__43$$System.Collections.Generic.IEnumerator<System.Object>.get_Current",
+    "rva": "0x57fc24",
+    "calls": [],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI.<SetupCredits>d__43$$System.Collections.IEnumerator.Reset",
+    "rva": "0x57fc2c",
+    "calls": [
+      "System.NotSupportedException$$.ctor"
+    ],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI.<SetupCredits>d__43$$System.Collections.IEnumerator.get_Current",
+    "rva": "0x57fc6c",
+    "calls": [],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$get_Login",
+    "rva": "0x406c60",
+    "calls": [],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$get_Logout",
+    "rva": "0x406c68",
+    "calls": [],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$Awake",
+    "rva": "0x406c70",
+    "calls": [
+      "Sinsi.PotionMaker.GUI.DialogGUI$$Awake",
+      "System.Runtime.CompilerServices.RuntimeHelpers$$InitializeArray",
+      "UnityEngine.Object$$op_Inequality",
+      "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$get_ToggleChanged",
+      "UnityEngine.Events.UnityAction$$.ctor",
+      "UnityEngine.Events.UnityEvent$$AddListener",
+      "UnityEngine.Object$$op_Inequality",
+      "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$get_ToggleChanged",
+      "UnityEngine.Events.UnityAction$$.ctor",
+      "UnityEngine.Events.UnityEvent$$AddListener",
+      "UnityEngine.Object$$op_Inequality",
+      "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$get_ToggleChanged",
+      "UnityEngine.Events.UnityAction$$.ctor",
+      "UnityEngine.Events.UnityEvent$$AddListener",
+      "UnityEngine.Object$$op_Inequality",
+      "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$get_ToggleChanged",
+      "UnityEngine.Events.UnityAction$$.ctor",
+      "UnityEngine.Events.UnityEvent$$AddListener",
+      "UnityEngine.Object$$op_Inequality",
+      "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$get_ToggleChanged",
+      "UnityEngine.Events.UnityAction$$.ctor",
+      "UnityEngine.Events.UnityEvent$$AddListener",
+      "UnityEngine.Object$$op_Inequality",
+      "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$get_ToggleChanged",
+      "UnityEngine.Events.UnityAction$$.ctor",
+      "UnityEngine.Events.UnityEvent$$AddListener",
+      "UnityEngine.Object$$op_Inequality",
+      "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$get_ToggleChanged",
+      "UnityEngine.Events.UnityAction$$.ctor",
+      "UnityEngine.Events.UnityEvent$$AddListener",
+      "UnityEngine.Object$$op_Inequality",
+      "UnityEngine.Events.UnityAction$$.ctor",
+      "UnityEngine.Events.UnityEvent$$AddListener",
+      "UnityEngine.Object$$op_Inequality",
+      "UnityEngine.Events.UnityAction$$.ctor",
+      "UnityEngine.Events.UnityEvent$$AddListener",
+      "UnityEngine.Object$$op_Inequality",
+      "UnityEngine.Events.UnityAction$$.ctor",
+      "UnityEngine.Events.UnityEvent$$AddListener",
+      "UnityEngine.Object$$op_Inequality",
+      "UnityEngine.Events.UnityAction$$.ctor",
+      "UnityEngine.Events.UnityEvent$$AddListener",
+      "UnityEngine.Object$$op_Inequality",
+      "UnityEngine.Events.UnityAction$$.ctor",
+      "UnityEngine.Events.UnityEvent$$AddListener",
+      "UnityEngine.Object$$op_Inequality",
+      "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$get_ToggleChanged",
+      "UnityEngine.Events.UnityAction$$.ctor",
+      "UnityEngine.Events.UnityEvent$$AddListener",
+      "UnityEngine.Object$$op_Inequality",
+      "UnityEngine.Events.UnityAction$$.ctor",
+      "UnityEngine.Events.UnityEvent$$AddListener",
+      "System.EventHandler$$.ctor",
+      "Sinsi.PotionMaker.GameSystem$$add_LoggedIn",
+      "System.EventHandler$$.ctor",
+      "Sinsi.PotionMaker.GameSystem$$add_LoggedOut"
+    ],
+    "literalCandidates": [
+      "'true'",
+      "'**='",
+      "'Invalid time unit: '",
+      "'csIBM423'",
+      "'&&='"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$OnEnable",
+    "rva": "0x4075f4",
+    "calls": [
+      "Sinsi.PotionMaker.GUI.DialogGUI$$OnEnable",
+      "Sinsi.PotionMaker.GUI.SettingsGUI$$Refresh",
+      "Sinsi.PotionMaker.GUI.SettingsGUI$$SetupCredits",
+      "UnityEngine.MonoBehaviour$$StartCoroutine"
+    ],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$OnDestroy",
+    "rva": "0x407c98",
+    "calls": [
+      "UnityEngine.Object$$op_Inequality",
+      "System.EventHandler$$.ctor",
+      "Sinsi.PotionMaker.GameSystem$$remove_LoggedIn",
+      "System.EventHandler$$.ctor",
+      "Sinsi.PotionMaker.GameSystem$$remove_LoggedOut"
+    ],
+    "literalCandidates": [
+      "' was not found'",
+      "'&&='"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$Refresh",
+    "rva": "0x407634",
+    "calls": [
+      "UnityEngine.Object$$op_Inequality",
+      "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$set_IsToggled",
+      "UnityEngine.Object$$op_Inequality",
+      "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$set_IsToggled",
+      "UnityEngine.Object$$op_Inequality",
+      "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$set_IsToggled",
+      "UnityEngine.Object$$op_Inequality",
+      "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$set_IsToggled",
+      "UnityEngine.Object$$op_Inequality",
+      "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$set_IsToggled",
+      "UnityEngine.Object$$op_Inequality",
+      "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$set_IsToggled",
+      "UnityEngine.Object$$op_Inequality",
+      "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$set_IsToggled",
+      "UnityEngine.Object$$op_Inequality",
+      "Sinsi.PotionMaker.GUI.OnOffSwitchGUI$$set_IsToggled",
+      "UnityEngine.Object$$op_Inequality",
+      "UnityEngine.GameObject$$SetActive"
+    ],
+    "literalCandidates": [
+      "'()Ljava/lang/Class;'",
+      "'F1'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$OnMusicSwitchClicked",
+    "rva": "0x407e2c",
+    "calls": [
+      "Sinsi.PotionMaker.Settings$$set_Music"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$OnSoundSwitchClicked",
+    "rva": "0x407ea0",
+    "calls": [
+      "Sinsi.PotionMaker.Settings$$set_Sound"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$OnVoiceSwitchClicked",
+    "rva": "0x407f14",
+    "calls": [
+      "Sinsi.PotionMaker.Settings$$set_Voice"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$OnCharacterSwitchClicked",
+    "rva": "0x407f88",
+    "calls": [
+      "Sinsi.PotionMaker.Settings$$set_Character"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$OnLightSwitchClicked",
+    "rva": "0x407ffc",
+    "calls": [
+      "Sinsi.PotionMaker.Settings$$set_LightMode"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$OnPushNotificationSwitchClicked",
+    "rva": "0x408070",
+    "calls": [
+      "Sinsi.PotionMaker.Settings$$set_PushNotification"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$OnSellSwitchClicked",
+    "rva": "0x4080e4",
+    "calls": [
+      "Sinsi.PotionMaker.Settings$$set_ConfirmSell"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$OnLanguageButtonClicked",
+    "rva": "0x408158",
+    "calls": [
+      "System.Array$$IndexOf<SupportedLanguage>",
+      "Sinsi.PotionMaker.Settings$$set_Language",
+      "Sinsi.PotionMaker.GUI.SettingsGUI$$Refresh"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$OnInquiryButtonClicked",
+    "rva": "0x408264",
+    "calls": [
+      "Sinsi.PotionMaker.Core.User$$get_Current",
+      "Sinsi.PotionMaker.Core.Workshop$$get_DisplayId",
+      "System.String$$Format",
+      "UnityEngine.Application$$OpenURL"
+    ],
+    "literalCandidates": [
+      "'https://docs.google.com/forms/d/1SgzXSmVqSnBlY3aMq-p_EmJqx8_fAeehYdmDEgM7SOs/viewform?entry.353287543={0}&entry.1814366217={1}&entry.1626721404'",
+      "'https://docs.google.com/forms/d/10Er_gCMnwxmMNg3qYEZS_qDFdpUPe-v-ncyRsbfWfTk/viewform?entry.1900595893={0}&entry.927550931={1}&entry.893459603'",
+      "'https://docs.google.com/forms/d/1vgmsg5Yw9EnZMAr9SAMcKJPB7WVY2l8xmptrUSHnd_8/viewform?entry.2094319803={0}&entry.1529443426={1}&entry.1681851382'",
+      "'F1'",
+      "'string/function/table expected'",
+      "'()Ljava/lang/Class;'",
+      "'fairy-ability-stamina'",
+      "'Creating AndroidJavaObject from '"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$OnRefreshAchievementsButtonClicked",
+    "rva": "0x4084b0",
+    "calls": [
+      "UnityEngine.Social$$get_localUser",
+      "Sinsi.PotionMaker.Core.User$$get_Current",
+      "Sinsi.PotionMaker.Core.AchievementInventory$$get_Earns",
+      "System.String$$IsNullOrEmpty",
+      "System.Action<bool>$$.ctor",
+      "UnityEngine.Social$$ReportProgress",
+      "Sinsi.PotionMaker.Core.UnauthenticatedWarning$$.ctor",
+      "Sinsi.PotionMaker.GUI.Dialogs$$ShowAlertBox"
+    ],
+    "literalCandidates": [
+      "\"Passed argument 'args[0]' is of the wrong type. Type:{0} Expected:{1}\"",
+      "'**='",
+      "'function arg is not a function!'",
+      "'true'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$OnLoginButtonClicked",
+    "rva": "0x408abc",
+    "calls": [
+      "Sinsi.PotionMaker.GameSystem$$Login"
+    ],
+    "literalCandidates": [
+      "'&&='"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$OnLogoutButtonClicked",
+    "rva": "0x408b64",
+    "calls": [
+      "Sinsi.PotionMaker.GameSystem$$Logout"
+    ],
+    "literalCandidates": [
+      "'&&='"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$OnImmersiveModeButtonClicked",
+    "rva": "0x408c0c",
+    "calls": [
+      "Sinsi.PotionMaker.Settings$$set_ImmersiveMode"
+    ],
+    "literalCandidates": [
+      "'F1'",
+      "'()Ljava/lang/Class;'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$OnWebSiteButtonClicked",
+    "rva": "0x408c80",
+    "calls": [
+      "UnityEngine.Application$$OpenURL"
+    ],
+    "literalCandidates": [
+      "'http://blog.sinsiroad.com/'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$OnLoggedIn",
+    "rva": "0x408cc8",
+    "calls": [
+      "Sinsi.PotionMaker.GUI.SettingsGUI$$Refresh"
+    ],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$OnLoggedOut",
+    "rva": "0x408ccc",
+    "calls": [
+      "Sinsi.PotionMaker.GUI.SettingsGUI$$Refresh"
+    ],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$SetupCredits",
+    "rva": "0x407c2c",
+    "calls": [
+      "Sinsi.PotionMaker.GUI.SettingsGUI.<SetupCredits>d__43$$.ctor"
+    ],
+    "literalCandidates": []
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$GetCredits",
+    "rva": "0x408cd0",
+    "calls": [],
+    "literalCandidates": [
+      "'<b>Staff</b>\\nKutata\\n  - Design\\n  - Graphic\\nHalak\\n  - Programming\\nMauve\\n  - Graphic\\n\\n\\n\\n<b>Special Thanks</b>\\n\u25a0BGM\\nDOVA-SYNDROME\\nhttp://dova-s.jp/\\n\u25a0Sound Effects\\n\u30b6\u30fb\u30de\u30c3\u30c1\u30e1\u30a4\u30ab\u30a1\u30bahttp://osabisi.sakura.ne.jp/m2/\\n\u30d5\u30ea\u30fc\u52b9\u679c\u97f3\u7d20\u6750 \u304f\u3089\u3052\u5de5\u5320\\nhttp://www.kurage-kosho.info/\\nSoundLabel\\nhttp://www.snd-jpn.net/\\nNASA Mission Audio\\n\\nmyogoon\\nDarkttd\\n\\nUshi Kun\\nlim pil gu\\nSinyagun\\nAlan\\nxianzhi001\\n804747533\\nmoneyhyh\\nJorge Beaven\\nTatsuto\\n\\n\\n\u24d22014-2015 Sinsiroad. All right reserved.'"
+    ]
+  },
+  {
+    "name": "Sinsi.PotionMaker.GUI.SettingsGUI$$.ctor",
+    "rva": "0x408d14",
+    "calls": [
+      "Sinsi.PotionMaker.GUI.DialogGUI$$.ctor"
+    ],
+    "literalCandidates": []
+  }
+]

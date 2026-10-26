@@ -1,0 +1,1365 @@
+{
+  "source": "Existing original APK extraction; read-only analysis",
+  "fairyTableSha256": "621ad17d48200c07ba6cf0071142ba5adaa814b53c379092b17a020c285e587b",
+  "rarity": [
+    {
+      "rarity": 1,
+      "label": "N",
+      "colorBranch": "0x49d33c"
+    },
+    {
+      "rarity": 2,
+      "label": "R",
+      "colorBranch": "0x49d354"
+    },
+    {
+      "rarity": 3,
+      "label": "S",
+      "colorBranch": "0x49d368"
+    },
+    {
+      "rarity": 4,
+      "label": "U",
+      "colorBranch": "0x49d37c"
+    },
+    {
+      "rarity": 5,
+      "label": "G",
+      "colorBranch": "0x49d3a0"
+    }
+  ],
+  "methods": [
+    {
+      "name": "Sinsi.PotionMaker.GUI.FairiesGUI$$get_AchievementRate",
+      "rva": "0x496850",
+      "calls": [
+        "Sinsi.PotionMaker.Core.User$$get_Current",
+        "Sinsi.PotionMaker.Core.FairyInventory$$Find",
+        "Sinsi.PotionMaker.Core.FairyOwnership$$get_LevelObject"
+      ]
+    },
+    {
+      "name": "Sinsi.PotionMaker.GUI.FairiesGUI$$CalculateOrderingKey",
+      "rva": "0x4970d4",
+      "calls": []
+    },
+    {
+      "name": "Sinsi.PotionMaker.GUI.FairyBookGUI$$Setup",
+      "rva": "0x4985f8",
+      "calls": [
+        "Sinsi.PotionMaker.Core.User$$get_Current",
+        "Sinsi.PotionMaker.Core.FairyInventory$$Find",
+        "System.Object$$.ctor",
+        "Halak.Core.EInt32$$op_Implicit",
+        "Sinsi.PotionMaker.GUI.FairyBookGUI$$Setup"
+      ]
+    },
+    {
+      "name": "Sinsi.PotionMaker.GUI.FairyBookGUI$$Setup",
+      "rva": "0x498750",
+      "calls": [
+        "Sinsi.PotionMaker.GUI.FairyBookGUI$$Emit",
+        "Sinsi.PotionMaker.Core.Models.EntityModel$$get_DisplayName",
+        "UnityEngine.GameObject$$get_transform",
+        "UnityEngine.Transform$$get_childCount",
+        "UnityEngine.Transform$$GetChild",
+        "UnityEngine.Component$$get_gameObject",
+        "UnityEngine.GameObject$$SetActive",
+        "Sinsi.PotionMaker.GUI.BookGUI$$Congratulate",
+        "Halak.Core.EInt32$$op_Implicit",
+        "Sinsi.PotionMaker.Core.Models.BaseLevelModelExtensions$$GetMaxExp",
+        "Halak.SingleplyCoroutine$$.ctor",
+        "Halak.SingleplyCoroutine$$.ctor",
+        "Sinsi.PotionMaker.GUI.FairyBookGUI$$DoAnimateExp",
+        "Halak.SingleplyCoroutine$$Start",
+        "UnityEngine.Component$$get_gameObject",
+        "Sinsi.PotionMaker.GUI.FairyBookGUI$$Refresh",
+        "UnityEngine.Component$$get_gameObject",
+        "UnityEngine.GameObject$$SetActive",
+        "UnityEngine.Component$$get_gameObject",
+        "UnityEngine.GameObject$$SetActive",
+        "UnityEngine.Component$$get_gameObject",
+        "UnityEngine.GameObject$$SetActive"
+      ]
+    },
+    {
+      "name": "Sinsi.PotionMaker.GUI.FairyBookGUI$$Refresh",
+      "rva": "0x498b78",
+      "calls": [
+        "Sinsi.PotionMaker.GUI.FairyBookGUI$$BuildLevelText",
+        "UnityEngine.GameObject$$SetActive",
+        "UnityEngine.UI.Graphic$$get_rectTransform",
+        "Sinsi.PotionMaker.Core.FairyOwnership$$get_ExpRate",
+        "UnityEngine.Mathf$$Clamp01",
+        "UnityEngine.RectTransform$$set_sizeDelta",
+        "Sinsi.PotionMaker.GUI.FairyBookGUI$$BuildAbilitiesText"
+      ]
+    },
+    {
+      "name": "Sinsi.PotionMaker.GUI.FairyBookGUI$$BuildLevelText",
+      "rva": "0x498cc0",
+      "calls": [
+        "System.Text.StringBuilder$$.ctor",
+        "Sinsi.PotionMaker.Core.FairyOwnership$$get_LevelObject",
+        "Halak.Core.Strings$$Get",
+        "System.Text.StringBuilder$$AppendLine",
+        "Sinsi.PotionMaker.Core.Models.BaseLevelModelExtensions$$GetMaxLevel",
+        "Halak.Core.Strings$$Get",
+        "System.Text.StringBuilder$$AppendLine",
+        "Sinsi.PotionMaker.Core.FairyOwnership$$get_LevelObject",
+        "Sinsi.PotionMaker.Core.Models.BaseLevelModelExtensions$$GetMaxLevel",
+        "Sinsi.PotionMaker.Core.FairyOwnership$$get_Exp",
+        "System.Int32$$ToString",
+        "Sinsi.PotionMaker.Core.FairyOwnership$$get_ExpNext",
+        "System.Int32$$ToString",
+        "Halak.Core.Strings$$Get",
+        "Sinsi.PotionMaker.Core.Models.ExplorableZoneModel$$get_LongDisplayName",
+        "System.String$$Format",
+        "System.String$$IsNullOrEmpty",
+        "System.Int32$$ToString",
+        "Halak.Core.Strings$$Get",
+        "System.Text.StringBuilder$$AppendLine",
+        "Halak.Core.Strings$$Get"
+      ]
+    },
+    {
+      "name": "Sinsi.PotionMaker.GUI.FairyBookGUI$$BuildAbilitiesText",
+      "rva": "0x49935c",
+      "calls": [
+        "System.Text.StringBuilder$$.ctor",
+        "Sinsi.PotionMaker.Core.FairyOwnership$$get_LevelObject",
+        "Sinsi.PotionMaker.Core.Models.FairyAbilityModel$$get_DisplayDescription",
+        "System.Text.StringBuilder$$AppendLine"
+      ]
+    },
+    {
+      "name": "Sinsi.PotionMaker.GUI.FairyBookGUI$$OnActivateButtonClicked",
+      "rva": "0x4994f4",
+      "calls": [
+        "Sinsi.PotionMaker.Core.User$$get_Current",
+        "Sinsi.PotionMaker.Core.FairyInventory$$Activate",
+        "Sinsi.PotionMaker.GUI.Dialogs$$HideFairies"
+      ]
+    },
+    {
+      "name": "Sinsi.PotionMaker.GUI.FairyBookGUI$$OnDeactivateButtonClicked",
+      "rva": "0x499880",
+      "calls": [
+        "Sinsi.PotionMaker.Core.User$$get_Current",
+        "Sinsi.PotionMaker.Core.FairyInventory$$Deactivate",
+        "Sinsi.PotionMaker.GUI.Dialogs$$HideFairies"
+      ]
+    },
+    {
+      "name": "Sinsi.PotionMaker.GUI.FairySlotGUI$$Setup",
+      "rva": "0x49cf80",
+      "calls": [
+        "Sinsi.PotionMaker.GUI.FairySlotGUI$$Setup"
+      ]
+    },
+    {
+      "name": "Sinsi.PotionMaker.GUI.FairySlotGUI$$Setup",
+      "rva": "0x49cf88",
+      "calls": [
+        "Halak.AssetDictionary$$get_Item",
+        "UnityEngine.UI.Image$$set_sprite",
+        "UnityEngine.Object$$op_Inequality",
+        "Sinsi.PotionMaker.GUI.FairySlotGUI$$GetRarityText",
+        "Sinsi.PotionMaker.GUI.FairySlotGUI$$GetRarityColor",
+        "UnityEngine.Color$$get_white",
+        "UnityEngine.Object$$op_Inequality",
+        "Sinsi.PotionMaker.Core.FairyOwnership$$get_LevelObject",
+        "System.String$$Format",
+        "UnityEngine.Object$$op_Inequality",
+        "UnityEngine.Component$$get_gameObject",
+        "UnityEngine.GameObject$$SetActive"
+      ]
+    },
+    {
+      "name": "Sinsi.PotionMaker.GUI.FairySlotGUI$$GetRarityText",
+      "rva": "0x49d270",
+      "calls": []
+    },
+    {
+      "name": "Sinsi.PotionMaker.GUI.FairySlotGUI$$GetRarityColor",
+      "rva": "0x49d310",
+      "calls": [
+        "UnityEngine.Color$$get_white",
+        "UnityEngine.Color$$get_yellow",
+        "UnityEngine.Color$$get_blue",
+        "UnityEngine.Color$$.ctor"
+      ]
+    }
+  ],
+  "layouts": [
+    {
+      "name": "Fairies",
+      "class": "FairiesGUI",
+      "key": "resources.assets:1575",
+      "nodes": [
+        {
+          "path": "Fairies",
+          "key": "resources.assets:1575",
+          "rect": {
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "size": {
+              "x": 634,
+              "y": 1024
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Background Big"
+              ]
+            },
+            {
+              "type": "CanvasGroup"
+            },
+            {
+              "type": "FairiesGUI"
+            }
+          ]
+        },
+        {
+          "path": "Fairies/Title Frame",
+          "key": "resources.assets:1571",
+          "rect": {
+            "position": {
+              "x": 0,
+              "y": -70
+            },
+            "size": {
+              "x": 448,
+              "y": 45
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Title Frame"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "Fairies/Icon",
+          "key": "resources.assets:1567",
+          "rect": {
+            "position": {
+              "x": -204,
+              "y": 420
+            },
+            "size": {
+              "x": 87,
+              "y": 78
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Fairies"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "Fairies/Title",
+          "key": "resources.assets:1545",
+          "rect": {
+            "position": {
+              "x": 13,
+              "y": 420
+            },
+            "size": {
+              "x": 279,
+              "y": 36
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Text",
+              "text": "Fairies"
+            },
+            {
+              "type": "Outline"
+            },
+            {
+              "type": "LocalizeText"
+            }
+          ]
+        },
+        {
+          "path": "Fairies/Close",
+          "key": "resources.assets:1561",
+          "rect": {
+            "position": {
+              "x": 248,
+              "y": 420
+            },
+            "size": {
+              "x": 86,
+              "y": 86
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": []
+            },
+            {
+              "type": "StandardButton"
+            }
+          ]
+        },
+        {
+          "path": "Fairies/Close/Image",
+          "key": "resources.assets:1569",
+          "rect": {
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "size": {
+              "x": 43,
+              "y": 43
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Close"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "Fairies/Achievement Rate",
+          "key": "resources.assets:1551",
+          "rect": {
+            "position": {
+              "x": 67,
+              "y": -156
+            },
+            "size": {
+              "x": 0,
+              "y": 30
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Text",
+              "text": "Achievement Rate"
+            },
+            {
+              "type": "LocalizeText"
+            },
+            {
+              "type": "ContentSizeFitter"
+            }
+          ]
+        },
+        {
+          "path": "Fairies/Achievement Rate/Slider",
+          "key": "resources.assets:1553",
+          "rect": {
+            "position": {
+              "x": 15,
+              "y": 0
+            },
+            "size": {
+              "x": 300,
+              "y": 38
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Progress Back"
+              ]
+            },
+            {
+              "type": "Slider"
+            }
+          ]
+        },
+        {
+          "path": "Fairies/Achievement Rate/Slider/Fill",
+          "key": "resources.assets:1555",
+          "rect": {
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "size": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Progress Fill"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "Fairies/Achievement Rate/Slider/Text",
+          "key": "resources.assets:1547",
+          "rect": {
+            "position": {
+              "x": 0,
+              "y": -1
+            },
+            "size": {
+              "x": -40,
+              "y": -10
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Text",
+              "text": "57%"
+            },
+            {
+              "type": "Outline"
+            }
+          ]
+        },
+        {
+          "path": "Fairies/Panel",
+          "key": "resources.assets:1563",
+          "rect": {
+            "position": {
+              "x": 0,
+              "y": -55
+            },
+            "size": {
+              "x": -70,
+              "y": -290
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "ScrollRect"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Inner Frame"
+              ]
+            },
+            {
+              "type": "RectMask2D"
+            }
+          ]
+        },
+        {
+          "path": "Fairies/Panel/Content",
+          "key": "resources.assets:1557",
+          "rect": {
+            "position": {
+              "x": -12,
+              "y": 0
+            },
+            "size": {
+              "x": -60,
+              "y": 0
+            }
+          },
+          "components": [
+            {
+              "type": "GridLayoutGroup"
+            },
+            {
+              "type": "ContentSizeFitter"
+            }
+          ]
+        },
+        {
+          "path": "Fairies/Panel/Scrollbar",
+          "key": "resources.assets:1577",
+          "rect": {
+            "position": {
+              "x": -30,
+              "y": 0
+            },
+            "size": {
+              "x": 25,
+              "y": -80
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Scrollbar"
+              ]
+            },
+            {
+              "type": "Scrollbar"
+            }
+          ]
+        },
+        {
+          "path": "Fairies/Panel/Scrollbar/Sliding Area",
+          "key": "resources.assets:1573",
+          "rect": {
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "size": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "components": []
+        },
+        {
+          "path": "Fairies/Panel/Scrollbar/Sliding Area/Handle",
+          "key": "resources.assets:1559",
+          "rect": {
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "size": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Scrollbar"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "Fairies/Panel/Scrollbar Up",
+          "key": "resources.assets:1549",
+          "rect": {
+            "position": {
+              "x": -30,
+              "y": -27
+            },
+            "size": {
+              "x": 27,
+              "y": 26
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Scrollbar Arrow"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "Fairies/Panel/Scrollbar Down",
+          "key": "resources.assets:1565",
+          "rect": {
+            "position": {
+              "x": -30,
+              "y": 27
+            },
+            "size": {
+              "x": 27,
+              "y": 26
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Scrollbar Arrow"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fairy Book",
+      "class": "FairyBookGUI",
+      "key": "resources.assets:1591",
+      "nodes": [
+        {
+          "path": "Fairy Book",
+          "key": "resources.assets:1591",
+          "rect": {
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "size": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Solid Color"
+              ]
+            },
+            {
+              "type": "CanvasGroup"
+            },
+            {
+              "type": "FairyBookGUI"
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book",
+          "key": "resources.assets:1579",
+          "rect": {
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "size": {
+              "x": 640,
+              "y": 452
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Book"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Fairy Container",
+          "key": "resources.assets:2217",
+          "rect": {
+            "position": {
+              "x": -141.10000610351562,
+              "y": 65.0999984741211
+            },
+            "size": {
+              "x": 100,
+              "y": 100
+            }
+          },
+          "components": []
+        },
+        {
+          "path": "Fairy Book/Book/Name Frame",
+          "key": "resources.assets:2208",
+          "rect": {
+            "position": {
+              "x": -133,
+              "y": -100
+            },
+            "size": {
+              "x": 210,
+              "y": 61
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Fairy Name Frame"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Name Frame/Name",
+          "key": "resources.assets:1597",
+          "rect": {
+            "position": {
+              "x": 0,
+              "y": -9
+            },
+            "size": {
+              "x": 0,
+              "y": -28
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Text",
+              "text": "Hello"
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Rarity Frame",
+          "key": "resources.assets:2209",
+          "rect": {
+            "position": {
+              "x": 137.89999389648438,
+              "y": 170.60000610351562
+            },
+            "size": {
+              "x": 250,
+              "y": 41
+            }
+          },
+          "components": [
+            {
+              "type": "GridLayoutGroup"
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Rarity Frame/Rarity",
+          "key": "resources.assets:2210",
+          "rect": {
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "size": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Rarity"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Rarity Frame/Rarity",
+          "key": "resources.assets:2211",
+          "rect": {
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "size": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Rarity"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Rarity Frame/Rarity",
+          "key": "resources.assets:2212",
+          "rect": {
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "size": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Rarity"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Rarity Frame/Rarity",
+          "key": "resources.assets:2213",
+          "rect": {
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "size": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Rarity"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Rarity Frame/Rarity",
+          "key": "resources.assets:2214",
+          "rect": {
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "size": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Rarity"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Level",
+          "key": "resources.assets:1593",
+          "rect": {
+            "position": {
+              "x": 145,
+              "y": -123.80000305175781
+            },
+            "size": {
+              "x": 255,
+              "y": 69.5999984741211
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Text",
+              "text": "Level\nMax\nExp"
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Exp",
+          "key": "resources.assets:2215",
+          "rect": {
+            "position": {
+              "x": 137.89999389648438,
+              "y": -168.8000030517578
+            },
+            "size": {
+              "x": 240,
+              "y": 13
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Quest Gauge Back"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Exp/Fill",
+          "key": "resources.assets:2216",
+          "rect": {
+            "position": {
+              "x": 1,
+              "y": 0
+            },
+            "size": {
+              "x": 107.83000183105469,
+              "y": 9
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Quest Gauge Fill"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Abilities Labels",
+          "key": "resources.assets:1277",
+          "rect": {
+            "position": {
+              "x": 145,
+              "y": -212.60000610351562
+            },
+            "size": {
+              "x": 255,
+              "y": 26
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Text",
+              "text": "Abilities"
+            },
+            {
+              "type": "LocalizeText"
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Abilities Container",
+          "key": "resources.assets:2207",
+          "rect": {
+            "position": {
+              "x": 145,
+              "y": -305.70001220703125
+            },
+            "size": {
+              "x": 255,
+              "y": 165.10000610351562
+            }
+          },
+          "components": [
+            {
+              "type": "ScrollRect"
+            },
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Solid Color"
+              ]
+            },
+            {
+              "type": "RectMask2D"
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Abilities Container/Abilities",
+          "key": "resources.assets:1278",
+          "rect": {
+            "position": {
+              "x": -11.5,
+              "y": 0
+            },
+            "size": {
+              "x": 231.89999389648438,
+              "y": 0
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Text",
+              "text": "Abilities"
+            },
+            {
+              "type": "ContentSizeFitter"
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Abilities Container/Scrollbar",
+          "key": "resources.assets:1344",
+          "rect": {
+            "position": {
+              "x": 117.5,
+              "y": 0
+            },
+            "size": {
+              "x": 10,
+              "y": 160
+            }
+          },
+          "components": [
+            {
+              "type": "Scrollbar"
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Abilities Container/Scrollbar/Sliding Area",
+          "key": "resources.assets:1343",
+          "rect": {
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "size": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "components": []
+        },
+        {
+          "path": "Fairy Book/Book/Abilities Container/Scrollbar/Sliding Area/Handle",
+          "key": "resources.assets:1342",
+          "rect": {
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "size": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Scrollbar 2"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Confirm",
+          "key": "resources.assets:2550",
+          "rect": {
+            "position": {
+              "x": 202,
+              "y": -283
+            },
+            "size": {
+              "x": 236,
+              "y": 70
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Message Box Button"
+              ]
+            },
+            {
+              "type": "StandardButton"
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Confirm/Icon",
+          "key": "resources.assets:2549",
+          "rect": {
+            "position": {
+              "x": -105,
+              "y": 14
+            },
+            "size": {
+              "x": 63,
+              "y": 74
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Message Yes"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Confirm/Label",
+          "key": "resources.assets:2548",
+          "rect": {
+            "position": {
+              "x": 0,
+              "y": -0.5
+            },
+            "size": {
+              "x": 0,
+              "y": -1
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Text",
+              "text": "Confirm"
+            },
+            {
+              "type": "LocalizeText"
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Activate",
+          "key": "resources.assets:1268",
+          "rect": {
+            "position": {
+              "x": -188,
+              "y": -283
+            },
+            "size": {
+              "x": 236,
+              "y": 70
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Message Box Button"
+              ]
+            },
+            {
+              "type": "StandardButton"
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Activate/Icon",
+          "key": "resources.assets:1269",
+          "rect": {
+            "position": {
+              "x": -105,
+              "y": 14
+            },
+            "size": {
+              "x": 63,
+              "y": 74
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Message Okay"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Activate/Label",
+          "key": "resources.assets:1270",
+          "rect": {
+            "position": {
+              "x": 0,
+              "y": -0.5
+            },
+            "size": {
+              "x": 0,
+              "y": -1
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Text",
+              "text": "Activate"
+            },
+            {
+              "type": "LocalizeText"
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Deactivate",
+          "key": "resources.assets:2542",
+          "rect": {
+            "position": {
+              "x": -188,
+              "y": -283
+            },
+            "size": {
+              "x": 236,
+              "y": 70
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Message Box Button"
+              ]
+            },
+            {
+              "type": "StandardButton"
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Deactivate/Icon",
+          "key": "resources.assets:2543",
+          "rect": {
+            "position": {
+              "x": -105,
+              "y": 14
+            },
+            "size": {
+              "x": 65,
+              "y": 75
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Image",
+              "sprites": [
+                "Message No"
+              ]
+            }
+          ]
+        },
+        {
+          "path": "Fairy Book/Book/Deactivate/Label",
+          "key": "resources.assets:2544",
+          "rect": {
+            "position": {
+              "x": 0,
+              "y": -0.5
+            },
+            "size": {
+              "x": 0,
+              "y": -1
+            }
+          },
+          "components": [
+            {
+              "type": "CanvasRenderer"
+            },
+            {
+              "type": "Text",
+              "text": "Deactivate"
+            },
+            {
+              "type": "LocalizeText"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

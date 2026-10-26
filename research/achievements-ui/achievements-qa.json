@@ -1,0 +1,301 @@
+{
+  "initial": {
+    "cards": 6,
+    "total": 46,
+    "pages": "Page 1 of 8",
+    "ready": "1 reward ready",
+    "futureHidden": true
+  },
+  "readOnly": {
+    "categories": [
+      {
+        "name": "All",
+        "valid": true
+      },
+      {
+        "name": "Brewing",
+        "valid": true
+      },
+      {
+        "name": "Coins",
+        "valid": true
+      },
+      {
+        "name": "Helpers",
+        "valid": true
+      },
+      {
+        "name": "Materials",
+        "valid": true
+      },
+      {
+        "name": "Expeditions",
+        "valid": true
+      },
+      {
+        "name": "Fairies",
+        "valid": true
+      },
+      {
+        "name": "Likeability",
+        "valid": true
+      }
+    ],
+    "empty": true,
+    "unchanged": true
+  },
+  "keyboard": true,
+  "detail": {
+    "title": "Welcome!",
+    "complete": true,
+    "claim": true
+  },
+  "rollback": {
+    "accepted": false,
+    "same": true
+  },
+  "firstClaim": {
+    "claimed": true,
+    "ruby": 1,
+    "ticket": 10,
+    "replaced": true,
+    "next": true,
+    "duplicate": false
+  },
+  "detailClaim": true,
+  "allClaims": {
+    "count": 176,
+    "unique": 176,
+    "rubies": 253,
+    "tickets": 1080,
+    "history": 176,
+    "finalCurrent": 46,
+    "duplicate": false
+  },
+  "mastery": {
+    "count": 75,
+    "full": 75,
+    "families": [
+      true,
+      true,
+      true
+    ]
+  },
+  "maxed": {
+    "earned": 75,
+    "count": "75 / 75",
+    "pages": "Page 1 of 13",
+    "loreUnchanged": true
+  },
+  "legacy": {
+    "earned": true,
+    "legacy": true,
+    "visible": true,
+    "note": true
+  },
+  "layouts": [
+    {
+      "width": 2560,
+      "height": 1440,
+      "size": "normal",
+      "bounds": true,
+      "noHorizontal": true,
+      "count": 9,
+      "expected": 9,
+      "footer": true,
+      "content": 397,
+      "gridHeight": 365,
+      "buttons": true,
+      "noOverlap": true
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "size": "large",
+      "bounds": true,
+      "noHorizontal": true,
+      "count": 9,
+      "expected": 9,
+      "footer": true,
+      "content": 383,
+      "gridHeight": 387,
+      "buttons": true,
+      "noOverlap": true
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "size": "normal",
+      "bounds": true,
+      "noHorizontal": true,
+      "count": 9,
+      "expected": 9,
+      "footer": true,
+      "content": 397,
+      "gridHeight": 365,
+      "buttons": true,
+      "noOverlap": true
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "size": "large",
+      "bounds": true,
+      "noHorizontal": true,
+      "count": 9,
+      "expected": 9,
+      "footer": true,
+      "content": 383,
+      "gridHeight": 387,
+      "buttons": true,
+      "noOverlap": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "size": "normal",
+      "bounds": true,
+      "noHorizontal": true,
+      "count": 6,
+      "expected": 6,
+      "footer": true,
+      "content": 238,
+      "gridHeight": 240,
+      "buttons": true,
+      "noOverlap": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "size": "large",
+      "bounds": true,
+      "noHorizontal": true,
+      "count": 6,
+      "expected": 6,
+      "footer": true,
+      "content": 224,
+      "gridHeight": 255,
+      "buttons": true,
+      "noOverlap": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "size": "normal",
+      "bounds": true,
+      "noHorizontal": true,
+      "count": 6,
+      "expected": 6,
+      "footer": true,
+      "content": 238,
+      "gridHeight": 240,
+      "buttons": true,
+      "noOverlap": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "size": "large",
+      "bounds": true,
+      "noHorizontal": true,
+      "count": 6,
+      "expected": 6,
+      "footer": true,
+      "content": 224,
+      "gridHeight": 255,
+      "buttons": true,
+      "noOverlap": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "size": "normal",
+      "bounds": true,
+      "noHorizontal": true,
+      "count": 6,
+      "expected": 6,
+      "footer": true,
+      "content": 362,
+      "gridHeight": 365,
+      "buttons": true,
+      "noOverlap": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "size": "large",
+      "bounds": true,
+      "noHorizontal": true,
+      "count": 6,
+      "expected": 6,
+      "footer": true,
+      "content": 349,
+      "gridHeight": 387,
+      "buttons": true,
+      "noOverlap": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "size": "normal",
+      "bounds": true,
+      "noHorizontal": true,
+      "count": 2,
+      "expected": 2,
+      "footer": true,
+      "content": 243,
+      "gridHeight": 248,
+      "buttons": true,
+      "noOverlap": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "size": "large",
+      "bounds": true,
+      "noHorizontal": true,
+      "count": 2,
+      "expected": 2,
+      "footer": true,
+      "content": 243,
+      "gridHeight": 263,
+      "buttons": true,
+      "noOverlap": true
+    },
+    {
+      "width": 320,
+      "height": 640,
+      "size": "normal",
+      "bounds": true,
+      "noHorizontal": true,
+      "count": 2,
+      "expected": 2,
+      "footer": true,
+      "content": 80,
+      "gridHeight": 248,
+      "buttons": true,
+      "noOverlap": true
+    },
+    {
+      "width": 320,
+      "height": 640,
+      "size": "large",
+      "bounds": true,
+      "noHorizontal": true,
+      "count": 2,
+      "expected": 2,
+      "footer": true,
+      "content": 80,
+      "gridHeight": 309,
+      "buttons": true,
+      "noOverlap": true
+    }
+  ],
+  "mobileDetail": {
+    "fits": true,
+    "scroll": true,
+    "footer": true
+  },
+  "saveReload": true,
+  "errors": []
+}

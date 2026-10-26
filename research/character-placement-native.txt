@@ -1,0 +1,390 @@
+
+Sinsi.PotionMaker.Live2DModel$$Start
+004b4b80 sub      sp, sp, #0xa0 
+004b4b84 stp      x20, x19, [sp, #0x80] 
+004b4b88 stp      x29, x30, [sp, #0x90] 
+004b4b8c add      x29, sp, #0x90 
+004b4b90 adrp     x20, #0xe88000 
+004b4b94 ldrb     w8, [x20, #0xed5] 
+004b4b98 mov      x19, x0 
+004b4b9c tbnz     w8, #0, #0x4b4bc0 
+004b4ba0 adrp     x0, #0xde6000 
+004b4ba4 ldr      x0, [x0, #0xee0] 
+004b4ba8 bl       #0x3a2b08 
+004b4bac adrp     x0, #0xde0000 
+004b4bb0 ldr      x0, [x0, #0x230] 
+004b4bb4 bl       #0x3a2b08 
+004b4bb8 mov      w8, #1 
+004b4bbc strb     w8, [x20, #0xed5] 
+004b4bc0 mov      x0, x19 
+004b4bc4 mov      x1, xzr 
+004b4bc8 bl       #0x607f78 UnityEngine.Component$$get_transform
+004b4bcc ldr      x8, [x19, #0x18] 
+004b4bd0 str      x0, [x19, #0x28] 
+004b4bd4 cbz      x8, #0x4b4d20 
+004b4bd8 mov      x0, x8 
+004b4bdc mov      x1, xzr 
+004b4be0 bl       #0x7b7628 UnityEngine.TextAsset$$get_bytes
+004b4be4 adrp     x8, #0xde6000 
+004b4be8 ldr      x8, [x8, #0xee0] 
+004b4bec mov      x20, x0 
+004b4bf0 ldr      x8, [x8] 
+004b4bf4 ldrb     w9, [x8, #0x133] 
+004b4bf8 tbz      w9, #2, #0x4b4c0c 
+004b4bfc ldr      w9, [x8, #0xe0] 
+004b4c00 cbnz     w9, #0x4b4c0c 
+004b4c04 mov      x0, x8 
+004b4c08 bl       #0x3a2bb8 
+004b4c0c mov      x0, x20 
+004b4c10 mov      x1, xzr 
+004b4c14 bl       #0x9261dc live2d.Live2DModelUnity$$loadModel
+004b4c18 ldr      x8, [x19, #0x20] 
+004b4c1c str      x0, [x19, #0x30] 
+004b4c20 cbz      x8, #0x4b4d20 
+004b4c24 ldr      x9, [x8, #0x18] 
+004b4c28 cmp      w9, #1 
+004b4c2c b.lt     #0x4b4c74 
+004b4c30 mov      x20, xzr 
+004b4c34 and      x9, x9, #0xffffffff 
+004b4c38 cmp      x20, w9, uxtw 
+004b4c3c b.hs     #0x4b4d24 
+004b4c40 cbz      x0, #0x4b4d20 
+004b4c44 add      x8, x8, x20, lsl #3 
+004b4c48 ldr      x2, [x8, #0x20] 
+004b4c4c mov      w1, w20 
+004b4c50 mov      x3, xzr 
+004b4c54 bl       #0x926140 live2d.Live2DModelUnity$$setTexture
+004b4c58 ldr      x8, [x19, #0x20] 
+004b4c5c cbz      x8, #0x4b4d20 
+004b4c60 ldr      w9, [x8, #0x18] 
+004b4c64 ldr      x0, [x19, #0x30] 
+004b4c68 add      x20, x20, #1 
+004b4c6c cmp      x20, w9, sxtw 
+004b4c70 b.lt     #0x4b4c38 
+004b4c74 cbz      x0, #0x4b4d20 
+004b4c78 mov      x1, xzr 
+004b4c7c bl       #0x91e894 live2d.ALive2DModel$$getCanvasWidth
+004b4c80 adrp     x8, #0xa50000 
+004b4c84 adrp     x9, #0xa50000 
+004b4c88 ldr      s4, [x8, #0xfa0] 
+004b4c8c ldr      s5, [x9, #0xfa4] 
+004b4c90 mov      v1.16b, v0.16b 
+004b4c94 add      x8, sp, #0x40 
+004b4c98 fmov     s0, wzr 
+004b4c9c fmov     s3, wzr 
+004b4ca0 mov      v2.16b, v1.16b 
+004b4ca4 mov      x0, xzr 
+004b4ca8 bl       #0x612030 UnityEngine.Matrix4x4$$Ortho
+004b4cac ldp      q1, q0, [sp, #0x60] 
+004b4cb0 ldp      q3, q2, [sp, #0x40] 
+004b4cb4 mov      x0, x19 
+004b4cb8 mov      x1, xzr 
+004b4cbc stp      q1, q0, [sp, #0x20] 
+004b4cc0 stp      q3, q2, [sp] 
+004b4cc4 ldp      q0, q1, [sp, #0x20] 
+004b4cc8 ldp      q2, q3, [sp] 
+004b4ccc stp      q0, q1, [x19, #0x60] 
+004b4cd0 stp      q2, q3, [x19, #0x40] 
+004b4cd4 bl       #0x607fb8 UnityEngine.Component$$get_gameObject
+004b4cd8 cbz      x0, #0x4b4d20 
+004b4cdc mov      x1, xzr 
+004b4ce0 bl       #0x60b8cc UnityEngine.GameObject$$get_layer
+004b4ce4 mov      w8, #1 
+004b4ce8 lsl      w8, w8, w0 
+004b4cec str      w8, [x19, #0x98] 
+004b4cf0 adrp     x8, #0xde0000 
+004b4cf4 ldr      x8, [x8, #0x230] 
+004b4cf8 ldr      x0, [x8] 
+004b4cfc bl       #0x3a2bd4 
+004b4d00 mov      x1, xzr 
+004b4d04 mov      x20, x0 
+004b4d08 bl       #0x92910c live2d.MotionQueueManager$$.ctor
+004b4d0c str      x20, [x19, #0x38] 
+004b4d10 ldp      x29, x30, [sp, #0x90] 
+004b4d14 ldp      x20, x19, [sp, #0x80] 
+004b4d18 add      sp, sp, #0xa0 
+004b4d1c ret       
+004b4d20 bl       #0x3a2bdc 
+004b4d24 bl       #0x3a2c08 
+004b4d28 mov      x1, xzr 
+004b4d2c bl       #0x3a2ba8 
+
+Sinsi.PotionMaker.Live2DModel$$OnRenderObject
+004b4e4c sub      sp, sp, #0x170 
+004b4e50 str      x28, [sp, #0x140] 
+004b4e54 stp      x20, x19, [sp, #0x150] 
+004b4e58 stp      x29, x30, [sp, #0x160] 
+004b4e5c add      x29, sp, #0x160 
+004b4e60 adrp     x20, #0xe88000 
+004b4e64 ldrb     w8, [x20, #0xed7] 
+004b4e68 mov      x19, x0 
+004b4e6c tbnz     w8, #0, #0x4b4e84 
+004b4e70 adrp     x0, #0xdcb000 
+004b4e74 ldr      x0, [x0, #0x6a0] 
+004b4e78 bl       #0x3a2b08 
+004b4e7c mov      w8, #1 
+004b4e80 strb     w8, [x20, #0xed7] 
+004b4e84 adrp     x8, #0xdcb000 
+004b4e88 ldr      x8, [x8, #0x6a0] 
+004b4e8c ldr      x20, [x19, #0x28] 
+004b4e90 ldr      x0, [x8] 
+004b4e94 ldrb     w8, [x0, #0x133] 
+004b4e98 tbz      w8, #2, #0x4b4ea8 
+004b4e9c ldr      w8, [x0, #0xe0] 
+004b4ea0 cbnz     w8, #0x4b4ea8 
+004b4ea4 bl       #0x3a2bb8 
+004b4ea8 mov      x0, x20 
+004b4eac mov      x1, xzr 
+004b4eb0 mov      x2, xzr 
+004b4eb4 bl       #0x60c4a4 UnityEngine.Object$$op_Equality
+004b4eb8 tbnz     w0, #0, #0x4b4f80 
+004b4ebc ldr      x8, [x19, #0x30] 
+004b4ec0 cbz      x8, #0x4b4f80 
+004b4ec4 ldrb     w8, [x19, #0x9c] 
+004b4ec8 cbz      w8, #0x4b4f80 
+004b4ecc mov      x0, xzr 
+004b4ed0 bl       #0x606c90 UnityEngine.Camera$$get_current
+004b4ed4 cbz      x0, #0x4b4f94 
+004b4ed8 mov      x1, xzr 
+004b4edc bl       #0x606600 UnityEngine.Camera$$get_cullingMask
+004b4ee0 ldr      w8, [x19, #0x98] 
+004b4ee4 tst      w8, w0 
+004b4ee8 b.eq     #0x4b4f80 
+004b4eec ldr      x0, [x19, #0x28] 
+004b4ef0 cbz      x0, #0x4b4f94 
+004b4ef4 ldr      x20, [x19, #0x30] 
+004b4ef8 sub      x8, x29, #0x60 
+004b4efc mov      x1, xzr 
+004b4f00 bl       #0x7af82c UnityEngine.Transform$$get_localToWorldMatrix
+004b4f04 ldp      q1, q0, [x29, #-0x40] 
+004b4f08 ldp      q3, q2, [x29, #-0x60] 
+004b4f0c sub      x8, x29, #0xa0 
+004b4f10 add      x0, sp, #0x80 
+004b4f14 stp      q1, q0, [sp, #0xa0] 
+004b4f18 stp      q3, q2, [sp, #0x80] 
+004b4f1c ldp      q1, q0, [x19, #0x60] 
+004b4f20 ldp      q3, q2, [x19, #0x40] 
+004b4f24 add      x1, sp, #0x40 
+004b4f28 mov      x2, xzr 
+004b4f2c stp      q1, q0, [sp, #0x60] 
+004b4f30 stp      q3, q2, [sp, #0x40] 
+004b4f34 bl       #0x6126ec UnityEngine.Matrix4x4$$op_Multiply
+004b4f38 ldp      q1, q0, [x29, #-0x80] 
+004b4f3c ldp      q3, q2, [x29, #-0xa0] 
+004b4f40 stp      q1, q0, [x29, #-0x40] 
+004b4f44 stp      q3, q2, [x29, #-0x60] 
+004b4f48 cbz      x20, #0x4b4f94 
+004b4f4c ldp      q1, q0, [x29, #-0x40] 
+004b4f50 ldp      q3, q2, [x29, #-0x60] 
+004b4f54 mov      x1, sp 
+004b4f58 mov      x0, x20 
+004b4f5c mov      x2, xzr 
+004b4f60 stp      q1, q0, [sp, #0x20] 
+004b4f64 stp      q3, q2, [sp] 
+004b4f68 bl       #0x925abc live2d.Live2DModelUnity$$setMatrix
+004b4f6c ldr      x0, [x19, #0x30] 
+004b4f70 cbz      x0, #0x4b4f94 
+004b4f74 ldr      x8, [x0] 
+004b4f78 ldp      x9, x1, [x8, #0x188] 
+004b4f7c blr      x9 
+004b4f80 ldp      x29, x30, [sp, #0x160] 
+004b4f84 ldp      x20, x19, [sp, #0x150] 
+004b4f88 ldr      x28, [sp, #0x140] 
+004b4f8c add      sp, sp, #0x170 
+004b4f90 ret       
+004b4f94 bl       #0x3a2bdc 
+
+Sinsi.PotionMaker.WorldBehaviour$$OnCharacterChanged
+00426db4 str      x21, [sp, #-0x30]! 
+00426db8 stp      x20, x19, [sp, #0x10] 
+00426dbc stp      x29, x30, [sp, #0x20] 
+00426dc0 add      x29, sp, #0x20 
+00426dc4 adrp     x20, #0xe88000 
+00426dc8 ldrb     w8, [x20, #0xa35] 
+00426dcc mov      x19, x0 
+00426dd0 tbnz     w8, #0, #0x426e0c 
+00426dd4 adrp     x0, #0xdd3000 
+00426dd8 ldr      x0, [x0, #0xf08] 
+00426ddc bl       #0x3a2b08 
+00426de0 adrp     x0, #0xdea000 
+00426de4 ldr      x0, [x0, #0xdb0] 
+00426de8 bl       #0x3a2b08 
+00426dec adrp     x0, #0xdcb000 
+00426df0 ldr      x0, [x0, #0x6a0] 
+00426df4 bl       #0x3a2b08 
+00426df8 adrp     x0, #0xdcc000 
+00426dfc ldr      x0, [x0, #0xc0] 
+00426e00 bl       #0x3a2b08 
+00426e04 mov      w8, #1 
+00426e08 strb     w8, [x20, #0xa35] 
+00426e0c adrp     x21, #0xdcb000 
+00426e10 ldr      x21, [x21, #0x6a0] 
+00426e14 ldr      x20, [x19, #0x38] 
+00426e18 ldr      x0, [x21] 
+00426e1c ldrb     w8, [x0, #0x133] 
+00426e20 tbz      w8, #2, #0x426e30 
+00426e24 ldr      w8, [x0, #0xe0] 
+00426e28 cbnz     w8, #0x426e30 
+00426e2c bl       #0x3a2bb8 
+00426e30 mov      x0, x20 
+00426e34 mov      x1, xzr 
+00426e38 mov      x2, xzr 
+00426e3c bl       #0x605728 UnityEngine.Object$$op_Inequality
+00426e40 tbz      w0, #0, #0x426e80 
+00426e44 ldr      x0, [x19, #0x38] 
+00426e48 cbz      x0, #0x426f9c 
+00426e4c mov      x1, xzr 
+00426e50 bl       #0x607fb8 UnityEngine.Component$$get_gameObject
+00426e54 ldr      x8, [x21] 
+00426e58 mov      x20, x0 
+00426e5c ldrb     w9, [x8, #0x133] 
+00426e60 tbz      w9, #2, #0x426e74 
+00426e64 ldr      w9, [x8, #0xe0] 
+00426e68 cbnz     w9, #0x426e74 
+00426e6c mov      x0, x8 
+00426e70 bl       #0x3a2bb8 
+00426e74 mov      x0, x20 
+00426e78 mov      x1, xzr 
+00426e7c bl       #0x616550 UnityEngine.Object$$Destroy
+00426e80 adrp     x8, #0xdcc000 
+00426e84 ldr      x8, [x8, #0xc0] 
+00426e88 ldr      x0, [x8] 
+00426e8c ldrb     w8, [x0, #0x133] 
+00426e90 tbz      w8, #2, #0x426ea0 
+00426e94 ldr      w8, [x0, #0xe0] 
+00426e98 cbnz     w8, #0x426ea0 
+00426e9c bl       #0x3a2bb8 
+00426ea0 mov      x0, xzr 
+00426ea4 bl       #0x40410c Sinsi.PotionMaker.Core.User$$get_Current
+00426ea8 cbz      x0, #0x426f9c 
+00426eac ldr      x8, [x0, #0x10] 
+00426eb0 cbz      x8, #0x426f9c 
+00426eb4 ldr      x8, [x8, #0x50] 
+00426eb8 cbz      x8, #0x426f9c 
+00426ebc ldr      x0, [x19, #0x20] 
+00426ec0 cbz      x0, #0x426f9c 
+00426ec4 ldr      x1, [x8, #0x18] 
+00426ec8 mov      x2, xzr 
+00426ecc bl       #0x851de0 Halak.AssetDictionary$$get_Item
+00426ed0 mov      x20, x0 
+00426ed4 mov      x0, x19 
+00426ed8 mov      x1, xzr 
+00426edc bl       #0x607f78 UnityEngine.Component$$get_transform
+00426ee0 ldr      x8, [x21] 
+00426ee4 mov      x21, x0 
+00426ee8 ldrb     w9, [x8, #0x133] 
+00426eec tbz      w9, #2, #0x426f00 
+00426ef0 ldr      w9, [x8, #0xe0] 
+00426ef4 cbnz     w9, #0x426f00 
+00426ef8 mov      x0, x8 
+00426efc bl       #0x3a2bb8 
+00426f00 mov      x0, x20 
+00426f04 mov      x1, x21 
+00426f08 mov      w2, wzr 
+00426f0c mov      x3, xzr 
+00426f10 bl       #0x61633c UnityEngine.Object$$Instantiate
+00426f14 cbz      x0, #0x426f9c 
+00426f18 adrp     x8, #0xdea000 
+00426f1c ldr      x8, [x8, #0xdb0] 
+00426f20 ldr      x1, [x8] 
+00426f24 ldr      x8, [x0] 
+00426f28 cmp      x8, x1 
+00426f2c b.ne     #0x426fa0 
+00426f30 adrp     x8, #0xdd3000 
+00426f34 ldr      x8, [x8, #0xf08] 
+00426f38 ldr      x1, [x8] 
+00426f3c bl       #0x8df168 UnityEngine.GameObject$$GetComponent<TouchHandler>
+00426f40 cbz      x0, #0x426f9c 
+00426f44 ldr      x8, [x0] 
+00426f48 ldr      x1, [x19, #0x28] 
+00426f4c mov      x20, x0 
+00426f50 ldp      x9, x2, [x8, #0x188] 
+00426f54 blr      x9 
+00426f58 ldr      x8, [x20] 
+00426f5c mov      x0, x20 
+00426f60 ldp      x9, x1, [x8, #0x178] 
+00426f64 blr      x9 
+00426f68 cbz      x0, #0x426f9c 
+00426f6c mov      x1, xzr 
+00426f70 bl       #0x40c1d0 Sinsi.PotionMaker.GUI.SpeechBubbleGUI$$Clear
+00426f74 ldr      x8, [x20] 
+00426f78 ldr      x1, [x19, #0x30] 
+00426f7c mov      x0, x20 
+00426f80 ldp      x9, x2, [x8, #0x1a8] 
+00426f84 blr      x9 
+00426f88 str      x20, [x19, #0x38] 
+00426f8c ldp      x29, x30, [sp, #0x20] 
+00426f90 ldp      x20, x19, [sp, #0x10] 
+00426f94 ldr      x21, [sp], #0x30 
+00426f98 ret       
+00426f9c bl       #0x3a2bdc 
+00426fa0 bl       #0x3a2ed0 
+00426fa4 stp      d9, d8, [sp, #-0x40]! 
+00426fa8 str      x21, [sp, #0x10] 
+00426fac stp      x20, x19, [sp, #0x20] 
+00426fb0 stp      x29, x30, [sp, #0x30] 
+00426fb4 add      x29, sp, #0x30 
+00426fb8 adrp     x20, #0xe88000 
+00426fbc ldrb     w8, [x20, #0xa36] 
+00426fc0 mov      x19, x0 
+00426fc4 tbnz     w8, #0, #0x426fdc 
+00426fc8 adrp     x0, #0xdd0000 
+00426fcc ldr      x0, [x0, #0xe68] 
+00426fd0 bl       #0x3a2b08 
+00426fd4 mov      w8, #1 
+00426fd8 strb     w8, [x20, #0xa36] 
+00426fdc mov      x0, xzr 
+00426fe0 bl       #0x7b4108 UnityEngine.Screen$$get_width
+00426fe4 mov      w20, w0 
+00426fe8 mov      x0, xzr 
+00426fec bl       #0x7b413c UnityEngine.Screen$$get_height
+00426ff0 adrp     x21, #0xdd0000 
+00426ff4 ldr      x21, [x21, #0xe68] 
+00426ff8 mov      w8, w0 
+00426ffc scvtf    s0, w20 
+00427000 scvtf    s1, w8 
+00427004 ldr      x0, [x21] 
+00427008 fdiv     s9, s0, s1 
+0042700c ldrb     w9, [x0, #0x133] 
+00427010 tbz      w9, #2, #0x427024 
+00427014 ldr      w8, [x0, #0xe0] 
+00427018 cbnz     w8, #0x427024 
+0042701c bl       #0x3a2bb8 
+00427020 ldr      x0, [x21] 
+00427024 ldr      x8, [x0, #0xb8] 
+00427028 fmov     s1, #1.00000000 
+0042702c ldr      s0, [x8, #8] 
+00427030 fdiv     s8, s9, s0 
+00427034 fcmp     s8, s1 
+00427038 b.pl     #0x427060 
+0042703c ldrb     w8, [x0, #0x133] 
+00427040 tbz      w8, #2, #0x42705c 
+00427044 ldr      w8, [x0, #0xe0] 
+00427048 cbnz     w8, #0x42705c 
+0042704c bl       #0x3a2bb8 
+00427050 ldr      x8, [x21] 
+00427054 ldr      x8, [x8, #0xb8] 
+00427058 ldr      s0, [x8, #8] 
+0042705c fdiv     s8, s0, s9 
+00427060 ldr      x0, [x19, #0x18] 
+00427064 cbz      x0, #0x4270b4 
+00427068 mov      x1, xzr 
+0042706c bl       #0x60b88c UnityEngine.GameObject$$get_transform
+00427070 cbz      x0, #0x4270b4 
+00427074 fmov     s2, #1.00000000 
+00427078 mov      v0.16b, v8.16b 
+0042707c mov      v1.16b, v8.16b 
+00427080 mov      x1, xzr 
+00427084 bl       #0x7baa00 UnityEngine.Transform$$set_localScale
+00427088 mov      x0, xzr 
+0042708c bl       #0x7b4108 UnityEngine.Screen$$get_width
+00427090 str      w0, [x19, #0x40] 
+00427094 mov      x0, xzr 
+00427098 bl       #0x7b413c UnityEngine.Screen$$get_height
+0042709c str      w0, [x19, #0x44] 
+004270a0 ldp      x29, x30, [sp, #0x30] 
+004270a4 ldp      x20, x19, [sp, #0x20] 
+004270a8 ldr      x21, [sp, #0x10] 
+004270ac ldp      d9, d8, [sp], #0x40 
+004270b0 ret       
+004270b4 bl       #0x3a2bdc 

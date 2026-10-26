@@ -237,7 +237,7 @@
   },
   "costumes": {
     "ticketPrice": 200,
-    "tiaMasteryStars": 20
+    "tiaMasteryPotions": ["0-0", "1-0", "2-0"]
   },
   "currencyUnits": {
     "tickets": 10,
@@ -251,6 +251,13 @@
     "specialDropsInManual": true
   },
   "events": {
+    "gradeRubyRewards": {"C": 1, "B": 2, "A": 3, "S": 5},
+    "gradeBoostRewards": {
+      "C": {"protection": 0, "enhancement": 1, "selling": 0},
+      "B": {"protection": 1, "enhancement": 0, "selling": 0},
+      "A": {"protection": 0, "enhancement": 0, "selling": 1},
+      "S": {"protection": 2, "enhancement": 2, "selling": 2}
+    },
     "activeMs": 900000,
     "breakMs": 300000,
     "skinCost": 50,

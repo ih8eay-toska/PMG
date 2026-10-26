@@ -1,0 +1,11 @@
+{
+  "changedExistingFiles": [
+    "source\\app.js",
+    "source\\build.py",
+    "source\\event-rush-ui.js",
+    "source\\pio.js",
+    "Potion-Maker.html"
+  ],
+  "allOtherBaselineSourceDataAndTopLevelFilesUnchanged": true,
+  "stagedPatchUnchanged": true
+}

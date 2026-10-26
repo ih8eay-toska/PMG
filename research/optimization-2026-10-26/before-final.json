@@ -1,0 +1,310 @@
+{
+  "label": "before-final",
+  "html": "C:\\Users\\Toska\\Documents\\Codex\\2026-10-23\\files-pasted-by-the-user-potion\\optimization-session\\before.html",
+  "bytes": 102758984,
+  "startup": {
+    "readyMs": 1724,
+    "dom": 1499,
+    "nav": [
+      {
+        "domContentLoaded": 1307.1000000014901,
+        "load": 1322.300000000745
+      }
+    ],
+    "assets": 565
+  },
+  "rows": [
+    {
+      "name": "idle",
+      "counts": {
+        "updateRewardChestFrame": 434,
+        "syncBelt": 434,
+        "decorateGameText": 45,
+        "syncHelperCats": 3
+      },
+      "times": {
+        "updateRewardChestFrame": 0.30000000074505806,
+        "syncBelt": 18.89999996125698,
+        "decorateGameText": 1.1999999955296516,
+        "syncHelperCats": 0
+      },
+      "mutations": {},
+      "frames": 433,
+      "p50": 6.900000000000546,
+      "p95": 7,
+      "over33": 0,
+      "longTasks": [],
+      "dom": 1499,
+      "life": {
+        "intervals": 5,
+        "timeouts": 0,
+        "listeners": 43,
+        "observers": 54
+      },
+      "metrics": {
+        "TaskDuration": 0.4763519999999999,
+        "ScriptDuration": 0.144401,
+        "LayoutDuration": 0.0003079999999999958,
+        "RecalcStyleDuration": 0.16910499999999998,
+        "LayoutCount": 3
+      }
+    },
+    {
+      "name": "dense",
+      "counts": {
+        "updateRewardChestFrame": 297,
+        "syncBelt": 297,
+        "syncHelperCats": 4,
+        "decorateGameText": 106
+      },
+      "times": {
+        "updateRewardChestFrame": 0.5000000037252903,
+        "syncBelt": 129.0999999716878,
+        "syncHelperCats": 0,
+        "decorateGameText": 4.399999998509884
+      },
+      "mutations": {},
+      "frames": 296,
+      "p50": 7,
+      "p95": 20.800000000000182,
+      "over33": 0,
+      "longTasks": [],
+      "dom": 1649,
+      "life": {
+        "intervals": 5,
+        "timeouts": 0,
+        "listeners": 43,
+        "observers": 54
+      },
+      "metrics": {
+        "TaskDuration": 2.710809,
+        "ScriptDuration": 0.26997400000000005,
+        "LayoutDuration": 0.012724,
+        "RecalcStyleDuration": 1.4808,
+        "LayoutCount": 67
+      }
+    },
+    {
+      "name": "helpers",
+      "counts": {
+        "updateRewardChestFrame": 403,
+        "syncBelt": 403,
+        "decorateGameText": 581,
+        "render": 45,
+        "syncHelperCats": 48
+      },
+      "times": {
+        "updateRewardChestFrame": 0.6000000052154064,
+        "syncBelt": 82.10000001266599,
+        "decorateGameText": 7.00000000372529,
+        "syncHelperCats": 7.399999987334013,
+        "render": 29.100000001490116
+      },
+      "mutations": {},
+      "frames": 402,
+      "p50": 7,
+      "p95": 13.800000000001091,
+      "over33": 0,
+      "longTasks": [],
+      "dom": 1597,
+      "life": {
+        "intervals": 5,
+        "timeouts": 7,
+        "listeners": 43,
+        "observers": 54
+      },
+      "metrics": {
+        "TaskDuration": 2.3102290000000005,
+        "ScriptDuration": 0.26145799999999997,
+        "LayoutDuration": 0.036206,
+        "RecalcStyleDuration": 0.6417849999999998,
+        "LayoutCount": 293
+      }
+    },
+    {
+      "name": "commission",
+      "counts": {
+        "updateRewardChestFrame": 380,
+        "syncBelt": 380,
+        "decorateGameText": 768,
+        "render": 40,
+        "syncHelperCats": 43,
+        "renderRequestBoard": 40
+      },
+      "times": {
+        "updateRewardChestFrame": 0.9999999962747097,
+        "syncBelt": 103.19999996200204,
+        "decorateGameText": 7.000000011175871,
+        "syncHelperCats": 6.500000022351742,
+        "renderRequestBoard": 13.00000000372529,
+        "render": 39.19999999552965
+      },
+      "mutations": {
+        "commission-board": 160
+      },
+      "frames": 379,
+      "p50": 7,
+      "p95": 13.900000000001455,
+      "over33": 0,
+      "longTasks": [],
+      "dom": 1644,
+      "life": {
+        "intervals": 5,
+        "timeouts": 6,
+        "listeners": 43,
+        "observers": 54
+      },
+      "metrics": {
+        "TaskDuration": 2.286494000000001,
+        "ScriptDuration": 0.29312099999999996,
+        "LayoutDuration": 0.04860500000000001,
+        "RecalcStyleDuration": 0.8991630000000002,
+        "LayoutCount": 264
+      }
+    },
+    {
+      "name": "event",
+      "counts": {
+        "updateRewardChestFrame": 434,
+        "syncBelt": 434,
+        "refreshRushPage": 15,
+        "syncHelperCats": 3,
+        "decorateGameText": 51
+      },
+      "times": {
+        "updateRewardChestFrame": 0.5,
+        "syncBelt": 17.199999999254942,
+        "refreshRushPage": 1.300000000745058,
+        "syncHelperCats": 0,
+        "decorateGameText": 0.8999999985098839
+      },
+      "mutations": {
+        "event-dialog": 258
+      },
+      "frames": 433,
+      "p50": 7,
+      "p95": 7.399999999997817,
+      "over33": 0,
+      "longTasks": [],
+      "dom": 1558,
+      "life": {
+        "intervals": 5,
+        "timeouts": 0,
+        "listeners": 43,
+        "observers": 54
+      },
+      "metrics": {
+        "TaskDuration": 0.8757400000000004,
+        "ScriptDuration": 0.11920200000000003,
+        "LayoutDuration": 0.002130999999999994,
+        "RecalcStyleDuration": 0.16690499999999986,
+        "LayoutCount": 7
+      }
+    },
+    {
+      "name": "enhancement",
+      "counts": {
+        "decorateGameText": 249,
+        "updateRewardChestFrame": 347,
+        "syncBelt": 347,
+        "syncHelperCats": 4,
+        "render": 1
+      },
+      "times": {
+        "decorateGameText": 1.6999999918043613,
+        "updateRewardChestFrame": 0.6999999955296516,
+        "syncBelt": 18.89999996498227,
+        "syncHelperCats": 0.20000000298023224,
+        "render": 0.6999999992549419
+      },
+      "mutations": {},
+      "frames": 346,
+      "p50": 7,
+      "p95": 14.599999999998545,
+      "over33": 1,
+      "longTasks": [],
+      "dom": 1749,
+      "life": {
+        "intervals": 5,
+        "timeouts": 3,
+        "listeners": 43,
+        "observers": 54
+      },
+      "metrics": {
+        "TaskDuration": 2.8677270000000004,
+        "ScriptDuration": 0.14917200000000008,
+        "LayoutDuration": 0.0017600000000000116,
+        "RecalcStyleDuration": 1.6333950000000006,
+        "LayoutCount": 7
+      }
+    },
+    {
+      "name": "chest-finished",
+      "counts": {
+        "updateRewardChestFrame": 430,
+        "chestQueries": 430,
+        "syncBelt": 430,
+        "syncHelperCats": 3,
+        "decorateGameText": 48
+      },
+      "times": {
+        "updateRewardChestFrame": 8.099999997764826,
+        "syncBelt": 18.000000044703484,
+        "syncHelperCats": 0.09999999776482582,
+        "decorateGameText": 0.6999999955296516
+      },
+      "mutations": {},
+      "frames": 429,
+      "p50": 7,
+      "p95": 7.5,
+      "over33": 0,
+      "longTasks": [],
+      "dom": 1561,
+      "life": {
+        "intervals": 5,
+        "timeouts": 0,
+        "listeners": 43,
+        "observers": 54
+      },
+      "metrics": {
+        "TaskDuration": 0.5364170000000001,
+        "ScriptDuration": 0.10321499999999983,
+        "LayoutDuration": 0.00038699999999999846,
+        "RecalcStyleDuration": 0.19272699999999965,
+        "LayoutCount": 4
+      }
+    }
+  ],
+  "life": {
+    "dom": 1561,
+    "listeners": 43,
+    "observers": 54,
+    "intervals": 5
+  },
+  "lifeAfter": {
+    "dom": 1616,
+    "listeners": 43,
+    "observers": 54,
+    "intervals": 5
+  },
+  "micro": {
+    "commission200Ms": 55.899999998509884,
+    "buttonRetained": false
+  },
+  "visibility": {
+    "offTickerRunning": true,
+    "hiddenTickerRunning": true
+  },
+  "stableBefore": {
+    "documents": 1,
+    "nodes": 2824,
+    "jsEventListeners": 257
+  },
+  "stableAfter": {
+    "documents": 1,
+    "nodes": 2824,
+    "jsEventListeners": 257
+  },
+  "network": [],
+  "errors": []
+}

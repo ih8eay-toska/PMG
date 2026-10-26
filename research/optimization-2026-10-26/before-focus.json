@@ -1,0 +1,91 @@
+{
+  "label": "before-focus",
+  "html": "C:\\Users\\Toska\\Documents\\Codex\\2026-10-23\\files-pasted-by-the-user-potion\\optimization-session\\before.html",
+  "bytes": 102758984,
+  "startup": {
+    "readyMs": 2345.099999997765,
+    "dom": 1497,
+    "nav": [
+      {
+        "domContentLoaded": 1985.2999999970198,
+        "load": 2002.2999999970198
+      }
+    ],
+    "assets": 565
+  },
+  "rows": [
+    {
+      "name": "commission",
+      "counts": {
+        "updateRewardChestFrame": 1219,
+        "syncBelt": 1219,
+        "decorateGameText": 2571,
+        "render": 134,
+        "syncHelperCats": 144,
+        "renderRequestBoard": 134
+      },
+      "times": {
+        "updateRewardChestFrame": 1.4999999962747097,
+        "syncBelt": 332.1999999806285,
+        "decorateGameText": 26.10000004246831,
+        "syncHelperCats": 22.49999999627471,
+        "renderRequestBoard": 42.400000028312206,
+        "render": 130.19999999552965
+      },
+      "mutations": {
+        "commission-board": 536
+      },
+      "frames": 1218,
+      "p50": 7,
+      "p95": 13.900000000000546,
+      "over33": 1,
+      "longTasks": [],
+      "dom": 1642,
+      "life": {
+        "intervals": 5,
+        "timeouts": 5,
+        "listeners": 43,
+        "observers": 54
+      },
+      "metrics": {
+        "TaskDuration": 7.7248850000000004,
+        "ScriptDuration": 1.0131050000000001,
+        "LayoutDuration": 0.17244,
+        "RecalcStyleDuration": 2.98946,
+        "LayoutCount": 881
+      }
+    }
+  ],
+  "life": {
+    "dom": 1529,
+    "listeners": 43,
+    "observers": 54,
+    "intervals": 5
+  },
+  "lifeAfter": {
+    "dom": 1616,
+    "listeners": 43,
+    "observers": 54,
+    "intervals": 5
+  },
+  "micro": {
+    "commission200Ms": 44.899999998509884,
+    "buttonRetained": false
+  },
+  "visibility": {
+    "offTickerRunning": true,
+    "hiddenTickerRunning": true
+  },
+  "stableBefore": {
+    "documents": 1,
+    "nodes": 2824,
+    "jsEventListeners": 257
+  },
+  "stableAfter": {
+    "documents": 1,
+    "nodes": 2824,
+    "jsEventListeners": 257
+  },
+  "network": [],
+  "errors": []
+}

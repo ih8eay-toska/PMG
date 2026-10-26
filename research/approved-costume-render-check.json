@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "id": "tia-halloween-costume.png",
+      "character": "Tia",
+      "ok": true
+    },
+    {
+      "id": "tia-hanbok-costume.png",
+      "character": "Tia",
+      "ok": true
+    },
+    {
+      "id": "tia-sakura-costume.png",
+      "character": "Tia",
+      "ok": true
+    },
+    {
+      "id": "tia-sakura-costume-navy.png",
+      "character": "Tia",
+      "ok": true
+    },
+    {
+      "id": "tia-santa-costume.png",
+      "character": "Tia",
+      "ok": true
+    },
+    {
+      "id": "tia-vampire-costume-real.png",
+      "character": "Tia",
+      "ok": true
+    },
+    {
+      "id": "pio-sailor-costume.png",
+      "character": "Pio",
+      "ok": true
+    },
+    {
+      "id": "pio-sailor-costume-black.png",
+      "character": "Pio",
+      "ok": true
+    },
+    {
+      "id": "pio-marine-costume-navy.png",
+      "character": "Pio",
+      "ok": true
+    },
+    {
+      "id": "pio-tirami1-costume.png",
+      "character": "Pio",
+      "ok": true
+    },
+    {
+      "id": "pio-sakura-fairy-costume-real.png",
+      "character": "Pio",
+      "ok": true
+    }
+  ]
+}

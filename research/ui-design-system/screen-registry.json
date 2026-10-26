@@ -1,0 +1,326 @@
+{
+  "staticDialogs": 19,
+  "dynamicDialogs": 6,
+  "totalDialogs": 25,
+  "screens": [
+    {
+      "id": "game-menu",
+      "screen": "Menu",
+      "sourceFiles": [
+        "source/index.template.html",
+        "source/app.js"
+      ],
+      "openingMechanism": "`#game-menu-open`",
+      "previousVisualAndMigration": "Only ornamental menu \u2192 canonical shell/live title",
+      "variant": "menu",
+      "exceptionalLayout": "menu; illustrated tile grid",
+      "verification": "Entry, close, subpage/back routes, geometry"
+    },
+    {
+      "id": "help-dialog",
+      "screen": "Help",
+      "sourceFiles": [
+        "source/index.template.html",
+        "source/app.js"
+      ],
+      "openingMechanism": "`#help`",
+      "previousVisualAndMigration": "Plain dialog/original title \u2192 shared frame/header/X/back",
+      "variant": "scroll",
+      "exceptionalLayout": "scroll; disclosures",
+      "verification": "Entry/close/geometry + existing UI checks"
+    },
+    {
+      "id": "source-dialog",
+      "screen": "Sources",
+      "sourceFiles": [
+        "source/index.template.html",
+        "source/app.js"
+      ],
+      "openingMechanism": "`#sources`",
+      "previousVisualAndMigration": "Plain title/dialog \u2192 shared shell",
+      "variant": "scroll",
+      "exceptionalLayout": "scroll; provenance links/disclosures",
+      "verification": "Entry/close/geometry"
+    },
+    {
+      "id": "new-item-dialog",
+      "screen": "New item",
+      "sourceFiles": [
+        "source/index.template.html",
+        "source/app.js"
+      ],
+      "openingMechanism": "`queueNewItemReveal` \u2192 `showNewItemReveal`",
+      "previousVisualAndMigration": "Original staged reveal retained, common X",
+      "variant": "reveal",
+      "exceptionalLayout": "reveal; Congratulations/book/rays",
+      "verification": "Entry/close/geometry + enhancement/UI checks"
+    },
+    {
+      "id": "catalog-dialog",
+      "screen": "Item Book",
+      "sourceFiles": [
+        "source/index.template.html",
+        "source/app.js"
+      ],
+      "openingMechanism": "`#catalog` \u2192 `renderCatalog`",
+      "previousVisualAndMigration": "Illustrated book retained, shared header controls",
+      "variant": "book",
+      "exceptionalLayout": "book; family/tier/page navigation",
+      "verification": "Entry/close/geometry + book regression"
+    },
+    {
+      "id": "catalog-reader-dialog",
+      "screen": "Full lore",
+      "sourceFiles": [
+        "source/index.template.html",
+        "source/app.js"
+      ],
+      "openingMechanism": "`openCatalogReader`",
+      "previousVisualAndMigration": "Parchment reader \u2192 shared reader header/X",
+      "variant": "reader",
+      "exceptionalLayout": "reader; full text/records/table",
+      "verification": "Entry/close/geometry + book regression"
+    },
+    {
+      "id": "achievements-dialog",
+      "screen": "Achievements",
+      "sourceFiles": [
+        "source/index.template.html",
+        "source/app.js"
+      ],
+      "openingMechanism": "`#achievements` \u2192 `renderAchievements`",
+      "previousVisualAndMigration": "Compact parchment \u2192 shared outer shell/header",
+      "variant": "bounded",
+      "exceptionalLayout": "bounded; filters, pages, claims",
+      "verification": "Entry/close/geometry + all reward/lore checks"
+    },
+    {
+      "id": "achievement-detail-dialog",
+      "screen": "Achievement details",
+      "sourceFiles": [
+        "source/index.template.html",
+        "source/app.js"
+      ],
+      "openingMechanism": "`openAchievementDetail`",
+      "previousVisualAndMigration": "Parchment details \u2192 reader shell",
+      "variant": "reader",
+      "exceptionalLayout": "reader; full lore/requirements/claim footer",
+      "verification": "Entry/close/geometry + claim checks"
+    },
+    {
+      "id": "statistics-dialog",
+      "screen": "Statistics",
+      "sourceFiles": [
+        "source/index.template.html",
+        "source/app.js"
+      ],
+      "openingMechanism": "`#statistics` \u2192 `renderStatistics`",
+      "previousVisualAndMigration": "Plain/original title \u2192 shared shell",
+      "variant": "scroll",
+      "exceptionalLayout": "scroll; table areas and wrapping reward totals",
+      "verification": "Entry/close/geometry"
+    },
+    {
+      "id": "costume-shop-dialog",
+      "screen": "Costumes",
+      "sourceFiles": [
+        "source/index.template.html",
+        "source/app.js"
+      ],
+      "openingMechanism": "`#costume-shop` \u2192 `renderCostumeShop`",
+      "previousVisualAndMigration": "Plain cards/dialog \u2192 shared shell",
+      "variant": "scroll",
+      "exceptionalLayout": "scroll; owned/locked/equip/preview content",
+      "verification": "Entry/close/geometry + costume checks"
+    },
+    {
+      "id": "fairy-dialog",
+      "screen": "Fairies",
+      "sourceFiles": [
+        "source/index.template.html",
+        "source/app.js"
+      ],
+      "openingMechanism": "`#fairy-book` \u2192 `renderFairies`",
+      "previousVisualAndMigration": "Original title + slots \u2192 shared shell",
+      "variant": "scroll",
+      "exceptionalLayout": "scroll; collection/filter/draw content",
+      "verification": "Entry/close/geometry + core/UI checks"
+    },
+    {
+      "id": "equipped-fairy-dialog",
+      "screen": "Fairy details",
+      "sourceFiles": [
+        "source/index.template.html",
+        "source/app.js"
+      ],
+      "openingMechanism": "Fairy card / `#fairy-shortcut` \u2192 `showFairyBook`",
+      "previousVisualAndMigration": "Original illustrated book retained, common X",
+      "variant": "illustrated",
+      "exceptionalLayout": "illustrated; abilities/rarity/Summon/OK",
+      "verification": "Entry/close/geometry + existing fairy logic checks"
+    },
+    {
+      "id": "visitor-order-dialog",
+      "screen": "Traveler order",
+      "sourceFiles": [
+        "source/index.template.html",
+        "source/app.js"
+      ],
+      "openingMechanism": "`#visitor-shortcut` clones current card/actions",
+      "previousVisualAndMigration": "Original banner/plain border \u2192 shared frame/navigation/X",
+      "variant": "bounded",
+      "exceptionalLayout": "bounded; scrolling portrait/dialogue/requirements; fixed timer/action footer",
+      "verification": "Request vs OK and geometry; visitor checks"
+    },
+    {
+      "id": "stamp-dialog",
+      "screen": "Stamp exchange",
+      "sourceFiles": [
+        "source/index.template.html",
+        "source/app.js"
+      ],
+      "openingMechanism": "`#stamp-exchange-open` \u2192 `renderStampExchange`",
+      "previousVisualAndMigration": "Plain dialog \u2192 shared shell",
+      "variant": "scroll",
+      "exceptionalLayout": "scroll; contextual return to expeditions/story",
+      "verification": "Entry/close/geometry + expedition checks"
+    },
+    {
+      "id": "expedition-dialog",
+      "screen": "Expeditions",
+      "sourceFiles": [
+        "source/index.template.html",
+        "source/app.js"
+      ],
+      "openingMechanism": "`#expeditions-menu`, `openVisitorExpedition`",
+      "previousVisualAndMigration": "Individual parchment shell \u2192 shared shell",
+      "variant": "bounded",
+      "exceptionalLayout": "bounded; roster/destination/dispatch steps",
+      "verification": "Entry/close/geometry + expedition regression"
+    },
+    {
+      "id": "expedition-story-dialog",
+      "screen": "Expedition chapter",
+      "sourceFiles": [
+        "source/index.template.html",
+        "source/app.js"
+      ],
+      "openingMechanism": "`openExpeditionChapter`, reports/replays/story queue",
+      "previousVisualAndMigration": "Plain dialog \u2192 shared shell",
+      "variant": "bounded",
+      "exceptionalLayout": "bounded; choices, narrative, Next and dispatch actions",
+      "verification": "Entry/close/geometry + story/expedition checks"
+    },
+    {
+      "id": "expedition-journal-dialog",
+      "screen": "Expedition journal",
+      "sourceFiles": [
+        "source/index.template.html",
+        "source/app.js"
+      ],
+      "openingMechanism": "`#expedition-journal-open` \u2192 `openExpeditionJournal`",
+      "previousVisualAndMigration": "Plain dialog \u2192 shared shell",
+      "variant": "bounded",
+      "exceptionalLayout": "bounded; historical entries/replay; parent return",
+      "verification": "Entry/close/geometry + expedition checks"
+    },
+    {
+      "id": "request-dialog",
+      "screen": "Potion commissions",
+      "sourceFiles": [
+        "source/index.template.html",
+        "source/app.js"
+      ],
+      "openingMechanism": "`#commission-shortcut` \u2192 `renderRequestBoard`",
+      "previousVisualAndMigration": "Plain heading/cards \u2192 shared title/frame/X/back",
+      "variant": "scroll",
+      "exceptionalLayout": "scroll; real acceptance and potion deliveries",
+      "verification": "Entry/close/acceptance/geometry; commission checks"
+    },
+    {
+      "id": "save-dialog",
+      "screen": "Saves",
+      "sourceFiles": [
+        "source/index.template.html",
+        "source/app.js"
+      ],
+      "openingMechanism": "`#save-tools` \u2192 `renderSaveSlots`",
+      "previousVisualAndMigration": "Original title/plain border \u2192 shared shell",
+      "variant": "bounded",
+      "exceptionalLayout": "bounded; device/transfer/recovery pages",
+      "verification": "Entry/close/geometry + storage/migration checks"
+    },
+    {
+      "id": "portrait-upgrade-dialog",
+      "screen": "Shop upgrades",
+      "sourceFiles": [
+        "source/app.js"
+      ],
+      "openingMechanism": "`.portrait-upgrades` moves `upgradePanel`",
+      "previousVisualAndMigration": "Separate original panel \u2192 shared shell/header/X/back",
+      "variant": "upgrades",
+      "exceptionalLayout": "upgrades; original category, price and action artwork",
+      "verification": "Buy price/level, panel restoration, geometry; upgrade checks"
+    },
+    {
+      "id": "event-dialog",
+      "screen": "Event rewards",
+      "sourceFiles": [
+        "source/app.js"
+      ],
+      "openingMechanism": "Event/gallery \u2192 `openEvent`",
+      "previousVisualAndMigration": "Original title/plain dialog \u2192 shared shell",
+      "variant": "scroll",
+      "exceptionalLayout": "scroll; banner/history/redemptions",
+      "verification": "Entry/close/geometry + event checks"
+    },
+    {
+      "id": "reward-dialog",
+      "screen": "Chest contents",
+      "sourceFiles": [
+        "source/app.js"
+      ],
+      "openingMechanism": "`rewardButtons[kind].button`, chest action",
+      "previousVisualAndMigration": "Plain dynamic dialog \u2192 shared shell",
+      "variant": "scroll",
+      "exceptionalLayout": "scroll; chest frames/reel/odds/reward saved before reveal",
+      "verification": "Entry/close/geometry + shop/reward checks"
+    },
+    {
+      "id": "shop-balances-dialog",
+      "screen": "Exact balances",
+      "sourceFiles": [
+        "source/app.js"
+      ],
+      "openingMechanism": "`[data-shop-currency]`",
+      "previousVisualAndMigration": "Small plain dialog \u2192 shared reader",
+      "variant": "reader",
+      "exceptionalLayout": "reader; exact full numeric balances",
+      "verification": "Entry/close/geometry + shop checks"
+    },
+    {
+      "id": "character-picker",
+      "screen": "Character selection",
+      "sourceFiles": [
+        "source/pio.js"
+      ],
+      "openingMechanism": "`#menu-character` \u2192 picker trigger in `source/pio.js`",
+      "previousVisualAndMigration": "Previously ID-less dynamic dialog \u2192 registered shell",
+      "variant": "scroll",
+      "exceptionalLayout": "scroll; portraits, affinity details, character/unlock/replay actions",
+      "verification": "Entry/close/geometry + character/UI checks"
+    },
+    {
+      "id": "tia-unlock-scene",
+      "screen": "Tia arrival",
+      "sourceFiles": [
+        "source/pio.js"
+      ],
+      "openingMechanism": "Deferred `playTiaUnlockScene`, character replay",
+      "previousVisualAndMigration": "Standalone scene/eyebrow \u2192 shared title/frame/X/back",
+      "variant": "scroll",
+      "exceptionalLayout": "scroll; cast and dialogue/Continue/Finish",
+      "verification": "Entry/close/geometry + original deferred-scene checks"
+    }
+  ]
+}

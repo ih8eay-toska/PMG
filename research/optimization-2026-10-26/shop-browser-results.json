@@ -1,0 +1,964 @@
+{
+  "inventory": {
+    "products": 13,
+    "chests": 3,
+    "categories": [
+      {
+        "name": "chests",
+        "count": 3
+      },
+      {
+        "name": "boosts",
+        "count": 1
+      },
+      {
+        "name": "exchange",
+        "count": 8
+      },
+      {
+        "name": "gold",
+        "count": 4
+      }
+    ]
+  },
+  "tabs": [
+    {
+      "category": "chests",
+      "visible": [
+        "shop-panel-chests"
+      ],
+      "selected": "true"
+    },
+    {
+      "category": "boosts",
+      "visible": [
+        "shop-panel-boosts"
+      ],
+      "selected": "true"
+    },
+    {
+      "category": "exchange",
+      "visible": [
+        "shop-panel-exchange"
+      ],
+      "selected": "true"
+    },
+    {
+      "category": "gold",
+      "visible": [
+        "shop-panel-gold"
+      ],
+      "selected": "true"
+    }
+  ],
+  "purchases": [
+    {
+      "id": "small-enhancement-package",
+      "cost": {
+        "currency": "rubies",
+        "amount": 3
+      },
+      "delta": {
+        "coins": 0,
+        "tickets": 0,
+        "rubies": -3,
+        "enhancement": 5,
+        "protection": 3,
+        "selling": 0
+      },
+      "expected": {
+        "coins": 0,
+        "tickets": 0,
+        "rubies": -3,
+        "enhancement": 5,
+        "protection": 3,
+        "selling": 0
+      },
+      "disabled": true,
+      "balances": true
+    },
+    {
+      "id": "micro-ruby-bundle",
+      "cost": {
+        "currency": "tickets",
+        "amount": 100
+      },
+      "delta": {
+        "coins": 0,
+        "tickets": -100,
+        "rubies": 10,
+        "enhancement": 0,
+        "protection": 0,
+        "selling": 0
+      },
+      "expected": {
+        "coins": 0,
+        "tickets": -100,
+        "rubies": 10,
+        "enhancement": 0,
+        "protection": 0,
+        "selling": 0
+      },
+      "disabled": true,
+      "balances": true
+    },
+    {
+      "id": "small-ruby-bundle",
+      "cost": {
+        "currency": "tickets",
+        "amount": 520
+      },
+      "delta": {
+        "coins": 0,
+        "tickets": -520,
+        "rubies": 52,
+        "enhancement": 0,
+        "protection": 0,
+        "selling": 0
+      },
+      "expected": {
+        "coins": 0,
+        "tickets": -520,
+        "rubies": 52,
+        "enhancement": 0,
+        "protection": 0,
+        "selling": 0
+      },
+      "disabled": true,
+      "balances": true
+    },
+    {
+      "id": "medium-ruby-bundle",
+      "cost": {
+        "currency": "tickets",
+        "amount": 1100
+      },
+      "delta": {
+        "coins": 0,
+        "tickets": -1100,
+        "rubies": 110,
+        "enhancement": 0,
+        "protection": 0,
+        "selling": 0
+      },
+      "expected": {
+        "coins": 0,
+        "tickets": -1100,
+        "rubies": 110,
+        "enhancement": 0,
+        "protection": 0,
+        "selling": 0
+      },
+      "disabled": true,
+      "balances": true
+    },
+    {
+      "id": "large-ruby-bundle",
+      "cost": {
+        "currency": "tickets",
+        "amount": 3500
+      },
+      "delta": {
+        "coins": 0,
+        "tickets": -3500,
+        "rubies": 350,
+        "enhancement": 0,
+        "protection": 0,
+        "selling": 0
+      },
+      "expected": {
+        "coins": 0,
+        "tickets": -3500,
+        "rubies": 350,
+        "enhancement": 0,
+        "protection": 0,
+        "selling": 0
+      },
+      "disabled": true,
+      "balances": true
+    },
+    {
+      "id": "micro-ticket-bundle",
+      "cost": {
+        "currency": "rubies",
+        "amount": 10
+      },
+      "delta": {
+        "coins": 0,
+        "tickets": 100,
+        "rubies": -10,
+        "enhancement": 0,
+        "protection": 0,
+        "selling": 0
+      },
+      "expected": {
+        "coins": 0,
+        "tickets": 100,
+        "rubies": -10,
+        "enhancement": 0,
+        "protection": 0,
+        "selling": 0
+      },
+      "disabled": true,
+      "balances": true
+    },
+    {
+      "id": "small-ticket-bundle",
+      "cost": {
+        "currency": "rubies",
+        "amount": 52
+      },
+      "delta": {
+        "coins": 0,
+        "tickets": 520,
+        "rubies": -52,
+        "enhancement": 0,
+        "protection": 0,
+        "selling": 0
+      },
+      "expected": {
+        "coins": 0,
+        "tickets": 520,
+        "rubies": -52,
+        "enhancement": 0,
+        "protection": 0,
+        "selling": 0
+      },
+      "disabled": true,
+      "balances": true
+    },
+    {
+      "id": "medium-ticket-bundle",
+      "cost": {
+        "currency": "rubies",
+        "amount": 110
+      },
+      "delta": {
+        "coins": 0,
+        "tickets": 1100,
+        "rubies": -110,
+        "enhancement": 0,
+        "protection": 0,
+        "selling": 0
+      },
+      "expected": {
+        "coins": 0,
+        "tickets": 1100,
+        "rubies": -110,
+        "enhancement": 0,
+        "protection": 0,
+        "selling": 0
+      },
+      "disabled": true,
+      "balances": true
+    },
+    {
+      "id": "large-ticket-bundle",
+      "cost": {
+        "currency": "rubies",
+        "amount": 350
+      },
+      "delta": {
+        "coins": 0,
+        "tickets": 3500,
+        "rubies": -350,
+        "enhancement": 0,
+        "protection": 0,
+        "selling": 0
+      },
+      "expected": {
+        "coins": 0,
+        "tickets": 3500,
+        "rubies": -350,
+        "enhancement": 0,
+        "protection": 0,
+        "selling": 0
+      },
+      "disabled": true,
+      "balances": true
+    },
+    {
+      "id": "micro-coin-bundle",
+      "cost": {
+        "currency": "rubies",
+        "amount": 119048
+      },
+      "delta": {
+        "coins": 5000000,
+        "tickets": 0,
+        "rubies": -119048,
+        "enhancement": 0,
+        "protection": 0,
+        "selling": 0
+      },
+      "expected": {
+        "coins": 5000000,
+        "tickets": 0,
+        "rubies": -119048,
+        "enhancement": 0,
+        "protection": 0,
+        "selling": 0
+      },
+      "disabled": true,
+      "balances": true
+    },
+    {
+      "id": "small-coin-bundle",
+      "cost": {
+        "currency": "rubies",
+        "amount": 714286
+      },
+      "delta": {
+        "coins": 30000000,
+        "tickets": 0,
+        "rubies": -714286,
+        "enhancement": 0,
+        "protection": 0,
+        "selling": 0
+      },
+      "expected": {
+        "coins": 30000000,
+        "tickets": 0,
+        "rubies": -714286,
+        "enhancement": 0,
+        "protection": 0,
+        "selling": 0
+      },
+      "disabled": true,
+      "balances": true
+    },
+    {
+      "id": "medium-coin-bundle",
+      "cost": {
+        "currency": "rubies",
+        "amount": 2976191
+      },
+      "delta": {
+        "coins": 125000000,
+        "tickets": 0,
+        "rubies": -2976191,
+        "enhancement": 0,
+        "protection": 0,
+        "selling": 0
+      },
+      "expected": {
+        "coins": 125000000,
+        "tickets": 0,
+        "rubies": -2976191,
+        "enhancement": 0,
+        "protection": 0,
+        "selling": 0
+      },
+      "disabled": true,
+      "balances": true
+    },
+    {
+      "id": "large-coin-bundle",
+      "cost": {
+        "currency": "rubies",
+        "amount": 240476191
+      },
+      "delta": {
+        "coins": 10100000000,
+        "tickets": 0,
+        "rubies": -240476191,
+        "enhancement": 0,
+        "protection": 0,
+        "selling": 0
+      },
+      "expected": {
+        "coins": 10100000000,
+        "tickets": 0,
+        "rubies": -240476191,
+        "enhancement": 0,
+        "protection": 0,
+        "selling": 0
+      },
+      "disabled": true,
+      "balances": true
+    }
+  ],
+  "refusals": {
+    "result": [
+      {
+        "id": "small-enhancement-package",
+        "unchanged": true,
+        "disabled": true,
+        "label": "Insufficient Rubies"
+      },
+      {
+        "id": "micro-ruby-bundle",
+        "unchanged": true,
+        "disabled": true,
+        "label": "Insufficient Tickets"
+      },
+      {
+        "id": "small-ruby-bundle",
+        "unchanged": true,
+        "disabled": true,
+        "label": "Insufficient Tickets"
+      },
+      {
+        "id": "medium-ruby-bundle",
+        "unchanged": true,
+        "disabled": true,
+        "label": "Insufficient Tickets"
+      },
+      {
+        "id": "large-ruby-bundle",
+        "unchanged": true,
+        "disabled": true,
+        "label": "Insufficient Tickets"
+      },
+      {
+        "id": "micro-ticket-bundle",
+        "unchanged": true,
+        "disabled": true,
+        "label": "Insufficient Rubies"
+      },
+      {
+        "id": "small-ticket-bundle",
+        "unchanged": true,
+        "disabled": true,
+        "label": "Insufficient Rubies"
+      },
+      {
+        "id": "medium-ticket-bundle",
+        "unchanged": true,
+        "disabled": true,
+        "label": "Insufficient Rubies"
+      },
+      {
+        "id": "large-ticket-bundle",
+        "unchanged": true,
+        "disabled": true,
+        "label": "Insufficient Rubies"
+      },
+      {
+        "id": "micro-coin-bundle",
+        "unchanged": true,
+        "disabled": true,
+        "label": "Insufficient Rubies"
+      },
+      {
+        "id": "small-coin-bundle",
+        "unchanged": true,
+        "disabled": true,
+        "label": "Insufficient Rubies"
+      },
+      {
+        "id": "medium-coin-bundle",
+        "unchanged": true,
+        "disabled": true,
+        "label": "Insufficient Rubies"
+      },
+      {
+        "id": "large-coin-bundle",
+        "unchanged": true,
+        "disabled": true,
+        "label": "Insufficient Rubies"
+      }
+    ],
+    "inventoryLimit": true,
+    "reason": "Unavailable at current inventory or balance limits"
+  },
+  "free": {
+    "coins": 0,
+    "history": 1,
+    "cooldown": true,
+    "quota": 3
+  },
+  "limits": {
+    "count": 4,
+    "unchanged": true,
+    "disabled": true,
+    "label": "Paid limit reached",
+    "remaining": 0,
+    "cooldown": "Free in 0h 59m 59s · 0 / 3 paid left · refresh in 0h 19m 59s of active play"
+  },
+  "freeAfterLimit": {
+    "history": 5,
+    "remaining": 0
+  },
+  "cases": [
+    {
+      "kind": "tickets",
+      "cost": {
+        "currency": "tickets",
+        "amount": 10
+      },
+      "history": 1,
+      "latest": {
+        "kind": "hourly",
+        "currency": "selling",
+        "amount": 3,
+        "name": "",
+        "at": 1793011248211
+      },
+      "before": 100,
+      "after": 96
+    },
+    {
+      "kind": "skin",
+      "cost": {
+        "currency": "rubies",
+        "amount": 30
+      },
+      "history": 1,
+      "latest": {
+        "kind": "hourly",
+        "currency": "selling",
+        "amount": 3,
+        "name": "",
+        "at": 1793011248211
+      },
+      "before": 100,
+      "after": 85
+    }
+  ],
+  "large": [
+    {
+      "key": "coins",
+      "title": "100,000,000,000,000,000,000 Gold",
+      "text": "1E20",
+      "value": 100000000000000000000
+    },
+    {
+      "key": "tickets",
+      "title": "123,456,789 Tickets",
+      "text": "123.46M",
+      "value": 123456789
+    },
+    {
+      "key": "rubies",
+      "title": "987,654,321 Rubies",
+      "text": "987.65M",
+      "value": 987654321
+    }
+  ],
+  "extremes": [
+    {
+      "value": 100000000000000000000,
+      "text": "1E20",
+      "exact": true
+    },
+    {
+      "value": 1e+100,
+      "text": "1E100",
+      "exact": true
+    },
+    {
+      "value": 1e+300,
+      "text": "1E300",
+      "exact": true
+    }
+  ],
+  "exactBalances": {
+    "visible": true,
+    "exact": true,
+    "returned": true
+  },
+  "navigation": {
+    "back": true,
+    "remembered": true,
+    "closed": true,
+    "reopened": true
+  },
+  "layouts": [
+    {
+      "width": 804,
+      "height": 1080,
+      "category": "chests",
+      "left": 530,
+      "right": 1390,
+      "bottom": 990,
+      "client": 804,
+      "scrollWidth": 765,
+      "scrollClient": 765,
+      "contentHeight": 563,
+      "balancesFit": true,
+      "buttonsFit": true,
+      "headerTop": 285.59375,
+      "headerBottom": 335.59375,
+      "balancesTop": 203,
+      "balancesBottom": 263.59375,
+      "scrollTop": 0
+    },
+    {
+      "width": 804,
+      "height": 1080,
+      "category": "boosts",
+      "left": 530,
+      "right": 1390,
+      "bottom": 990,
+      "client": 804,
+      "scrollWidth": 765,
+      "scrollClient": 765,
+      "contentHeight": 563,
+      "balancesFit": true,
+      "buttonsFit": true,
+      "headerTop": 285.59375,
+      "headerBottom": 335.59375,
+      "balancesTop": 203,
+      "balancesBottom": 263.59375,
+      "scrollTop": 0
+    },
+    {
+      "width": 804,
+      "height": 1080,
+      "category": "exchange",
+      "left": 530,
+      "right": 1390,
+      "bottom": 990,
+      "client": 804,
+      "scrollWidth": 765,
+      "scrollClient": 765,
+      "contentHeight": 563,
+      "balancesFit": true,
+      "buttonsFit": true,
+      "headerTop": 285.59375,
+      "headerBottom": 335.59375,
+      "balancesTop": 203,
+      "balancesBottom": 263.59375,
+      "scrollTop": 127
+    },
+    {
+      "width": 804,
+      "height": 1080,
+      "category": "gold",
+      "left": 530,
+      "right": 1390,
+      "bottom": 990,
+      "client": 804,
+      "scrollWidth": 765,
+      "scrollClient": 765,
+      "contentHeight": 563,
+      "balancesFit": true,
+      "buttonsFit": true,
+      "headerTop": 285.59375,
+      "headerBottom": 335.59375,
+      "balancesTop": 203,
+      "balancesBottom": 263.59375,
+      "scrollTop": 0
+    },
+    {
+      "width": 804,
+      "height": 768,
+      "category": "chests",
+      "left": 253,
+      "right": 1113,
+      "bottom": 744.953125,
+      "client": 804,
+      "scrollWidth": 765,
+      "scrollClient": 765,
+      "contentHeight": 385,
+      "balancesFit": true,
+      "buttonsFit": true,
+      "headerTop": 218.640625,
+      "headerBottom": 268.640625,
+      "balancesTop": 136.046875,
+      "balancesBottom": 196.640625,
+      "scrollTop": 0
+    },
+    {
+      "width": 804,
+      "height": 768,
+      "category": "boosts",
+      "left": 253,
+      "right": 1113,
+      "bottom": 744.953125,
+      "client": 804,
+      "scrollWidth": 765,
+      "scrollClient": 765,
+      "contentHeight": 385,
+      "balancesFit": true,
+      "buttonsFit": true,
+      "headerTop": 218.640625,
+      "headerBottom": 268.640625,
+      "balancesTop": 136.046875,
+      "balancesBottom": 196.640625,
+      "scrollTop": 0
+    },
+    {
+      "width": 804,
+      "height": 768,
+      "category": "exchange",
+      "left": 253,
+      "right": 1113,
+      "bottom": 744.953125,
+      "client": 804,
+      "scrollWidth": 765,
+      "scrollClient": 765,
+      "contentHeight": 385,
+      "balancesFit": true,
+      "buttonsFit": true,
+      "headerTop": 218.640625,
+      "headerBottom": 268.640625,
+      "balancesTop": 136.046875,
+      "balancesBottom": 196.640625,
+      "scrollTop": 305
+    },
+    {
+      "width": 804,
+      "height": 768,
+      "category": "gold",
+      "left": 253,
+      "right": 1113,
+      "bottom": 744.953125,
+      "client": 804,
+      "scrollWidth": 765,
+      "scrollClient": 765,
+      "contentHeight": 385,
+      "balancesFit": true,
+      "buttonsFit": true,
+      "headerTop": 218.640625,
+      "headerBottom": 268.640625,
+      "balancesTop": 136.046875,
+      "balancesBottom": 196.640625,
+      "scrollTop": 0
+    },
+    {
+      "width": 804,
+      "height": 768,
+      "category": "chests",
+      "left": 82,
+      "right": 942,
+      "bottom": 744.953125,
+      "client": 804,
+      "scrollWidth": 765,
+      "scrollClient": 765,
+      "contentHeight": 385,
+      "balancesFit": true,
+      "buttonsFit": true,
+      "headerTop": 218.640625,
+      "headerBottom": 268.640625,
+      "balancesTop": 136.046875,
+      "balancesBottom": 196.640625,
+      "scrollTop": 0
+    },
+    {
+      "width": 804,
+      "height": 768,
+      "category": "boosts",
+      "left": 82,
+      "right": 942,
+      "bottom": 744.953125,
+      "client": 804,
+      "scrollWidth": 765,
+      "scrollClient": 765,
+      "contentHeight": 385,
+      "balancesFit": true,
+      "buttonsFit": true,
+      "headerTop": 218.640625,
+      "headerBottom": 268.640625,
+      "balancesTop": 136.046875,
+      "balancesBottom": 196.640625,
+      "scrollTop": 0
+    },
+    {
+      "width": 804,
+      "height": 768,
+      "category": "exchange",
+      "left": 82,
+      "right": 942,
+      "bottom": 744.953125,
+      "client": 804,
+      "scrollWidth": 765,
+      "scrollClient": 765,
+      "contentHeight": 385,
+      "balancesFit": true,
+      "buttonsFit": true,
+      "headerTop": 218.640625,
+      "headerBottom": 268.640625,
+      "balancesTop": 136.046875,
+      "balancesBottom": 196.640625,
+      "scrollTop": 305
+    },
+    {
+      "width": 804,
+      "height": 768,
+      "category": "gold",
+      "left": 82,
+      "right": 942,
+      "bottom": 744.953125,
+      "client": 804,
+      "scrollWidth": 765,
+      "scrollClient": 765,
+      "contentHeight": 385,
+      "balancesFit": true,
+      "buttonsFit": true,
+      "headerTop": 218.640625,
+      "headerBottom": 268.640625,
+      "balancesTop": 136.046875,
+      "balancesBottom": 196.640625,
+      "scrollTop": 0
+    },
+    {
+      "width": 338,
+      "height": 844,
+      "category": "chests",
+      "left": 6,
+      "right": 384,
+      "bottom": 818.671875,
+      "client": 338,
+      "scrollWidth": 322,
+      "scrollClient": 322,
+      "contentHeight": 468,
+      "balancesFit": true,
+      "buttonsFit": true,
+      "headerTop": 227.5,
+      "headerBottom": 273.5,
+      "balancesTop": 152.3125,
+      "balancesBottom": 208.5,
+      "scrollTop": 43
+    },
+    {
+      "width": 338,
+      "height": 844,
+      "category": "boosts",
+      "left": 6,
+      "right": 384,
+      "bottom": 818.671875,
+      "client": 338,
+      "scrollWidth": 322,
+      "scrollClient": 322,
+      "contentHeight": 468,
+      "balancesFit": true,
+      "buttonsFit": true,
+      "headerTop": 227.5,
+      "headerBottom": 273.5,
+      "balancesTop": 152.3125,
+      "balancesBottom": 208.5,
+      "scrollTop": 0
+    },
+    {
+      "width": 338,
+      "height": 844,
+      "category": "exchange",
+      "left": 6,
+      "right": 384,
+      "bottom": 818.671875,
+      "client": 338,
+      "scrollWidth": 322,
+      "scrollClient": 322,
+      "contentHeight": 468,
+      "balancesFit": true,
+      "buttonsFit": true,
+      "headerTop": 227.5,
+      "headerBottom": 273.5,
+      "balancesTop": 152.3125,
+      "balancesBottom": 208.5,
+      "scrollTop": 793
+    },
+    {
+      "width": 338,
+      "height": 844,
+      "category": "gold",
+      "left": 6,
+      "right": 384,
+      "bottom": 818.671875,
+      "client": 338,
+      "scrollWidth": 322,
+      "scrollClient": 322,
+      "contentHeight": 468,
+      "balancesFit": true,
+      "buttonsFit": true,
+      "headerTop": 227.5,
+      "headerBottom": 273.5,
+      "balancesTop": 152.3125,
+      "balancesBottom": 208.5,
+      "scrollTop": 217
+    },
+    {
+      "width": 268,
+      "height": 640,
+      "category": "chests",
+      "left": 6,
+      "right": 314,
+      "bottom": 620.796875,
+      "client": 268,
+      "scrollWidth": 252,
+      "scrollClient": 252,
+      "contentHeight": 304,
+      "balancesFit": true,
+      "buttonsFit": true,
+      "headerTop": 177.390625,
+      "headerBottom": 223.390625,
+      "balancesTop": 102.203125,
+      "balancesBottom": 158.390625,
+      "scrollTop": 241
+    },
+    {
+      "width": 268,
+      "height": 640,
+      "category": "boosts",
+      "left": 6,
+      "right": 314,
+      "bottom": 620.796875,
+      "client": 268,
+      "scrollWidth": 252,
+      "scrollClient": 252,
+      "contentHeight": 304,
+      "balancesFit": true,
+      "buttonsFit": true,
+      "headerTop": 177.390625,
+      "headerBottom": 223.390625,
+      "balancesTop": 102.203125,
+      "balancesBottom": 158.390625,
+      "scrollTop": 0
+    },
+    {
+      "width": 268,
+      "height": 640,
+      "category": "exchange",
+      "left": 6,
+      "right": 314,
+      "bottom": 620.796875,
+      "client": 268,
+      "scrollWidth": 252,
+      "scrollClient": 252,
+      "contentHeight": 304,
+      "balancesFit": true,
+      "buttonsFit": true,
+      "headerTop": 177.390625,
+      "headerBottom": 223.390625,
+      "balancesTop": 102.203125,
+      "balancesBottom": 158.390625,
+      "scrollTop": 957
+    },
+    {
+      "width": 268,
+      "height": 640,
+      "category": "gold",
+      "left": 6,
+      "right": 314,
+      "bottom": 620.796875,
+      "client": 268,
+      "scrollWidth": 252,
+      "scrollClient": 252,
+      "contentHeight": 304,
+      "balancesFit": true,
+      "buttonsFit": true,
+      "headerTop": 177.390625,
+      "headerBottom": 223.390625,
+      "balancesTop": 102.203125,
+      "balancesBottom": 158.390625,
+      "scrollTop": 381
+    }
+  ],
+  "saved": {
+    "coins": 1e+300,
+    "tickets": 123456789,
+    "rubies": 987654321,
+    "history": 7,
+    "valid": true
+  },
+  "reload": {
+    "coins": 1e+300,
+    "tickets": 123456789,
+    "rubies": 987654321,
+    "history": 7,
+    "valid": true
+  },
+  "errors": []
+}

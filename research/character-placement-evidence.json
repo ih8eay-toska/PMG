@@ -1,0 +1,456 @@
+{
+  "cameras": [
+    {
+      "file": "level0",
+      "pathID": 171,
+      "hierarchy": [
+        {
+          "name": "UI Camera",
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -200.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          }
+        },
+        {
+          "name": "Splashscreen",
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "scale": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          }
+        }
+      ],
+      "components": [
+        {
+          "type": "Transform",
+          "class": ""
+        },
+        {
+          "type": "Camera",
+          "class": ""
+        }
+      ],
+      "tree": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 46
+        },
+        "m_Enabled": 1,
+        "m_ClearFlags": 4,
+        "m_BackGroundColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.019607843831181526
+        },
+        "m_projectionMatrixMode": 1,
+        "m_GateFitMode": 2,
+        "m_SensorSize": {
+          "x": 36.0,
+          "y": 24.0
+        },
+        "m_LensShift": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "m_FocalLength": 50.0,
+        "m_NormalizedViewPortRect": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1.0,
+          "height": 1.0
+        },
+        "near clip plane": 0.30000001192092896,
+        "far clip plane": 200.0,
+        "field of view": 60.0,
+        "orthographic": true,
+        "orthographic size": 6.400000095367432,
+        "m_Depth": 2.0,
+        "m_CullingMask": {
+          "m_Bits": 32
+        },
+        "m_RenderingPath": -1,
+        "m_TargetTexture": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_TargetDisplay": 0,
+        "m_TargetEye": 3,
+        "m_HDR": false,
+        "m_AllowMSAA": true,
+        "m_AllowDynamicResolution": false,
+        "m_ForceIntoRT": false,
+        "m_OcclusionCulling": false,
+        "m_StereoConvergence": 10.0,
+        "m_StereoSeparation": 0.02199999988079071
+      }
+    },
+    {
+      "file": "level0",
+      "pathID": 172,
+      "hierarchy": [
+        {
+          "name": "Main Camera",
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -10.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          }
+        },
+        {
+          "name": "World",
+          "position": {
+            "x": 10000.0,
+            "y": 10000.0,
+            "z": 0.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          }
+        }
+      ],
+      "components": [
+        {
+          "type": "Transform",
+          "class": ""
+        },
+        {
+          "type": "Camera",
+          "class": ""
+        },
+        {
+          "type": "AudioListener",
+          "class": ""
+        }
+      ],
+      "tree": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 94
+        },
+        "m_Enabled": 1,
+        "m_ClearFlags": 3,
+        "m_BackGroundColor": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.019607843831181526
+        },
+        "m_projectionMatrixMode": 1,
+        "m_GateFitMode": 2,
+        "m_SensorSize": {
+          "x": 36.0,
+          "y": 24.0
+        },
+        "m_LensShift": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "m_FocalLength": 50.0,
+        "m_NormalizedViewPortRect": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1.0,
+          "height": 1.0
+        },
+        "near clip plane": 0.30000001192092896,
+        "far clip plane": 1000.0,
+        "field of view": 60.0,
+        "orthographic": true,
+        "orthographic size": 6.400000095367432,
+        "m_Depth": -1.0,
+        "m_CullingMask": {
+          "m_Bits": 4294967263
+        },
+        "m_RenderingPath": -1,
+        "m_TargetTexture": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_TargetDisplay": 0,
+        "m_TargetEye": 3,
+        "m_HDR": false,
+        "m_AllowMSAA": true,
+        "m_AllowDynamicResolution": false,
+        "m_ForceIntoRT": false,
+        "m_OcclusionCulling": false,
+        "m_StereoConvergence": 10.0,
+        "m_StereoSeparation": 0.02199999988079071
+      }
+    },
+    {
+      "file": "level0",
+      "pathID": 173,
+      "hierarchy": [
+        {
+          "name": "UI Camera",
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -200.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          }
+        },
+        {
+          "name": "Canvas",
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "scale": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          }
+        }
+      ],
+      "components": [
+        {
+          "type": "Transform",
+          "class": ""
+        },
+        {
+          "type": "Camera",
+          "class": ""
+        }
+      ],
+      "tree": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 96
+        },
+        "m_Enabled": 1,
+        "m_ClearFlags": 4,
+        "m_BackGroundColor": {
+          "r": 0.1921568661928177,
+          "g": 0.3019607961177826,
+          "b": 0.4745098054409027,
+          "a": 0.019607843831181526
+        },
+        "m_projectionMatrixMode": 1,
+        "m_GateFitMode": 2,
+        "m_SensorSize": {
+          "x": 36.0,
+          "y": 24.0
+        },
+        "m_LensShift": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "m_FocalLength": 50.0,
+        "m_NormalizedViewPortRect": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1.0,
+          "height": 1.0
+        },
+        "near clip plane": 0.30000001192092896,
+        "far clip plane": 200.0,
+        "field of view": 60.0,
+        "orthographic": true,
+        "orthographic size": 6.400000095367432,
+        "m_Depth": 0.0,
+        "m_CullingMask": {
+          "m_Bits": 32
+        },
+        "m_RenderingPath": -1,
+        "m_TargetTexture": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_TargetDisplay": 0,
+        "m_TargetEye": 3,
+        "m_HDR": false,
+        "m_AllowMSAA": true,
+        "m_AllowDynamicResolution": false,
+        "m_ForceIntoRT": false,
+        "m_OcclusionCulling": false,
+        "m_StereoConvergence": 10.0,
+        "m_StereoSeparation": 0.02199999988079071
+      }
+    }
+  ],
+  "models": [
+    {
+      "class": "Live2DCharacterBehaviour",
+      "file": "sharedassets0.assets",
+      "pathID": 1797,
+      "hierarchy": [
+        {
+          "name": "Tia",
+          "position": {
+            "x": 0.0,
+            "y": 1.0,
+            "z": 0.0
+          },
+          "scale": {
+            "x": 3.0,
+            "y": 3.0,
+            "z": 1.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          }
+        }
+      ],
+      "rawHex": "000000004a030000000000000100000001000000d00100000000000000000000000000002e01000000000000000000001c01000000000000000000003201000000000000000000006705000000000000"
+    },
+    {
+      "class": "Live2DCharacterBehaviour",
+      "file": "sharedassets0.assets",
+      "pathID": 1798,
+      "hierarchy": [
+        {
+          "name": "Pio",
+          "position": {
+            "x": 0.0,
+            "y": 0.43856000900268555,
+            "z": 0.0
+          },
+          "scale": {
+            "x": 3.200000047683716,
+            "y": 3.200000047683716,
+            "z": 1.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          }
+        }
+      ],
+      "rawHex": "000000004b030000000000000100000001000000d00100000000000000000000000000002f01000000000000000000000401000000000000000000004001000000000000000000006605000000000000"
+    },
+    {
+      "class": "Live2DModel",
+      "file": "sharedassets0.assets",
+      "pathID": 1799,
+      "hierarchy": [
+        {
+          "name": "Tia",
+          "position": {
+            "x": 0.0,
+            "y": 1.0,
+            "z": 0.0
+          },
+          "scale": {
+            "x": 3.0,
+            "y": 3.0,
+            "z": 1.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          }
+        }
+      ],
+      "rawHex": "000000004a0300000000000001000000010000002c000000000000000000000000000000290100000000000000000000",
+      "moc": {
+        "pathID": 297,
+        "name": "model.moc",
+        "bytes": 101353,
+        "sha256": "f19c7a20bf7eafcc1ef303b9c9c52d0face97aa0990129aeddec8d5e089d1ef5",
+        "header": "6d6f630b810881090f1e8103"
+      }
+    },
+    {
+      "class": "Live2DModel",
+      "file": "sharedassets0.assets",
+      "pathID": 1800,
+      "hierarchy": [
+        {
+          "name": "Pio",
+          "position": {
+            "x": 0.0,
+            "y": 0.43856000900268555,
+            "z": 0.0
+          },
+          "scale": {
+            "x": 3.200000047683716,
+            "y": 3.200000047683716,
+            "z": 1.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          }
+        }
+      ],
+      "rawHex": "000000004b0300000000000001000000010000002c0000000000000000000000000000003f0100000000000000000000",
+      "moc": {
+        "pathID": 319,
+        "name": "model.moc",
+        "bytes": 84445,
+        "sha256": "1545fdb296bb2d1c9c6f1c295b3a336705618aa467c45e9be8dbc9cb1ffb704d",
+        "header": "6d6f630a810881090f1a8103"
+      }
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+/* Scalable illustrated book: content occupies safe page regions, never the binding. */
+
+#catalog-dialog[open]{display:flex;flex-direction:column;height:min(94svh,1080px);max-height:94svh;overflow:hidden;}
+.book-toolbar{display:flex;align-items:center;justify-content:space-between;gap:18px;flex:none;padding:5px 4px 8px}
+#catalog-dialog .catalog-family-rail{display:flex;gap:7px;margin:0;flex-shrink:0}
+#catalog-dialog .catalog-family-rail button{width:auto;min-width:74px;min-height:40px;padding:7px 13px;font-size:14px;color:#5e4328;background:#efe1c5;border:1px solid #b8a17b}
+#catalog-dialog .catalog-family-rail button[aria-pressed=true]{background:#dbc38f;border:2px solid #946b2d;padding:6px 12px}
+.book-pagination{display:flex;gap:6px;align-items:center;margin-left:auto;min-width:0;width:min(48%,540px)}
+#catalog-dialog .book-pagination button{min-height:40px;min-width:40px;padding:6px 10px;flex-shrink:0}
+.book-pagination select{min-width:0;max-width:none;width:100%;padding:9px;border:1px solid #bda889;border-radius:7px;background:#fff4d8;color:#4c3528;font:inherit;font-size:14px;min-height:40px}
+.book-browse-line{display:flex;align-items:center;justify-content:space-between;gap:8px;flex:none;margin:0 4px 8px}
+#catalog-pair-label{margin:0;font-size:12px;line-height:1.4;color:#795c35}
+#catalog-page-switch{display:none}
+#catalog-book-stage{display:block;flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable;padding:0 3px 3px}
+.catalog-spread{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,4.5vw,68px);padding:clamp(26px,2.7vw,38px) clamp(32px,4.5vw,64px) clamp(40px,4vw,58px);min-height:max(540px,100%);height:auto;flex:none;background:url('__POTION_BOOK_ART__') center/100% 100% no-repeat;filter:drop-shadow(0 5px 3px #5b35182b)}
+.catalog-page{display:flex;flex-direction:column;min-width:0;min-height:auto;padding:0;color:#4c3528}
+.catalog-page>h3{flex:none;text-align:center;margin:0 0 12px;padding:0 0 8px;border-bottom:1px solid #a98a4c77;font:18px Georgia,serif;letter-spacing:.04em;color:#795326}
+.catalog-page-content{display:flex;flex-direction:column;min-height:auto;overflow:visible;padding:0;flex:1}
+.book-overview{display:flex;flex-direction:column;align-items:stretch;flex:1;min-width:0;color:#4c3528;font-size:15px;line-height:1.55}
+.book-illustration{display:grid;place-items:center;height:112px;margin:0 0 8px}
+.book-illustration img{display:block;width:96px;height:108px;object-fit:contain;filter:drop-shadow(0 4px 2px #79502128)}
+.book-entry-name{font:24px/1.2 Georgia,serif;text-align:center;margin:0 0 7px;min-height:2.4em;display:grid;place-items:center;overflow-wrap:anywhere;color:#513820}
+.book-entry-status{text-align:center;font-size:13px;line-height:1.4;margin:0 0 12px;color:#76592e}
+.book-overview-stats{display:flex;justify-content:center;align-items:start;flex-wrap:wrap;gap:8px 24px;margin:0 0 12px;min-height:42px;border-bottom:1px solid #bca16c70;padding-bottom:10px;font-size:13px}
+.book-overview-stats>div{display:flex;flex-direction:column;align-items:center;gap:3px}
+.book-overview-stats dt{color:#7d6139}.book-overview-stats dd{font-weight:bold;margin:0;color:#513820}
+.book-introduction{font:15px/1.65 Georgia,serif;margin:0 0 12px;min-height:5em;color:#513d2a}
+#catalog-dialog .book-read-lore{align-self:center;margin:20px 0 0;min-height:42px;padding:6px 12px;background:transparent;border:0;border-bottom:1px solid #a07938;border-radius:0;box-shadow:none;color:#754e1d;font:15px Georgia,serif}
+.book-read-lore:after{content:' →'}
+#catalog-dialog button:focus-visible,#catalog-dialog select:focus-visible,#catalog-reader-dialog button:focus-visible,#catalog-reader-body:focus-visible{outline:3px solid #946b2d;outline-offset:2px}
+#catalog-reader-dialog{max-height:92svh;}
+#catalog-reader-dialog[open]{display:flex;flex-direction:column;height:min(90svh,950px);overflow:hidden}
+.book-reader-header{position:relative;flex:none;border-bottom:1px solid #aa854d;padding:0 42px 12px 0}
+#catalog-reader-context{margin:0 0 8px;font-size:12px;color:#775a2f}
+
+#catalog-reader-body{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;padding:20px 12px 18px 4px;scrollbar-gutter:stable}
+#catalog-reader-dialog .catalog-item{display:block;max-height:none;overflow:visible;border:0;border-radius:0;background:transparent;padding:0;color:#4c3528;opacity:1;text-align:left;font:16px/1.75 Georgia,serif}
+#catalog-reader-dialog .catalog-item>img{display:block;width:84px;height:96px;object-fit:contain;margin:0 auto 12px}
+#catalog-reader-dialog .catalog-item>h3{display:none}
+#catalog-reader-dialog .catalog-flavor{background:transparent;border:0;margin:0;padding:0;font:16px/1.75 Georgia,serif;color:#4c3528}
+#catalog-reader-dialog .catalog-flavor p{margin:14px 0;white-space:pre-line}
+#catalog-reader-dialog .catalog-flavor h4{font:19px Georgia,serif;color:#755127;margin:22px 0 8px}
+#catalog-reader-dialog .catalog-item .supplier-note,#catalog-reader-dialog .catalog-item .bottle-note{background:#c5a15a15;border:0;border-left:2px solid #a17a37;padding:10px 14px;color:#604528;font:15px/1.7 Georgia,serif;white-space:pre-line}
+#catalog-reader-dialog .catalog-records{border-top:1px solid #b19868;margin-top:20px;padding-top:8px}
+#catalog-reader-dialog .catalog-record-grid{display:grid;gap:6px;font-size:14px}
+#catalog-reader-dialog .catalog-record-grid>div{display:flex;justify-content:space-between;gap:14px}
+#catalog-reader-dialog .catalog-record-grid dd{margin:0;text-align:right}
+#catalog-reader-dialog .catalog-achievement{padding:0;background:transparent;border:0}
+#catalog-reader-dialog details{margin-top:18px;padding:10px 0;border-top:1px solid #b19868;font-size:14px}
+#catalog-reader-dialog summary{cursor:pointer;min-height:32px;font-weight:bold}
+#catalog-reader-dialog .muted{color:#79634c}
+.book-reader-navigation{display:flex;justify-content:space-between;align-items:center;gap:8px;flex:none;border-top:1px solid #aa854d;padding-top:12px}
+.book-reader-navigation button{min-height:40px;padding:7px 10px;font-size:12px;color:#654521;background:#f4e5c0;border-color:#b19a68}
+#catalog-reader-page{font-size:12px;color:#795c35;white-space:nowrap}
+:root[data-text-size=large] .book-introduction,:root[data-text-size=large] .book-overview{font-size:18px}
+:root[data-text-size=large] #catalog-reader-dialog .catalog-flavor,:root[data-text-size=large] #catalog-reader-dialog .catalog-item{font-size:19px}
+@media(max-width:760px){#catalog-dialog[open]{height:96svh;max-height:96svh;}.book-toolbar{flex-wrap:wrap;gap:8px;padding:4px 0 7px}#catalog-dialog .catalog-family-rail{width:100%;justify-content:center}#catalog-dialog .catalog-family-rail button{flex:1;max-width:150px;min-width:0}.book-pagination{width:100%;margin:0}.book-browse-line{margin:0 0 8px}#catalog-page-switch{display:flex;gap:4px}#catalog-page-switch button{padding:6px 9px;font-size:12px;min-height:38px;color:#654521;background:#efe1c5;border-color:#b19a68}#catalog-page-switch button[aria-pressed=true]{background:#dbc38f;border:2px solid #946b2d;padding:5px 8px}.catalog-spread{grid-template-columns:1fr;gap:0;padding:30px clamp(30px,8vw,58px) 50px;min-height:max(540px,100%);background-size:200% 100%;background-position:left center}.catalog-spread[data-page=potion]{background-position:right center}.catalog-spread[data-page=material] .catalog-potion-page,.catalog-spread[data-page=potion] .catalog-material-page{display:none}.book-entry-name{font-size:24px;min-height:auto}.book-illustration{height:120px}.book-illustration img{width:104px;height:116px}.book-overview-stats{font-size:14px}.book-entry-status{font-size:14px}.book-introduction{font-size:16px;line-height:1.7}.catalog-page>h3{font-size:20px}.book-reader-navigation{flex-wrap:wrap}.book-reader-navigation button{font-size:11px;padding:7px 8px}#catalog-reader-page{font-size:11px}#catalog-reader-body{padding-right:7px}}
+
+@media(min-width:1500px){.book-illustration{height:170px}.book-illustration img{width:128px;height:144px}.book-entry-name{font-size:27px}.book-introduction{font-size:17px;line-height:1.75;min-height:5.25em}.book-overview-stats,.book-entry-status{font-size:14px}#catalog-dialog .book-read-lore{font-size:17px}}
+
+#catalog-dialog .catalog-family-rail .ui-family,#catalog-pair-label .ui-family,#catalog-reader-context .ui-family{color:inherit!important}
+#catalog-dialog .catalog-family-rail button:before{content:'';display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--book-family-color);margin-right:5px;vertical-align:middle}
+
+/* Sprite particles attach directly to the cauldron, never a zero-size wrapper. */
+.cauldron-effect { position: absolute; inset: 0; z-index: 13; pointer-events: none; }
+.cauldron-effect .cauldron-texture { position: absolute; width: 5%; height: auto; transform: translate(-50%,-50%); background-repeat: no-repeat; mix-blend-mode: screen; opacity: 0; }
+.texture-fx-enhanced .cauldron-texture { width: 70%; filter: sepia(1) saturate(3); }
+.texture-fx-failed .cauldron-texture { width: 27%; mix-blend-mode: normal; filter: saturate(.35) brightness(.65); }
+.texture-fx-plop .cauldron-texture { width: 22%; }
+/* Charges remain visible at the APK's button-relative positions. */
+.room .potion-card > .original-boost-indicator:not([hidden]) { display: block; }
+
+/* APK RectTransform: gauge 400×10, Y +149.1 from Enhancement's center. */
+#enhancement-progress { position: absolute; left: 50%; top: -12px; width: 56%; height: 8px; transform: translateX(-50%); margin: 0; padding: 0; border: 0; border-radius: 0; box-shadow: none; background-size: 100% 100%; overflow: visible; z-index: 15; }
+#enhancement-progress[hidden] { display: none; }
+.room[data-apk-layout] #enhancement-progress { top: calc(-17.1 * var(--apk-u)); width: calc(400 * var(--apk-u)); height: calc(10 * var(--apk-u)); }
+.room[data-apk-layout] #enhancement-progress .apk-enhance-fill { left: calc(-2 * var(--apk-u)); right: auto; width: calc(404 * var(--apk-u)); }
+#enhancement-progress .apk-enhance-fill { position: absolute; inset: 0; background-color: #0ff; background-blend-mode: multiply; background-size: 100% 100%; clip-path: inset(0 calc((1 - var(--enhance-progress,0)) * 100%) 0 0); }
+#enhancement-progress .apk-gauge-cap { position: absolute; top: 50%; width: calc(18 * var(--apk-u, .7px)); height: calc(24 * var(--apk-u, .7px)); object-fit: fill; transform: translate(-50%,-50%); }
+#enhancement-progress .apk-gauge-cap.left { left: calc(-5 * var(--apk-u, .7px)); }
+#enhancement-progress .apk-gauge-cap.right { left: calc(100% + 5 * var(--apk-u, .7px)); transform: translate(-50%,-50%) scaleX(-1); }
+.texture-fx-enhancing .cauldron-texture { width: calc(10 * var(--apk-u, .7px)); }
+.texture-fx-enhanced .cauldron-texture { filter: none; }
+.reward-chest { width: 112px; height: 112px; margin: 12px auto 18px; background-position: center; background-size: contain; background-repeat: no-repeat; image-rendering: pixelated; filter: drop-shadow(0 5px 4px #0004); }
+.achievement-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.achievement-tabs [aria-pressed="true"] { background: #d6b3ce; border-color: #ac76aa; }
+#achievement-filters { display: flex; flex-wrap: wrap; gap: 6px; }
+#achievement-grid .achievement-card > button { display: block; margin-top: 12px; }
+#achievement-grid .achievement-card > small { display: block; margin-top: 8px; line-height: 1.5; color: var(--muted); }
+#achievements-dialog[open] { display: flex; flex-direction: column; height: min(90svh,850px); overflow: hidden; }
+#achievements-dialog > .achievement-tabs,#achievement-summary,#achievement-filters,#achievement-mastery-note { flex: none; }
+#achievements-dialog #achievement-grid { flex: 1; min-height: 0; max-height: none; overflow: auto; overscroll-behavior: contain; }
+@media(max-width:650px) {
+  .achievement-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .achievement-tabs button { padding: 8px 4px; font-size: 12px; }
+  #achievement-summary { font-size: 11px; }
+}

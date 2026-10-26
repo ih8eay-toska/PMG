@@ -1,0 +1,154 @@
+[
+  {
+    "name": "settings",
+    "pathID": 373,
+    "size": [
+      107,
+      86
+    ],
+    "rgbaSha256": "8a91f2aeb7eaeaa3c145828ddcd42dd011137981d0a5647a03385326c1964deb",
+    "exactMatches": [
+      "assets/extracted/settings.png",
+      "assets/extracted/organized/ui/settings.png",
+      "assets/original-apk/ui/settings.png"
+    ]
+  },
+  {
+    "name": "characters",
+    "pathID": 383,
+    "size": [
+      104,
+      83
+    ],
+    "rgbaSha256": "8d223815346ee59a536ee36142fd96fff3ff4a1a94f3a4eecb9cb3d68d92bf07",
+    "exactMatches": [
+      "assets/extracted/characters.png",
+      "assets/extracted/organized/ui/characters.png"
+    ]
+  },
+  {
+    "name": "items",
+    "pathID": 386,
+    "size": [
+      95,
+      67
+    ],
+    "rgbaSha256": "46d66861a36ca63eb10fe337c754cf8168154ef42210c2c940dca1d09dc6098d",
+    "exactMatches": [
+      "assets/extracted/items.png",
+      "assets/extracted/organized/ui/items.png",
+      "assets/original-apk/ui/items.png"
+    ]
+  },
+  {
+    "name": "archive",
+    "pathID": 418,
+    "size": [
+      106,
+      99
+    ],
+    "rgbaSha256": "fabeebc02d75d027a587da9884c8919283aaa67b6e54d53b408b8b08c64beb49",
+    "exactMatches": [
+      "assets/extracted/archive.png",
+      "assets/extracted/organized/ui/archive.png",
+      "assets/original-apk/ui/archive.png"
+    ]
+  },
+  {
+    "name": "help",
+    "pathID": 433,
+    "size": [
+      91,
+      73
+    ],
+    "rgbaSha256": "b0cb9a9cebc8bacc614080a8dbda4d07c8807aa7f7004601fa23c03b86ba81ee",
+    "exactMatches": [
+      "assets/extracted/help.png",
+      "assets/extracted/organized/ui/help.png",
+      "assets/original-apk/ui/help.png"
+    ]
+  },
+  {
+    "name": "stats",
+    "pathID": 439,
+    "size": [
+      77,
+      65
+    ],
+    "rgbaSha256": "da4321c96952a22150fbb07f98d5a1c9126a8b29261cf7350056131446bb62a9",
+    "exactMatches": [
+      "assets/extracted/stats.png",
+      "assets/extracted/organized/ui/stats.png",
+      "assets/original-apk/ui/stats.png"
+    ]
+  },
+  {
+    "name": "achievements",
+    "pathID": 464,
+    "size": [
+      101,
+      76
+    ],
+    "rgbaSha256": "ea78e54fa4b615701518fb3e7aa9d894fd26afe77610f9b81150e5609ee28f58",
+    "exactMatches": [
+      "assets/extracted/achievements.png",
+      "assets/extracted/organized/ui/achievements.png",
+      "assets/original-apk/ui/achievements.png"
+    ]
+  },
+  {
+    "name": "costumes",
+    "pathID": 508,
+    "size": [
+      100,
+      81
+    ],
+    "rgbaSha256": "9e12a4c3f60ffb444197871939b0948e6489c3fe932f2d3440447a6a8541b35f",
+    "exactMatches": [
+      "assets/extracted/costumes.png",
+      "assets/extracted/organized/costumes/costumes.png",
+      "assets/original-apk/ui/costumes.png"
+    ]
+  },
+  {
+    "name": "fairies",
+    "pathID": 512,
+    "size": [
+      87,
+      78
+    ],
+    "rgbaSha256": "56bfc9c4b66743b8e98d7523a416383ccf0279238614d7f3e8205deb855815e0",
+    "exactMatches": [
+      "assets/extracted/fairies.png",
+      "assets/extracted/organized/ui/fairies.png",
+      "assets/original-apk/ui/fairies.png"
+    ]
+  },
+  {
+    "name": "upgrades",
+    "pathID": 534,
+    "size": [
+      120,
+      67
+    ],
+    "rgbaSha256": "23cfc7318e0254c26002649db771e296267d7114defa268f3cb8c6dbf021b195",
+    "exactMatches": [
+      "assets/extracted/upgrades.png",
+      "assets/extracted/organized/ui/upgrades.png"
+    ]
+  },
+  {
+    "name": "mailbox",
+    "pathID": 543,
+    "size": [
+      94,
+      88
+    ],
+    "rgbaSha256": "2b09afa3dbcbc098423c0a5fa38d3a49851956815360807c93be813adce095d9",
+    "exactMatches": [
+      "assets/extracted/mailbox.png",
+      "assets/extracted/organized/ui/mailbox.png",
+      "assets/original-apk/ui/mailbox.png"
+    ]
+  }
+]

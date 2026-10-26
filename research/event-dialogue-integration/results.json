@@ -1,0 +1,90 @@
+{
+  "checkedLines": 109,
+  "openingReloadAt": 10,
+  "openingStartsOnce": true,
+  "endingSelection": [
+    {
+      "count": 0,
+      "id": "ending-none",
+      "lines": 11
+    },
+    {
+      "count": 1,
+      "id": "ending-c",
+      "lines": 11
+    },
+    {
+      "count": 50,
+      "id": "ending-b",
+      "lines": 10
+    },
+    {
+      "count": 100,
+      "id": "ending-a",
+      "lines": 11
+    },
+    {
+      "count": 150,
+      "id": "ending-s",
+      "lines": 16
+    }
+  ],
+  "layouts": [
+    {
+      "width": 1366,
+      "overflow": false,
+      "above": true,
+      "speaker": "Tirami",
+      "loaded": true,
+      "placeholder": false,
+      "large": false
+    },
+    {
+      "width": 1366,
+      "overflow": false,
+      "above": true,
+      "speaker": "Tirami",
+      "loaded": true,
+      "placeholder": false,
+      "large": true
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "above": true,
+      "speaker": "Tirami",
+      "loaded": true,
+      "placeholder": false,
+      "large": false
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "above": true,
+      "speaker": "Tirami",
+      "loaded": true,
+      "placeholder": false,
+      "large": true
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "above": true,
+      "speaker": "Tirami",
+      "loaded": true,
+      "placeholder": false,
+      "large": false
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "above": true,
+      "speaker": "Tirami",
+      "loaded": true,
+      "placeholder": false,
+      "large": true
+    }
+  ],
+  "portableSave": true,
+  "errors": []
+}

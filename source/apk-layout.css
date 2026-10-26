@@ -12,12 +12,14 @@
 .room[data-apk-layout] .ingredients.conveyor,.room[data-apk-layout] .conveyor .ingredient { height:calc(90 * var(--apk-u)); }
 .room[data-apk-layout] .conveyor .ingredient img { width:calc(72 * var(--apk-u)); height:calc(72 * var(--apk-u)); }
 .room[data-apk-layout] .brew-scene { position:absolute; inset:0; width:100%; height:100%; min-height:0; margin:0; overflow:hidden; }
+.room[data-apk-layout] .brewer-speech { top:calc(235 * var(--apk-u))!important; font-size:clamp(12px,calc(24 * var(--apk-u)),15px); }
 .room[data-apk-layout] .brew-scene .window,.room[data-apk-layout] .brew-scene .table,.room[data-apk-layout] .brew-scene .flame { display:none; }
 .room[data-apk-layout] .cauldron.original-cauldron { position:absolute; left:50%; top:calc(50% + 151 * var(--apk-u)); bottom:auto; width:calc(602 * var(--apk-u)); height:calc(224 * var(--apk-u)); min-height:0; margin:0; transform:translateX(-50%); z-index:4; }
 .room[data-apk-layout] .cauldron.original-cauldron .liquid { left:calc(50% - 236 * var(--apk-u)); top:calc(-24.5 * var(--apk-u)); right:auto; width:calc(488 * var(--apk-u)); height:calc(179 * var(--apk-u)); transform:none; }
-/* World-space model projection is unverified; preserve its existing aspect ratio. */
-.room[data-apk-layout] .pio-canvas { left:50%!important; right:auto!important; bottom:auto!important; top:calc(50% - 454 * var(--apk-u))!important; width:calc(660 * var(--apk-u))!important; height:calc(729.474 * var(--apk-u))!important; transform:translateX(-50%)!important; }
-.room[data-apk-layout] #brew-character { left:50%; right:auto; top:calc(50% - 454 * var(--apk-u)); bottom:auto; width:calc(660 * var(--apk-u)); height:calc(729.474 * var(--apk-u)); transform:translateX(-50%); object-fit:contain; }
+/* APK: Ortho(0,W,W,0), camera half-height 6.4; Pio scale 3.2/Y .43856, Tia scale 3/Y 1. */
+.room[data-apk-layout] .pio-canvas { left:50%!important; right:auto!important; bottom:auto!important; top:calc(50% - var(--apk-model-top,363.856) * var(--apk-world-u))!important; width:calc(var(--apk-model-size,640) * var(--apk-world-u))!important; height:calc(var(--apk-model-size,640) * var(--apk-world-u))!important; transform:translateX(-50%)!important; }
+.room[data-apk-layout] #brew-character { left:50%; right:auto; top:calc(50% - var(--apk-model-top,363.856) * var(--apk-world-u)); bottom:auto; width:calc(var(--apk-model-size,640) * var(--apk-world-u)); height:calc(var(--apk-model-size,640) * var(--apk-world-u)); transform:translateX(-50%); object-fit:contain; }
+.room[data-apk-layout] .pio-canvas[data-character="Tia"],.room[data-apk-layout] #brew-character[data-character="Tia"] { --apk-model-size:600; --apk-model-top:400; }
 .room[data-apk-layout] .visitor-shortcut { left:calc(50% - 325 * var(--apk-u)); top:calc(558.2 * var(--apk-u)); width:calc(96 * var(--apk-u)); height:calc(96 * var(--apk-u)); }
 .room[data-apk-layout] .pushcat-controls { left:calc(50% + 215 * var(--apk-u)); right:auto; top:calc(524.5 * var(--apk-u)); width:calc(140 * var(--apk-u)); font-size:calc(18 * var(--apk-u)); }
 .room[data-apk-layout] .pushcat-controls #pushcat-summon { width:100%; }
@@ -40,6 +42,18 @@
 .room[data-apk-layout] .potion-card .enhance-details { padding:0; }
 .room[data-apk-layout] .potion-card .enhance-details::before { font-size:calc(20 * var(--apk-u)); }
 .room[data-apk-layout] .potion-card .sale-price,.room[data-apk-layout] .potion-card #value,.room[data-apk-layout] .potion-card .enhance-multiplier { font-size:calc(25 * var(--apk-u)); }
+.room[data-apk-layout] .potion-card>.original-boost-indicator { left:auto;right:auto;top:auto;bottom:auto;z-index:12;display:block;padding:0;border:0;border-radius:0;background:transparent; }
+.room[data-apk-layout] .potion-card>.original-boost-indicator[hidden] { display:none!important; }
+.room[data-apk-layout] .potion-card>#enhancement-indicator { left:calc(50% + 252.9 * var(--apk-u));top:calc(8 * var(--apk-u));width:calc(114 * var(--apk-u));height:calc(76 * var(--apk-u)); }
+.room[data-apk-layout] .potion-card>#protection-indicator { left:calc(50% + 49.9 * var(--apk-u));top:calc(11 * var(--apk-u));width:calc(63 * var(--apk-u));height:calc(73 * var(--apk-u)); }
+.room[data-apk-layout] .potion-card>#selling-indicator { left:calc(50% - 180 * var(--apk-u));top:calc(115.5 * var(--apk-u));width:calc(70 * var(--apk-u));height:calc(69 * var(--apk-u)); }
+.room[data-apk-layout] .potion-card>.original-boost-indicator>img { position:absolute;inset:0;width:100%;height:100%;object-fit:fill;filter:none; }
+.room[data-apk-layout] .potion-card>.original-boost-indicator>span { position:absolute;right:calc(-5 * var(--apk-u));bottom:calc(-4 * var(--apk-u));min-width:calc(21 * var(--apk-u));height:calc(21 * var(--apk-u));padding:0 calc(4 * var(--apk-u));display:grid;place-items:center;border:calc(2 * var(--apk-u)) solid #fff4d6;border-radius:50%;background:#592c60;color:#fff;font:bold calc(13 * var(--apk-u))/1 sans-serif;text-shadow:0 1px 2px #000;box-shadow:0 1px 4px #0009; }
+.room[data-apk-layout] #sell .original-button-glow { position:absolute;left:50%;top:50%;z-index:0;width:calc(204 * var(--apk-u));height:calc(104 * var(--apk-u));padding:0;border:0;border-radius:0;object-fit:fill;transform:translate(-50%,-50%);pointer-events:none;opacity:.08;animation:apk-button-glow 1s ease-in-out infinite; }
+.room[data-apk-layout] #sell>*:not(.original-button-glow) { position:relative;z-index:2; }
+@keyframes apk-button-glow { 0%,100% { opacity:.06; } 50% { opacity:.32; } }
+@media (prefers-reduced-motion:reduce) { .room[data-apk-layout] #sell .original-button-glow { animation:none;opacity:.18; } }
+[data-reduced-motion=true] .room[data-apk-layout] #sell .original-button-glow { animation:none;opacity:.18; }
 
 @media(prefers-reduced-motion:reduce) { .room[data-apk-layout] * { scroll-behavior:auto; } }
 .room[data-apk-layout] .room-top { background:var(--apk-wood-top) center/100% 100% no-repeat; }

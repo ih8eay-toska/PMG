@@ -32,3 +32,7 @@ Review the Potion Maker code for clearly redundant, duplicated, or unnecessarily
 - Inspect existing checks and use only relevant, already available checks when appropriate; do not add tests for this cleanup. If a check or build is not run, state that plainly.
 - If source changes require rebuilding the playable HTML, use the documented build process and report that the generated file changed. Do not silently leave source and playable HTML out of sync.
 - Finish with a concise report: files changed, each cleanup and its evidence, behavior intentionally preserved, checks/build run and results, and any candidates left untouched with the reason.
+
+## UI implementation standard
+
+All menu work must follow [UI_DESIGN_SYSTEM.md](UI_DESIGN_SYSTEM.md). Reuse the registered shared shell, original frame/title/close assets and centralized tokens. Register new dialog IDs in MENU_SCREENS, document justified variants, update the screen inventory and verify desktop/mobile navigation without changing gameplay or saves.

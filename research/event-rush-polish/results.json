@@ -1,0 +1,66 @@
+{
+  "firstOpening": true,
+  "reload": true,
+  "replayTimers": true,
+  "speakerLayout": true,
+  "milestoneQueue": true,
+  "memoriesSaved": true,
+  "gradeBoundaries": true,
+  "previews": true,
+  "vouchers": true,
+  "results": true,
+  "portableSave": true,
+  "layouts": [
+    {
+      "width": 1366,
+      "overflow": false,
+      "previewCount": 6,
+      "ladderCount": 4,
+      "inRightSection": true,
+      "large": false
+    },
+    {
+      "width": 1366,
+      "overflow": false,
+      "previewCount": 6,
+      "ladderCount": 4,
+      "inRightSection": true,
+      "large": true
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "previewCount": 6,
+      "ladderCount": 4,
+      "inRightSection": true,
+      "large": false
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "previewCount": 6,
+      "ladderCount": 4,
+      "inRightSection": true,
+      "large": true
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "previewCount": 6,
+      "ladderCount": 4,
+      "inRightSection": true,
+      "large": false
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "previewCount": 6,
+      "ladderCount": 4,
+      "inRightSection": true,
+      "large": true
+    }
+  ],
+  "keyboard": true,
+  "reducedMotion": true,
+  "errors": []
+}

@@ -1,0 +1,197 @@
+{
+  "motions": [
+    {
+      "group": "idle",
+      "index": 0,
+      "headMoves": true,
+      "hatWidth": 404.24809508075157,
+      "hatX": 359.67585998535156,
+      "hatY": 202.73414611816406
+    },
+    {
+      "group": "idle",
+      "index": 1,
+      "headMoves": true,
+      "hatWidth": 404.0957607744001,
+      "hatX": 369.27886138916017,
+      "hatY": 203.07020080566406
+    },
+    {
+      "group": "idle",
+      "index": 2,
+      "headMoves": true,
+      "hatWidth": 403.78993650496943,
+      "hatX": 366.7929640197754,
+      "hatY": 203.92474838256837
+    },
+    {
+      "group": "idle",
+      "index": 3,
+      "headMoves": true,
+      "hatWidth": 404.35879250213657,
+      "hatX": 364.25454727172854,
+      "hatY": 205.6013346862793
+    },
+    {
+      "group": "idle",
+      "index": 4,
+      "headMoves": true,
+      "hatWidth": 403.84462548649924,
+      "hatX": 366.29693557739256,
+      "hatY": 208.07686233520508
+    },
+    {
+      "group": "idle",
+      "index": 5,
+      "headMoves": true,
+      "hatWidth": 404.4050031167095,
+      "hatX": 363.51093688964846,
+      "hatY": 209.6206539916992
+    },
+    {
+      "group": "sleepy",
+      "index": 0,
+      "headMoves": true,
+      "hatWidth": 403.9459764655999,
+      "hatX": 365.51841476440427,
+      "hatY": 210.66263778686522
+    },
+    {
+      "group": "flick_head",
+      "index": 0,
+      "headMoves": true,
+      "hatWidth": 404.02266573490505,
+      "hatX": 371.43863540649414,
+      "hatY": 209.49783828735352
+    },
+    {
+      "group": "flick_head",
+      "index": 1,
+      "headMoves": true,
+      "hatWidth": 404.25418497333874,
+      "hatX": 361.18241958618165,
+      "hatY": 207.29433547973633
+    },
+    {
+      "group": "flick_head",
+      "index": 2,
+      "headMoves": true,
+      "hatWidth": 404.17767234999343,
+      "hatX": 365.63785675048825,
+      "hatY": 204.9758447265625
+    },
+    {
+      "group": "flick_head",
+      "index": 3,
+      "headMoves": true,
+      "hatWidth": 403.95614579503814,
+      "hatX": 368.4782112121582,
+      "hatY": 203.87946975708007
+    },
+    {
+      "group": "flick_head",
+      "index": 4,
+      "headMoves": true,
+      "hatWidth": 358.7995859002789,
+      "hatX": 352.34629791259766,
+      "hatY": 222.121484375
+    },
+    {
+      "group": "flick_head",
+      "index": 5,
+      "headMoves": true,
+      "hatWidth": 327.81366108302944,
+      "hatX": 378.3030842590332,
+      "hatY": 212.12660385131835
+    },
+    {
+      "group": "tap_body",
+      "index": 0,
+      "headMoves": true,
+      "hatWidth": 333.72760092816696,
+      "hatX": 372.03984283447267,
+      "hatY": 211.34632690429686
+    },
+    {
+      "group": "tap_body",
+      "index": 1,
+      "headMoves": true,
+      "hatWidth": 353.2902603663826,
+      "hatX": 364.7090769958496,
+      "hatY": 229.24401657104494
+    },
+    {
+      "group": "tap_body",
+      "index": 2,
+      "headMoves": true,
+      "hatWidth": 349.72987227875774,
+      "hatX": 366.3436196899414,
+      "hatY": 230.00346832275392
+    },
+    {
+      "group": "tap_body",
+      "index": 3,
+      "headMoves": true,
+      "hatWidth": 337.05394098869226,
+      "hatX": 369.42943908691404,
+      "hatY": 223.39577087402344
+    },
+    {
+      "group": "tap_body",
+      "index": 4,
+      "headMoves": true,
+      "hatWidth": 338.00709888249827,
+      "hatX": 366.9061415100098,
+      "hatY": 224.99052597045898
+    },
+    {
+      "group": "tap_body",
+      "index": 5,
+      "headMoves": true,
+      "hatWidth": 337.876936882728,
+      "hatX": 369.7298143005371,
+      "hatY": 225.49652267456054
+    },
+    {
+      "group": "tap_body",
+      "index": 6,
+      "headMoves": true,
+      "hatWidth": 337.8919153708899,
+      "hatX": 366.0526042175293,
+      "hatY": 224.57405197143555
+    },
+    {
+      "group": "tap_body",
+      "index": 7,
+      "headMoves": true,
+      "hatWidth": 334.36071941663704,
+      "hatX": 361.2494451904297,
+      "hatY": 227.95410064697265
+    },
+    {
+      "group": "tap_body",
+      "index": 8,
+      "headMoves": true,
+      "hatWidth": 338.01647447441394,
+      "hatX": 371.91006622314455,
+      "hatY": 216.7429342651367
+    },
+    {
+      "group": "success",
+      "index": 0,
+      "headMoves": true,
+      "hatWidth": 404.92336307692517,
+      "hatX": 375.5660804748535,
+      "hatY": 210.83479507446287
+    },
+    {
+      "group": "failure",
+      "index": 0,
+      "headMoves": true,
+      "hatWidth": 404.65934323854276,
+      "hatX": 384.6193499755859,
+      "hatY": 211.01697021484375
+    }
+  ],
+  "errors": []
+}
