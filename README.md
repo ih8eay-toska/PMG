@@ -16,9 +16,9 @@ Use GitHub Desktop or Git for the playable HTML: it is below the 100 MiB Git fil
 
 ## GitHub Pages updates
 
-Every push to `main` runs `.github/workflows/pages.yml`. It first generates the ignored lossless-texture verification cache using the existing pinned build dependency, verifies the committed offline HTML, copies `Potion-Maker.html` to `gh-pages/index.html` while retaining branch history and `.nojekyll`, then deploys that same file through GitHub Pages. The Pages publishing source is **GitHub Actions**; the branch is also maintained as a mirror. No personal access token or new repository secret is required by the workflow.
+Every push to `main` runs `.github/workflows/pages.yml`. Using the existing pinned build dependency, it runs `source/build.py`, verifies the generated offline game, copies it to `gh-pages/index.html` while retaining branch history and `.nojekyll`, then deploys that same file through GitHub Pages. The Pages publishing source is **GitHub Actions**; the branch is also maintained as a mirror. No personal access token or new repository secret is required by the workflow.
 
-When game source or data changes, rebuild and commit `Potion-Maker.html` before pushing. The workflow refuses a stale build. Local commits alone do not publish until pushed. You can also run **Publish Potion Maker** manually from Actions. Deployment runs are serialized so overlapping pushes cannot overwrite the mirror simultaneously.
+The website is built from source on each push, including source-only updates. Continue rebuilding and committing `Potion-Maker.html` locally when changing game source/data so the downloadable copy in the repository also stays current. Local commits alone do not publish until pushed. You can also run **Publish Potion Maker** manually from Actions. Deployment runs are serialized so overlapping pushes cannot overwrite the mirror simultaneously.
 
 ## Gameplay additions
 
