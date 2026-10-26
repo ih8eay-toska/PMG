@@ -14,6 +14,12 @@ The offline HTML now uses verified lossless wardrobe compression and shared embe
 
 Use GitHub Desktop or Git for the playable HTML: it is below the 100 MiB Git file limit, but above the website upload interface's 25 MiB limit.
 
+## GitHub Pages updates
+
+Every push to `main` runs `.github/workflows/pages.yml`. It verifies the committed offline HTML, copies `Potion-Maker.html` to `gh-pages/index.html` while retaining branch history and `.nojekyll`, then deploys that same file through GitHub Pages. The Pages publishing source is **GitHub Actions**; the branch is also maintained as a mirror. No personal access token or new repository secret is required by the workflow.
+
+When game source or data changes, rebuild and commit `Potion-Maker.html` before pushing. The workflow refuses a stale build. Local commits alone do not publish until pushed. You can also run **Publish Potion Maker** manually from Actions. Deployment runs are serialized so overlapping pushes cannot overwrite the mirror simultaneously.
+
 ## Gameplay additions
 
 - Pio's free **Shinobu Oshino Sundress** fan costume appears beside Default in the wardrobe. It uses a new white-and-pink dress texture, retaining Pio's face and purple hair. The straw hat was removed on request. [Artwork prompts, references, rig limits and verification](research/custom-costumes/shinobu-sundress.json).
